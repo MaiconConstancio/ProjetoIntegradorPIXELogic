@@ -136,8 +136,11 @@
             Controls.Add(lblSenha);
             Controls.Add(btnEntra);
             Controls.Add(txtSenha);
+            Cursor = Cursors.Default;
+            ForeColor = Color.FromArgb(16, 25, 56);
             Name = "LoginPaginaInicial";
-            Text = "Form1";
+            Text = "PIXELogic - Sua visão, nossa programação!";
+            TransparencyKey = Color.Transparent;
             Load += LoginPaginaInicial_Load;
             ResumeLayout(false);
             PerformLayout();

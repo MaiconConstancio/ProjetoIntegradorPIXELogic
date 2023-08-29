@@ -133,7 +133,7 @@
             Controls.Add(btnSalvar);
             Controls.Add(txtNovaSenha);
             Name = "NovoLoginSenha";
-            Text = "NovoLoginSenha";
+            Text = "PIXELogic - Sua visão, nossa programação!";
             Load += NovoLoginSenha_Load;
             ResumeLayout(false);
             PerformLayout();

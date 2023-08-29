@@ -37,7 +37,7 @@
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(1904, 1041);
             Name = "Credenciais";
-            Text = "Credenciais";
+            Text = "PIXELogic - Sua visão, nossa programação!";
             ResumeLayout(false);
         }
 
