@@ -28,19 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
+            button1 = new Button();
             SuspendLayout();
+            // 
+            // button1
+            // 
+            button1.Location = new Point(800, 52);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 0;
+            button1.Text = "button1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // Credenciais
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(1370, 749);
+            Controls.Add(button1);
             Name = "Credenciais";
             Text = "Credenciais";
             ResumeLayout(false);
         }
 
         #endregion
+
+        private Button button1;
     }
 }
