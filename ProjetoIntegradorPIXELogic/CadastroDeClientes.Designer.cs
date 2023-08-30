@@ -51,7 +51,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 27.75F, FontStyle.Regular, GraphicsUnit.Point);
             label1.ForeColor = Color.FromArgb(160, 245, 255);
-            label1.Location = new Point(484, 177);
+            label1.Location = new Point(477, 166);
             label1.Margin = new Padding(5, 0, 5, 0);
             label1.Name = "label1";
             label1.Size = new Size(363, 50);
@@ -331,7 +331,7 @@
             Controls.Add(wilBitTextBox1);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
-            Margin = new Padding(5, 5, 5, 5);
+            Margin = new Padding(5);
             Name = "CadastroDeClientes";
             Text = "CadastroDeClientes";
             ResumeLayout(false);
