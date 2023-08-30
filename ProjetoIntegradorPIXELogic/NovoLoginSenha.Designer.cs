@@ -40,7 +40,7 @@
             lblNovoLogin.AutoSize = true;
             lblNovoLogin.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblNovoLogin.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNovoLogin.Location = new Point(870, 399);
+            lblNovoLogin.Location = new Point(309, 104);
             lblNovoLogin.Name = "lblNovoLogin";
             lblNovoLogin.Size = new Size(166, 37);
             lblNovoLogin.TabIndex = 11;
@@ -55,7 +55,7 @@
             txtNovoLogin.BorderSize = 2;
             txtNovoLogin.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
             txtNovoLogin.ForeColor = Color.FromArgb(160, 245, 255);
-            txtNovoLogin.Location = new Point(804, 440);
+            txtNovoLogin.Location = new Point(243, 145);
             txtNovoLogin.Margin = new Padding(4);
             txtNovoLogin.Multiline = false;
             txtNovoLogin.Name = "txtNovoLogin";
@@ -73,7 +73,7 @@
             lblNovaSenha.AutoSize = true;
             lblNovaSenha.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblNovaSenha.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNovaSenha.Location = new Point(870, 495);
+            lblNovaSenha.Location = new Point(309, 200);
             lblNovaSenha.Name = "lblNovaSenha";
             lblNovaSenha.Size = new Size(169, 37);
             lblNovaSenha.TabIndex = 9;
@@ -90,7 +90,7 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(804, 594);
+            btnSalvar.Location = new Point(243, 299);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(296, 47);
             btnSalvar.TabIndex = 8;
@@ -108,7 +108,7 @@
             txtNovaSenha.BorderSize = 2;
             txtNovaSenha.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
             txtNovaSenha.ForeColor = Color.FromArgb(160, 245, 255);
-            txtNovaSenha.Location = new Point(804, 536);
+            txtNovaSenha.Location = new Point(243, 241);
             txtNovaSenha.Margin = new Padding(4);
             txtNovaSenha.Multiline = false;
             txtNovaSenha.Name = "txtNovaSenha";
@@ -126,7 +126,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(800, 450);
             Controls.Add(lblNovoLogin);
             Controls.Add(txtNovoLogin);
             Controls.Add(lblNovaSenha);

@@ -33,6 +33,8 @@
             lblSenha = new Label();
             lblLogin = new Label();
             txtLogin = new WiLBiT.WiLBiTTextBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // txtSenha
@@ -44,7 +46,7 @@
             txtSenha.BorderSize = 2;
             txtSenha.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
             txtSenha.ForeColor = Color.FromArgb(160, 245, 255);
-            txtSenha.Location = new Point(1421, 525);
+            txtSenha.Location = new Point(533, 396);
             txtSenha.Margin = new Padding(4);
             txtSenha.Multiline = false;
             txtSenha.Name = "txtSenha";
@@ -69,7 +71,7 @@
             btnEntra.FlatStyle = FlatStyle.Flat;
             btnEntra.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             btnEntra.ForeColor = Color.Black;
-            btnEntra.Location = new Point(1421, 583);
+            btnEntra.Location = new Point(533, 454);
             btnEntra.Name = "btnEntra";
             btnEntra.Size = new Size(296, 47);
             btnEntra.TabIndex = 3;
@@ -83,7 +85,7 @@
             lblSenha.AutoSize = true;
             lblSenha.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
-            lblSenha.Location = new Point(1519, 484);
+            lblSenha.Location = new Point(631, 355);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(94, 37);
             lblSenha.TabIndex = 4;
@@ -95,7 +97,7 @@
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
-            lblLogin.Location = new Point(1519, 388);
+            lblLogin.Location = new Point(631, 259);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(89, 37);
             lblLogin.TabIndex = 6;
@@ -111,7 +113,7 @@
             txtLogin.BorderSize = 2;
             txtLogin.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
             txtLogin.ForeColor = Color.FromArgb(160, 245, 255);
-            txtLogin.Location = new Point(1421, 429);
+            txtLogin.Location = new Point(533, 300);
             txtLogin.Margin = new Padding(4);
             txtLogin.Multiline = false;
             txtLogin.Name = "txtLogin";
@@ -125,23 +127,34 @@
             txtLogin.UnderlinedStyle = false;
             txtLogin._TextChanged += txtLogin__TextChanged;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.ESCRITA_SEM_Fundo;
+            pictureBox1.Location = new Point(150, 82);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(575, 117);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 7;
+            pictureBox1.TabStop = false;
+            // 
             // LoginPaginaInicial
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
-            ClientSize = new Size(1904, 1041);
+            ClientSize = new Size(875, 572);
+            Controls.Add(pictureBox1);
             Controls.Add(lblLogin);
             Controls.Add(txtLogin);
             Controls.Add(lblSenha);
             Controls.Add(btnEntra);
             Controls.Add(txtSenha);
-            Cursor = Cursors.Default;
             ForeColor = Color.FromArgb(16, 25, 56);
             Name = "LoginPaginaInicial";
             Text = "PIXELogic - Sua visão, nossa programação!";
             TransparencyKey = Color.Transparent;
             Load += LoginPaginaInicial_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -153,5 +166,6 @@
         private Label lblSenha;
         private Label lblLogin;
         private WiLBiT.WiLBiTTextBox txtLogin;
+        private PictureBox pictureBox1;
     }
 }

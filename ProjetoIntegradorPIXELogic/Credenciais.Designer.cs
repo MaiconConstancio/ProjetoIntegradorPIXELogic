@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             lblNomeCredenciais = new Label();
             txtNomeCredenciais = new WiLBiT.WiLBiTTextBox();
             lblCargoCredenciais = new Label();
@@ -45,7 +44,7 @@
             lblNomeCredenciais.AutoSize = true;
             lblNomeCredenciais.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblNomeCredenciais.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNomeCredenciais.Location = new Point(814, 399);
+            lblNomeCredenciais.Location = new Point(239, 137);
             lblNomeCredenciais.Name = "lblNomeCredenciais";
             lblNomeCredenciais.Size = new Size(102, 37);
             lblNomeCredenciais.TabIndex = 11;
@@ -60,7 +59,7 @@
             txtNomeCredenciais.BorderSize = 2;
             txtNomeCredenciais.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
             txtNomeCredenciais.ForeColor = Color.FromArgb(160, 245, 255);
-            txtNomeCredenciais.Location = new Point(804, 440);
+            txtNomeCredenciais.Location = new Point(229, 178);
             txtNomeCredenciais.Margin = new Padding(4);
             txtNomeCredenciais.Multiline = false;
             txtNomeCredenciais.Name = "txtNomeCredenciais";
@@ -78,7 +77,7 @@
             lblCargoCredenciais.AutoSize = true;
             lblCargoCredenciais.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblCargoCredenciais.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCargoCredenciais.Location = new Point(822, 495);
+            lblCargoCredenciais.Location = new Point(247, 233);
             lblCargoCredenciais.Name = "lblCargoCredenciais";
             lblCargoCredenciais.Size = new Size(101, 37);
             lblCargoCredenciais.TabIndex = 9;
@@ -89,13 +88,13 @@
             btnAvançar.BackColor = Color.FromArgb(72, 116, 245);
             btnAvançar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnAvançar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnAvançar.BorderRadius = 24;
+            btnAvançar.BorderRadius = 20;
             btnAvançar.BorderSize = 2;
             btnAvançar.FlatAppearance.BorderSize = 0;
             btnAvançar.FlatStyle = FlatStyle.Flat;
             btnAvançar.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             btnAvançar.ForeColor = Color.Black;
-            btnAvançar.Location = new Point(804, 695);
+            btnAvançar.Location = new Point(229, 433);
             btnAvançar.Name = "btnAvançar";
             btnAvançar.Size = new Size(296, 47);
             btnAvançar.TabIndex = 8;
@@ -112,7 +111,7 @@
             txtCargoCredenciais.BorderSize = 2;
             txtCargoCredenciais.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
             txtCargoCredenciais.ForeColor = Color.FromArgb(160, 245, 255);
-            txtCargoCredenciais.Location = new Point(804, 536);
+            txtCargoCredenciais.Location = new Point(229, 274);
             txtCargoCredenciais.Margin = new Padding(4);
             txtCargoCredenciais.Multiline = false;
             txtCargoCredenciais.Name = "txtCargoCredenciais";
@@ -130,7 +129,7 @@
             lblSenhaCredenciais.AutoSize = true;
             lblSenhaCredenciais.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblSenhaCredenciais.ForeColor = Color.FromArgb(63, 136, 254);
-            lblSenhaCredenciais.Location = new Point(822, 596);
+            lblSenhaCredenciais.Location = new Point(247, 334);
             lblSenhaCredenciais.Name = "lblSenhaCredenciais";
             lblSenhaCredenciais.Size = new Size(101, 37);
             lblSenhaCredenciais.TabIndex = 13;
@@ -145,7 +144,7 @@
             txtSenhaCredenciais.BorderSize = 2;
             txtSenhaCredenciais.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
             txtSenhaCredenciais.ForeColor = Color.FromArgb(160, 245, 255);
-            txtSenhaCredenciais.Location = new Point(804, 637);
+            txtSenhaCredenciais.Location = new Point(229, 375);
             txtSenhaCredenciais.Margin = new Padding(4);
             txtSenhaCredenciais.Multiline = false;
             txtSenhaCredenciais.Name = "txtSenhaCredenciais";
@@ -163,7 +162,7 @@
             lblSejaBemVindo.AutoSize = true;
             lblSejaBemVindo.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblSejaBemVindo.ForeColor = Color.FromArgb(160, 245, 255);
-            lblSejaBemVindo.Location = new Point(829, 280);
+            lblSejaBemVindo.Location = new Point(254, 18);
             lblSejaBemVindo.Name = "lblSejaBemVindo";
             lblSejaBemVindo.Size = new Size(230, 37);
             lblSejaBemVindo.TabIndex = 14;
@@ -174,20 +173,18 @@
             lblEscolhaSuaEquipeESuasCredenciais.AutoSize = true;
             lblEscolhaSuaEquipeESuasCredenciais.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblEscolhaSuaEquipeESuasCredenciais.ForeColor = Color.FromArgb(160, 245, 255);
-            lblEscolhaSuaEquipeESuasCredenciais.Location = new Point(705, 333);
+            lblEscolhaSuaEquipeESuasCredenciais.Location = new Point(130, 71);
             lblEscolhaSuaEquipeESuasCredenciais.Name = "lblEscolhaSuaEquipeESuasCredenciais";
             lblEscolhaSuaEquipeESuasCredenciais.Size = new Size(491, 37);
             lblEscolhaSuaEquipeESuasCredenciais.TabIndex = 15;
             lblEscolhaSuaEquipeESuasCredenciais.Text = "Escolha sua equipe e suas credenciais";
-
             // 
             // Credenciais
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
-            ClientSize = new Size(1904, 1041);
-
+            ClientSize = new Size(800, 502);
             Controls.Add(lblEscolhaSuaEquipeESuasCredenciais);
             Controls.Add(lblSejaBemVindo);
             Controls.Add(lblSenhaCredenciais);
@@ -199,7 +196,6 @@
             Controls.Add(txtCargoCredenciais);
             Name = "Credenciais";
             Text = "   ";
-
             ResumeLayout(false);
             PerformLayout();
         }
