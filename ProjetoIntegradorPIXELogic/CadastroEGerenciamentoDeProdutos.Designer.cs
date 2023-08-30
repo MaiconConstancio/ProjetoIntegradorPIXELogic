@@ -91,7 +91,7 @@
             wilBitTextBox1.BorderRadius = 15;
             wilBitTextBox1.BorderSize = 2;
             wilBitTextBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox1.ForeColor = Color.FromArgb(160, 245, 255);
             wilBitTextBox1.Location = new Point(13, 138);
             wilBitTextBox1.Margin = new Padding(4);
             wilBitTextBox1.Multiline = false;
@@ -113,7 +113,7 @@
             wilBitTextBox2.BorderRadius = 15;
             wilBitTextBox2.BorderSize = 2;
             wilBitTextBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox2.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox2.ForeColor = Color.FromArgb(160, 245, 255);
             wilBitTextBox2.Location = new Point(13, 244);
             wilBitTextBox2.Margin = new Padding(4);
             wilBitTextBox2.Multiline = false;
@@ -135,7 +135,7 @@
             wilBitTextBox3.BorderRadius = 15;
             wilBitTextBox3.BorderSize = 2;
             wilBitTextBox3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox3.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox3.ForeColor = Color.FromArgb(160, 245, 255);
             wilBitTextBox3.Location = new Point(348, 138);
             wilBitTextBox3.Margin = new Padding(4);
             wilBitTextBox3.Multiline = false;
@@ -157,7 +157,7 @@
             wilBitTextBox4.BorderRadius = 15;
             wilBitTextBox4.BorderSize = 2;
             wilBitTextBox4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox4.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox4.ForeColor = Color.FromArgb(160, 245, 255);
             wilBitTextBox4.Location = new Point(673, 138);
             wilBitTextBox4.Margin = new Padding(4);
             wilBitTextBox4.Multiline = false;
@@ -243,7 +243,7 @@
             wilBitComboBox1.BorderSize = 2;
             wilBitComboBox1.DropDownStyle = ComboBoxStyle.DropDown;
             wilBitComboBox1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitComboBox1.ForeColor = Color.DimGray;
+            wilBitComboBox1.ForeColor = Color.FromArgb(160, 245, 255);
             wilBitComboBox1.IconColor = Color.FromArgb(72, 116, 245);
             wilBitComboBox1.ListBackColor = Color.FromArgb(53, 81, 105);
             wilBitComboBox1.ListTextColor = Color.DimGray;

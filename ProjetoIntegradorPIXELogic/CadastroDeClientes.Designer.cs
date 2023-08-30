@@ -66,7 +66,7 @@
             wilBitTextBox1.BorderRadius = 15;
             wilBitTextBox1.BorderSize = 2;
             wilBitTextBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox1.ForeColor = Color.FromArgb(160, 245, 255);
             wilBitTextBox1.Location = new Point(505, 251);
             wilBitTextBox1.Margin = new Padding(4);
             wilBitTextBox1.Multiline = false;
@@ -88,7 +88,7 @@
             wilBitTextBox2.BorderRadius = 15;
             wilBitTextBox2.BorderSize = 2;
             wilBitTextBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox2.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox2.ForeColor = Color.FromArgb(160, 245, 255);
             wilBitTextBox2.Location = new Point(505, 310);
             wilBitTextBox2.Margin = new Padding(4);
             wilBitTextBox2.Multiline = false;
@@ -107,7 +107,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Regular, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(160, 245, 255);
-            label2.Location = new Point(404, 252);
+            label2.Location = new Point(386, 252);
             label2.Name = "label2";
             label2.Size = new Size(94, 32);
             label2.TabIndex = 3;
@@ -143,7 +143,7 @@
             wilBitTextBox3.BorderRadius = 15;
             wilBitTextBox3.BorderSize = 2;
             wilBitTextBox3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox3.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox3.ForeColor = Color.FromArgb(160, 245, 255);
             wilBitTextBox3.Location = new Point(505, 366);
             wilBitTextBox3.Margin = new Padding(4);
             wilBitTextBox3.Multiline = false;
@@ -176,7 +176,7 @@
             wilBitTextBox4.BorderRadius = 15;
             wilBitTextBox4.BorderSize = 2;
             wilBitTextBox4.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox4.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox4.ForeColor = Color.FromArgb(160, 245, 255);
             wilBitTextBox4.Location = new Point(505, 425);
             wilBitTextBox4.Margin = new Padding(4);
             wilBitTextBox4.Multiline = false;
@@ -209,7 +209,7 @@
             wilBitTextBox5.BorderRadius = 15;
             wilBitTextBox5.BorderSize = 2;
             wilBitTextBox5.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox5.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox5.ForeColor = Color.FromArgb(160, 245, 255);
             wilBitTextBox5.Location = new Point(505, 479);
             wilBitTextBox5.Margin = new Padding(4);
             wilBitTextBox5.Multiline = false;
@@ -242,7 +242,7 @@
             wilBitTextBox6.BorderRadius = 15;
             wilBitTextBox6.BorderSize = 2;
             wilBitTextBox6.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox6.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox6.ForeColor = Color.FromArgb(160, 245, 255);
             wilBitTextBox6.Location = new Point(505, 537);
             wilBitTextBox6.Margin = new Padding(4);
             wilBitTextBox6.Multiline = false;
@@ -275,7 +275,7 @@
             wilBitTextBox7.BorderRadius = 15;
             wilBitTextBox7.BorderSize = 2;
             wilBitTextBox7.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox7.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox7.ForeColor = Color.FromArgb(160, 245, 255);
             wilBitTextBox7.Location = new Point(505, 595);
             wilBitTextBox7.Margin = new Padding(4);
             wilBitTextBox7.Multiline = false;
