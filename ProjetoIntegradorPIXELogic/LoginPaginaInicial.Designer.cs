@@ -34,7 +34,9 @@
             lblLogin = new Label();
             txtLogin = new WiLBiT.WiLBiTTextBox();
             pictureBox1 = new PictureBox();
+            pictureBox2 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // txtSenha
@@ -65,7 +67,7 @@
             btnEntra.BackColor = Color.FromArgb(72, 116, 245);
             btnEntra.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnEntra.BorderColor = Color.FromArgb(0, 242, 254);
-            btnEntra.BorderRadius = 24;
+            btnEntra.BorderRadius = 22;
             btnEntra.BorderSize = 2;
             btnEntra.FlatAppearance.BorderSize = 0;
             btnEntra.FlatStyle = FlatStyle.Flat;
@@ -137,12 +139,23 @@
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
             // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = Properties.Resources.circulo_em_logo;
+            pictureBox2.Location = new Point(36, 219);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(382, 296);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox2.TabIndex = 8;
+            pictureBox2.TabStop = false;
+            // 
             // LoginPaginaInicial
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(875, 572);
+            Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(lblLogin);
             Controls.Add(txtLogin);
@@ -155,6 +168,7 @@
             TransparencyKey = Color.Transparent;
             Load += LoginPaginaInicial_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -167,5 +181,6 @@
         private Label lblLogin;
         private WiLBiT.WiLBiTTextBox txtLogin;
         private PictureBox pictureBox1;
+        private PictureBox pictureBox2;
     }
 }

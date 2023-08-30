@@ -63,9 +63,49 @@ namespace ProjetoIntegradorPIXELogic.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap circulo_em_logo {
+            get {
+                object obj = ResourceManager.GetObject("circulo em logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circulo_login {
+            get {
+                object obj = ResourceManager.GetObject("circulo_login", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap circulo_login1 {
+            get {
+                object obj = ResourceManager.GetObject("circulo_login1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ESCRITA_SEM_Fundo {
             get {
                 object obj = ResourceManager.GetObject("ESCRITA_SEM_Fundo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LOGODESENHO_SEM_Fundo {
+            get {
+                object obj = ResourceManager.GetObject("LOGODESENHO_SEM_Fundo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

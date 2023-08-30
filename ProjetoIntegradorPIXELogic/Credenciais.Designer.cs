@@ -88,7 +88,7 @@
             btnAvançar.BackColor = Color.FromArgb(72, 116, 245);
             btnAvançar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnAvançar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnAvançar.BorderRadius = 20;
+            btnAvançar.BorderRadius = 22;
             btnAvançar.BorderSize = 2;
             btnAvançar.FlatAppearance.BorderSize = 0;
             btnAvançar.FlatStyle = FlatStyle.Flat;
