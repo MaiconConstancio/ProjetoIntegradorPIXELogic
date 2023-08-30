@@ -49,7 +49,7 @@
             wilBitTextBox1.BorderRadius = 15;
             wilBitTextBox1.BorderSize = 2;
             wilBitTextBox1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox1.ForeColor = Color.FromArgb(64, 64, 64);
+            wilBitTextBox1.ForeColor = Color.FromArgb(0, 242, 254);
             wilBitTextBox1.Location = new Point(238, 180);
             wilBitTextBox1.Margin = new Padding(4);
             wilBitTextBox1.Multiline = false;
@@ -94,7 +94,7 @@
             wilBitTextBox3.BorderSize = 2;
             wilBitTextBox3.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
             wilBitTextBox3.ForeColor = Color.FromArgb(64, 64, 64);
-            wilBitTextBox3.Location = new Point(238, 339);
+            wilBitTextBox3.Location = new Point(235, 344);
             wilBitTextBox3.Margin = new Padding(4);
             wilBitTextBox3.Multiline = false;
             wilBitTextBox3.Name = "wilBitTextBox3";
@@ -171,7 +171,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.FromArgb(160, 245, 255);
-            label2.Location = new Point(273, 130);
+            label2.Location = new Point(273, 144);
             label2.Name = "label2";
             label2.Size = new Size(224, 32);
             label2.TabIndex = 21;
@@ -182,7 +182,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.FromArgb(160, 245, 255);
-            label3.Location = new Point(273, 217);
+            label3.Location = new Point(273, 230);
             label3.Name = "label3";
             label3.Size = new Size(211, 32);
             label3.TabIndex = 22;
@@ -193,7 +193,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.FromArgb(160, 245, 255);
-            label4.Location = new Point(335, 303);
+            label4.Location = new Point(349, 308);
             label4.Name = "label4";
             label4.Size = new Size(73, 32);
             label4.TabIndex = 23;
