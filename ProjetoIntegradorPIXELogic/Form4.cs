@@ -10,22 +10,24 @@ using System.Windows.Forms;
 
 namespace ProjetoIntegradorPIXELogic
 {
-    public partial class NovoLoginSenha : Form
+    public partial class Form4 : Form
     {
-        public NovoLoginSenha()
+        public Form4()
         {
             InitializeComponent();
         }
 
-        private void NovoLoginSenha_Load(object sender, EventArgs e)
+        private void btnCerto_Click(object sender, EventArgs e)
         {
+
+            Form5 areaTrabalho = new Form5();
+            areaTrabalho.Show();
 
         }
 
-        private void btnSalvar_Click(object sender, EventArgs e)
+        private void Form4_Load(object sender, EventArgs e)
         {
-            Credenciais cadastroFuncionario = new Credenciais();
-            cadastroFuncionario.Show();
+
         }
     }
 }
