@@ -30,32 +30,44 @@
         {
             lblSejaBemVindo = new Label();
             panel1 = new Panel();
-            listBox1 = new ListBox();
-            listBox2 = new ListBox();
-            listBox3 = new ListBox();
-            listBox4 = new ListBox();
-            listBox5 = new ListBox();
-            listBox6 = new ListBox();
-            listBox7 = new ListBox();
-            listBox8 = new ListBox();
-            listBox9 = new ListBox();
-            listBox10 = new ListBox();
-            listBox11 = new ListBox();
-            listBox12 = new ListBox();
-            listBox13 = new ListBox();
-            listBox14 = new ListBox();
-            listBox15 = new ListBox();
-            listBox16 = new ListBox();
-            listBox17 = new ListBox();
-            listBox18 = new ListBox();
-            listBox19 = new ListBox();
-            listBox20 = new ListBox();
-            listBox21 = new ListBox();
-            listBox22 = new ListBox();
-            listBox23 = new ListBox();
-            listBox24 = new ListBox();
+            panel2 = new Panel();
+            checkBoxAdicionar = new CheckBox();
             btnAvançar = new WiLBiT.WiLBiTButton2();
+            panel3 = new Panel();
+            checkBox1 = new CheckBox();
+            panel4 = new Panel();
+            checkBox2 = new CheckBox();
+            panel5 = new Panel();
+            checkBox3 = new CheckBox();
+            panel6 = new Panel();
+            checkBox4 = new CheckBox();
+            panel7 = new Panel();
+            checkBox5 = new CheckBox();
+            panel8 = new Panel();
+            checkBox6 = new CheckBox();
+            panel9 = new Panel();
+            checkBox7 = new CheckBox();
+            panel10 = new Panel();
+            checkBox8 = new CheckBox();
+            panel11 = new Panel();
+            checkBox9 = new CheckBox();
+            panel12 = new Panel();
+            checkBox10 = new CheckBox();
+            panel13 = new Panel();
+            checkBox11 = new CheckBox();
             panel1.SuspendLayout();
+            panel2.SuspendLayout();
+            panel3.SuspendLayout();
+            panel4.SuspendLayout();
+            panel5.SuspendLayout();
+            panel6.SuspendLayout();
+            panel7.SuspendLayout();
+            panel8.SuspendLayout();
+            panel9.SuspendLayout();
+            panel10.SuspendLayout();
+            panel11.SuspendLayout();
+            panel12.SuspendLayout();
+            panel13.SuspendLayout();
             SuspendLayout();
             // 
             // lblSejaBemVindo
@@ -71,250 +83,42 @@
             // 
             // panel1
             // 
-            panel1.Controls.Add(listBox13);
-            panel1.Controls.Add(listBox14);
-            panel1.Controls.Add(listBox15);
-            panel1.Controls.Add(listBox16);
-            panel1.Controls.Add(listBox17);
-            panel1.Controls.Add(listBox18);
-            panel1.Controls.Add(listBox19);
-            panel1.Controls.Add(listBox20);
-            panel1.Controls.Add(listBox21);
-            panel1.Controls.Add(listBox22);
-            panel1.Controls.Add(listBox23);
-            panel1.Controls.Add(listBox24);
-            panel1.Controls.Add(listBox10);
-            panel1.Controls.Add(listBox11);
-            panel1.Controls.Add(listBox12);
-            panel1.Controls.Add(listBox7);
-            panel1.Controls.Add(listBox8);
-            panel1.Controls.Add(listBox9);
-            panel1.Controls.Add(listBox4);
-            panel1.Controls.Add(listBox5);
-            panel1.Controls.Add(listBox6);
-            panel1.Controls.Add(listBox3);
-            panel1.Controls.Add(listBox2);
-            panel1.Controls.Add(listBox1);
+            panel1.AutoScroll = true;
+            panel1.Controls.Add(panel11);
+            panel1.Controls.Add(panel8);
+            panel1.Controls.Add(panel12);
+            panel1.Controls.Add(panel7);
+            panel1.Controls.Add(panel13);
+            panel1.Controls.Add(panel9);
+            panel1.Controls.Add(panel6);
+            panel1.Controls.Add(panel10);
+            panel1.Controls.Add(panel5);
+            panel1.Controls.Add(panel4);
+            panel1.Controls.Add(panel3);
+            panel1.Controls.Add(panel2);
             panel1.Location = new Point(25, 64);
             panel1.Name = "panel1";
             panel1.Size = new Size(739, 312);
             panel1.TabIndex = 16;
             // 
-            // listBox1
+            // panel2
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Location = new Point(17, 14);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(120, 94);
-            listBox1.TabIndex = 0;
+            panel2.Controls.Add(checkBoxAdicionar);
+            panel2.Location = new Point(16, 13);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(194, 100);
+            panel2.TabIndex = 0;
             // 
-            // listBox2
+            // checkBoxAdicionar
             // 
-            listBox2.FormattingEnabled = true;
-            listBox2.ItemHeight = 15;
-            listBox2.Location = new Point(17, 114);
-            listBox2.Name = "listBox2";
-            listBox2.Size = new Size(120, 94);
-            listBox2.TabIndex = 1;
-            // 
-            // listBox3
-            // 
-            listBox3.FormattingEnabled = true;
-            listBox3.ItemHeight = 15;
-            listBox3.Location = new Point(17, 214);
-            listBox3.Name = "listBox3";
-            listBox3.Size = new Size(120, 94);
-            listBox3.TabIndex = 2;
-            // 
-            // listBox4
-            // 
-            listBox4.FormattingEnabled = true;
-            listBox4.ItemHeight = 15;
-            listBox4.Location = new Point(143, 214);
-            listBox4.Name = "listBox4";
-            listBox4.Size = new Size(120, 94);
-            listBox4.TabIndex = 5;
-            // 
-            // listBox5
-            // 
-            listBox5.FormattingEnabled = true;
-            listBox5.ItemHeight = 15;
-            listBox5.Location = new Point(143, 114);
-            listBox5.Name = "listBox5";
-            listBox5.Size = new Size(120, 94);
-            listBox5.TabIndex = 4;
-            // 
-            // listBox6
-            // 
-            listBox6.FormattingEnabled = true;
-            listBox6.ItemHeight = 15;
-            listBox6.Location = new Point(143, 14);
-            listBox6.Name = "listBox6";
-            listBox6.Size = new Size(120, 94);
-            listBox6.TabIndex = 3;
-            // 
-            // listBox7
-            // 
-            listBox7.FormattingEnabled = true;
-            listBox7.ItemHeight = 15;
-            listBox7.Location = new Point(269, 214);
-            listBox7.Name = "listBox7";
-            listBox7.Size = new Size(120, 94);
-            listBox7.TabIndex = 8;
-            // 
-            // listBox8
-            // 
-            listBox8.FormattingEnabled = true;
-            listBox8.ItemHeight = 15;
-            listBox8.Location = new Point(269, 114);
-            listBox8.Name = "listBox8";
-            listBox8.Size = new Size(120, 94);
-            listBox8.TabIndex = 7;
-            // 
-            // listBox9
-            // 
-            listBox9.FormattingEnabled = true;
-            listBox9.ItemHeight = 15;
-            listBox9.Location = new Point(269, 14);
-            listBox9.Name = "listBox9";
-            listBox9.Size = new Size(120, 94);
-            listBox9.TabIndex = 6;
-            // 
-            // listBox10
-            // 
-            listBox10.FormattingEnabled = true;
-            listBox10.ItemHeight = 15;
-            listBox10.Location = new Point(395, 214);
-            listBox10.Name = "listBox10";
-            listBox10.Size = new Size(120, 94);
-            listBox10.TabIndex = 11;
-            // 
-            // listBox11
-            // 
-            listBox11.FormattingEnabled = true;
-            listBox11.ItemHeight = 15;
-            listBox11.Location = new Point(395, 114);
-            listBox11.Name = "listBox11";
-            listBox11.Size = new Size(120, 94);
-            listBox11.TabIndex = 10;
-            // 
-            // listBox12
-            // 
-            listBox12.FormattingEnabled = true;
-            listBox12.ItemHeight = 15;
-            listBox12.Location = new Point(395, 14);
-            listBox12.Name = "listBox12";
-            listBox12.Size = new Size(120, 94);
-            listBox12.TabIndex = 9;
-            // 
-            // listBox13
-            // 
-            listBox13.FormattingEnabled = true;
-            listBox13.ItemHeight = 15;
-            listBox13.Location = new Point(901, 214);
-            listBox13.Name = "listBox13";
-            listBox13.Size = new Size(120, 94);
-            listBox13.TabIndex = 23;
-            // 
-            // listBox14
-            // 
-            listBox14.FormattingEnabled = true;
-            listBox14.ItemHeight = 15;
-            listBox14.Location = new Point(901, 114);
-            listBox14.Name = "listBox14";
-            listBox14.Size = new Size(120, 94);
-            listBox14.TabIndex = 22;
-            // 
-            // listBox15
-            // 
-            listBox15.FormattingEnabled = true;
-            listBox15.ItemHeight = 15;
-            listBox15.Location = new Point(901, 14);
-            listBox15.Name = "listBox15";
-            listBox15.Size = new Size(120, 94);
-            listBox15.TabIndex = 21;
-            // 
-            // listBox16
-            // 
-            listBox16.FormattingEnabled = true;
-            listBox16.ItemHeight = 15;
-            listBox16.Location = new Point(775, 214);
-            listBox16.Name = "listBox16";
-            listBox16.Size = new Size(120, 94);
-            listBox16.TabIndex = 20;
-            // 
-            // listBox17
-            // 
-            listBox17.FormattingEnabled = true;
-            listBox17.ItemHeight = 15;
-            listBox17.Location = new Point(775, 114);
-            listBox17.Name = "listBox17";
-            listBox17.Size = new Size(120, 94);
-            listBox17.TabIndex = 19;
-            // 
-            // listBox18
-            // 
-            listBox18.FormattingEnabled = true;
-            listBox18.ItemHeight = 15;
-            listBox18.Location = new Point(775, 14);
-            listBox18.Name = "listBox18";
-            listBox18.Size = new Size(120, 94);
-            listBox18.TabIndex = 18;
-            // 
-            // listBox19
-            // 
-            listBox19.FormattingEnabled = true;
-            listBox19.ItemHeight = 15;
-            listBox19.Location = new Point(649, 214);
-            listBox19.Name = "listBox19";
-            listBox19.Size = new Size(120, 94);
-            listBox19.TabIndex = 17;
-            // 
-            // listBox20
-            // 
-            listBox20.FormattingEnabled = true;
-            listBox20.ItemHeight = 15;
-            listBox20.Location = new Point(649, 114);
-            listBox20.Name = "listBox20";
-            listBox20.Size = new Size(120, 94);
-            listBox20.TabIndex = 16;
-            // 
-            // listBox21
-            // 
-            listBox21.FormattingEnabled = true;
-            listBox21.ItemHeight = 15;
-            listBox21.Location = new Point(649, 14);
-            listBox21.Name = "listBox21";
-            listBox21.Size = new Size(120, 94);
-            listBox21.TabIndex = 15;
-            // 
-            // listBox22
-            // 
-            listBox22.FormattingEnabled = true;
-            listBox22.ItemHeight = 15;
-            listBox22.Location = new Point(523, 214);
-            listBox22.Name = "listBox22";
-            listBox22.Size = new Size(120, 94);
-            listBox22.TabIndex = 14;
-            // 
-            // listBox23
-            // 
-            listBox23.FormattingEnabled = true;
-            listBox23.ItemHeight = 15;
-            listBox23.Location = new Point(523, 114);
-            listBox23.Name = "listBox23";
-            listBox23.Size = new Size(120, 94);
-            listBox23.TabIndex = 13;
-            // 
-            // listBox24
-            // 
-            listBox24.FormattingEnabled = true;
-            listBox24.ItemHeight = 15;
-            listBox24.Location = new Point(523, 14);
-            listBox24.Name = "listBox24";
-            listBox24.Size = new Size(120, 94);
-            listBox24.TabIndex = 12;
+            checkBoxAdicionar.AutoSize = true;
+            checkBoxAdicionar.ForeColor = Color.FromArgb(160, 245, 255);
+            checkBoxAdicionar.Location = new Point(3, 3);
+            checkBoxAdicionar.Name = "checkBoxAdicionar";
+            checkBoxAdicionar.Size = new Size(77, 19);
+            checkBoxAdicionar.TabIndex = 0;
+            checkBoxAdicionar.Text = "Adicionar";
+            checkBoxAdicionar.UseVisualStyleBackColor = true;
             // 
             // btnAvançar
             // 
@@ -335,6 +139,215 @@
             btnAvançar.TextColor = Color.Black;
             btnAvançar.UseVisualStyleBackColor = false;
             // 
+            // panel3
+            // 
+            panel3.Controls.Add(checkBox1);
+            panel3.Location = new Point(16, 119);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(194, 100);
+            panel3.TabIndex = 1;
+            // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.ForeColor = Color.FromArgb(160, 245, 255);
+            checkBox1.Location = new Point(3, 3);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(77, 19);
+            checkBox1.TabIndex = 0;
+            checkBox1.Text = "Adicionar";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // panel4
+            // 
+            panel4.Controls.Add(checkBox2);
+            panel4.Location = new Point(16, 225);
+            panel4.Name = "panel4";
+            panel4.Size = new Size(194, 100);
+            panel4.TabIndex = 1;
+            // 
+            // checkBox2
+            // 
+            checkBox2.AutoSize = true;
+            checkBox2.ForeColor = Color.FromArgb(160, 245, 255);
+            checkBox2.Location = new Point(3, 3);
+            checkBox2.Name = "checkBox2";
+            checkBox2.Size = new Size(77, 19);
+            checkBox2.TabIndex = 0;
+            checkBox2.Text = "Adicionar";
+            checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // panel5
+            // 
+            panel5.Controls.Add(checkBox3);
+            panel5.Location = new Point(216, 13);
+            panel5.Name = "panel5";
+            panel5.Size = new Size(194, 100);
+            panel5.TabIndex = 1;
+            // 
+            // checkBox3
+            // 
+            checkBox3.AutoSize = true;
+            checkBox3.ForeColor = Color.FromArgb(160, 245, 255);
+            checkBox3.Location = new Point(3, 3);
+            checkBox3.Name = "checkBox3";
+            checkBox3.Size = new Size(77, 19);
+            checkBox3.TabIndex = 0;
+            checkBox3.Text = "Adicionar";
+            checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // panel6
+            // 
+            panel6.Controls.Add(checkBox4);
+            panel6.Location = new Point(216, 119);
+            panel6.Name = "panel6";
+            panel6.Size = new Size(194, 100);
+            panel6.TabIndex = 1;
+            // 
+            // checkBox4
+            // 
+            checkBox4.AutoSize = true;
+            checkBox4.ForeColor = Color.FromArgb(160, 245, 255);
+            checkBox4.Location = new Point(3, 3);
+            checkBox4.Name = "checkBox4";
+            checkBox4.Size = new Size(77, 19);
+            checkBox4.TabIndex = 0;
+            checkBox4.Text = "Adicionar";
+            checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // panel7
+            // 
+            panel7.Controls.Add(checkBox5);
+            panel7.Location = new Point(216, 225);
+            panel7.Name = "panel7";
+            panel7.Size = new Size(194, 100);
+            panel7.TabIndex = 1;
+            // 
+            // checkBox5
+            // 
+            checkBox5.AutoSize = true;
+            checkBox5.ForeColor = Color.FromArgb(160, 245, 255);
+            checkBox5.Location = new Point(3, 3);
+            checkBox5.Name = "checkBox5";
+            checkBox5.Size = new Size(77, 19);
+            checkBox5.TabIndex = 0;
+            checkBox5.Text = "Adicionar";
+            checkBox5.UseVisualStyleBackColor = true;
+            // 
+            // panel8
+            // 
+            panel8.Controls.Add(checkBox6);
+            panel8.Location = new Point(416, 225);
+            panel8.Name = "panel8";
+            panel8.Size = new Size(194, 100);
+            panel8.TabIndex = 4;
+            // 
+            // checkBox6
+            // 
+            checkBox6.AutoSize = true;
+            checkBox6.ForeColor = Color.FromArgb(160, 245, 255);
+            checkBox6.Location = new Point(3, 3);
+            checkBox6.Name = "checkBox6";
+            checkBox6.Size = new Size(77, 19);
+            checkBox6.TabIndex = 0;
+            checkBox6.Text = "Adicionar";
+            checkBox6.UseVisualStyleBackColor = true;
+            // 
+            // panel9
+            // 
+            panel9.Controls.Add(checkBox7);
+            panel9.Location = new Point(416, 119);
+            panel9.Name = "panel9";
+            panel9.Size = new Size(194, 100);
+            panel9.TabIndex = 3;
+            // 
+            // checkBox7
+            // 
+            checkBox7.AutoSize = true;
+            checkBox7.ForeColor = Color.FromArgb(160, 245, 255);
+            checkBox7.Location = new Point(3, 3);
+            checkBox7.Name = "checkBox7";
+            checkBox7.Size = new Size(77, 19);
+            checkBox7.TabIndex = 0;
+            checkBox7.Text = "Adicionar";
+            checkBox7.UseVisualStyleBackColor = true;
+            // 
+            // panel10
+            // 
+            panel10.Controls.Add(checkBox8);
+            panel10.Location = new Point(416, 13);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(194, 100);
+            panel10.TabIndex = 2;
+            // 
+            // checkBox8
+            // 
+            checkBox8.AutoSize = true;
+            checkBox8.ForeColor = Color.FromArgb(160, 245, 255);
+            checkBox8.Location = new Point(3, 3);
+            checkBox8.Name = "checkBox8";
+            checkBox8.Size = new Size(77, 19);
+            checkBox8.TabIndex = 0;
+            checkBox8.Text = "Adicionar";
+            checkBox8.UseVisualStyleBackColor = true;
+            // 
+            // panel11
+            // 
+            panel11.Controls.Add(checkBox9);
+            panel11.Location = new Point(616, 225);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(194, 100);
+            panel11.TabIndex = 4;
+            // 
+            // checkBox9
+            // 
+            checkBox9.AutoSize = true;
+            checkBox9.ForeColor = Color.FromArgb(160, 245, 255);
+            checkBox9.Location = new Point(3, 3);
+            checkBox9.Name = "checkBox9";
+            checkBox9.Size = new Size(77, 19);
+            checkBox9.TabIndex = 0;
+            checkBox9.Text = "Adicionar";
+            checkBox9.UseVisualStyleBackColor = true;
+            // 
+            // panel12
+            // 
+            panel12.Controls.Add(checkBox10);
+            panel12.Location = new Point(616, 119);
+            panel12.Name = "panel12";
+            panel12.Size = new Size(194, 100);
+            panel12.TabIndex = 3;
+            // 
+            // checkBox10
+            // 
+            checkBox10.AutoSize = true;
+            checkBox10.ForeColor = Color.FromArgb(160, 245, 255);
+            checkBox10.Location = new Point(3, 3);
+            checkBox10.Name = "checkBox10";
+            checkBox10.Size = new Size(77, 19);
+            checkBox10.TabIndex = 0;
+            checkBox10.Text = "Adicionar";
+            checkBox10.UseVisualStyleBackColor = true;
+            // 
+            // panel13
+            // 
+            panel13.Controls.Add(checkBox11);
+            panel13.Location = new Point(616, 13);
+            panel13.Name = "panel13";
+            panel13.Size = new Size(194, 100);
+            panel13.TabIndex = 2;
+            // 
+            // checkBox11
+            // 
+            checkBox11.AutoSize = true;
+            checkBox11.ForeColor = Color.FromArgb(160, 245, 255);
+            checkBox11.Location = new Point(3, 3);
+            checkBox11.Name = "checkBox11";
+            checkBox11.Size = new Size(77, 19);
+            checkBox11.TabIndex = 0;
+            checkBox11.Text = "Adicionar";
+            checkBox11.UseVisualStyleBackColor = true;
+            // 
             // TelaOndeMontaOPrograma
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -347,6 +360,30 @@
             Name = "TelaOndeMontaOPrograma";
             Text = "TelaOndeMontaOPrograma";
             panel1.ResumeLayout(false);
+            panel2.ResumeLayout(false);
+            panel2.PerformLayout();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
+            panel4.ResumeLayout(false);
+            panel4.PerformLayout();
+            panel5.ResumeLayout(false);
+            panel5.PerformLayout();
+            panel6.ResumeLayout(false);
+            panel6.PerformLayout();
+            panel7.ResumeLayout(false);
+            panel7.PerformLayout();
+            panel8.ResumeLayout(false);
+            panel8.PerformLayout();
+            panel9.ResumeLayout(false);
+            panel9.PerformLayout();
+            panel10.ResumeLayout(false);
+            panel10.PerformLayout();
+            panel11.ResumeLayout(false);
+            panel11.PerformLayout();
+            panel12.ResumeLayout(false);
+            panel12.PerformLayout();
+            panel13.ResumeLayout(false);
+            panel13.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -355,30 +392,30 @@
 
         private Label lblSejaBemVindo;
         private Panel panel1;
-        private ListBox listBox13;
-        private ListBox listBox14;
-        private ListBox listBox15;
-        private ListBox listBox16;
-        private ListBox listBox17;
-        private ListBox listBox18;
-        private ListBox listBox19;
-        private ListBox listBox20;
-        private ListBox listBox21;
-        private ListBox listBox22;
-        private ListBox listBox23;
-        private ListBox listBox24;
-        private ListBox listBox10;
-        private ListBox listBox11;
-        private ListBox listBox12;
-        private ListBox listBox7;
-        private ListBox listBox8;
-        private ListBox listBox9;
-        private ListBox listBox4;
-        private ListBox listBox5;
-        private ListBox listBox6;
-        private ListBox listBox3;
-        private ListBox listBox2;
-        private ListBox listBox1;
         private WiLBiT.WiLBiTButton2 btnAvançar;
+        private Panel panel2;
+        private CheckBox checkBoxAdicionar;
+        private Panel panel11;
+        private CheckBox checkBox9;
+        private Panel panel8;
+        private CheckBox checkBox6;
+        private Panel panel12;
+        private CheckBox checkBox10;
+        private Panel panel7;
+        private CheckBox checkBox5;
+        private Panel panel13;
+        private CheckBox checkBox11;
+        private Panel panel9;
+        private CheckBox checkBox7;
+        private Panel panel6;
+        private CheckBox checkBox4;
+        private Panel panel10;
+        private CheckBox checkBox8;
+        private Panel panel5;
+        private CheckBox checkBox3;
+        private Panel panel4;
+        private CheckBox checkBox2;
+        private Panel panel3;
+        private CheckBox checkBox1;
     }
 }
