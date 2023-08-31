@@ -56,12 +56,16 @@ namespace ProjetoIntegradorPIXELogic
 
             }
 
+<<<<<<< HEAD
             else
             {
 
                 return false;
 
             }
+=======
+            else { return false; }
+>>>>>>> login e cadastro finalizados
 
         }
 

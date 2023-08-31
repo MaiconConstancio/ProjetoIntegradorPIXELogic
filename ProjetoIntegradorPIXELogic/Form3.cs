@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -37,6 +38,7 @@ namespace ProjetoIntegradorPIXELogic
 
                             txtCargo.Clear();
                             txtLogin.Clear();
+<<<<<<< HEAD
                             txtSenha.Clear();
                             txtNome.Clear();
 
@@ -47,6 +49,36 @@ namespace ProjetoIntegradorPIXELogic
                     }
 
                     else { MessageBox.Show("Por favor digite um email novo.", "email já existente!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+=======
+                            txtNome.Clear();
+                            txtSenha.Clear();
+
+
+                        }
+
+                        else
+                        {
+
+                            MessageBox.Show($"Digite uma nova senha!", "Essa senha já existe!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                        }
+
+                    }
+
+                    else
+                    {
+
+                        MessageBox.Show($"Digite um novo login!", "Esse email já existe!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+
+                }
+
+                else
+                {
+
+                    MessageBox.Show($"Digite um novo nome!", "Esse nome está cadastrado!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+>>>>>>> login e cadastro finalizados
 
                 }
 

@@ -16,8 +16,22 @@ namespace ProjetoIntegradorPIXELogic
                 if (Conexao.existe("email", txtLogin) == true && Conexao.existe("senha", txtSenha) == true)
                 {
 
-                    Form3 form3 = new Form3();
-                    form3.Show();
+                    string admin = $"select email,admin from usuarios where email = '{txtLogin.Text}' and admin = true;";
+
+                    if (Conexao.executaQuery(admin).Rows.Count > 0)
+                    {
+
+                        Form3 form3 = new Form3();
+                        form3.Show();
+
+                    }
+                    else
+                    {
+
+                        Form5 form5 = new Form5();
+                        form5.Show();
+
+                    }
 
                 }
 
