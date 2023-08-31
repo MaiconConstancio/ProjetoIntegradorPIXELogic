@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProjetoIntegrador
+namespace ProjetoIntegradorPIXELogic
 {
     public partial class Form3 : Form
     {
@@ -62,7 +62,7 @@ namespace ProjetoIntegrador
         private void btnPular_Click(object sender, EventArgs e)
         {
 
-            Form4 funcoes = new Form4();
+            Form3 funcoes = new Form3();
             funcoes.Show();
 
         }

@@ -1,4 +1,4 @@
-﻿namespace ProjetoIntegrador
+﻿namespace ProjetoIntegradorPIXELogic
 {
     partial class Form5
     {
@@ -74,6 +74,7 @@
             listFerramentas.Size = new Size(189, 450);
             listFerramentas.TabIndex = 23;
             listFerramentas.UseCompatibleStateImageBehavior = false;
+            listFerramentas.SelectedIndexChanged += listFerramentas_SelectedIndexChanged;
             // 
             // Form5
             // 
@@ -87,6 +88,7 @@
             Controls.Add(btnHierarquia);
             Name = "Form5";
             Text = "Form5";
+            Load += Form5_Load;
             ResumeLayout(false);
             PerformLayout();
         }

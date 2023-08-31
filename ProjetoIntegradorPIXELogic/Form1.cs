@@ -1,7 +1,7 @@
 using MySql.Data.MySqlClient;
 using System.Data;
 
-namespace ProjetoIntegrador
+namespace ProjetoIntegradorPIXELogic
 {
     public partial class Form1 : Form
     {
@@ -48,12 +48,16 @@ namespace ProjetoIntegrador
 
                 }
 
-                else { MessageBox.Show("Digite um email válido","email inválido",MessageBoxButtons.OK,MessageBoxIcon.Error); }
+                else { MessageBox.Show("Digite um email válido", "email inválido", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
             }
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
-    
+
 }

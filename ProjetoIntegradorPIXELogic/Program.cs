@@ -1,4 +1,4 @@
-namespace ProjetoIntegrador
+namespace ProjetoIntegradorPIXELogic
 {
     internal static class Program
     {
