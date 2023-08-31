@@ -31,7 +31,7 @@
             lblNovoLogin = new Label();
             txtNovoLogin = new WiLBiT.WiLBiTTextBox();
             lblNovaSenha = new Label();
-            btnSalvar = new WiLBiT.WiLBiTButton2();
+            btnSalvarNovoLoginSenha = new WiLBiT.WiLBiTButton2();
             txtNovaSenha = new WiLBiT.WiLBiTTextBox();
             SuspendLayout();
             // 
@@ -79,25 +79,25 @@
             lblNovaSenha.TabIndex = 9;
             lblNovaSenha.Text = "Nova Senha";
             // 
-            // btnSalvar
+            // btnSalvarNovoLoginSenha
             // 
-            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 22;
-            btnSalvar.BorderSize = 2;
-            btnSalvar.FlatAppearance.BorderSize = 0;
-            btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(243, 299);
-            btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(296, 47);
-            btnSalvar.TabIndex = 8;
-            btnSalvar.Text = "SALVAR";
-            btnSalvar.TextColor = Color.Black;
-            btnSalvar.UseVisualStyleBackColor = false;
-            btnSalvar.Click += btnSalvar_Click;
+            btnSalvarNovoLoginSenha.BackColor = Color.FromArgb(72, 116, 245);
+            btnSalvarNovoLoginSenha.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnSalvarNovoLoginSenha.BorderColor = Color.FromArgb(0, 242, 254);
+            btnSalvarNovoLoginSenha.BorderRadius = 22;
+            btnSalvarNovoLoginSenha.BorderSize = 2;
+            btnSalvarNovoLoginSenha.FlatAppearance.BorderSize = 0;
+            btnSalvarNovoLoginSenha.FlatStyle = FlatStyle.Flat;
+            btnSalvarNovoLoginSenha.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalvarNovoLoginSenha.ForeColor = Color.Black;
+            btnSalvarNovoLoginSenha.Location = new Point(243, 299);
+            btnSalvarNovoLoginSenha.Name = "btnSalvarNovoLoginSenha";
+            btnSalvarNovoLoginSenha.Size = new Size(296, 47);
+            btnSalvarNovoLoginSenha.TabIndex = 8;
+            btnSalvarNovoLoginSenha.Text = "SALVAR";
+            btnSalvarNovoLoginSenha.TextColor = Color.Black;
+            btnSalvarNovoLoginSenha.UseVisualStyleBackColor = false;
+            btnSalvarNovoLoginSenha.Click += btnSalvar_Click;
             // 
             // txtNovaSenha
             // 
@@ -130,8 +130,9 @@
             Controls.Add(lblNovoLogin);
             Controls.Add(txtNovoLogin);
             Controls.Add(lblNovaSenha);
-            Controls.Add(btnSalvar);
+            Controls.Add(btnSalvarNovoLoginSenha);
             Controls.Add(txtNovaSenha);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "NovoLoginSenha";
             Text = "PIXELogic - Sua visão, nossa programação!";
             Load += NovoLoginSenha_Load;
@@ -144,7 +145,7 @@
         private Label lblNovoLogin;
         private WiLBiT.WiLBiTTextBox txtNovoLogin;
         private Label lblNovaSenha;
-        private WiLBiT.WiLBiTButton2 btnSalvar;
+        private WiLBiT.WiLBiTButton2 btnSalvarNovoLoginSenha;
         private WiLBiT.WiLBiTTextBox txtNovaSenha;
     }
 }

@@ -31,7 +31,7 @@
             lblNomeCredenciais = new Label();
             txtNomeCredenciais = new WiLBiT.WiLBiTTextBox();
             lblCargoCredenciais = new Label();
-            btnAvançar = new WiLBiT.WiLBiTButton2();
+            btnAvançarCredenciais = new WiLBiT.WiLBiTButton2();
             txtCargoCredenciais = new WiLBiT.WiLBiTTextBox();
             lblSenhaCredenciais = new Label();
             txtSenhaCredenciais = new WiLBiT.WiLBiTTextBox();
@@ -83,24 +83,24 @@
             lblCargoCredenciais.TabIndex = 9;
             lblCargoCredenciais.Text = "Cargo:";
             // 
-            // btnAvançar
+            // btnAvançarCredenciais
             // 
-            btnAvançar.BackColor = Color.FromArgb(72, 116, 245);
-            btnAvançar.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnAvançar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnAvançar.BorderRadius = 22;
-            btnAvançar.BorderSize = 2;
-            btnAvançar.FlatAppearance.BorderSize = 0;
-            btnAvançar.FlatStyle = FlatStyle.Flat;
-            btnAvançar.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            btnAvançar.ForeColor = Color.Black;
-            btnAvançar.Location = new Point(229, 433);
-            btnAvançar.Name = "btnAvançar";
-            btnAvançar.Size = new Size(296, 47);
-            btnAvançar.TabIndex = 8;
-            btnAvançar.Text = "AVANÇAR";
-            btnAvançar.TextColor = Color.Black;
-            btnAvançar.UseVisualStyleBackColor = false;
+            btnAvançarCredenciais.BackColor = Color.FromArgb(72, 116, 245);
+            btnAvançarCredenciais.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnAvançarCredenciais.BorderColor = Color.FromArgb(0, 242, 254);
+            btnAvançarCredenciais.BorderRadius = 22;
+            btnAvançarCredenciais.BorderSize = 2;
+            btnAvançarCredenciais.FlatAppearance.BorderSize = 0;
+            btnAvançarCredenciais.FlatStyle = FlatStyle.Flat;
+            btnAvançarCredenciais.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            btnAvançarCredenciais.ForeColor = Color.Black;
+            btnAvançarCredenciais.Location = new Point(229, 433);
+            btnAvançarCredenciais.Name = "btnAvançarCredenciais";
+            btnAvançarCredenciais.Size = new Size(296, 47);
+            btnAvançarCredenciais.TabIndex = 8;
+            btnAvançarCredenciais.Text = "AVANÇAR";
+            btnAvançarCredenciais.TextColor = Color.Black;
+            btnAvançarCredenciais.UseVisualStyleBackColor = false;
             // 
             // txtCargoCredenciais
             // 
@@ -192,8 +192,9 @@
             Controls.Add(lblNomeCredenciais);
             Controls.Add(txtNomeCredenciais);
             Controls.Add(lblCargoCredenciais);
-            Controls.Add(btnAvançar);
+            Controls.Add(btnAvançarCredenciais);
             Controls.Add(txtCargoCredenciais);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "Credenciais";
             Text = "   ";
             ResumeLayout(false);
@@ -206,7 +207,7 @@
         private Label lblNomeCredenciais;
         private WiLBiT.WiLBiTTextBox txtNomeCredenciais;
         private Label lblCargoCredenciais;
-        private WiLBiT.WiLBiTButton2 btnAvançar;
+        private WiLBiT.WiLBiTButton2 btnAvançarCredenciais;
         private WiLBiT.WiLBiTTextBox txtCargoCredenciais;
         private Label lblSenhaCredenciais;
         private WiLBiT.WiLBiTTextBox txtSenhaCredenciais;
