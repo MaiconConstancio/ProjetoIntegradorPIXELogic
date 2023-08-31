@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ProjetoIntegradorPIXELogic
 {
-    public partial class Credenciais : Form
+    public partial class Form5 : Form
     {
-        public Credenciais()
+        public Form5()
         {
             InitializeComponent();
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
