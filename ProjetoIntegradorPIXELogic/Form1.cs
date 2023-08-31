@@ -13,11 +13,18 @@ namespace ProjetoIntegradorPIXELogic
             if(Conexao.campoVazio("Login",txtLogin) == false && Conexao.campoVazio("Senha",txtSenha) == false)
             {
 
-                if (Conexao.existe("email", txtLogin, 0) == true && Conexao.existe("senha", txtSenha, 0) == true)
+                if (Conexao.existe("email", txtLogin) == true && Conexao.existe("senha", txtSenha) == true)
                 {
 
                     Form3 form3 = new Form3();
                     form3.Show();
+
+                }
+
+                else
+                {
+
+                    MessageBox.Show("");
 
                 }
 

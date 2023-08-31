@@ -44,48 +44,22 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
-        public static Boolean existe(string campo, TextBox txt,int opcao)
+        public static Boolean existe(string campo, TextBox txt)
         {
 
-            string query = $"select {campo} from usuarios where {campo} = '{txt.Text}';";
+            string query = $"select * from usuarios where {campo} = '{txt.Text}';";
 
-            if(opcao == 1)
+            if (Conexao.executaQuery(query).Rows.Count > 0)
             {
 
-                if (Conexao.executaQuery(query).Rows.Count > 0)
-                {
-
-                    return true;
-
-                }
-
-                else
-                {
-
-                    MessageBox.Show($"Por favor digite um(a) {campo} novo(a).", $"{campo} já existente!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return false;
-
-                }
+                return true;
 
             }
 
             else
             {
 
-                if (Conexao.executaQuery(query).Rows.Count > 0)
-                {
-
-                    return true;
-
-                }
-
-                else
-                {
-
-                    MessageBox.Show($"Por favor digite um(a) {campo} válido(a).", $"{campo} não cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return false;
-
-                }
+                return false;
 
             }
 
