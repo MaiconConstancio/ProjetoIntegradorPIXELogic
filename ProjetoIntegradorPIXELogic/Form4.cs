@@ -8,13 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ProjetoIntegradorPIXELogic
+namespace ProjetoIntegrador
 {
-    public partial class Credenciais : Form
+    public partial class Form4 : Form
     {
-        public Credenciais()
+        public Form4()
         {
             InitializeComponent();
+        }
+
+        private void btnCerto_Click(object sender, EventArgs e)
+        {
+
+            Form5 areaTrabalho = new Form5();
+            areaTrabalho.Show();
+
         }
     }
 }
