@@ -8,7 +8,6 @@ namespace ProjetoIntegradorPIXELogic
         public Form1()
         {
             InitializeComponent();
-
         }
 
         private void btnEntra_Click(object sender, EventArgs e)
@@ -76,18 +75,18 @@ namespace ProjetoIntegradorPIXELogic
 
                     }
 
-                    else { MessageBox.Show($" Por favor digite uma senha válida!", $"Senha inválida!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                    else { MessageBox.Show($" Por favor digite uma senha vï¿½lida!", $"Senha invï¿½lida!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                 }
 
-                else { MessageBox.Show($" Por favor digite um login válido!", $"Login inválido!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                else { MessageBox.Show($" Por favor digite um login vï¿½lido!", $"Login invï¿½lido!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
             }
 
 
 
         }
-
+        
         private void Form1_Load(object sender, EventArgs e)
         {
 

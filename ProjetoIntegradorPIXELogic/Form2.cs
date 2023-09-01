@@ -16,7 +16,7 @@ namespace ProjetoIntegradorPIXELogic
         {
             InitializeComponent();
         }
-
+        
         public string armazenamentoLogin { get; set; }
         public string armazenamentoSenha { get; set; }
 
@@ -88,6 +88,7 @@ namespace ProjetoIntegradorPIXELogic
                 { MessageBox.Show("Insira um novo login", "login já existente!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
             }
+
 
         }
 
