@@ -17,20 +17,84 @@ namespace ProjetoIntegradorPIXELogic
             InitializeComponent();
         }
 
+        public string ArmazenaConfirmar { get; set; }
+        public string ArmazenaCancela { get; set; }
+
         private void btnAvançar_Click(object sender, EventArgs e)
         {
-            if(Conexao.campoVazio("nome",txtNome) == false && Conexao.campoVazio("Cargo", txtCargo) 
-                && Conexao.campoVazio("login", txtLogin) == false && Conexao.campoVazio("senha", txtSenha))
+
+            if (Auxiliares.verificaCampo("Nome", txtNome) == false && Auxiliares.verificaCampo("senha",txtSenha) == false)
             {
 
-                if (Conexao.existe("nome", txtNome, 1) == false && Conexao.existe("email", txtLogin, 1) == false
-                && Conexao.existe("senha", txtSenha, 1) == false)
+                if (Auxiliares.existe("nome", txtNome) == false) 
                 {
 
-                    string query = $"insert into usuarios (nome,empresa,email,senha) values ('{txtNome.Text}','{txtCargo.Text}','{txtLogin.Text}','{txtSenha.Textmmmmm}')";
-                    Conexao.executaQuery(query);
+                    if (Auxiliares.existe("senha", txtSenha) == false)
+                    {
+
+                        if (comboBoxCargo.Text == "Administrador do sistema")
+                        {
+
+                            Confirma confirma = new Confirma();
+                            confirma.ArmazenamentoLogin = $"{txtNome.Text}@Adm";
+                            confirma.ArmazenamentoSenha = $"{txtSenha.Text}";
+                            confirma.Show();
+
+                            if (this.ArmazenaConfirmar == "Confirmar")
+                            {
+
+                                string query = $"insert into usuarios (nome,empresa,email,senha,admin)" +
+                                $"values ('{txtNome.Text}', '{comboBoxCargo.Text}', '{txtNome.Text}@Adm', '{txtSenha.Text}', true)";
+
+                                Conexao.executaQuery(query);
+
+                                txtNome.Clear();
+                                txtSenha.Clear();
+                                comboBoxCargo.Items.Clear();
+                                confirma.Close();
+
+                            }
+
+                            else { }
+
+                            if(this.ArmazenaCancela == "Cancelar")
+                            {
+
+                                confirma.Close();
+                                txtNome.Clear();
+                                txtSenha.Clear();
+                                comboBoxCargo.Items.Clear();
+
+                            }
+
+                            else { }
+
+                        }
+
+                        else
+                        {
+
+
+
+                            string query = $"insert into usuarios (nome,empresa,email,senha,admin)" +
+                            $"values ('{txtNome.Text}', '{comboBoxCargo.Text}', '{txtNome.Text}@funcionario', '{txtSenha.Text}', false)";
+
+                            Conexao.executaQuery(query);
+
+
+                            txtSenha.Clear();
+                            txtNome.Clear();
+                            comboBoxCargo.Items.Clear();
+
+                        }
+
+                    }
+
+                    else { MessageBox.Show("Insira uma nova senha", "senha já existente!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                 }
+
+                else { MessageBox.Show("Insira uma novo nome", "Esse nome já existe!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
             }
 
@@ -39,12 +103,17 @@ namespace ProjetoIntegradorPIXELogic
         private void btnPular_Click(object sender, EventArgs e)
         {
 
-            Form4 escolhaFerramentas = new Form4();
-            escolhaFerramentas.Show();
+            /*Form4 funcoes = new Form4();
+            funcoes.Show();*/
 
         }
 
         private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }
