@@ -15,6 +15,35 @@ namespace ProjetoIntegradorPIXELogic
         public Confirma()
         {
             InitializeComponent();
+
+            txtLogin.Text = this.ArmazenamentoLogin;
+            txtSenha.Text = this.ArmazenamentoSenha;
+
         }
+
+        public string ArmazenamentoLogin { get; set; }
+        public string ArmazenamentoSenha { get; set; }
+
+
+        private void btnConfirmar_Click(object sender, EventArgs e)
+        {
+
+            Form3 form3 = new Form3();
+            form3.ArmazenaConfirmar = "Confirmar";
+
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+            Form3 form3 = new Form3();
+            form3.ArmazenaCancela = "Cancelar";
+
+
+
+        }
+
     }
+
 }

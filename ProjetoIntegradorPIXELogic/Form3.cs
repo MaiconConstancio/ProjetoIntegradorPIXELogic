@@ -17,6 +17,9 @@ namespace ProjetoIntegradorPIXELogic
             InitializeComponent();
         }
 
+        public string ArmazenaConfirmar { get; set; }
+        public string ArmazenaCancela { get; set; }
+
         private void btnAvançar_Click(object sender, EventArgs e)
         {
 
@@ -32,16 +35,39 @@ namespace ProjetoIntegradorPIXELogic
                         if (comboBoxCargo.Text == "Administrador do sistema")
                         {
 
-                            
+                            Confirma confirma = new Confirma();
+                            confirma.ArmazenamentoLogin = $"{txtNome.Text}@Adm";
+                            confirma.ArmazenamentoSenha = $"{txtSenha.Text}";
+                            confirma.Show();
 
-                            string query = $"insert into usuarios (nome,empresa,email,senha,admin)" +
-                            $"values ('{txtNome.Text}', '{comboBoxCargo.Text}', '{txtNome.Text}@Adm', '{txtSenha.Text}', true)";
+                            if (this.ArmazenaConfirmar == "Confirmar")
+                            {
 
-                            Conexao.executaQuery(query);
+                                string query = $"insert into usuarios (nome,empresa,email,senha,admin)" +
+                                $"values ('{txtNome.Text}', '{comboBoxCargo.Text}', '{txtNome.Text}@Adm', '{txtSenha.Text}', true)";
 
-                            txtNome.Clear();
-                            txtSenha.Clear();
-                            comboBoxCargo.Items.Clear();
+                                Conexao.executaQuery(query);
+
+                                txtNome.Clear();
+                                txtSenha.Clear();
+                                comboBoxCargo.Items.Clear();
+                                confirma.Close();
+
+                            }
+
+                            else { }
+
+                            if(this.ArmazenaCancela == "Cancelar")
+                            {
+
+                                confirma.Close();
+                                txtNome.Clear();
+                                txtSenha.Clear();
+                                comboBoxCargo.Items.Clear();
+
+                            }
+
+                            else { }
 
                         }
 
