@@ -27,7 +27,7 @@ namespace ProjetoIntegradorPIXELlogic
 
         }
 
-        public static Boolean verificaCampo(string campo ,TextBox txt1)
+        public static Boolean verificaCampo(string campo ,TextBox txt)
         {
 
             if (txt1.Text == "")
