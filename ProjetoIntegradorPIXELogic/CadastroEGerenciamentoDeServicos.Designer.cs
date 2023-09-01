@@ -164,7 +164,7 @@
             label1.Name = "label1";
             label1.Size = new Size(453, 32);
             label1.TabIndex = 20;
-            label1.Text = "Cadsatro e Gerenciamento de Serviços\r\n";
+            label1.Text = "Cadastro e Gerenciamento de Serviços\r\n";
             // 
             // label2
             // 
@@ -215,6 +215,7 @@
             Controls.Add(wilBitTextBox3);
             Controls.Add(wilBitTextBox2);
             Controls.Add(wilBitTextBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "CadastroEGerenciamentoDeServicos";
             Text = "CadastroEGerenciamentoDeServicos";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

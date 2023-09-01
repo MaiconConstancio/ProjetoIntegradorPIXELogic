@@ -286,6 +286,7 @@
             Controls.Add(wilBitTextBox1);
             Controls.Add(wilBitButton21);
             Controls.Add(btnSalvar);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "CadastroEGerenciamentoDeProdutos";
             Text = "PIXELogic - Sua Visão, Nossa Programação";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

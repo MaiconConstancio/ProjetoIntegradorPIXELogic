@@ -331,6 +331,7 @@
             Controls.Add(wilBitTextBox1);
             Controls.Add(label1);
             Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point);
+            FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(5);
             Name = "CadastroDeClientes";
             Text = "CadastroDeClientes";

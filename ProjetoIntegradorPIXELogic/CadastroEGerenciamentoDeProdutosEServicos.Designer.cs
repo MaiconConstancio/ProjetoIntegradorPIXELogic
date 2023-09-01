@@ -1,6 +1,6 @@
 ﻿namespace ProjetoIntegradorPIXELogic
 {
-    partial class CadastroEGerenciamentroDeProdutosEServicos
+    partial class CadastroEGerenciamentoDeProdutosEServicos
     {
         /// <summary>
         /// Required designer variable.
@@ -147,7 +147,7 @@
             label2.TabIndex = 21;
             label2.Text = "Cadastro E Gerenciamentro De Produtos E Servicos";
             // 
-            // CadastroEGerenciamentroDeProdutosEServicos
+            // CadastroEGerenciamentoDeProdutosEServicos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -160,7 +160,8 @@
             Controls.Add(wilBitButton21);
             Controls.Add(btnSalvar);
             Controls.Add(label1);
-            Name = "CadastroEGerenciamentroDeProdutosEServicos";
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "CadastroEGerenciamentoDeProdutosEServicos";
             Text = "Imprimir";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjetoIntegradorPIXELogic
 {
-    public partial class CadastroEGerenciamentroDeProdutosEServicos : Form
+    public partial class CadastroEGerenciamentoDeProdutosEServicos : Form
     {
-        public CadastroEGerenciamentroDeProdutosEServicos()
+        public CadastroEGerenciamentoDeProdutosEServicos()
         {
             InitializeComponent();
         }

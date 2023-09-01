@@ -167,6 +167,7 @@
             Controls.Add(btnSalvar);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "MetodoCompraDeCliente";
             Text = "MetodoCompraDeCliente";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
