@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetoIntegradorPIXELlogic
+namespace ProjetoIntegradorPIXELogic
 {
     internal class Auxiliares
     {
@@ -30,7 +30,7 @@ namespace ProjetoIntegradorPIXELlogic
         public static Boolean verificaCampo(string campo ,TextBox txt)
         {
 
-            if (txt1.Text == "")
+            if (txt.Text == "")
             {
 
                 MessageBox.Show($"Por favor digite um(a) {campo}!", $"Campo vázio!", MessageBoxButtons.OK, MessageBoxIcon.Error);

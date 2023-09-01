@@ -1,7 +1,7 @@
 using MySql.Data.MySqlClient;
 using System.Data;
 
-namespace ProjetoIntegradorPIXELlogic
+namespace ProjetoIntegradorPIXELogic
 {
     public partial class Form1 : Form
     {
@@ -14,7 +14,7 @@ namespace ProjetoIntegradorPIXELlogic
         private void btnEntra_Click(object sender, EventArgs e)
         {
 
-            if(Auxiliares.verificaCampo("email", txtLogin) == false &&
+            if (Auxiliares.verificaCampo("email", txtLogin) == false &&
             Auxiliares.verificaCampo("senha", txtSenha) == false)
             {
 
@@ -29,17 +29,48 @@ namespace ProjetoIntegradorPIXELlogic
                         if (Conexao.executaQuery(admin).Rows.Count > 0)
                         {
 
-                            Form1 form = new Form1();
-                            form.Show();
+                            string verifica = $"select * from usuarios where email = '{txtLogin.Text}' and recriouSenha = false;";
+
+                            if(Conexao.executaQuery(verifica).Rows.Count > 0)
+                            {
+
+                                Form2 form2 = new Form2();
+                                form2.armazenamentoLogin = txtLogin.Text;
+                                form2.armazenamentoSenha = txtSenha.Text;
+                                form2.Show();
+
+                            }
+                            
+                            else
+                            {
+
+                                /*form3*/
+
+                            }
 
                         }
 
                         else
                         {
 
-                            Form1 form = new Form1();
-                            form.Show();
-                            /*digite o form*/
+                            string verifica2 = $"select * from usuarios where email = '{txtLogin.Text}' and recriouSenha = false;";
+
+                            if (Conexao.executaQuery(verifica2).Rows.Count > 0)
+                            {
+
+                                Form2 form2 = new Form2();
+                                form2.armazenamentoLogin = txtLogin.Text;
+                                form2.armazenamentoSenha = txtSenha.Text;
+                                form2.Show();
+
+                            }
+
+                            else
+                            {
+
+                                /*form5*/
+
+                            }
 
                         }
 
@@ -52,11 +83,15 @@ namespace ProjetoIntegradorPIXELlogic
                 else { MessageBox.Show($" Por favor digite um login válido!", $"Login inválido!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
             }
-            
- 
+
+
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 
 }
