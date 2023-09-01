@@ -17,84 +17,93 @@ namespace ProjetoIntegradorPIXELogic
             InitializeComponent();
         }
 
-        public string ArmazenaConfirmar { get; set; }
-        public string ArmazenaCancela { get; set; }
+        public string confirmacao { get;set; }
 
         private void btnAvançar_Click(object sender, EventArgs e)
         {
 
-            if (Auxiliares.verificaCampo("Nome", txtNome) == false && Auxiliares.verificaCampo("senha",txtSenha) == false)
+            if (Auxiliares.verificaCampo("Nome", txtNome) == false && Auxiliares.verificaCampo("senha", txtSenha) == false)
             {
 
-                if (Auxiliares.existe("nome", txtNome) == false) 
+                if (comboBoxCargo.Text != "")
                 {
 
-                    if (Auxiliares.existe("senha", txtSenha) == false)
+                    if (Auxiliares.existe("nome", txtNome) == false)
                     {
 
-                        if (comboBoxCargo.Text == "Administrador do sistema")
+                        if (Auxiliares.existe("senha", txtSenha) == false)
                         {
 
-                            Confirma confirma = new Confirma();
-                            confirma.ArmazenamentoLogin = $"{txtNome.Text}@Adm";
-                            confirma.ArmazenamentoSenha = $"{txtSenha.Text}";
-                            confirma.Show();
+                            if (comboBoxCargo.Text == "Administrador do sistema")
+                            {
+                                Form6 form6 = new Form6();
+                                
+                                if (this.confirmacao == "ok")
+                                {
 
-                            if (this.ArmazenaConfirmar == "Confirmar")
+                                    if (MessageBox.Show($"Email: {txtNome.Text}@Adm \n\n Cargo: {comboBoxCargo.Text} \n\n Senha: {txtSenha.Text}", "Confirme o cadastro",
+                                        MessageBoxButtons.YesNo, MessageBoxIcon.None) == DialogResult.Yes)
+                                    {
+
+                                        string query = $"insert into usuarios (nome,empresa,email,senha,admin)" +
+                                       $"values ('{txtNome.Text}', '{comboBoxCargo.Text}', '{txtNome.Text}@Adm', '{txtSenha.Text}', true)";
+
+                                        Conexao.executaQuery(query);
+
+                                        txtNome.Clear();
+                                        txtSenha.Clear();
+                                        comboBoxCargo.Items.Clear();
+
+                                    }
+
+                                    else
+                                    {
+
+                                        txtNome.Clear();
+                                        txtSenha.Clear();
+                                        comboBoxCargo.Items.Clear();
+
+                                    }
+
+                                }
+
+                                else
+                                {
+
+                                    MessageBox.Show("Digite um login e senha válidos!","Acesso negado",MessageBoxButtons.OK,MessageBoxIcon.Error);
+
+                                }
+
+                            }
+
+                            else
                             {
 
+
+
                                 string query = $"insert into usuarios (nome,empresa,email,senha,admin)" +
-                                $"values ('{txtNome.Text}', '{comboBoxCargo.Text}', '{txtNome.Text}@Adm', '{txtSenha.Text}', true)";
+                                $"values ('{txtNome.Text}', '{comboBoxCargo.Text}', '{txtNome.Text}@funcionario', '{txtSenha.Text}', false)";
 
                                 Conexao.executaQuery(query);
 
-                                txtNome.Clear();
+
                                 txtSenha.Clear();
-                                comboBoxCargo.Items.Clear();
-                                confirma.Close();
-
-                            }
-
-                            else { }
-
-                            if(this.ArmazenaCancela == "Cancelar")
-                            {
-
-                                confirma.Close();
                                 txtNome.Clear();
-                                txtSenha.Clear();
                                 comboBoxCargo.Items.Clear();
 
                             }
 
-                            else { }
-
                         }
 
-                        else
-                        {
-
-
-
-                            string query = $"insert into usuarios (nome,empresa,email,senha,admin)" +
-                            $"values ('{txtNome.Text}', '{comboBoxCargo.Text}', '{txtNome.Text}@funcionario', '{txtSenha.Text}', false)";
-
-                            Conexao.executaQuery(query);
-
-
-                            txtSenha.Clear();
-                            txtNome.Clear();
-                            comboBoxCargo.Items.Clear();
-
-                        }
+                        else { MessageBox.Show("Insira uma nova senha", "senha já existente!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                     }
 
-                    else { MessageBox.Show("Insira uma nova senha", "senha já existente!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                    else { MessageBox.Show("Insira uma novo nome", "Esse nome já existe!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                 }
 
-                else { MessageBox.Show("Insira uma novo nome", "Esse nome já existe!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                else { MessageBox.Show($"Por favor selecione um cargo!", $"Campo vázio!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
             }
 

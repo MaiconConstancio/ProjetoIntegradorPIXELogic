@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             btnAvançar = new Button();
-            txtCargo = new TextBox();
             txtNome = new TextBox();
             label2 = new Label();
             label1 = new Label();
@@ -52,14 +51,6 @@
             btnAvançar.Text = "AVANÇAR";
             btnAvançar.UseVisualStyleBackColor = false;
             btnAvançar.Click += btnAvançar_Click;
-            // 
-            // txtCargo
-            // 
-            txtCargo.BackColor = Color.FromArgb(53, 81, 142);
-            txtCargo.Location = new Point(283, 197);
-            txtCargo.Name = "txtCargo";
-            txtCargo.Size = new Size(181, 23);
-            txtCargo.TabIndex = 13;
             // 
             // txtNome
             // 
@@ -167,7 +158,6 @@
             Controls.Add(label3);
             Controls.Add(txtSenha);
             Controls.Add(btnAvançar);
-            Controls.Add(txtCargo);
             Controls.Add(txtNome);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -181,7 +171,6 @@
         #endregion
 
         private Button btnAvançar;
-        private TextBox txtCargo;
         private TextBox txtNome;
         private Label label2;
         private Label label1;
