@@ -38,15 +38,14 @@
             label4 = new Label();
             label5 = new Label();
             btnPular = new Button();
-            label6 = new Label();
-            txtLogin = new TextBox();
+            comboBoxCargo = new ComboBox();
             SuspendLayout();
             // 
             // btnAvançar
             // 
             btnAvançar.BackColor = Color.FromArgb(0, 242, 254);
             btnAvançar.FlatStyle = FlatStyle.Flat;
-            btnAvançar.Location = new Point(283, 353);
+            btnAvançar.Location = new Point(283, 329);
             btnAvançar.Name = "btnAvançar";
             btnAvançar.Size = new Size(181, 23);
             btnAvançar.TabIndex = 14;
@@ -65,7 +64,7 @@
             // txtNome
             // 
             txtNome.BackColor = Color.FromArgb(53, 81, 142);
-            txtNome.Location = new Point(283, 136);
+            txtNome.Location = new Point(283, 163);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(181, 23);
             txtNome.TabIndex = 12;
@@ -95,7 +94,7 @@
             // txtSenha
             // 
             txtSenha.BackColor = Color.FromArgb(53, 81, 142);
-            txtSenha.Location = new Point(283, 289);
+            txtSenha.Location = new Point(283, 253);
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(181, 23);
             txtSenha.TabIndex = 15;
@@ -105,7 +104,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.White;
-            label3.Location = new Point(283, 118);
+            label3.Location = new Point(283, 145);
             label3.Name = "label3";
             label3.Size = new Size(41, 15);
             label3.TabIndex = 16;
@@ -116,7 +115,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.White;
-            label4.Location = new Point(283, 179);
+            label4.Location = new Point(283, 189);
             label4.Name = "label4";
             label4.Size = new Size(39, 15);
             label4.TabIndex = 17;
@@ -127,7 +126,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.White;
-            label5.Location = new Point(283, 271);
+            label5.Location = new Point(283, 235);
             label5.Name = "label5";
             label5.Size = new Size(41, 15);
             label5.TabIndex = 18;
@@ -145,24 +144,15 @@
             btnPular.UseVisualStyleBackColor = false;
             btnPular.Click += btnPular_Click;
             // 
-            // label6
+            // comboBoxCargo
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.White;
-            label6.Location = new Point(283, 227);
-            label6.Name = "label6";
-            label6.Size = new Size(34, 15);
-            label6.TabIndex = 21;
-            label6.Text = "login";
-            // 
-            // txtLogin
-            // 
-            txtLogin.BackColor = Color.FromArgb(53, 81, 142);
-            txtLogin.Location = new Point(283, 245);
-            txtLogin.Name = "txtLogin";
-            txtLogin.Size = new Size(181, 23);
-            txtLogin.TabIndex = 20;
+            comboBoxCargo.FormattingEnabled = true;
+            comboBoxCargo.Items.AddRange(new object[] { "Administrador do sistema", "funcionário" });
+            comboBoxCargo.Location = new Point(283, 206);
+            comboBoxCargo.Name = "comboBoxCargo";
+            comboBoxCargo.Size = new Size(180, 23);
+            comboBoxCargo.TabIndex = 20;
+            comboBoxCargo.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // Form3
             // 
@@ -170,8 +160,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(6, 10, 22);
             ClientSize = new Size(800, 450);
-            Controls.Add(label6);
-            Controls.Add(txtLogin);
+            Controls.Add(comboBoxCargo);
             Controls.Add(btnPular);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -201,7 +190,6 @@
         private Label label4;
         private Label label5;
         private Button btnPular;
-        private Label label6;
-        private TextBox txtLogin;
+        private ComboBox comboBoxCargo;
     }
 }
