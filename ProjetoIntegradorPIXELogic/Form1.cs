@@ -1,20 +1,19 @@
 using MySql.Data.MySqlClient;
 using System.Data;
 
-namespace ProjetoIntegradorPIXELlogic
+namespace ProjetoIntegradorPIXELogic
 {
     public partial class Form1 : Form
     {
         public Form1()
         {
             InitializeComponent();
-
         }
 
         private void btnEntra_Click(object sender, EventArgs e)
         {
-
-            if(Auxiliares.verificaCampo("email", txtLogin) == false &&
+        
+           if(Auxiliares.verificaCampo("email", txtLogin) == false &&
             Auxiliares.verificaCampo("senha", txtSenha) == false)
             {
 
@@ -45,11 +44,11 @@ namespace ProjetoIntegradorPIXELlogic
 
                     }
 
-                    else { MessageBox.Show($" Por favor digite uma senha válida!", $"Senha inválida!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                    else { MessageBox.Show($" Por favor digite uma senha vï¿½lida!", $"Senha invï¿½lida!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                 }
 
-                else { MessageBox.Show($" Por favor digite um login válido!", $"Login inválido!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                else { MessageBox.Show($" Por favor digite um login vï¿½lido!", $"Login invï¿½lido!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
             }
             
@@ -58,5 +57,3 @@ namespace ProjetoIntegradorPIXELlogic
         }
 
     }
-
-}

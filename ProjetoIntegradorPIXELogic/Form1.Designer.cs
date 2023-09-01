@@ -1,4 +1,5 @@
-﻿namespace ProjetoIntegradorPIXELlogic
+
+namespace ProjetoIntegradorPIXELogic
 {
     partial class Form1
     {
