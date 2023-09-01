@@ -1,4 +1,3 @@
-
 namespace ProjetoIntegradorPIXELogic
 {
     partial class Form1
@@ -123,6 +122,7 @@ namespace ProjetoIntegradorPIXELogic
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             ((System.ComponentModel.ISupportInitialize)pictureEscrita).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureLogo).EndInit();
             ResumeLayout(false);

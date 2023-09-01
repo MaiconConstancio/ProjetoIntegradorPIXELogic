@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetoIntegradorPIXELlogic
+namespace ProjetoIntegradorPIXELogic
 {
     public class Conexao
     {

@@ -1,4 +1,4 @@
-using ProjetoIntegradorPIXELlogic;
+using ProjetoIntegradorPIXELogic;
 
 namespace ProjetoIntegradorPIXELogic
 {

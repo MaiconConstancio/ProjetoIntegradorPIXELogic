@@ -1,4 +1,4 @@
-﻿namespace ProjetoIntegradorPIXELogic
+namespace ProjetoIntegradorPIXELogic
 {
     partial class Form2
     {
@@ -20,12 +20,6 @@
             base.Dispose(disposing);
         }
 
-        #region Windows Form Designer generated code
-
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             btnSalvar = new Button();
@@ -102,8 +96,6 @@
             ResumeLayout(false);
             PerformLayout();
         }
-
-        #endregion
 
         private Button btnSalvar;
         private TextBox txtNovaSenha;
