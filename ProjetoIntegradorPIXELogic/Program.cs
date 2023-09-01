@@ -1,3 +1,5 @@
+using ProjetoIntegradorPIXELlogic;
+
 namespace ProjetoIntegradorPIXELogic
 {
     internal static class Program

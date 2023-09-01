@@ -6,18 +6,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ProjetoIntegradorPIXELogic
-{ 
-    internal class Conexao
+namespace ProjetoIntegradorPIXELlogic
+{
+    public class Conexao
     {
 
-        const string host = "127.0.0.1";
+        const string host = "localhost";
+
         const string banco = "pixellogic_pi";
         const string usuario = "root";
         const string senha = "";
 
-        public static MySqlConnection connection =
-            new MySqlConnection($"Server={host};Database={banco};Uid={usuario};Pwd={senha};");
+        public static MySqlConnection connection = new MySqlConnection($"Server={host};Database={banco};Uid={usuario};Pwd={senha};");
+
 
         public static DataTable executaQuery(string query)
         {
@@ -47,65 +48,42 @@ namespace ProjetoIntegradorPIXELogic
         public static Boolean existe(string campo, TextBox txt,int opcao)
         {
 
-            string query = $"select {campo} from usuarios where {campo} = '{txt.Text}';";
+             string query = $"select {campo} from usuarios where {campo} = '{txt.Text}';";
 
-            if(opcao == 1)
+             if (Conexao.executaQuery(query).Rows.Count > 0)
+             {
+
+                 return true;
+
+             }
+
+             else
+             {
+
+                 MessageBox.Show($"Por favor digite um(a) {campo} novo(a).", $"{campo} já existente!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                 return false;
+
+             }
+
+ 
+         }
+
+            public static Boolean campoVazio(string campo, TextBox txt)
             {
 
-                if (Conexao.executaQuery(query).Rows.Count > 0)
-                {
+                 if (txt.Text == "")
+                 {
 
-                    return true;
+                      MessageBox.Show($"Digite um(a) {campo}!", "Campo vázio!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-                }
+                      return true;
 
-                else
-                {
+                 }
 
-                    MessageBox.Show($"Por favor digite um(a) {campo} novo(a).", $"{campo} já existente!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return false;
-
-                }
+                 else { return false; }
 
             }
-
-            else
-            {
-
-                if (Conexao.executaQuery(query).Rows.Count > 0)
-                {
-
-                    return true;
-
-                }
-
-                else
-                {
-
-                    MessageBox.Show($"Por favor digite um(a) {campo} válido(a).", $"{campo} não cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return false;
-
-                }
-
-            }
-
-        }
-
-        public static Boolean campoVazio(string campo, TextBox txt)
-        {
-
-            if (txt.Text == "")
-            {
-
-                MessageBox.Show($"Digite um(a) {campo}!", "Campo vázio!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                return true;
-
-            }
-
-            else { return false; }
-
-        }
-
+      
     }
+  
 }
