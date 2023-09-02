@@ -37,13 +37,16 @@ namespace ProjetoIntegradorPIXELogic
                                 form2.armazenamentoLogin = txtLogin.Text;
                                 form2.armazenamentoSenha = txtSenha.Text;
                                 form2.Show();
+                                this.Hide();
 
                             }
                             
                             else
                             {
 
-                                /*form3*/
+                                Form3 form3 = new Form3();
+                                form3.Show();
+                                this.Hide();
 
                             }
 
@@ -61,13 +64,16 @@ namespace ProjetoIntegradorPIXELogic
                                 form2.armazenamentoLogin = txtLogin.Text;
                                 form2.armazenamentoSenha = txtSenha.Text;
                                 form2.Show();
+                                this.Hide();
 
                             }
 
                             else
                             {
 
-                                /*form5*/
+                                Form5 form5 = new Form5();
+                                form5.Show();
+                                this.Hide();
 
                             }
 
