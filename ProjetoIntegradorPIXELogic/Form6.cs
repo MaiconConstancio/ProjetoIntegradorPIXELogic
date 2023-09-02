@@ -12,10 +12,19 @@ namespace ProjetoIntegradorPIXELogic
 {
     public partial class Form6 : Form
     {
-        public Form6()
+
+        Form3 form3;
+        
+        public Form6(Form3 form)
         {
+            
             InitializeComponent();
+            form3 = form;
+
         }
+        
+        //Funçoes
+
         public static Boolean Preguica(TextBox txtLogin, TextBox txtSenha)
         {
 
@@ -32,14 +41,17 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
+        //Eventos
+
         private void btnConfirmar_Click(object sender, EventArgs e)
         {
 
             if(Preguica(txtLogin,txtSenha) == true)
             {
 
-                Form3 form3 = new Form3();
-                form3.confirmacao = "ok";
+                this.Hide();
+                form3.Show();
+                form3.salvaInformacoesadm();
                 Close();
 
             }
@@ -47,8 +59,9 @@ namespace ProjetoIntegradorPIXELogic
             else
             {
 
-                Form3 form3 = new Form3();
-                form3.confirmacao = "cancel";
+                this.Hide();
+                form3.Show();
+                MessageBox.Show("Digite um login e senha de um desenvolvedor!","Conta inválida",MessageBoxButtons.OK,MessageBoxIcon.Error);
                 Close();
 
             }

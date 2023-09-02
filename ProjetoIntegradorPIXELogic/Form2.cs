@@ -66,6 +66,11 @@ namespace ProjetoIntegradorPIXELogic
                             string criacaoSenha = $"update usuarios set recriouSenha = true where email = '{txtNovoLogin.Text}';";
                             Conexao.executaQuery(criacaoSenha);
 
+                            Close();
+
+                            Form1 form1 = new Form1();
+                            form1.Show();
+
                         }
 
                         else
@@ -75,8 +80,6 @@ namespace ProjetoIntegradorPIXELogic
 
                         }
 
-                        txtNovoLogin.Clear();
-                        txtNovaSenha.Clear();
 
                     }
 
