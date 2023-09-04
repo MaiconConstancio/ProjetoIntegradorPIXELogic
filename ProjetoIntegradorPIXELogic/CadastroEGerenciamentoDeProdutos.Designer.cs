@@ -36,12 +36,12 @@
             wilBitTextBox4 = new WiLBiT.WiLBiTTextBox();
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
+            lblCodigo = new Label();
+            lblNomeDoProduto = new Label();
+            lblValor = new Label();
+            lblTempoParaTerminar = new Label();
             wilBitComboBox1 = new WiLBiT.WiLBiTComboBox();
-            label6 = new Label();
+            lblStatusDoProduto = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -192,49 +192,49 @@
             label1.TabIndex = 25;
             label1.Text = "Cadsatro e Gerenciamento de Produtos\r\n\r\n";
             // 
-            // label2
+            // lblCodigo
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(160, 245, 255);
-            label2.Location = new Point(45, 104);
-            label2.Name = "label2";
-            label2.Size = new Size(203, 30);
-            label2.TabIndex = 26;
-            label2.Text = "Código do Produto";
+            lblCodigo.AutoSize = true;
+            lblCodigo.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCodigo.ForeColor = Color.FromArgb(160, 245, 255);
+            lblCodigo.Location = new Point(45, 104);
+            lblCodigo.Name = "lblCodigo";
+            lblCodigo.Size = new Size(203, 30);
+            lblCodigo.TabIndex = 26;
+            lblCodigo.Text = "Código do Produto";
             // 
-            // label3
+            // lblNomeDoProduto
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(160, 245, 255);
-            label3.Location = new Point(365, 104);
-            label3.Name = "label3";
-            label3.Size = new Size(192, 30);
-            label3.TabIndex = 27;
-            label3.Text = "Nome do Produto";
+            lblNomeDoProduto.AutoSize = true;
+            lblNomeDoProduto.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNomeDoProduto.ForeColor = Color.FromArgb(160, 245, 255);
+            lblNomeDoProduto.Location = new Point(365, 104);
+            lblNomeDoProduto.Name = "lblNomeDoProduto";
+            lblNomeDoProduto.Size = new Size(192, 30);
+            lblNomeDoProduto.TabIndex = 27;
+            lblNomeDoProduto.Text = "Nome do Produto";
             // 
-            // label4
+            // lblValor
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(160, 245, 255);
-            label4.Location = new Point(688, 104);
-            label4.Name = "label4";
-            label4.Size = new Size(63, 30);
-            label4.TabIndex = 28;
-            label4.Text = "Valor";
+            lblValor.AutoSize = true;
+            lblValor.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblValor.ForeColor = Color.FromArgb(160, 245, 255);
+            lblValor.Location = new Point(688, 104);
+            lblValor.Name = "lblValor";
+            lblValor.Size = new Size(63, 30);
+            lblValor.TabIndex = 28;
+            lblValor.Text = "Valor";
             // 
-            // label5
+            // lblTempoParaTerminar
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.FromArgb(160, 245, 255);
-            label5.Location = new Point(45, 210);
-            label5.Name = "label5";
-            label5.Size = new Size(218, 30);
-            label5.TabIndex = 29;
-            label5.Text = "Tempo para terminar";
+            lblTempoParaTerminar.AutoSize = true;
+            lblTempoParaTerminar.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTempoParaTerminar.ForeColor = Color.FromArgb(160, 245, 255);
+            lblTempoParaTerminar.Location = new Point(45, 210);
+            lblTempoParaTerminar.Name = "lblTempoParaTerminar";
+            lblTempoParaTerminar.Size = new Size(218, 30);
+            lblTempoParaTerminar.TabIndex = 29;
+            lblTempoParaTerminar.Text = "Tempo para terminar";
             // 
             // wilBitComboBox1
             // 
@@ -255,16 +255,16 @@
             wilBitComboBox1.TabIndex = 31;
             wilBitComboBox1.Texts = "";
             // 
-            // label6
+            // lblStatusDoProduto
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.FromArgb(160, 245, 255);
-            label6.Location = new Point(365, 210);
-            label6.Name = "label6";
-            label6.Size = new Size(192, 30);
-            label6.TabIndex = 32;
-            label6.Text = "Status do produto";
+            lblStatusDoProduto.AutoSize = true;
+            lblStatusDoProduto.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblStatusDoProduto.ForeColor = Color.FromArgb(160, 245, 255);
+            lblStatusDoProduto.Location = new Point(365, 210);
+            lblStatusDoProduto.Name = "lblStatusDoProduto";
+            lblStatusDoProduto.Size = new Size(192, 30);
+            lblStatusDoProduto.TabIndex = 32;
+            lblStatusDoProduto.Text = "Status do produto";
             // 
             // CadastroEGerenciamentoDeProdutos
             // 
@@ -272,12 +272,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(label6);
+            Controls.Add(lblStatusDoProduto);
             Controls.Add(wilBitComboBox1);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(lblTempoParaTerminar);
+            Controls.Add(lblValor);
+            Controls.Add(lblNomeDoProduto);
+            Controls.Add(lblCodigo);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
             Controls.Add(wilBitTextBox4);
@@ -304,11 +304,11 @@
         private WiLBiT.WiLBiTTextBox wilBitTextBox4;
         private PictureBox pictureBox1;
         private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
+        private Label lblCodigo;
+        private Label lblNomeDoProduto;
+        private Label lblValor;
+        private Label lblTempoParaTerminar;
         private WiLBiT.WiLBiTComboBox wilBitComboBox1;
-        private Label label6;
+        private Label lblStatusDoProduto;
     }
 }

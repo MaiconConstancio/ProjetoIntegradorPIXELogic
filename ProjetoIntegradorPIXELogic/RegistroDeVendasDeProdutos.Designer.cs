@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             pictureBox1 = new PictureBox();
-            wilBitButton25 = new WiLBiT.WiLBiTButton2();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
+            btnVoltar = new WiLBiT.WiLBiTButton2();
+            lblCodigo = new Label();
+            lblProduto = new Label();
+            lblCliente = new Label();
+            lblValor = new Label();
+            lblAcao = new Label();
             label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -49,79 +49,79 @@
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
-            // wilBitButton25
+            // btnVoltar
             // 
-            wilBitButton25.BackColor = Color.FromArgb(72, 116, 245);
-            wilBitButton25.BackgroundColor = Color.FromArgb(72, 116, 245);
-            wilBitButton25.BorderColor = Color.FromArgb(0, 242, 254);
-            wilBitButton25.BorderRadius = 15;
-            wilBitButton25.BorderSize = 2;
-            wilBitButton25.FlatAppearance.BorderSize = 0;
-            wilBitButton25.FlatStyle = FlatStyle.Flat;
-            wilBitButton25.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            wilBitButton25.ForeColor = Color.Black;
-            wilBitButton25.Location = new Point(688, 12);
-            wilBitButton25.Name = "wilBitButton25";
-            wilBitButton25.Size = new Size(100, 30);
-            wilBitButton25.TabIndex = 26;
-            wilBitButton25.Text = "VOLTAR";
-            wilBitButton25.TextColor = Color.Black;
-            wilBitButton25.UseVisualStyleBackColor = false;
+            btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnVoltar.BorderRadius = 15;
+            btnVoltar.BorderSize = 2;
+            btnVoltar.FlatAppearance.BorderSize = 0;
+            btnVoltar.FlatStyle = FlatStyle.Flat;
+            btnVoltar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVoltar.ForeColor = Color.Black;
+            btnVoltar.Location = new Point(688, 12);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(100, 30);
+            btnVoltar.TabIndex = 26;
+            btnVoltar.Text = "VOLTAR";
+            btnVoltar.TextColor = Color.Black;
+            btnVoltar.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // lblCodigo
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(160, 245, 255);
-            label2.Location = new Point(12, 145);
-            label2.Name = "label2";
-            label2.Size = new Size(77, 25);
-            label2.TabIndex = 31;
-            label2.Text = "Código";
+            lblCodigo.AutoSize = true;
+            lblCodigo.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCodigo.ForeColor = Color.FromArgb(160, 245, 255);
+            lblCodigo.Location = new Point(12, 145);
+            lblCodigo.Name = "lblCodigo";
+            lblCodigo.Size = new Size(77, 25);
+            lblCodigo.TabIndex = 31;
+            lblCodigo.Text = "Código";
             // 
-            // label3
+            // lblProduto
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(160, 245, 255);
-            label3.Location = new Point(164, 145);
-            label3.Name = "label3";
-            label3.Size = new Size(87, 25);
-            label3.TabIndex = 32;
-            label3.Text = "Produto";
+            lblProduto.AutoSize = true;
+            lblProduto.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblProduto.ForeColor = Color.FromArgb(160, 245, 255);
+            lblProduto.Location = new Point(164, 145);
+            lblProduto.Name = "lblProduto";
+            lblProduto.Size = new Size(87, 25);
+            lblProduto.TabIndex = 32;
+            lblProduto.Text = "Produto";
             // 
-            // label4
+            // lblCliente
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(160, 245, 255);
-            label4.Location = new Point(348, 145);
-            label4.Name = "label4";
-            label4.Size = new Size(73, 25);
-            label4.TabIndex = 33;
-            label4.Text = "Cliente";
+            lblCliente.AutoSize = true;
+            lblCliente.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCliente.ForeColor = Color.FromArgb(160, 245, 255);
+            lblCliente.Location = new Point(348, 145);
+            lblCliente.Name = "lblCliente";
+            lblCliente.Size = new Size(73, 25);
+            lblCliente.TabIndex = 33;
+            lblCliente.Text = "Cliente";
             // 
-            // label5
+            // lblValor
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.FromArgb(160, 245, 255);
-            label5.Location = new Point(532, 145);
-            label5.Name = "label5";
-            label5.Size = new Size(59, 25);
-            label5.TabIndex = 34;
-            label5.Text = "Valor";
+            lblValor.AutoSize = true;
+            lblValor.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblValor.ForeColor = Color.FromArgb(160, 245, 255);
+            lblValor.Location = new Point(532, 145);
+            lblValor.Name = "lblValor";
+            lblValor.Size = new Size(59, 25);
+            lblValor.TabIndex = 34;
+            lblValor.Text = "Valor";
             // 
-            // label6
+            // lblAcao
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.FromArgb(160, 245, 255);
-            label6.Location = new Point(709, 145);
-            label6.Name = "label6";
-            label6.Size = new Size(56, 25);
-            label6.TabIndex = 35;
-            label6.Text = "Ação";
+            lblAcao.AutoSize = true;
+            lblAcao.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAcao.ForeColor = Color.FromArgb(160, 245, 255);
+            lblAcao.Location = new Point(709, 145);
+            lblAcao.Name = "lblAcao";
+            lblAcao.Size = new Size(56, 25);
+            lblAcao.TabIndex = 35;
+            lblAcao.Text = "Ação";
             // 
             // label1
             // 
@@ -141,12 +141,12 @@
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
             Controls.Add(label1);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(wilBitButton25);
+            Controls.Add(lblAcao);
+            Controls.Add(lblValor);
+            Controls.Add(lblCliente);
+            Controls.Add(lblProduto);
+            Controls.Add(lblCodigo);
+            Controls.Add(btnVoltar);
             Controls.Add(pictureBox1);
             Name = "RegistroDeVendasDeProdutos";
             Text = "RegistroDeVendasDeProdutos";
@@ -158,12 +158,12 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private WiLBiT.WiLBiTButton2 wilBitButton25;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
+        private WiLBiT.WiLBiTButton2 btnVoltar;
+        private Label lblCodigo;
+        private Label lblProduto;
+        private Label lblCliente;
+        private Label lblValor;
+        private Label lblAcao;
         private Label label1;
     }
 }

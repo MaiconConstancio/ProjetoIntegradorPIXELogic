@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjetoIntegradorPIXELogic
 {
-    public partial class MetodoCompraDeCliente : Form
+    public partial class FormaDePagamentoCliente : Form
     {
-        public MetodoCompraDeCliente()
+        public FormaDePagamentoCliente()
         {
             InitializeComponent();
         }

@@ -28,55 +28,55 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnSalvar = new WiLBiT.WiLBiTButton2();
-            wilBitButton25 = new WiLBiT.WiLBiTButton2();
+            btnImprimir = new WiLBiT.WiLBiTButton2();
+            btnVoltar = new WiLBiT.WiLBiTButton2();
             pictureBox1 = new PictureBox();
             label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
+            lblCodigo = new Label();
+            lblProduto = new Label();
+            lblCliente = new Label();
+            lblValor = new Label();
+            lblAcao = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // btnSalvar
+            // btnImprimir
             // 
-            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 15;
-            btnSalvar.BorderSize = 2;
-            btnSalvar.FlatAppearance.BorderSize = 0;
-            btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(12, 408);
-            btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(97, 30);
-            btnSalvar.TabIndex = 24;
-            btnSalvar.Text = "IMPRIMIR";
-            btnSalvar.TextColor = Color.Black;
-            btnSalvar.UseVisualStyleBackColor = false;
+            btnImprimir.BackColor = Color.FromArgb(72, 116, 245);
+            btnImprimir.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnImprimir.BorderColor = Color.FromArgb(0, 242, 254);
+            btnImprimir.BorderRadius = 15;
+            btnImprimir.BorderSize = 2;
+            btnImprimir.FlatAppearance.BorderSize = 0;
+            btnImprimir.FlatStyle = FlatStyle.Flat;
+            btnImprimir.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnImprimir.ForeColor = Color.Black;
+            btnImprimir.Location = new Point(12, 408);
+            btnImprimir.Name = "btnImprimir";
+            btnImprimir.Size = new Size(97, 30);
+            btnImprimir.TabIndex = 24;
+            btnImprimir.Text = "IMPRIMIR";
+            btnImprimir.TextColor = Color.Black;
+            btnImprimir.UseVisualStyleBackColor = false;
             // 
-            // wilBitButton25
+            // btnVoltar
             // 
-            wilBitButton25.BackColor = Color.FromArgb(72, 116, 245);
-            wilBitButton25.BackgroundColor = Color.FromArgb(72, 116, 245);
-            wilBitButton25.BorderColor = Color.FromArgb(0, 242, 254);
-            wilBitButton25.BorderRadius = 15;
-            wilBitButton25.BorderSize = 2;
-            wilBitButton25.FlatAppearance.BorderSize = 0;
-            wilBitButton25.FlatStyle = FlatStyle.Flat;
-            wilBitButton25.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            wilBitButton25.ForeColor = Color.Black;
-            wilBitButton25.Location = new Point(688, 12);
-            wilBitButton25.Name = "wilBitButton25";
-            wilBitButton25.Size = new Size(100, 30);
-            wilBitButton25.TabIndex = 25;
-            wilBitButton25.Text = "VOLTAR";
-            wilBitButton25.TextColor = Color.Black;
-            wilBitButton25.UseVisualStyleBackColor = false;
+            btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnVoltar.BorderRadius = 15;
+            btnVoltar.BorderSize = 2;
+            btnVoltar.FlatAppearance.BorderSize = 0;
+            btnVoltar.FlatStyle = FlatStyle.Flat;
+            btnVoltar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVoltar.ForeColor = Color.Black;
+            btnVoltar.Location = new Point(688, 12);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(100, 30);
+            btnVoltar.TabIndex = 25;
+            btnVoltar.Text = "VOLTAR";
+            btnVoltar.TextColor = Color.Black;
+            btnVoltar.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -99,60 +99,60 @@
             label1.TabIndex = 27;
             label1.Text = "Acompanhameto de serviços\r\n";
             // 
-            // label2
+            // lblCodigo
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(160, 245, 255);
-            label2.Location = new Point(12, 141);
-            label2.Name = "label2";
-            label2.Size = new Size(77, 25);
-            label2.TabIndex = 30;
-            label2.Text = "Código";
+            lblCodigo.AutoSize = true;
+            lblCodigo.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCodigo.ForeColor = Color.FromArgb(160, 245, 255);
+            lblCodigo.Location = new Point(12, 141);
+            lblCodigo.Name = "lblCodigo";
+            lblCodigo.Size = new Size(77, 25);
+            lblCodigo.TabIndex = 30;
+            lblCodigo.Text = "Código";
             // 
-            // label3
+            // lblProduto
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(160, 245, 255);
-            label3.Location = new Point(158, 141);
-            label3.Name = "label3";
-            label3.Size = new Size(87, 25);
-            label3.TabIndex = 31;
-            label3.Text = "Produto";
+            lblProduto.AutoSize = true;
+            lblProduto.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblProduto.ForeColor = Color.FromArgb(160, 245, 255);
+            lblProduto.Location = new Point(158, 141);
+            lblProduto.Name = "lblProduto";
+            lblProduto.Size = new Size(87, 25);
+            lblProduto.TabIndex = 31;
+            lblProduto.Text = "Produto";
             // 
-            // label4
+            // lblCliente
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(160, 245, 255);
-            label4.Location = new Point(345, 141);
-            label4.Name = "label4";
-            label4.Size = new Size(73, 25);
-            label4.TabIndex = 32;
-            label4.Text = "Cliente";
+            lblCliente.AutoSize = true;
+            lblCliente.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCliente.ForeColor = Color.FromArgb(160, 245, 255);
+            lblCliente.Location = new Point(345, 141);
+            lblCliente.Name = "lblCliente";
+            lblCliente.Size = new Size(73, 25);
+            lblCliente.TabIndex = 32;
+            lblCliente.Text = "Cliente";
             // 
-            // label5
+            // lblValor
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.FromArgb(160, 245, 255);
-            label5.Location = new Point(523, 141);
-            label5.Name = "label5";
-            label5.Size = new Size(59, 25);
-            label5.TabIndex = 33;
-            label5.Text = "Valor";
+            lblValor.AutoSize = true;
+            lblValor.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblValor.ForeColor = Color.FromArgb(160, 245, 255);
+            lblValor.Location = new Point(523, 141);
+            lblValor.Name = "lblValor";
+            lblValor.Size = new Size(59, 25);
+            lblValor.TabIndex = 33;
+            lblValor.Text = "Valor";
             // 
-            // label6
+            // lblAcao
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.FromArgb(160, 245, 255);
-            label6.Location = new Point(700, 141);
-            label6.Name = "label6";
-            label6.Size = new Size(56, 25);
-            label6.TabIndex = 34;
-            label6.Text = "Ação";
+            lblAcao.AutoSize = true;
+            lblAcao.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblAcao.ForeColor = Color.FromArgb(160, 245, 255);
+            lblAcao.Location = new Point(700, 141);
+            lblAcao.Name = "lblAcao";
+            lblAcao.Size = new Size(56, 25);
+            lblAcao.TabIndex = 34;
+            lblAcao.Text = "Ação";
             // 
             // AcompanhamentoDeServicos
             // 
@@ -160,15 +160,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
+            Controls.Add(lblAcao);
+            Controls.Add(lblValor);
+            Controls.Add(lblCliente);
+            Controls.Add(lblProduto);
+            Controls.Add(lblCodigo);
             Controls.Add(label1);
             Controls.Add(pictureBox1);
-            Controls.Add(wilBitButton25);
-            Controls.Add(btnSalvar);
+            Controls.Add(btnVoltar);
+            Controls.Add(btnImprimir);
             Name = "AcompanhamentoDeServicos";
             Text = "AcompanhamentoDeServicos";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -178,14 +178,14 @@
 
         #endregion
 
-        private WiLBiT.WiLBiTButton2 btnSalvar;
-        private WiLBiT.WiLBiTButton2 wilBitButton25;
+        private WiLBiT.WiLBiTButton2 btnImprimir;
+        private WiLBiT.WiLBiTButton2 btnVoltar;
         private PictureBox pictureBox1;
         private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
+        private Label lblCodigo;
+        private Label lblProduto;
+        private Label lblCliente;
+        private Label lblValor;
+        private Label lblAcao;
     }
 }

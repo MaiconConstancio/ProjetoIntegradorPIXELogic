@@ -1,6 +1,6 @@
 ﻿namespace ProjetoIntegradorPIXELogic
 {
-    partial class MetodoCompraDeCliente
+    partial class FormaDePagamentoCliente
     {
         /// <summary>
         /// Required designer variable.

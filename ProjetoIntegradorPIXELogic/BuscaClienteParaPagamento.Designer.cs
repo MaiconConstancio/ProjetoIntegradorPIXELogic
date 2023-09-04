@@ -28,54 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            wilBitTextBox2 = new WiLBiT.WiLBiTTextBox();
-            wilBitButton25 = new WiLBiT.WiLBiTButton2();
+            txtNomeESobrenome = new WiLBiT.WiLBiTTextBox();
+            btnVoltar = new WiLBiT.WiLBiTButton2();
             pictureBox1 = new PictureBox();
             lblNovoLogin = new Label();
             label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // wilBitTextBox2
+            // txtNomeESobrenome
             // 
-            wilBitTextBox2.BackColor = Color.FromArgb(53, 81, 142);
-            wilBitTextBox2.BorderColor = Color.FromArgb(0, 242, 254);
-            wilBitTextBox2.BorderFocusColor = Color.DeepSkyBlue;
-            wilBitTextBox2.BorderRadius = 15;
-            wilBitTextBox2.BorderSize = 2;
-            wilBitTextBox2.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox2.ForeColor = Color.FromArgb(160, 245, 255);
-            wilBitTextBox2.Location = new Point(226, 228);
-            wilBitTextBox2.Margin = new Padding(4);
-            wilBitTextBox2.Multiline = false;
-            wilBitTextBox2.Name = "wilBitTextBox2";
-            wilBitTextBox2.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox2.PasswordChar = false;
-            wilBitTextBox2.PlaceholderColor = Color.DarkGray;
-            wilBitTextBox2.PlaceholderText = "";
-            wilBitTextBox2.Size = new Size(344, 33);
-            wilBitTextBox2.TabIndex = 3;
-            wilBitTextBox2.Texts = "";
-            wilBitTextBox2.UnderlinedStyle = false;
+            txtNomeESobrenome.BackColor = Color.FromArgb(53, 81, 142);
+            txtNomeESobrenome.BorderColor = Color.FromArgb(0, 242, 254);
+            txtNomeESobrenome.BorderFocusColor = Color.DeepSkyBlue;
+            txtNomeESobrenome.BorderRadius = 15;
+            txtNomeESobrenome.BorderSize = 2;
+            txtNomeESobrenome.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNomeESobrenome.ForeColor = Color.FromArgb(160, 245, 255);
+            txtNomeESobrenome.Location = new Point(226, 228);
+            txtNomeESobrenome.Margin = new Padding(4);
+            txtNomeESobrenome.Multiline = false;
+            txtNomeESobrenome.Name = "txtNomeESobrenome";
+            txtNomeESobrenome.Padding = new Padding(10, 7, 10, 7);
+            txtNomeESobrenome.PasswordChar = false;
+            txtNomeESobrenome.PlaceholderColor = Color.DarkGray;
+            txtNomeESobrenome.PlaceholderText = "";
+            txtNomeESobrenome.Size = new Size(344, 33);
+            txtNomeESobrenome.TabIndex = 3;
+            txtNomeESobrenome.Texts = "";
+            txtNomeESobrenome.UnderlinedStyle = false;
             // 
-            // wilBitButton25
+            // btnVoltar
             // 
-            wilBitButton25.BackColor = Color.FromArgb(72, 116, 245);
-            wilBitButton25.BackgroundColor = Color.FromArgb(72, 116, 245);
-            wilBitButton25.BorderColor = Color.FromArgb(0, 242, 254);
-            wilBitButton25.BorderRadius = 15;
-            wilBitButton25.BorderSize = 2;
-            wilBitButton25.FlatAppearance.BorderSize = 0;
-            wilBitButton25.FlatStyle = FlatStyle.Flat;
-            wilBitButton25.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            wilBitButton25.ForeColor = Color.Black;
-            wilBitButton25.Location = new Point(688, 12);
-            wilBitButton25.Name = "wilBitButton25";
-            wilBitButton25.Size = new Size(100, 30);
-            wilBitButton25.TabIndex = 21;
-            wilBitButton25.Text = "VOLTAR";
-            wilBitButton25.TextColor = Color.Black;
-            wilBitButton25.UseVisualStyleBackColor = false;
+            btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnVoltar.BorderRadius = 15;
+            btnVoltar.BorderSize = 2;
+            btnVoltar.FlatAppearance.BorderSize = 0;
+            btnVoltar.FlatStyle = FlatStyle.Flat;
+            btnVoltar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVoltar.ForeColor = Color.Black;
+            btnVoltar.Location = new Point(688, 12);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(100, 30);
+            btnVoltar.TabIndex = 21;
+            btnVoltar.Text = "VOLTAR";
+            btnVoltar.TextColor = Color.Black;
+            btnVoltar.UseVisualStyleBackColor = false;
             // 
             // pictureBox1
             // 
@@ -118,8 +118,8 @@
             Controls.Add(label1);
             Controls.Add(lblNovoLogin);
             Controls.Add(pictureBox1);
-            Controls.Add(wilBitButton25);
-            Controls.Add(wilBitTextBox2);
+            Controls.Add(btnVoltar);
+            Controls.Add(txtNomeESobrenome);
             FormBorderStyle = FormBorderStyle.None;
             Name = "BuscaClienteParaPagamento";
             Text = "BuscaClienteParaPagamento";
@@ -129,8 +129,8 @@
         }
 
         #endregion
-        private WiLBiT.WiLBiTTextBox wilBitTextBox2;
-        private WiLBiT.WiLBiTButton2 wilBitButton25;
+        private WiLBiT.WiLBiTTextBox txtNomeESobrenome;
+        private WiLBiT.WiLBiTButton2 btnVoltar;
         private PictureBox pictureBox1;
         private Label lblNovoLogin;
         private Label label1;
