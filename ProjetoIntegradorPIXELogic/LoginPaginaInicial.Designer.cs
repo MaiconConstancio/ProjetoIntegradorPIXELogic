@@ -165,7 +165,7 @@
             ForeColor = Color.FromArgb(16, 25, 56);
             FormBorderStyle = FormBorderStyle.None;
             Name = "LoginPaginaInicial";
-            Text = "PIXELogic - Sua visão, nossa programação!";
+            Text = " ";
             TransparencyKey = Color.Transparent;
             Load += LoginPaginaInicial_Load;
             ((System.ComponentModel.ISupportInitialize)imgLogoESCRITALoginPaginaInicial).EndInit();

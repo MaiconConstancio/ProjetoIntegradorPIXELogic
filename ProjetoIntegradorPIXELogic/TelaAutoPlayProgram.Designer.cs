@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
+            PainelPrincipalParaTelas = new Panel();
             SuspendLayout();
             // 
-            // panel1
+            // PainelPrincipalParaTelas
             // 
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(805, 455);
-            panel1.TabIndex = 0;
+            PainelPrincipalParaTelas.Location = new Point(0, 0);
+            PainelPrincipalParaTelas.Name = "PainelPrincipalParaTelas";
+            PainelPrincipalParaTelas.Size = new Size(805, 455);
+            PainelPrincipalParaTelas.TabIndex = 0;
             // 
             // TelaAutoPlayProgram
             // 
@@ -44,7 +44,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(panel1);
+            Controls.Add(PainelPrincipalParaTelas);
             Name = "TelaAutoPlayProgram";
             Text = "PIXELogic - Sua visão, Nossa programação";
             ResumeLayout(false);
@@ -52,6 +52,6 @@
 
         #endregion
 
-        private Panel panel1;
+        private Panel PainelPrincipalParaTelas;
     }
 }
