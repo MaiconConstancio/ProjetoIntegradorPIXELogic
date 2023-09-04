@@ -1,6 +1,10 @@
-﻿namespace ProjetoIntegradorPIXELogic
+﻿using static System.Net.Mime.MediaTypeNames;
+using System.Windows.Forms;
+using System.Xml.Linq;
+
+namespace ProjetoIntegradorPIXELogic
 {
-    partial class LoginPaginaInicial
+    partial class TelaLoginPaginaInicial
     {
         /// <summary>
         ///  Required designer variable.
@@ -60,7 +64,6 @@
             txtSenha.TabIndex = 0;
             txtSenha.Texts = "";
             txtSenha.UnderlinedStyle = false;
-            txtSenha._TextChanged += txtSenha__TextChanged;
             // 
             // btnEntra
             // 
@@ -80,7 +83,6 @@
             btnEntra.Text = "ENTRAR";
             btnEntra.TextColor = Color.Black;
             btnEntra.UseVisualStyleBackColor = false;
-            btnEntra.Click += btnEntra_Click;
             // 
             // lblSenha
             // 
@@ -92,7 +94,6 @@
             lblSenha.Size = new Size(94, 37);
             lblSenha.TabIndex = 4;
             lblSenha.Text = "Senha";
-            lblSenha.Click += lblSenha_Click;
             // 
             // lblLogin
             // 
@@ -104,7 +105,6 @@
             lblLogin.Size = new Size(89, 37);
             lblLogin.TabIndex = 6;
             lblLogin.Text = "Login";
-            lblLogin.Click += lblLogin_Click;
             // 
             // txtLogin
             // 
@@ -127,7 +127,6 @@
             txtLogin.TabIndex = 5;
             txtLogin.Texts = "";
             txtLogin.UnderlinedStyle = false;
-            txtLogin._TextChanged += txtLogin__TextChanged;
             // 
             // imgLogoESCRITALoginPaginaInicial
             // 
@@ -167,7 +166,6 @@
             Name = "LoginPaginaInicial";
             Text = " ";
             TransparencyKey = Color.Transparent;
-            Load += LoginPaginaInicial_Load;
             ((System.ComponentModel.ISupportInitialize)imgLogoESCRITALoginPaginaInicial).EndInit();
             ((System.ComponentModel.ISupportInitialize)imgLogoLoginPaginaInicial).EndInit();
             ResumeLayout(false);

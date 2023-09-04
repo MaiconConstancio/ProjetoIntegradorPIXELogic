@@ -1,6 +1,10 @@
-﻿namespace ProjetoIntegradorPIXELogic
+﻿using static System.Net.Mime.MediaTypeNames;
+using System.Windows.Forms;
+using System.Xml.Linq;
+
+namespace ProjetoIntegradorPIXELogic
 {
-    partial class Credenciais
+    partial class TelaCredenciais
     {
         /// <summary>
         /// Required designer variable.

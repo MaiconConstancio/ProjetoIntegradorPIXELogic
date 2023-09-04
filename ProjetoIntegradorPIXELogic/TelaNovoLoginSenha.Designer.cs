@@ -1,6 +1,10 @@
-﻿namespace ProjetoIntegradorPIXELogic
+﻿using static System.Net.Mime.MediaTypeNames;
+using System.Windows.Forms;
+using System.Xml.Linq;
+
+namespace ProjetoIntegradorPIXELogic
 {
-    partial class NovoLoginSenha
+    partial class TelaNovoLoginSenha
     {
         /// <summary>
         /// Required designer variable.
@@ -97,7 +101,6 @@
             btnSalvarNovoLoginSenha.Text = "SALVAR";
             btnSalvarNovoLoginSenha.TextColor = Color.Black;
             btnSalvarNovoLoginSenha.UseVisualStyleBackColor = false;
-            btnSalvarNovoLoginSenha.Click += btnSalvar_Click;
             // 
             // txtNovaSenha
             // 
@@ -135,7 +138,6 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "NovoLoginSenha";
             Text = "PIXELogic - Sua visão, nossa programação!";
-            Load += NovoLoginSenha_Load;
             ResumeLayout(false);
             PerformLayout();
         }
