@@ -17,10 +17,10 @@ namespace ProjetoIntegradorPIXELogic
             Auxiliares.verificaCampo("senha", txtSenha) == false)
             {
 
-                if (Auxiliares.existe("email", txtLogin) == true)
+                if (Auxiliares.existe("usuarios","email", txtLogin) == true)
                 {
 
-                    if (Auxiliares.existe("senha", txtSenha) == true)
+                    if (Auxiliares.existe("usuarios","senha", txtSenha) == true)
                     {
 
                         string admin = $"select email,admin from usuarios where email = '{txtLogin.Text}' and admin = true;";

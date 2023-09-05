@@ -54,7 +54,7 @@ namespace ProjetoIntegradorPIXELogic
 
                 }
 
-                else { MessageBox.Show("Por favor informe o status do serviço!","Campo vázio",MessageBoxButtons.OK,MessageBoxIcon.Error)}
+                else { MessageBox.Show("Por favor informe o status do serviço!", "Campo vázio", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
             }
 
