@@ -36,6 +36,7 @@
             txtValor = new TextBox();
             label3 = new Label();
             btnEditar = new Button();
+            btnSalvar = new Button();
             SuspendLayout();
             // 
             // btnVoltar
@@ -46,6 +47,7 @@
             btnVoltar.TabIndex = 0;
             btnVoltar.Text = "Voltar";
             btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // label1
             // 
@@ -104,11 +106,22 @@
             btnEditar.Text = "Editar";
             btnEditar.UseVisualStyleBackColor = true;
             // 
+            // btnSalvar
+            // 
+            btnSalvar.Location = new Point(713, 415);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(75, 23);
+            btnSalvar.TabIndex = 8;
+            btnSalvar.Text = "Salvar";
+            btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += btnSalvar_Click;
+            // 
             // Form10
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSalvar);
             Controls.Add(btnEditar);
             Controls.Add(txtValor);
             Controls.Add(label3);
@@ -133,5 +146,6 @@
         private TextBox txtValor;
         private Label label3;
         private Button btnEditar;
+        private Button btnSalvar;
     }
 }
