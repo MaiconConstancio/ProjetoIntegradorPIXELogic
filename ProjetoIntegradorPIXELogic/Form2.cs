@@ -26,10 +26,10 @@ namespace ProjetoIntegradorPIXELogic
             if(Auxiliares.verificaCampo("email",txtNovoLogin) == false && Auxiliares.verificaCampo("senha",txtNovaSenha) == false)
             {
 
-                if (Auxiliares.existe("email", txtNovoLogin) == false)
+                if (Auxiliares.existe("usuarios", "email", txtNovoLogin) == false)
                 {
 
-                    if (Auxiliares.existe("senha", txtNovaSenha) == false)
+                    if (Auxiliares.existe("usuarios", "senha", txtNovaSenha) == false)
                     {
 
                         //login

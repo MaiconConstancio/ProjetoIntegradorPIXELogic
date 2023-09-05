@@ -88,10 +88,10 @@ namespace ProjetoIntegradorPIXELogic
                 if (comboBoxCargo.Text != "")
                 {
 
-                    if (Auxiliares.existe("nome", txtNome) == false)
+                    if (Auxiliares.existe("usuarios", "nome", txtNome) == false)
                     {
 
-                        if (Auxiliares.existe("senha", txtSenha) == false)
+                        if (Auxiliares.existe("usuarios", "senha", txtSenha) == false)
                         {
 
                             if (comboBoxCargo.Text == "Administrador do sistema")
