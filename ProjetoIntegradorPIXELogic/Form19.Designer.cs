@@ -28,12 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form19";
+            btnVoltar = new Button();
+            btnContato = new Button();
+            SuspendLayout();
+            // 
+            // btnVoltar
+            // 
+            btnVoltar.Location = new Point(713, 12);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(75, 23);
+            btnVoltar.TabIndex = 0;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = true;
+            // 
+            // btnContato
+            // 
+            btnContato.Location = new Point(317, 328);
+            btnContato.Name = "btnContato";
+            btnContato.Size = new Size(119, 23);
+            btnContato.TabIndex = 1;
+            btnContato.Text = "Entrar em contato";
+            btnContato.UseVisualStyleBackColor = true;
+            // 
+            // Form19
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btnContato);
+            Controls.Add(btnVoltar);
+            Name = "Form19";
+            Text = "Form19";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnVoltar;
+        private Button btnContato;
     }
 }

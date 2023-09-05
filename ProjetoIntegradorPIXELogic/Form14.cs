@@ -16,5 +16,10 @@ namespace ProjetoIntegradorPIXELogic
         {
             InitializeComponent();
         }
+
+        private void Form14_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

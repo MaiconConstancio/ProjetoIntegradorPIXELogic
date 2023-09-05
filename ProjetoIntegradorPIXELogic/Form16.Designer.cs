@@ -28,12 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form16";
+            btnVoltar = new Button();
+            btnImprimir = new Button();
+            btnSalvar = new Button();
+            panel1 = new Panel();
+            SuspendLayout();
+            // 
+            // btnVoltar
+            // 
+            btnVoltar.Location = new Point(713, 12);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(75, 23);
+            btnVoltar.TabIndex = 0;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = true;
+            // 
+            // btnImprimir
+            // 
+            btnImprimir.Location = new Point(12, 360);
+            btnImprimir.Name = "btnImprimir";
+            btnImprimir.Size = new Size(75, 23);
+            btnImprimir.TabIndex = 1;
+            btnImprimir.Text = "Imprimir";
+            btnImprimir.UseVisualStyleBackColor = true;
+            // 
+            // btnSalvar
+            // 
+            btnSalvar.Location = new Point(120, 360);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(75, 23);
+            btnSalvar.TabIndex = 2;
+            btnSalvar.Text = "Salvar";
+            btnSalvar.UseVisualStyleBackColor = true;
+            // 
+            // panel1
+            // 
+            panel1.Location = new Point(0, 92);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(803, 100);
+            panel1.TabIndex = 3;
+            // 
+            // Form16
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
+            Controls.Add(btnSalvar);
+            Controls.Add(btnImprimir);
+            Controls.Add(btnVoltar);
+            Name = "Form16";
+            Text = "Form16";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btnVoltar;
+        private Button btnImprimir;
+        private Button btnSalvar;
+        private Panel panel1;
     }
 }
