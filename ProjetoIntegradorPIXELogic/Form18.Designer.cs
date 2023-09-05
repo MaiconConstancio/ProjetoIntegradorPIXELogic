@@ -28,10 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form18";
+            this.panel1 = new Panel();
+            SuspendLayout();
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new Point(0, 82);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new Size(801, 101);
+            this.panel1.TabIndex = 0;
+            // 
+            // Form18
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(this.panel1);
+            Name = "Form18";
+            Text = "Form18";
+            ResumeLayout(false);
         }
 
         #endregion
