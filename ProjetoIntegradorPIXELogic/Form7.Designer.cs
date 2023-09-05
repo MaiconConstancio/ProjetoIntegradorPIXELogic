@@ -53,6 +53,7 @@
             txtCliente.Name = "txtCliente";
             txtCliente.Size = new Size(100, 23);
             txtCliente.TabIndex = 0;
+            txtCliente.TextChanged += txtCliente_TextChanged;
             // 
             // label1
             // 
@@ -62,6 +63,7 @@
             label1.Size = new Size(47, 15);
             label1.TabIndex = 1;
             label1.Text = "Cliente:";
+            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -71,6 +73,7 @@
             label2.Size = new Size(59, 15);
             label2.TabIndex = 3;
             label2.Text = "Endereço:";
+            label2.Click += label2_Click;
             // 
             // txtEndereco
             // 
@@ -79,6 +82,7 @@
             txtEndereco.Name = "txtEndereco";
             txtEndereco.Size = new Size(100, 23);
             txtEndereco.TabIndex = 2;
+            txtEndereco.TextChanged += txtEndereco_TextChanged;
             // 
             // label3
             // 
@@ -88,6 +92,7 @@
             label3.Size = new Size(54, 15);
             label3.TabIndex = 5;
             label3.Text = "Telefone:";
+            label3.Click += label3_Click;
             // 
             // txtTelefone
             // 
@@ -96,6 +101,7 @@
             txtTelefone.Name = "txtTelefone";
             txtTelefone.Size = new Size(100, 23);
             txtTelefone.TabIndex = 4;
+            txtTelefone.TextChanged += txtTelefone_TextChanged;
             // 
             // label4
             // 
@@ -105,6 +111,7 @@
             label4.Size = new Size(31, 15);
             label4.TabIndex = 7;
             label4.Text = "CPF:";
+            label4.Click += label4_Click;
             // 
             // txtCPF
             // 
@@ -113,6 +120,7 @@
             txtCPF.Name = "txtCPF";
             txtCPF.Size = new Size(100, 23);
             txtCPF.TabIndex = 6;
+            txtCPF.TextChanged += txtCPF_TextChanged;
             // 
             // label5
             // 
@@ -122,6 +130,7 @@
             label5.Size = new Size(31, 15);
             label5.TabIndex = 9;
             label5.Text = "CEP:";
+            label5.Click += label5_Click;
             // 
             // txtCEP
             // 
@@ -130,6 +139,7 @@
             txtCEP.Name = "txtCEP";
             txtCEP.Size = new Size(100, 23);
             txtCEP.TabIndex = 8;
+            txtCEP.TextChanged += txtCEP_TextChanged;
             // 
             // label6
             // 
@@ -139,6 +149,7 @@
             label6.Size = new Size(25, 15);
             label6.TabIndex = 11;
             label6.Text = "RG:";
+            label6.Click += label6_Click;
             // 
             // txtRG
             // 
@@ -147,6 +158,7 @@
             txtRG.Name = "txtRG";
             txtRG.Size = new Size(100, 23);
             txtRG.TabIndex = 10;
+            txtRG.TextChanged += txtRG_TextChanged;
             // 
             // label7
             // 
@@ -156,6 +168,7 @@
             label7.Size = new Size(47, 15);
             label7.TabIndex = 13;
             label7.Text = "Cidade:";
+            label7.Click += label7_Click;
             // 
             // txtCidade
             // 
@@ -164,6 +177,7 @@
             txtCidade.Name = "txtCidade";
             txtCidade.Size = new Size(100, 23);
             txtCidade.TabIndex = 12;
+            txtCidade.TextChanged += txtCidade_TextChanged;
             // 
             // btnCadastrar
             // 
