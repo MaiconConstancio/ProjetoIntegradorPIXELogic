@@ -115,7 +115,7 @@ namespace ProjetoIntegradorPIXELogic
 
                     }
 
-                    else { MessageBox.Show("Insira uma novo nome", "Esse nome já existe!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                    else { MessageBox.Show("Insira um novo nome", "Esse nome já existe!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                 }
 
