@@ -58,15 +58,17 @@
             btnVoltar.TabIndex = 2;
             btnVoltar.Text = "Voltar";
             btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // btnPesquisar
             // 
-            btnPesquisar.Location = new Point(713, 415);
+            btnPesquisar.Location = new Point(714, 415);
             btnPesquisar.Name = "btnPesquisar";
             btnPesquisar.Size = new Size(75, 23);
             btnPesquisar.TabIndex = 3;
             btnPesquisar.Text = "Pesquisar";
             btnPesquisar.UseVisualStyleBackColor = true;
+            btnPesquisar.Click += btnPesquisar_Click;
             // 
             // Form12
             // 

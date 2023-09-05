@@ -40,6 +40,7 @@
             txtValor = new TextBox();
             label5 = new Label();
             comboBoxStatus = new ComboBox();
+            btnSalvar = new Button();
             SuspendLayout();
             // 
             // btnVoltar
@@ -50,6 +51,7 @@
             btnVoltar.TabIndex = 0;
             btnVoltar.Text = "Voltar";
             btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // btnEditar
             // 
@@ -142,11 +144,22 @@
             comboBoxStatus.Size = new Size(121, 23);
             comboBoxStatus.TabIndex = 11;
             // 
+            // btnSalvar
+            // 
+            btnSalvar.Location = new Point(713, 415);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(75, 23);
+            btnSalvar.TabIndex = 12;
+            btnSalvar.Text = "Salvar";
+            btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += btnSalvar_Click;
+            // 
             // Form11
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSalvar);
             Controls.Add(comboBoxStatus);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -179,5 +192,6 @@
         private TextBox txtValor;
         private Label label5;
         private ComboBox comboBoxStatus;
+        private Button btnSalvar;
     }
 }

@@ -35,12 +35,13 @@
             // 
             // btnVoltar
             // 
-            btnVoltar.Location = new Point(593, 12);
+            btnVoltar.Location = new Point(713, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(75, 23);
             btnVoltar.TabIndex = 1;
             btnVoltar.Text = "voltar";
             btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // btnProduto
             // 
@@ -50,6 +51,7 @@
             btnProduto.TabIndex = 2;
             btnProduto.Text = "Produto";
             btnProduto.UseVisualStyleBackColor = true;
+            btnProduto.Click += btnProduto_Click;
             // 
             // btnServiço
             // 
@@ -59,6 +61,7 @@
             btnServiço.TabIndex = 3;
             btnServiço.Text = "Serviço";
             btnServiço.UseVisualStyleBackColor = true;
+            btnServiço.Click += btnServiço_Click;
             // 
             // Form9
             // 

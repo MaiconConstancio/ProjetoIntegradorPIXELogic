@@ -47,7 +47,7 @@
             // 
             // btnDebito
             // 
-            btnDebito.Location = new Point(277, 231);
+            btnDebito.Location = new Point(269, 211);
             btnDebito.Name = "btnDebito";
             btnDebito.Size = new Size(75, 23);
             btnDebito.TabIndex = 1;
@@ -56,7 +56,7 @@
             // 
             // btnCredito
             // 
-            btnCredito.Location = new Point(278, 285);
+            btnCredito.Location = new Point(269, 254);
             btnCredito.Name = "btnCredito";
             btnCredito.Size = new Size(75, 23);
             btnCredito.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             // btnBoleto
             // 
-            btnBoleto.Location = new Point(276, 335);
+            btnBoleto.Location = new Point(269, 298);
             btnBoleto.Name = "btnBoleto";
             btnBoleto.Size = new Size(75, 23);
             btnBoleto.TabIndex = 3;

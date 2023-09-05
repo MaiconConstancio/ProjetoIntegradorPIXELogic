@@ -56,6 +56,7 @@
             btnVoltar.TabIndex = 33;
             btnVoltar.Text = "Voltar";
             btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // btnCadastrar
             // 
