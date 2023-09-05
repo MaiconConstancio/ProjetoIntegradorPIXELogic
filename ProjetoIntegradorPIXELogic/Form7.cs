@@ -40,13 +40,13 @@ namespace ProjetoIntegradorPIXELogic
                 if (Auxiliares.existe("clientes", "cliente", txtCliente) == false)
                 {
 
-                    if (Auxiliares.existe("clientes", "Telefone", txtTelefone) == false)
+                    if (Auxiliares.existe("clientes", "telefone", txtTelefone) == false)
                     {
 
-                        if (Auxiliares.existe("clientes", "CPF", txtCPF) == false)
+                        if (Auxiliares.existe("clientes", "cpf", txtCPF) == false)
                         {
 
-                            if (Auxiliares.existe("clientes", "RG", txtRG) == false)
+                            if (Auxiliares.existe("clientes", "rg", txtRG) == false)
                             {
 
                                 if (MessageBox.Show($"Cliente: {txtCliente.Text}" +
@@ -93,6 +93,63 @@ namespace ProjetoIntegradorPIXELogic
             form5.Show();
             this.Close();
 
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void txtEndereco_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtTelefone_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void txtCPF_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void txtCEP_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtRG_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void txtCidade_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtCliente_TextChanged(object sender, EventArgs e)
+        {
         }
     }
 }
