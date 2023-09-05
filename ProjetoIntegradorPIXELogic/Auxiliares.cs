@@ -10,7 +10,7 @@ namespace ProjetoIntegradorPIXELogic
     internal class Auxiliares
     {
     
-        public static Boolean existe(string campo,TextBox txt)
+        public static Boolean existe(string tabela,string campo,TextBox txt)
         {
 
             string query = $"select * from usuarios where {campo} = '{txt.Text}';";
