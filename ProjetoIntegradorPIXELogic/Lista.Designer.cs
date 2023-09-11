@@ -1,6 +1,6 @@
 ﻿namespace ProjetoIntegradorPIXELogic
 {
-    partial class Form1
+    partial class Lista
     {
         /// <summary>
         /// Required designer variable.
@@ -29,29 +29,44 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            button1 = new Button();
             SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Location = new Point(-3, 2);
+            panel1.AutoSize = true;
+            panel1.Location = new Point(12, 12);
             panel1.Name = "panel1";
-            panel1.Size = new Size(803, 451);
+            panel1.Size = new Size(776, 0);
             panel1.TabIndex = 0;
             // 
-            // Form1
+            // button1
+            // 
+            button1.Location = new Point(12, 415);
+            button1.Name = "button1";
+            button1.Size = new Size(104, 23);
+            button1.TabIndex = 1;
+            button1.Text = "Novo cadastro";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
+            // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(button1);
             Controls.Add(panel1);
-            Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
+            Name = "Form2";
+            Text = "Form2";
+            Load += Form2_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        public Panel panel1;
+        private Panel panel1;
+        private Button button1;
     }
 }

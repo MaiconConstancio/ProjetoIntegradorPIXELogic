@@ -10,21 +10,19 @@ using System.Windows.Forms;
 
 namespace ProjetoIntegradorPIXELogic
 {
-    public partial class Form1 : Form
+    public partial class Itens : System.Windows.Forms.Form
     {
-        public Form1()
+        public Itens(string lb1, string lb2, string lb3, string lb4)
         {
             InitializeComponent();
+            label1.Text = lb1;
+            label2.Text = lb2;
+            label3.Text = lb3;
+            label4.Text = lb4;
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void Form3_Load(object sender, EventArgs e)
         {
-
-            panel1.Controls.Clear();
-            Lista lista = new Lista();
-            lista.TopLevel = false;
-            panel1.Controls.Add(lista);
-            lista.Show();
 
         }
     }
