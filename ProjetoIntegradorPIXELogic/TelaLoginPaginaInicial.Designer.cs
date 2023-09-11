@@ -140,7 +140,7 @@ namespace ProjetoIntegradorPIXELogic
             // 
             // imgLogoLoginPaginaInicial
             // 
-            imgLogoLoginPaginaInicial.Image = Properties.Resources.circulo_em_logo;
+            imgLogoLoginPaginaInicial.Image = Properties.Resources.LOGODESENHO_SEM_Fundo;
             imgLogoLoginPaginaInicial.Location = new Point(36, 219);
             imgLogoLoginPaginaInicial.Name = "imgLogoLoginPaginaInicial";
             imgLogoLoginPaginaInicial.Size = new Size(382, 296);
@@ -148,7 +148,7 @@ namespace ProjetoIntegradorPIXELogic
             imgLogoLoginPaginaInicial.TabIndex = 8;
             imgLogoLoginPaginaInicial.TabStop = false;
             // 
-            // LoginPaginaInicial
+            // TelaLoginPaginaInicial
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -163,7 +163,7 @@ namespace ProjetoIntegradorPIXELogic
             Controls.Add(txtSenha);
             ForeColor = Color.FromArgb(16, 25, 56);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "LoginPaginaInicial";
+            Name = "TelaLoginPaginaInicial";
             Text = " ";
             TransparencyKey = Color.Transparent;
             ((System.ComponentModel.ISupportInitialize)imgLogoESCRITALoginPaginaInicial).EndInit();
