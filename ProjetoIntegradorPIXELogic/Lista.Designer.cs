@@ -50,15 +50,16 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // Form2
+            // Lista
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button1);
             Controls.Add(panel1);
-            Name = "Form2";
-            Text = "Form2";
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "Lista";
+            Text = "Lista de usuários";
             Load += Form2_Load;
             ResumeLayout(false);
             PerformLayout();

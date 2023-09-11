@@ -27,7 +27,7 @@ namespace ProjetoIntegradorPIXELogic
 
                 Itens form3 = new Itens(row["nome"].ToString(), row["cargo"].ToString(), row["login"].ToString(), row["senha"].ToString());
                 form3.TopLevel = false;
-                form3.Location = new Point(0,0 + panel1.Height - 2);
+                form3.Location = new Point(0, 0 + panel1.Height - 2);
                 panel1.Controls.Add(form3);
                 form3.Show();
 
@@ -38,9 +38,11 @@ namespace ProjetoIntegradorPIXELogic
         private void button1_Click(object sender, EventArgs e)
         {
 
-            Cadastro form1 = new Cadastro();
-            form1.Show();
-            this.Close();
+            Form1.panel1.Controls.Clear();
+            Cadastro cadastro = new Cadastro();
+            cadastro.TopLevel = false;
+            Form1.panel1.Controls.Add(cadastro);
+            cadastro.Show();
 
         }
     }

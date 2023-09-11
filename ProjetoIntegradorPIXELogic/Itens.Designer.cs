@@ -103,8 +103,8 @@
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "Form3";
-            Text = "Form3";
+            Name = "Itens";
+            Text = "";
             Load += Form3_Load;
             ResumeLayout(false);
             PerformLayout();

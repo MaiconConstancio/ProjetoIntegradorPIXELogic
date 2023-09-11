@@ -124,7 +124,7 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
-            // Form1
+            // Cadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -139,8 +139,9 @@
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Name = "Form1";
-            Text = "Form1";
+            FormBorderStyle = FormBorderStyle.None;
+            Name = "Cadastro";
+            Text = "Cadastro";
             ResumeLayout(false);
             PerformLayout();
         }
