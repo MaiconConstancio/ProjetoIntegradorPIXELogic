@@ -70,11 +70,12 @@ namespace ProjetoIntegradorPIXELogic
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Form1.panel1.Controls.Clear();
+            Lista lista = new Lista();
+            lista.TopLevel = false;
+            Form1.panel1.Controls.Add(lista);
+            lista.Show();
 
-            Lista frm = new Lista();
-            this.Close();
-            frm.Show();
-            
 
         }
     }

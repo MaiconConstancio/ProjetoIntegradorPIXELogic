@@ -17,10 +17,9 @@ namespace ProjetoIntegradorPIXELogic
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private static void Form1_Load(object sender, EventArgs e)
         {
 
-            panel1.Controls.Clear();
             Lista lista = new Lista();
             lista.TopLevel = false;
             panel1.Controls.Add(lista);
