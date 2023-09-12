@@ -20,12 +20,11 @@ namespace ProjetoIntegradorPIXELogic
         private void Form2_Load(object sender, EventArgs e)
         {
 
-            string query = "select * from clientes";
-            foreach (DataRow row in Conexao.executaQuery(query).Rows)
+            foreach (DataRow row in Conexao.executaQuery("select * from orcamentos;").Rows)
             {
 
-                Itens itens = new Itens(row["nome"].ToString(), row["endereco"].ToString(), row["telefone"].ToString(), row["cpf"].ToString(),
-                                        row["cep"].ToString(), row["numero"].ToString(), row["cidade"].ToString());
+                Itens itens = new Itens(row["nome_cliente"].ToString(), row["servico"].ToString(), row["valor"].ToString(), row["endereco"].ToString(),
+                                        row["funcionario"].ToString(), row["estimativa_entrega"].ToString());
                 
                 itens.TopLevel = false;
                 itens.Location = new Point(0, 0 + panel1.Height - 2);
