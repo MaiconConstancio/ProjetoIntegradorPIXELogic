@@ -33,47 +33,52 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            txtEndereco = new TextBox();
-            txtNome = new TextBox();
-            button1 = new Button();
-            button2 = new Button();
-            txtfuncionario = new TextBox();
+
+            txtQuantidade = new TextBox();
+            btnSalvar = new Button();
+            btnVoltar = new Button();
+            txtNomeCliente = new TextBox();
             label5 = new Label();
-            txtEstimativa = new TextBox();
+            comboMPagamento = new ComboBox();
+            comboProduto = new ComboBox();
+            btnVTItens = new Button();
+            comboValor = new ComboBox();
             label6 = new Label();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            conexaoBindingSource = new BindingSource(components);
-            button3 = new Button();
-            ((System.ComponentModel.ISupportInitialize)conexaoBindingSource).BeginInit();
+
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(310, 30);
+
+            label1.Location = new Point(94, 158);
             label1.Name = "label1";
-            label1.Size = new Size(95, 15);
+            label1.Size = new Size(50, 15);
             label1.TabIndex = 0;
-            label1.Text = "Nome do cliente";
+            label1.Text = "Produto";
+
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(328, 76);
+            label2.Location = new Point(360, 158);
             label2.Name = "label2";
-            label2.Size = new Size(45, 15);
+
+            label2.Size = new Size(69, 15);
             label2.TabIndex = 1;
-            label2.Text = "Serviço";
+            label2.Text = "Quantidade";
+
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(328, 140);
+            label3.Location = new Point(604, 158);
             label3.Name = "label3";
-            label3.Size = new Size(33, 15);
+
+            label3.Size = new Size(95, 15);
             label3.TabIndex = 2;
-            label3.Text = "Valor";
+            label3.Text = "Nome do cliente";
+
             // 
             // label4
             // 
@@ -84,118 +89,119 @@
             label4.TabIndex = 3;
             label4.Text = "Endereço";
             // 
-            // txtFornecedor
+
+            // txtQuantidade
             // 
-            txtEndereco.Location = new Point(295, 213);
-            txtEndereco.Name = "txtEndereco";
-            txtEndereco.Size = new Size(121, 23);
-            txtEndereco.TabIndex = 4;
+            txtQuantidade.Location = new Point(304, 187);
+            txtQuantidade.Name = "txtQuantidade";
+            txtQuantidade.Size = new Size(181, 23);
+            txtQuantidade.TabIndex = 6;
             // 
-            // txtNome
+            // btnSalvar
             // 
-            txtNome.Location = new Point(295, 48);
-            txtNome.Name = "txtNome";
-            txtNome.Size = new Size(121, 23);
-            txtNome.TabIndex = 7;
+            btnSalvar.Location = new Point(264, 386);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(75, 34);
+            btnSalvar.TabIndex = 8;
+            btnSalvar.Text = "Salvar";
+            btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += button1_Click;
             // 
-            // button1
+            // btnVoltar
             // 
-            button1.Location = new Point(713, 415);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 8;
-            button1.Text = "Salvar";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            btnVoltar.Location = new Point(713, 12);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(75, 23);
+            btnVoltar.TabIndex = 9;
+            btnVoltar.Text = "voltar";
+            btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += button2_Click;
+
             // 
-            // button2
+            // txtNomeCliente
             // 
-            button2.Location = new Point(713, 12);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 9;
-            button2.Text = "voltar";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
-            // 
-            // txtfuncionario
-            // 
-            txtfuncionario.Location = new Point(295, 272);
-            txtfuncionario.Name = "txtfuncionario";
-            txtfuncionario.Size = new Size(121, 23);
-            txtfuncionario.TabIndex = 11;
+
+            txtNomeCliente.Location = new Point(562, 187);
+            txtNomeCliente.Name = "txtNomeCliente";
+            txtNomeCliente.Size = new Size(181, 23);
+            txtNomeCliente.TabIndex = 11;
+
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(317, 254);
+            label5.Location = new Point(482, 261);
             label5.Name = "label5";
-            label5.Size = new Size(70, 15);
+            label5.Size = new Size(129, 15);
             label5.TabIndex = 10;
-            label5.Text = "Funcionario";
+            label5.Text = "Método de pagamento";
             // 
-            // txtEstimativa
+            // comboMPagamento
             // 
-            txtEstimativa.Location = new Point(295, 337);
-            txtEstimativa.Name = "txtEstimativa";
-            txtEstimativa.Size = new Size(121, 23);
-            txtEstimativa.TabIndex = 13;
+            comboMPagamento.FormattingEnabled = true;
+            comboMPagamento.Location = new Point(448, 292);
+            comboMPagamento.Name = "comboMPagamento";
+            comboMPagamento.Size = new Size(181, 23);
+            comboMPagamento.TabIndex = 12;
+            // 
+
+            // comboProduto
+            // 
+            comboProduto.FormattingEnabled = true;
+            comboProduto.Location = new Point(35, 187);
+            comboProduto.Name = "comboProduto";
+            comboProduto.Size = new Size(181, 23);
+            comboProduto.TabIndex = 13;
+
+            // 
+            // btnVTItens
+            // 
+
+            btnVTItens.Location = new Point(439, 386);
+            btnVTItens.Name = "btnVTItens";
+            btnVTItens.Size = new Size(128, 34);
+            btnVTItens.TabIndex = 14;
+            btnVTItens.Text = "Ver todos os itens";
+            btnVTItens.UseVisualStyleBackColor = true;
+            btnVTItens.Click += btnVTItens_Click;
+            // 
+            // comboValor
+            // 
+            comboValor.FormattingEnabled = true;
+            comboValor.Location = new Point(175, 292);
+            comboValor.Name = "comboValor";
+            comboValor.Size = new Size(181, 23);
+            comboValor.TabIndex = 16;
+
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(296, 319);
+
+            label6.Location = new Point(238, 261);
             label6.Name = "label6";
-            label6.Size = new Size(120, 15);
-            label6.TabIndex = 12;
-            label6.Text = "Estimativa de entrega";
-            // 
-            // comboBox1
-            // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(295, 94);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(121, 23);
-            comboBox1.TabIndex = 14;
-            // 
-            // comboBox2
-            // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(295, 158);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(121, 23);
-            comboBox2.TabIndex = 15;
-            // 
-            // conexaoBindingSource
-            // 
-            conexaoBindingSource.DataSource = typeof(Conexao);
-            // 
-            // button3
-            // 
-            button3.Location = new Point(22, 417);
-            button3.Name = "button3";
-            button3.Size = new Size(106, 23);
-            button3.TabIndex = 16;
-            button3.Text = "Novo serviço";
-            button3.UseVisualStyleBackColor = true;
-            button3.Click += button3_Click;
+            label6.Size = new Size(33, 15);
+            label6.TabIndex = 15;
+            label6.Text = "Valor";
+
             // 
             // Cadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(button3);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(txtEstimativa);
+
+            Controls.Add(comboValor);
             Controls.Add(label6);
-            Controls.Add(txtfuncionario);
+            Controls.Add(btnVTItens);
+            Controls.Add(comboProduto);
+            Controls.Add(comboMPagamento);
+            Controls.Add(txtNomeCliente);
             Controls.Add(label5);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(txtNome);
-            Controls.Add(txtEndereco);
+            Controls.Add(btnVoltar);
+            Controls.Add(btnSalvar);
+            Controls.Add(txtQuantidade);
+
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -204,7 +210,8 @@
             Name = "Cadastro";
             Text = "Cadastro";
             Load += Cadastro_Load;
-            ((System.ComponentModel.ISupportInitialize)conexaoBindingSource).EndInit();
+
+
             ResumeLayout(false);
             PerformLayout();
         }
@@ -215,17 +222,17 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox txtEndereco;
-        private TextBox txtNome;
-        private Button button1;
-        private Button button2;
-        private TextBox txtfuncionario;
+
+        private TextBox txtQuantidade;
+        private Button btnSalvar;
+        private Button btnVoltar;
+        private TextBox txtNomeCliente;
         private Label label5;
-        private TextBox txtEstimativa;
+        private ComboBox comboMPagamento;
+        private ComboBox comboProduto;
+        private Button btnVTItens;
+        private ComboBox comboValor;
         private Label label6;
-        private ComboBox comboBox1;
-        private BindingSource conexaoBindingSource;
-        private ComboBox comboBox2;
-        private Button button3;
+
     }
 }
