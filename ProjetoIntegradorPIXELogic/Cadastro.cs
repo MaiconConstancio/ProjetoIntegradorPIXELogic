@@ -20,44 +20,64 @@ namespace ProjetoIntegradorPIXELogic
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (Funcoes.campoVazio("Nome", txtNome) == false && Funcoes.campoVazio("Cargo", txtCargo) == false &&
-                Funcoes.campoVazio("Login", txtLogin) == false && Funcoes.campoVazio("Senha", txtSenha) == false)
+            if (Funcoes.campoVazio("Nome", txtNome) == false && Funcoes.campoVazio("Endereço", txtEndereco) == false &&
+                Funcoes.campoVazio("Telefone", txtTelefone) == false && Funcoes.campoVazio("CNPJ", txtCNPJ) == false &&
+                Funcoes.campoVazio("CEP", txtCEP) == false && Funcoes.campoVazio("Número", txtNumero) == false &&
+                Funcoes.campoVazio("Cidade", txtCidade) == false)
             {
 
-                if (Funcoes.existe("usuario", "nome", txtNome) == false)
+                if (Funcoes.existe("fornecedores", "nome", txtNome) == false)
                 {
 
-                    if (Funcoes.existe("usuario", "login", txtLogin) == false)
+                    if (Funcoes.existe("fornecedores", "telefone", txtTelefone) == false)
                     {
 
-                        if (Funcoes.existe("usuario", "senha", txtSenha) == false)
+                        if (Funcoes.existe("fornecedores", "cnpj", txtCNPJ) == false)
                         {
 
-                            if (MessageBox.Show($"Nome: {txtNome.Text}\n" +
-                            $"Cargo: {txtCargo.Text}\n\n" +
-                            $"Login: {txtLogin.Text}\n\n" +
-                            $"Senha: {txtSenha.Text}\n\n",
-                            "Confirme seus dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+                            string query = $"select * from fornecedores where cep = '{txtCEP.Text}' and numero = '{txtNumero.Text}'";
+
+                            if (Conexao.executaQuery(query).Rows.Count > 0)
+                            {
+
+                                MessageBox.Show("Digite um endereço válido, ou entre em contato com o desenvolvedor","Endereço já cadastrado!",MessageBoxButtons.OK,MessageBoxIcon.Error);
+
+                                return;
+
+                            }
+
+                            if (MessageBox.Show($"Nome: {txtNome.Text}\n\n" +
+                            $"Endereço: {txtEndereco.Text}\n\n" +
+                            $"Telefone: {txtTelefone.Text}\n\n" +
+                            $"CNPJ: {txtCNPJ.Text}\n\n" +
+                            $"CEP: {txtCEP.Text}\n\n" +
+                            $"Número: {txtNumero.Text}\n\n" +
+                            $"Cidade: {txtCidade.Text}\n\n",
+                            "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
 
                             {
 
-                                string query = $"insert into usuario (nome,cargo,login,senha) values ('{txtNome.Text}','{txtCargo.Text}','{txtLogin.Text}','{txtSenha.Text}')";
-                                Conexao.executaQuery(query);
+                                string queryi = $"insert into fornecedores (nome,endereco,telefone,cnpj,cep,numero,cidade) values " +
+                                    $"('{txtNome.Text}','{txtEndereco.Text}','{txtTelefone.Text}','{txtCNPJ.Text}','{txtCEP.Text}','{txtNumero.Text}','{txtCidade.Text}');";
+                                Conexao.executaQuery(queryi);
 
                                 txtNome.Clear();
-                                txtCargo.Clear();
-                                txtLogin.Clear();
-                                txtSenha.Clear();
+                                txtEndereco.Clear();
+                                txtTelefone.Clear();
+                                txtCNPJ.Clear();
+                                txtCEP.Clear();
+                                txtCidade.Clear();
+                                txtNumero.Clear();
 
                             }
 
                         }
 
-                        else { MessageBox.Show("Por favor digite outra senha.", "Senha já cadastrada", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                        else { MessageBox.Show("Por favor digite outro CNPJ.", "CNPJ já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                     }
 
-                    else { MessageBox.Show("Por favor digite outro login.", "login já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                    else { MessageBox.Show("Por favor digite outro telefone.", "Telefone já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                 }
 
