@@ -19,7 +19,7 @@ namespace ProjetoIntegradorPIXELogic
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+        
             if (Funcoes.campoVazio("Nome", txtNome) == false && Funcoes.campoVazio("Endereço", txtEndereco) == false &&
                 Funcoes.campoVazio("Telefone", txtTelefone) == false && Funcoes.campoVazio("CPF", txtCPF) == false &&
                 Funcoes.campoVazio("CEP", txtCEP) == false && Funcoes.campoVazio("Número", txtNumero) == false &&
@@ -66,11 +66,7 @@ namespace ProjetoIntegradorPIXELogic
 
                     }
 
-                    else { MessageBox.Show("Por favor digite outro telefone.", "Telefone já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-
                 }
-
-                else { MessageBox.Show("Por favor digite outro nome.", "Nome já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
             }
 
