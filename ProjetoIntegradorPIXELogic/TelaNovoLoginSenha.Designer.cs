@@ -124,7 +124,7 @@ namespace ProjetoIntegradorPIXELogic
             txtNovaSenha.Texts = "";
             txtNovaSenha.UnderlinedStyle = false;
             // 
-            // NovoLoginSenha
+            // TelaNovoLoginSenha
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -136,7 +136,7 @@ namespace ProjetoIntegradorPIXELogic
             Controls.Add(btnSalvarNovoLoginSenha);
             Controls.Add(txtNovaSenha);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "NovoLoginSenha";
+            Name = "TelaNovoLoginSenha";
             Text = "PIXELogic - Sua visão, nossa programação!";
             ResumeLayout(false);
             PerformLayout();
