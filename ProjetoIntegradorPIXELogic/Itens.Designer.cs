@@ -42,7 +42,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(31, 13);
+            label1.Location = new Point(34, 13);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 0;
@@ -51,7 +51,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(117, 13);
+            label2.Location = new Point(120, 13);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
             label2.TabIndex = 1;
@@ -60,7 +60,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(219, 13);
+            label3.Location = new Point(222, 13);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 2;
@@ -69,7 +69,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(311, 13);
+            label4.Location = new Point(314, 13);
             label4.Name = "label4";
             label4.Size = new Size(38, 15);
             label4.TabIndex = 3;
@@ -96,7 +96,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(409, 13);
+            label5.Location = new Point(412, 13);
             label5.Name = "label5";
             label5.Size = new Size(38, 15);
             label5.TabIndex = 6;
@@ -107,18 +107,16 @@
             label6.AutoSize = true;
             label6.Location = new Point(524, 12);
             label6.Name = "label6";
-            label6.Size = new Size(38, 15);
+            label6.Size = new Size(0, 15);
             label6.TabIndex = 7;
-            label6.Text = "label6";
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Location = new Point(629, 13);
             label7.Name = "label7";
-            label7.Size = new Size(38, 15);
+            label7.Size = new Size(0, 15);
             label7.TabIndex = 8;
-            label7.Text = "label7";
             // 
             // Itens
             // 

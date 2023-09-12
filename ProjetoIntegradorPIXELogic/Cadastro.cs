@@ -20,69 +20,32 @@ namespace ProjetoIntegradorPIXELogic
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (Funcoes.campoVazio("Nome", txtNome) == false && Funcoes.campoVazio("Endereço", txtEndereco) == false &&
-                Funcoes.campoVazio("Telefone", txtTelefone) == false && Funcoes.campoVazio("CNPJ", txtCNPJ) == false &&
-                Funcoes.campoVazio("CEP", txtCEP) == false && Funcoes.campoVazio("Número", txtNumero) == false &&
-                Funcoes.campoVazio("Cidade", txtCidade) == false)
+            if (Funcoes.campoVazio("Produto", comboProduto) == false && Funcoes.campoVazio("Quantidade", txtQuantidade) == false &&
+                Funcoes.campoVazio("Nome do cliente", txtNomeCliente) == false && Funcoes.campoVazio("Valor", comboValor) == false &&
+                Funcoes.campoVazio("Método de pagamento", comboMPagamento) == false)
             {
 
-                if (Funcoes.existe("fornecedores", "nome", txtNome) == false)
+
+                if (MessageBox.Show($"Produto: {comboProduto.Text}\n\n" +
+                $"Quantidade: {txtQuantidade.Text}\n\n" +
+                $"Nome do Cliente: {txtNomeCliente.Text}\n\n" +
+                $"Método de pagamento: {comboMPagamento.Text}\n\n" +
+                $"Valor: {comboValor.Text}\n\n",
+                "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
                 {
 
-                    if (Funcoes.existe("fornecedores", "telefone", txtTelefone) == false)
-                    {
+                    string queryi = $"insert into vendas (produto, quantidade, nome_cliente, metodo_pagamento, valor) values " +
+                        $"('{comboProduto.Text}','{txtQuantidade.Text}','{txtNomeCliente.Text}','{comboMPagamento.Text}','{comboValor.Text}');";
+                    Conexao.executaQuery(queryi);
 
-                        if (Funcoes.existe("fornecedores", "cnpj", txtCNPJ) == false)
-                        {
-
-                            string query = $"select * from fornecedores where cep = '{txtCEP.Text}' and numero = '{txtNumero.Text}'";
-
-                            if (Conexao.executaQuery(query).Rows.Count > 0)
-                            {
-
-                                MessageBox.Show("Digite um endereço válido, ou entre em contato com o desenvolvedor","Endereço já cadastrado!",MessageBoxButtons.OK,MessageBoxIcon.Error);
-
-                                return;
-
-                            }
-
-                            if (MessageBox.Show($"Nome: {txtNome.Text}\n\n" +
-                            $"Endereço: {txtEndereco.Text}\n\n" +
-                            $"Telefone: {txtTelefone.Text}\n\n" +
-                            $"CNPJ: {txtCNPJ.Text}\n\n" +
-                            $"CEP: {txtCEP.Text}\n\n" +
-                            $"Número: {txtNumero.Text}\n\n" +
-                            $"Cidade: {txtCidade.Text}\n\n",
-                            "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
-
-                            {
-
-                                string queryi = $"insert into fornecedores (nome,endereco,telefone,cnpj,cep,numero,cidade) values " +
-                                    $"('{txtNome.Text}','{txtEndereco.Text}','{txtTelefone.Text}','{txtCNPJ.Text}','{txtCEP.Text}','{txtNumero.Text}','{txtCidade.Text}');";
-                                Conexao.executaQuery(queryi);
-
-                                txtNome.Clear();
-                                txtEndereco.Clear();
-                                txtTelefone.Clear();
-                                txtCNPJ.Clear();
-                                txtCEP.Clear();
-                                txtCidade.Clear();
-                                txtNumero.Clear();
-
-                            }
-
-                        }
-
-                        else { MessageBox.Show("Por favor digite outro CNPJ.", "CNPJ já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-
-                    }
-
-                    else { MessageBox.Show("Por favor digite outro telefone.", "Telefone já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                    comboProduto.Text = "";
+                    txtQuantidade.Clear();
+                    txtNomeCliente.Clear();
+                    comboMPagamento.Text = "";
+                    comboValor.Text = "";
 
                 }
-
-                else { MessageBox.Show("Por favor digite outro nome.", "Nome já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-
             }
 
 
@@ -90,13 +53,32 @@ namespace ProjetoIntegradorPIXELogic
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+
+
+        }
+
+        private void btnVTItens_Click(object sender, EventArgs e)
+        {
             Form1.panel1.Controls.Clear();
             Lista lista = new Lista();
             lista.TopLevel = false;
             Form1.panel1.Controls.Add(lista);
             lista.Show();
+        }
 
-
+        private void Cadastro_Load(object sender, EventArgs e)
+        {
+           foreach (DataRow row in Conexao.executaQuery("select * from produtos").Rows)
+            {
+                comboProduto.Items.Add(row["produtos"]);
+                comboValor.Items.Add(row["valor"]);
+                
+            }
+            comboMPagamento.Items.Add("Cartao de debito");
+            comboMPagamento.Items.Add("Cartao de crédito");
+            comboMPagamento.Items.Add("Pix");
+            comboMPagamento.Items.Add("Dinheiro");
         }
     }
 }
