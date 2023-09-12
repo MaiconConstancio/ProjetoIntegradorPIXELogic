@@ -90,7 +90,9 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
+
         public static Boolean campoVazio(string campo, ComboBox combo)
+
         {
 
             if (combo.Text == "")
@@ -105,5 +107,7 @@ namespace ProjetoIntegradorPIXELogic
             else { return false; }
 
         }
+
+
     }
 }

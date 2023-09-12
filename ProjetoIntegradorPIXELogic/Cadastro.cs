@@ -51,8 +51,10 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
+
         private void button2_Click(object sender, EventArgs e)
         {
+
 
 
 
@@ -79,6 +81,37 @@ namespace ProjetoIntegradorPIXELogic
             comboMPagamento.Items.Add("Cartao de crédito");
             comboMPagamento.Items.Add("Pix");
             comboMPagamento.Items.Add("Dinheiro");
+        }
+
+        private void Cadastro_Load(object sender, EventArgs e)
+        {
+
+            foreach (DataRow row in Conexao.executaQuery("select nome_servico from servicos;").Rows)
+            {
+
+                comboBox1.Items.Add(row["nome_servico"].ToString());
+
+            }
+
+            foreach (DataRow row in Conexao.executaQuery("select valor from servicos;").Rows)
+            {
+
+                comboBox2.Items.Add(row["valor"].ToString());
+
+            }
+
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            Form2 form2 = new Form2();
+            Form1.panel1.Controls.Clear();
+            form2.TopLevel = false;
+            Form1.panel1.Controls.Add(form2);
+            form2.Show();
+
         }
     }
 }
