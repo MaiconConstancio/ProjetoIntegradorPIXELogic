@@ -33,7 +33,7 @@ namespace ProjetoIntegradorPIXELogic
         private void InitializeComponent()
         {
             lblNovoLogin = new Label();
-            txtNovoLogin = new WiLBiT.WiLBiTTextBox();
+            txtNovo = new WiLBiT.WiLBiTTextBox();
             lblNovaSenha = new Label();
             btnSalvarNovoLoginSenha = new WiLBiT.WiLBiTButton2();
             txtNovaSenha = new WiLBiT.WiLBiTTextBox();
@@ -50,27 +50,27 @@ namespace ProjetoIntegradorPIXELogic
             lblNovoLogin.TabIndex = 11;
             lblNovoLogin.Text = "Novo Login";
             // 
-            // txtNovoLogin
+            // txtNovo
             // 
-            txtNovoLogin.BackColor = Color.FromArgb(53, 81, 142);
-            txtNovoLogin.BorderColor = Color.FromArgb(0, 242, 254);
-            txtNovoLogin.BorderFocusColor = Color.DeepSkyBlue;
-            txtNovoLogin.BorderRadius = 24;
-            txtNovoLogin.BorderSize = 2;
-            txtNovoLogin.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            txtNovoLogin.ForeColor = Color.FromArgb(160, 245, 255);
-            txtNovoLogin.Location = new Point(243, 145);
-            txtNovoLogin.Margin = new Padding(4);
-            txtNovoLogin.Multiline = false;
-            txtNovoLogin.Name = "txtNovoLogin";
-            txtNovoLogin.Padding = new Padding(10, 7, 10, 7);
-            txtNovoLogin.PasswordChar = false;
-            txtNovoLogin.PlaceholderColor = Color.DarkGray;
-            txtNovoLogin.PlaceholderText = "";
-            txtNovoLogin.Size = new Size(296, 51);
-            txtNovoLogin.TabIndex = 10;
-            txtNovoLogin.Texts = "";
-            txtNovoLogin.UnderlinedStyle = false;
+            txtNovo.BackColor = Color.FromArgb(53, 81, 142);
+            txtNovo.BorderColor = Color.FromArgb(0, 242, 254);
+            txtNovo.BorderFocusColor = Color.DeepSkyBlue;
+            txtNovo.BorderRadius = 24;
+            txtNovo.BorderSize = 2;
+            txtNovo.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNovo.ForeColor = Color.FromArgb(160, 245, 255);
+            txtNovo.Location = new Point(243, 145);
+            txtNovo.Margin = new Padding(4);
+            txtNovo.Multiline = false;
+            txtNovo.Name = "txtNovo";
+            txtNovo.Padding = new Padding(10, 7, 10, 7);
+            txtNovo.PasswordChar = false;
+            txtNovo.PlaceholderColor = Color.DarkGray;
+            txtNovo.PlaceholderText = "";
+            txtNovo.Size = new Size(296, 51);
+            txtNovo.TabIndex = 10;
+            txtNovo.Texts = "";
+            txtNovo.UnderlinedStyle = false;
             // 
             // lblNovaSenha
             // 
@@ -124,19 +124,19 @@ namespace ProjetoIntegradorPIXELogic
             txtNovaSenha.Texts = "";
             txtNovaSenha.UnderlinedStyle = false;
             // 
-            // TelaNovoLoginSenha
+            // COPIA
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
             Controls.Add(lblNovoLogin);
-            Controls.Add(txtNovoLogin);
+            Controls.Add(txtNovo);
             Controls.Add(lblNovaSenha);
             Controls.Add(btnSalvarNovoLoginSenha);
             Controls.Add(txtNovaSenha);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "TelaNovoLoginSenha";
+            Name = "COPIA";
             Text = "PIXELogic - Sua visão, nossa programação!";
             ResumeLayout(false);
             PerformLayout();
@@ -145,7 +145,7 @@ namespace ProjetoIntegradorPIXELogic
         #endregion
 
         private Label lblNovoLogin;
-        private WiLBiT.WiLBiTTextBox txtNovoLogin;
+        private WiLBiT.WiLBiTTextBox txtNovo;
         private Label lblNovaSenha;
         private WiLBiT.WiLBiTButton2 btnSalvarNovoLoginSenha;
         private WiLBiT.WiLBiTTextBox txtNovaSenha;

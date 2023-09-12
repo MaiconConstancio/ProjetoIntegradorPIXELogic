@@ -28,129 +28,129 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtNovoLogin = new WiLBiT.WiLBiTTextBox();
-            wilBitTextBox1 = new WiLBiT.WiLBiTTextBox();
-            btnSalvarNovoLoginSenha = new WiLBiT.WiLBiTButton2();
+            txtNomedoServico = new WiLBiT.WiLBiTTextBox();
+            txtVALOR = new WiLBiT.WiLBiTTextBox();
             btnSalvar = new WiLBiT.WiLBiTButton2();
-            lblNovoLogin = new Label();
-            label1 = new Label();
-            label2 = new Label();
+            btnVoltar = new WiLBiT.WiLBiTButton2();
+            lblCadastrodeServicos = new Label();
+            lblNomedoServico = new Label();
+            lblValor = new Label();
             SuspendLayout();
             // 
-            // txtNovoLogin
+            // txtNomedoServico
             // 
-            txtNovoLogin.BackColor = Color.FromArgb(53, 81, 142);
-            txtNovoLogin.BorderColor = Color.FromArgb(0, 242, 254);
-            txtNovoLogin.BorderFocusColor = Color.DeepSkyBlue;
-            txtNovoLogin.BorderRadius = 24;
-            txtNovoLogin.BorderSize = 2;
-            txtNovoLogin.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            txtNovoLogin.ForeColor = Color.FromArgb(160, 245, 255);
-            txtNovoLogin.Location = new Point(221, 170);
-            txtNovoLogin.Margin = new Padding(4);
-            txtNovoLogin.Multiline = false;
-            txtNovoLogin.Name = "txtNovoLogin";
-            txtNovoLogin.Padding = new Padding(10, 7, 10, 7);
-            txtNovoLogin.PasswordChar = false;
-            txtNovoLogin.PlaceholderColor = Color.DarkGray;
-            txtNovoLogin.PlaceholderText = "";
-            txtNovoLogin.Size = new Size(344, 51);
-            txtNovoLogin.TabIndex = 11;
-            txtNovoLogin.Texts = "";
-            txtNovoLogin.UnderlinedStyle = false;
+            txtNomedoServico.BackColor = Color.FromArgb(53, 81, 142);
+            txtNomedoServico.BorderColor = Color.FromArgb(0, 242, 254);
+            txtNomedoServico.BorderFocusColor = Color.DeepSkyBlue;
+            txtNomedoServico.BorderRadius = 24;
+            txtNomedoServico.BorderSize = 2;
+            txtNomedoServico.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNomedoServico.ForeColor = Color.FromArgb(160, 245, 255);
+            txtNomedoServico.Location = new Point(221, 170);
+            txtNomedoServico.Margin = new Padding(4);
+            txtNomedoServico.Multiline = false;
+            txtNomedoServico.Name = "txtNomedoServico";
+            txtNomedoServico.Padding = new Padding(10, 7, 10, 7);
+            txtNomedoServico.PasswordChar = false;
+            txtNomedoServico.PlaceholderColor = Color.DarkGray;
+            txtNomedoServico.PlaceholderText = "";
+            txtNomedoServico.Size = new Size(344, 51);
+            txtNomedoServico.TabIndex = 11;
+            txtNomedoServico.Texts = "";
+            txtNomedoServico.UnderlinedStyle = false;
             // 
-            // wilBitTextBox1
+            // txtVALOR
             // 
-            wilBitTextBox1.BackColor = Color.FromArgb(53, 81, 142);
-            wilBitTextBox1.BorderColor = Color.FromArgb(0, 242, 254);
-            wilBitTextBox1.BorderFocusColor = Color.DeepSkyBlue;
-            wilBitTextBox1.BorderRadius = 24;
-            wilBitTextBox1.BorderSize = 2;
-            wilBitTextBox1.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox1.ForeColor = Color.FromArgb(160, 245, 255);
-            wilBitTextBox1.Location = new Point(221, 233);
-            wilBitTextBox1.Margin = new Padding(4);
-            wilBitTextBox1.Multiline = false;
-            wilBitTextBox1.Name = "wilBitTextBox1";
-            wilBitTextBox1.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox1.PasswordChar = false;
-            wilBitTextBox1.PlaceholderColor = Color.DarkGray;
-            wilBitTextBox1.PlaceholderText = "";
-            wilBitTextBox1.Size = new Size(344, 51);
-            wilBitTextBox1.TabIndex = 12;
-            wilBitTextBox1.Texts = "";
-            wilBitTextBox1.UnderlinedStyle = false;
-            // 
-            // btnSalvarNovoLoginSenha
-            // 
-            btnSalvarNovoLoginSenha.BackColor = Color.FromArgb(72, 116, 245);
-            btnSalvarNovoLoginSenha.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnSalvarNovoLoginSenha.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvarNovoLoginSenha.BorderRadius = 22;
-            btnSalvarNovoLoginSenha.BorderSize = 2;
-            btnSalvarNovoLoginSenha.FlatAppearance.BorderSize = 0;
-            btnSalvarNovoLoginSenha.FlatStyle = FlatStyle.Flat;
-            btnSalvarNovoLoginSenha.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSalvarNovoLoginSenha.ForeColor = Color.Black;
-            btnSalvarNovoLoginSenha.Location = new Point(305, 301);
-            btnSalvarNovoLoginSenha.Name = "btnSalvarNovoLoginSenha";
-            btnSalvarNovoLoginSenha.Size = new Size(148, 42);
-            btnSalvarNovoLoginSenha.TabIndex = 13;
-            btnSalvarNovoLoginSenha.Text = "SALVAR";
-            btnSalvarNovoLoginSenha.TextColor = Color.Black;
-            btnSalvarNovoLoginSenha.UseVisualStyleBackColor = false;
+            txtVALOR.BackColor = Color.FromArgb(53, 81, 142);
+            txtVALOR.BorderColor = Color.FromArgb(0, 242, 254);
+            txtVALOR.BorderFocusColor = Color.DeepSkyBlue;
+            txtVALOR.BorderRadius = 24;
+            txtVALOR.BorderSize = 2;
+            txtVALOR.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
+            txtVALOR.ForeColor = Color.FromArgb(160, 245, 255);
+            txtVALOR.Location = new Point(221, 233);
+            txtVALOR.Margin = new Padding(4);
+            txtVALOR.Multiline = false;
+            txtVALOR.Name = "txtVALOR";
+            txtVALOR.Padding = new Padding(10, 7, 10, 7);
+            txtVALOR.PasswordChar = false;
+            txtVALOR.PlaceholderColor = Color.DarkGray;
+            txtVALOR.PlaceholderText = "";
+            txtVALOR.Size = new Size(344, 51);
+            txtVALOR.TabIndex = 12;
+            txtVALOR.Texts = "";
+            txtVALOR.UnderlinedStyle = false;
             // 
             // btnSalvar
             // 
             btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 15;
+            btnSalvar.BorderRadius = 20;
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalvar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(689, 12);
+            btnSalvar.Location = new Point(305, 301);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(99, 29);
-            btnSalvar.TabIndex = 16;
-            btnSalvar.Text = "VOLTAR";
+            btnSalvar.Size = new Size(148, 42);
+            btnSalvar.TabIndex = 13;
+            btnSalvar.Text = "SALVAR";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
             // 
-            // lblNovoLogin
+            // btnVoltar
             // 
-            lblNovoLogin.AutoSize = true;
-            lblNovoLogin.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblNovoLogin.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNovoLogin.Location = new Point(207, 93);
-            lblNovoLogin.Name = "lblNovoLogin";
-            lblNovoLogin.Size = new Size(358, 47);
-            lblNovoLogin.TabIndex = 17;
-            lblNovoLogin.Text = "Cadastro de serviços";
+            btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnVoltar.BorderRadius = 16;
+            btnVoltar.BorderSize = 2;
+            btnVoltar.FlatAppearance.BorderSize = 0;
+            btnVoltar.FlatStyle = FlatStyle.Flat;
+            btnVoltar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVoltar.ForeColor = Color.Black;
+            btnVoltar.Location = new Point(684, 12);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(104, 33);
+            btnVoltar.TabIndex = 16;
+            btnVoltar.Text = "VOLTAR";
+            btnVoltar.TextColor = Color.Black;
+            btnVoltar.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // lblCadastrodeServicos
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(63, 136, 254);
-            label1.Location = new Point(12, 179);
-            label1.Name = "label1";
-            label1.Size = new Size(209, 32);
-            label1.TabIndex = 18;
-            label1.Text = "Nome do serviço";
+            lblCadastrodeServicos.AutoSize = true;
+            lblCadastrodeServicos.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCadastrodeServicos.ForeColor = Color.FromArgb(63, 136, 254);
+            lblCadastrodeServicos.Location = new Point(207, 93);
+            lblCadastrodeServicos.Name = "lblCadastrodeServicos";
+            lblCadastrodeServicos.Size = new Size(358, 47);
+            lblCadastrodeServicos.TabIndex = 17;
+            lblCadastrodeServicos.Text = "Cadastro de serviços";
             // 
-            // label2
+            // lblNomedoServico
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(63, 136, 254);
-            label2.Location = new Point(141, 242);
-            label2.Name = "label2";
-            label2.Size = new Size(73, 32);
-            label2.TabIndex = 19;
-            label2.Text = "Valor";
+            lblNomedoServico.AutoSize = true;
+            lblNomedoServico.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNomedoServico.ForeColor = Color.FromArgb(63, 136, 254);
+            lblNomedoServico.Location = new Point(12, 179);
+            lblNomedoServico.Name = "lblNomedoServico";
+            lblNomedoServico.Size = new Size(209, 32);
+            lblNomedoServico.TabIndex = 18;
+            lblNomedoServico.Text = "Nome do serviço";
+            // 
+            // lblValor
+            // 
+            lblValor.AutoSize = true;
+            lblValor.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblValor.ForeColor = Color.FromArgb(63, 136, 254);
+            lblValor.Location = new Point(141, 242);
+            lblValor.Name = "lblValor";
+            lblValor.Size = new Size(73, 32);
+            lblValor.TabIndex = 19;
+            lblValor.Text = "Valor";
             // 
             // CadastroDeServicos
             // 
@@ -158,13 +158,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(lblNovoLogin);
+            Controls.Add(lblValor);
+            Controls.Add(lblNomedoServico);
+            Controls.Add(lblCadastrodeServicos);
+            Controls.Add(btnVoltar);
             Controls.Add(btnSalvar);
-            Controls.Add(btnSalvarNovoLoginSenha);
-            Controls.Add(wilBitTextBox1);
-            Controls.Add(txtNovoLogin);
+            Controls.Add(txtVALOR);
+            Controls.Add(txtNomedoServico);
             FormBorderStyle = FormBorderStyle.None;
             Name = "CadastroDeServicos";
             Text = "CadastroDeServicos";
@@ -174,12 +174,12 @@
 
         #endregion
 
-        private WiLBiT.WiLBiTTextBox txtNovoLogin;
-        private WiLBiT.WiLBiTTextBox wilBitTextBox1;
-        private WiLBiT.WiLBiTButton2 btnSalvarNovoLoginSenha;
+        private WiLBiT.WiLBiTTextBox txtNomedoServico;
+        private WiLBiT.WiLBiTTextBox txtVALOR;
         private WiLBiT.WiLBiTButton2 btnSalvar;
-        private Label lblNovoLogin;
-        private Label label1;
-        private Label label2;
+        private WiLBiT.WiLBiTButton2 btnVoltar;
+        private Label lblCadastrodeServicos;
+        private Label lblNomedoServico;
+        private Label lblValor;
     }
 }
