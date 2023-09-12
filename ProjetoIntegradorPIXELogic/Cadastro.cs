@@ -20,68 +20,34 @@ namespace ProjetoIntegradorPIXELogic
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (Funcoes.campoVazio("Nome", txtNome) == false && Funcoes.campoVazio("Endereço", txtEndereco) == false &&
-                Funcoes.campoVazio("Telefone", txtTelefone) == false && Funcoes.campoVazio("CNPJ", txtCNPJ) == false &&
-                Funcoes.campoVazio("CEP", txtCEP) == false && Funcoes.campoVazio("Número", txtNumero) == false &&
-                Funcoes.campoVazio("Cidade", txtCidade) == false)
+            if (Funcoes.campoVazio("Nome", txtNome) == false && Funcoes.campoVazio("Fornecedor", txtFornecedor) == false &&
+                Funcoes.campoVazio("Quantidade", txtQuantidade) == false && Funcoes.campoVazio("Valor", txtValor) == false)
             {
 
-                if (Funcoes.existe("fornecedores", "nome", txtNome) == false)
+                if (MessageBox.Show("Este produto ja está cadastrado, deseja continuar ?","Produto já cadastrado!",MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
                 {
 
-                    if (Funcoes.existe("fornecedores", "telefone", txtTelefone) == false)
+                    if (MessageBox.Show($"Nome: {txtNome.Text}\n\n" +
+                    $"Fornecedor: {txtFornecedor.Text}\n\n" +
+                    $"Quantidade: {txtQuantidade.Text}\n\n" +
+                    $"Valor: {txtValor.Text}\n\n" +
+                    $"Vencimento: {txtVencimento.Text}\n\n",
+                    "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
                     {
 
-                        if (Funcoes.existe("fornecedores", "cnpj", txtCNPJ) == false)
-                        {
+                        string query = $"insert into produtos (nome,fornecedor,quantidade,valor,vencimento) values " +
+                            $"('{txtNome.Text}','{txtFornecedor.Text}','{txtQuantidade.Text}','{txtValor.Text}','{txtVencimento.Text}');";
+                        Conexao.executaQuery(query);
 
-                            string query = $"select * from fornecedores where cep = '{txtCEP.Text}' and numero = '{txtNumero.Text}'";
-
-                            if (Conexao.executaQuery(query).Rows.Count > 0)
-                            {
-
-                                MessageBox.Show("Digite um endereço válido, ou entre em contato com o desenvolvedor","Endereço já cadastrado!",MessageBoxButtons.OK,MessageBoxIcon.Error);
-
-                                return;
-
-                            }
-
-                            if (MessageBox.Show($"Nome: {txtNome.Text}\n\n" +
-                            $"Endereço: {txtEndereco.Text}\n\n" +
-                            $"Telefone: {txtTelefone.Text}\n\n" +
-                            $"CNPJ: {txtCNPJ.Text}\n\n" +
-                            $"CEP: {txtCEP.Text}\n\n" +
-                            $"Número: {txtNumero.Text}\n\n" +
-                            $"Cidade: {txtCidade.Text}\n\n",
-                            "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
-
-                            {
-
-                                string queryi = $"insert into fornecedores (nome,endereco,telefone,cnpj,cep,numero,cidade) values " +
-                                    $"('{txtNome.Text}','{txtEndereco.Text}','{txtTelefone.Text}','{txtCNPJ.Text}','{txtCEP.Text}','{txtNumero.Text}','{txtCidade.Text}');";
-                                Conexao.executaQuery(queryi);
-
-                                txtNome.Clear();
-                                txtEndereco.Clear();
-                                txtTelefone.Clear();
-                                txtCNPJ.Clear();
-                                txtCEP.Clear();
-                                txtCidade.Clear();
-                                txtNumero.Clear();
-
-                            }
-
-                        }
-
-                        else { MessageBox.Show("Por favor digite outro CNPJ.", "CNPJ já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                        txtNome.Clear();
+                        txtFornecedor.Clear();
+                        txtQuantidade.Clear();
+                        txtValor.Clear();
+                        txtVencimento.Clear();
 
                     }
 
-                    else { MessageBox.Show("Por favor digite outro telefone.", "Telefone já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-
                 }
-
-                else { MessageBox.Show("Por favor digite outro nome.", "Nome já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
             }
 
