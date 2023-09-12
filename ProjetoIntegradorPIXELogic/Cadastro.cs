@@ -19,31 +19,50 @@ namespace ProjetoIntegradorPIXELogic
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            if (Funcoes.campoVazio("Nome", txtNome) == false && Funcoes.campoVazio("Fornecedor", txtFornecedor) == false &&
-                Funcoes.campoVazio("Quantidade", txtQuantidade) == false && Funcoes.campoVazio("Valor", txtValor) == false)
+        
+            if (Funcoes.campoVazio("Nome", txtNome) == false && Funcoes.campoVazio("Endereço", txtEndereco) == false &&
+                Funcoes.campoVazio("Telefone", txtTelefone) == false && Funcoes.campoVazio("CPF", txtCPF) == false &&
+                Funcoes.campoVazio("CEP", txtCEP) == false && Funcoes.campoVazio("Número", txtNumero) == false &&
+                Funcoes.campoVazio("Cidade", txtCidade) == false)
             {
 
-                if (MessageBox.Show("Este produto ja está cadastrado, deseja continuar ?","Produto já cadastrado!",MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
+                if (Funcoes.existe("clientes", "nome", txtNome) == false)
                 {
 
-                    if (MessageBox.Show($"Nome: {txtNome.Text}\n\n" +
-                    $"Fornecedor: {txtFornecedor.Text}\n\n" +
-                    $"Quantidade: {txtQuantidade.Text}\n\n" +
-                    $"Valor: {txtValor.Text}\n\n" +
-                    $"Vencimento: {txtVencimento.Text}\n\n",
-                    "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+                    if (Funcoes.existe("clientes", "telefone", txtTelefone) == false)
                     {
 
-                        string query = $"insert into produtos (nome,fornecedor,quantidade,valor,vencimento) values " +
-                            $"('{txtNome.Text}','{txtFornecedor.Text}','{txtQuantidade.Text}','{txtValor.Text}','{txtVencimento.Text}');";
-                        Conexao.executaQuery(query);
+                        if (Funcoes.existe("clientes", "CPF", txtCPF) == false)
+                        {
 
-                        txtNome.Clear();
-                        txtFornecedor.Clear();
-                        txtQuantidade.Clear();
-                        txtValor.Clear();
-                        txtVencimento.Clear();
+                            if (MessageBox.Show($"Nome: {txtNome.Text}\n\n" +
+                            $"Endereço: {txtEndereco.Text}\n\n" +
+                            $"Telefone: {txtTelefone.Text}\n\n" +
+                            $"CNPJ: {txtCPF.Text}\n\n" +
+                            $"CEP: {txtCEP.Text}\n\n" +
+                            $"Número: {txtNumero.Text}\n\n" +
+                            $"Cidade: {txtCidade.Text}\n\n",
+                            "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
+                            {
+
+                                string query = $"insert into clientes (nome,endereco,telefone,cpf,cep,numero,cidade) values " +
+                                    $"('{txtNome.Text}','{txtEndereco.Text}','{txtTelefone.Text}','{txtCPF.Text}','{txtCEP.Text}','{txtNumero.Text}','{txtCidade.Text}');";
+                                Conexao.executaQuery(query);
+
+                                txtNome.Clear();
+                                txtEndereco.Clear();
+                                txtTelefone.Clear();
+                                txtCPF.Clear();
+                                txtCEP.Clear();
+                                txtCidade.Clear();
+                                txtNumero.Clear();
+
+                            }
+
+                        }
+
+                        else { MessageBox.Show("Por favor digite outro CPF.", "CPF já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                     }
 

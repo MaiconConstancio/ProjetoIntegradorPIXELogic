@@ -32,9 +32,9 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            txtValor = new TextBox();
-            txtQuantidade = new TextBox();
-            txtFornecedor = new TextBox();
+            txtCPF = new TextBox();
+            txtTelefone = new TextBox();
+            txtEndereco = new TextBox();
             txtNome = new TextBox();
             button1 = new Button();
             button2 = new Button();
@@ -74,16 +74,16 @@
             label4.AutoSize = true;
             label4.Location = new Point(343, 195);
             label4.Name = "label4";
-            label4.Size = new Size(33, 15);
+            label4.Size = new Size(28, 15);
             label4.TabIndex = 3;
-            label4.Text = "Valor";
+            label4.Text = "CPF";
             // 
-            // txtValor
+            // txtCPF
             // 
-            txtValor.Location = new Point(305, 213);
-            txtValor.Name = "txtValor";
-            txtValor.Size = new Size(100, 23);
-            txtValor.TabIndex = 4;
+            txtCPF.Location = new Point(305, 213);
+            txtCPF.Name = "txtCPF";
+            txtCPF.Size = new Size(100, 23);
+            txtCPF.TabIndex = 4;
             // 
             // txtQuantidade
             // 
@@ -152,9 +152,9 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(txtNome);
-            Controls.Add(txtFornecedor);
-            Controls.Add(txtQuantidade);
-            Controls.Add(txtValor);
+            Controls.Add(txtEndereco);
+            Controls.Add(txtTelefone);
+            Controls.Add(txtCPF);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -172,9 +172,9 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox txtValor;
-        private TextBox txtQuantidade;
-        private TextBox txtFornecedor;
+        private TextBox txtCPF;
+        private TextBox txtTelefone;
+        private TextBox txtEndereco;
         private TextBox txtNome;
         private Button button1;
         private Button button2;
