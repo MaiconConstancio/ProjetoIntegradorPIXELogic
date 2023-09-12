@@ -4,7 +4,7 @@ using System.Xml.Linq;
 
 namespace ProjetoIntegradorPIXELogic
 {
-    partial class TelaNovoLoginSenha
+    partial class COPIA
     {
         /// <summary>
         /// Required designer variable.
