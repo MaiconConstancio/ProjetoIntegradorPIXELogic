@@ -21,35 +21,24 @@ namespace ProjetoIntegradorPIXELogic
         {
 
             if (Funcoes.campoVazio("Nome", txtNome) == false && Funcoes.campoVazio("Endereço", txtEndereco) == false &&
-                Funcoes.campoVazio("Telefone", txtTelefone) == false && Funcoes.campoVazio("CNPJ", txtCNPJ) == false &&
+                Funcoes.campoVazio("Telefone", txtTelefone) == false && Funcoes.campoVazio("CPF", txtCPF) == false &&
                 Funcoes.campoVazio("CEP", txtCEP) == false && Funcoes.campoVazio("Número", txtNumero) == false &&
                 Funcoes.campoVazio("Cidade", txtCidade) == false)
             {
 
-                if (Funcoes.existe("fornecedores", "nome", txtNome) == false)
+                if (Funcoes.existe("clientes", "nome", txtNome) == false)
                 {
 
-                    if (Funcoes.existe("fornecedores", "telefone", txtTelefone) == false)
+                    if (Funcoes.existe("clientes", "telefone", txtTelefone) == false)
                     {
 
-                        if (Funcoes.existe("fornecedores", "cnpj", txtCNPJ) == false)
+                        if (Funcoes.existe("clientes", "CPF", txtCPF) == false)
                         {
-
-                            string query = $"select * from fornecedores where cep = '{txtCEP.Text}' and numero = '{txtNumero.Text}'";
-
-                            if (Conexao.executaQuery(query).Rows.Count > 0)
-                            {
-
-                                MessageBox.Show("Digite um endereço válido, ou entre em contato com o desenvolvedor","Endereço já cadastrado!",MessageBoxButtons.OK,MessageBoxIcon.Error);
-
-                                return;
-
-                            }
 
                             if (MessageBox.Show($"Nome: {txtNome.Text}\n\n" +
                             $"Endereço: {txtEndereco.Text}\n\n" +
                             $"Telefone: {txtTelefone.Text}\n\n" +
-                            $"CNPJ: {txtCNPJ.Text}\n\n" +
+                            $"CNPJ: {txtCPF.Text}\n\n" +
                             $"CEP: {txtCEP.Text}\n\n" +
                             $"Número: {txtNumero.Text}\n\n" +
                             $"Cidade: {txtCidade.Text}\n\n",
@@ -57,14 +46,14 @@ namespace ProjetoIntegradorPIXELogic
 
                             {
 
-                                string queryi = $"insert into fornecedores (nome,endereco,telefone,cnpj,cep,numero,cidade) values " +
-                                    $"('{txtNome.Text}','{txtEndereco.Text}','{txtTelefone.Text}','{txtCNPJ.Text}','{txtCEP.Text}','{txtNumero.Text}','{txtCidade.Text}');";
-                                Conexao.executaQuery(queryi);
+                                string query = $"insert into clientes (nome,endereco,telefone,cpf,cep,numero,cidade) values " +
+                                    $"('{txtNome.Text}','{txtEndereco.Text}','{txtTelefone.Text}','{txtCPF.Text}','{txtCEP.Text}','{txtNumero.Text}','{txtCidade.Text}');";
+                                Conexao.executaQuery(query);
 
                                 txtNome.Clear();
                                 txtEndereco.Clear();
                                 txtTelefone.Clear();
-                                txtCNPJ.Clear();
+                                txtCPF.Clear();
                                 txtCEP.Clear();
                                 txtCidade.Clear();
                                 txtNumero.Clear();
@@ -73,7 +62,7 @@ namespace ProjetoIntegradorPIXELogic
 
                         }
 
-                        else { MessageBox.Show("Por favor digite outro CNPJ.", "CNPJ já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+                        else { MessageBox.Show("Por favor digite outro CPF.", "CPF já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                     }
 

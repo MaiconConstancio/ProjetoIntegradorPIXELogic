@@ -32,7 +32,7 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            txtCNPJ = new TextBox();
+            txtCPF = new TextBox();
             txtTelefone = new TextBox();
             txtEndereco = new TextBox();
             txtNome = new TextBox();
@@ -78,16 +78,16 @@
             label4.AutoSize = true;
             label4.Location = new Point(343, 195);
             label4.Name = "label4";
-            label4.Size = new Size(34, 15);
+            label4.Size = new Size(28, 15);
             label4.TabIndex = 3;
-            label4.Text = "CNPJ";
+            label4.Text = "CPF";
             // 
-            // txtCNPJ
+            // txtCPF
             // 
-            txtCNPJ.Location = new Point(305, 213);
-            txtCNPJ.Name = "txtCNPJ";
-            txtCNPJ.Size = new Size(100, 23);
-            txtCNPJ.TabIndex = 4;
+            txtCPF.Location = new Point(305, 213);
+            txtCPF.Name = "txtCPF";
+            txtCPF.Size = new Size(100, 23);
+            txtCPF.TabIndex = 4;
             // 
             // txtTelefone
             // 
@@ -194,7 +194,7 @@
             Controls.Add(txtNome);
             Controls.Add(txtEndereco);
             Controls.Add(txtTelefone);
-            Controls.Add(txtCNPJ);
+            Controls.Add(txtCPF);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -212,7 +212,7 @@
         private Label label2;
         private Label label3;
         private Label label4;
-        private TextBox txtCNPJ;
+        private TextBox txtCPF;
         private TextBox txtTelefone;
         private TextBox txtEndereco;
         private TextBox txtNome;
