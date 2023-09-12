@@ -16,5 +16,20 @@ namespace ProjetoIntegradorPIXELogic
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wilBitButton24_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void wilBitButton23_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
