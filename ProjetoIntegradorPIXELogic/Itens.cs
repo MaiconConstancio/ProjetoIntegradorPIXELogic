@@ -14,6 +14,7 @@ namespace ProjetoIntegradorPIXELogic
     {
         public Itens(string lb1, string lb2, string lb3, string lb4, string lb5, string lb6)
         {
+
             InitializeComponent();
             label1.Text = lb1;
             label2.Text = lb2;

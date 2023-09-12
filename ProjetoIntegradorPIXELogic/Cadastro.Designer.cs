@@ -84,7 +84,7 @@
             label4.TabIndex = 3;
             label4.Text = "Endereço";
             // 
-            // txtEndereco
+            // txtFornecedor
             // 
             txtEndereco.Location = new Point(295, 213);
             txtEndereco.Name = "txtEndereco";
