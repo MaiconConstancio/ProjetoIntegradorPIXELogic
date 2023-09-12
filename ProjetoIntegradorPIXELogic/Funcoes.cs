@@ -70,5 +70,21 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
+        public static Boolean campoVazioCombo(string campo, ComboBox combo)
+        {
+
+            if (combo.Text == "")
+            {
+
+                MessageBox.Show($"Digite um(a) {campo}!", "Campo vázio!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return true;
+
+            }
+
+            else { return false; }
+
+        }
+
     }
 }
