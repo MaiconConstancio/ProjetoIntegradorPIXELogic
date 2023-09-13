@@ -39,12 +39,13 @@
             btnVoltar = new Button();
             txtNomeCliente = new TextBox();
             label5 = new Label();
-            comboMPagamento = new ComboBox();
-            comboProduto = new ComboBox();
-            btnVTItens = new Button();
-            comboValor = new ComboBox();
             label6 = new Label();
-
+            comboBox1 = new ComboBox();
+            comboBox2 = new ComboBox();
+            conexaoBindingSource = new BindingSource(components);
+            button3 = new Button();
+            txtEstimativa = new MaskedTextBox();
+            ((System.ComponentModel.ISupportInitialize)conexaoBindingSource).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -88,35 +89,40 @@
             label4.Size = new Size(56, 15);
             label4.TabIndex = 3;
             label4.Text = "Endereço";
+            //
+            // txtEndereco
             // 
-
-            // txtQuantidade
+            txtEndereco.Location = new Point(295, 213);
+            txtEndereco.Name = "txtEndereco";
+            txtEndereco.Size = new Size(121, 23);
+            txtEndereco.TabIndex = 4;
             // 
-            txtQuantidade.Location = new Point(304, 187);
-            txtQuantidade.Name = "txtQuantidade";
-            txtQuantidade.Size = new Size(181, 23);
-            txtQuantidade.TabIndex = 6;
+            // txtNome
             // 
-            // btnSalvar
+            txtNome.Location = new Point(295, 48);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(121, 23);
+            txtNome.TabIndex = 7;
             // 
-            btnSalvar.Location = new Point(264, 386);
-            btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(75, 34);
-            btnSalvar.TabIndex = 8;
-            btnSalvar.Text = "Salvar";
-            btnSalvar.UseVisualStyleBackColor = true;
-            btnSalvar.Click += button1_Click;
+            // button1
             // 
-            // btnVoltar
+            button1.Location = new Point(713, 415);
+            button1.Name = "button1";
+            button1.Size = new Size(75, 23);
+            button1.TabIndex = 8;
+            button1.Text = "Salvar";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
-            btnVoltar.Location = new Point(713, 12);
-            btnVoltar.Name = "btnVoltar";
-            btnVoltar.Size = new Size(75, 23);
-            btnVoltar.TabIndex = 9;
-            btnVoltar.Text = "voltar";
-            btnVoltar.UseVisualStyleBackColor = true;
-            btnVoltar.Click += button2_Click;
-
+            // button2
+            // 
+            button2.Location = new Point(713, 12);
+            button2.Name = "button2";
+            button2.Size = new Size(75, 23);
+            button2.TabIndex = 9;
+            button2.Text = "voltar";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // txtNomeCliente
             // 
@@ -136,13 +142,7 @@
             label5.TabIndex = 10;
             label5.Text = "Método de pagamento";
             // 
-            // comboMPagamento
-            // 
-            comboMPagamento.FormattingEnabled = true;
-            comboMPagamento.Location = new Point(448, 292);
-            comboMPagamento.Name = "comboMPagamento";
-            comboMPagamento.Size = new Size(181, 23);
-            comboMPagamento.TabIndex = 12;
+            // label6
             // 
 
             // comboProduto
@@ -185,13 +185,24 @@
             label6.Text = "Valor";
 
             // 
+            // txtEstimativa
+            // 
+            txtEstimativa.Location = new Point(295, 353);
+            txtEstimativa.Mask = "00:00";
+            txtEstimativa.Name = "txtEstimativa";
+            txtEstimativa.Size = new Size(121, 23);
+            txtEstimativa.TabIndex = 17;
+            txtEstimativa.ValidatingType = typeof(DateTime);
+            // 
             // Cadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-
-            Controls.Add(comboValor);
+            Controls.Add(txtEstimativa);
+            Controls.Add(button3);
+            Controls.Add(comboBox2);
+            Controls.Add(comboBox1);
             Controls.Add(label6);
             Controls.Add(btnVTItens);
             Controls.Add(comboProduto);
@@ -228,11 +239,11 @@
         private Button btnVoltar;
         private TextBox txtNomeCliente;
         private Label label5;
-        private ComboBox comboMPagamento;
-        private ComboBox comboProduto;
-        private Button btnVTItens;
-        private ComboBox comboValor;
         private Label label6;
-
+        private ComboBox comboBox1;
+        private BindingSource conexaoBindingSource;
+        private ComboBox comboBox2;
+        private Button button3;
+        private MaskedTextBox txtEstimativa;
     }
 }

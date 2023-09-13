@@ -90,6 +90,7 @@ namespace ProjetoIntegradorPIXELogic
             {
 
                 comboBox1.Items.Add(row["nome_servico"].ToString());
+                comboBox2.Items.Add(row["valor"].ToString());
 
             }
 

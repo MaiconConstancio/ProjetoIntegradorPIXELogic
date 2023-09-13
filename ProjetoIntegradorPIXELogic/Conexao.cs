@@ -12,8 +12,7 @@ namespace ProjetoIntegradorPIXELogic
     {
 
         const string host = "127.0.0.1";
-
-        const string banco = "pixelogic";
+        const string banco = "pixellogicbd";
         const string usuario = "root";
         const string senha = "";
 
