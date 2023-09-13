@@ -20,82 +20,67 @@ namespace ProjetoIntegradorPIXELogic
         private void button1_Click(object sender, EventArgs e)
         {
 
-            if (Funcoes.campoVazio("Nome", txtNome) == false && Funcoes.campoVazioCombo("Serviço", comboBox1) == false &&
-                Funcoes.campoVazioCombo("Valor", comboBox2) == false && Funcoes.campoVazio("Endereço", txtEndereco) == false &&
-                Funcoes.campoVazio("Funcionario", txtfuncionario) == false && Funcoes.campoVazio("Estimativa de entrega", txtEstimativa) == false)
+            if (Funcoes.campoVazio("Produto", comboProduto) == false && Funcoes.campoVazio("Quantidade", txtQuantidade) == false &&
+                Funcoes.campoVazio("Nome do cliente", txtNomeCliente) == false && Funcoes.campoVazio("Valor", comboValor) == false &&
+                Funcoes.campoVazio("Método de pagamento", comboMPagamento) == false)
             {
 
 
-                if (Conexao.executaQuery($"select * from orcamentos where nome_cliente = '{txtNome.Text}'").Rows.Count > 0)
+                if (MessageBox.Show($"Produto: {comboProduto.Text}\n\n" +
+                $"Quantidade: {txtQuantidade.Text}\n\n" +
+                $"Nome do Cliente: {txtNomeCliente.Text}\n\n" +
+                $"Método de pagamento: {comboMPagamento.Text}\n\n" +
+                $"Valor: {comboValor.Text}\n\n",
+                "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
                 {
 
-                    if (MessageBox.Show("Deseja cadastrar outro item no nome deste cliente? ?", "Confirmar venda!", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
-                    {
+                    string queryi = $"insert into vendas (produto, quantidade, nome_cliente, metodo_pagamento, valor) values " +
+                        $"('{comboProduto.Text}','{txtQuantidade.Text}','{txtNomeCliente.Text}','{comboMPagamento.Text}','{comboValor.Text}');";
+                    Conexao.executaQuery(queryi);
 
-                        if (MessageBox.Show($"Nome: {txtNome.Text}\n\n" +
-                            $"Serviço: {comboBox1.Text}\n\n" +
-                            $"Valor:  {comboBox2.Text}\n\n" +
-                            $"CNPJ: {txtEndereco.Text}\n\n" +
-                            $"Funcionario: {txtfuncionario.Text}\n\n" +
-                            $"Estimativa de entrega: {txtEstimativa.Text}\n\n",
-                            "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
-                        {
-
-                            string query = $"insert into orcamentos (nome_cliente,servico,valor,endereco,funcionario,estimativa_entrega) values " +
-                                $"('{txtNome.Text}','{comboBox1.Text}','{comboBox2.Text}','{txtEndereco.Text}','{txtfuncionario.Text}','{txtEstimativa.Text}');";
-                            Conexao.executaQuery(query);
-
-                            txtNome.Clear();
-                            comboBox1.Text = "";
-                            comboBox2.Text = "";
-                            txtEndereco.Clear();
-                            txtfuncionario.Clear();
-                            txtEstimativa.Clear();
-
-                        }
-
-                    }
-
-                    return;
+                    comboProduto.Text = "";
+                    txtQuantidade.Clear();
+                    txtNomeCliente.Clear();
+                    comboMPagamento.Text = "";
+                    comboValor.Text = "";
 
                 }
-
-                if (MessageBox.Show($"Nome: {txtNome.Text}\n\n" +
-                            $"Serviço: {comboBox1.Text}\n\n" +
-                            $"Valor:  {comboBox2.Text}\n\n" +
-                            $"CNPJ: {txtEndereco.Text}\n\n" +
-                            $"Funcionario: {txtfuncionario.Text}\n\n" +
-                            $"Estimativa de entrega: {txtEstimativa.Text}\n\n",
-                            "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
-                {
-
-                    string query = $"insert into orcamentos (nome_cliente,servico,valor,endereco,funcionario,estimativa_entrega) values " +
-                        $"('{txtNome.Text}','{comboBox1.Text}','{comboBox2.Text}','{txtEndereco.Text}','{txtfuncionario.Text}','{txtEstimativa.Text}');";
-                    Conexao.executaQuery(query);
-
-                    txtNome.Clear();
-                    comboBox1.Text = "";
-                    comboBox2.Text = "";
-                    txtEndereco.Clear();
-                    txtfuncionario.Clear();
-                    txtEstimativa.Clear();
-
-                }
-
             }
 
 
         }
 
+
         private void button2_Click(object sender, EventArgs e)
+        {
+
+
+
+
+        }
+
+        private void btnVTItens_Click(object sender, EventArgs e)
         {
             Form1.panel1.Controls.Clear();
             Lista lista = new Lista();
             lista.TopLevel = false;
             Form1.panel1.Controls.Add(lista);
             lista.Show();
+        }
 
-
+        private void Cadastro_Load(object sender, EventArgs e)
+        {
+           foreach (DataRow row in Conexao.executaQuery("select * from produtos").Rows)
+            {
+                comboProduto.Items.Add(row["produtos"]);
+                comboValor.Items.Add(row["valor"]);
+                
+            }
+            comboMPagamento.Items.Add("Cartao de debito");
+            comboMPagamento.Items.Add("Cartao de crédito");
+            comboMPagamento.Items.Add("Pix");
+            comboMPagamento.Items.Add("Dinheiro");
         }
 
         private void Cadastro_Load(object sender, EventArgs e)

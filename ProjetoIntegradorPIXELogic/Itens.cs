@@ -12,7 +12,9 @@ namespace ProjetoIntegradorPIXELogic
 {
     public partial class Itens : System.Windows.Forms.Form
     {
-        public Itens(string lb1, string lb2, string lb3, string lb4, string lb5, string lb6)
+
+        public Itens(string lb1, string lb2, string lb3, string lb4, string lb5)
+
         {
 
             InitializeComponent();
@@ -21,7 +23,9 @@ namespace ProjetoIntegradorPIXELogic
             label3.Text = lb3;
             label4.Text = lb4;
             label5.Text = lb5;
-            label6.Text = lb6;
+
+
+
         }
 
         private void Form3_Load(object sender, EventArgs e)

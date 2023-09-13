@@ -31,6 +31,26 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
+        public static Boolean existe(string tabela, string campo, ComboBox combo)
+        {
+
+            string query = $"select {campo} from {tabela} where {campo} = '{combo.Text}';";
+
+            if (Conexao.executaQuery(query).Rows.Count > 0)
+            {
+
+                return true;
+
+            }
+
+            else
+            {
+
+                return false;
+
+            }
+        }
+           
         public static Boolean existeComMensagem(string tabela, string campo, TextBox txt, string mensagem, string titulo_mensagem)
         {
 
@@ -101,6 +121,7 @@ namespace ProjetoIntegradorPIXELogic
             else { return false; }
 
         }
+
 
     }
 }
