@@ -73,20 +73,22 @@
             // 
             comboBox1.BackColor = Color.FromArgb(53, 81, 142);
             comboBox1.FlatStyle = FlatStyle.Popup;
+            comboBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             comboBox1.ForeColor = Color.Cyan;
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(44, 101);
+            comboBox1.Location = new Point(44, 95);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(296, 23);
+            comboBox1.Size = new Size(296, 29);
             comboBox1.TabIndex = 12;
             // 
             // maskedTextBox1
             // 
             maskedTextBox1.BackColor = Color.FromArgb(53, 81, 142);
             maskedTextBox1.BorderStyle = BorderStyle.FixedSingle;
-            maskedTextBox1.Location = new Point(44, 150);
+            maskedTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskedTextBox1.Location = new Point(44, 147);
             maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(100, 23);
+            maskedTextBox1.Size = new Size(100, 29);
             maskedTextBox1.TabIndex = 13;
             // 
             // label2

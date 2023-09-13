@@ -36,16 +36,15 @@
             lblFuncionario = new Label();
             txtEndereco = new WiLBiT.WiLBiTTextBox();
             lblEndereco = new Label();
-            txtValor = new WiLBiT.WiLBiTTextBox();
             lblValor = new Label();
-            txtServicos = new WiLBiT.WiLBiTTextBox();
             lblServico = new Label();
             lblOrcamentoDeServicos = new Label();
-            txtNomeDoCliente = new WiLBiT.WiLBiTTextBox();
             btnSalvarNovoLoginSenha = new WiLBiT.WiLBiTButton2();
             lblNomeDoCliente = new Label();
             btnNovoServico = new WiLBiT.WiLBiTButton2();
             btnVoltar = new WiLBiT.WiLBiTButton2();
+            txtNomeDoCliente = new TextBox();
+            cmbServico = new ComboBox();
             SuspendLayout();
             // 
             // txtCidade
@@ -180,28 +179,6 @@
             lblEndereco.TabIndex = 46;
             lblEndereco.Text = "Endereço:";
             // 
-            // txtValor
-            // 
-            txtValor.BackColor = Color.FromArgb(53, 81, 142);
-            txtValor.BorderColor = Color.FromArgb(0, 242, 254);
-            txtValor.BorderFocusColor = Color.DeepSkyBlue;
-            txtValor.BorderRadius = 18;
-            txtValor.BorderSize = 2;
-            txtValor.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            txtValor.ForeColor = Color.FromArgb(160, 245, 255);
-            txtValor.Location = new Point(300, 162);
-            txtValor.Margin = new Padding(4);
-            txtValor.Multiline = false;
-            txtValor.Name = "txtValor";
-            txtValor.Padding = new Padding(10, 7, 10, 7);
-            txtValor.PasswordChar = false;
-            txtValor.PlaceholderColor = Color.DarkGray;
-            txtValor.PlaceholderText = "";
-            txtValor.Size = new Size(206, 39);
-            txtValor.TabIndex = 45;
-            txtValor.Texts = "";
-            txtValor.UnderlinedStyle = false;
-            // 
             // lblValor
             // 
             lblValor.AutoSize = true;
@@ -212,28 +189,6 @@
             lblValor.Size = new Size(92, 37);
             lblValor.TabIndex = 44;
             lblValor.Text = "Valor:";
-            // 
-            // txtServicos
-            // 
-            txtServicos.BackColor = Color.FromArgb(53, 81, 142);
-            txtServicos.BorderColor = Color.FromArgb(0, 242, 254);
-            txtServicos.BorderFocusColor = Color.DeepSkyBlue;
-            txtServicos.BorderRadius = 18;
-            txtServicos.BorderSize = 2;
-            txtServicos.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            txtServicos.ForeColor = Color.FromArgb(160, 245, 255);
-            txtServicos.Location = new Point(226, 116);
-            txtServicos.Margin = new Padding(4);
-            txtServicos.Multiline = false;
-            txtServicos.Name = "txtServicos";
-            txtServicos.Padding = new Padding(10, 7, 10, 7);
-            txtServicos.PasswordChar = false;
-            txtServicos.PlaceholderColor = Color.DarkGray;
-            txtServicos.PlaceholderText = "";
-            txtServicos.Size = new Size(361, 39);
-            txtServicos.TabIndex = 43;
-            txtServicos.Texts = "";
-            txtServicos.UnderlinedStyle = false;
             // 
             // lblServico
             // 
@@ -256,28 +211,6 @@
             lblOrcamentoDeServicos.Size = new Size(310, 37);
             lblOrcamentoDeServicos.TabIndex = 41;
             lblOrcamentoDeServicos.Text = "Orçamento de serviços";
-            // 
-            // txtNomeDoCliente
-            // 
-            txtNomeDoCliente.BackColor = Color.FromArgb(53, 81, 142);
-            txtNomeDoCliente.BorderColor = Color.FromArgb(0, 242, 254);
-            txtNomeDoCliente.BorderFocusColor = Color.DeepSkyBlue;
-            txtNomeDoCliente.BorderRadius = 8;
-            txtNomeDoCliente.BorderSize = 2;
-            txtNomeDoCliente.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            txtNomeDoCliente.ForeColor = Color.FromArgb(160, 245, 255);
-            txtNomeDoCliente.Location = new Point(255, 71);
-            txtNomeDoCliente.Margin = new Padding(4);
-            txtNomeDoCliente.Multiline = false;
-            txtNomeDoCliente.Name = "txtNomeDoCliente";
-            txtNomeDoCliente.Padding = new Padding(10, 7, 10, 7);
-            txtNomeDoCliente.PasswordChar = false;
-            txtNomeDoCliente.PlaceholderColor = Color.DarkGray;
-            txtNomeDoCliente.PlaceholderText = "";
-            txtNomeDoCliente.Size = new Size(296, 39);
-            txtNomeDoCliente.TabIndex = 40;
-            txtNomeDoCliente.Texts = "";
-            txtNomeDoCliente.UnderlinedStyle = false;
             // 
             // btnSalvarNovoLoginSenha
             // 
@@ -347,12 +280,37 @@
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
             // 
+            // txtNomeDoCliente
+            // 
+            txtNomeDoCliente.BackColor = Color.FromArgb(53, 81, 142);
+            txtNomeDoCliente.BorderStyle = BorderStyle.FixedSingle;
+            txtNomeDoCliente.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNomeDoCliente.ForeColor = Color.Cyan;
+            txtNomeDoCliente.Location = new Point(255, 79);
+            txtNomeDoCliente.Name = "txtNomeDoCliente";
+            txtNomeDoCliente.Size = new Size(296, 29);
+            txtNomeDoCliente.TabIndex = 57;
+            // 
+            // cmbServico
+            // 
+            cmbServico.BackColor = Color.FromArgb(53, 81, 142);
+            cmbServico.FlatStyle = FlatStyle.Popup;
+            cmbServico.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            cmbServico.ForeColor = Color.Cyan;
+            cmbServico.FormattingEnabled = true;
+            cmbServico.Location = new Point(228, 125);
+            cmbServico.Name = "cmbServico";
+            cmbServico.Size = new Size(352, 29);
+            cmbServico.TabIndex = 58;
+            // 
             // OrcamentoDeServicos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(cmbServico);
+            Controls.Add(txtNomeDoCliente);
             Controls.Add(btnVoltar);
             Controls.Add(btnNovoServico);
             Controls.Add(txtCidade);
@@ -363,12 +321,9 @@
             Controls.Add(lblFuncionario);
             Controls.Add(txtEndereco);
             Controls.Add(lblEndereco);
-            Controls.Add(txtValor);
             Controls.Add(lblValor);
-            Controls.Add(txtServicos);
             Controls.Add(lblServico);
             Controls.Add(lblOrcamentoDeServicos);
-            Controls.Add(txtNomeDoCliente);
             Controls.Add(btnSalvarNovoLoginSenha);
             Controls.Add(lblNomeDoCliente);
             FormBorderStyle = FormBorderStyle.None;
@@ -388,15 +343,14 @@
         private Label lblFuncionario;
         private WiLBiT.WiLBiTTextBox txtEndereco;
         private Label lblEndereco;
-        private WiLBiT.WiLBiTTextBox txtValor;
         private Label lblValor;
-        private WiLBiT.WiLBiTTextBox txtServicos;
         private Label lblServico;
         private Label lblOrcamentoDeServicos;
-        private WiLBiT.WiLBiTTextBox txtNomeDoCliente;
         private WiLBiT.WiLBiTButton2 btnSalvarNovoLoginSenha;
         private Label lblNomeDoCliente;
         private WiLBiT.WiLBiTButton2 btnNovoServico;
         private WiLBiT.WiLBiTButton2 btnVoltar;
+        private TextBox txtNomeDoCliente;
+        private ComboBox cmbServico;
     }
 }
