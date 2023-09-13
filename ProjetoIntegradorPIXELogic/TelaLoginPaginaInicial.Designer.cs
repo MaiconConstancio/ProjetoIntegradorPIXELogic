@@ -102,6 +102,7 @@ namespace ProjetoIntegradorPIXELogic
             textBox1.BackColor = Color.FromArgb(53, 81, 142);
             textBox1.BorderStyle = BorderStyle.FixedSingle;
             textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.ForeColor = Color.Cyan;
             textBox1.Location = new Point(465, 247);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(296, 29);
@@ -112,6 +113,7 @@ namespace ProjetoIntegradorPIXELogic
             textBox2.BackColor = Color.FromArgb(53, 81, 142);
             textBox2.BorderStyle = BorderStyle.FixedSingle;
             textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.ForeColor = Color.Cyan;
             textBox2.Location = new Point(465, 319);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(296, 29);
