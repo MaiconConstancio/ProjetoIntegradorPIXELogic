@@ -32,8 +32,8 @@
             btnVoltar = new Button();
             label1 = new Label();
             Valor = new Label();
-            txtValor = new TextBox();
             txtNome = new TextBox();
+            txtValor = new MaskedTextBox();
             SuspendLayout();
             // 
             // btnSalvar
@@ -74,13 +74,6 @@
             Valor.TabIndex = 3;
             Valor.Text = "Valor";
             // 
-            // txtValor
-            // 
-            txtValor.Location = new Point(304, 284);
-            txtValor.Name = "txtValor";
-            txtValor.Size = new Size(100, 23);
-            txtValor.TabIndex = 4;
-            // 
             // txtNome
             // 
             txtNome.Location = new Point(304, 157);
@@ -88,13 +81,21 @@
             txtNome.Size = new Size(100, 23);
             txtNome.TabIndex = 5;
             // 
+            // txtValor
+            // 
+            txtValor.Location = new Point(304, 270);
+            txtValor.Mask = "000000,00";
+            txtValor.Name = "txtValor";
+            txtValor.Size = new Size(100, 23);
+            txtValor.TabIndex = 6;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(txtNome);
             Controls.Add(txtValor);
+            Controls.Add(txtNome);
             Controls.Add(Valor);
             Controls.Add(label1);
             Controls.Add(btnVoltar);
@@ -112,7 +113,7 @@
         private Button btnVoltar;
         private Label label1;
         private Label Valor;
-        private TextBox txtValor;
         private TextBox txtNome;
+        private MaskedTextBox txtValor;
     }
 }

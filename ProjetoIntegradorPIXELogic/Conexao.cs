@@ -11,9 +11,9 @@ namespace ProjetoIntegradorPIXELogic
     public class Conexao
     {
 
-        const string host = "localhost";
+        const string host = "127.0.0.1";
 
-        const string banco = "pixelogic_pi";
+        const string banco = "pixellogicbd";
         const string usuario = "root";
         const string senha = "";
 

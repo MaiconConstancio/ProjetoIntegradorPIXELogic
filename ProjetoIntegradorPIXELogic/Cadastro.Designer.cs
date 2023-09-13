@@ -39,12 +39,12 @@
             button2 = new Button();
             txtfuncionario = new TextBox();
             label5 = new Label();
-            txtEstimativa = new TextBox();
             label6 = new Label();
             comboBox1 = new ComboBox();
             comboBox2 = new ComboBox();
             conexaoBindingSource = new BindingSource(components);
             button3 = new Button();
+            txtEstimativa = new MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)conexaoBindingSource).BeginInit();
             SuspendLayout();
             // 
@@ -84,7 +84,7 @@
             label4.TabIndex = 3;
             label4.Text = "Endereço";
             // 
-            // txtFornecedor
+            // txtEndereco
             // 
             txtEndereco.Location = new Point(295, 213);
             txtEndereco.Name = "txtEndereco";
@@ -134,13 +134,6 @@
             label5.TabIndex = 10;
             label5.Text = "Funcionario";
             // 
-            // txtEstimativa
-            // 
-            txtEstimativa.Location = new Point(295, 337);
-            txtEstimativa.Name = "txtEstimativa";
-            txtEstimativa.Size = new Size(121, 23);
-            txtEstimativa.TabIndex = 13;
-            // 
             // label6
             // 
             label6.AutoSize = true;
@@ -180,15 +173,24 @@
             button3.UseVisualStyleBackColor = true;
             button3.Click += button3_Click;
             // 
+            // txtEstimativa
+            // 
+            txtEstimativa.Location = new Point(295, 353);
+            txtEstimativa.Mask = "00:00";
+            txtEstimativa.Name = "txtEstimativa";
+            txtEstimativa.Size = new Size(121, 23);
+            txtEstimativa.TabIndex = 17;
+            txtEstimativa.ValidatingType = typeof(DateTime);
+            // 
             // Cadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtEstimativa);
             Controls.Add(button3);
             Controls.Add(comboBox2);
             Controls.Add(comboBox1);
-            Controls.Add(txtEstimativa);
             Controls.Add(label6);
             Controls.Add(txtfuncionario);
             Controls.Add(label5);
@@ -221,11 +223,11 @@
         private Button button2;
         private TextBox txtfuncionario;
         private Label label5;
-        private TextBox txtEstimativa;
         private Label label6;
         private ComboBox comboBox1;
         private BindingSource conexaoBindingSource;
         private ComboBox comboBox2;
         private Button button3;
+        private MaskedTextBox txtEstimativa;
     }
 }
