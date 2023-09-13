@@ -136,8 +136,11 @@
   <data name="10OPACIDADELOGODESENHO_SEM_Fundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\10OPACIDADELOGODESENHO_SEM_Fundo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ESCRITA_SEM_Fundo9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ESCRITA_SEM_Fundo9.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ESCRITA_SEM_Fundo4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ESCRITA_SEM_Fundo4.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ESCRITA_SEM_Fundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ESCRITA_SEM_Fundo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ESCRITA_SEM_Fundo3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ESCRITA_SEM_Fundo3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -154,10 +157,10 @@
   <data name="ESCRITA_SEM_Fundo7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ESCRITA_SEM_Fundo7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="ESCRITA_SEM_Fundo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ESCRITA_SEM_Fundo5.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ESCRITA_SEM_Fundo10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ESCRITA_SEM_Fundo14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="10OPACIDADELOGODESENHO_SEM_Fundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\10OPACIDADELOGODESENHO_SEM_Fundo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

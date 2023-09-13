@@ -193,9 +193,29 @@ namespace ProjetoIntegradorPIXELogic.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LOGO_SEM_Fundo1 {
+            get {
+                object obj = ResourceManager.GetObject("LOGO_SEM_Fundo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGODESENHO_SEM_Fundo {
             get {
                 object obj = ResourceManager.GetObject("LOGODESENHO_SEM_Fundo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Tela_Login_Objeto {
+            get {
+                object obj = ResourceManager.GetObject("Tela_Login_Objeto", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

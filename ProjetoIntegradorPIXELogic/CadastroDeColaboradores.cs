@@ -36,5 +36,10 @@ namespace ProjetoIntegradorPIXELogic
             lblSenha.BackColor = Color.Transparent;
             //--------------------------- FIM do Setor do Designer -------------------------------------
         }
+
+        private void LogoComoWallpaper_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

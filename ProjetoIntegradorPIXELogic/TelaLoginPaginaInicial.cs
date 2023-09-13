@@ -16,5 +16,11 @@ namespace ProjetoIntegradorPIXELogic
         {
             InitializeComponent();
         }
+
+        private void TelaLoginPaginaInicial_Load(object sender, EventArgs e)
+        {
+            imgLOGOloginPrincipal.Parent = imgWallpaperLoginPrincipal;
+            imgLOGOloginPrincipal.BackColor = Color.Transparent;
+        }
     }
 }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProjetoIntegradorPIXELogic
 {
-    public partial class Vendas : Form
+    public partial class COPIAeCOLA : Form
     {
-        public Vendas()
+        public COPIAeCOLA()
         {
             InitializeComponent();
-        }
-
-        private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
-        {
-            //
         }
     }
 }
