@@ -262,7 +262,7 @@
             txtNomeDoCliente.BackColor = Color.FromArgb(53, 81, 142);
             txtNomeDoCliente.BorderColor = Color.FromArgb(0, 242, 254);
             txtNomeDoCliente.BorderFocusColor = Color.DeepSkyBlue;
-            txtNomeDoCliente.BorderRadius = 18;
+            txtNomeDoCliente.BorderRadius = 8;
             txtNomeDoCliente.BorderSize = 2;
             txtNomeDoCliente.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
             txtNomeDoCliente.ForeColor = Color.FromArgb(160, 245, 255);
@@ -303,7 +303,7 @@
             lblNomeDoCliente.AutoSize = true;
             lblNomeDoCliente.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblNomeDoCliente.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNomeDoCliente.Location = new Point(20, 71);
+            lblNomeDoCliente.Location = new Point(25, 71);
             lblNomeDoCliente.Name = "lblNomeDoCliente";
             lblNomeDoCliente.Size = new Size(236, 37);
             lblNomeDoCliente.TabIndex = 54;
@@ -355,7 +355,6 @@
             ClientSize = new Size(800, 450);
             Controls.Add(btnVoltar);
             Controls.Add(btnNovoServico);
-            Controls.Add(lblNomeDoCliente);
             Controls.Add(txtCidade);
             Controls.Add(lblCidade);
             Controls.Add(txtPrazoDeEntrega);
@@ -371,6 +370,7 @@
             Controls.Add(lblOrcamentoDeServicos);
             Controls.Add(txtNomeDoCliente);
             Controls.Add(btnSalvarNovoLoginSenha);
+            Controls.Add(lblNomeDoCliente);
             FormBorderStyle = FormBorderStyle.None;
             Name = "OrcamentoDeServicos";
             Text = "OrcamentoDeServicos";

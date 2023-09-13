@@ -32,38 +32,18 @@ namespace ProjetoIntegradorPIXELogic
         /// </summary>
         private void InitializeComponent()
         {
-            txtSenha = new WiLBiT.WiLBiTTextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLoginPaginaInicial));
             btnEntra = new WiLBiT.WiLBiTButton2();
             lblSenha = new Label();
             lblLogin = new Label();
-            txtLogin = new WiLBiT.WiLBiTTextBox();
-            imgLogoESCRITALoginPaginaInicial = new PictureBox();
-            imgLogoLoginPaginaInicial = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)imgLogoESCRITALoginPaginaInicial).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)imgLogoLoginPaginaInicial).BeginInit();
+            imgWallpaperLoginPrincipal = new PictureBox();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            imgLOGOloginPrincipal = new PictureBox();
+            label1 = new Label();
+            ((System.ComponentModel.ISupportInitialize)imgWallpaperLoginPrincipal).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgLOGOloginPrincipal).BeginInit();
             SuspendLayout();
-            // 
-            // txtSenha
-            // 
-            txtSenha.BackColor = Color.FromArgb(53, 81, 142);
-            txtSenha.BorderColor = Color.FromArgb(0, 242, 254);
-            txtSenha.BorderFocusColor = Color.DeepSkyBlue;
-            txtSenha.BorderRadius = 24;
-            txtSenha.BorderSize = 2;
-            txtSenha.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSenha.ForeColor = Color.FromArgb(160, 245, 255);
-            txtSenha.Location = new Point(533, 396);
-            txtSenha.Margin = new Padding(4);
-            txtSenha.Multiline = false;
-            txtSenha.Name = "txtSenha";
-            txtSenha.Padding = new Padding(10, 7, 10, 7);
-            txtSenha.PasswordChar = false;
-            txtSenha.PlaceholderColor = Color.DarkGray;
-            txtSenha.PlaceholderText = "";
-            txtSenha.Size = new Size(296, 51);
-            txtSenha.TabIndex = 0;
-            txtSenha.Texts = "";
-            txtSenha.UnderlinedStyle = false;
             // 
             // btnEntra
             // 
@@ -76,7 +56,7 @@ namespace ProjetoIntegradorPIXELogic
             btnEntra.FlatStyle = FlatStyle.Flat;
             btnEntra.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             btnEntra.ForeColor = Color.Black;
-            btnEntra.Location = new Point(533, 454);
+            btnEntra.Location = new Point(465, 381);
             btnEntra.Name = "btnEntra";
             btnEntra.Size = new Size(296, 47);
             btnEntra.TabIndex = 3;
@@ -89,7 +69,7 @@ namespace ProjetoIntegradorPIXELogic
             lblSenha.AutoSize = true;
             lblSenha.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
-            lblSenha.Location = new Point(631, 355);
+            lblSenha.Location = new Point(458, 282);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(94, 37);
             lblSenha.TabIndex = 4;
@@ -100,86 +80,98 @@ namespace ProjetoIntegradorPIXELogic
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
-            lblLogin.Location = new Point(631, 259);
+            lblLogin.Location = new Point(459, 209);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(89, 37);
             lblLogin.TabIndex = 6;
             lblLogin.Text = "Login";
             // 
-            // txtLogin
+            // imgWallpaperLoginPrincipal
             // 
-            txtLogin.BackColor = Color.FromArgb(53, 81, 142);
-            txtLogin.BorderColor = Color.FromArgb(0, 242, 254);
-            txtLogin.BorderFocusColor = Color.DeepSkyBlue;
-            txtLogin.BorderRadius = 24;
-            txtLogin.BorderSize = 2;
-            txtLogin.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            txtLogin.ForeColor = Color.FromArgb(160, 245, 255);
-            txtLogin.Location = new Point(533, 300);
-            txtLogin.Margin = new Padding(4);
-            txtLogin.Multiline = false;
-            txtLogin.Name = "txtLogin";
-            txtLogin.Padding = new Padding(10, 7, 10, 7);
-            txtLogin.PasswordChar = false;
-            txtLogin.PlaceholderColor = Color.DarkGray;
-            txtLogin.PlaceholderText = "";
-            txtLogin.Size = new Size(296, 51);
-            txtLogin.TabIndex = 5;
-            txtLogin.Texts = "";
-            txtLogin.UnderlinedStyle = false;
+            imgWallpaperLoginPrincipal.Dock = DockStyle.Fill;
+            imgWallpaperLoginPrincipal.Image = Properties.Resources.Tela_Login_Objeto;
+            imgWallpaperLoginPrincipal.Location = new Point(0, 0);
+            imgWallpaperLoginPrincipal.Name = "imgWallpaperLoginPrincipal";
+            imgWallpaperLoginPrincipal.Size = new Size(800, 450);
+            imgWallpaperLoginPrincipal.SizeMode = PictureBoxSizeMode.Zoom;
+            imgWallpaperLoginPrincipal.TabIndex = 7;
+            imgWallpaperLoginPrincipal.TabStop = false;
             // 
-            // imgLogoESCRITALoginPaginaInicial
+            // textBox1
             // 
-            imgLogoESCRITALoginPaginaInicial.Image = Properties.Resources.ESCRITA_SEM_Fundo;
-            imgLogoESCRITALoginPaginaInicial.Location = new Point(150, 82);
-            imgLogoESCRITALoginPaginaInicial.Name = "imgLogoESCRITALoginPaginaInicial";
-            imgLogoESCRITALoginPaginaInicial.Size = new Size(575, 117);
-            imgLogoESCRITALoginPaginaInicial.SizeMode = PictureBoxSizeMode.Zoom;
-            imgLogoESCRITALoginPaginaInicial.TabIndex = 7;
-            imgLogoESCRITALoginPaginaInicial.TabStop = false;
+            textBox1.BackColor = Color.FromArgb(53, 81, 142);
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.Location = new Point(465, 247);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(296, 29);
+            textBox1.TabIndex = 8;
             // 
-            // imgLogoLoginPaginaInicial
+            // textBox2
             // 
-            imgLogoLoginPaginaInicial.Image = Properties.Resources.LOGODESENHO_SEM_Fundo;
-            imgLogoLoginPaginaInicial.Location = new Point(36, 219);
-            imgLogoLoginPaginaInicial.Name = "imgLogoLoginPaginaInicial";
-            imgLogoLoginPaginaInicial.Size = new Size(382, 296);
-            imgLogoLoginPaginaInicial.SizeMode = PictureBoxSizeMode.Zoom;
-            imgLogoLoginPaginaInicial.TabIndex = 8;
-            imgLogoLoginPaginaInicial.TabStop = false;
+            textBox2.BackColor = Color.FromArgb(53, 81, 142);
+            textBox2.BorderStyle = BorderStyle.FixedSingle;
+            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox2.Location = new Point(465, 319);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(296, 29);
+            textBox2.TabIndex = 9;
+            // 
+            // imgLOGOloginPrincipal
+            // 
+            imgLOGOloginPrincipal.Image = (System.Drawing.Image)resources.GetObject("imgLOGOloginPrincipal.Image");
+            imgLOGOloginPrincipal.Location = new Point(357, -57);
+            imgLOGOloginPrincipal.Name = "imgLOGOloginPrincipal";
+            imgLOGOloginPrincipal.Size = new Size(431, 327);
+            imgLOGOloginPrincipal.SizeMode = PictureBoxSizeMode.Zoom;
+            imgLOGOloginPrincipal.TabIndex = 10;
+            imgLOGOloginPrincipal.TabStop = false;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.FromArgb(63, 200, 254);
+            label1.Location = new Point(465, 355);
+            label1.Name = "label1";
+            label1.Size = new Size(209, 19);
+            label1.TabIndex = 11;
+            label1.Text = "Não tem uma conta? crie aqui";
             // 
             // TelaLoginPaginaInicial
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
-            ClientSize = new Size(875, 572);
-            Controls.Add(imgLogoLoginPaginaInicial);
-            Controls.Add(imgLogoESCRITALoginPaginaInicial);
+            ClientSize = new Size(800, 450);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(lblLogin);
-            Controls.Add(txtLogin);
             Controls.Add(lblSenha);
             Controls.Add(btnEntra);
-            Controls.Add(txtSenha);
+            Controls.Add(imgLOGOloginPrincipal);
+            Controls.Add(label1);
+            Controls.Add(imgWallpaperLoginPrincipal);
             ForeColor = Color.FromArgb(16, 25, 56);
             FormBorderStyle = FormBorderStyle.None;
             Name = "TelaLoginPaginaInicial";
             Text = " ";
             TransparencyKey = Color.Transparent;
-            ((System.ComponentModel.ISupportInitialize)imgLogoESCRITALoginPaginaInicial).EndInit();
-            ((System.ComponentModel.ISupportInitialize)imgLogoLoginPaginaInicial).EndInit();
+            Load += TelaLoginPaginaInicial_Load;
+            ((System.ComponentModel.ISupportInitialize)imgWallpaperLoginPrincipal).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgLOGOloginPrincipal).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private WiLBiT.WiLBiTTextBox txtSenha;
         private WiLBiT.WiLBiTButton2 btnEntra;
         private Label lblSenha;
         private Label lblLogin;
-        private WiLBiT.WiLBiTTextBox txtLogin;
-        private PictureBox imgLogoESCRITALoginPaginaInicial;
-        private PictureBox imgLogoLoginPaginaInicial;
+        private PictureBox imgWallpaperLoginPrincipal;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private PictureBox imgLOGOloginPrincipal;
+        private Label label1;
     }
 }

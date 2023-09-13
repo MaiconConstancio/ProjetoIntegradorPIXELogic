@@ -235,6 +235,7 @@
             LogoComoWallpaper.SizeMode = PictureBoxSizeMode.Zoom;
             LogoComoWallpaper.TabIndex = 24;
             LogoComoWallpaper.TabStop = false;
+            LogoComoWallpaper.Click += LogoComoWallpaper_Click;
             // 
             // CadastroDeColaboradores
             // 
