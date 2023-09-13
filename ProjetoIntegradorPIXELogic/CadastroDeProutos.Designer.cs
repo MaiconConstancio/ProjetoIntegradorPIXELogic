@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroDeProutos));
             btnSalvar = new WiLBiT.WiLBiTButton2();
             btnVoltar = new WiLBiT.WiLBiTButton2();
             txtQuantidade = new WiLBiT.WiLBiTTextBox();
@@ -41,6 +42,8 @@
             lblValor = new Label();
             lblVencimento = new Label();
             lblCadastrodeprodutos = new Label();
+            LogoComoWallpaper = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
             // btnSalvar
@@ -67,7 +70,7 @@
             btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnVoltar.BorderRadius = 20;
+            btnVoltar.BorderRadius = 18;
             btnVoltar.BorderSize = 2;
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
@@ -257,6 +260,16 @@
             lblCadastrodeprodutos.TabIndex = 30;
             lblCadastrodeprodutos.Text = "Cadastro de Produtos";
             // 
+            // LogoComoWallpaper
+            // 
+            LogoComoWallpaper.Dock = DockStyle.Fill;
+            LogoComoWallpaper.Image = (Image)resources.GetObject("LogoComoWallpaper.Image");
+            LogoComoWallpaper.Location = new Point(0, 0);
+            LogoComoWallpaper.Name = "LogoComoWallpaper";
+            LogoComoWallpaper.Size = new Size(800, 450);
+            LogoComoWallpaper.TabIndex = 31;
+            LogoComoWallpaper.TabStop = false;
+            // 
             // CadastroDeProutos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -276,9 +289,12 @@
             Controls.Add(txtQuantidade);
             Controls.Add(btnVoltar);
             Controls.Add(btnSalvar);
+            Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "CadastroDeProutos";
             Text = "CadastroDeProutos";
+            Load += CadastroDeProutos_Load;
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -298,5 +314,6 @@
         private Label lblValor;
         private Label lblVencimento;
         private Label lblCadastrodeprodutos;
+        private PictureBox LogoComoWallpaper;
     }
 }
