@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroDeFornecedores));
             lblEscolhaSeusColaboradoresESuasCredenciais = new Label();
             txtFornecedor = new WiLBiT.WiLBiTTextBox();
             lblFornecedor = new Label();
@@ -44,6 +45,8 @@
             lblNumero = new Label();
             txtCidade = new WiLBiT.WiLBiTTextBox();
             lblCidade = new Label();
+            LogoComoWallpaper = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
             // lblEscolhaSeusColaboradoresESuasCredenciais
@@ -309,6 +312,16 @@
             lblCidade.TabIndex = 37;
             lblCidade.Text = "Cidade:";
             // 
+            // LogoComoWallpaper
+            // 
+            LogoComoWallpaper.Dock = DockStyle.Fill;
+            LogoComoWallpaper.Image = (Image)resources.GetObject("LogoComoWallpaper.Image");
+            LogoComoWallpaper.Location = new Point(0, 0);
+            LogoComoWallpaper.Name = "LogoComoWallpaper";
+            LogoComoWallpaper.Size = new Size(800, 450);
+            LogoComoWallpaper.TabIndex = 39;
+            LogoComoWallpaper.TabStop = false;
+            // 
             // CadastroDeFornecedores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -331,9 +344,12 @@
             Controls.Add(txtFornecedor);
             Controls.Add(lblFornecedor);
             Controls.Add(btnSalvar);
+            Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "CadastroDeFornecedores";
             Text = "CadastroDeFornecedores";
+            Load += CadastroDeFornecedores_Load;
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -356,5 +372,6 @@
         private Label lblNumero;
         private WiLBiT.WiLBiTTextBox txtCidade;
         private Label lblCidade;
+        private PictureBox LogoComoWallpaper;
     }
 }

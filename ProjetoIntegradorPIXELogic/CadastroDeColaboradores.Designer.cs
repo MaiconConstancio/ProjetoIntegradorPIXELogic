@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroDeColaboradores));
             lblEscolhaSeusColaboradoresESuasCredenciais = new Label();
             txtNome = new WiLBiT.WiLBiTTextBox();
             lblNome = new Label();
@@ -39,6 +40,8 @@
             txtSenha = new WiLBiT.WiLBiTTextBox();
             lblSenha = new Label();
             btnVoltar = new WiLBiT.WiLBiTButton2();
+            LogoComoWallpaper = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
             // lblEscolhaSeusColaboradoresESuasCredenciais
@@ -46,7 +49,7 @@
             lblEscolhaSeusColaboradoresESuasCredenciais.AutoSize = true;
             lblEscolhaSeusColaboradoresESuasCredenciais.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblEscolhaSeusColaboradoresESuasCredenciais.ForeColor = Color.Cyan;
-            lblEscolhaSeusColaboradoresESuasCredenciais.Location = new Point(101, 53);
+            lblEscolhaSeusColaboradoresESuasCredenciais.Location = new Point(93, 50);
             lblEscolhaSeusColaboradoresESuasCredenciais.Name = "lblEscolhaSeusColaboradoresESuasCredenciais";
             lblEscolhaSeusColaboradoresESuasCredenciais.Size = new Size(600, 37);
             lblEscolhaSeusColaboradoresESuasCredenciais.TabIndex = 16;
@@ -222,12 +225,24 @@
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
             // 
+            // LogoComoWallpaper
+            // 
+            LogoComoWallpaper.Dock = DockStyle.Fill;
+            LogoComoWallpaper.Image = (Image)resources.GetObject("LogoComoWallpaper.Image");
+            LogoComoWallpaper.Location = new Point(0, 0);
+            LogoComoWallpaper.Name = "LogoComoWallpaper";
+            LogoComoWallpaper.Size = new Size(800, 450);
+            LogoComoWallpaper.SizeMode = PictureBoxSizeMode.Zoom;
+            LogoComoWallpaper.TabIndex = 24;
+            LogoComoWallpaper.TabStop = false;
+            // 
             // CadastroDeColaboradores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(lblEscolhaSeusColaboradoresESuasCredenciais);
             Controls.Add(btnVoltar);
             Controls.Add(txtSenha);
             Controls.Add(lblSenha);
@@ -235,13 +250,15 @@
             Controls.Add(lblLogin);
             Controls.Add(txtCargo);
             Controls.Add(lblCargo);
-            Controls.Add(lblEscolhaSeusColaboradoresESuasCredenciais);
             Controls.Add(txtNome);
             Controls.Add(lblNome);
             Controls.Add(btnSalvar);
+            Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "CadastroDeColaboradores";
             Text = "CadastroDeColaboradores";
+            Load += CadastroDeColaboradores_Load;
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -259,5 +276,6 @@
         private WiLBiT.WiLBiTTextBox txtSenha;
         private Label lblSenha;
         private WiLBiT.WiLBiTButton2 btnVoltar;
+        private PictureBox LogoComoWallpaper;
     }
 }

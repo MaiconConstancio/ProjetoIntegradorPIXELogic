@@ -16,5 +16,25 @@ namespace ProjetoIntegradorPIXELogic
         {
             InitializeComponent();
         }
+
+        private void CadastroDeColaboradores_Load(object sender, EventArgs e)
+        {
+            //--------------------------- Setor do Designer -------------------------------------
+            lblEscolhaSeusColaboradoresESuasCredenciais.Parent = LogoComoWallpaper;
+            lblEscolhaSeusColaboradoresESuasCredenciais.BackColor = Color.Transparent;
+
+            lblNome.Parent = LogoComoWallpaper;
+            lblNome.BackColor = Color.Transparent;
+
+            lblCargo.Parent = LogoComoWallpaper;
+            lblCargo.BackColor = Color.Transparent;
+
+            lblLogin.Parent = LogoComoWallpaper;
+            lblLogin.BackColor = Color.Transparent;
+
+            lblSenha.Parent = LogoComoWallpaper;
+            lblSenha.BackColor = Color.Transparent;
+            //--------------------------- FIM do Setor do Designer -------------------------------------
+        }
     }
 }
