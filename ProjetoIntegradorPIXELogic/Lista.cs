@@ -24,8 +24,8 @@ namespace ProjetoIntegradorPIXELogic
             foreach (DataRow row in Conexao.executaQuery(query).Rows)
             {
 
-                Itens itens = new Itens(row["produto"].ToString(), row["quantidade"].ToString(), row["nome_cliente"].ToString(), row["valor"].ToString(),
-                                        row["metodo_pagamento"].ToString());
+                Itens itens = new Itens(row["produto"].ToString(), row["valor"].ToString(), row["nome_cliente"].ToString());
+                                        
                 
                 itens.TopLevel = false;
                 itens.Location = new Point(0, 0 + panel1.Height - 2);
@@ -38,12 +38,6 @@ namespace ProjetoIntegradorPIXELogic
 
         private void button1_Click(object sender, EventArgs e)
         {
-
-            Form1.panel1.Controls.Clear();
-            Cadastro cadastro = new Cadastro();
-            cadastro.TopLevel = false;
-            Form1.panel1.Controls.Add(cadastro);
-            cadastro.Show();
 
         }
     }
