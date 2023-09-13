@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace ProjetoIntegradorPIXELogic
 {
-    public partial class Form1 : Form
+    public partial class CadastroDeCliente : Form
     {
-        public Form1()
+        public CadastroDeCliente()
         {
             InitializeComponent();
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

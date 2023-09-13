@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProjetoIntegradorPIXELogic
 {
-    public partial class COPIA : Form
+    public partial class GerenciamentoDeClientes : Form
     {
-        public COPIA()
+        public GerenciamentoDeClientes()
         {
             InitializeComponent();
         }
