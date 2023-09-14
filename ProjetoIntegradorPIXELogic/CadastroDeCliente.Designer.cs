@@ -222,6 +222,7 @@
             btnSalvar.Text = "SALVAR";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnVoltar
             // 
@@ -241,6 +242,7 @@
             btnVoltar.Text = "VOLTAR";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // lblCadastroDeClientes
             // 
