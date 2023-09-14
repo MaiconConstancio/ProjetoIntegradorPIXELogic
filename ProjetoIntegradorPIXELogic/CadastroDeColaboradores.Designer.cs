@@ -84,6 +84,7 @@
             btnSalvar.Text = "SALVAR";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // lblCargo
             // 
