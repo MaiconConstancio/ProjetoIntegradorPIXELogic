@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroDeCliente));
             txtCidade = new TextBox();
             maskNumero = new MaskedTextBox();
             maskCEP = new MaskedTextBox();
@@ -44,7 +45,9 @@
             lblCliente = new Label();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             btnVoltar = new WiLBiT.WiLBiTButton2();
-            lblEscolhaSeusColaboradoresESuasCredenciais = new Label();
+            lblCadastroDeClientes = new Label();
+            LogoComoWallpaper = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
             // txtCidade
@@ -235,16 +238,27 @@
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
             // 
-            // lblEscolhaSeusColaboradoresESuasCredenciais
+            // lblCadastroDeClientes
             // 
-            lblEscolhaSeusColaboradoresESuasCredenciais.AutoSize = true;
-            lblEscolhaSeusColaboradoresESuasCredenciais.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblEscolhaSeusColaboradoresESuasCredenciais.ForeColor = Color.Cyan;
-            lblEscolhaSeusColaboradoresESuasCredenciais.Location = new Point(98, 51);
-            lblEscolhaSeusColaboradoresESuasCredenciais.Name = "lblEscolhaSeusColaboradoresESuasCredenciais";
-            lblEscolhaSeusColaboradoresESuasCredenciais.Size = new Size(600, 37);
-            lblEscolhaSeusColaboradoresESuasCredenciais.TabIndex = 72;
-            lblEscolhaSeusColaboradoresESuasCredenciais.Text = "Escolha seus colaboradores e suas credenciais";
+            lblCadastroDeClientes.AutoSize = true;
+            lblCadastroDeClientes.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCadastroDeClientes.ForeColor = Color.Cyan;
+            lblCadastroDeClientes.Location = new Point(261, 49);
+            lblCadastroDeClientes.Name = "lblCadastroDeClientes";
+            lblCadastroDeClientes.Size = new Size(280, 37);
+            lblCadastroDeClientes.TabIndex = 72;
+            lblCadastroDeClientes.Text = "Cadastro de Clientes";
+            // 
+            // LogoComoWallpaper
+            // 
+            LogoComoWallpaper.Dock = DockStyle.Fill;
+            LogoComoWallpaper.Image = (Image)resources.GetObject("LogoComoWallpaper.Image");
+            LogoComoWallpaper.Location = new Point(0, 0);
+            LogoComoWallpaper.Name = "LogoComoWallpaper";
+            LogoComoWallpaper.Size = new Size(800, 450);
+            LogoComoWallpaper.SizeMode = PictureBoxSizeMode.Zoom;
+            LogoComoWallpaper.TabIndex = 73;
+            LogoComoWallpaper.TabStop = false;
             // 
             // CadastroDeCliente
             // 
@@ -252,7 +266,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(lblEscolhaSeusColaboradoresESuasCredenciais);
+            Controls.Add(lblCadastroDeClientes);
             Controls.Add(btnVoltar);
             Controls.Add(btnSalvar);
             Controls.Add(txtCidade);
@@ -269,10 +283,12 @@
             Controls.Add(lblTelefone);
             Controls.Add(lblEndereco);
             Controls.Add(lblCliente);
+            Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "CadastroDeCliente";
             Text = "CadastroDeCliente";
             Load += CadastroDeCliente_Load;
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -294,6 +310,7 @@
         private Label lblCliente;
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private WiLBiT.WiLBiTButton2 btnVoltar;
-        private Label lblEscolhaSeusColaboradoresESuasCredenciais;
+        private Label lblCadastroDeClientes;
+        private PictureBox LogoComoWallpaper;
     }
 }
