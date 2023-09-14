@@ -28,115 +28,103 @@
         /// </summary>
         private void InitializeComponent()
         {
-            checkBox1 = new CheckBox();
-            checkBox2 = new CheckBox();
-            checkBox3 = new CheckBox();
-            checkBox4 = new CheckBox();
-            checkBox5 = new CheckBox();
-            checkBox6 = new CheckBox();
-            checkBox7 = new CheckBox();
-            checkBox8 = new CheckBox();
-            checkBox9 = new CheckBox();
+            chkBoxColaboradores = new CheckBox();
+            chkBoxFornecedores = new CheckBox();
+            chkBoxProdutos = new CheckBox();
+            chkBoxClientes = new CheckBox();
+            chkBoxGerenciamentoServiços = new CheckBox();
+            chkBoxVendas = new CheckBox();
+            chkBoxEmissaoRelatoriosFinanceiros = new CheckBox();
+            chkBoxSuporteAoCliente = new CheckBox();
             SuspendLayout();
             // 
-            // checkBox1
+            // chkBoxColaboradores
             // 
-            checkBox1.AutoSize = true;
-            checkBox1.ForeColor = SystemColors.ButtonFace;
-            checkBox1.Location = new Point(27, 292);
-            checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(103, 19);
-            checkBox1.TabIndex = 0;
-            checkBox1.Text = "Colaboradores";
-            checkBox1.UseVisualStyleBackColor = true;
+            chkBoxColaboradores.AutoSize = true;
+            chkBoxColaboradores.ForeColor = SystemColors.ButtonFace;
+            chkBoxColaboradores.Location = new Point(27, 257);
+            chkBoxColaboradores.Name = "chkBoxColaboradores";
+            chkBoxColaboradores.Size = new Size(103, 19);
+            chkBoxColaboradores.TabIndex = 0;
+            chkBoxColaboradores.Text = "Colaboradores";
+            chkBoxColaboradores.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // chkBoxFornecedores
             // 
-            checkBox2.AutoSize = true;
-            checkBox2.ForeColor = SystemColors.ButtonFace;
-            checkBox2.Location = new Point(27, 253);
-            checkBox2.Name = "checkBox2";
-            checkBox2.Size = new Size(97, 19);
-            checkBox2.TabIndex = 1;
-            checkBox2.Text = "Fornecedores";
-            checkBox2.UseVisualStyleBackColor = true;
+            chkBoxFornecedores.AutoSize = true;
+            chkBoxFornecedores.ForeColor = SystemColors.ButtonFace;
+            chkBoxFornecedores.Location = new Point(27, 219);
+            chkBoxFornecedores.Name = "chkBoxFornecedores";
+            chkBoxFornecedores.Size = new Size(97, 19);
+            chkBoxFornecedores.TabIndex = 1;
+            chkBoxFornecedores.Text = "Fornecedores";
+            chkBoxFornecedores.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // chkBoxProdutos
             // 
-            checkBox3.AutoSize = true;
-            checkBox3.ForeColor = SystemColors.ButtonFace;
-            checkBox3.Location = new Point(27, 218);
-            checkBox3.Name = "checkBox3";
-            checkBox3.Size = new Size(74, 19);
-            checkBox3.TabIndex = 2;
-            checkBox3.Text = "Produtos";
-            checkBox3.UseVisualStyleBackColor = true;
+            chkBoxProdutos.AutoSize = true;
+            chkBoxProdutos.ForeColor = SystemColors.ButtonFace;
+            chkBoxProdutos.Location = new Point(27, 180);
+            chkBoxProdutos.Name = "chkBoxProdutos";
+            chkBoxProdutos.Size = new Size(74, 19);
+            chkBoxProdutos.TabIndex = 2;
+            chkBoxProdutos.Text = "Produtos";
+            chkBoxProdutos.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // chkBoxClientes
             // 
-            checkBox4.AutoSize = true;
-            checkBox4.ForeColor = SystemColors.ButtonFace;
-            checkBox4.Location = new Point(27, 178);
-            checkBox4.Name = "checkBox4";
-            checkBox4.Size = new Size(68, 19);
-            checkBox4.TabIndex = 3;
-            checkBox4.Text = "Clientes";
-            checkBox4.UseVisualStyleBackColor = true;
+            chkBoxClientes.AutoSize = true;
+            chkBoxClientes.ForeColor = SystemColors.ButtonFace;
+            chkBoxClientes.Location = new Point(27, 142);
+            chkBoxClientes.Name = "chkBoxClientes";
+            chkBoxClientes.Size = new Size(68, 19);
+            chkBoxClientes.TabIndex = 3;
+            chkBoxClientes.Text = "Clientes";
+            chkBoxClientes.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // chkBoxGerenciamentoServiços
             // 
-            checkBox5.AutoSize = true;
-            checkBox5.ForeColor = SystemColors.ButtonFace;
-            checkBox5.Location = new Point(27, 107);
-            checkBox5.Name = "checkBox5";
-            checkBox5.Size = new Size(168, 19);
-            checkBox5.TabIndex = 4;
-            checkBox5.Text = "Gerenciamento de serviços";
-            checkBox5.UseVisualStyleBackColor = true;
+            chkBoxGerenciamentoServiços.AutoSize = true;
+            chkBoxGerenciamentoServiços.ForeColor = SystemColors.ButtonFace;
+            chkBoxGerenciamentoServiços.Location = new Point(27, 107);
+            chkBoxGerenciamentoServiços.Name = "chkBoxGerenciamentoServiços";
+            chkBoxGerenciamentoServiços.Size = new Size(168, 19);
+            chkBoxGerenciamentoServiços.TabIndex = 4;
+            chkBoxGerenciamentoServiços.Text = "Gerenciamento de serviços";
+            chkBoxGerenciamentoServiços.UseVisualStyleBackColor = true;
             // 
-            // checkBox6
+            // chkBoxVendas
             // 
-            checkBox6.AutoSize = true;
-            checkBox6.ForeColor = SystemColors.ButtonFace;
-            checkBox6.Location = new Point(27, 369);
-            checkBox6.Name = "checkBox6";
-            checkBox6.Size = new Size(63, 19);
-            checkBox6.TabIndex = 5;
-            checkBox6.Text = "Vendas";
-            checkBox6.UseVisualStyleBackColor = true;
+            chkBoxVendas.AutoSize = true;
+            chkBoxVendas.ForeColor = SystemColors.ButtonFace;
+            chkBoxVendas.Location = new Point(27, 331);
+            chkBoxVendas.Name = "chkBoxVendas";
+            chkBoxVendas.Size = new Size(63, 19);
+            chkBoxVendas.TabIndex = 5;
+            chkBoxVendas.Text = "Vendas";
+            chkBoxVendas.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // chkBoxEmissaoRelatoriosFinanceiros
             // 
-            checkBox7.AutoSize = true;
-            checkBox7.ForeColor = SystemColors.ButtonFace;
-            checkBox7.Location = new Point(27, 332);
-            checkBox7.Name = "checkBox7";
-            checkBox7.Size = new Size(271, 19);
-            checkBox7.TabIndex = 6;
-            checkBox7.Text = "Emissão De Relatorios Financeiros de Produtos";
-            checkBox7.UseVisualStyleBackColor = true;
+            chkBoxEmissaoRelatoriosFinanceiros.AutoSize = true;
+            chkBoxEmissaoRelatoriosFinanceiros.ForeColor = SystemColors.ButtonFace;
+            chkBoxEmissaoRelatoriosFinanceiros.Location = new Point(27, 294);
+            chkBoxEmissaoRelatoriosFinanceiros.Name = "chkBoxEmissaoRelatoriosFinanceiros";
+            chkBoxEmissaoRelatoriosFinanceiros.Size = new Size(271, 19);
+            chkBoxEmissaoRelatoriosFinanceiros.TabIndex = 6;
+            chkBoxEmissaoRelatoriosFinanceiros.Text = "Emissão De Relatorios Financeiros de Produtos";
+            chkBoxEmissaoRelatoriosFinanceiros.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // chkBoxSuporteAoCliente
             // 
-            checkBox8.AutoSize = true;
-            checkBox8.ForeColor = SystemColors.ButtonFace;
-            checkBox8.Location = new Point(27, 143);
-            checkBox8.Name = "checkBox8";
-            checkBox8.Size = new Size(271, 19);
-            checkBox8.TabIndex = 7;
-            checkBox8.Text = "Emissão De Relatorios Financeiros de Produtos";
-            checkBox8.UseVisualStyleBackColor = true;
-            // 
-            // checkBox9
-            // 
-            checkBox9.AutoSize = true;
-            checkBox9.ForeColor = SystemColors.ButtonFace;
-            checkBox9.Location = new Point(27, 404);
-            checkBox9.Name = "checkBox9";
-            checkBox9.Size = new Size(123, 19);
-            checkBox9.TabIndex = 8;
-            checkBox9.Text = "Suporte ao Cliente";
-            checkBox9.UseVisualStyleBackColor = true;
+            chkBoxSuporteAoCliente.AutoSize = true;
+            chkBoxSuporteAoCliente.ForeColor = SystemColors.ButtonFace;
+            chkBoxSuporteAoCliente.Location = new Point(27, 370);
+            chkBoxSuporteAoCliente.Name = "chkBoxSuporteAoCliente";
+            chkBoxSuporteAoCliente.Size = new Size(123, 19);
+            chkBoxSuporteAoCliente.TabIndex = 8;
+            chkBoxSuporteAoCliente.Text = "Suporte ao Cliente";
+            chkBoxSuporteAoCliente.UseVisualStyleBackColor = true;
             // 
             // MontagemPrograma
             // 
@@ -144,15 +132,14 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(checkBox9);
-            Controls.Add(checkBox8);
-            Controls.Add(checkBox7);
-            Controls.Add(checkBox6);
-            Controls.Add(checkBox5);
-            Controls.Add(checkBox4);
-            Controls.Add(checkBox3);
-            Controls.Add(checkBox2);
-            Controls.Add(checkBox1);
+            Controls.Add(chkBoxSuporteAoCliente);
+            Controls.Add(chkBoxEmissaoRelatoriosFinanceiros);
+            Controls.Add(chkBoxVendas);
+            Controls.Add(chkBoxGerenciamentoServiços);
+            Controls.Add(chkBoxClientes);
+            Controls.Add(chkBoxProdutos);
+            Controls.Add(chkBoxFornecedores);
+            Controls.Add(chkBoxColaboradores);
             FormBorderStyle = FormBorderStyle.None;
             Name = "MontagemPrograma";
             Text = "MontagemPrograma";
@@ -162,14 +149,13 @@
 
         #endregion
 
-        private CheckBox checkBox1;
-        private CheckBox checkBox2;
-        private CheckBox checkBox3;
-        private CheckBox checkBox4;
-        private CheckBox checkBox5;
-        private CheckBox checkBox6;
-        private CheckBox checkBox7;
-        private CheckBox checkBox8;
-        private CheckBox checkBox9;
+        private CheckBox chkBoxColaboradores;
+        private CheckBox chkBoxFornecedores;
+        private CheckBox chkBoxProdutos;
+        private CheckBox chkBoxClientes;
+        private CheckBox chkBoxGerenciamentoServiços;
+        private CheckBox chkBoxVendas;
+        private CheckBox chkBoxEmissaoRelatoriosFinanceiros;
+        private CheckBox chkBoxSuporteAoCliente;
     }
 }
