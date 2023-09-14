@@ -36,6 +36,7 @@
             label2 = new Label();
             btnVoltar = new WiLBiT.WiLBiTButton2();
             btnSalvar = new WiLBiT.WiLBiTButton2();
+            lblOrcamentoDeServicos = new Label();
             SuspendLayout();
             // 
             // textBox1
@@ -144,12 +145,24 @@
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
             // 
+            // lblOrcamentoDeServicos
+            // 
+            lblOrcamentoDeServicos.AutoSize = true;
+            lblOrcamentoDeServicos.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblOrcamentoDeServicos.ForeColor = Color.Cyan;
+            lblOrcamentoDeServicos.Location = new Point(402, 173);
+            lblOrcamentoDeServicos.Name = "lblOrcamentoDeServicos";
+            lblOrcamentoDeServicos.Size = new Size(310, 37);
+            lblOrcamentoDeServicos.TabIndex = 75;
+            lblOrcamentoDeServicos.Text = "Orçamento de serviços";
+            // 
             // COPIAeCOLA
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(lblOrcamentoDeServicos);
             Controls.Add(btnSalvar);
             Controls.Add(btnVoltar);
             Controls.Add(label2);
@@ -174,5 +187,6 @@
         private Label label2;
         private WiLBiT.WiLBiTButton2 btnVoltar;
         private WiLBiT.WiLBiTButton2 btnSalvar;
+        private Label lblOrcamentoDeServicos;
     }
 }
