@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroDeColaboradores));
             lblEscolhaSeusColaboradoresESuasCredenciais = new Label();
-            txtNome = new WiLBiT.WiLBiTTextBox();
             lblNome = new Label();
             btnSalvar = new WiLBiT.WiLBiTButton2();
-            txtCargo = new WiLBiT.WiLBiTTextBox();
             lblCargo = new Label();
-            txtLogin = new WiLBiT.WiLBiTTextBox();
             lblLogin = new Label();
-            txtSenha = new WiLBiT.WiLBiTTextBox();
             lblSenha = new Label();
             btnVoltar = new WiLBiT.WiLBiTButton2();
             LogoComoWallpaper = new PictureBox();
+            txtNome = new TextBox();
+            txtCargo = new TextBox();
+            txtLogin = new TextBox();
+            txtSenha = new TextBox();
             ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
@@ -54,28 +54,6 @@
             lblEscolhaSeusColaboradoresESuasCredenciais.Size = new Size(600, 37);
             lblEscolhaSeusColaboradoresESuasCredenciais.TabIndex = 16;
             lblEscolhaSeusColaboradoresESuasCredenciais.Text = "Escolha seus colaboradores e suas credenciais";
-            // 
-            // txtNome
-            // 
-            txtNome.BackColor = Color.FromArgb(53, 81, 142);
-            txtNome.BorderColor = Color.FromArgb(0, 242, 254);
-            txtNome.BorderFocusColor = Color.DeepSkyBlue;
-            txtNome.BorderRadius = 18;
-            txtNome.BorderSize = 2;
-            txtNome.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            txtNome.ForeColor = Color.FromArgb(160, 245, 255);
-            txtNome.Location = new Point(249, 124);
-            txtNome.Margin = new Padding(4);
-            txtNome.Multiline = false;
-            txtNome.Name = "txtNome";
-            txtNome.Padding = new Padding(10, 7, 10, 7);
-            txtNome.PasswordChar = false;
-            txtNome.PlaceholderColor = Color.DarkGray;
-            txtNome.PlaceholderText = "";
-            txtNome.Size = new Size(296, 39);
-            txtNome.TabIndex = 15;
-            txtNome.Texts = "";
-            txtNome.UnderlinedStyle = false;
             // 
             // lblNome
             // 
@@ -107,28 +85,6 @@
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
             // 
-            // txtCargo
-            // 
-            txtCargo.BackColor = Color.FromArgb(53, 81, 142);
-            txtCargo.BorderColor = Color.FromArgb(0, 242, 254);
-            txtCargo.BorderFocusColor = Color.DeepSkyBlue;
-            txtCargo.BorderRadius = 18;
-            txtCargo.BorderSize = 2;
-            txtCargo.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCargo.ForeColor = Color.FromArgb(160, 245, 255);
-            txtCargo.Location = new Point(249, 191);
-            txtCargo.Margin = new Padding(4);
-            txtCargo.Multiline = false;
-            txtCargo.Name = "txtCargo";
-            txtCargo.Padding = new Padding(10, 7, 10, 7);
-            txtCargo.PasswordChar = false;
-            txtCargo.PlaceholderColor = Color.DarkGray;
-            txtCargo.PlaceholderText = "";
-            txtCargo.Size = new Size(296, 39);
-            txtCargo.TabIndex = 18;
-            txtCargo.Texts = "";
-            txtCargo.UnderlinedStyle = false;
-            // 
             // lblCargo
             // 
             lblCargo.AutoSize = true;
@@ -140,28 +96,6 @@
             lblCargo.TabIndex = 17;
             lblCargo.Text = "Cargo:";
             // 
-            // txtLogin
-            // 
-            txtLogin.BackColor = Color.FromArgb(53, 81, 142);
-            txtLogin.BorderColor = Color.FromArgb(0, 242, 254);
-            txtLogin.BorderFocusColor = Color.DeepSkyBlue;
-            txtLogin.BorderRadius = 18;
-            txtLogin.BorderSize = 2;
-            txtLogin.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            txtLogin.ForeColor = Color.FromArgb(160, 245, 255);
-            txtLogin.Location = new Point(249, 261);
-            txtLogin.Margin = new Padding(4);
-            txtLogin.Multiline = false;
-            txtLogin.Name = "txtLogin";
-            txtLogin.Padding = new Padding(10, 7, 10, 7);
-            txtLogin.PasswordChar = false;
-            txtLogin.PlaceholderColor = Color.DarkGray;
-            txtLogin.PlaceholderText = "";
-            txtLogin.Size = new Size(296, 39);
-            txtLogin.TabIndex = 20;
-            txtLogin.Texts = "";
-            txtLogin.UnderlinedStyle = false;
-            // 
             // lblLogin
             // 
             lblLogin.AutoSize = true;
@@ -172,28 +106,6 @@
             lblLogin.Size = new Size(68, 25);
             lblLogin.TabIndex = 19;
             lblLogin.Text = "Login:";
-            // 
-            // txtSenha
-            // 
-            txtSenha.BackColor = Color.FromArgb(53, 81, 142);
-            txtSenha.BorderColor = Color.FromArgb(0, 242, 254);
-            txtSenha.BorderFocusColor = Color.DeepSkyBlue;
-            txtSenha.BorderRadius = 18;
-            txtSenha.BorderSize = 2;
-            txtSenha.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            txtSenha.ForeColor = Color.FromArgb(160, 245, 255);
-            txtSenha.Location = new Point(249, 331);
-            txtSenha.Margin = new Padding(4);
-            txtSenha.Multiline = false;
-            txtSenha.Name = "txtSenha";
-            txtSenha.Padding = new Padding(10, 7, 10, 7);
-            txtSenha.PasswordChar = false;
-            txtSenha.PlaceholderColor = Color.DarkGray;
-            txtSenha.PlaceholderText = "";
-            txtSenha.Size = new Size(296, 39);
-            txtSenha.TabIndex = 22;
-            txtSenha.Texts = "";
-            txtSenha.UnderlinedStyle = false;
             // 
             // lblSenha
             // 
@@ -237,21 +149,65 @@
             LogoComoWallpaper.TabStop = false;
             LogoComoWallpaper.Click += LogoComoWallpaper_Click;
             // 
+            // txtNome
+            // 
+            txtNome.BackColor = Color.FromArgb(53, 81, 142);
+            txtNome.BorderStyle = BorderStyle.FixedSingle;
+            txtNome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNome.ForeColor = Color.Cyan;
+            txtNome.Location = new Point(262, 131);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(296, 29);
+            txtNome.TabIndex = 64;
+            // 
+            // txtCargo
+            // 
+            txtCargo.BackColor = Color.FromArgb(53, 81, 142);
+            txtCargo.BorderStyle = BorderStyle.FixedSingle;
+            txtCargo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCargo.ForeColor = Color.Cyan;
+            txtCargo.Location = new Point(262, 200);
+            txtCargo.Name = "txtCargo";
+            txtCargo.Size = new Size(296, 29);
+            txtCargo.TabIndex = 65;
+            // 
+            // txtLogin
+            // 
+            txtLogin.BackColor = Color.FromArgb(53, 81, 142);
+            txtLogin.BorderStyle = BorderStyle.FixedSingle;
+            txtLogin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtLogin.ForeColor = Color.Cyan;
+            txtLogin.Location = new Point(262, 270);
+            txtLogin.Name = "txtLogin";
+            txtLogin.Size = new Size(296, 29);
+            txtLogin.TabIndex = 66;
+            // 
+            // txtSenha
+            // 
+            txtSenha.BackColor = Color.FromArgb(53, 81, 142);
+            txtSenha.BorderStyle = BorderStyle.FixedSingle;
+            txtSenha.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSenha.ForeColor = Color.Cyan;
+            txtSenha.Location = new Point(262, 340);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(296, 29);
+            txtSenha.TabIndex = 67;
+            // 
             // CadastroDeColaboradores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(txtSenha);
+            Controls.Add(txtLogin);
+            Controls.Add(txtCargo);
+            Controls.Add(txtNome);
             Controls.Add(lblEscolhaSeusColaboradoresESuasCredenciais);
             Controls.Add(btnVoltar);
-            Controls.Add(txtSenha);
             Controls.Add(lblSenha);
-            Controls.Add(txtLogin);
             Controls.Add(lblLogin);
-            Controls.Add(txtCargo);
             Controls.Add(lblCargo);
-            Controls.Add(txtNome);
             Controls.Add(lblNome);
             Controls.Add(btnSalvar);
             Controls.Add(LogoComoWallpaper);
@@ -267,16 +223,16 @@
         #endregion
 
         private Label lblEscolhaSeusColaboradoresESuasCredenciais;
-        private WiLBiT.WiLBiTTextBox txtNome;
         private Label lblNome;
         private WiLBiT.WiLBiTButton2 btnSalvar;
-        private WiLBiT.WiLBiTTextBox txtCargo;
         private Label lblCargo;
-        private WiLBiT.WiLBiTTextBox txtLogin;
         private Label lblLogin;
-        private WiLBiT.WiLBiTTextBox txtSenha;
         private Label lblSenha;
         private WiLBiT.WiLBiTButton2 btnVoltar;
         private PictureBox LogoComoWallpaper;
+        private TextBox txtNome;
+        private TextBox txtCargo;
+        private TextBox txtLogin;
+        private TextBox txtSenha;
     }
 }

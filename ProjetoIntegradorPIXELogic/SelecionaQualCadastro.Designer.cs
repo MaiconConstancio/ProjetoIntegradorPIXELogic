@@ -28,12 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelecionaQualCadastro));
             btnFuncionarios = new WiLBiT.WiLBiTButton2();
             btnFornecedores = new WiLBiT.WiLBiTButton2();
             btnProdutos = new WiLBiT.WiLBiTButton2();
             btnClientes = new WiLBiT.WiLBiTButton2();
             btnServico = new WiLBiT.WiLBiTButton2();
             lblEscolhaQualCadastroDesejaRealizar = new Label();
+            LogoComoWallpaper = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
             // btnFuncionarios
@@ -144,6 +147,16 @@
             lblEscolhaQualCadastroDesejaRealizar.TabIndex = 31;
             lblEscolhaQualCadastroDesejaRealizar.Text = "Escolha qual Cadastro deseja realizar:";
             // 
+            // LogoComoWallpaper
+            // 
+            LogoComoWallpaper.Dock = DockStyle.Fill;
+            LogoComoWallpaper.Image = (Image)resources.GetObject("LogoComoWallpaper.Image");
+            LogoComoWallpaper.Location = new Point(0, 0);
+            LogoComoWallpaper.Name = "LogoComoWallpaper";
+            LogoComoWallpaper.Size = new Size(800, 450);
+            LogoComoWallpaper.TabIndex = 40;
+            LogoComoWallpaper.TabStop = false;
+            // 
             // SelecionaQualCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -156,9 +169,12 @@
             Controls.Add(btnProdutos);
             Controls.Add(btnFornecedores);
             Controls.Add(btnFuncionarios);
+            Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "SelecionaQualCadastro";
             Text = "SelecionaQualCadastro";
+            Load += SelecionaQualCadastro_Load;
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -170,5 +186,6 @@
         private WiLBiT.WiLBiTButton2 btnClientes;
         private WiLBiT.WiLBiTButton2 btnServico;
         private Label lblEscolhaQualCadastroDesejaRealizar;
+        private PictureBox LogoComoWallpaper;
     }
 }

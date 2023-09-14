@@ -37,10 +37,10 @@ namespace ProjetoIntegradorPIXELogic
             lblSenha = new Label();
             lblLogin = new Label();
             imgWallpaperLoginPrincipal = new PictureBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            txtLogin = new TextBox();
+            txtSenha = new TextBox();
             imgLOGOloginPrincipal = new PictureBox();
-            label1 = new Label();
+            lblNãotemconta = new Label();
             ((System.ComponentModel.ISupportInitialize)imgWallpaperLoginPrincipal).BeginInit();
             ((System.ComponentModel.ISupportInitialize)imgLOGOloginPrincipal).BeginInit();
             SuspendLayout();
@@ -97,27 +97,27 @@ namespace ProjetoIntegradorPIXELogic
             imgWallpaperLoginPrincipal.TabIndex = 7;
             imgWallpaperLoginPrincipal.TabStop = false;
             // 
-            // textBox1
+            // txtLogin
             // 
-            textBox1.BackColor = Color.FromArgb(53, 81, 142);
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.Cyan;
-            textBox1.Location = new Point(465, 247);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(296, 29);
-            textBox1.TabIndex = 8;
+            txtLogin.BackColor = Color.FromArgb(53, 81, 142);
+            txtLogin.BorderStyle = BorderStyle.FixedSingle;
+            txtLogin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtLogin.ForeColor = Color.Cyan;
+            txtLogin.Location = new Point(465, 247);
+            txtLogin.Name = "txtLogin";
+            txtLogin.Size = new Size(296, 29);
+            txtLogin.TabIndex = 8;
             // 
-            // textBox2
+            // txtSenha
             // 
-            textBox2.BackColor = Color.FromArgb(53, 81, 142);
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.ForeColor = Color.Cyan;
-            textBox2.Location = new Point(465, 319);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(296, 29);
-            textBox2.TabIndex = 9;
+            txtSenha.BackColor = Color.FromArgb(53, 81, 142);
+            txtSenha.BorderStyle = BorderStyle.FixedSingle;
+            txtSenha.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtSenha.ForeColor = Color.Cyan;
+            txtSenha.Location = new Point(465, 319);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(296, 29);
+            txtSenha.TabIndex = 9;
             // 
             // imgLOGOloginPrincipal
             // 
@@ -129,16 +129,16 @@ namespace ProjetoIntegradorPIXELogic
             imgLOGOloginPrincipal.TabIndex = 10;
             imgLOGOloginPrincipal.TabStop = false;
             // 
-            // label1
+            // lblNãotemconta
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(63, 200, 254);
-            label1.Location = new Point(465, 355);
-            label1.Name = "label1";
-            label1.Size = new Size(209, 19);
-            label1.TabIndex = 11;
-            label1.Text = "Não tem uma conta? crie aqui";
+            lblNãotemconta.AutoSize = true;
+            lblNãotemconta.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNãotemconta.ForeColor = Color.FromArgb(63, 200, 254);
+            lblNãotemconta.Location = new Point(465, 355);
+            lblNãotemconta.Name = "lblNãotemconta";
+            lblNãotemconta.Size = new Size(209, 19);
+            lblNãotemconta.TabIndex = 11;
+            lblNãotemconta.Text = "Não tem uma conta? crie aqui";
             // 
             // TelaLoginPaginaInicial
             // 
@@ -146,13 +146,13 @@ namespace ProjetoIntegradorPIXELogic
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtSenha);
+            Controls.Add(txtLogin);
             Controls.Add(lblLogin);
             Controls.Add(lblSenha);
             Controls.Add(btnEntra);
             Controls.Add(imgLOGOloginPrincipal);
-            Controls.Add(label1);
+            Controls.Add(lblNãotemconta);
             Controls.Add(imgWallpaperLoginPrincipal);
             ForeColor = Color.FromArgb(16, 25, 56);
             FormBorderStyle = FormBorderStyle.None;
@@ -171,9 +171,9 @@ namespace ProjetoIntegradorPIXELogic
         private Label lblSenha;
         private Label lblLogin;
         private PictureBox imgWallpaperLoginPrincipal;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox txtLogin;
+        private TextBox txtSenha;
         private PictureBox imgLOGOloginPrincipal;
-        private Label label1;
+        private Label lblNãotemconta;
     }
 }

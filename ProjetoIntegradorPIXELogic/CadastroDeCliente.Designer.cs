@@ -28,292 +28,243 @@
         /// </summary>
         private void InitializeComponent()
         {
-            wilBitButton22 = new WiLBiT.WiLBiTButton2();
-            wilBitButton21 = new WiLBiT.WiLBiTButton2();
-            wilBitTextBox7 = new WiLBiT.WiLBiTTextBox();
-            wilBitTextBox6 = new WiLBiT.WiLBiTTextBox();
-            wilBitTextBox5 = new WiLBiT.WiLBiTTextBox();
-            wilBitTextBox4 = new WiLBiT.WiLBiTTextBox();
-            wilBitTextBox3 = new WiLBiT.WiLBiTTextBox();
-            wilBitTextBox2 = new WiLBiT.WiLBiTTextBox();
-            wilBitTextBox1 = new WiLBiT.WiLBiTTextBox();
-            label7 = new Label();
-            label6 = new Label();
-            label5 = new Label();
-            label4 = new Label();
-            label3 = new Label();
-            label2 = new Label();
-            label1 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroDeCliente));
+            txtCidade = new TextBox();
+            maskNumero = new MaskedTextBox();
+            maskCEP = new MaskedTextBox();
+            maskCPF = new MaskedTextBox();
+            maskTelefone = new MaskedTextBox();
+            txtEndereco = new TextBox();
+            txtCliente = new TextBox();
+            lblCidade = new Label();
+            lblNumero = new Label();
+            lblCEP = new Label();
+            lblCPF = new Label();
+            lblTelefone = new Label();
+            lblEndereco = new Label();
+            lblCliente = new Label();
+            btnSalvar = new WiLBiT.WiLBiTButton2();
+            btnVoltar = new WiLBiT.WiLBiTButton2();
+            lblCadastroDeClientes = new Label();
+            LogoComoWallpaper = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
-            // wilBitButton22
+            // txtCidade
             // 
-            wilBitButton22.BackColor = Color.FromArgb(72, 116, 245);
-            wilBitButton22.BackgroundColor = Color.FromArgb(72, 116, 245);
-            wilBitButton22.BorderColor = Color.FromArgb(0, 242, 254);
-            wilBitButton22.BorderRadius = 19;
-            wilBitButton22.BorderSize = 2;
-            wilBitButton22.FlatAppearance.BorderSize = 0;
-            wilBitButton22.FlatStyle = FlatStyle.Flat;
-            wilBitButton22.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            wilBitButton22.ForeColor = Color.Black;
-            wilBitButton22.Location = new Point(622, 36);
-            wilBitButton22.Name = "wilBitButton22";
-            wilBitButton22.Size = new Size(150, 40);
-            wilBitButton22.TabIndex = 33;
-            wilBitButton22.Text = "Voltar";
-            wilBitButton22.TextColor = Color.Black;
-            wilBitButton22.UseVisualStyleBackColor = false;
+            txtCidade.BackColor = Color.FromArgb(53, 81, 142);
+            txtCidade.BorderStyle = BorderStyle.FixedSingle;
+            txtCidade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCidade.ForeColor = Color.Cyan;
+            txtCidade.Location = new Point(275, 329);
+            txtCidade.Name = "txtCidade";
+            txtCidade.Size = new Size(263, 29);
+            txtCidade.TabIndex = 69;
             // 
-            // wilBitButton21
+            // maskNumero
             // 
-            wilBitButton21.BackColor = Color.FromArgb(72, 116, 245);
-            wilBitButton21.BackgroundColor = Color.FromArgb(72, 116, 245);
-            wilBitButton21.BorderColor = Color.FromArgb(0, 242, 254);
-            wilBitButton21.BorderRadius = 19;
-            wilBitButton21.BorderSize = 2;
-            wilBitButton21.FlatAppearance.BorderSize = 0;
-            wilBitButton21.FlatStyle = FlatStyle.Flat;
-            wilBitButton21.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            wilBitButton21.ForeColor = Color.Black;
-            wilBitButton21.Location = new Point(331, 375);
-            wilBitButton21.Name = "wilBitButton21";
-            wilBitButton21.Size = new Size(150, 40);
-            wilBitButton21.TabIndex = 32;
-            wilBitButton21.Text = "Salvar";
-            wilBitButton21.TextColor = Color.Black;
-            wilBitButton21.UseVisualStyleBackColor = false;
+            maskNumero.BackColor = Color.FromArgb(53, 81, 142);
+            maskNumero.BorderStyle = BorderStyle.FixedSingle;
+            maskNumero.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskNumero.Location = new Point(311, 259);
+            maskNumero.Mask = "0000";
+            maskNumero.Name = "maskNumero";
+            maskNumero.Size = new Size(191, 29);
+            maskNumero.TabIndex = 68;
             // 
-            // wilBitTextBox7
+            // maskCEP
             // 
-            wilBitTextBox7.BackColor = Color.FromArgb(53, 81, 142);
-            wilBitTextBox7.BorderColor = Color.FromArgb(0, 242, 254);
-            wilBitTextBox7.BorderFocusColor = Color.DeepSkyBlue;
-            wilBitTextBox7.BorderRadius = 13;
-            wilBitTextBox7.BorderSize = 2;
-            wilBitTextBox7.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox7.ForeColor = Color.FromArgb(10, 245, 255);
-            wilBitTextBox7.Location = new Point(283, 134);
-            wilBitTextBox7.Margin = new Padding(4);
-            wilBitTextBox7.Multiline = false;
-            wilBitTextBox7.Name = "wilBitTextBox7";
-            wilBitTextBox7.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox7.PasswordChar = false;
-            wilBitTextBox7.PlaceholderColor = Color.DarkGray;
-            wilBitTextBox7.PlaceholderText = "";
-            wilBitTextBox7.Size = new Size(250, 29);
-            wilBitTextBox7.TabIndex = 31;
-            wilBitTextBox7.Texts = "";
-            wilBitTextBox7.UnderlinedStyle = false;
+            maskCEP.BackColor = Color.FromArgb(53, 81, 142);
+            maskCEP.BorderStyle = BorderStyle.FixedSingle;
+            maskCEP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskCEP.Location = new Point(322, 224);
+            maskCEP.Mask = "00000-000";
+            maskCEP.Name = "maskCEP";
+            maskCEP.Size = new Size(168, 29);
+            maskCEP.TabIndex = 67;
             // 
-            // wilBitTextBox6
+            // maskCPF
             // 
-            wilBitTextBox6.BackColor = Color.FromArgb(53, 81, 142);
-            wilBitTextBox6.BorderColor = Color.FromArgb(0, 242, 254);
-            wilBitTextBox6.BorderFocusColor = Color.DeepSkyBlue;
-            wilBitTextBox6.BorderRadius = 13;
-            wilBitTextBox6.BorderSize = 2;
-            wilBitTextBox6.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox6.ForeColor = Color.FromArgb(10, 245, 255);
-            wilBitTextBox6.Location = new Point(283, 171);
-            wilBitTextBox6.Margin = new Padding(4);
-            wilBitTextBox6.Multiline = false;
-            wilBitTextBox6.Name = "wilBitTextBox6";
-            wilBitTextBox6.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox6.PasswordChar = false;
-            wilBitTextBox6.PlaceholderColor = Color.DarkGray;
-            wilBitTextBox6.PlaceholderText = "";
-            wilBitTextBox6.Size = new Size(250, 29);
-            wilBitTextBox6.TabIndex = 30;
-            wilBitTextBox6.Texts = "";
-            wilBitTextBox6.UnderlinedStyle = false;
+            maskCPF.BackColor = Color.FromArgb(53, 81, 142);
+            maskCPF.BorderStyle = BorderStyle.FixedSingle;
+            maskCPF.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskCPF.Location = new Point(302, 189);
+            maskCPF.Mask = "000.000.000-00";
+            maskCPF.Name = "maskCPF";
+            maskCPF.Size = new Size(214, 29);
+            maskCPF.TabIndex = 66;
             // 
-            // wilBitTextBox5
+            // maskTelefone
             // 
-            wilBitTextBox5.BackColor = Color.FromArgb(53, 81, 142);
-            wilBitTextBox5.BorderColor = Color.FromArgb(0, 242, 254);
-            wilBitTextBox5.BorderFocusColor = Color.DeepSkyBlue;
-            wilBitTextBox5.BorderRadius = 13;
-            wilBitTextBox5.BorderSize = 2;
-            wilBitTextBox5.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox5.ForeColor = Color.FromArgb(10, 245, 255);
-            wilBitTextBox5.Location = new Point(283, 208);
-            wilBitTextBox5.Margin = new Padding(4);
-            wilBitTextBox5.Multiline = false;
-            wilBitTextBox5.Name = "wilBitTextBox5";
-            wilBitTextBox5.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox5.PasswordChar = false;
-            wilBitTextBox5.PlaceholderColor = Color.DarkGray;
-            wilBitTextBox5.PlaceholderText = "";
-            wilBitTextBox5.Size = new Size(250, 29);
-            wilBitTextBox5.TabIndex = 29;
-            wilBitTextBox5.Texts = "";
-            wilBitTextBox5.UnderlinedStyle = false;
+            maskTelefone.BackColor = Color.FromArgb(53, 81, 142);
+            maskTelefone.BorderStyle = BorderStyle.FixedSingle;
+            maskTelefone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskTelefone.Location = new Point(294, 154);
+            maskTelefone.Mask = "(99) 00000-0000";
+            maskTelefone.Name = "maskTelefone";
+            maskTelefone.Size = new Size(231, 29);
+            maskTelefone.TabIndex = 65;
             // 
-            // wilBitTextBox4
+            // txtEndereco
             // 
-            wilBitTextBox4.BackColor = Color.FromArgb(53, 81, 142);
-            wilBitTextBox4.BorderColor = Color.FromArgb(0, 242, 254);
-            wilBitTextBox4.BorderFocusColor = Color.DeepSkyBlue;
-            wilBitTextBox4.BorderRadius = 13;
-            wilBitTextBox4.BorderSize = 2;
-            wilBitTextBox4.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox4.ForeColor = Color.FromArgb(10, 245, 255);
-            wilBitTextBox4.Location = new Point(283, 245);
-            wilBitTextBox4.Margin = new Padding(4);
-            wilBitTextBox4.Multiline = false;
-            wilBitTextBox4.Name = "wilBitTextBox4";
-            wilBitTextBox4.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox4.PasswordChar = false;
-            wilBitTextBox4.PlaceholderColor = Color.DarkGray;
-            wilBitTextBox4.PlaceholderText = "";
-            wilBitTextBox4.Size = new Size(250, 29);
-            wilBitTextBox4.TabIndex = 28;
-            wilBitTextBox4.Texts = "";
-            wilBitTextBox4.UnderlinedStyle = false;
+            txtEndereco.BackColor = Color.FromArgb(53, 81, 142);
+            txtEndereco.BorderStyle = BorderStyle.FixedSingle;
+            txtEndereco.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEndereco.ForeColor = Color.Cyan;
+            txtEndereco.Location = new Point(275, 294);
+            txtEndereco.Name = "txtEndereco";
+            txtEndereco.Size = new Size(263, 29);
+            txtEndereco.TabIndex = 64;
             // 
-            // wilBitTextBox3
+            // txtCliente
             // 
-            wilBitTextBox3.BackColor = Color.FromArgb(53, 81, 142);
-            wilBitTextBox3.BorderColor = Color.FromArgb(0, 242, 254);
-            wilBitTextBox3.BorderFocusColor = Color.DeepSkyBlue;
-            wilBitTextBox3.BorderRadius = 13;
-            wilBitTextBox3.BorderSize = 2;
-            wilBitTextBox3.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox3.ForeColor = Color.FromArgb(10, 245, 255);
-            wilBitTextBox3.Location = new Point(283, 282);
-            wilBitTextBox3.Margin = new Padding(4);
-            wilBitTextBox3.Multiline = false;
-            wilBitTextBox3.Name = "wilBitTextBox3";
-            wilBitTextBox3.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox3.PasswordChar = false;
-            wilBitTextBox3.PlaceholderColor = Color.DarkGray;
-            wilBitTextBox3.PlaceholderText = "";
-            wilBitTextBox3.Size = new Size(250, 29);
-            wilBitTextBox3.TabIndex = 27;
-            wilBitTextBox3.Texts = "";
-            wilBitTextBox3.UnderlinedStyle = false;
+            txtCliente.BackColor = Color.FromArgb(53, 81, 142);
+            txtCliente.BorderStyle = BorderStyle.FixedSingle;
+            txtCliente.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCliente.ForeColor = Color.Cyan;
+            txtCliente.Location = new Point(261, 119);
+            txtCliente.Name = "txtCliente";
+            txtCliente.Size = new Size(296, 29);
+            txtCliente.TabIndex = 63;
             // 
-            // wilBitTextBox2
+            // lblCidade
             // 
-            wilBitTextBox2.BackColor = Color.FromArgb(53, 81, 142);
-            wilBitTextBox2.BorderColor = Color.FromArgb(0, 242, 254);
-            wilBitTextBox2.BorderFocusColor = Color.DeepSkyBlue;
-            wilBitTextBox2.BorderRadius = 13;
-            wilBitTextBox2.BorderSize = 2;
-            wilBitTextBox2.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox2.ForeColor = Color.FromArgb(10, 245, 255);
-            wilBitTextBox2.Location = new Point(283, 320);
-            wilBitTextBox2.Margin = new Padding(4);
-            wilBitTextBox2.Multiline = false;
-            wilBitTextBox2.Name = "wilBitTextBox2";
-            wilBitTextBox2.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox2.PasswordChar = false;
-            wilBitTextBox2.PlaceholderColor = Color.DarkGray;
-            wilBitTextBox2.PlaceholderText = "";
-            wilBitTextBox2.Size = new Size(250, 29);
-            wilBitTextBox2.TabIndex = 26;
-            wilBitTextBox2.Texts = "";
-            wilBitTextBox2.UnderlinedStyle = false;
+            lblCidade.AutoSize = true;
+            lblCidade.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCidade.ForeColor = Color.FromArgb(63, 136, 254);
+            lblCidade.Location = new Point(166, 325);
+            lblCidade.Name = "lblCidade";
+            lblCidade.Size = new Size(113, 37);
+            lblCidade.TabIndex = 62;
+            lblCidade.Text = "Cidade:";
             // 
-            // wilBitTextBox1
+            // lblNumero
             // 
-            wilBitTextBox1.BackColor = Color.FromArgb(53, 81, 142);
-            wilBitTextBox1.BorderColor = Color.FromArgb(0, 242, 254);
-            wilBitTextBox1.BorderFocusColor = Color.DeepSkyBlue;
-            wilBitTextBox1.BorderRadius = 13;
-            wilBitTextBox1.BorderSize = 2;
-            wilBitTextBox1.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point);
-            wilBitTextBox1.ForeColor = Color.FromArgb(10, 245, 255);
-            wilBitTextBox1.Location = new Point(283, 97);
-            wilBitTextBox1.Margin = new Padding(4);
-            wilBitTextBox1.Multiline = false;
-            wilBitTextBox1.Name = "wilBitTextBox1";
-            wilBitTextBox1.Padding = new Padding(10, 7, 10, 7);
-            wilBitTextBox1.PasswordChar = false;
-            wilBitTextBox1.PlaceholderColor = Color.DarkGray;
-            wilBitTextBox1.PlaceholderText = "";
-            wilBitTextBox1.Size = new Size(250, 29);
-            wilBitTextBox1.TabIndex = 25;
-            wilBitTextBox1.Texts = "";
-            wilBitTextBox1.UnderlinedStyle = false;
+            lblNumero.AutoSize = true;
+            lblNumero.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNumero.ForeColor = Color.FromArgb(63, 136, 254);
+            lblNumero.Location = new Point(186, 254);
+            lblNumero.Name = "lblNumero";
+            lblNumero.Size = new Size(129, 37);
+            lblNumero.TabIndex = 61;
+            lblNumero.Text = "Número:";
             // 
-            // label7
+            // lblCEP
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.ForeColor = Color.FromArgb(63, 136, 254);
-            label7.Location = new Point(205, 175);
-            label7.Name = "label7";
-            label7.Size = new Size(73, 21);
-            label7.TabIndex = 24;
-            label7.Text = "Telefone";
+            lblCEP.AutoSize = true;
+            lblCEP.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCEP.ForeColor = Color.FromArgb(63, 136, 254);
+            lblCEP.Location = new Point(254, 220);
+            lblCEP.Name = "lblCEP";
+            lblCEP.Size = new Size(72, 37);
+            lblCEP.TabIndex = 60;
+            lblCEP.Text = "CEP:";
             // 
-            // label6
+            // lblCPF
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.FromArgb(63, 136, 254);
-            label6.Location = new Point(215, 324);
-            label6.Name = "label6";
-            label6.Size = new Size(61, 21);
-            label6.TabIndex = 23;
-            label6.Text = "Cidade";
+            lblCPF.AutoSize = true;
+            lblCPF.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCPF.ForeColor = Color.FromArgb(63, 136, 254);
+            lblCPF.Location = new Point(234, 184);
+            lblCPF.Name = "lblCPF";
+            lblCPF.Size = new Size(72, 37);
+            lblCPF.TabIndex = 59;
+            lblCPF.Text = "CPF:";
             // 
-            // label5
+            // lblTelefone
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.FromArgb(63, 136, 254);
-            label5.Location = new Point(208, 285);
-            label5.Name = "label5";
-            label5.Size = new Size(70, 21);
-            label5.TabIndex = 22;
-            label5.Text = "Numero";
+            lblTelefone.AutoSize = true;
+            lblTelefone.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTelefone.ForeColor = Color.FromArgb(63, 136, 254);
+            lblTelefone.Location = new Point(164, 150);
+            lblTelefone.Name = "lblTelefone";
+            lblTelefone.Size = new Size(134, 37);
+            lblTelefone.TabIndex = 58;
+            lblTelefone.Text = "Telefone:";
             // 
-            // label4
+            // lblEndereco
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(63, 136, 254);
-            label4.Location = new Point(229, 139);
-            label4.Name = "label4";
-            label4.Size = new Size(37, 21);
-            label4.TabIndex = 21;
-            label4.Text = "CPF";
+            lblEndereco.AutoSize = true;
+            lblEndereco.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblEndereco.ForeColor = Color.FromArgb(63, 136, 254);
+            lblEndereco.Location = new Point(137, 290);
+            lblEndereco.Name = "lblEndereco";
+            lblEndereco.Size = new Size(142, 37);
+            lblEndereco.TabIndex = 57;
+            lblEndereco.Text = "Endereço:";
             // 
-            // label3
+            // lblCliente
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(63, 136, 254);
-            label3.Location = new Point(229, 213);
-            label3.Name = "label3";
-            label3.Size = new Size(37, 21);
-            label3.TabIndex = 20;
-            label3.Text = "CEP";
+            lblCliente.AutoSize = true;
+            lblCliente.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCliente.ForeColor = Color.FromArgb(63, 136, 254);
+            lblCliente.Location = new Point(151, 113);
+            lblCliente.Name = "lblCliente";
+            lblCliente.Size = new Size(114, 37);
+            lblCliente.TabIndex = 56;
+            lblCliente.Text = "Cliente:";
             // 
-            // label2
+            // btnSalvar
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(63, 136, 254);
-            label2.Location = new Point(199, 249);
-            label2.Name = "label2";
-            label2.Size = new Size(79, 21);
-            label2.TabIndex = 19;
-            label2.Text = "Endereço";
+            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnSalvar.BorderRadius = 18;
+            btnSalvar.BorderSize = 2;
+            btnSalvar.FlatAppearance.BorderSize = 0;
+            btnSalvar.FlatStyle = FlatStyle.Flat;
+            btnSalvar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.World);
+            btnSalvar.ForeColor = Color.Black;
+            btnSalvar.Location = new Point(339, 375);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(135, 36);
+            btnSalvar.TabIndex = 70;
+            btnSalvar.Text = "SALVAR";
+            btnSalvar.TextColor = Color.Black;
+            btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
-            // label1
+            // btnVoltar
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(63, 136, 254);
-            label1.Location = new Point(205, 102);
-            label1.Name = "label1";
-            label1.Size = new Size(61, 21);
-            label1.TabIndex = 18;
-            label1.Text = "Cliente";
+            btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnVoltar.BorderRadius = 18;
+            btnVoltar.BorderSize = 2;
+            btnVoltar.FlatAppearance.BorderSize = 0;
+            btnVoltar.FlatStyle = FlatStyle.Flat;
+            btnVoltar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.World);
+            btnVoltar.ForeColor = Color.Black;
+            btnVoltar.Location = new Point(653, 12);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(135, 36);
+            btnVoltar.TabIndex = 71;
+            btnVoltar.Text = "VOLTAR";
+            btnVoltar.TextColor = Color.Black;
+            btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
+            // 
+            // lblCadastroDeClientes
+            // 
+            lblCadastroDeClientes.AutoSize = true;
+            lblCadastroDeClientes.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCadastroDeClientes.ForeColor = Color.Cyan;
+            lblCadastroDeClientes.Location = new Point(269, 62);
+            lblCadastroDeClientes.Name = "lblCadastroDeClientes";
+            lblCadastroDeClientes.Size = new Size(280, 37);
+            lblCadastroDeClientes.TabIndex = 72;
+            lblCadastroDeClientes.Text = "Cadastro de Clientes";
+            // 
+            // LogoComoWallpaper
+            // 
+            LogoComoWallpaper.Dock = DockStyle.Fill;
+            LogoComoWallpaper.Image = (Image)resources.GetObject("LogoComoWallpaper.Image");
+            LogoComoWallpaper.Location = new Point(0, 0);
+            LogoComoWallpaper.Name = "LogoComoWallpaper";
+            LogoComoWallpaper.Size = new Size(800, 450);
+            LogoComoWallpaper.SizeMode = PictureBoxSizeMode.Zoom;
+            LogoComoWallpaper.TabIndex = 73;
+            LogoComoWallpaper.TabStop = false;
             // 
             // CadastroDeCliente
             // 
@@ -321,46 +272,51 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(wilBitButton22);
-            Controls.Add(wilBitButton21);
-            Controls.Add(wilBitTextBox7);
-            Controls.Add(wilBitTextBox6);
-            Controls.Add(wilBitTextBox5);
-            Controls.Add(wilBitTextBox4);
-            Controls.Add(wilBitTextBox3);
-            Controls.Add(wilBitTextBox2);
-            Controls.Add(wilBitTextBox1);
-            Controls.Add(label7);
-            Controls.Add(label6);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(lblCadastroDeClientes);
+            Controls.Add(btnVoltar);
+            Controls.Add(btnSalvar);
+            Controls.Add(txtCidade);
+            Controls.Add(maskNumero);
+            Controls.Add(maskCEP);
+            Controls.Add(maskCPF);
+            Controls.Add(maskTelefone);
+            Controls.Add(txtEndereco);
+            Controls.Add(txtCliente);
+            Controls.Add(lblCidade);
+            Controls.Add(lblNumero);
+            Controls.Add(lblCEP);
+            Controls.Add(lblCPF);
+            Controls.Add(lblTelefone);
+            Controls.Add(lblEndereco);
+            Controls.Add(lblCliente);
+            Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "CadastroDeCliente";
             Text = "CadastroDeCliente";
+            Load += CadastroDeCliente_Load;
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private WiLBiT.WiLBiTButton2 wilBitButton22;
-        private WiLBiT.WiLBiTButton2 wilBitButton21;
-        private WiLBiT.WiLBiTTextBox wilBitTextBox7;
-        private WiLBiT.WiLBiTTextBox wilBitTextBox6;
-        private WiLBiT.WiLBiTTextBox wilBitTextBox5;
-        private WiLBiT.WiLBiTTextBox wilBitTextBox4;
-        private WiLBiT.WiLBiTTextBox wilBitTextBox3;
-        private WiLBiT.WiLBiTTextBox wilBitTextBox2;
-        private WiLBiT.WiLBiTTextBox wilBitTextBox1;
-        private Label label7;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private Label label3;
-        private Label label2;
-        private Label label1;
+        private TextBox txtCidade;
+        private MaskedTextBox maskNumero;
+        private MaskedTextBox maskCEP;
+        private MaskedTextBox maskCPF;
+        private MaskedTextBox maskTelefone;
+        private TextBox txtEndereco;
+        private TextBox txtCliente;
+        private Label lblCidade;
+        private Label lblNumero;
+        private Label lblCEP;
+        private Label lblCPF;
+        private Label lblTelefone;
+        private Label lblEndereco;
+        private Label lblCliente;
+        private WiLBiT.WiLBiTButton2 btnSalvar;
+        private WiLBiT.WiLBiTButton2 btnVoltar;
+        private Label lblCadastroDeClientes;
+        private PictureBox LogoComoWallpaper;
     }
 }

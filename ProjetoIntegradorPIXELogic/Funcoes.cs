@@ -31,10 +31,10 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
-        public static Boolean existe(string tabela, string campo, ComboBox combo)
+        public static Boolean existe(string tabela, string campo, MaskedTextBox mask)
         {
 
-            string query = $"select {campo} from {tabela} where {campo} = '{combo.Text}';";
+            string query = $"select {campo} from {tabela} where {campo} = '{mask.Text}';";
 
             if (Conexao.executaQuery(query).Rows.Count > 0)
             {
@@ -49,8 +49,10 @@ namespace ProjetoIntegradorPIXELogic
                 return false;
 
             }
+
+
         }
-           
+
         public static Boolean existeComMensagem(string tabela, string campo, TextBox txt, string mensagem, string titulo_mensagem)
         {
 
@@ -90,26 +92,11 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
-        public static Boolean campoVazio(string campo, MaskedTextBox txt)
+        public static Boolean campoVazio(string campo, MaskedTextBox mask)
         {
 
-            if (txt.Text == "")
-            {
+            if (mask.Text == "")
 
-                MessageBox.Show($"Digite um(a) {campo}!", "Campo vázio!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-                return true;
-
-            }
-
-            else { return false; }
-
-        }
-
-        public static Boolean campoVazioCombo(string campo, ComboBox combo)
-        {
-
-            if (combo.Text == "")
             {
 
                 MessageBox.Show($"Digite um(a) {campo}!", "Campo vázio!", MessageBoxButtons.OK, MessageBoxIcon.Error);

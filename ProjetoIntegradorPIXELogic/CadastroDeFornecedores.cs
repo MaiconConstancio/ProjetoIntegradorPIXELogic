@@ -29,8 +29,8 @@ namespace ProjetoIntegradorPIXELogic
         private void CadastroDeFornecedores_Load(object sender, EventArgs e)
         {
             //--------------------------- Setor do Designer -------------------------------------
-            lblEscolhaSeusColaboradoresESuasCredenciais.Parent = LogoComoWallpaper;
-            lblEscolhaSeusColaboradoresESuasCredenciais.BackColor = Color.Transparent;
+            lblCadastroDeFornecedores.Parent = LogoComoWallpaper;
+            lblCadastroDeFornecedores.BackColor = Color.Transparent;
 
             lblFornecedor.Parent = LogoComoWallpaper;
             lblFornecedor.BackColor = Color.Transparent;
@@ -53,6 +53,15 @@ namespace ProjetoIntegradorPIXELogic
             lblCidade.Parent = LogoComoWallpaper;
             lblCidade.BackColor = Color.Transparent;
             //--------------------------- FIM do Setor do Designer -------------------------------------
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCidade_Click(object sender, EventArgs e)
+        {
         }
     }
 }

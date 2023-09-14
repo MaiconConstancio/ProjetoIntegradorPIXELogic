@@ -21,5 +21,30 @@ namespace ProjetoIntegradorPIXELogic
         {
             //
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Vendas_Load(object sender, EventArgs e)
+        {
+            //---------------------------Setor do Designer------------------------------------
+            lblProduto.Parent = LogoComoWallpaper;
+            lblProduto.BackColor = Color.Transparent;
+
+            lblQuantidade.Parent = LogoComoWallpaper;
+            lblQuantidade.BackColor = Color.Transparent;
+
+            lblNomeDoCliente.Parent = LogoComoWallpaper;
+            lblNomeDoCliente.BackColor = Color.Transparent;
+
+            lblMetodoDePagamento.Parent = LogoComoWallpaper;
+            lblMetodoDePagamento.BackColor = Color.Transparent;
+
+            lblValor.Parent = LogoComoWallpaper;
+            lblValor.BackColor = Color.Transparent;
+            //---------------------------FIM do Setor do Designer------------------------------------
+        }
     }
 }

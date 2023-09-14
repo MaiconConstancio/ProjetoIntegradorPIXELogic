@@ -31,11 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroDeProutos));
             btnSalvar = new WiLBiT.WiLBiTButton2();
             btnVoltar = new WiLBiT.WiLBiTButton2();
-            txtQuantidade = new WiLBiT.WiLBiTTextBox();
-            txtValor = new WiLBiT.WiLBiTTextBox();
-            txtFornecedor = new WiLBiT.WiLBiTTextBox();
-            txtNome = new WiLBiT.WiLBiTTextBox();
-            txtVencimento = new WiLBiT.WiLBiTTextBox();
             lblNome = new Label();
             lblFornecedor = new Label();
             lblQuantidade = new Label();
@@ -43,6 +38,11 @@
             lblVencimento = new Label();
             lblCadastrodeprodutos = new Label();
             LogoComoWallpaper = new PictureBox();
+            txtNome = new TextBox();
+            txtFornecedor = new TextBox();
+            txtQuantidade = new TextBox();
+            maskValor = new MaskedTextBox();
+            maskPrazoDeEntrega = new MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
@@ -84,122 +84,12 @@
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
             // 
-            // txtQuantidade
-            // 
-            txtQuantidade.BackColor = Color.FromArgb(53, 81, 142);
-            txtQuantidade.BorderColor = Color.FromArgb(0, 242, 254);
-            txtQuantidade.BorderFocusColor = Color.DeepSkyBlue;
-            txtQuantidade.BorderRadius = 20;
-            txtQuantidade.BorderSize = 2;
-            txtQuantidade.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            txtQuantidade.ForeColor = Color.FromArgb(160, 245, 255);
-            txtQuantidade.Location = new Point(218, 208);
-            txtQuantidade.Margin = new Padding(4);
-            txtQuantidade.Multiline = false;
-            txtQuantidade.Name = "txtQuantidade";
-            txtQuantidade.Padding = new Padding(10, 7, 10, 7);
-            txtQuantidade.PasswordChar = false;
-            txtQuantidade.PlaceholderColor = Color.DarkGray;
-            txtQuantidade.PlaceholderText = "";
-            txtQuantidade.Size = new Size(362, 42);
-            txtQuantidade.TabIndex = 20;
-            txtQuantidade.Texts = "";
-            txtQuantidade.UnderlinedStyle = false;
-            // 
-            // txtValor
-            // 
-            txtValor.BackColor = Color.FromArgb(53, 81, 142);
-            txtValor.BorderColor = Color.FromArgb(0, 242, 254);
-            txtValor.BorderFocusColor = Color.DeepSkyBlue;
-            txtValor.BorderRadius = 20;
-            txtValor.BorderSize = 2;
-            txtValor.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            txtValor.ForeColor = Color.FromArgb(160, 245, 255);
-            txtValor.Location = new Point(218, 261);
-            txtValor.Margin = new Padding(4);
-            txtValor.Multiline = false;
-            txtValor.Name = "txtValor";
-            txtValor.Padding = new Padding(10, 7, 10, 7);
-            txtValor.PasswordChar = false;
-            txtValor.PlaceholderColor = Color.DarkGray;
-            txtValor.PlaceholderText = "";
-            txtValor.Size = new Size(362, 42);
-            txtValor.TabIndex = 21;
-            txtValor.Texts = "";
-            txtValor.UnderlinedStyle = false;
-            // 
-            // txtFornecedor
-            // 
-            txtFornecedor.BackColor = Color.FromArgb(53, 81, 142);
-            txtFornecedor.BorderColor = Color.FromArgb(0, 242, 254);
-            txtFornecedor.BorderFocusColor = Color.DeepSkyBlue;
-            txtFornecedor.BorderRadius = 20;
-            txtFornecedor.BorderSize = 2;
-            txtFornecedor.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            txtFornecedor.ForeColor = Color.FromArgb(160, 245, 255);
-            txtFornecedor.Location = new Point(218, 155);
-            txtFornecedor.Margin = new Padding(4);
-            txtFornecedor.Multiline = false;
-            txtFornecedor.Name = "txtFornecedor";
-            txtFornecedor.Padding = new Padding(10, 7, 10, 7);
-            txtFornecedor.PasswordChar = false;
-            txtFornecedor.PlaceholderColor = Color.DarkGray;
-            txtFornecedor.PlaceholderText = "";
-            txtFornecedor.Size = new Size(362, 42);
-            txtFornecedor.TabIndex = 22;
-            txtFornecedor.Texts = "";
-            txtFornecedor.UnderlinedStyle = false;
-            // 
-            // txtNome
-            // 
-            txtNome.BackColor = Color.FromArgb(53, 81, 142);
-            txtNome.BorderColor = Color.FromArgb(0, 242, 254);
-            txtNome.BorderFocusColor = Color.DeepSkyBlue;
-            txtNome.BorderRadius = 20;
-            txtNome.BorderSize = 2;
-            txtNome.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            txtNome.ForeColor = Color.FromArgb(160, 245, 255);
-            txtNome.Location = new Point(218, 105);
-            txtNome.Margin = new Padding(4);
-            txtNome.Multiline = false;
-            txtNome.Name = "txtNome";
-            txtNome.Padding = new Padding(10, 7, 10, 7);
-            txtNome.PasswordChar = false;
-            txtNome.PlaceholderColor = Color.DarkGray;
-            txtNome.PlaceholderText = "";
-            txtNome.Size = new Size(362, 42);
-            txtNome.TabIndex = 23;
-            txtNome.Texts = "";
-            txtNome.UnderlinedStyle = false;
-            // 
-            // txtVencimento
-            // 
-            txtVencimento.BackColor = Color.FromArgb(53, 81, 142);
-            txtVencimento.BorderColor = Color.FromArgb(0, 242, 254);
-            txtVencimento.BorderFocusColor = Color.DeepSkyBlue;
-            txtVencimento.BorderRadius = 20;
-            txtVencimento.BorderSize = 2;
-            txtVencimento.Font = new Font("Microsoft Sans Serif", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            txtVencimento.ForeColor = Color.FromArgb(160, 245, 255);
-            txtVencimento.Location = new Point(218, 314);
-            txtVencimento.Margin = new Padding(4);
-            txtVencimento.Multiline = false;
-            txtVencimento.Name = "txtVencimento";
-            txtVencimento.Padding = new Padding(10, 7, 10, 7);
-            txtVencimento.PasswordChar = false;
-            txtVencimento.PlaceholderColor = Color.DarkGray;
-            txtVencimento.PlaceholderText = "";
-            txtVencimento.Size = new Size(362, 42);
-            txtVencimento.TabIndex = 24;
-            txtVencimento.Texts = "";
-            txtVencimento.UnderlinedStyle = false;
-            // 
             // lblNome
             // 
             lblNome.AutoSize = true;
             lblNome.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblNome.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNome.Location = new Point(121, 109);
+            lblNome.Location = new Point(186, 115);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(90, 32);
             lblNome.TabIndex = 25;
@@ -210,7 +100,7 @@
             lblFornecedor.AutoSize = true;
             lblFornecedor.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblFornecedor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblFornecedor.Location = new Point(59, 164);
+            lblFornecedor.Location = new Point(98, 165);
             lblFornecedor.Name = "lblFornecedor";
             lblFornecedor.Size = new Size(152, 32);
             lblFornecedor.TabIndex = 26;
@@ -221,7 +111,7 @@
             lblQuantidade.AutoSize = true;
             lblQuantidade.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblQuantidade.ForeColor = Color.FromArgb(63, 136, 254);
-            lblQuantidade.Location = new Point(57, 216);
+            lblQuantidade.Location = new Point(133, 221);
             lblQuantidade.Name = "lblQuantidade";
             lblQuantidade.Size = new Size(154, 32);
             lblQuantidade.TabIndex = 27;
@@ -232,7 +122,7 @@
             lblValor.AutoSize = true;
             lblValor.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(121, 269);
+            lblValor.Location = new Point(219, 271);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(81, 32);
             lblValor.TabIndex = 28;
@@ -243,7 +133,7 @@
             lblVencimento.AutoSize = true;
             lblVencimento.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblVencimento.ForeColor = Color.FromArgb(63, 136, 254);
-            lblVencimento.Location = new Point(46, 321);
+            lblVencimento.Location = new Point(151, 322);
             lblVencimento.Name = "lblVencimento";
             lblVencimento.Size = new Size(156, 32);
             lblVencimento.TabIndex = 29;
@@ -254,7 +144,7 @@
             lblCadastrodeprodutos.AutoSize = true;
             lblCadastrodeprodutos.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblCadastrodeprodutos.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCadastrodeprodutos.Location = new Point(200, 24);
+            lblCadastrodeprodutos.Location = new Point(201, 24);
             lblCadastrodeprodutos.Name = "lblCadastrodeprodutos";
             lblCadastrodeprodutos.Size = new Size(398, 50);
             lblCadastrodeprodutos.TabIndex = 30;
@@ -270,23 +160,78 @@
             LogoComoWallpaper.TabIndex = 31;
             LogoComoWallpaper.TabStop = false;
             // 
+            // txtNome
+            // 
+            txtNome.BackColor = Color.FromArgb(53, 81, 142);
+            txtNome.BorderStyle = BorderStyle.FixedSingle;
+            txtNome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNome.ForeColor = Color.Cyan;
+            txtNome.Location = new Point(279, 117);
+            txtNome.Name = "txtNome";
+            txtNome.Size = new Size(243, 29);
+            txtNome.TabIndex = 65;
+            // 
+            // txtFornecedor
+            // 
+            txtFornecedor.BackColor = Color.FromArgb(53, 81, 142);
+            txtFornecedor.BorderStyle = BorderStyle.FixedSingle;
+            txtFornecedor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFornecedor.ForeColor = Color.Cyan;
+            txtFornecedor.Location = new Point(252, 167);
+            txtFornecedor.Name = "txtFornecedor";
+            txtFornecedor.Size = new Size(296, 29);
+            txtFornecedor.TabIndex = 66;
+            // 
+            // txtQuantidade
+            // 
+            txtQuantidade.BackColor = Color.FromArgb(53, 81, 142);
+            txtQuantidade.BorderStyle = BorderStyle.FixedSingle;
+            txtQuantidade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtQuantidade.ForeColor = Color.Cyan;
+            txtQuantidade.Location = new Point(290, 223);
+            txtQuantidade.Name = "txtQuantidade";
+            txtQuantidade.Size = new Size(220, 29);
+            txtQuantidade.TabIndex = 67;
+            // 
+            // maskValor
+            // 
+            maskValor.BackColor = Color.FromArgb(53, 81, 142);
+            maskValor.BorderStyle = BorderStyle.FixedSingle;
+            maskValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskValor.Location = new Point(302, 272);
+            maskValor.Mask = "$ 000,00";
+            maskValor.Name = "maskValor";
+            maskValor.Size = new Size(196, 29);
+            maskValor.TabIndex = 70;
+            // 
+            // maskPrazoDeEntrega
+            // 
+            maskPrazoDeEntrega.BackColor = Color.FromArgb(53, 81, 142);
+            maskPrazoDeEntrega.BorderStyle = BorderStyle.FixedSingle;
+            maskPrazoDeEntrega.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskPrazoDeEntrega.Location = new Point(309, 323);
+            maskPrazoDeEntrega.Mask = "00/00/0000";
+            maskPrazoDeEntrega.Name = "maskPrazoDeEntrega";
+            maskPrazoDeEntrega.Size = new Size(183, 29);
+            maskPrazoDeEntrega.TabIndex = 71;
+            // 
             // CadastroDeProutos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(maskPrazoDeEntrega);
+            Controls.Add(maskValor);
+            Controls.Add(txtQuantidade);
+            Controls.Add(txtFornecedor);
+            Controls.Add(txtNome);
             Controls.Add(lblCadastrodeprodutos);
             Controls.Add(lblVencimento);
             Controls.Add(lblValor);
             Controls.Add(lblQuantidade);
             Controls.Add(lblFornecedor);
             Controls.Add(lblNome);
-            Controls.Add(txtVencimento);
-            Controls.Add(txtNome);
-            Controls.Add(txtFornecedor);
-            Controls.Add(txtValor);
-            Controls.Add(txtQuantidade);
             Controls.Add(btnVoltar);
             Controls.Add(btnSalvar);
             Controls.Add(LogoComoWallpaper);
@@ -303,11 +248,6 @@
 
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private WiLBiT.WiLBiTButton2 btnVoltar;
-        private WiLBiT.WiLBiTTextBox txtQuantidade;
-        private WiLBiT.WiLBiTTextBox txtValor;
-        private WiLBiT.WiLBiTTextBox txtFornecedor;
-        private WiLBiT.WiLBiTTextBox txtNome;
-        private WiLBiT.WiLBiTTextBox txtVencimento;
         private Label lblNome;
         private Label lblFornecedor;
         private Label lblQuantidade;
@@ -315,5 +255,10 @@
         private Label lblVencimento;
         private Label lblCadastrodeprodutos;
         private PictureBox LogoComoWallpaper;
+        private TextBox txtNome;
+        private TextBox txtFornecedor;
+        private TextBox txtQuantidade;
+        private MaskedTextBox maskValor;
+        private MaskedTextBox maskPrazoDeEntrega;
     }
 }
