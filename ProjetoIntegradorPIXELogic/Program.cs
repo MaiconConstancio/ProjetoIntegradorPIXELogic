@@ -12,6 +12,7 @@ namespace ProjetoIntegradorPIXELogic
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new TelaLoginPaginaInicial());
+            string nome;
         }
     }
 }
