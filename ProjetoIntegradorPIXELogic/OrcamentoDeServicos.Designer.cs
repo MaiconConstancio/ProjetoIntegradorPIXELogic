@@ -28,13 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtCidade = new WiLBiT.WiLBiTTextBox();
             lblCidade = new Label();
-            txtPrazoDeEntrega = new WiLBiT.WiLBiTTextBox();
             lblPrazoDeEntrega = new Label();
-            txtFuncionario = new WiLBiT.WiLBiTTextBox();
             lblFuncionario = new Label();
-            txtEndereco = new WiLBiT.WiLBiTTextBox();
             lblEndereco = new Label();
             lblValor = new Label();
             lblServico = new Label();
@@ -45,135 +41,52 @@
             btnVoltar = new WiLBiT.WiLBiTButton2();
             txtNomeDoCliente = new TextBox();
             cmbServico = new ComboBox();
+            maskValor = new MaskedTextBox();
+            txtEndereco = new TextBox();
+            txtFuncionario = new TextBox();
+            txtPrazoDeEntrega = new TextBox();
+            txtCidade = new TextBox();
             SuspendLayout();
-            // 
-            // txtCidade
-            // 
-            txtCidade.BackColor = Color.FromArgb(53, 81, 142);
-            txtCidade.BorderColor = Color.FromArgb(0, 242, 254);
-            txtCidade.BorderFocusColor = Color.DeepSkyBlue;
-            txtCidade.BorderRadius = 18;
-            txtCidade.BorderSize = 2;
-            txtCidade.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            txtCidade.ForeColor = Color.FromArgb(160, 245, 255);
-            txtCidade.Location = new Point(283, 349);
-            txtCidade.Margin = new Padding(4);
-            txtCidade.Multiline = false;
-            txtCidade.Name = "txtCidade";
-            txtCidade.Padding = new Padding(10, 7, 10, 7);
-            txtCidade.PasswordChar = false;
-            txtCidade.PlaceholderColor = Color.DarkGray;
-            txtCidade.PlaceholderText = "";
-            txtCidade.Size = new Size(241, 39);
-            txtCidade.TabIndex = 53;
-            txtCidade.Texts = "";
-            txtCidade.UnderlinedStyle = false;
             // 
             // lblCidade
             // 
             lblCidade.AutoSize = true;
             lblCidade.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblCidade.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCidade.Location = new Point(177, 350);
+            lblCidade.Location = new Point(161, 356);
             lblCidade.Name = "lblCidade";
             lblCidade.Size = new Size(113, 37);
             lblCidade.TabIndex = 52;
             lblCidade.Text = "Cidade:";
-            // 
-            // txtPrazoDeEntrega
-            // 
-            txtPrazoDeEntrega.BackColor = Color.FromArgb(53, 81, 142);
-            txtPrazoDeEntrega.BorderColor = Color.FromArgb(0, 242, 254);
-            txtPrazoDeEntrega.BorderFocusColor = Color.DeepSkyBlue;
-            txtPrazoDeEntrega.BorderRadius = 18;
-            txtPrazoDeEntrega.BorderSize = 2;
-            txtPrazoDeEntrega.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPrazoDeEntrega.ForeColor = Color.FromArgb(160, 245, 255);
-            txtPrazoDeEntrega.Location = new Point(320, 305);
-            txtPrazoDeEntrega.Margin = new Padding(4);
-            txtPrazoDeEntrega.Multiline = false;
-            txtPrazoDeEntrega.Name = "txtPrazoDeEntrega";
-            txtPrazoDeEntrega.Padding = new Padding(10, 7, 10, 7);
-            txtPrazoDeEntrega.PasswordChar = false;
-            txtPrazoDeEntrega.PlaceholderColor = Color.DarkGray;
-            txtPrazoDeEntrega.PlaceholderText = "";
-            txtPrazoDeEntrega.Size = new Size(171, 39);
-            txtPrazoDeEntrega.TabIndex = 51;
-            txtPrazoDeEntrega.Texts = "";
-            txtPrazoDeEntrega.UnderlinedStyle = false;
             // 
             // lblPrazoDeEntrega
             // 
             lblPrazoDeEntrega.AutoSize = true;
             lblPrazoDeEntrega.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblPrazoDeEntrega.ForeColor = Color.FromArgb(63, 136, 254);
-            lblPrazoDeEntrega.Location = new Point(71, 305);
+            lblPrazoDeEntrega.Location = new Point(47, 308);
             lblPrazoDeEntrega.Name = "lblPrazoDeEntrega";
             lblPrazoDeEntrega.Size = new Size(243, 37);
             lblPrazoDeEntrega.TabIndex = 50;
             lblPrazoDeEntrega.Text = "Prazo de entrega:";
-            // 
-            // txtFuncionario
-            // 
-            txtFuncionario.BackColor = Color.FromArgb(53, 81, 142);
-            txtFuncionario.BorderColor = Color.FromArgb(0, 242, 254);
-            txtFuncionario.BorderFocusColor = Color.DeepSkyBlue;
-            txtFuncionario.BorderRadius = 18;
-            txtFuncionario.BorderSize = 2;
-            txtFuncionario.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            txtFuncionario.ForeColor = Color.FromArgb(160, 245, 255);
-            txtFuncionario.Location = new Point(288, 256);
-            txtFuncionario.Margin = new Padding(4);
-            txtFuncionario.Multiline = false;
-            txtFuncionario.Name = "txtFuncionario";
-            txtFuncionario.Padding = new Padding(10, 7, 10, 7);
-            txtFuncionario.PasswordChar = false;
-            txtFuncionario.PlaceholderColor = Color.DarkGray;
-            txtFuncionario.PlaceholderText = "";
-            txtFuncionario.Size = new Size(231, 39);
-            txtFuncionario.TabIndex = 49;
-            txtFuncionario.Texts = "";
-            txtFuncionario.UnderlinedStyle = false;
             // 
             // lblFuncionario
             // 
             lblFuncionario.AutoSize = true;
             lblFuncionario.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblFuncionario.ForeColor = Color.FromArgb(63, 136, 254);
-            lblFuncionario.Location = new Point(119, 257);
+            lblFuncionario.Location = new Point(115, 265);
             lblFuncionario.Name = "lblFuncionario";
             lblFuncionario.Size = new Size(175, 37);
             lblFuncionario.TabIndex = 48;
             lblFuncionario.Text = "Funcionario:";
-            // 
-            // txtEndereco
-            // 
-            txtEndereco.BackColor = Color.FromArgb(53, 81, 142);
-            txtEndereco.BorderColor = Color.FromArgb(0, 242, 254);
-            txtEndereco.BorderFocusColor = Color.DeepSkyBlue;
-            txtEndereco.BorderRadius = 18;
-            txtEndereco.BorderSize = 2;
-            txtEndereco.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            txtEndereco.ForeColor = Color.FromArgb(160, 245, 255);
-            txtEndereco.Location = new Point(244, 209);
-            txtEndereco.Margin = new Padding(4);
-            txtEndereco.Multiline = false;
-            txtEndereco.Name = "txtEndereco";
-            txtEndereco.Padding = new Padding(10, 7, 10, 7);
-            txtEndereco.PasswordChar = false;
-            txtEndereco.PlaceholderColor = Color.DarkGray;
-            txtEndereco.PlaceholderText = "";
-            txtEndereco.Size = new Size(321, 39);
-            txtEndereco.TabIndex = 47;
-            txtEndereco.Texts = "";
-            txtEndereco.UnderlinedStyle = false;
             // 
             // lblEndereco
             // 
             lblEndereco.AutoSize = true;
             lblEndereco.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblEndereco.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEndereco.Location = new Point(106, 210);
+            lblEndereco.Location = new Point(132, 218);
             lblEndereco.Name = "lblEndereco";
             lblEndereco.Size = new Size(142, 37);
             lblEndereco.TabIndex = 46;
@@ -184,7 +97,7 @@
             lblValor.AutoSize = true;
             lblValor.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(214, 163);
+            lblValor.Location = new Point(182, 173);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(92, 37);
             lblValor.TabIndex = 44;
@@ -195,7 +108,7 @@
             lblServico.AutoSize = true;
             lblServico.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblServico.ForeColor = Color.FromArgb(63, 136, 254);
-            lblServico.Location = new Point(112, 117);
+            lblServico.Location = new Point(155, 123);
             lblServico.Name = "lblServico";
             lblServico.Size = new Size(119, 37);
             lblServico.TabIndex = 42;
@@ -223,7 +136,11 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.World);
             btnSalvar.ForeColor = Color.Black;
+<<<<<<< HEAD
             btnSalvar.Location = new Point(336, 398);
+=======
+            btnSalvar.Location = new Point(376, 402);
+>>>>>>> cdbff9e3006ebab6d721c6ff7da74085a79371bc
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(135, 36);
             btnSalvar.TabIndex = 39;
@@ -236,7 +153,7 @@
             lblNomeDoCliente.AutoSize = true;
             lblNomeDoCliente.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblNomeDoCliente.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNomeDoCliente.Location = new Point(25, 71);
+            lblNomeDoCliente.Location = new Point(47, 71);
             lblNomeDoCliente.Name = "lblNomeDoCliente";
             lblNomeDoCliente.Size = new Size(236, 37);
             lblNomeDoCliente.TabIndex = 54;
@@ -286,7 +203,7 @@
             txtNomeDoCliente.BorderStyle = BorderStyle.FixedSingle;
             txtNomeDoCliente.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtNomeDoCliente.ForeColor = Color.Cyan;
-            txtNomeDoCliente.Location = new Point(255, 79);
+            txtNomeDoCliente.Location = new Point(294, 79);
             txtNomeDoCliente.Name = "txtNomeDoCliente";
             txtNomeDoCliente.Size = new Size(296, 29);
             txtNomeDoCliente.TabIndex = 57;
@@ -298,10 +215,63 @@
             cmbServico.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cmbServico.ForeColor = Color.Cyan;
             cmbServico.FormattingEnabled = true;
-            cmbServico.Location = new Point(228, 125);
+            cmbServico.Location = new Point(294, 125);
             cmbServico.Name = "cmbServico";
-            cmbServico.Size = new Size(352, 29);
+            cmbServico.Size = new Size(296, 29);
             cmbServico.TabIndex = 58;
+            // 
+            // maskValor
+            // 
+            maskValor.BackColor = Color.FromArgb(53, 81, 142);
+            maskValor.BorderStyle = BorderStyle.FixedSingle;
+            maskValor.Location = new Point(294, 174);
+            maskValor.Name = "maskValor";
+            maskValor.Size = new Size(296, 23);
+            maskValor.TabIndex = 59;
+            // 
+            // txtEndereco
+            // 
+            txtEndereco.BackColor = Color.FromArgb(53, 81, 142);
+            txtEndereco.BorderStyle = BorderStyle.FixedSingle;
+            txtEndereco.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEndereco.ForeColor = Color.Cyan;
+            txtEndereco.Location = new Point(294, 218);
+            txtEndereco.Name = "txtEndereco";
+            txtEndereco.Size = new Size(296, 29);
+            txtEndereco.TabIndex = 60;
+            // 
+            // txtFuncionario
+            // 
+            txtFuncionario.BackColor = Color.FromArgb(53, 81, 142);
+            txtFuncionario.BorderStyle = BorderStyle.FixedSingle;
+            txtFuncionario.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFuncionario.ForeColor = Color.Cyan;
+            txtFuncionario.Location = new Point(294, 265);
+            txtFuncionario.Name = "txtFuncionario";
+            txtFuncionario.Size = new Size(296, 29);
+            txtFuncionario.TabIndex = 61;
+            // 
+            // txtPrazoDeEntrega
+            // 
+            txtPrazoDeEntrega.BackColor = Color.FromArgb(53, 81, 142);
+            txtPrazoDeEntrega.BorderStyle = BorderStyle.FixedSingle;
+            txtPrazoDeEntrega.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtPrazoDeEntrega.ForeColor = Color.Cyan;
+            txtPrazoDeEntrega.Location = new Point(294, 316);
+            txtPrazoDeEntrega.Name = "txtPrazoDeEntrega";
+            txtPrazoDeEntrega.Size = new Size(296, 29);
+            txtPrazoDeEntrega.TabIndex = 62;
+            // 
+            // txtCidade
+            // 
+            txtCidade.BackColor = Color.FromArgb(53, 81, 142);
+            txtCidade.BorderStyle = BorderStyle.FixedSingle;
+            txtCidade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCidade.ForeColor = Color.Cyan;
+            txtCidade.Location = new Point(294, 364);
+            txtCidade.Name = "txtCidade";
+            txtCidade.Size = new Size(296, 29);
+            txtCidade.TabIndex = 63;
             // 
             // OrcamentoDeServicos
             // 
@@ -309,17 +279,18 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(txtCidade);
+            Controls.Add(txtPrazoDeEntrega);
+            Controls.Add(txtFuncionario);
+            Controls.Add(txtEndereco);
+            Controls.Add(maskValor);
             Controls.Add(cmbServico);
             Controls.Add(txtNomeDoCliente);
             Controls.Add(btnVoltar);
             Controls.Add(btnNovoServico);
-            Controls.Add(txtCidade);
             Controls.Add(lblCidade);
-            Controls.Add(txtPrazoDeEntrega);
             Controls.Add(lblPrazoDeEntrega);
-            Controls.Add(txtFuncionario);
             Controls.Add(lblFuncionario);
-            Controls.Add(txtEndereco);
             Controls.Add(lblEndereco);
             Controls.Add(lblValor);
             Controls.Add(lblServico);
@@ -334,14 +305,9 @@
         }
 
         #endregion
-
-        private WiLBiT.WiLBiTTextBox txtCidade;
         private Label lblCidade;
-        private WiLBiT.WiLBiTTextBox txtPrazoDeEntrega;
         private Label lblPrazoDeEntrega;
-        private WiLBiT.WiLBiTTextBox txtFuncionario;
         private Label lblFuncionario;
-        private WiLBiT.WiLBiTTextBox txtEndereco;
         private Label lblEndereco;
         private Label lblValor;
         private Label lblServico;
@@ -352,5 +318,10 @@
         private WiLBiT.WiLBiTButton2 btnVoltar;
         private TextBox txtNomeDoCliente;
         private ComboBox cmbServico;
+        private MaskedTextBox maskValor;
+        private TextBox txtEndereco;
+        private TextBox txtFuncionario;
+        private TextBox txtPrazoDeEntrega;
+        private TextBox txtCidade;
     }
 }

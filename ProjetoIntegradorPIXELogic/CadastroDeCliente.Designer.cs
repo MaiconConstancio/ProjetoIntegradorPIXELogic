@@ -34,7 +34,7 @@
             maskedTextBox2 = new MaskedTextBox();
             maskedTextBox1 = new MaskedTextBox();
             textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtCliente = new TextBox();
             lblCidade = new Label();
             lblNumero = new Label();
             lblCEP = new Label();
@@ -109,16 +109,16 @@
             textBox2.Size = new Size(263, 29);
             textBox2.TabIndex = 64;
             // 
-            // textBox1
+            // txtCliente
             // 
-            textBox1.BackColor = Color.FromArgb(53, 81, 142);
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.Cyan;
-            textBox1.Location = new Point(258, 123);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(296, 29);
-            textBox1.TabIndex = 63;
+            txtCliente.BackColor = Color.FromArgb(53, 81, 142);
+            txtCliente.BorderStyle = BorderStyle.FixedSingle;
+            txtCliente.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCliente.ForeColor = Color.Cyan;
+            txtCliente.Location = new Point(258, 123);
+            txtCliente.Name = "txtCliente";
+            txtCliente.Size = new Size(296, 29);
+            txtCliente.TabIndex = 63;
             // 
             // lblCidade
             // 
@@ -261,7 +261,7 @@
             Controls.Add(maskedTextBox2);
             Controls.Add(maskedTextBox1);
             Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtCliente);
             Controls.Add(lblCidade);
             Controls.Add(lblNumero);
             Controls.Add(lblCEP);
@@ -283,7 +283,7 @@
         private MaskedTextBox maskedTextBox2;
         private MaskedTextBox maskedTextBox1;
         private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtCliente;
         private Label lblCidade;
         private Label lblNumero;
         private Label lblCEP;

@@ -28,58 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            txtNomedoServico = new WiLBiT.WiLBiTTextBox();
-            txtVALOR = new WiLBiT.WiLBiTTextBox();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             btnVoltar = new WiLBiT.WiLBiTButton2();
             lblCadastrodeServicos = new Label();
             lblNomedoServico = new Label();
             lblValor = new Label();
+            txtNomeDoServico = new TextBox();
+            txtValor = new TextBox();
             SuspendLayout();
-            // 
-            // txtNomedoServico
-            // 
-            txtNomedoServico.BackColor = Color.FromArgb(53, 81, 142);
-            txtNomedoServico.BorderColor = Color.FromArgb(0, 242, 254);
-            txtNomedoServico.BorderFocusColor = Color.DeepSkyBlue;
-            txtNomedoServico.BorderRadius = 24;
-            txtNomedoServico.BorderSize = 2;
-            txtNomedoServico.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            txtNomedoServico.ForeColor = Color.FromArgb(160, 245, 255);
-            txtNomedoServico.Location = new Point(221, 170);
-            txtNomedoServico.Margin = new Padding(4);
-            txtNomedoServico.Multiline = false;
-            txtNomedoServico.Name = "txtNomedoServico";
-            txtNomedoServico.Padding = new Padding(10, 7, 10, 7);
-            txtNomedoServico.PasswordChar = false;
-            txtNomedoServico.PlaceholderColor = Color.DarkGray;
-            txtNomedoServico.PlaceholderText = "";
-            txtNomedoServico.Size = new Size(344, 51);
-            txtNomedoServico.TabIndex = 11;
-            txtNomedoServico.Texts = "";
-            txtNomedoServico.UnderlinedStyle = false;
-            // 
-            // txtVALOR
-            // 
-            txtVALOR.BackColor = Color.FromArgb(53, 81, 142);
-            txtVALOR.BorderColor = Color.FromArgb(0, 242, 254);
-            txtVALOR.BorderFocusColor = Color.DeepSkyBlue;
-            txtVALOR.BorderRadius = 24;
-            txtVALOR.BorderSize = 2;
-            txtVALOR.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point);
-            txtVALOR.ForeColor = Color.FromArgb(160, 245, 255);
-            txtVALOR.Location = new Point(221, 233);
-            txtVALOR.Margin = new Padding(4);
-            txtVALOR.Multiline = false;
-            txtVALOR.Name = "txtVALOR";
-            txtVALOR.Padding = new Padding(10, 7, 10, 7);
-            txtVALOR.PasswordChar = false;
-            txtVALOR.PlaceholderColor = Color.DarkGray;
-            txtVALOR.PlaceholderText = "";
-            txtVALOR.Size = new Size(344, 51);
-            txtVALOR.TabIndex = 12;
-            txtVALOR.Texts = "";
-            txtVALOR.UnderlinedStyle = false;
             // 
             // btnSalvar
             // 
@@ -152,19 +108,41 @@
             lblValor.TabIndex = 19;
             lblValor.Text = "Valor";
             // 
+            // txtNomeDoServico
+            // 
+            txtNomeDoServico.BackColor = Color.FromArgb(53, 81, 142);
+            txtNomeDoServico.BorderStyle = BorderStyle.FixedSingle;
+            txtNomeDoServico.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtNomeDoServico.ForeColor = Color.Cyan;
+            txtNomeDoServico.Location = new Point(252, 186);
+            txtNomeDoServico.Name = "txtNomeDoServico";
+            txtNomeDoServico.Size = new Size(296, 29);
+            txtNomeDoServico.TabIndex = 66;
+            // 
+            // txtValor
+            // 
+            txtValor.BackColor = Color.FromArgb(53, 81, 142);
+            txtValor.BorderStyle = BorderStyle.FixedSingle;
+            txtValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtValor.ForeColor = Color.Cyan;
+            txtValor.Location = new Point(252, 249);
+            txtValor.Name = "txtValor";
+            txtValor.Size = new Size(296, 29);
+            txtValor.TabIndex = 67;
+            // 
             // CadastroDeServicos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(txtValor);
+            Controls.Add(txtNomeDoServico);
             Controls.Add(lblValor);
             Controls.Add(lblNomedoServico);
             Controls.Add(lblCadastrodeServicos);
             Controls.Add(btnVoltar);
             Controls.Add(btnSalvar);
-            Controls.Add(txtVALOR);
-            Controls.Add(txtNomedoServico);
             FormBorderStyle = FormBorderStyle.None;
             Name = "CadastroDeServicos";
             Text = "CadastroDeServicos";
@@ -173,13 +151,12 @@
         }
 
         #endregion
-
-        private WiLBiT.WiLBiTTextBox txtNomedoServico;
-        private WiLBiT.WiLBiTTextBox txtVALOR;
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private WiLBiT.WiLBiTButton2 btnVoltar;
         private Label lblCadastrodeServicos;
         private Label lblNomedoServico;
         private Label lblValor;
+        private TextBox txtNomeDoServico;
+        private TextBox txtValor;
     }
 }
