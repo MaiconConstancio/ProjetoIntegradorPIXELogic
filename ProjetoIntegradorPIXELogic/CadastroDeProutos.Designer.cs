@@ -89,7 +89,7 @@
             lblNome.AutoSize = true;
             lblNome.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblNome.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNome.Location = new Point(121, 109);
+            lblNome.Location = new Point(158, 110);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(90, 32);
             lblNome.TabIndex = 25;
@@ -100,7 +100,7 @@
             lblFornecedor.AutoSize = true;
             lblFornecedor.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblFornecedor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblFornecedor.Location = new Point(59, 164);
+            lblFornecedor.Location = new Point(96, 164);
             lblFornecedor.Name = "lblFornecedor";
             lblFornecedor.Size = new Size(152, 32);
             lblFornecedor.TabIndex = 26;
@@ -111,7 +111,7 @@
             lblQuantidade.AutoSize = true;
             lblQuantidade.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblQuantidade.ForeColor = Color.FromArgb(63, 136, 254);
-            lblQuantidade.Location = new Point(57, 216);
+            lblQuantidade.Location = new Point(94, 216);
             lblQuantidade.Name = "lblQuantidade";
             lblQuantidade.Size = new Size(154, 32);
             lblQuantidade.TabIndex = 27;
@@ -122,7 +122,7 @@
             lblValor.AutoSize = true;
             lblValor.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(121, 269);
+            lblValor.Location = new Point(167, 269);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(81, 32);
             lblValor.TabIndex = 28;
@@ -133,7 +133,7 @@
             lblVencimento.AutoSize = true;
             lblVencimento.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblVencimento.ForeColor = Color.FromArgb(63, 136, 254);
-            lblVencimento.Location = new Point(46, 321);
+            lblVencimento.Location = new Point(92, 320);
             lblVencimento.Name = "lblVencimento";
             lblVencimento.Size = new Size(156, 32);
             lblVencimento.TabIndex = 29;
