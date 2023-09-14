@@ -35,7 +35,7 @@
             lblValor = new Label();
             lblServico = new Label();
             lblOrcamentoDeServicos = new Label();
-            btnSalvarNovoLoginSenha = new WiLBiT.WiLBiTButton2();
+            btnSalvar = new WiLBiT.WiLBiTButton2();
             lblNomeDoCliente = new Label();
             btnNovoServico = new WiLBiT.WiLBiTButton2();
             btnVoltar = new WiLBiT.WiLBiTButton2();
@@ -125,24 +125,24 @@
             lblOrcamentoDeServicos.TabIndex = 41;
             lblOrcamentoDeServicos.Text = "Orçamento de serviços";
             // 
-            // btnSalvarNovoLoginSenha
+            // btnSalvar
             // 
-            btnSalvarNovoLoginSenha.BackColor = Color.FromArgb(72, 116, 245);
-            btnSalvarNovoLoginSenha.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnSalvarNovoLoginSenha.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvarNovoLoginSenha.BorderRadius = 18;
-            btnSalvarNovoLoginSenha.BorderSize = 2;
-            btnSalvarNovoLoginSenha.FlatAppearance.BorderSize = 0;
-            btnSalvarNovoLoginSenha.FlatStyle = FlatStyle.Flat;
-            btnSalvarNovoLoginSenha.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.World);
-            btnSalvarNovoLoginSenha.ForeColor = Color.Black;
-            btnSalvarNovoLoginSenha.Location = new Point(376, 402);
-            btnSalvarNovoLoginSenha.Name = "btnSalvarNovoLoginSenha";
-            btnSalvarNovoLoginSenha.Size = new Size(135, 36);
-            btnSalvarNovoLoginSenha.TabIndex = 39;
-            btnSalvarNovoLoginSenha.Text = "SALVAR";
-            btnSalvarNovoLoginSenha.TextColor = Color.Black;
-            btnSalvarNovoLoginSenha.UseVisualStyleBackColor = false;
+            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnSalvar.BorderRadius = 18;
+            btnSalvar.BorderSize = 2;
+            btnSalvar.FlatAppearance.BorderSize = 0;
+            btnSalvar.FlatStyle = FlatStyle.Flat;
+            btnSalvar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.World);
+            btnSalvar.ForeColor = Color.Black;
+            btnSalvar.Location = new Point(376, 402);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(135, 36);
+            btnSalvar.TabIndex = 39;
+            btnSalvar.Text = "SALVAR";
+            btnSalvar.TextColor = Color.Black;
+            btnSalvar.UseVisualStyleBackColor = false;
             // 
             // lblNomeDoCliente
             // 
@@ -291,7 +291,7 @@
             Controls.Add(lblValor);
             Controls.Add(lblServico);
             Controls.Add(lblOrcamentoDeServicos);
-            Controls.Add(btnSalvarNovoLoginSenha);
+            Controls.Add(btnSalvar);
             Controls.Add(lblNomeDoCliente);
             FormBorderStyle = FormBorderStyle.None;
             Name = "OrcamentoDeServicos";
@@ -308,7 +308,7 @@
         private Label lblValor;
         private Label lblServico;
         private Label lblOrcamentoDeServicos;
-        private WiLBiT.WiLBiTButton2 btnSalvarNovoLoginSenha;
+        private WiLBiT.WiLBiTButton2 btnSalvar;
         private Label lblNomeDoCliente;
         private WiLBiT.WiLBiTButton2 btnNovoServico;
         private WiLBiT.WiLBiTButton2 btnVoltar;
