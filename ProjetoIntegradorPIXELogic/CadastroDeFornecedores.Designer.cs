@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroDeFornecedores));
             lblEscolhaSeusColaboradoresESuasCredenciais = new Label();
-            txtFornecedor = new WiLBiT.WiLBiTTextBox();
             lblFornecedor = new Label();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             txtEndereco = new WiLBiT.WiLBiTTextBox();
@@ -46,6 +45,7 @@
             txtCidade = new WiLBiT.WiLBiTTextBox();
             lblCidade = new Label();
             LogoComoWallpaper = new PictureBox();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
@@ -59,29 +59,6 @@
             lblEscolhaSeusColaboradoresESuasCredenciais.Size = new Size(600, 37);
             lblEscolhaSeusColaboradoresESuasCredenciais.TabIndex = 26;
             lblEscolhaSeusColaboradoresESuasCredenciais.Text = "Escolha seus colaboradores e suas credenciais";
-            // 
-            // txtFornecedor
-            // 
-            txtFornecedor.BackColor = Color.FromArgb(53, 81, 142);
-            txtFornecedor.BorderColor = Color.FromArgb(0, 242, 254);
-            txtFornecedor.BorderFocusColor = Color.DeepSkyBlue;
-            txtFornecedor.BorderRadius = 18;
-            txtFornecedor.BorderSize = 2;
-            txtFornecedor.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point);
-            txtFornecedor.ForeColor = Color.FromArgb(160, 245, 255);
-            txtFornecedor.Location = new Point(265, 74);
-            txtFornecedor.Margin = new Padding(4);
-            txtFornecedor.Multiline = false;
-            txtFornecedor.Name = "txtFornecedor";
-            txtFornecedor.Padding = new Padding(10, 7, 10, 7);
-            txtFornecedor.PasswordChar = false;
-            txtFornecedor.PlaceholderColor = Color.DarkGray;
-            txtFornecedor.PlaceholderText = "";
-            txtFornecedor.Size = new Size(296, 39);
-            txtFornecedor.TabIndex = 25;
-            txtFornecedor.Texts = "";
-            txtFornecedor.UnderlinedStyle = false;
-            txtFornecedor._TextChanged += txtNovoLogin__TextChanged;
             // 
             // lblFornecedor
             // 
@@ -322,12 +299,24 @@
             LogoComoWallpaper.TabIndex = 39;
             LogoComoWallpaper.TabStop = false;
             // 
+            // textBox1
+            // 
+            textBox1.BackColor = Color.FromArgb(53, 81, 142);
+            textBox1.BorderStyle = BorderStyle.FixedSingle;
+            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            textBox1.ForeColor = Color.Cyan;
+            textBox1.Location = new Point(264, 82);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(296, 29);
+            textBox1.TabIndex = 40;
+            // 
             // CadastroDeFornecedores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(textBox1);
             Controls.Add(txtCidade);
             Controls.Add(lblCidade);
             Controls.Add(txtNumero);
@@ -341,7 +330,6 @@
             Controls.Add(txtEndereco);
             Controls.Add(lblEndereco);
             Controls.Add(lblEscolhaSeusColaboradoresESuasCredenciais);
-            Controls.Add(txtFornecedor);
             Controls.Add(lblFornecedor);
             Controls.Add(btnSalvar);
             Controls.Add(LogoComoWallpaper);
@@ -357,7 +345,6 @@
         #endregion
 
         private Label lblEscolhaSeusColaboradoresESuasCredenciais;
-        private WiLBiT.WiLBiTTextBox txtFornecedor;
         private Label lblFornecedor;
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private WiLBiT.WiLBiTTextBox txtEndereco;
@@ -373,5 +360,6 @@
         private WiLBiT.WiLBiTTextBox txtCidade;
         private Label lblCidade;
         private PictureBox LogoComoWallpaper;
+        private TextBox textBox1;
     }
 }
