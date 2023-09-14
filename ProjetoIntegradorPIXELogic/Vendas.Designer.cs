@@ -47,7 +47,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.ESCRITA_SEM_Fundo10;
+            
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(312, 80);
