@@ -21,10 +21,10 @@ namespace ProjetoIntegradorPIXELogic
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
-            GerenciamentoDeClientes gerenciamento = new GerenciamentoDeClientes();
-            gerenciamento.TopLevel = false;
-            panel1.Controls.Add(gerenciamento);
-            gerenciamento.Show();
+            TelaLoginPaginaInicial telaLoginPaginaInicial = new TelaLoginPaginaInicial();
+            telaLoginPaginaInicial.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(telaLoginPaginaInicial);
+            telaLoginPaginaInicial.Show();
            
         
         }
