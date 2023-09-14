@@ -28,86 +28,89 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox3 = new TextBox();
-            maskedTextBox4 = new MaskedTextBox();
-            maskedTextBox3 = new MaskedTextBox();
-            maskedTextBox2 = new MaskedTextBox();
-            maskedTextBox1 = new MaskedTextBox();
-            textBox2 = new TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroDeCliente));
+            txtCidade = new TextBox();
+            maskNumero = new MaskedTextBox();
+            maskCEP = new MaskedTextBox();
+            maskCPF = new MaskedTextBox();
+            maskTelefone = new MaskedTextBox();
+            txtEndereco = new TextBox();
             txtCliente = new TextBox();
             lblCidade = new Label();
             lblNumero = new Label();
             lblCEP = new Label();
-            lblCNPJ = new Label();
+            lblCPF = new Label();
             lblTelefone = new Label();
             lblEndereco = new Label();
-            label8 = new Label();
+            lblCliente = new Label();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             btnVoltar = new WiLBiT.WiLBiTButton2();
-            lblEscolhaSeusColaboradoresESuasCredenciais = new Label();
+            lblCadastroDeClientes = new Label();
+            LogoComoWallpaper = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
-            // textBox3
+            // txtCidade
             // 
-            textBox3.BackColor = Color.FromArgb(53, 81, 142);
-            textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.ForeColor = Color.Cyan;
-            textBox3.Location = new Point(275, 359);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(263, 29);
-            textBox3.TabIndex = 69;
+            txtCidade.BackColor = Color.FromArgb(53, 81, 142);
+            txtCidade.BorderStyle = BorderStyle.FixedSingle;
+            txtCidade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCidade.ForeColor = Color.Cyan;
+            txtCidade.Location = new Point(275, 359);
+            txtCidade.Name = "txtCidade";
+            txtCidade.Size = new Size(263, 29);
+            txtCidade.TabIndex = 69;
             // 
-            // maskedTextBox4
+            // maskNumero
             // 
-            maskedTextBox4.BackColor = Color.FromArgb(53, 81, 142);
-            maskedTextBox4.BorderStyle = BorderStyle.FixedSingle;
-            maskedTextBox4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTextBox4.Location = new Point(311, 319);
-            maskedTextBox4.Name = "maskedTextBox4";
-            maskedTextBox4.Size = new Size(191, 29);
-            maskedTextBox4.TabIndex = 68;
+            maskNumero.BackColor = Color.FromArgb(53, 81, 142);
+            maskNumero.BorderStyle = BorderStyle.FixedSingle;
+            maskNumero.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskNumero.Location = new Point(311, 319);
+            maskNumero.Name = "maskNumero";
+            maskNumero.Size = new Size(191, 29);
+            maskNumero.TabIndex = 68;
             // 
-            // maskedTextBox3
+            // maskCEP
             // 
-            maskedTextBox3.BackColor = Color.FromArgb(53, 81, 142);
-            maskedTextBox3.BorderStyle = BorderStyle.FixedSingle;
-            maskedTextBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTextBox3.Location = new Point(322, 279);
-            maskedTextBox3.Name = "maskedTextBox3";
-            maskedTextBox3.Size = new Size(168, 29);
-            maskedTextBox3.TabIndex = 67;
+            maskCEP.BackColor = Color.FromArgb(53, 81, 142);
+            maskCEP.BorderStyle = BorderStyle.FixedSingle;
+            maskCEP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskCEP.Location = new Point(322, 279);
+            maskCEP.Name = "maskCEP";
+            maskCEP.Size = new Size(168, 29);
+            maskCEP.TabIndex = 67;
             // 
-            // maskedTextBox2
+            // maskCPF
             // 
-            maskedTextBox2.BackColor = Color.FromArgb(53, 81, 142);
-            maskedTextBox2.BorderStyle = BorderStyle.FixedSingle;
-            maskedTextBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTextBox2.Location = new Point(299, 240);
-            maskedTextBox2.Name = "maskedTextBox2";
-            maskedTextBox2.Size = new Size(214, 29);
-            maskedTextBox2.TabIndex = 66;
+            maskCPF.BackColor = Color.FromArgb(53, 81, 142);
+            maskCPF.BorderStyle = BorderStyle.FixedSingle;
+            maskCPF.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskCPF.Location = new Point(299, 240);
+            maskCPF.Name = "maskCPF";
+            maskCPF.Size = new Size(214, 29);
+            maskCPF.TabIndex = 66;
             // 
-            // maskedTextBox1
+            // maskTelefone
             // 
-            maskedTextBox1.BackColor = Color.FromArgb(53, 81, 142);
-            maskedTextBox1.BorderStyle = BorderStyle.FixedSingle;
-            maskedTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTextBox1.Location = new Point(291, 202);
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(231, 29);
-            maskedTextBox1.TabIndex = 65;
+            maskTelefone.BackColor = Color.FromArgb(53, 81, 142);
+            maskTelefone.BorderStyle = BorderStyle.FixedSingle;
+            maskTelefone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskTelefone.Location = new Point(291, 202);
+            maskTelefone.Name = "maskTelefone";
+            maskTelefone.Size = new Size(231, 29);
+            maskTelefone.TabIndex = 65;
             // 
-            // textBox2
+            // txtEndereco
             // 
-            textBox2.BackColor = Color.FromArgb(53, 81, 142);
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.ForeColor = Color.Cyan;
-            textBox2.Location = new Point(275, 162);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(263, 29);
-            textBox2.TabIndex = 64;
+            txtEndereco.BackColor = Color.FromArgb(53, 81, 142);
+            txtEndereco.BorderStyle = BorderStyle.FixedSingle;
+            txtEndereco.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEndereco.ForeColor = Color.Cyan;
+            txtEndereco.Location = new Point(275, 162);
+            txtEndereco.Name = "txtEndereco";
+            txtEndereco.Size = new Size(263, 29);
+            txtEndereco.TabIndex = 64;
             // 
             // txtCliente
             // 
@@ -153,16 +156,16 @@
             lblCEP.TabIndex = 60;
             lblCEP.Text = "CEP:";
             // 
-            // lblCNPJ
+            // lblCPF
             // 
-            lblCNPJ.AutoSize = true;
-            lblCNPJ.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCNPJ.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCNPJ.Location = new Point(231, 232);
-            lblCNPJ.Name = "lblCNPJ";
-            lblCNPJ.Size = new Size(72, 37);
-            lblCNPJ.TabIndex = 59;
-            lblCNPJ.Text = "CPF:";
+            lblCPF.AutoSize = true;
+            lblCPF.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCPF.ForeColor = Color.FromArgb(63, 136, 254);
+            lblCPF.Location = new Point(231, 232);
+            lblCPF.Name = "lblCPF";
+            lblCPF.Size = new Size(72, 37);
+            lblCPF.TabIndex = 59;
+            lblCPF.Text = "CPF:";
             // 
             // lblTelefone
             // 
@@ -186,16 +189,16 @@
             lblEndereco.TabIndex = 57;
             lblEndereco.Text = "Endereço:";
             // 
-            // label8
+            // lblCliente
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.ForeColor = Color.FromArgb(63, 136, 254);
-            label8.Location = new Point(148, 115);
-            label8.Name = "label8";
-            label8.Size = new Size(114, 37);
-            label8.TabIndex = 56;
-            label8.Text = "Cliente:";
+            lblCliente.AutoSize = true;
+            lblCliente.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCliente.ForeColor = Color.FromArgb(63, 136, 254);
+            lblCliente.Location = new Point(148, 115);
+            lblCliente.Name = "lblCliente";
+            lblCliente.Size = new Size(114, 37);
+            lblCliente.TabIndex = 56;
+            lblCliente.Text = "Cliente:";
             // 
             // btnSalvar
             // 
@@ -235,16 +238,27 @@
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
             // 
-            // lblEscolhaSeusColaboradoresESuasCredenciais
+            // lblCadastroDeClientes
             // 
-            lblEscolhaSeusColaboradoresESuasCredenciais.AutoSize = true;
-            lblEscolhaSeusColaboradoresESuasCredenciais.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblEscolhaSeusColaboradoresESuasCredenciais.ForeColor = Color.Cyan;
-            lblEscolhaSeusColaboradoresESuasCredenciais.Location = new Point(98, 51);
-            lblEscolhaSeusColaboradoresESuasCredenciais.Name = "lblEscolhaSeusColaboradoresESuasCredenciais";
-            lblEscolhaSeusColaboradoresESuasCredenciais.Size = new Size(600, 37);
-            lblEscolhaSeusColaboradoresESuasCredenciais.TabIndex = 72;
-            lblEscolhaSeusColaboradoresESuasCredenciais.Text = "Escolha seus colaboradores e suas credenciais";
+            lblCadastroDeClientes.AutoSize = true;
+            lblCadastroDeClientes.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCadastroDeClientes.ForeColor = Color.Cyan;
+            lblCadastroDeClientes.Location = new Point(261, 49);
+            lblCadastroDeClientes.Name = "lblCadastroDeClientes";
+            lblCadastroDeClientes.Size = new Size(280, 37);
+            lblCadastroDeClientes.TabIndex = 72;
+            lblCadastroDeClientes.Text = "Cadastro de Clientes";
+            // 
+            // LogoComoWallpaper
+            // 
+            LogoComoWallpaper.Dock = DockStyle.Fill;
+            LogoComoWallpaper.Image = (Image)resources.GetObject("LogoComoWallpaper.Image");
+            LogoComoWallpaper.Location = new Point(0, 0);
+            LogoComoWallpaper.Name = "LogoComoWallpaper";
+            LogoComoWallpaper.Size = new Size(800, 450);
+            LogoComoWallpaper.SizeMode = PictureBoxSizeMode.Zoom;
+            LogoComoWallpaper.TabIndex = 73;
+            LogoComoWallpaper.TabStop = false;
             // 
             // CadastroDeCliente
             // 
@@ -252,47 +266,51 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(lblEscolhaSeusColaboradoresESuasCredenciais);
+            Controls.Add(lblCadastroDeClientes);
             Controls.Add(btnVoltar);
             Controls.Add(btnSalvar);
-            Controls.Add(textBox3);
-            Controls.Add(maskedTextBox4);
-            Controls.Add(maskedTextBox3);
-            Controls.Add(maskedTextBox2);
-            Controls.Add(maskedTextBox1);
-            Controls.Add(textBox2);
+            Controls.Add(txtCidade);
+            Controls.Add(maskNumero);
+            Controls.Add(maskCEP);
+            Controls.Add(maskCPF);
+            Controls.Add(maskTelefone);
+            Controls.Add(txtEndereco);
             Controls.Add(txtCliente);
             Controls.Add(lblCidade);
             Controls.Add(lblNumero);
             Controls.Add(lblCEP);
-            Controls.Add(lblCNPJ);
+            Controls.Add(lblCPF);
             Controls.Add(lblTelefone);
             Controls.Add(lblEndereco);
-            Controls.Add(label8);
+            Controls.Add(lblCliente);
+            Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "CadastroDeCliente";
             Text = "CadastroDeCliente";
+            Load += CadastroDeCliente_Load;
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-        private TextBox textBox3;
-        private MaskedTextBox maskedTextBox4;
-        private MaskedTextBox maskedTextBox3;
-        private MaskedTextBox maskedTextBox2;
-        private MaskedTextBox maskedTextBox1;
-        private TextBox textBox2;
+        private TextBox txtCidade;
+        private MaskedTextBox maskNumero;
+        private MaskedTextBox maskCEP;
+        private MaskedTextBox maskCPF;
+        private MaskedTextBox maskTelefone;
+        private TextBox txtEndereco;
         private TextBox txtCliente;
         private Label lblCidade;
         private Label lblNumero;
         private Label lblCEP;
-        private Label lblCNPJ;
+        private Label lblCPF;
         private Label lblTelefone;
         private Label lblEndereco;
-        private Label label8;
+        private Label lblCliente;
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private WiLBiT.WiLBiTButton2 btnVoltar;
-        private Label lblEscolhaSeusColaboradoresESuasCredenciais;
+        private Label lblCadastroDeClientes;
+        private PictureBox LogoComoWallpaper;
     }
 }
