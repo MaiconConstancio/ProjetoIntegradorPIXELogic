@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RelatorioDeVendas));
-            pictureBox1 = new PictureBox();
+            imgLogoEscrita = new PictureBox();
             txtNomeDoCliente = new TextBox();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             btnImprimir = new WiLBiT.WiLBiTButton2();
@@ -44,18 +44,18 @@
             lblPagamentoNoMetodoSelecionado = new Label();
             lblTotal = new Label();
             lblMetodoSelecionado = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // imgLogoEscrita
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(265, 78);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            imgLogoEscrita.Image = (Image)resources.GetObject("imgLogoEscrita.Image");
+            imgLogoEscrita.Location = new Point(12, 12);
+            imgLogoEscrita.Name = "imgLogoEscrita";
+            imgLogoEscrita.Size = new Size(265, 78);
+            imgLogoEscrita.SizeMode = PictureBoxSizeMode.Zoom;
+            imgLogoEscrita.TabIndex = 0;
+            imgLogoEscrita.TabStop = false;
             // 
             // txtNomeDoCliente
             // 
@@ -253,18 +253,18 @@
             Controls.Add(btnImprimir);
             Controls.Add(btnSalvar);
             Controls.Add(txtNomeDoCliente);
-            Controls.Add(pictureBox1);
+            Controls.Add(imgLogoEscrita);
             FormBorderStyle = FormBorderStyle.None;
             Name = "RelatorioDeVendas";
             Text = "RelatorioDeVendas";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox imgLogoEscrita;
         private TextBox txtNomeDoCliente;
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private WiLBiT.WiLBiTButton2 btnImprimir;
