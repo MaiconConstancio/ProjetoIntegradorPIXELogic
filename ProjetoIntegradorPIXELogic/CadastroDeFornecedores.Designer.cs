@@ -39,13 +39,13 @@
             lblNumero = new Label();
             lblCidade = new Label();
             LogoComoWallpaper = new PictureBox();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            maskedTextBox1 = new MaskedTextBox();
-            maskedTextBox2 = new MaskedTextBox();
-            maskedTextBox3 = new MaskedTextBox();
-            maskedTextBox4 = new MaskedTextBox();
-            textBox3 = new TextBox();
+            txtFornecedor = new TextBox();
+            txtEndereço = new TextBox();
+            maskedTelefone = new MaskedTextBox();
+            maskedCNJP = new MaskedTextBox();
+            maskedCEP = new MaskedTextBox();
+            maskedNumero = new MaskedTextBox();
+            txtCidade = new TextBox();
             btnVoltar = new WiLBiT.WiLBiTButton2();
             ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
@@ -170,82 +170,82 @@
             LogoComoWallpaper.TabIndex = 39;
             LogoComoWallpaper.TabStop = false;
             // 
-            // textBox1
+            // txtFornecedor
             // 
-            textBox1.BackColor = Color.FromArgb(53, 81, 142);
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.Cyan;
-            textBox1.Location = new Point(252, 121);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(296, 29);
-            textBox1.TabIndex = 40;
+            txtFornecedor.BackColor = Color.FromArgb(53, 81, 142);
+            txtFornecedor.BorderStyle = BorderStyle.FixedSingle;
+            txtFornecedor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtFornecedor.ForeColor = Color.Cyan;
+            txtFornecedor.Location = new Point(252, 121);
+            txtFornecedor.Name = "txtFornecedor";
+            txtFornecedor.Size = new Size(296, 29);
+            txtFornecedor.TabIndex = 40;
             // 
-            // textBox2
+            // txtEndereço
             // 
-            textBox2.BackColor = Color.FromArgb(53, 81, 142);
-            textBox2.BorderStyle = BorderStyle.FixedSingle;
-            textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox2.ForeColor = Color.Cyan;
-            textBox2.Location = new Point(269, 296);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(263, 29);
-            textBox2.TabIndex = 41;
+            txtEndereço.BackColor = Color.FromArgb(53, 81, 142);
+            txtEndereço.BorderStyle = BorderStyle.FixedSingle;
+            txtEndereço.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtEndereço.ForeColor = Color.Cyan;
+            txtEndereço.Location = new Point(269, 296);
+            txtEndereço.Name = "txtEndereço";
+            txtEndereço.Size = new Size(263, 29);
+            txtEndereço.TabIndex = 41;
             // 
-            // maskedTextBox1
+            // maskedTelefone
             // 
-            maskedTextBox1.BackColor = Color.FromArgb(53, 81, 142);
-            maskedTextBox1.BorderStyle = BorderStyle.FixedSingle;
-            maskedTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTextBox1.Location = new Point(285, 156);
-            maskedTextBox1.Mask = "(99) 00000-0000";
-            maskedTextBox1.Name = "maskedTextBox1";
-            maskedTextBox1.Size = new Size(231, 29);
-            maskedTextBox1.TabIndex = 43;
+            maskedTelefone.BackColor = Color.FromArgb(53, 81, 142);
+            maskedTelefone.BorderStyle = BorderStyle.FixedSingle;
+            maskedTelefone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskedTelefone.Location = new Point(285, 156);
+            maskedTelefone.Mask = "(99) 00000-0000";
+            maskedTelefone.Name = "maskedTelefone";
+            maskedTelefone.Size = new Size(231, 29);
+            maskedTelefone.TabIndex = 43;
             // 
-            // maskedTextBox2
+            // maskedCNJP
             // 
-            maskedTextBox2.BackColor = Color.FromArgb(53, 81, 142);
-            maskedTextBox2.BorderStyle = BorderStyle.FixedSingle;
-            maskedTextBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTextBox2.Location = new Point(293, 191);
-            maskedTextBox2.Mask = "00.000.000/0001-00";
-            maskedTextBox2.Name = "maskedTextBox2";
-            maskedTextBox2.Size = new Size(214, 29);
-            maskedTextBox2.TabIndex = 44;
+            maskedCNJP.BackColor = Color.FromArgb(53, 81, 142);
+            maskedCNJP.BorderStyle = BorderStyle.FixedSingle;
+            maskedCNJP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskedCNJP.Location = new Point(293, 191);
+            maskedCNJP.Mask = "00.000.000/0001-00";
+            maskedCNJP.Name = "maskedCNJP";
+            maskedCNJP.Size = new Size(214, 29);
+            maskedCNJP.TabIndex = 44;
             // 
-            // maskedTextBox3
+            // maskedCEP
             // 
-            maskedTextBox3.BackColor = Color.FromArgb(53, 81, 142);
-            maskedTextBox3.BorderStyle = BorderStyle.FixedSingle;
-            maskedTextBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTextBox3.Location = new Point(316, 226);
-            maskedTextBox3.Mask = "00000-00";
-            maskedTextBox3.Name = "maskedTextBox3";
-            maskedTextBox3.Size = new Size(168, 29);
-            maskedTextBox3.TabIndex = 45;
+            maskedCEP.BackColor = Color.FromArgb(53, 81, 142);
+            maskedCEP.BorderStyle = BorderStyle.FixedSingle;
+            maskedCEP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskedCEP.Location = new Point(316, 226);
+            maskedCEP.Mask = "00000-00";
+            maskedCEP.Name = "maskedCEP";
+            maskedCEP.Size = new Size(168, 29);
+            maskedCEP.TabIndex = 45;
             // 
-            // maskedTextBox4
+            // maskedNumero
             // 
-            maskedTextBox4.BackColor = Color.FromArgb(53, 81, 142);
-            maskedTextBox4.BorderStyle = BorderStyle.FixedSingle;
-            maskedTextBox4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTextBox4.Location = new Point(305, 261);
-            maskedTextBox4.Mask = "0000";
-            maskedTextBox4.Name = "maskedTextBox4";
-            maskedTextBox4.Size = new Size(191, 29);
-            maskedTextBox4.TabIndex = 46;
+            maskedNumero.BackColor = Color.FromArgb(53, 81, 142);
+            maskedNumero.BorderStyle = BorderStyle.FixedSingle;
+            maskedNumero.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskedNumero.Location = new Point(305, 261);
+            maskedNumero.Mask = "0000";
+            maskedNumero.Name = "maskedNumero";
+            maskedNumero.Size = new Size(191, 29);
+            maskedNumero.TabIndex = 46;
             // 
-            // textBox3
+            // txtCidade
             // 
-            textBox3.BackColor = Color.FromArgb(53, 81, 142);
-            textBox3.BorderStyle = BorderStyle.FixedSingle;
-            textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox3.ForeColor = Color.Cyan;
-            textBox3.Location = new Point(287, 331);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(227, 29);
-            textBox3.TabIndex = 47;
+            txtCidade.BackColor = Color.FromArgb(53, 81, 142);
+            txtCidade.BorderStyle = BorderStyle.FixedSingle;
+            txtCidade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtCidade.ForeColor = Color.Cyan;
+            txtCidade.Location = new Point(287, 331);
+            txtCidade.Name = "txtCidade";
+            txtCidade.Size = new Size(227, 29);
+            txtCidade.TabIndex = 47;
             // 
             // btnVoltar
             // 
@@ -273,13 +273,13 @@
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
             Controls.Add(btnVoltar);
-            Controls.Add(textBox3);
-            Controls.Add(maskedTextBox4);
-            Controls.Add(maskedTextBox3);
-            Controls.Add(maskedTextBox2);
-            Controls.Add(maskedTextBox1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtCidade);
+            Controls.Add(maskedNumero);
+            Controls.Add(maskedCEP);
+            Controls.Add(maskedCNJP);
+            Controls.Add(maskedTelefone);
+            Controls.Add(txtEndereço);
+            Controls.Add(txtFornecedor);
             Controls.Add(lblCidade);
             Controls.Add(lblNumero);
             Controls.Add(lblCEP);
@@ -311,13 +311,13 @@
         private Label lblNumero;
         private Label lblCidade;
         private PictureBox LogoComoWallpaper;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private MaskedTextBox maskedTextBox1;
-        private MaskedTextBox maskedTextBox2;
-        private MaskedTextBox maskedTextBox3;
-        private MaskedTextBox maskedTextBox4;
-        private TextBox textBox3;
+        private TextBox txtFornecedor;
+        private TextBox txtEndereço;
+        private MaskedTextBox maskedTelefone;
+        private MaskedTextBox maskedCNJP;
+        private MaskedTextBox maskedCEP;
+        private MaskedTextBox maskedNumero;
+        private TextBox txtCidade;
         private WiLBiT.WiLBiTButton2 btnVoltar;
     }
 }
