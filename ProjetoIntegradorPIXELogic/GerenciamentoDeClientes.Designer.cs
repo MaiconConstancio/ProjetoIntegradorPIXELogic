@@ -94,6 +94,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "GerenciamentoDeClientes";
             Text = "    ";
+            Load += GerenciamentoDeClientes_Load;
             ResumeLayout(false);
             PerformLayout();
         }

@@ -21,5 +21,28 @@ namespace ProjetoIntegradorPIXELogic
         {
 
         }
+
+        private void NovoCadastroDeEmpresas_Load(object sender, EventArgs e)
+        {
+            //---------------------------Setor do Designer------------------------------------
+            lblCadastroDeNovasConta.Parent = LogoComoWallpaper;
+            lblCadastroDeNovasConta.BackColor = Color.Transparent;
+
+            lblNome.Parent = LogoComoWallpaper;
+            lblNome.BackColor = Color.Transparent;
+
+            lblEmpresa.Parent = LogoComoWallpaper;
+            lblEmpresa.BackColor = Color.Transparent;
+
+            lblEmail.Parent = LogoComoWallpaper;
+            lblEmail.BackColor = Color.Transparent;
+
+            lblLogin.Parent = LogoComoWallpaper;
+            lblLogin.BackColor = Color.Transparent;
+
+            lblSenha.Parent = LogoComoWallpaper;
+            lblSenha.BackColor = Color.Transparent;
+            //---------------------------FIM do Setor do Designer------------------------------------
+        }
     }
 }

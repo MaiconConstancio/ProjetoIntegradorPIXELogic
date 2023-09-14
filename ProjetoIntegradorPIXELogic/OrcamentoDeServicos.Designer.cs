@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(OrcamentoDeServicos));
             lblCidade = new Label();
             lblPrazoDeEntrega = new Label();
             lblFuncionario = new Label();
@@ -44,8 +45,10 @@
             maskValor = new MaskedTextBox();
             txtEndereco = new TextBox();
             txtFuncionario = new TextBox();
-            txtPrazoDeEntrega = new TextBox();
             txtCidade = new TextBox();
+            LogoComoWallpaper = new PictureBox();
+            maskPrazoDeEntrega = new MaskedTextBox();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
             // lblCidade
@@ -53,7 +56,7 @@
             lblCidade.AutoSize = true;
             lblCidade.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblCidade.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCidade.Location = new Point(161, 356);
+            lblCidade.Location = new Point(185, 356);
             lblCidade.Name = "lblCidade";
             lblCidade.Size = new Size(113, 37);
             lblCidade.TabIndex = 52;
@@ -64,7 +67,7 @@
             lblPrazoDeEntrega.AutoSize = true;
             lblPrazoDeEntrega.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblPrazoDeEntrega.ForeColor = Color.FromArgb(63, 136, 254);
-            lblPrazoDeEntrega.Location = new Point(47, 308);
+            lblPrazoDeEntrega.Location = new Point(54, 307);
             lblPrazoDeEntrega.Name = "lblPrazoDeEntrega";
             lblPrazoDeEntrega.Size = new Size(243, 37);
             lblPrazoDeEntrega.TabIndex = 50;
@@ -75,7 +78,7 @@
             lblFuncionario.AutoSize = true;
             lblFuncionario.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblFuncionario.ForeColor = Color.FromArgb(63, 136, 254);
-            lblFuncionario.Location = new Point(115, 265);
+            lblFuncionario.Location = new Point(123, 257);
             lblFuncionario.Name = "lblFuncionario";
             lblFuncionario.Size = new Size(175, 37);
             lblFuncionario.TabIndex = 48;
@@ -86,7 +89,7 @@
             lblEndereco.AutoSize = true;
             lblEndereco.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblEndereco.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEndereco.Location = new Point(132, 218);
+            lblEndereco.Location = new Point(156, 209);
             lblEndereco.Name = "lblEndereco";
             lblEndereco.Size = new Size(142, 37);
             lblEndereco.TabIndex = 46;
@@ -97,7 +100,7 @@
             lblValor.AutoSize = true;
             lblValor.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(182, 173);
+            lblValor.Location = new Point(206, 162);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(92, 37);
             lblValor.TabIndex = 44;
@@ -108,7 +111,7 @@
             lblServico.AutoSize = true;
             lblServico.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblServico.ForeColor = Color.FromArgb(63, 136, 254);
-            lblServico.Location = new Point(155, 123);
+            lblServico.Location = new Point(178, 115);
             lblServico.Name = "lblServico";
             lblServico.Size = new Size(119, 37);
             lblServico.TabIndex = 42;
@@ -149,7 +152,7 @@
             lblNomeDoCliente.AutoSize = true;
             lblNomeDoCliente.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblNomeDoCliente.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNomeDoCliente.Location = new Point(47, 71);
+            lblNomeDoCliente.Location = new Point(61, 71);
             lblNomeDoCliente.Name = "lblNomeDoCliente";
             lblNomeDoCliente.Size = new Size(236, 37);
             lblNomeDoCliente.TabIndex = 54;
@@ -220,9 +223,11 @@
             // 
             maskValor.BackColor = Color.FromArgb(53, 81, 142);
             maskValor.BorderStyle = BorderStyle.FixedSingle;
-            maskValor.Location = new Point(294, 174);
+            maskValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskValor.Location = new Point(294, 170);
+            maskValor.Mask = "$ 000,00";
             maskValor.Name = "maskValor";
-            maskValor.Size = new Size(296, 23);
+            maskValor.Size = new Size(296, 29);
             maskValor.TabIndex = 59;
             // 
             // txtEndereco
@@ -247,17 +252,6 @@
             txtFuncionario.Size = new Size(296, 29);
             txtFuncionario.TabIndex = 61;
             // 
-            // txtPrazoDeEntrega
-            // 
-            txtPrazoDeEntrega.BackColor = Color.FromArgb(53, 81, 142);
-            txtPrazoDeEntrega.BorderStyle = BorderStyle.FixedSingle;
-            txtPrazoDeEntrega.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtPrazoDeEntrega.ForeColor = Color.Cyan;
-            txtPrazoDeEntrega.Location = new Point(294, 316);
-            txtPrazoDeEntrega.Name = "txtPrazoDeEntrega";
-            txtPrazoDeEntrega.Size = new Size(296, 29);
-            txtPrazoDeEntrega.TabIndex = 62;
-            // 
             // txtCidade
             // 
             txtCidade.BackColor = Color.FromArgb(53, 81, 142);
@@ -269,14 +263,37 @@
             txtCidade.Size = new Size(296, 29);
             txtCidade.TabIndex = 63;
             // 
+            // LogoComoWallpaper
+            // 
+            LogoComoWallpaper.Dock = DockStyle.Fill;
+            LogoComoWallpaper.Image = (Image)resources.GetObject("LogoComoWallpaper.Image");
+            LogoComoWallpaper.Location = new Point(0, 0);
+            LogoComoWallpaper.Name = "LogoComoWallpaper";
+            LogoComoWallpaper.Size = new Size(800, 450);
+            LogoComoWallpaper.SizeMode = PictureBoxSizeMode.Zoom;
+            LogoComoWallpaper.TabIndex = 64;
+            LogoComoWallpaper.TabStop = false;
+            // 
+            // maskPrazoDeEntrega
+            // 
+            maskPrazoDeEntrega.BackColor = Color.FromArgb(53, 81, 142);
+            maskPrazoDeEntrega.BorderStyle = BorderStyle.FixedSingle;
+            maskPrazoDeEntrega.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskPrazoDeEntrega.Location = new Point(294, 314);
+            maskPrazoDeEntrega.Mask = "00/00/0000";
+            maskPrazoDeEntrega.Name = "maskPrazoDeEntrega";
+            maskPrazoDeEntrega.Size = new Size(296, 29);
+            maskPrazoDeEntrega.TabIndex = 65;
+            maskPrazoDeEntrega.MaskInputRejected += maskPrazoDeEntrega_MaskInputRejected;
+            // 
             // OrcamentoDeServicos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(maskPrazoDeEntrega);
             Controls.Add(txtCidade);
-            Controls.Add(txtPrazoDeEntrega);
             Controls.Add(txtFuncionario);
             Controls.Add(txtEndereco);
             Controls.Add(maskValor);
@@ -293,9 +310,12 @@
             Controls.Add(lblOrcamentoDeServicos);
             Controls.Add(btnSalvar);
             Controls.Add(lblNomeDoCliente);
+            Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "OrcamentoDeServicos";
             Text = "OrcamentoDeServicos";
+            Load += OrcamentoDeServicos_Load;
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -317,7 +337,8 @@
         private MaskedTextBox maskValor;
         private TextBox txtEndereco;
         private TextBox txtFuncionario;
-        private TextBox txtPrazoDeEntrega;
         private TextBox txtCidade;
+        private PictureBox LogoComoWallpaper;
+        private MaskedTextBox maskPrazoDeEntrega;
     }
 }

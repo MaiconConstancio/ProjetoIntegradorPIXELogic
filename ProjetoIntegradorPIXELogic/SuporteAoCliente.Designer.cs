@@ -113,6 +113,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "SuporteAoCliente";
             Text = "SuporteAoCliente";
+            Load += SuporteAoCliente_Load;
             ((System.ComponentModel.ISupportInitialize)imgWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();

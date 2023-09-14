@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CadastroDeServicos));
             btnSalvar = new WiLBiT.WiLBiTButton2();
             btnVoltar = new WiLBiT.WiLBiTButton2();
             lblCadastrodeServicos = new Label();
@@ -35,6 +36,8 @@
             lblValor = new Label();
             txtNomeDoServico = new TextBox();
             txtValor = new TextBox();
+            LogoComoWallpaper = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
             // btnSalvar
@@ -91,22 +94,22 @@
             lblNomedoServico.AutoSize = true;
             lblNomedoServico.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblNomedoServico.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNomedoServico.Location = new Point(12, 179);
+            lblNomedoServico.Location = new Point(40, 181);
             lblNomedoServico.Name = "lblNomedoServico";
-            lblNomedoServico.Size = new Size(209, 32);
+            lblNomedoServico.Size = new Size(216, 32);
             lblNomedoServico.TabIndex = 18;
-            lblNomedoServico.Text = "Nome do serviço";
+            lblNomedoServico.Text = "Nome do serviço:";
             // 
             // lblValor
             // 
             lblValor.AutoSize = true;
             lblValor.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(141, 242);
+            lblValor.Location = new Point(175, 243);
             lblValor.Name = "lblValor";
-            lblValor.Size = new Size(73, 32);
+            lblValor.Size = new Size(81, 32);
             lblValor.TabIndex = 19;
-            lblValor.Text = "Valor";
+            lblValor.Text = "Valor:";
             // 
             // txtNomeDoServico
             // 
@@ -130,6 +133,16 @@
             txtValor.Size = new Size(296, 29);
             txtValor.TabIndex = 67;
             // 
+            // LogoComoWallpaper
+            // 
+            LogoComoWallpaper.Dock = DockStyle.Fill;
+            LogoComoWallpaper.Image = (Image)resources.GetObject("LogoComoWallpaper.Image");
+            LogoComoWallpaper.Location = new Point(0, 0);
+            LogoComoWallpaper.Name = "LogoComoWallpaper";
+            LogoComoWallpaper.Size = new Size(800, 450);
+            LogoComoWallpaper.TabIndex = 68;
+            LogoComoWallpaper.TabStop = false;
+            // 
             // CadastroDeServicos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -143,9 +156,12 @@
             Controls.Add(lblCadastrodeServicos);
             Controls.Add(btnVoltar);
             Controls.Add(btnSalvar);
+            Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "CadastroDeServicos";
             Text = "CadastroDeServicos";
+            Load += CadastroDeServicos_Load;
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -158,5 +174,6 @@
         private Label lblValor;
         private TextBox txtNomeDoServico;
         private TextBox txtValor;
+        private PictureBox LogoComoWallpaper;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NovoCadastroDeEmpresas));
             pictureBox1 = new PictureBox();
             lblCadastroDeNovasConta = new Label();
             txtEmpresa = new TextBox();
@@ -42,7 +43,9 @@
             lblSenha = new Label();
             btnCancelar = new WiLBiT.WiLBiTButton2();
             btnCadastrar = new WiLBiT.WiLBiTButton2();
+            LogoComoWallpaper = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -60,7 +63,7 @@
             lblCadastroDeNovasConta.AutoSize = true;
             lblCadastroDeNovasConta.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblCadastroDeNovasConta.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCadastroDeNovasConta.Location = new Point(249, 76);
+            lblCadastroDeNovasConta.Location = new Point(250, 76);
             lblCadastroDeNovasConta.Name = "lblCadastroDeNovasConta";
             lblCadastroDeNovasConta.Size = new Size(295, 32);
             lblCadastroDeNovasConta.TabIndex = 36;
@@ -116,7 +119,7 @@
             lblNome.AutoSize = true;
             lblNome.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblNome.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNome.Location = new Point(358, 117);
+            lblNome.Location = new Point(364, 117);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(66, 25);
             lblNome.TabIndex = 42;
@@ -127,7 +130,7 @@
             lblEmpresa.AutoSize = true;
             lblEmpresa.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEmpresa.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEmpresa.Location = new Point(358, 171);
+            lblEmpresa.Location = new Point(354, 171);
             lblEmpresa.Name = "lblEmpresa";
             lblEmpresa.Size = new Size(87, 25);
             lblEmpresa.TabIndex = 43;
@@ -138,7 +141,7 @@
             lblEmail.AutoSize = true;
             lblEmail.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEmail.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEmail.Location = new Point(369, 225);
+            lblEmail.Location = new Point(368, 225);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(59, 25);
             lblEmail.TabIndex = 44;
@@ -150,7 +153,7 @@
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
-            lblLogin.Location = new Point(365, 279);
+            lblLogin.Location = new Point(366, 279);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(63, 25);
             lblLogin.TabIndex = 45;
@@ -161,7 +164,7 @@
             lblSenha.AutoSize = true;
             lblSenha.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
-            lblSenha.Location = new Point(365, 333);
+            lblSenha.Location = new Point(364, 333);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(66, 25);
             lblSenha.TabIndex = 46;
@@ -205,6 +208,17 @@
             btnCadastrar.TextColor = Color.Black;
             btnCadastrar.UseVisualStyleBackColor = false;
             // 
+            // LogoComoWallpaper
+            // 
+            LogoComoWallpaper.Dock = DockStyle.Fill;
+            LogoComoWallpaper.Image = (Image)resources.GetObject("LogoComoWallpaper.Image");
+            LogoComoWallpaper.Location = new Point(0, 0);
+            LogoComoWallpaper.Name = "LogoComoWallpaper";
+            LogoComoWallpaper.Size = new Size(800, 450);
+            LogoComoWallpaper.SizeMode = PictureBoxSizeMode.Zoom;
+            LogoComoWallpaper.TabIndex = 74;
+            LogoComoWallpaper.TabStop = false;
+            // 
             // NovoCadastroDeEmpresas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -225,10 +239,13 @@
             Controls.Add(txtEmpresa);
             Controls.Add(lblCadastroDeNovasConta);
             Controls.Add(pictureBox1);
+            Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "NovoCadastroDeEmpresas";
             Text = "NovoCadastroDeEmpresas";
+            Load += NovoCadastroDeEmpresas_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -249,5 +266,6 @@
         private Label lblSenha;
         private WiLBiT.WiLBiTButton2 btnCancelar;
         private WiLBiT.WiLBiTButton2 btnCadastrar;
+        private PictureBox LogoComoWallpaper;
     }
 }

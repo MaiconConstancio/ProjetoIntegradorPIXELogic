@@ -16,5 +16,19 @@ namespace ProjetoIntegradorPIXELogic
         {
             InitializeComponent();
         }
+
+        private void SuporteAoCliente_Load(object sender, EventArgs e)
+        {
+            //---------------------------Setor do Designer------------------------------------
+            lblSuporteAoCliente.Parent = imgWallpaper;
+            lblSuporteAoCliente.BackColor = Color.Transparent;
+
+            lblAtendimento.Parent = imgWallpaper;
+            lblAtendimento.BackColor = Color.Transparent;
+
+            lblHorario.Parent = imgWallpaper;
+            lblHorario.BackColor = Color.Transparent;
+            //---------------------------FIM do Setor do Designer------------------------------------
+        }
     }
 }
