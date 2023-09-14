@@ -49,9 +49,9 @@
             // 
             // btnEntraEmContato
             // 
-            btnEntraEmContato.BackColor = Color.DarkTurquoise;
-            btnEntraEmContato.BackgroundColor = Color.DarkTurquoise;
-            btnEntraEmContato.BorderColor = Color.FromArgb(0, 242, 254);
+            btnEntraEmContato.BackColor = Color.FromArgb(18, 184, 238);
+            btnEntraEmContato.BackgroundColor = Color.FromArgb(18, 184, 238);
+            btnEntraEmContato.BorderColor = Color.FromArgb(192, 255, 255);
             btnEntraEmContato.BorderRadius = 18;
             btnEntraEmContato.BorderSize = 2;
             btnEntraEmContato.FlatAppearance.BorderSize = 0;
