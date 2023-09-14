@@ -16,5 +16,10 @@ namespace ProjetoIntegradorPIXELogic
         {
             InitializeComponent();
         }
+
+        private void CadastroDeCliente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
