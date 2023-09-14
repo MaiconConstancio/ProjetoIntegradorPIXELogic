@@ -37,7 +37,7 @@ namespace ProjetoIntegradorPIXELogic
             lblSenha = new Label();
             lblLogin = new Label();
             imgWallpaperLoginPrincipal = new PictureBox();
-            textBox1 = new TextBox();
+            txtLogin = new TextBox();
             textBox2 = new TextBox();
             imgLOGOloginPrincipal = new PictureBox();
             label1 = new Label();
@@ -97,16 +97,16 @@ namespace ProjetoIntegradorPIXELogic
             imgWallpaperLoginPrincipal.TabIndex = 7;
             imgWallpaperLoginPrincipal.TabStop = false;
             // 
-            // textBox1
+            // txtLogin
             // 
-            textBox1.BackColor = Color.FromArgb(53, 81, 142);
-            textBox1.BorderStyle = BorderStyle.FixedSingle;
-            textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            textBox1.ForeColor = Color.Cyan;
-            textBox1.Location = new Point(465, 247);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(296, 29);
-            textBox1.TabIndex = 8;
+            txtLogin.BackColor = Color.FromArgb(53, 81, 142);
+            txtLogin.BorderStyle = BorderStyle.FixedSingle;
+            txtLogin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            txtLogin.ForeColor = Color.Cyan;
+            txtLogin.Location = new Point(465, 247);
+            txtLogin.Name = "txtLogin";
+            txtLogin.Size = new Size(296, 29);
+            txtLogin.TabIndex = 8;
             // 
             // textBox2
             // 
@@ -147,7 +147,7 @@ namespace ProjetoIntegradorPIXELogic
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
             Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(txtLogin);
             Controls.Add(lblLogin);
             Controls.Add(lblSenha);
             Controls.Add(btnEntra);
@@ -171,7 +171,7 @@ namespace ProjetoIntegradorPIXELogic
         private Label lblSenha;
         private Label lblLogin;
         private PictureBox imgWallpaperLoginPrincipal;
-        private TextBox textBox1;
+        private TextBox txtLogin;
         private TextBox textBox2;
         private PictureBox imgLOGOloginPrincipal;
         private Label label1;
