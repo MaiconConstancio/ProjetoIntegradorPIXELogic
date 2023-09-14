@@ -50,5 +50,18 @@ namespace ProjetoIntegradorPIXELogic
         {
             //maskPrazoDeEntrega.SelectionStart = 0;
         }
+
+        private void txtFuncionario_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCidade_TextChanged(object sender, EventArgs e)
+        {
+        }
+
+        private void txtEndereco_TextChanged(object sender, EventArgs e)
+        {
+        }
     }
 }

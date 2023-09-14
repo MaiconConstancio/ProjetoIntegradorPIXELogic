@@ -55,7 +55,7 @@
             lblCadastroDeFornecedores.AutoSize = true;
             lblCadastroDeFornecedores.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblCadastroDeFornecedores.ForeColor = Color.Cyan;
-            lblCadastroDeFornecedores.Location = new Point(235, 59);
+            lblCadastroDeFornecedores.Location = new Point(225, 59);
             lblCadastroDeFornecedores.Name = "lblCadastroDeFornecedores";
             lblCadastroDeFornecedores.Size = new Size(351, 37);
             lblCadastroDeFornecedores.TabIndex = 26;
@@ -66,7 +66,7 @@
             lblFornecedor.AutoSize = true;
             lblFornecedor.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblFornecedor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblFornecedor.Location = new Point(88, 115);
+            lblFornecedor.Location = new Point(72, 115);
             lblFornecedor.Name = "lblFornecedor";
             lblFornecedor.Size = new Size(178, 37);
             lblFornecedor.TabIndex = 24;
@@ -84,7 +84,7 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.World);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(344, 378);
+            btnSalvar.Location = new Point(333, 378);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(135, 36);
             btnSalvar.TabIndex = 23;
@@ -98,7 +98,7 @@
             lblEndereco.AutoSize = true;
             lblEndereco.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblEndereco.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEndereco.Location = new Point(141, 293);
+            lblEndereco.Location = new Point(125, 293);
             lblEndereco.Name = "lblEndereco";
             lblEndereco.Size = new Size(142, 37);
             lblEndereco.TabIndex = 27;
@@ -109,7 +109,7 @@
             lblTelefone.AutoSize = true;
             lblTelefone.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblTelefone.ForeColor = Color.FromArgb(63, 136, 254);
-            lblTelefone.Location = new Point(165, 152);
+            lblTelefone.Location = new Point(149, 152);
             lblTelefone.Name = "lblTelefone";
             lblTelefone.Size = new Size(134, 37);
             lblTelefone.TabIndex = 29;
@@ -120,7 +120,7 @@
             lblCNPJ.AutoSize = true;
             lblCNPJ.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblCNPJ.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCNPJ.Location = new Point(218, 185);
+            lblCNPJ.Location = new Point(202, 185);
             lblCNPJ.Name = "lblCNPJ";
             lblCNPJ.Size = new Size(89, 37);
             lblCNPJ.TabIndex = 31;
@@ -131,7 +131,7 @@
             lblCEP.AutoSize = true;
             lblCEP.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblCEP.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCEP.Location = new Point(258, 222);
+            lblCEP.Location = new Point(243, 222);
             lblCEP.Name = "lblCEP";
             lblCEP.Size = new Size(72, 37);
             lblCEP.TabIndex = 33;
@@ -142,7 +142,7 @@
             lblNumero.AutoSize = true;
             lblNumero.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblNumero.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNumero.Location = new Point(190, 256);
+            lblNumero.Location = new Point(174, 256);
             lblNumero.Name = "lblNumero";
             lblNumero.Size = new Size(129, 37);
             lblNumero.TabIndex = 35;
@@ -153,7 +153,7 @@
             lblCidade.AutoSize = true;
             lblCidade.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblCidade.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCidade.Location = new Point(170, 328);
+            lblCidade.Location = new Point(172, 328);
             lblCidade.Name = "lblCidade";
             lblCidade.Size = new Size(113, 37);
             lblCidade.TabIndex = 37;
@@ -176,7 +176,7 @@
             textBox1.BorderStyle = BorderStyle.FixedSingle;
             textBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox1.ForeColor = Color.Cyan;
-            textBox1.Location = new Point(262, 121);
+            textBox1.Location = new Point(252, 121);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(296, 29);
             textBox1.TabIndex = 40;
@@ -187,7 +187,7 @@
             textBox2.BorderStyle = BorderStyle.FixedSingle;
             textBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox2.ForeColor = Color.Cyan;
-            textBox2.Location = new Point(279, 296);
+            textBox2.Location = new Point(269, 296);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(263, 29);
             textBox2.TabIndex = 41;
@@ -197,7 +197,7 @@
             maskedTextBox1.BackColor = Color.FromArgb(53, 81, 142);
             maskedTextBox1.BorderStyle = BorderStyle.FixedSingle;
             maskedTextBox1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTextBox1.Location = new Point(295, 156);
+            maskedTextBox1.Location = new Point(285, 156);
             maskedTextBox1.Mask = "(99) 00000-0000";
             maskedTextBox1.Name = "maskedTextBox1";
             maskedTextBox1.Size = new Size(231, 29);
@@ -208,7 +208,7 @@
             maskedTextBox2.BackColor = Color.FromArgb(53, 81, 142);
             maskedTextBox2.BorderStyle = BorderStyle.FixedSingle;
             maskedTextBox2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTextBox2.Location = new Point(303, 191);
+            maskedTextBox2.Location = new Point(293, 191);
             maskedTextBox2.Mask = "00.000.000/0001-00";
             maskedTextBox2.Name = "maskedTextBox2";
             maskedTextBox2.Size = new Size(214, 29);
@@ -219,7 +219,7 @@
             maskedTextBox3.BackColor = Color.FromArgb(53, 81, 142);
             maskedTextBox3.BorderStyle = BorderStyle.FixedSingle;
             maskedTextBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTextBox3.Location = new Point(326, 226);
+            maskedTextBox3.Location = new Point(316, 226);
             maskedTextBox3.Mask = "00000-00";
             maskedTextBox3.Name = "maskedTextBox3";
             maskedTextBox3.Size = new Size(168, 29);
@@ -230,7 +230,7 @@
             maskedTextBox4.BackColor = Color.FromArgb(53, 81, 142);
             maskedTextBox4.BorderStyle = BorderStyle.FixedSingle;
             maskedTextBox4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTextBox4.Location = new Point(315, 261);
+            maskedTextBox4.Location = new Point(305, 261);
             maskedTextBox4.Mask = "0000";
             maskedTextBox4.Name = "maskedTextBox4";
             maskedTextBox4.Size = new Size(191, 29);
@@ -242,9 +242,9 @@
             textBox3.BorderStyle = BorderStyle.FixedSingle;
             textBox3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             textBox3.ForeColor = Color.Cyan;
-            textBox3.Location = new Point(279, 331);
+            textBox3.Location = new Point(287, 331);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(263, 29);
+            textBox3.Size = new Size(227, 29);
             textBox3.TabIndex = 47;
             // 
             // btnVoltar

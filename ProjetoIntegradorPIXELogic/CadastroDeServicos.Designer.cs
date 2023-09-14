@@ -51,7 +51,7 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(305, 301);
+            btnSalvar.Location = new Point(326, 301);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(148, 42);
             btnSalvar.TabIndex = 13;
@@ -83,7 +83,7 @@
             lblCadastrodeServicos.AutoSize = true;
             lblCadastrodeServicos.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblCadastrodeServicos.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCadastrodeServicos.Location = new Point(207, 93);
+            lblCadastrodeServicos.Location = new Point(221, 93);
             lblCadastrodeServicos.Name = "lblCadastrodeServicos";
             lblCadastrodeServicos.Size = new Size(358, 47);
             lblCadastrodeServicos.TabIndex = 17;
@@ -94,7 +94,7 @@
             lblNomedoServico.AutoSize = true;
             lblNomedoServico.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblNomedoServico.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNomedoServico.Location = new Point(40, 181);
+            lblNomedoServico.Location = new Point(33, 181);
             lblNomedoServico.Name = "lblNomedoServico";
             lblNomedoServico.Size = new Size(216, 32);
             lblNomedoServico.TabIndex = 18;
@@ -105,7 +105,7 @@
             lblValor.AutoSize = true;
             lblValor.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(175, 243);
+            lblValor.Location = new Point(168, 243);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(81, 32);
             lblValor.TabIndex = 19;

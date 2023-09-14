@@ -24,7 +24,7 @@ namespace ProjetoIntegradorPIXELogic
 
             lblNomedoServico.Parent = LogoComoWallpaper;
             lblNomedoServico.BackColor = Color.Transparent;
-            
+
             lblValor.Parent = LogoComoWallpaper;
             lblValor.BackColor = Color.Transparent;
         }
