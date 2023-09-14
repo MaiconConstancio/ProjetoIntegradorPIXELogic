@@ -1,6 +1,6 @@
 ﻿namespace ProjetoIntegradorPIXELogic
 {
-    partial class EmissaoRelatorioFinanceiroProduto
+    partial class PalcoEmissaoRelatorioFinanceiroProduto
     {
         /// <summary>
         /// Required designer variable.
