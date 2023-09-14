@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Vendas));
             cmbProduto = new ComboBox();
             cmbMetodoDePagamento = new ComboBox();
             txtQuantidade = new TextBox();
@@ -42,18 +42,9 @@
             btnVerTodosOsItens = new WiLBiT.WiLBiTButton2();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             btnVoltar = new WiLBiT.WiLBiTButton2();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            LogoComoWallpaper = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(312, 80);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // cmbProduto
             // 
@@ -223,6 +214,17 @@
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
             // 
+            // LogoComoWallpaper
+            // 
+            LogoComoWallpaper.Dock = DockStyle.Fill;
+            LogoComoWallpaper.Image = (Image)resources.GetObject("LogoComoWallpaper.Image");
+            LogoComoWallpaper.Location = new Point(0, 0);
+            LogoComoWallpaper.Name = "LogoComoWallpaper";
+            LogoComoWallpaper.Size = new Size(800, 450);
+            LogoComoWallpaper.SizeMode = PictureBoxSizeMode.Zoom;
+            LogoComoWallpaper.TabIndex = 74;
+            LogoComoWallpaper.TabStop = false;
+            // 
             // Vendas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -242,18 +244,17 @@
             Controls.Add(txtQuantidade);
             Controls.Add(cmbMetodoDePagamento);
             Controls.Add(cmbProduto);
-            Controls.Add(pictureBox1);
+            Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Vendas";
             Text = "v";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            Load += Vendas_Load;
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private ComboBox cmbProduto;
         private ComboBox cmbMetodoDePagamento;
         private TextBox txtQuantidade;
@@ -267,5 +268,6 @@
         private WiLBiT.WiLBiTButton2 btnVerTodosOsItens;
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private WiLBiT.WiLBiTButton2 btnVoltar;
+        private PictureBox LogoComoWallpaper;
     }
 }
