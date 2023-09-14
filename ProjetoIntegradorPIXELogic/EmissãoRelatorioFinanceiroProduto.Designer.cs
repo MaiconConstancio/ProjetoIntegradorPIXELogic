@@ -31,10 +31,8 @@
             btnImprimir = new WiLBiT.WiLBiTButton2();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             btnVoltar = new WiLBiT.WiLBiTButton2();
-            pictureBox1 = new PictureBox();
             lblEscolhaSeusColaboradoresESuasCredenciais = new Label();
             label1 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnImprimir
@@ -94,16 +92,6 @@
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Image = Properties.Resources.ESCRITA_SEM_Fundo9;
-            pictureBox1.Location = new Point(-16, -2);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(366, 82);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 27;
-            pictureBox1.TabStop = false;
-            // 
             // lblEscolhaSeusColaboradoresESuasCredenciais
             // 
             lblEscolhaSeusColaboradoresESuasCredenciais.AutoSize = true;
@@ -134,14 +122,12 @@
             ClientSize = new Size(800, 450);
             Controls.Add(label1);
             Controls.Add(lblEscolhaSeusColaboradoresESuasCredenciais);
-            Controls.Add(pictureBox1);
             Controls.Add(btnVoltar);
             Controls.Add(btnSalvar);
             Controls.Add(btnImprimir);
             FormBorderStyle = FormBorderStyle.None;
             Name = "lblGerenciamentoDeServicos";
             Text = "EmissãoRelatorioFinanceiroProduto";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -151,7 +137,6 @@
         private WiLBiT.WiLBiTButton2 btnImprimir;
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private WiLBiT.WiLBiTButton2 btnVoltar;
-        private PictureBox pictureBox1;
         private Label lblEscolhaSeusColaboradoresESuasCredenciais;
         private Label label1;
     }
