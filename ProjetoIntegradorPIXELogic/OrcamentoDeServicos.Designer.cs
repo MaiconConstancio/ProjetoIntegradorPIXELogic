@@ -136,11 +136,7 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.World);
             btnSalvar.ForeColor = Color.Black;
-<<<<<<< HEAD
-            btnSalvar.Location = new Point(336, 398);
-=======
-            btnSalvar.Location = new Point(376, 402);
->>>>>>> cdbff9e3006ebab6d721c6ff7da74085a79371bc
+            btnSalvar.Location = new Point(367, 402);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(135, 36);
             btnSalvar.TabIndex = 39;
