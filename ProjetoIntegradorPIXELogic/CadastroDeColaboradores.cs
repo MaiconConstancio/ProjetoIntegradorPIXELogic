@@ -41,5 +41,57 @@ namespace ProjetoIntegradorPIXELogic
         {
 
         }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+
+            if (Funcoes.campoVazio("Nome", txtNome) == false && Funcoes.campoVazio("Cargo", txtCargo) == false &&
+                Funcoes.campoVazio("Login", txtLogin) == false && Funcoes.campoVazio("Senha", txtSenha) == false)
+            {
+
+                if (Funcoes.existe("usuario", "nome", txtNome) == false)
+                {
+
+                    if (Funcoes.existe("usuario", "login", txtLogin) == false)
+                    {
+
+                        if (Funcoes.existe("usuario", "senha", txtSenha) == false)
+                        {
+
+                            if (MessageBox.Show($"Nome: {txtNome.Text}\n\n" +
+                            $"Cargo: {txtCargo.Text}\n\n" +
+                            $"Login: {txtLogin.Text}\n\n" +
+                            $"Senha: {txtSenha.Text}\n\n",
+                            "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
+                            {
+
+                                string query = $"insert into usuario (nome,cargo,login,senha) values " +
+                                    $"('{txtNome.Text}','{txtCargo.Text}','{txtLogin.Text}','{txtSenha.Text}');";
+                                Conexao.executaQuery(query);
+
+                                txtNome.Clear();
+                                txtCargo.Clear();
+                                txtLogin.Clear();
+                                txtSenha.Clear();
+
+                            }
+
+                        }
+
+                        else { MessageBox.Show("Por favor digite outra senha.", "senha já existente", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
+                    }
+
+                    else { MessageBox.Show("Por favor digite outro login", "Login já existente", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
+                }
+
+                else { MessageBox.Show("Por favor digite outro nome.", "Nome já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
+            }
+
+
+        }
     }
 }
