@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             lblOrcamentoDeServicos = new Label();
-            btnEditar = new WiLBiT.WiLBiTButton();
-            btnExcluir = new WiLBiT.WiLBiTButton();
+            this.btnEditar = new WiLBiT.WiLBiTButton();
+            this.btnExcluir = new WiLBiT.WiLBiTButton();
             SuspendLayout();
             // 
             // lblOrcamentoDeServicos
@@ -46,35 +46,35 @@
             // 
             // btnEditar
             // 
-            btnEditar.BackColor = Color.FromArgb(72, 116, 245);
-            btnEditar.BorderColor = Color.FromArgb(72, 116, 245);
-            btnEditar.BorderRadius = 6;
-            btnEditar.BorderSize = 0;
-            btnEditar.FlatAppearance.BorderSize = 0;
-            btnEditar.FlatStyle = FlatStyle.Flat;
-            btnEditar.ForeColor = Color.White;
-            btnEditar.Location = new Point(738, 5);
-            btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(29, 28);
-            btnEditar.TabIndex = 79;
-            btnEditar.Text = "ED";
-            btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.BackColor = Color.FromArgb(72, 116, 245);
+            this.btnEditar.BorderColor = Color.FromArgb(72, 116, 245);
+            this.btnEditar.BorderRadius = 6;
+            this.btnEditar.BorderSize = 0;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatStyle = FlatStyle.Flat;
+            this.btnEditar.ForeColor = Color.White;
+            this.btnEditar.Location = new Point(738, 5);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new Size(29, 28);
+            this.btnEditar.TabIndex = 79;
+            this.btnEditar.Text = "ED";
+            this.btnEditar.UseVisualStyleBackColor = false;
             // 
             // btnExcluir
             // 
-            btnExcluir.BackColor = Color.Red;
-            btnExcluir.BorderColor = Color.FromArgb(72, 116, 245);
-            btnExcluir.BorderRadius = 6;
-            btnExcluir.BorderSize = 0;
-            btnExcluir.FlatAppearance.BorderSize = 0;
-            btnExcluir.FlatStyle = FlatStyle.Flat;
-            btnExcluir.ForeColor = Color.White;
-            btnExcluir.Location = new Point(769, 5);
-            btnExcluir.Name = "btnExcluir";
-            btnExcluir.Size = new Size(29, 28);
-            btnExcluir.TabIndex = 80;
-            btnExcluir.Text = "EX";
-            btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.BackColor = Color.Red;
+            this.btnExcluir.BorderColor = Color.FromArgb(72, 116, 245);
+            this.btnExcluir.BorderRadius = 6;
+            this.btnExcluir.BorderSize = 0;
+            this.btnExcluir.FlatAppearance.BorderSize = 0;
+            this.btnExcluir.FlatStyle = FlatStyle.Flat;
+            this.btnExcluir.ForeColor = Color.White;
+            this.btnExcluir.Location = new Point(769, 5);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new Size(29, 28);
+            this.btnExcluir.TabIndex = 80;
+            this.btnExcluir.Text = "EX";
+            this.btnExcluir.UseVisualStyleBackColor = false;
             // 
             // PalcoDaLista
             // 
@@ -82,13 +82,13 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 36);
-            Controls.Add(btnExcluir);
-            Controls.Add(btnEditar);
+            Controls.Add(this.btnExcluir);
+            Controls.Add(this.btnEditar);
             Controls.Add(lblOrcamentoDeServicos);
             FormBorderStyle = FormBorderStyle.None;
             Name = "PalcoDaLista";
             Text = "PalcoDaLista";
-            Load += PalcoDaLista_Load;
+            Load += this.PalcoDaLista_Load;
             ResumeLayout(false);
             PerformLayout();
         }

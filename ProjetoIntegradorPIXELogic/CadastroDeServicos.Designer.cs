@@ -35,8 +35,8 @@
             lblNomedoServico = new Label();
             lblValor = new Label();
             txtNomeDoServico = new TextBox();
-            txtValor = new TextBox();
             LogoComoWallpaper = new PictureBox();
+            maskValor = new MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
@@ -94,7 +94,7 @@
             lblNomedoServico.AutoSize = true;
             lblNomedoServico.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblNomedoServico.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNomedoServico.Location = new Point(33, 181);
+            lblNomedoServico.Location = new Point(33, 184);
             lblNomedoServico.Name = "lblNomedoServico";
             lblNomedoServico.Size = new Size(216, 32);
             lblNomedoServico.TabIndex = 18;
@@ -105,7 +105,7 @@
             lblValor.AutoSize = true;
             lblValor.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(168, 243);
+            lblValor.Location = new Point(219, 248);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(81, 32);
             lblValor.TabIndex = 19;
@@ -122,17 +122,6 @@
             txtNomeDoServico.Size = new Size(296, 29);
             txtNomeDoServico.TabIndex = 66;
             // 
-            // txtValor
-            // 
-            txtValor.BackColor = Color.FromArgb(53, 81, 142);
-            txtValor.BorderStyle = BorderStyle.FixedSingle;
-            txtValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            txtValor.ForeColor = Color.Cyan;
-            txtValor.Location = new Point(252, 249);
-            txtValor.Name = "txtValor";
-            txtValor.Size = new Size(296, 29);
-            txtValor.TabIndex = 67;
-            // 
             // LogoComoWallpaper
             // 
             LogoComoWallpaper.Dock = DockStyle.Fill;
@@ -143,13 +132,24 @@
             LogoComoWallpaper.TabIndex = 68;
             LogoComoWallpaper.TabStop = false;
             // 
+            // maskValor
+            // 
+            maskValor.BackColor = Color.FromArgb(53, 81, 142);
+            maskValor.BorderStyle = BorderStyle.FixedSingle;
+            maskValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskValor.Location = new Point(302, 249);
+            maskValor.Mask = "$ 000,00";
+            maskValor.Name = "maskValor";
+            maskValor.Size = new Size(196, 29);
+            maskValor.TabIndex = 69;
+            // 
             // CadastroDeServicos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(txtValor);
+            Controls.Add(maskValor);
             Controls.Add(txtNomeDoServico);
             Controls.Add(lblValor);
             Controls.Add(lblNomedoServico);
@@ -173,7 +173,7 @@
         private Label lblNomedoServico;
         private Label lblValor;
         private TextBox txtNomeDoServico;
-        private TextBox txtValor;
         private PictureBox LogoComoWallpaper;
+        private MaskedTextBox maskValor;
     }
 }
