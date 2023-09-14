@@ -46,6 +46,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(296, 29);
             textBox1.TabIndex = 9;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // lblLogin
             // 
@@ -90,6 +91,7 @@
             maskedTextBox1.Name = "maskedTextBox1";
             maskedTextBox1.Size = new Size(100, 29);
             maskedTextBox1.TabIndex = 13;
+            maskedTextBox1.MaskInputRejected += maskedTextBox1_MaskInputRejected;
             // 
             // label2
             // 
