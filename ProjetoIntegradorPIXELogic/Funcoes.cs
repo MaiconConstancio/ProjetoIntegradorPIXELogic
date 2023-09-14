@@ -96,6 +96,7 @@ namespace ProjetoIntegradorPIXELogic
         {
 
             if (mask.Text == "")
+
             {
 
                 MessageBox.Show($"Digite um(a) {campo}!", "Campo vázio!", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -107,6 +108,7 @@ namespace ProjetoIntegradorPIXELogic
             else { return false; }
 
         }
+
 
     }
 }
