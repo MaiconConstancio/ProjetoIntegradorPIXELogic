@@ -90,7 +90,7 @@ namespace ProjetoIntegradorPIXELogic
             // imgWallpaperLoginPrincipal
             // 
             imgWallpaperLoginPrincipal.Dock = DockStyle.Fill;
-            imgWallpaperLoginPrincipal.Image = Properties.Resources.Tela_Login_Objeto;
+            //imgWallpaperLoginPrincipal.Image = Properties.Resources.Tela_Login_Objeto;
             imgWallpaperLoginPrincipal.Location = new Point(0, 0);
             imgWallpaperLoginPrincipal.Name = "imgWallpaperLoginPrincipal";
             imgWallpaperLoginPrincipal.Size = new Size(800, 450);
