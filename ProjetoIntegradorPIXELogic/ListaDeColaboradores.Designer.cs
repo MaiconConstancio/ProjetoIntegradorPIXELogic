@@ -28,87 +28,132 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnSalvarNovoLoginSenha = new WiLBiT.WiLBiTButton2();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
+            btnNovoCadastro = new WiLBiT.WiLBiTButton2();
+            lblSenha = new Label();
+            lblLogin = new Label();
+            lblCargo = new Label();
+            lblEditar = new Label();
+            lblNome = new Label();
+            btnVoltar = new WiLBiT.WiLBiTButton2();
+            btnSalvar = new WiLBiT.WiLBiTButton2();
             SuspendLayout();
             // 
-            // btnSalvarNovoLoginSenha
+            // btnNovoCadastro
             // 
-            btnSalvarNovoLoginSenha.BackColor = Color.FromArgb(72, 116, 245);
-            btnSalvarNovoLoginSenha.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnSalvarNovoLoginSenha.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvarNovoLoginSenha.BorderRadius = 18;
-            btnSalvarNovoLoginSenha.BorderSize = 2;
-            btnSalvarNovoLoginSenha.FlatAppearance.BorderSize = 0;
-            btnSalvarNovoLoginSenha.FlatStyle = FlatStyle.Flat;
-            btnSalvarNovoLoginSenha.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.World);
-            btnSalvarNovoLoginSenha.ForeColor = Color.Black;
-            btnSalvarNovoLoginSenha.Location = new Point(0, 402);
-            btnSalvarNovoLoginSenha.Name = "btnSalvarNovoLoginSenha";
-            btnSalvarNovoLoginSenha.Size = new Size(176, 36);
-            btnSalvarNovoLoginSenha.TabIndex = 14;
-            btnSalvarNovoLoginSenha.Text = "Novo Cadastro";
-            btnSalvarNovoLoginSenha.TextColor = Color.Black;
-            btnSalvarNovoLoginSenha.UseVisualStyleBackColor = false;
+            btnNovoCadastro.BackColor = Color.FromArgb(72, 116, 245);
+            btnNovoCadastro.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnNovoCadastro.BorderColor = Color.FromArgb(0, 242, 254);
+            btnNovoCadastro.BorderRadius = 18;
+            btnNovoCadastro.BorderSize = 2;
+            btnNovoCadastro.FlatAppearance.BorderSize = 0;
+            btnNovoCadastro.FlatStyle = FlatStyle.Flat;
+            btnNovoCadastro.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNovoCadastro.ForeColor = Color.Black;
+            btnNovoCadastro.Location = new Point(12, 402);
+            btnNovoCadastro.Name = "btnNovoCadastro";
+            btnNovoCadastro.Size = new Size(176, 39);
+            btnNovoCadastro.TabIndex = 14;
+            btnNovoCadastro.Text = "Novo Cadastro";
+            btnNovoCadastro.TextColor = Color.Black;
+            btnNovoCadastro.UseVisualStyleBackColor = false;
             // 
-            // label1
+            // lblSenha
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(63, 136, 254);
-            label1.Location = new Point(474, 88);
-            label1.Name = "label1";
-            label1.Size = new Size(73, 30);
-            label1.TabIndex = 21;
-            label1.Text = "Senha";
+            lblSenha.BorderStyle = BorderStyle.FixedSingle;
+            lblSenha.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
+            lblSenha.Location = new Point(545, 88);
+            lblSenha.Name = "lblSenha";
+            lblSenha.Size = new Size(152, 30);
+            lblSenha.TabIndex = 21;
+            lblSenha.Text = "Senha";
+            lblSenha.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label2
+            // lblLogin
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(63, 136, 254);
-            label2.Location = new Point(302, 88);
-            label2.Name = "label2";
-            label2.Size = new Size(69, 30);
-            label2.TabIndex = 22;
-            label2.Text = "Login";
+            lblLogin.BorderStyle = BorderStyle.FixedSingle;
+            lblLogin.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
+            lblLogin.Location = new Point(323, 88);
+            lblLogin.Name = "lblLogin";
+            lblLogin.Size = new Size(216, 30);
+            lblLogin.TabIndex = 22;
+            lblLogin.Text = "Login";
+            lblLogin.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label3
+            // lblCargo
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.FromArgb(63, 136, 254);
-            label3.Location = new Point(163, 88);
-            label3.Name = "label3";
-            label3.Size = new Size(71, 30);
-            label3.TabIndex = 23;
-            label3.Text = "Cargo";
+            lblCargo.BorderStyle = BorderStyle.FixedSingle;
+            lblCargo.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCargo.ForeColor = Color.FromArgb(63, 136, 254);
+            lblCargo.Location = new Point(171, 88);
+            lblCargo.Name = "lblCargo";
+            lblCargo.Size = new Size(146, 30);
+            lblCargo.TabIndex = 23;
+            lblCargo.Text = "Cargo";
+            lblCargo.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label4
+            // lblEditar
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.FromArgb(63, 136, 254);
-            label4.Location = new Point(672, 88);
-            label4.Name = "label4";
-            label4.Size = new Size(70, 30);
-            label4.TabIndex = 24;
-            label4.Text = "Editar";
+            lblEditar.BorderStyle = BorderStyle.FixedSingle;
+            lblEditar.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblEditar.ForeColor = Color.FromArgb(63, 136, 254);
+            lblEditar.Location = new Point(703, 88);
+            lblEditar.Name = "lblEditar";
+            lblEditar.Size = new Size(94, 30);
+            lblEditar.TabIndex = 24;
+            lblEditar.Text = "Editar";
+            lblEditar.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // label5
+            // lblNome
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.FromArgb(63, 136, 254);
-            label5.Location = new Point(22, 88);
-            label5.Name = "label5";
-            label5.Size = new Size(73, 30);
-            label5.TabIndex = 25;
-            label5.Text = "Nome";
+            lblNome.BorderStyle = BorderStyle.FixedSingle;
+            lblNome.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNome.ForeColor = Color.FromArgb(63, 136, 254);
+            lblNome.Location = new Point(12, 88);
+            lblNome.Name = "lblNome";
+            lblNome.Size = new Size(153, 30);
+            lblNome.TabIndex = 25;
+            lblNome.Text = "Nome";
+            lblNome.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // btnVoltar
+            // 
+            btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnVoltar.BorderRadius = 19;
+            btnVoltar.BorderSize = 2;
+            btnVoltar.FlatAppearance.BorderSize = 0;
+            btnVoltar.FlatStyle = FlatStyle.Flat;
+            btnVoltar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVoltar.ForeColor = Color.Black;
+            btnVoltar.Location = new Point(671, 12);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(117, 39);
+            btnVoltar.TabIndex = 26;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.TextColor = Color.Black;
+            btnVoltar.UseVisualStyleBackColor = false;
+            // 
+            // btnSalvar
+            // 
+            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnSalvar.BorderRadius = 19;
+            btnSalvar.BorderSize = 2;
+            btnSalvar.FlatAppearance.BorderSize = 0;
+            btnSalvar.FlatStyle = FlatStyle.Flat;
+            btnSalvar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalvar.ForeColor = Color.Black;
+            btnSalvar.Location = new Point(200, 402);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(117, 39);
+            btnSalvar.TabIndex = 27;
+            btnSalvar.Text = "Salvar";
+            btnSalvar.TextColor = Color.Black;
+            btnSalvar.UseVisualStyleBackColor = false;
             // 
             // ListaDeColaboradores
             // 
@@ -116,26 +161,29 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(label5);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(btnSalvarNovoLoginSenha);
+            Controls.Add(btnSalvar);
+            Controls.Add(btnVoltar);
+            Controls.Add(lblNome);
+            Controls.Add(lblEditar);
+            Controls.Add(lblCargo);
+            Controls.Add(lblLogin);
+            Controls.Add(lblSenha);
+            Controls.Add(btnNovoCadastro);
             FormBorderStyle = FormBorderStyle.None;
             Name = "ListaDeColaboradores";
             Text = "ListaDeColaboradores";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
-        private WiLBiT.WiLBiTButton2 btnSalvarNovoLoginSenha;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
+        private WiLBiT.WiLBiTButton2 btnNovoCadastro;
+        private Label lblSenha;
+        private Label lblLogin;
+        private Label lblCargo;
+        private Label lblEditar;
+        private Label lblNome;
+        private WiLBiT.WiLBiTButton2 btnVoltar;
+        private WiLBiT.WiLBiTButton2 btnSalvar;
     }
 }
