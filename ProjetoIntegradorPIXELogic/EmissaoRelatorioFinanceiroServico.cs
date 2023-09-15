@@ -16,5 +16,10 @@ namespace ProjetoIntegradorPIXELogic
         {
             InitializeComponent();
         }
+
+        private void lblNome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

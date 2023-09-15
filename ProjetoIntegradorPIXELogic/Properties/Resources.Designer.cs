@@ -133,6 +133,16 @@ namespace ProjetoIntegradorPIXELogic.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ESCRITA_SEM_Fundo5 {
+            get {
+                object obj = ResourceManager.GetObject("ESCRITA_SEM_Fundo5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ESCRITA_SEM_Fundo6 {
             get {
                 object obj = ResourceManager.GetObject("ESCRITA_SEM_Fundo6", resourceCulture);
@@ -166,6 +176,16 @@ namespace ProjetoIntegradorPIXELogic.Properties {
         internal static System.Drawing.Bitmap LOGO_SEM_Fundo {
             get {
                 object obj = ResourceManager.GetObject("LOGO_SEM_Fundo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LOGO_SEM_Fundo1 {
+            get {
+                object obj = ResourceManager.GetObject("LOGO_SEM_Fundo1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
