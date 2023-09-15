@@ -72,7 +72,7 @@
             btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 19;
+            btnSalvar.BorderRadius = 14;
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
@@ -91,7 +91,7 @@
             btnImprimir.BackColor = Color.FromArgb(72, 116, 245);
             btnImprimir.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnImprimir.BorderColor = Color.FromArgb(0, 242, 254);
-            btnImprimir.BorderRadius = 19;
+            btnImprimir.BorderRadius = 14;
             btnImprimir.BorderSize = 2;
             btnImprimir.FlatAppearance.BorderSize = 0;
             btnImprimir.FlatStyle = FlatStyle.Flat;
@@ -110,7 +110,7 @@
             btnCancelar.BackColor = Color.FromArgb(72, 116, 245);
             btnCancelar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnCancelar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnCancelar.BorderRadius = 19;
+            btnCancelar.BorderRadius = 14;
             btnCancelar.BorderSize = 2;
             btnCancelar.FlatAppearance.BorderSize = 0;
             btnCancelar.FlatStyle = FlatStyle.Flat;
