@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelecionaQualCadastro));
             btnFuncionarios = new WiLBiT.WiLBiTButton2();
             btnFornecedores = new WiLBiT.WiLBiTButton2();
+            btnVoltar = new WiLBiT.WiLBiTButton2();
             btnProdutos = new WiLBiT.WiLBiTButton2();
             btnClientes = new WiLBiT.WiLBiTButton2();
             btnServico = new WiLBiT.WiLBiTButton2();
@@ -57,6 +58,7 @@
             btnFuncionarios.Text = "Funcionários";
             btnFuncionarios.TextColor = Color.Black;
             btnFuncionarios.UseVisualStyleBackColor = false;
+            btnFuncionarios.Click += btnFuncionarios_Click;
             // 
             // btnFornecedores
             // 
@@ -76,6 +78,27 @@
             btnFornecedores.Text = "Fornecedores";
             btnFornecedores.TextColor = Color.Black;
             btnFornecedores.UseVisualStyleBackColor = false;
+            btnFornecedores.Click += btnFornecedores_Click;
+            // 
+            // btnVoltar
+            // 
+            btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnVoltar.BorderRadius = 19;
+            btnVoltar.BorderSize = 2;
+            btnVoltar.FlatAppearance.BorderSize = 0;
+            btnVoltar.FlatStyle = FlatStyle.Flat;
+            btnVoltar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVoltar.ForeColor = Color.Black;
+            btnVoltar.Location = new Point(0, 0);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(151, 41);
+            btnVoltar.TabIndex = 15;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.TextColor = Color.Black;
+            btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // btnProdutos
             // 
@@ -95,6 +118,7 @@
             btnProdutos.Text = "Produtos";
             btnProdutos.TextColor = Color.Black;
             btnProdutos.UseVisualStyleBackColor = false;
+            btnProdutos.Click += btnProdutos_Click;
             // 
             // btnClientes
             // 
@@ -165,6 +189,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(lblEscolhaQualCadastroDesejaRealizar);
             Controls.Add(btnServico);
+            Controls.Add(btnVoltar);
             Controls.Add(btnClientes);
             Controls.Add(btnProdutos);
             Controls.Add(btnFornecedores);
@@ -183,6 +208,7 @@
         private WiLBiT.WiLBiTButton2 btnFuncionarios;
         private WiLBiT.WiLBiTButton2 btnFornecedores;
         private WiLBiT.WiLBiTButton2 btnProdutos;
+        private WiLBiT.WiLBiTButton2 btnVoltar;
         private WiLBiT.WiLBiTButton2 btnClientes;
         private WiLBiT.WiLBiTButton2 btnServico;
         private Label lblEscolhaQualCadastroDesejaRealizar;

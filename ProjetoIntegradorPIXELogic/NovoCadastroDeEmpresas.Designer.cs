@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(NovoCadastroDeEmpresas));
-            pictureBox1 = new PictureBox();
+            imgLogoEscrita = new PictureBox();
             lblCadastroDeNovasConta = new Label();
             txtEmpresa = new TextBox();
             txtNome = new TextBox();
@@ -44,19 +44,18 @@
             btnCancelar = new WiLBiT.WiLBiTButton2();
             btnCadastrar = new WiLBiT.WiLBiTButton2();
             LogoComoWallpaper = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).BeginInit();
             ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // imgLogoEscrita
             // 
-            pictureBox1.Image = Properties.Resources.ESCRITA_SEM_Fundo9;
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(300, 61);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            imgLogoEscrita.Location = new Point(12, 12);
+            imgLogoEscrita.Name = "imgLogoEscrita";
+            imgLogoEscrita.Size = new Size(300, 61);
+            imgLogoEscrita.SizeMode = PictureBoxSizeMode.Zoom;
+            imgLogoEscrita.TabIndex = 0;
+            imgLogoEscrita.TabStop = false;
             // 
             // lblCadastroDeNovasConta
             // 
@@ -238,13 +237,13 @@
             Controls.Add(txtNome);
             Controls.Add(txtEmpresa);
             Controls.Add(lblCadastroDeNovasConta);
-            Controls.Add(pictureBox1);
+            Controls.Add(imgLogoEscrita);
             Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "NovoCadastroDeEmpresas";
             Text = "NovoCadastroDeEmpresas";
             Load += NovoCadastroDeEmpresas_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).EndInit();
             ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -252,7 +251,7 @@
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox imgLogoEscrita;
         private Label lblCadastroDeNovasConta;
         private TextBox txtEmpresa;
         private TextBox txtNome;

@@ -42,7 +42,7 @@
             txtFornecedor = new TextBox();
             txtQuantidade = new TextBox();
             maskValor = new MaskedTextBox();
-            maskPrazoDeEntrega = new MaskedTextBox();
+            maskVencimento = new MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
@@ -204,16 +204,16 @@
             maskValor.Size = new Size(196, 29);
             maskValor.TabIndex = 70;
             // 
-            // maskPrazoDeEntrega
+            // maskVencimento
             // 
-            maskPrazoDeEntrega.BackColor = Color.FromArgb(53, 81, 142);
-            maskPrazoDeEntrega.BorderStyle = BorderStyle.FixedSingle;
-            maskPrazoDeEntrega.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskPrazoDeEntrega.Location = new Point(309, 323);
-            maskPrazoDeEntrega.Mask = "00/00/0000";
-            maskPrazoDeEntrega.Name = "maskPrazoDeEntrega";
-            maskPrazoDeEntrega.Size = new Size(183, 29);
-            maskPrazoDeEntrega.TabIndex = 71;
+            maskVencimento.BackColor = Color.FromArgb(53, 81, 142);
+            maskVencimento.BorderStyle = BorderStyle.FixedSingle;
+            maskVencimento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskVencimento.Location = new Point(309, 323);
+            maskVencimento.Mask = "00/00/0000";
+            maskVencimento.Name = "maskVencimento";
+            maskVencimento.Size = new Size(183, 29);
+            maskVencimento.TabIndex = 71;
             // 
             // CadastroDeProutos
             // 
@@ -221,7 +221,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(maskPrazoDeEntrega);
+            Controls.Add(maskVencimento);
             Controls.Add(maskValor);
             Controls.Add(txtQuantidade);
             Controls.Add(txtFornecedor);
@@ -259,6 +259,6 @@
         private TextBox txtFornecedor;
         private TextBox txtQuantidade;
         private MaskedTextBox maskValor;
-        private MaskedTextBox maskPrazoDeEntrega;
+        private MaskedTextBox maskVencimento;
     }
 }

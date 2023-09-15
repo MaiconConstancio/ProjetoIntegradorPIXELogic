@@ -33,7 +33,6 @@
             cmbMetodoDePagamento = new ComboBox();
             txtQuantidade = new TextBox();
             txtNomeDoCliente = new TextBox();
-            maskValor = new MaskedTextBox();
             lblMetodoDePagamento = new Label();
             lblValor = new Label();
             lblQuantidade = new Label();
@@ -43,6 +42,7 @@
             btnSalvar = new WiLBiT.WiLBiTButton2();
             btnVoltar = new WiLBiT.WiLBiTButton2();
             LogoComoWallpaper = new PictureBox();
+            maskValor = new MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
@@ -53,7 +53,7 @@
             cmbProduto.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cmbProduto.ForeColor = Color.Cyan;
             cmbProduto.FormattingEnabled = true;
-            cmbProduto.Location = new Point(21, 172);
+            cmbProduto.Location = new Point(17, 172);
             cmbProduto.Name = "cmbProduto";
             cmbProduto.Size = new Size(228, 29);
             cmbProduto.TabIndex = 59;
@@ -65,7 +65,7 @@
             cmbMetodoDePagamento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cmbMetodoDePagamento.ForeColor = Color.Cyan;
             cmbMetodoDePagamento.FormattingEnabled = true;
-            cmbMetodoDePagamento.Location = new Point(48, 280);
+            cmbMetodoDePagamento.Location = new Point(52, 280);
             cmbMetodoDePagamento.Name = "cmbMetodoDePagamento";
             cmbMetodoDePagamento.Size = new Size(289, 29);
             cmbMetodoDePagamento.TabIndex = 60;
@@ -76,7 +76,7 @@
             txtQuantidade.BorderStyle = BorderStyle.FixedSingle;
             txtQuantidade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtQuantidade.ForeColor = Color.Cyan;
-            txtQuantidade.Location = new Point(268, 172);
+            txtQuantidade.Location = new Point(277, 172);
             txtQuantidade.Name = "txtQuantidade";
             txtQuantidade.Size = new Size(259, 29);
             txtQuantidade.TabIndex = 61;
@@ -87,20 +87,11 @@
             txtNomeDoCliente.BorderStyle = BorderStyle.FixedSingle;
             txtNomeDoCliente.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtNomeDoCliente.ForeColor = Color.Cyan;
-            txtNomeDoCliente.Location = new Point(552, 172);
+            txtNomeDoCliente.Location = new Point(553, 172);
             txtNomeDoCliente.Name = "txtNomeDoCliente";
             txtNomeDoCliente.Size = new Size(225, 29);
             txtNomeDoCliente.TabIndex = 62;
             txtNomeDoCliente.TextChanged += textBox1_TextChanged;
-            // 
-            // maskValor
-            // 
-            maskValor.BackColor = Color.FromArgb(53, 81, 142);
-            maskValor.BorderStyle = BorderStyle.FixedSingle;
-            maskValor.Location = new Point(432, 280);
-            maskValor.Name = "maskValor";
-            maskValor.Size = new Size(289, 23);
-            maskValor.TabIndex = 63;
             // 
             // lblMetodoDePagamento
             // 
@@ -175,6 +166,7 @@
             btnVerTodosOsItens.Text = "VER TODOS OS ITENS";
             btnVerTodosOsItens.TextColor = Color.Black;
             btnVerTodosOsItens.UseVisualStyleBackColor = false;
+            btnVerTodosOsItens.Click += btnVerTodosOsItens_Click;
             // 
             // btnSalvar
             // 
@@ -194,6 +186,7 @@
             btnSalvar.Text = "SALVAR";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnVoltar
             // 
@@ -213,6 +206,7 @@
             btnVoltar.Text = "VOLTAR";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // LogoComoWallpaper
             // 
@@ -225,12 +219,24 @@
             LogoComoWallpaper.TabIndex = 74;
             LogoComoWallpaper.TabStop = false;
             // 
+            // maskValor
+            // 
+            maskValor.BackColor = Color.FromArgb(53, 81, 142);
+            maskValor.BorderStyle = BorderStyle.FixedSingle;
+            maskValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskValor.Location = new Point(436, 280);
+            maskValor.Mask = "$ 000,00";
+            maskValor.Name = "maskValor";
+            maskValor.Size = new Size(290, 29);
+            maskValor.TabIndex = 75;
+            // 
             // Vendas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(maskValor);
             Controls.Add(btnVoltar);
             Controls.Add(btnSalvar);
             Controls.Add(btnVerTodosOsItens);
@@ -239,7 +245,6 @@
             Controls.Add(lblQuantidade);
             Controls.Add(lblValor);
             Controls.Add(lblMetodoDePagamento);
-            Controls.Add(maskValor);
             Controls.Add(txtNomeDoCliente);
             Controls.Add(txtQuantidade);
             Controls.Add(cmbMetodoDePagamento);
@@ -259,7 +264,6 @@
         private ComboBox cmbMetodoDePagamento;
         private TextBox txtQuantidade;
         private TextBox txtNomeDoCliente;
-        private MaskedTextBox maskValor;
         private Label lblMetodoDePagamento;
         private Label lblValor;
         private Label lblQuantidade;
@@ -269,5 +273,6 @@
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private WiLBiT.WiLBiTButton2 btnVoltar;
         private PictureBox LogoComoWallpaper;
+        private MaskedTextBox maskValor;
     }
 }

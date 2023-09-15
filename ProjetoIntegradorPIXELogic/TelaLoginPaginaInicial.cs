@@ -22,5 +22,64 @@ namespace ProjetoIntegradorPIXELogic
             imgLOGOloginPrincipal.Parent = imgWallpaperLoginPrincipal;
             imgLOGOloginPrincipal.BackColor = Color.Transparent;
         }
+
+        private void btnEntra_Click(object sender, EventArgs e)
+        {
+
+            if (Funcoes.campoVazio("Login", txtLogin) == false && Funcoes.campoVazio("Senha",txtSenha) == false)
+            {
+
+                if (Funcoes.existe("usuario", "login", txtLogin) == true)
+                {
+
+                    if (Funcoes.existe("usuario", "senha", txtSenha) == true)
+                    {
+
+
+                        if (Conexao.executaQuery($"select * from usuario where login = '{txtLogin.Text}' and cargo = 'dono';").Rows.Count > 0 ||
+                            Conexao.executaQuery($"select * from usuario where login = '{txtLogin.Text}' and cargo = 'gerente';").Rows.Count > 0 ||
+                            Conexao.executaQuery($"select * from usuario where login = '{txtLogin.Text}' and cargo = 'desenvolvedor';").Rows.Count > 0)
+                        {
+
+                            RodaTodosForms.panel1.Controls.Clear();
+                            MontagemPrograma montagemPrograma = new MontagemPrograma();
+                            montagemPrograma.TopLevel = false;
+                            RodaTodosForms.panel1.Controls.Add(montagemPrograma);
+                            montagemPrograma.Show();
+
+                        }
+
+                        else
+                        {
+
+                            RodaTodosForms.panel1.Controls.Clear();
+                            SagaoPrincipal sagaoPrincipal = new SagaoPrincipal();
+                            sagaoPrincipal.TopLevel = false;
+                            RodaTodosForms.panel1.Controls.Add(sagaoPrincipal);
+                            sagaoPrincipal.Show();
+
+                        }
+
+                    }
+
+                    else
+                    {
+
+                        MessageBox.Show("Por favor digite a senha novamente!", "Senha inválida!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                    }
+
+                }
+
+                else
+                {
+
+                    MessageBox.Show("Por favor digite um login válido, ou crie uma nova conta.", "Conta não existente!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                }
+
+            }
+
+        }
     }
 }
