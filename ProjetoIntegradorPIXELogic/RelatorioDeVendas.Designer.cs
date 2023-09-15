@@ -216,11 +216,11 @@
             lblTotal.AutoSize = true;
             lblTotal.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblTotal.ForeColor = Color.FromArgb(63, 136, 254);
-            lblTotal.Location = new Point(660, 420);
+            lblTotal.Location = new Point(701, 420);
             lblTotal.Name = "lblTotal";
-            lblTotal.Size = new Size(128, 21);
+            lblTotal.Size = new Size(68, 21);
             lblTotal.TabIndex = 39;
-            lblTotal.Text = "Total: R$ 168,00";
+            lblTotal.Text = "{TOTAL}";
             // 
             // lblMetodoSelecionado
             // 

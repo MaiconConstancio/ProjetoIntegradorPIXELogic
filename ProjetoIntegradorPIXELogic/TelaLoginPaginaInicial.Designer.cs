@@ -63,6 +63,7 @@ namespace ProjetoIntegradorPIXELogic
             btnEntra.Text = "ENTRAR";
             btnEntra.TextColor = Color.Black;
             btnEntra.UseVisualStyleBackColor = false;
+            btnEntra.Click += btnEntra_Click;
             // 
             // lblSenha
             // 
@@ -89,7 +90,6 @@ namespace ProjetoIntegradorPIXELogic
             // imgWallpaperLoginPrincipal
             // 
             imgWallpaperLoginPrincipal.Dock = DockStyle.Fill;
-            imgWallpaperLoginPrincipal.Image = Properties.Resources.Tela_Login_Objeto;
             imgWallpaperLoginPrincipal.Location = new Point(0, 0);
             imgWallpaperLoginPrincipal.Name = "imgWallpaperLoginPrincipal";
             imgWallpaperLoginPrincipal.Size = new Size(800, 450);
