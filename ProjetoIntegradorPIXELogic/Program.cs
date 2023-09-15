@@ -5,9 +5,11 @@ namespace ProjetoIntegradorPIXELogic
     internal static class Program
     {
         /// <summary>
+        public static string acesso;
         ///  The main entry point for the application.
         /// </summary>
         [STAThread]
+
         static void Main()
         {
             

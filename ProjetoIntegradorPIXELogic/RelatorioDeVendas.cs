@@ -23,14 +23,14 @@ namespace ProjetoIntegradorPIXELogic
         private void RelatorioDeVendas_Load(object sender, EventArgs e)
         {
 
-           
+
 
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
-            while (true)
+            /*while (true)
             {
 
                 foreach (DataRow row in Conexao.executaQuery($"select * from vendas where nome_cliente = '{txtNomeDoCliente.Text}';").Rows)
@@ -48,7 +48,18 @@ namespace ProjetoIntegradorPIXELogic
 
                 lblTotal.Text = valor_total.ToString();
 
-            }
+            }*/
+
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+            RodaTodosForms.panel1.Controls.Clear();
+            Vendas vendas = new Vendas();
+            vendas.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(vendas);
+            vendas.Show();
 
         }
     }

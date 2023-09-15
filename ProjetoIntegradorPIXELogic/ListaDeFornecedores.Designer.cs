@@ -142,7 +142,7 @@
             btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnVoltar.BorderRadius = 19;
+            btnVoltar.BorderRadius = 14;
             btnVoltar.BorderSize = 2;
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
@@ -155,13 +155,14 @@
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // btnNovoCadastro
             // 
             btnNovoCadastro.BackColor = Color.FromArgb(72, 116, 245);
             btnNovoCadastro.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnNovoCadastro.BorderColor = Color.FromArgb(0, 242, 254);
-            btnNovoCadastro.BorderRadius = 18;
+            btnNovoCadastro.BorderRadius = 14;
             btnNovoCadastro.BorderSize = 2;
             btnNovoCadastro.FlatAppearance.BorderSize = 0;
             btnNovoCadastro.FlatStyle = FlatStyle.Flat;
@@ -174,13 +175,14 @@
             btnNovoCadastro.Text = "Novo Cadastro";
             btnNovoCadastro.TextColor = Color.Black;
             btnNovoCadastro.UseVisualStyleBackColor = false;
+            btnNovoCadastro.Click += btnNovoCadastro_Click;
             // 
             // btnSalvar
             // 
             btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 18;
+            btnSalvar.BorderRadius = 14;
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;

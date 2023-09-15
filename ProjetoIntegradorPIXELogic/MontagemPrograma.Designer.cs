@@ -37,13 +37,14 @@
             chkBoxEmissaoRelatoriosFinanceiros = new CheckBox();
             chkBoxSuporteAoCliente = new CheckBox();
             btnSalvar = new Button();
+            checkBox1 = new CheckBox();
             SuspendLayout();
             // 
             // chkBoxColaboradores
             // 
             chkBoxColaboradores.AutoSize = true;
             chkBoxColaboradores.ForeColor = SystemColors.ButtonFace;
-            chkBoxColaboradores.Location = new Point(27, 257);
+            chkBoxColaboradores.Location = new Point(27, 108);
             chkBoxColaboradores.Name = "chkBoxColaboradores";
             chkBoxColaboradores.Size = new Size(103, 19);
             chkBoxColaboradores.TabIndex = 0;
@@ -87,7 +88,7 @@
             // 
             chkBoxGerenciamentoServiços.AutoSize = true;
             chkBoxGerenciamentoServiços.ForeColor = SystemColors.ButtonFace;
-            chkBoxGerenciamentoServiços.Location = new Point(27, 107);
+            chkBoxGerenciamentoServiços.Location = new Point(27, 254);
             chkBoxGerenciamentoServiços.Name = "chkBoxGerenciamentoServiços";
             chkBoxGerenciamentoServiços.Size = new Size(168, 19);
             chkBoxGerenciamentoServiços.TabIndex = 4;
@@ -98,7 +99,7 @@
             // 
             chkBoxVendas.AutoSize = true;
             chkBoxVendas.ForeColor = SystemColors.ButtonFace;
-            chkBoxVendas.Location = new Point(27, 331);
+            chkBoxVendas.Location = new Point(27, 71);
             chkBoxVendas.Name = "chkBoxVendas";
             chkBoxVendas.Size = new Size(63, 19);
             chkBoxVendas.TabIndex = 5;
@@ -137,12 +138,24 @@
             btnSalvar.UseVisualStyleBackColor = true;
             btnSalvar.Click += btnSalvar_Click;
             // 
+            // checkBox1
+            // 
+            checkBox1.AutoSize = true;
+            checkBox1.ForeColor = SystemColors.ButtonFace;
+            checkBox1.Location = new Point(27, 334);
+            checkBox1.Name = "checkBox1";
+            checkBox1.Size = new Size(266, 19);
+            checkBox1.TabIndex = 10;
+            checkBox1.Text = "Emissão De Relatorios Financeiros de Serviços\r\n";
+            checkBox1.UseVisualStyleBackColor = true;
+            // 
             // MontagemPrograma
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(checkBox1);
             Controls.Add(btnSalvar);
             Controls.Add(chkBoxSuporteAoCliente);
             Controls.Add(chkBoxEmissaoRelatoriosFinanceiros);
@@ -171,5 +184,6 @@
         private CheckBox chkBoxEmissaoRelatoriosFinanceiros;
         private CheckBox chkBoxSuporteAoCliente;
         private Button btnSalvar;
+        private CheckBox checkBox1;
     }
 }

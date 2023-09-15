@@ -44,26 +44,27 @@
             btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnVoltar.BorderRadius = 19;
+            btnVoltar.BorderRadius = 14;
             btnVoltar.BorderSize = 2;
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
-            btnVoltar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVoltar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             btnVoltar.ForeColor = Color.Black;
             btnVoltar.Location = new Point(671, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(117, 39);
             btnVoltar.TabIndex = 21;
-            btnVoltar.Text = "VOLTAR";
+            btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click_1;
             // 
             // btnNovoCadastro
             // 
             btnNovoCadastro.BackColor = Color.FromArgb(72, 116, 245);
             btnNovoCadastro.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnNovoCadastro.BorderColor = Color.FromArgb(0, 242, 254);
-            btnNovoCadastro.BorderRadius = 19;
+            btnNovoCadastro.BorderRadius = 14;
             btnNovoCadastro.BorderSize = 2;
             btnNovoCadastro.FlatAppearance.BorderSize = 0;
             btnNovoCadastro.FlatStyle = FlatStyle.Flat;
@@ -71,7 +72,7 @@
             btnNovoCadastro.ForeColor = Color.Black;
             btnNovoCadastro.Location = new Point(12, 396);
             btnNovoCadastro.Name = "btnNovoCadastro";
-            btnNovoCadastro.Size = new Size(181, 42);
+            btnNovoCadastro.Size = new Size(168, 42);
             btnNovoCadastro.TabIndex = 22;
             btnNovoCadastro.Text = "Novo Cadastro";
             btnNovoCadastro.TextColor = Color.Black;
@@ -154,13 +155,13 @@
             btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 19;
+            btnSalvar.BorderRadius = 14;
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(208, 396);
+            btnSalvar.Location = new Point(186, 396);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(121, 42);
             btnSalvar.TabIndex = 33;

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.WebRequestMethods;
 
 namespace ProjetoIntegradorPIXELogic
 {
@@ -29,6 +30,24 @@ namespace ProjetoIntegradorPIXELogic
             lblHorario.Parent = imgWallpaper;
             lblHorario.BackColor = Color.Transparent;
             //---------------------------FIM do Setor do Designer------------------------------------
+        }
+
+        private void btnEntraEmContato_Click(object sender, EventArgs e)
+        {
+
+
+
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+
+            RodaTodosForms.panel1.Controls.Clear();
+            SagaoPrincipal sagaoPrincipal = new SagaoPrincipal();
+            sagaoPrincipal.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(sagaoPrincipal);
+            sagaoPrincipal.Show();
+
         }
     }
 }

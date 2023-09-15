@@ -34,6 +34,7 @@
             lblSuporteAoCliente = new Label();
             lblAtendimento = new Label();
             lblHorario = new Label();
+            btnVoltar = new WiLBiT.WiLBiTButton2();
             ((System.ComponentModel.ISupportInitialize)imgWallpaper).BeginInit();
             SuspendLayout();
             // 
@@ -52,7 +53,7 @@
             btnEntraEmContato.BackColor = Color.FromArgb(18, 184, 238);
             btnEntraEmContato.BackgroundColor = Color.FromArgb(18, 184, 238);
             btnEntraEmContato.BorderColor = Color.FromArgb(192, 255, 255);
-            btnEntraEmContato.BorderRadius = 18;
+            btnEntraEmContato.BorderRadius = 14;
             btnEntraEmContato.BorderSize = 2;
             btnEntraEmContato.FlatAppearance.BorderSize = 0;
             btnEntraEmContato.FlatStyle = FlatStyle.Flat;
@@ -65,13 +66,14 @@
             btnEntraEmContato.Text = "ENTRAR EM CONTATO";
             btnEntraEmContato.TextColor = Color.Black;
             btnEntraEmContato.UseVisualStyleBackColor = false;
+            btnEntraEmContato.Click += btnEntraEmContato_Click;
             // 
             // lblSuporteAoCliente
             // 
             lblSuporteAoCliente.AutoSize = true;
             lblSuporteAoCliente.Font = new Font("Segoe UI", 30F, FontStyle.Bold, GraphicsUnit.Point);
             lblSuporteAoCliente.ForeColor = Color.Cyan;
-            lblSuporteAoCliente.Location = new Point(368, 29);
+            lblSuporteAoCliente.Location = new Point(368, 63);
             lblSuporteAoCliente.Name = "lblSuporteAoCliente";
             lblSuporteAoCliente.Size = new Size(372, 54);
             lblSuporteAoCliente.TabIndex = 75;
@@ -82,7 +84,7 @@
             lblAtendimento.AutoSize = true;
             lblAtendimento.Font = new Font("Segoe UI", 17F, FontStyle.Bold, GraphicsUnit.Point);
             lblAtendimento.ForeColor = Color.Cyan;
-            lblAtendimento.Location = new Point(449, 118);
+            lblAtendimento.Location = new Point(449, 122);
             lblAtendimento.Name = "lblAtendimento";
             lblAtendimento.Size = new Size(204, 31);
             lblAtendimento.TabIndex = 76;
@@ -93,11 +95,31 @@
             lblHorario.AutoSize = true;
             lblHorario.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             lblHorario.ForeColor = Color.Cyan;
-            lblHorario.Location = new Point(486, 155);
+            lblHorario.Location = new Point(486, 159);
             lblHorario.Name = "lblHorario";
             lblHorario.Size = new Size(129, 28);
             lblHorario.TabIndex = 77;
             lblHorario.Text = "8:30 à 19:30";
+            // 
+            // btnVoltar
+            // 
+            btnVoltar.BackColor = Color.FromArgb(18, 184, 238);
+            btnVoltar.BackgroundColor = Color.FromArgb(18, 184, 238);
+            btnVoltar.BorderColor = Color.FromArgb(192, 255, 255);
+            btnVoltar.BorderRadius = 14;
+            btnVoltar.BorderSize = 2;
+            btnVoltar.FlatAppearance.BorderSize = 0;
+            btnVoltar.FlatStyle = FlatStyle.Flat;
+            btnVoltar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.World);
+            btnVoltar.ForeColor = Color.Black;
+            btnVoltar.Location = new Point(694, 16);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(94, 36);
+            btnVoltar.TabIndex = 78;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.TextColor = Color.Black;
+            btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // SuporteAoCliente
             // 
@@ -105,6 +127,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(btnVoltar);
             Controls.Add(lblHorario);
             Controls.Add(lblAtendimento);
             Controls.Add(lblSuporteAoCliente);
@@ -126,5 +149,6 @@
         private Label lblSuporteAoCliente;
         private Label lblAtendimento;
         private Label lblHorario;
+        private WiLBiT.WiLBiTButton2 btnVoltar;
     }
 }

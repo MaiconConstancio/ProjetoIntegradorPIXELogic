@@ -43,7 +43,7 @@
             btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 18;
+            btnSalvar.BorderRadius = 14;
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
@@ -56,6 +56,7 @@
             btnSalvar.Text = "Configurações";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // lblOrcamentoDeServicos
             // 
@@ -78,6 +79,7 @@
             // 
             // btnCadastros
             // 
+            btnCadastros.Location = new Point(0, 0);
             btnCadastros.Name = "btnCadastros";
             btnCadastros.Size = new Size(75, 23);
             btnCadastros.TabIndex = 78;
@@ -87,6 +89,7 @@
             // 
             // btnVendas
             // 
+            btnVendas.Location = new Point(0, 0);
             btnVendas.Name = "btnVendas";
             btnVendas.Size = new Size(75, 23);
             btnVendas.TabIndex = 78;
@@ -96,7 +99,8 @@
             // 
             // btnRelatorioProdutos
             // 
-            btnRelatorioProdutos.Name = "btnRProduto";
+            btnRelatorioProdutos.Location = new Point(0, 0);
+            btnRelatorioProdutos.Name = "btnRelatorioProdutos";
             btnRelatorioProdutos.Size = new Size(75, 23);
             btnRelatorioProdutos.TabIndex = 78;
             btnRelatorioProdutos.Text = "Relatório Produto";
@@ -105,15 +109,17 @@
             // 
             // btnRelatorioServicos
             // 
-            btnRelatorioServicos.Name = "btnRServico";
+            btnRelatorioServicos.Location = new Point(0, 0);
+            btnRelatorioServicos.Name = "btnRelatorioServicos";
             btnRelatorioServicos.Size = new Size(75, 23);
             btnRelatorioServicos.TabIndex = 78;
             btnRelatorioServicos.Text = "Relatório Seviço";
             btnRelatorioServicos.UseVisualStyleBackColor = true;
             btnRelatorioServicos.Click += btnRelatorioServicos_Click;
             // 
-            // button5
+            // btnSuporte
             // 
+            btnSuporte.Location = new Point(0, 0);
             btnSuporte.Name = "btnSuporte";
             btnSuporte.Size = new Size(75, 23);
             btnSuporte.TabIndex = 78;
@@ -141,7 +147,7 @@
 
         private void btnCadastros_Click(object sender, EventArgs e)
         {
- 
+
             RodaTodosForms.panel1.Controls.Clear();
             SelecionaQualCadastro selecionaQualCadastro = new SelecionaQualCadastro();
             selecionaQualCadastro.TopLevel = false;
@@ -164,14 +170,22 @@
         private void btnRelatorioProdutos_Click(object sender, EventArgs e)
         {
 
-
+            RodaTodosForms.panel1.Controls.Clear();
+            EmissaoRelatorioFinanceiroProdutos emissaoRelatorio = new EmissaoRelatorioFinanceiroProdutos();
+            emissaoRelatorio.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(emissaoRelatorio);
+            emissaoRelatorio.Show();
 
         }
 
         private void btnRelatorioServicos_Click(object sender, EventArgs e)
         {
 
-
+            RodaTodosForms.panel1.Controls.Clear();
+            EmissaoRelatorioFinanceiroservico emissaoRelatorio = new EmissaoRelatorioFinanceiroservico();
+            emissaoRelatorio.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(emissaoRelatorio);
+            emissaoRelatorio.Show();
 
         }
 

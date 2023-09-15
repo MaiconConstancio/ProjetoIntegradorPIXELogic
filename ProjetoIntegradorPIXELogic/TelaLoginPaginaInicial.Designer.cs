@@ -107,6 +107,7 @@ namespace ProjetoIntegradorPIXELogic
             txtLogin.Name = "txtLogin";
             txtLogin.Size = new Size(296, 29);
             txtLogin.TabIndex = 8;
+            txtLogin.Text = "joao@desenvolvedor";
             // 
             // txtSenha
             // 
@@ -118,6 +119,7 @@ namespace ProjetoIntegradorPIXELogic
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(296, 29);
             txtSenha.TabIndex = 9;
+            txtSenha.Text = "1234";
             // 
             // imgLOGOloginPrincipal
             // 
@@ -136,9 +138,10 @@ namespace ProjetoIntegradorPIXELogic
             lblNãotemconta.ForeColor = Color.FromArgb(63, 200, 254);
             lblNãotemconta.Location = new Point(465, 355);
             lblNãotemconta.Name = "lblNãotemconta";
-            lblNãotemconta.Size = new Size(209, 19);
+            lblNãotemconta.Size = new Size(231, 19);
             lblNãotemconta.TabIndex = 11;
-            lblNãotemconta.Text = "Não tem uma conta? crie aqui";
+            lblNãotemconta.Text = "Não tem uma conta? Clique aqui!";
+            lblNãotemconta.Click += lblNãotemconta_Click;
             // 
             // TelaLoginPaginaInicial
             // 
@@ -158,7 +161,7 @@ namespace ProjetoIntegradorPIXELogic
             FormBorderStyle = FormBorderStyle.None;
             Name = "TelaLoginPaginaInicial";
             Text = " ";
-            TransparencyKey = Color.Transparent;
+            TransparencyKey = Color.DimGray;
             Load += TelaLoginPaginaInicial_Load;
             ((System.ComponentModel.ISupportInitialize)imgWallpaperLoginPrincipal).EndInit();
             ((System.ComponentModel.ISupportInitialize)imgLOGOloginPrincipal).EndInit();

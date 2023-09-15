@@ -21,5 +21,16 @@ namespace ProjetoIntegradorPIXELogic
         {
 
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+
+            RodaTodosForms.panel1.Controls.Clear();
+            SagaoPrincipal sagaoPrincipal = new SagaoPrincipal();
+            sagaoPrincipal.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(sagaoPrincipal);
+            sagaoPrincipal.Show();
+
+        }
     }
 }

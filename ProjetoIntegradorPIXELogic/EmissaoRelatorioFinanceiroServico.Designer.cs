@@ -41,7 +41,6 @@
             // 
             // imgLogoEscrita
             // 
-            imgLogoEscrita.Image = Properties.Resources.ESCRITA_SEM_Fundo5;
             imgLogoEscrita.Location = new Point(12, 12);
             imgLogoEscrita.Name = "imgLogoEscrita";
             imgLogoEscrita.Size = new Size(295, 62);
@@ -60,13 +59,14 @@
             btnVoltar.FlatStyle = FlatStyle.Flat;
             btnVoltar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
             btnVoltar.ForeColor = Color.Black;
-            btnVoltar.Location = new Point(715, 12);
+            btnVoltar.Location = new Point(694, 12);
             btnVoltar.Name = "btnVoltar";
-            btnVoltar.Size = new Size(111, 31);
+            btnVoltar.Size = new Size(132, 38);
             btnVoltar.TabIndex = 24;
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // btnImprimir
             // 
@@ -77,11 +77,11 @@
             btnImprimir.BorderSize = 2;
             btnImprimir.FlatAppearance.BorderSize = 0;
             btnImprimir.FlatStyle = FlatStyle.Flat;
-            btnImprimir.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnImprimir.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnImprimir.ForeColor = Color.Black;
-            btnImprimir.Location = new Point(12, 407);
+            btnImprimir.Location = new Point(12, 403);
             btnImprimir.Name = "btnImprimir";
-            btnImprimir.Size = new Size(111, 31);
+            btnImprimir.Size = new Size(125, 36);
             btnImprimir.TabIndex = 25;
             btnImprimir.Text = "IMPRIMIR";
             btnImprimir.TextColor = Color.Black;
@@ -96,11 +96,11 @@
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalvar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(138, 407);
+            btnSalvar.Location = new Point(164, 402);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(111, 31);
+            btnSalvar.Size = new Size(119, 36);
             btnSalvar.TabIndex = 26;
             btnSalvar.Text = "SALVAR";
             btnSalvar.TextColor = Color.Black;

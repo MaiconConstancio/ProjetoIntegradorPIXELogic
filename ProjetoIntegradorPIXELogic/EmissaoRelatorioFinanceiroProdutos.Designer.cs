@@ -41,7 +41,6 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.ESCRITA_SEM_Fundo9;
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(307, 66);
@@ -108,13 +107,14 @@
             btnVoltar.FlatStyle = FlatStyle.Flat;
             btnVoltar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
             btnVoltar.ForeColor = Color.Black;
-            btnVoltar.Location = new Point(677, 12);
+            btnVoltar.Location = new Point(719, 3);
             btnVoltar.Name = "btnVoltar";
-            btnVoltar.Size = new Size(111, 31);
+            btnVoltar.Size = new Size(117, 39);
             btnVoltar.TabIndex = 34;
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // btnImprimir
             // 
@@ -127,11 +127,11 @@
             btnImprimir.FlatStyle = FlatStyle.Flat;
             btnImprimir.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnImprimir.ForeColor = Color.Black;
-            btnImprimir.Location = new Point(34, 406);
+            btnImprimir.Location = new Point(18, 398);
             btnImprimir.Name = "btnImprimir";
-            btnImprimir.Size = new Size(111, 31);
+            btnImprimir.Size = new Size(109, 40);
             btnImprimir.TabIndex = 35;
-            btnImprimir.Text = "IMPRIMIR";
+            btnImprimir.Text = "Imprimir";
             btnImprimir.TextColor = Color.Black;
             btnImprimir.UseVisualStyleBackColor = false;
             // 
@@ -146,11 +146,11 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(195, 407);
+            btnSalvar.Location = new Point(155, 398);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(111, 31);
+            btnSalvar.Size = new Size(111, 40);
             btnSalvar.TabIndex = 36;
-            btnSalvar.Text = "SALVAR";
+            btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
             // 
