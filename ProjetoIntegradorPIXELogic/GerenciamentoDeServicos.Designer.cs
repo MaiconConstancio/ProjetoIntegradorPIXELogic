@@ -80,98 +80,106 @@
             // 
             // lblCliente
             // 
-            lblCliente.AutoSize = true;
+            lblCliente.BorderStyle = BorderStyle.FixedSingle;
             lblCliente.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblCliente.ForeColor = Color.FromArgb(63, 136, 254);
             lblCliente.Location = new Point(-1, 85);
             lblCliente.Name = "lblCliente";
-            lblCliente.Size = new Size(73, 25);
+            lblCliente.Size = new Size(80, 30);
             lblCliente.TabIndex = 26;
             lblCliente.Text = "Cliente";
+            lblCliente.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblEstimativaDeEntrega
             // 
-            lblEstimativaDeEntrega.AutoSize = true;
+            lblEstimativaDeEntrega.BorderStyle = BorderStyle.FixedSingle;
             lblEstimativaDeEntrega.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEstimativaDeEntrega.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEstimativaDeEntrega.Location = new Point(443, 86);
+            lblEstimativaDeEntrega.Location = new Point(481, 85);
             lblEstimativaDeEntrega.Name = "lblEstimativaDeEntrega";
-            lblEstimativaDeEntrega.Size = new Size(202, 25);
+            lblEstimativaDeEntrega.Size = new Size(207, 30);
             lblEstimativaDeEntrega.TabIndex = 27;
             lblEstimativaDeEntrega.Text = "Estimativa de entrega";
+            lblEstimativaDeEntrega.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblFuncionario
             // 
-            lblFuncionario.AutoSize = true;
+            lblFuncionario.BorderStyle = BorderStyle.FixedSingle;
             lblFuncionario.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblFuncionario.ForeColor = Color.FromArgb(63, 136, 254);
-            lblFuncionario.Location = new Point(318, 85);
+            lblFuncionario.Location = new Point(352, 85);
             lblFuncionario.Name = "lblFuncionario";
-            lblFuncionario.Size = new Size(119, 25);
+            lblFuncionario.Size = new Size(123, 30);
             lblFuncionario.TabIndex = 28;
             lblFuncionario.Text = "Funcionario";
+            lblFuncionario.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblEndereco
             // 
-            lblEndereco.AutoSize = true;
+            lblEndereco.BorderStyle = BorderStyle.FixedSingle;
             lblEndereco.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEndereco.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEndereco.Location = new Point(217, 85);
+            lblEndereco.Location = new Point(246, 85);
             lblEndereco.Name = "lblEndereco";
-            lblEndereco.Size = new Size(95, 25);
+            lblEndereco.Size = new Size(100, 30);
             lblEndereco.TabIndex = 29;
             lblEndereco.Text = "Endereço";
+            lblEndereco.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblValor
             // 
-            lblValor.AutoSize = true;
+            lblValor.BorderStyle = BorderStyle.FixedSingle;
             lblValor.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(151, 85);
+            lblValor.Location = new Point(170, 85);
             lblValor.Name = "lblValor";
-            lblValor.Size = new Size(59, 25);
+            lblValor.Size = new Size(70, 30);
             lblValor.TabIndex = 30;
             lblValor.Text = "Valor";
+            lblValor.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblServico
             // 
-            lblServico.AutoSize = true;
+            lblServico.BorderStyle = BorderStyle.FixedSingle;
             lblServico.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblServico.ForeColor = Color.FromArgb(63, 136, 254);
-            lblServico.Location = new Point(78, 85);
+            lblServico.Location = new Point(85, 85);
             lblServico.Name = "lblServico";
-            lblServico.Size = new Size(78, 25);
+            lblServico.Size = new Size(80, 30);
             lblServico.TabIndex = 31;
             lblServico.Text = "Serviço";
+            lblServico.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblStatus
             // 
-            lblStatus.AutoSize = true;
+            lblStatus.BorderStyle = BorderStyle.FixedSingle;
             lblStatus.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblStatus.ForeColor = Color.FromArgb(63, 136, 254);
-            lblStatus.Location = new Point(651, 85);
+            lblStatus.Location = new Point(694, 85);
             lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(67, 25);
+            lblStatus.Size = new Size(70, 30);
             lblStatus.TabIndex = 32;
             lblStatus.Text = "Status";
+            lblStatus.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblEditar
             // 
-            lblEditar.AutoSize = true;
+            lblEditar.BorderStyle = BorderStyle.FixedSingle;
             lblEditar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEditar.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEditar.Location = new Point(724, 85);
+            lblEditar.Location = new Point(770, 85);
             lblEditar.Name = "lblEditar";
-            lblEditar.Size = new Size(64, 25);
+            lblEditar.Size = new Size(70, 30);
             lblEditar.TabIndex = 33;
             lblEditar.Text = "Editar";
+            lblEditar.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // GerenciamentoDeServicos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(843, 450);
             Controls.Add(lblEditar);
             Controls.Add(lblStatus);
             Controls.Add(lblServico);
@@ -186,7 +194,6 @@
             Name = "GerenciamentoDeServicos";
             Text = "GerenciamentoDeServicos";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion

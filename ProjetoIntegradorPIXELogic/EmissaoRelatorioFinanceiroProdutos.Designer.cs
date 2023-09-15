@@ -30,7 +30,6 @@
         {
             pictureBox1 = new PictureBox();
             lblAcao = new Label();
-            label1 = new Label();
             lblValor = new Label();
             lblCliente = new Label();
             lblProduto = new Label();
@@ -52,57 +51,51 @@
             // 
             // lblAcao
             // 
-            lblAcao.AutoSize = true;
+            lblAcao.BorderStyle = BorderStyle.FixedSingle;
             lblAcao.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblAcao.ForeColor = Color.FromArgb(63, 136, 254);
-            lblAcao.Location = new Point(687, 101);
+            lblAcao.Location = new Point(636, 101);
             lblAcao.Name = "lblAcao";
-            lblAcao.Size = new Size(56, 25);
+            lblAcao.Size = new Size(200, 30);
             lblAcao.TabIndex = 29;
             lblAcao.Text = "Ação";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(63, 136, 254);
-            label1.Location = new Point(520, 101);
-            label1.Name = "label1";
-            label1.Size = new Size(0, 25);
-            label1.TabIndex = 30;
+            lblAcao.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblValor
             // 
-            lblValor.AutoSize = true;
+            lblValor.BorderStyle = BorderStyle.FixedSingle;
             lblValor.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(455, 101);
+            lblValor.Location = new Point(430, 101);
             lblValor.Name = "lblValor";
-            lblValor.Size = new Size(59, 25);
+            lblValor.Size = new Size(200, 30);
             lblValor.TabIndex = 31;
             lblValor.Text = "Valor";
+            lblValor.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblCliente
             // 
-            lblCliente.AutoSize = true;
+            lblCliente.BorderStyle = BorderStyle.FixedSingle;
             lblCliente.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblCliente.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCliente.Location = new Point(221, 101);
+            lblCliente.Location = new Point(224, 101);
             lblCliente.Name = "lblCliente";
-            lblCliente.Size = new Size(73, 25);
+            lblCliente.Size = new Size(200, 30);
             lblCliente.TabIndex = 32;
             lblCliente.Text = "Cliente";
+            lblCliente.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblProduto
             // 
-            lblProduto.AutoSize = true;
+            lblProduto.BorderStyle = BorderStyle.FixedSingle;
             lblProduto.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblProduto.ForeColor = Color.FromArgb(63, 136, 254);
-            lblProduto.Location = new Point(12, 101);
+            lblProduto.Location = new Point(18, 101);
             lblProduto.Name = "lblProduto";
-            lblProduto.Size = new Size(87, 25);
+            lblProduto.Size = new Size(200, 30);
             lblProduto.TabIndex = 33;
             lblProduto.Text = "Produto";
+            lblProduto.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // btnVoltar
             // 
@@ -134,7 +127,7 @@
             btnImprimir.FlatStyle = FlatStyle.Flat;
             btnImprimir.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnImprimir.ForeColor = Color.Black;
-            btnImprimir.Location = new Point(1, 407);
+            btnImprimir.Location = new Point(34, 406);
             btnImprimir.Name = "btnImprimir";
             btnImprimir.Size = new Size(111, 31);
             btnImprimir.TabIndex = 35;
@@ -153,7 +146,7 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(158, 407);
+            btnSalvar.Location = new Point(195, 407);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(111, 31);
             btnSalvar.TabIndex = 36;
@@ -166,14 +159,13 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(839, 450);
             Controls.Add(btnSalvar);
             Controls.Add(btnImprimir);
             Controls.Add(btnVoltar);
             Controls.Add(lblProduto);
             Controls.Add(lblCliente);
             Controls.Add(lblValor);
-            Controls.Add(label1);
             Controls.Add(lblAcao);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
@@ -182,14 +174,12 @@
             Load += EmissaoRelatorioFinanceiroProdutos_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
 
         private PictureBox pictureBox1;
         private Label lblAcao;
-        private Label label1;
         private Label lblValor;
         private Label lblCliente;
         private Label lblProduto;
