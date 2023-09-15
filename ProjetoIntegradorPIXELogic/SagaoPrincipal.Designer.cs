@@ -136,7 +136,6 @@
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(lblOrcamentoDeServicos);
-            Controls.Add(btnSalvar);
             FormBorderStyle = FormBorderStyle.None;
             Name = "SagaoPrincipal";
             Text = "SagaoPrincipal";
