@@ -39,6 +39,7 @@
             btnVoltar = new WiLBiT.WiLBiTButton2();
             btnNovoCadastro = new WiLBiT.WiLBiTButton2();
             btnSalvar = new WiLBiT.WiLBiTButton2();
+            panel1 = new Panel();
             SuspendLayout();
             // 
             // lblTelefone
@@ -196,12 +197,21 @@
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            panel1.AutoSize = true;
+            panel1.Location = new Point(15, 98);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(780, 10);
+            panel1.TabIndex = 30;
+            // 
             // ListaDeFornecedores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
             Controls.Add(btnSalvar);
             Controls.Add(btnNovoCadastro);
             Controls.Add(btnVoltar);
@@ -216,7 +226,9 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "ListaDeFornecedores";
             Text = "ListaDeFornecedores";
+            Load += ListaDeFornecedores_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -232,5 +244,6 @@
         private WiLBiT.WiLBiTButton2 btnVoltar;
         private WiLBiT.WiLBiTButton2 btnNovoCadastro;
         private WiLBiT.WiLBiTButton2 btnSalvar;
+        private Panel panel1;
     }
 }
