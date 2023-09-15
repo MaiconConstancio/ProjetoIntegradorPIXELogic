@@ -58,6 +58,106 @@ namespace ProjetoIntegradorPIXELogic
         private void btnSalvar_Click(object sender, EventArgs e)
         {
 
+            if (Funcoes.campoVazio("Nome", txtFornecedor) == false && Funcoes.campoVazio("Endereço", txtEndereço) == false &&
+                Funcoes.campoVazio("Telefone", maskedTelefone) == false && Funcoes.campoVazio("CNPJ", maskedCNJP) == false &&
+                Funcoes.campoVazio("CEP", maskedCEP) == false && Funcoes.campoVazio("Número", maskedNumero) == false &&
+                Funcoes.campoVazio("Cidade", txtCidade) == false)
+            {
+
+                if (Funcoes.existe("fornecedores", "nome", txtFornecedor) == false)
+                {
+
+                    if (Funcoes.existe("fornecedores", "telefone", maskedTelefone) == false)
+                    {
+
+                        if (Funcoes.existe("fornecedores", "cnpj", maskedCNJP) == false)
+                        {
+
+                            if (Conexao.executaQuery($"select * from fornecedores where cep = {maskedCEP.Text} and numero = {maskedNumero.Text}").Rows.Count>0)
+                            {
+
+                                if (MessageBox.Show("Tem certeza que deseja cadastrar dois fornecedores no mesmo endereço ?","Endereço identico a outro fornecedor!",
+                                    MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
+                                {
+
+                                    if (MessageBox.Show($"Nome: {txtFornecedor.Text}\n\n" +
+                                    $"Endereço: {txtEndereço.Text}\n\n" +
+                                    $"Telefone: {maskedTelefone.Text}\n\n" +
+                                    $"CNPJ: {maskedCNJP.Text}\n\n" +
+                                    $"CEP: {maskedCEP.Text}\n\n" +
+                                    $"Número: {maskedNumero.Text}\n\n" +
+                                    $"Cidade: {txtCidade.Text}", 
+                                    "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
+                                    {
+
+                                        string query = $"insert into fornecedores (nome,endereco,telefone,cnpj,cep,numero,cidade) values " +
+                                            $"('{txtFornecedor.Text}','{txtEndereço.Text}','{maskedTelefone.Text}','{maskedCNJP.Text}'" +
+                                            $"'{maskedCEP.Text}','{maskedNumero.Text}','{txtCidade.Text}');";
+                                        Conexao.executaQuery(query);
+
+                                        txtFornecedor.Clear();
+                                        txtEndereço.Clear();
+                                        txtCidade.Clear();
+                                        maskedNumero.Text = "";
+                                        maskedCNJP.Text = "";
+                                        maskedCEP.Text = "";
+                                        maskedTelefone.Text = "";
+
+                                    }
+
+                                }
+
+                                return;
+
+                            }
+
+                            if (MessageBox.Show("Tem certeza que deseja cadastrar dois fornecedores no mesmo endereço ?", "Endereço identico a outro fornecedor!",
+                                   MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                            {
+
+                                if (MessageBox.Show($"Nome: {txtFornecedor.Text}\n\n" +
+                                $"Endereço: {txtEndereço.Text}\n\n" +
+                                $"Telefone: {maskedTelefone.Text}\n\n" +
+                                $"CNPJ: {maskedCNJP.Text}\n\n" +
+                                $"CEP: {maskedCEP.Text}\n\n" +
+                                $"Número: {maskedNumero.Text}\n\n" +
+                                $"Cidade: {txtCidade.Text}",
+                                "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
+                                {
+
+                                    string query = $"insert into fornecedores (nome,endereco,telefone,cnpj,cep,numero,cidade) values " +
+                                        $"('{txtFornecedor.Text}','{txtEndereço.Text}','{maskedTelefone.Text}','{maskedCNJP.Text}'" +
+                                        $"'{maskedCEP.Text}','{maskedNumero.Text}','{txtCidade.Text}');";
+                                    Conexao.executaQuery(query);
+
+                                    txtFornecedor.Clear();
+                                    txtEndereço.Clear();
+                                    txtCidade.Clear();
+                                    maskedNumero.Text = "";
+                                    maskedCNJP.Text = "";
+                                    maskedCEP.Text = "";
+                                    maskedTelefone.Text = "";
+
+                                }
+
+                            }
+
+                        }
+
+                        else { MessageBox.Show("Por favor digite outra senha.", "senha já existente", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
+                    }
+
+                    else { MessageBox.Show("Por favor digite outro login", "Login já existente", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
+                }
+
+                else { MessageBox.Show("Por favor digite outro nome.", "Nome já cadastrado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
+            }
+
         }
 
         private void lblCidade_Click(object sender, EventArgs e)

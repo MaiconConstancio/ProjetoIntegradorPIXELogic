@@ -38,5 +38,23 @@ namespace ProjetoIntegradorPIXELogic
             cadastroDeFornecedores.Show();
 
         }
+
+        private void ListaDeFornecedores_Load(object sender, EventArgs e)
+        {
+
+            foreach (DataRow row in Conexao.executaQuery("select * from fornecedores;").Rows)
+            {
+
+                PalcoListaDeFornecedores palcoDaLista = new PalcoListaDeFornecedores(row["nome"].ToString(), row["endereco"].ToString(), row["telefone"].ToString(),
+                                                             row["cnpj"].ToString(), row["cep"].ToString(), row["numero"].ToString(), row["cidade"].ToString());
+
+                palcoDaLista.TopLevel = false;
+                panel1.Controls.Add(palcoDaLista);
+                palcoDaLista.Location = new Point(0, 0 + panel1.Height);
+                palcoDaLista.Show();
+
+            }
+
+        }
     }
 }
