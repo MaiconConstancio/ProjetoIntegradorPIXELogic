@@ -27,5 +27,10 @@ namespace ProjetoIntegradorPIXELogic
             selecionaQualCadastro.Show();
 
         }
+
+        private void GerenciamentoDeServicos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
