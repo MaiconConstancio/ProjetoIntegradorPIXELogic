@@ -20,6 +20,8 @@ namespace ProjetoIntegradorPIXELogic
         private void btnSalvar_Click(object sender, EventArgs e)
         {
 
+            Conexao.executaQuery($"update usuario set primeiro_acesso = true where login = '{Program.acesso}'");
+
             if (chkBoxGerenciamentoServiços.Checked == true)
             {
 
@@ -104,12 +106,19 @@ namespace ProjetoIntegradorPIXELogic
 
             }
 
-            /*if (chkBoxEmissaoRelatoriosFinanceiros.Checked == true)
+            if (checkBox1.Checked == true)
             {
 
                 Conexao.executaQuery("update funcoes set habilitado_nao = true where nome = 'função de relatorio_serviços';");
 
-            }*/
+            }
+
+            else
+            {
+
+                Conexao.executaQuery("update funcoes set habilitado_nao = false where nome = 'função de relatorio_serviços';");
+
+            }
 
             if (chkBoxVendas.Checked == true)
             {

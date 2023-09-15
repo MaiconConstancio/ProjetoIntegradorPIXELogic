@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.VisualBasic.Devices;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,6 +27,8 @@ namespace ProjetoIntegradorPIXELogic
         private void btnEntra_Click(object sender, EventArgs e)
         {
 
+            Program.acesso = $"{txtLogin.Text}";
+
             if (Funcoes.campoVazio("Login", txtLogin) == false && Funcoes.campoVazio("Senha", txtSenha) == false)
             {
 
@@ -41,11 +44,27 @@ namespace ProjetoIntegradorPIXELogic
                             Conexao.executaQuery($"select * from usuario where login = '{txtLogin.Text}' and cargo = 'desenvolvedor';").Rows.Count > 0)
                         {
 
-                            RodaTodosForms.panel1.Controls.Clear();
-                            MontagemPrograma montagemPrograma = new MontagemPrograma();
-                            montagemPrograma.TopLevel = false;
-                            RodaTodosForms.panel1.Controls.Add(montagemPrograma);
-                            montagemPrograma.Show();
+                            if(Conexao.executaQuery($"Select * from usuario where login = '{txtLogin.Text}' and primeiro_acesso = false;").Rows.Count>0)
+                            {
+
+                                RodaTodosForms.panel1.Controls.Clear();
+                                MontagemPrograma montagemPrograma = new MontagemPrograma();
+                                montagemPrograma.TopLevel = false;
+                                RodaTodosForms.panel1.Controls.Add(montagemPrograma);
+                                montagemPrograma.Show();
+
+                            }
+
+                            else
+                            {
+
+                                RodaTodosForms.panel1.Controls.Clear();
+                                SagaoPrincipal sagaoPrincipal = new SagaoPrincipal();
+                                sagaoPrincipal.TopLevel = false;
+                                RodaTodosForms.panel1.Controls.Add(sagaoPrincipal);
+                                sagaoPrincipal.Show();
+
+                            }
 
                         }
 
@@ -81,5 +100,18 @@ namespace ProjetoIntegradorPIXELogic
             }
 
         }
+
+        private void lblNãotemconta_Click(object sender, EventArgs e)
+        {
+
+            RodaTodosForms.panel1.Controls.Clear();
+            CadastroDeColaboradores colaboradores = new CadastroDeColaboradores();
+            colaboradores.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(colaboradores);
+            colaboradores.Show();
+
+        }
+
+
     }
 }

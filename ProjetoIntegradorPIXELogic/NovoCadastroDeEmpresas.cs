@@ -44,5 +44,16 @@ namespace ProjetoIntegradorPIXELogic
             lblSenha.BackColor = Color.Transparent;
             //---------------------------FIM do Setor do Designer------------------------------------
         }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
+            RodaTodosForms.panel1.Controls.Clear();
+            TelaLoginPaginaInicial telaLogin = new TelaLoginPaginaInicial();
+            telaLogin.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(telaLogin);
+            telaLogin.Show();
+
+        }
     }
 }

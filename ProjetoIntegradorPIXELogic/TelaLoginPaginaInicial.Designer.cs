@@ -90,7 +90,6 @@ namespace ProjetoIntegradorPIXELogic
             // imgWallpaperLoginPrincipal
             // 
             imgWallpaperLoginPrincipal.Dock = DockStyle.Fill;
-            //imgWallpaperLoginPrincipal.Image = Properties.Resources.Tela_Login_Objeto;
             imgWallpaperLoginPrincipal.Location = new Point(0, 0);
             imgWallpaperLoginPrincipal.Name = "imgWallpaperLoginPrincipal";
             imgWallpaperLoginPrincipal.Size = new Size(800, 450);
@@ -139,9 +138,10 @@ namespace ProjetoIntegradorPIXELogic
             lblNãotemconta.ForeColor = Color.FromArgb(63, 200, 254);
             lblNãotemconta.Location = new Point(465, 355);
             lblNãotemconta.Name = "lblNãotemconta";
-            lblNãotemconta.Size = new Size(209, 19);
+            lblNãotemconta.Size = new Size(231, 19);
             lblNãotemconta.TabIndex = 11;
-            lblNãotemconta.Text = "Não tem uma conta? crie aqui";
+            lblNãotemconta.Text = "Não tem uma conta? Clique aqui!";
+            lblNãotemconta.Click += lblNãotemconta_Click;
             // 
             // TelaLoginPaginaInicial
             // 
@@ -161,7 +161,7 @@ namespace ProjetoIntegradorPIXELogic
             FormBorderStyle = FormBorderStyle.None;
             Name = "TelaLoginPaginaInicial";
             Text = " ";
-            TransparencyKey = Color.Transparent;
+            TransparencyKey = Color.DimGray;
             Load += TelaLoginPaginaInicial_Load;
             ((System.ComponentModel.ISupportInitialize)imgWallpaperLoginPrincipal).EndInit();
             ((System.ComponentModel.ISupportInitialize)imgLOGOloginPrincipal).EndInit();

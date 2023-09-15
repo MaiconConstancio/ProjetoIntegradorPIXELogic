@@ -52,13 +52,13 @@ namespace ProjetoIntegradorPIXELogic
 
             }
 
-            /*if (Conexao.executaQuery("select * from funcoes where nome = 'função de relatorio_serviços' and habilitado_nao = true;").Rows.Count > 0)
-            {*/
+            if (Conexao.executaQuery("select * from funcoes where nome = 'função de relatorio_serviços' and habilitado_nao = true;").Rows.Count > 0)
+            {
 
-            btnRelatorioServicos.Location = new Point(0, 0 + panel1.Height);
-            panel1.Controls.Add(btnRelatorioServicos);
+                btnRelatorioServicos.Location = new Point(0, 0 + panel1.Height);
+                panel1.Controls.Add(btnRelatorioServicos);
 
-            /*}*/
+            }
 
 
             if (Conexao.executaQuery("select * from funcoes where nome = 'função de suporte' and habilitado_nao = true;").Rows.Count > 0)

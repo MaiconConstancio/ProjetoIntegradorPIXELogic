@@ -26,10 +26,10 @@ namespace ProjetoIntegradorPIXELogic
         {
 
             RodaTodosForms.panel1.Controls.Clear();
-            GerenciamentoDeClientes gerenciamentoDeClientes = new GerenciamentoDeClientes();
-            gerenciamentoDeClientes.TopLevel = false;
-            RodaTodosForms.panel1.Controls.Add(gerenciamentoDeClientes);
-            gerenciamentoDeClientes.Show();
+            GerenciamentoDeServicos gerenciamentoDeServicos = new GerenciamentoDeServicos();
+            gerenciamentoDeServicos.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(gerenciamentoDeServicos);
+            gerenciamentoDeServicos.Show();
 
         }
 

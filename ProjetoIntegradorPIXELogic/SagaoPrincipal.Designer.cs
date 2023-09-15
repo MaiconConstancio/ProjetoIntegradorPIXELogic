@@ -170,14 +170,22 @@
         private void btnRelatorioProdutos_Click(object sender, EventArgs e)
         {
 
-
+            RodaTodosForms.panel1.Controls.Clear();
+            EmissaoRelatorioFinanceiroProdutos emissaoRelatorio = new EmissaoRelatorioFinanceiroProdutos();
+            emissaoRelatorio.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(emissaoRelatorio);
+            emissaoRelatorio.Show();
 
         }
 
         private void btnRelatorioServicos_Click(object sender, EventArgs e)
         {
 
-
+            RodaTodosForms.panel1.Controls.Clear();
+            EmissaoRelatorioFinanceiroservico emissaoRelatorio = new EmissaoRelatorioFinanceiroservico();
+            emissaoRelatorio.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(emissaoRelatorio);
+            emissaoRelatorio.Show();
 
         }
 

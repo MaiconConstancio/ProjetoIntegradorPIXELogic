@@ -25,8 +25,8 @@ namespace ProjetoIntegradorPIXELogic
             telaLoginPaginaInicial.TopLevel = false;
             RodaTodosForms.panel1.Controls.Add(telaLoginPaginaInicial);
             telaLoginPaginaInicial.Show();
-           
-        
+
+
         }
     }
 }

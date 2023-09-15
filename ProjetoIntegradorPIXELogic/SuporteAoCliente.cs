@@ -35,6 +35,13 @@ namespace ProjetoIntegradorPIXELogic
         private void btnEntraEmContato_Click(object sender, EventArgs e)
         {
 
+
+
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+
             RodaTodosForms.panel1.Controls.Clear();
             SagaoPrincipal sagaoPrincipal = new SagaoPrincipal();
             sagaoPrincipal.TopLevel = false;
