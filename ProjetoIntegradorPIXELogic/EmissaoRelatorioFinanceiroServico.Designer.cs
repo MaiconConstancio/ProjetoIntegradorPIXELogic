@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
+            imgLogoEscrita = new PictureBox();
             btnVoltar = new WiLBiT.WiLBiTButton2();
             btnImprimir = new WiLBiT.WiLBiTButton2();
             btnSalvar = new WiLBiT.WiLBiTButton2();
@@ -36,18 +36,18 @@
             lblCliente = new Label();
             lblValor = new Label();
             lblAcao = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // imgLogoEscrita
             // 
-            pictureBox1.Image = Properties.Resources.ESCRITA_SEM_Fundo5;
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(295, 62);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
+            imgLogoEscrita.Image = Properties.Resources.ESCRITA_SEM_Fundo5;
+            imgLogoEscrita.Location = new Point(12, 12);
+            imgLogoEscrita.Name = "imgLogoEscrita";
+            imgLogoEscrita.Size = new Size(295, 62);
+            imgLogoEscrita.SizeMode = PictureBoxSizeMode.Zoom;
+            imgLogoEscrita.TabIndex = 0;
+            imgLogoEscrita.TabStop = false;
             // 
             // btnVoltar
             // 
@@ -79,7 +79,7 @@
             btnImprimir.FlatStyle = FlatStyle.Flat;
             btnImprimir.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnImprimir.ForeColor = Color.Black;
-            btnImprimir.Location = new Point(12, 419);
+            btnImprimir.Location = new Point(12, 407);
             btnImprimir.Name = "btnImprimir";
             btnImprimir.Size = new Size(111, 31);
             btnImprimir.TabIndex = 25;
@@ -98,7 +98,7 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(133, 419);
+            btnSalvar.Location = new Point(138, 407);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(111, 31);
             btnSalvar.TabIndex = 26;
@@ -111,7 +111,7 @@
             lblServicos.AutoSize = true;
             lblServicos.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblServicos.ForeColor = Color.FromArgb(63, 136, 254);
-            lblServicos.Location = new Point(26, 92);
+            lblServicos.Location = new Point(55, 92);
             lblServicos.Name = "lblServicos";
             lblServicos.Size = new Size(86, 25);
             lblServicos.TabIndex = 27;
@@ -163,18 +163,18 @@
             Controls.Add(btnSalvar);
             Controls.Add(btnImprimir);
             Controls.Add(btnVoltar);
-            Controls.Add(pictureBox1);
+            Controls.Add(imgLogoEscrita);
             FormBorderStyle = FormBorderStyle.None;
             Name = "EmissaoRelatorioFinanceiroservico";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
+        private PictureBox imgLogoEscrita;
         private WiLBiT.WiLBiTButton2 btnVoltar;
         private WiLBiT.WiLBiTButton2 btnImprimir;
         private WiLBiT.WiLBiTButton2 btnSalvar;
