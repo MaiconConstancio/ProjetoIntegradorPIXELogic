@@ -12,9 +12,20 @@ namespace ProjetoIntegradorPIXELogic
 {
     public partial class PalcoListaDeColaboradores : Form
     {
-        public PalcoListaDeColaboradores()
+        public PalcoListaDeColaboradores(string lb1, string lb2, string lb3, string lb4)
         {
             InitializeComponent();
+
+            label1.Text = lb1;
+            label2.Text = lb2;
+            label3.Text = lb3;
+            label4.Text = lb4;
+        }
+
+        private void PalcoListaDeColaboradores_Load(object sender, EventArgs e)
+        {
+
+
         }
     }
 }
