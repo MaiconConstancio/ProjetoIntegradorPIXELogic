@@ -36,6 +36,7 @@
             lblNome = new Label();
             btnVoltar = new WiLBiT.WiLBiTButton2();
             btnSalvar = new WiLBiT.WiLBiTButton2();
+            panel1 = new Panel();
             SuspendLayout();
             // 
             // btnNovoCadastro
@@ -56,6 +57,7 @@
             btnNovoCadastro.Text = "Novo Cadastro";
             btnNovoCadastro.TextColor = Color.Black;
             btnNovoCadastro.UseVisualStyleBackColor = false;
+            btnNovoCadastro.Click += btnNovoCadastro_Click;
             // 
             // lblSenha
             // 
@@ -156,12 +158,21 @@
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            panel1.AutoSize = true;
+            panel1.Location = new Point(12, 121);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(785, 10);
+            panel1.TabIndex = 28;
+            // 
             // ListaDeColaboradores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
             Controls.Add(btnSalvar);
             Controls.Add(btnVoltar);
             Controls.Add(lblNome);
@@ -173,7 +184,9 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "ListaDeColaboradores";
             Text = "ListaDeColaboradores";
+            Load += ListaDeColaboradores_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -186,5 +199,6 @@
         private Label lblNome;
         private WiLBiT.WiLBiTButton2 btnVoltar;
         private WiLBiT.WiLBiTButton2 btnSalvar;
+        private Panel panel1;
     }
 }
