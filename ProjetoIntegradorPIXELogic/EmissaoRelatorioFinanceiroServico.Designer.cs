@@ -41,7 +41,6 @@
             // 
             // imgLogoEscrita
             // 
-            imgLogoEscrita.Image = Properties.Resources.ESCRITA_SEM_Fundo5;
             imgLogoEscrita.Location = new Point(12, 12);
             imgLogoEscrita.Name = "imgLogoEscrita";
             imgLogoEscrita.Size = new Size(295, 62);
@@ -67,6 +66,7 @@
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // btnImprimir
             // 

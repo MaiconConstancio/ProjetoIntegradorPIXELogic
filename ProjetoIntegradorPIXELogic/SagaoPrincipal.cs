@@ -71,5 +71,16 @@ namespace ProjetoIntegradorPIXELogic
             }
 
         }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+
+            RodaTodosForms.panel1.Controls.Clear();
+            MontagemPrograma montagemPrograma = new MontagemPrograma();
+            montagemPrograma.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(montagemPrograma);
+            montagemPrograma.Show();
+
+        }
     }
 }

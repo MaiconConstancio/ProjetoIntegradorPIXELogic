@@ -41,7 +41,6 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = Properties.Resources.ESCRITA_SEM_Fundo9;
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(307, 66);
@@ -115,6 +114,7 @@
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // btnImprimir
             // 

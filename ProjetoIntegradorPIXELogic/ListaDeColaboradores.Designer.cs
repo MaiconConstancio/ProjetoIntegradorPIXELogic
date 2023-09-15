@@ -135,6 +135,7 @@
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // btnSalvar
             // 

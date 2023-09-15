@@ -66,6 +66,7 @@
             btnEntraEmContato.Text = "ENTRAR EM CONTATO";
             btnEntraEmContato.TextColor = Color.Black;
             btnEntraEmContato.UseVisualStyleBackColor = false;
+            btnEntraEmContato.Click += btnEntraEmContato_Click;
             // 
             // lblSuporteAoCliente
             // 

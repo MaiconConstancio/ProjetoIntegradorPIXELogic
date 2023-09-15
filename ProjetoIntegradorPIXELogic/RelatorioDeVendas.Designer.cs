@@ -123,6 +123,7 @@
             btnCancelar.Text = "Cancelar";
             btnCancelar.TextColor = Color.Black;
             btnCancelar.UseVisualStyleBackColor = false;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // lblNomeDoCliente
             // 

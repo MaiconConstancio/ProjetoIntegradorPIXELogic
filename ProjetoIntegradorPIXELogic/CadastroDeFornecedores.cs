@@ -63,5 +63,16 @@ namespace ProjetoIntegradorPIXELogic
         private void lblCidade_Click(object sender, EventArgs e)
         {
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+
+            RodaTodosForms.panel1.Controls.Clear();
+            ListaDeFornecedores listaDeFornecedores = new ListaDeFornecedores();
+            listaDeFornecedores.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(listaDeFornecedores);
+            listaDeFornecedores.Show();
+
+        }
     }
 }

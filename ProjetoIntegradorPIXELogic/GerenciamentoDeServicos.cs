@@ -16,5 +16,16 @@ namespace ProjetoIntegradorPIXELogic
         {
             InitializeComponent();
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+
+            RodaTodosForms.panel1.Controls.Clear();
+            SelecionaQualCadastro selecionaQualCadastro = new SelecionaQualCadastro();
+            selecionaQualCadastro.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(selecionaQualCadastro);
+            selecionaQualCadastro.Show();
+
+        }
     }
 }

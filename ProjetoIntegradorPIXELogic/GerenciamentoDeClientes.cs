@@ -50,10 +50,10 @@ namespace ProjetoIntegradorPIXELogic
         {
 
             RodaTodosForms.panel1.Controls.Clear();
-            SagaoPrincipal sagaoPrincipal = new SagaoPrincipal();
-            sagaoPrincipal.TopLevel = false;
-            RodaTodosForms.panel1.Controls.Add(sagaoPrincipal);
-            sagaoPrincipal.Show();
+            SelecionaQualCadastro selecionaQualCadastro = new SelecionaQualCadastro();
+            selecionaQualCadastro.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(selecionaQualCadastro);
+            selecionaQualCadastro.Show();
 
         }
 

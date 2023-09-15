@@ -155,6 +155,7 @@
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // btnNovoCadastro
             // 
@@ -174,6 +175,7 @@
             btnNovoCadastro.Text = "Novo Cadastro";
             btnNovoCadastro.TextColor = Color.Black;
             btnNovoCadastro.UseVisualStyleBackColor = false;
+            btnNovoCadastro.Click += btnNovoCadastro_Click;
             // 
             // btnSalvar
             // 
