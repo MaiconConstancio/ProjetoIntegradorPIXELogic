@@ -44,6 +44,7 @@
             lblPagamentoNoMetodoSelecionado = new Label();
             lblTotal = new Label();
             lblMetodoSelecionado = new Label();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).BeginInit();
             SuspendLayout();
             // 
@@ -239,12 +240,21 @@
             lblMetodoSelecionado.TabIndex = 40;
             lblMetodoSelecionado.Text = "{Método selecionado}";
             // 
+            // panel1
+            // 
+            panel1.Location = new Point(2, 191);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(796, 14);
+            panel1.TabIndex = 41;
+            panel1.Paint += panel1_Paint;
+            // 
             // RelatorioDeVendas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
             Controls.Add(lblMetodoSelecionado);
             Controls.Add(lblTotal);
             Controls.Add(lblPagamentoNoMetodoSelecionado);
@@ -263,6 +273,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "RelatorioDeVendas";
             Text = "RelatorioDeVendas";
+            Load += RelatorioDeVendas_Load;
             ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -285,5 +296,6 @@
         private Label lblPagamentoNoMetodoSelecionado;
         private Label lblTotal;
         private Label lblMetodoSelecionado;
+        private Panel panel1;
     }
 }

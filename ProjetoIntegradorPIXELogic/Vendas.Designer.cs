@@ -166,6 +166,7 @@
             btnVerTodosOsItens.Text = "VER TODOS OS ITENS";
             btnVerTodosOsItens.TextColor = Color.Black;
             btnVerTodosOsItens.UseVisualStyleBackColor = false;
+            btnVerTodosOsItens.Click += btnVerTodosOsItens_Click;
             // 
             // btnSalvar
             // 
@@ -185,6 +186,7 @@
             btnSalvar.Text = "SALVAR";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnVoltar
             // 
@@ -204,6 +206,7 @@
             btnVoltar.Text = "VOLTAR";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // LogoComoWallpaper
             // 

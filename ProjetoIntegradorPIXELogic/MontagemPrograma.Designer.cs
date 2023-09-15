@@ -36,6 +36,7 @@
             chkBoxVendas = new CheckBox();
             chkBoxEmissaoRelatoriosFinanceiros = new CheckBox();
             chkBoxSuporteAoCliente = new CheckBox();
+            btnSalvar = new Button();
             SuspendLayout();
             // 
             // chkBoxColaboradores
@@ -126,12 +127,23 @@
             chkBoxSuporteAoCliente.Text = "Suporte ao Cliente";
             chkBoxSuporteAoCliente.UseVisualStyleBackColor = true;
             // 
+            // btnSalvar
+            // 
+            btnSalvar.Location = new Point(713, 415);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(75, 23);
+            btnSalvar.TabIndex = 9;
+            btnSalvar.Text = "Salvar\r\n";
+            btnSalvar.UseVisualStyleBackColor = true;
+            btnSalvar.Click += btnSalvar_Click;
+            // 
             // MontagemPrograma
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSalvar);
             Controls.Add(chkBoxSuporteAoCliente);
             Controls.Add(chkBoxEmissaoRelatoriosFinanceiros);
             Controls.Add(chkBoxVendas);
@@ -143,6 +155,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "MontagemPrograma";
             Text = "MontagemPrograma";
+            Load += MontagemPrograma_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -157,5 +170,6 @@
         private CheckBox chkBoxVendas;
         private CheckBox chkBoxEmissaoRelatoriosFinanceiros;
         private CheckBox chkBoxSuporteAoCliente;
+        private Button btnSalvar;
     }
 }

@@ -53,10 +53,10 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
-        public static Boolean existeComMensagem(string tabela, string campo, TextBox txt, string mensagem, string titulo_mensagem)
+        public static Boolean existe(string tabela, string campo, ComboBox combo)
         {
 
-            string query = $"select {campo} from {tabela} where {campo} = '{txt.Text}';";
+            string query = $"select {campo} from {tabela} where {campo} = '{combo.Text}';";
 
             if (Conexao.executaQuery(query).Rows.Count > 0)
             {
@@ -68,7 +68,6 @@ namespace ProjetoIntegradorPIXELogic
             else
             {
 
-                MessageBox.Show($"{mensagem}", $"{titulo_mensagem}", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
 
             }
@@ -96,6 +95,23 @@ namespace ProjetoIntegradorPIXELogic
         {
 
             if (mask.Text == "")
+
+            {
+
+                MessageBox.Show($"Digite um(a) {campo}!", "Campo vázio!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return true;
+
+            }
+
+            else { return false; }
+
+        }
+
+        public static Boolean campoVazio(string campo, ComboBox combo)
+        {
+
+            if (combo.Text == "")
 
             {
 
