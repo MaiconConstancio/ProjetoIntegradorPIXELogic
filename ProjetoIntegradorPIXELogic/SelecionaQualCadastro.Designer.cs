@@ -45,7 +45,7 @@
             btnFuncionarios.BackColor = Color.FromArgb(72, 116, 245);
             btnFuncionarios.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnFuncionarios.BorderColor = Color.FromArgb(0, 242, 254);
-            btnFuncionarios.BorderRadius = 19;
+            btnFuncionarios.BorderRadius = 14;
             btnFuncionarios.BorderSize = 2;
             btnFuncionarios.FlatAppearance.BorderSize = 0;
             btnFuncionarios.FlatStyle = FlatStyle.Flat;
@@ -65,7 +65,7 @@
             btnFornecedores.BackColor = Color.FromArgb(72, 116, 245);
             btnFornecedores.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnFornecedores.BorderColor = Color.FromArgb(0, 242, 254);
-            btnFornecedores.BorderRadius = 19;
+            btnFornecedores.BorderRadius = 14;
             btnFornecedores.BorderSize = 2;
             btnFornecedores.FlatAppearance.BorderSize = 0;
             btnFornecedores.FlatStyle = FlatStyle.Flat;
@@ -85,7 +85,7 @@
             btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnVoltar.BorderRadius = 19;
+            btnVoltar.BorderRadius = 14;
             btnVoltar.BorderSize = 2;
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
@@ -105,7 +105,7 @@
             btnProdutos.BackColor = Color.FromArgb(72, 116, 245);
             btnProdutos.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnProdutos.BorderColor = Color.FromArgb(0, 242, 254);
-            btnProdutos.BorderRadius = 19;
+            btnProdutos.BorderRadius = 14;
             btnProdutos.BorderSize = 2;
             btnProdutos.FlatAppearance.BorderSize = 0;
             btnProdutos.FlatStyle = FlatStyle.Flat;
@@ -125,7 +125,7 @@
             btnClientes.BackColor = Color.FromArgb(72, 116, 245);
             btnClientes.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnClientes.BorderColor = Color.FromArgb(0, 242, 254);
-            btnClientes.BorderRadius = 19;
+            btnClientes.BorderRadius = 14;
             btnClientes.BorderSize = 2;
             btnClientes.FlatAppearance.BorderSize = 0;
             btnClientes.FlatStyle = FlatStyle.Flat;
@@ -145,7 +145,7 @@
             btnServico.BackColor = Color.FromArgb(72, 116, 245);
             btnServico.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnServico.BorderColor = Color.FromArgb(0, 242, 254);
-            btnServico.BorderRadius = 19;
+            btnServico.BorderRadius = 14;
             btnServico.BorderSize = 2;
             btnServico.FlatAppearance.BorderSize = 0;
             btnServico.FlatStyle = FlatStyle.Flat;
