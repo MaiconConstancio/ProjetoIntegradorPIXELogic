@@ -150,7 +150,7 @@ namespace ProjetoIntegradorPIXELogic
         private void MontagemPrograma_Load(object sender, EventArgs e)
         {
 
-            if (Conexao.executaQuery("select * from funcoes where nome = 'função de serviços' and habilitado_nao = true;").Rows.Count > 0 )
+            if (Conexao.executaQuery("select * from funcoes where nome = 'função de serviços' and habilitado_nao = true;").Rows.Count > 0)
             {
 
                 chkBoxGerenciamentoServiços.Checked = true;
