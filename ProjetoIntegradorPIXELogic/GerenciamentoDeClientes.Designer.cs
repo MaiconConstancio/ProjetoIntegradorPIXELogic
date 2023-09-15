@@ -38,7 +38,8 @@
             lblFuncionario = new Label();
             lblEstimativaDeEntrega = new Label();
             lblCliente = new Label();
-            this.btnSalvar = new WiLBiT.WiLBiTButton2();
+            btnSalvar = new WiLBiT.WiLBiTButton2();
+            panel1 = new Panel();
             SuspendLayout();
             // 
             // btnNovoCadastro
@@ -179,22 +180,29 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
-            this.btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
-            this.btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            this.btnSalvar.BorderRadius = 19;
-            this.btnSalvar.BorderSize = 2;
-            this.btnSalvar.FlatAppearance.BorderSize = 0;
-            this.btnSalvar.FlatStyle = FlatStyle.Flat;
-            this.btnSalvar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            this.btnSalvar.ForeColor = Color.Black;
-            this.btnSalvar.Location = new Point(158, 400);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new Size(117, 39);
-            this.btnSalvar.TabIndex = 45;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.TextColor = Color.Black;
-            this.btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnSalvar.BorderRadius = 19;
+            btnSalvar.BorderSize = 2;
+            btnSalvar.FlatAppearance.BorderSize = 0;
+            btnSalvar.FlatStyle = FlatStyle.Flat;
+            btnSalvar.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalvar.ForeColor = Color.Black;
+            btnSalvar.Location = new Point(158, 400);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(117, 39);
+            btnSalvar.TabIndex = 45;
+            btnSalvar.Text = "Salvar";
+            btnSalvar.TextColor = Color.Black;
+            btnSalvar.UseVisualStyleBackColor = false;
+            // 
+            // panel1
+            // 
+            panel1.Location = new Point(12, 119);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(776, 26);
+            panel1.TabIndex = 46;
             // 
             // GerenciamentoDeClientes
             // 
@@ -202,7 +210,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(796, 450);
-            Controls.Add(this.btnSalvar);
+            Controls.Add(panel1);
+            Controls.Add(btnSalvar);
             Controls.Add(lblEditar);
             Controls.Add(lblStatus);
             Controls.Add(lblServico);
@@ -233,6 +242,6 @@
         private Label lblFuncionario;
         private Label lblEstimativaDeEntrega;
         private Label lblCliente;
-        private WiLBiT.WiLBiTButton2 btnSalvar;
+        private Panel panel1;
     }
 }
