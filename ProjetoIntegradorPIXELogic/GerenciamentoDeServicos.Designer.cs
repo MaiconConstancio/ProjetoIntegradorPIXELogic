@@ -215,6 +215,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "GerenciamentoDeServicos";
             Text = "GerenciamentoDeServicos";
+            Load += GerenciamentoDeServicos_Load;
             ResumeLayout(false);
         }
 
