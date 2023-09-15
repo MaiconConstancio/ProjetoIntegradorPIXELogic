@@ -36,6 +36,7 @@
             lblFornecedor = new Label();
             lblVencimento = new Label();
             lblEditar = new Label();
+            btnSalvar = new WiLBiT.WiLBiTButton2();
             SuspendLayout();
             // 
             // btnVoltar
@@ -70,7 +71,7 @@
             btnNovoCadastro.ForeColor = Color.Black;
             btnNovoCadastro.Location = new Point(12, 396);
             btnNovoCadastro.Name = "btnNovoCadastro";
-            btnNovoCadastro.Size = new Size(196, 42);
+            btnNovoCadastro.Size = new Size(181, 42);
             btnNovoCadastro.TabIndex = 22;
             btnNovoCadastro.Text = "Novo Cadastro";
             btnNovoCadastro.TextColor = Color.Black;
@@ -78,69 +79,94 @@
             // 
             // lblNome
             // 
-            lblNome.AutoSize = true;
+            lblNome.BorderStyle = BorderStyle.FixedSingle;
             lblNome.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblNome.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNome.Location = new Point(12, 95);
+            lblNome.Location = new Point(12, 75);
             lblNome.Name = "lblNome";
-            lblNome.Size = new Size(66, 25);
+            lblNome.Size = new Size(114, 30);
             lblNome.TabIndex = 27;
             lblNome.Text = "Nome";
+            lblNome.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblValor
             // 
-            lblValor.AutoSize = true;
+            lblValor.BorderStyle = BorderStyle.FixedSingle;
             lblValor.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(400, 95);
+            lblValor.Location = new Point(439, 75);
             lblValor.Name = "lblValor";
-            lblValor.Size = new Size(59, 25);
+            lblValor.Size = new Size(107, 30);
             lblValor.TabIndex = 28;
             lblValor.Text = "Valor";
+            lblValor.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblQuantidade
             // 
-            lblQuantidade.AutoSize = true;
+            lblQuantidade.BorderStyle = BorderStyle.FixedSingle;
             lblQuantidade.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblQuantidade.ForeColor = Color.FromArgb(63, 136, 254);
-            lblQuantidade.Location = new Point(248, 95);
+            lblQuantidade.Location = new Point(289, 75);
             lblQuantidade.Name = "lblQuantidade";
-            lblQuantidade.Size = new Size(116, 25);
+            lblQuantidade.Size = new Size(144, 30);
             lblQuantidade.TabIndex = 29;
             lblQuantidade.Text = "Quantidade";
+            lblQuantidade.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblFornecedor
             // 
-            lblFornecedor.AutoSize = true;
+            lblFornecedor.BorderStyle = BorderStyle.FixedSingle;
             lblFornecedor.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblFornecedor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblFornecedor.Location = new Point(107, 95);
+            lblFornecedor.Location = new Point(132, 75);
             lblFornecedor.Name = "lblFornecedor";
-            lblFornecedor.Size = new Size(115, 25);
+            lblFornecedor.Size = new Size(151, 30);
             lblFornecedor.TabIndex = 30;
             lblFornecedor.Text = "Fornecedor";
+            lblFornecedor.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblVencimento
             // 
-            lblVencimento.AutoSize = true;
+            lblVencimento.BorderStyle = BorderStyle.FixedSingle;
             lblVencimento.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblVencimento.ForeColor = Color.FromArgb(63, 136, 254);
-            lblVencimento.Location = new Point(505, 95);
+            lblVencimento.Location = new Point(552, 75);
             lblVencimento.Name = "lblVencimento";
-            lblVencimento.Size = new Size(118, 25);
+            lblVencimento.Size = new Size(130, 30);
             lblVencimento.TabIndex = 31;
             lblVencimento.Text = "Vencimento";
+            lblVencimento.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblEditar
             // 
-            lblEditar.AutoSize = true;
+            lblEditar.BorderStyle = BorderStyle.FixedSingle;
             lblEditar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEditar.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEditar.Location = new Point(688, 95);
+            lblEditar.Location = new Point(688, 75);
             lblEditar.Name = "lblEditar";
-            lblEditar.Size = new Size(64, 25);
+            lblEditar.Size = new Size(108, 30);
             lblEditar.TabIndex = 32;
             lblEditar.Text = "Editar";
+            lblEditar.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // btnSalvar
+            // 
+            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnSalvar.BorderRadius = 19;
+            btnSalvar.BorderSize = 2;
+            btnSalvar.FlatAppearance.BorderSize = 0;
+            btnSalvar.FlatStyle = FlatStyle.Flat;
+            btnSalvar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalvar.ForeColor = Color.Black;
+            btnSalvar.Location = new Point(208, 396);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(121, 42);
+            btnSalvar.TabIndex = 33;
+            btnSalvar.Text = "Salvar";
+            btnSalvar.TextColor = Color.Black;
+            btnSalvar.UseVisualStyleBackColor = false;
             // 
             // ListaDeProdutos
             // 
@@ -148,6 +174,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(btnSalvar);
             Controls.Add(lblEditar);
             Controls.Add(lblVencimento);
             Controls.Add(lblFornecedor);
@@ -160,7 +187,6 @@
             Name = "ListaDeProdutos";
             Text = "ListaDeProdutos";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -173,5 +199,6 @@
         private Label lblFornecedor;
         private Label lblVencimento;
         private Label lblEditar;
+        private WiLBiT.WiLBiTButton2 btnSalvar;
     }
 }

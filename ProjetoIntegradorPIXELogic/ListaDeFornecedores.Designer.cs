@@ -35,124 +35,161 @@
             lblCEP = new Label();
             lblEndereço = new Label();
             lblNome = new Label();
-            label8 = new Label();
             lblCNPJ = new Label();
+            btnVoltar = new WiLBiT.WiLBiTButton2();
+            btnNovoCadastro = new WiLBiT.WiLBiTButton2();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             SuspendLayout();
             // 
             // lblTelefone
             // 
-            lblTelefone.AutoSize = true;
+            lblTelefone.BorderStyle = BorderStyle.FixedSingle;
             lblTelefone.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblTelefone.ForeColor = Color.FromArgb(63, 136, 254);
-            lblTelefone.Location = new Point(210, 47);
+            lblTelefone.Location = new Point(192, 65);
             lblTelefone.Name = "lblTelefone";
-            lblTelefone.Size = new Size(84, 25);
+            lblTelefone.Size = new Size(103, 30);
             lblTelefone.TabIndex = 15;
             lblTelefone.Text = "Telefone";
+            lblTelefone.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblCidade
             // 
-            lblCidade.AutoSize = true;
+            lblCidade.BorderStyle = BorderStyle.FixedSingle;
             lblCidade.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblCidade.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCidade.Location = new Point(603, 47);
+            lblCidade.Location = new Point(620, 65);
             lblCidade.Name = "lblCidade";
-            lblCidade.Size = new Size(71, 25);
+            lblCidade.Size = new Size(89, 30);
             lblCidade.TabIndex = 14;
             lblCidade.Text = "Cidade";
+            lblCidade.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblNumero
             // 
-            lblNumero.AutoSize = true;
+            lblNumero.BorderStyle = BorderStyle.FixedSingle;
             lblNumero.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblNumero.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNumero.Location = new Point(488, 47);
+            lblNumero.Location = new Point(387, 65);
             lblNumero.Name = "lblNumero";
-            lblNumero.Size = new Size(83, 25);
+            lblNumero.Size = new Size(104, 30);
             lblNumero.TabIndex = 13;
             lblNumero.Text = "Numero";
+            lblNumero.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblEditar
             // 
-            lblEditar.AutoSize = true;
+            lblEditar.BorderStyle = BorderStyle.FixedSingle;
             lblEditar.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblEditar.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEditar.Location = new Point(715, 47);
+            lblEditar.Location = new Point(715, 65);
             lblEditar.Name = "lblEditar";
-            lblEditar.Size = new Size(62, 25);
+            lblEditar.Size = new Size(80, 30);
             lblEditar.TabIndex = 12;
             lblEditar.Text = "Editar";
+            lblEditar.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblCEP
             // 
-            lblCEP.AutoSize = true;
+            lblCEP.BorderStyle = BorderStyle.FixedSingle;
             lblCEP.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblCEP.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCEP.Location = new Point(407, 47);
+            lblCEP.Location = new Point(301, 65);
             lblCEP.Name = "lblCEP";
-            lblCEP.Size = new Size(45, 25);
+            lblCEP.Size = new Size(80, 30);
             lblCEP.TabIndex = 11;
             lblCEP.Text = "CEP";
+            lblCEP.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblEndereço
             // 
-            lblEndereço.AutoSize = true;
+            lblEndereço.BorderStyle = BorderStyle.FixedSingle;
             lblEndereço.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblEndereço.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEndereço.Location = new Point(107, 47);
+            lblEndereço.Location = new Point(497, 65);
             lblEndereço.Name = "lblEndereço";
-            lblEndereço.Size = new Size(91, 25);
+            lblEndereço.Size = new Size(117, 30);
             lblEndereço.TabIndex = 10;
             lblEndereço.Text = "Endereço";
+            lblEndereço.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblNome
             // 
-            lblNome.AutoSize = true;
+            lblNome.BorderStyle = BorderStyle.FixedSingle;
             lblNome.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblNome.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNome.Location = new Point(25, 47);
+            lblNome.Location = new Point(15, 65);
             lblNome.Name = "lblNome";
-            lblNome.Size = new Size(65, 25);
+            lblNome.Size = new Size(80, 30);
             lblNome.TabIndex = 9;
             lblNome.Text = "Nome";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.ForeColor = Color.FromArgb(63, 136, 254);
-            label8.Location = new Point(365, 215);
-            label8.Name = "label8";
-            label8.Size = new Size(0, 21);
-            label8.TabIndex = 16;
+            lblNome.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblCNPJ
             // 
-            lblCNPJ.AutoSize = true;
+            lblCNPJ.BorderStyle = BorderStyle.FixedSingle;
             lblCNPJ.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblCNPJ.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCNPJ.Location = new Point(319, 47);
+            lblCNPJ.Location = new Point(101, 65);
             lblCNPJ.Name = "lblCNPJ";
-            lblCNPJ.Size = new Size(57, 25);
+            lblCNPJ.Size = new Size(85, 30);
             lblCNPJ.TabIndex = 17;
             lblCNPJ.Text = "CNPJ";
+            lblCNPJ.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // btnVoltar
+            // 
+            btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnVoltar.BorderRadius = 19;
+            btnVoltar.BorderSize = 2;
+            btnVoltar.FlatAppearance.BorderSize = 0;
+            btnVoltar.FlatStyle = FlatStyle.Flat;
+            btnVoltar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVoltar.ForeColor = Color.Black;
+            btnVoltar.Location = new Point(671, 12);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new Size(117, 39);
+            btnVoltar.TabIndex = 27;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.TextColor = Color.Black;
+            btnVoltar.UseVisualStyleBackColor = false;
+            // 
+            // btnNovoCadastro
+            // 
+            btnNovoCadastro.BackColor = Color.FromArgb(72, 116, 245);
+            btnNovoCadastro.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnNovoCadastro.BorderColor = Color.FromArgb(0, 242, 254);
+            btnNovoCadastro.BorderRadius = 18;
+            btnNovoCadastro.BorderSize = 2;
+            btnNovoCadastro.FlatAppearance.BorderSize = 0;
+            btnNovoCadastro.FlatStyle = FlatStyle.Flat;
+            btnNovoCadastro.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNovoCadastro.ForeColor = Color.Black;
+            btnNovoCadastro.Location = new Point(15, 399);
+            btnNovoCadastro.Name = "btnNovoCadastro";
+            btnNovoCadastro.Size = new Size(176, 39);
+            btnNovoCadastro.TabIndex = 28;
+            btnNovoCadastro.Text = "Novo Cadastro";
+            btnNovoCadastro.TextColor = Color.Black;
+            btnNovoCadastro.UseVisualStyleBackColor = false;
             // 
             // btnSalvar
             // 
             btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 19;
+            btnSalvar.BorderRadius = 18;
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalvar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(25, 398);
+            btnSalvar.Location = new Point(205, 399);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(150, 40);
-            btnSalvar.TabIndex = 18;
+            btnSalvar.Size = new Size(112, 39);
+            btnSalvar.TabIndex = 29;
             btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
@@ -164,8 +201,9 @@
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
             Controls.Add(btnSalvar);
+            Controls.Add(btnNovoCadastro);
+            Controls.Add(btnVoltar);
             Controls.Add(lblCNPJ);
-            Controls.Add(label8);
             Controls.Add(lblTelefone);
             Controls.Add(lblCidade);
             Controls.Add(lblNumero);
@@ -177,7 +215,6 @@
             Name = "ListaDeFornecedores";
             Text = "ListaDeFornecedores";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -189,8 +226,9 @@
         private Label lblCEP;
         private Label lblEndereço;
         private Label lblNome;
-        private Label label8;
         private Label lblCNPJ;
+        private WiLBiT.WiLBiTButton2 btnVoltar;
+        private WiLBiT.WiLBiTButton2 btnNovoCadastro;
         private WiLBiT.WiLBiTButton2 btnSalvar;
     }
 }
