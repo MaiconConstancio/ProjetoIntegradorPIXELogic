@@ -53,7 +53,7 @@
             btnEntraEmContato.BackColor = Color.FromArgb(18, 184, 238);
             btnEntraEmContato.BackgroundColor = Color.FromArgb(18, 184, 238);
             btnEntraEmContato.BorderColor = Color.FromArgb(192, 255, 255);
-            btnEntraEmContato.BorderRadius = 18;
+            btnEntraEmContato.BorderRadius = 14;
             btnEntraEmContato.BorderSize = 2;
             btnEntraEmContato.FlatAppearance.BorderSize = 0;
             btnEntraEmContato.FlatStyle = FlatStyle.Flat;
@@ -105,7 +105,7 @@
             btnVoltar.BackColor = Color.FromArgb(18, 184, 238);
             btnVoltar.BackgroundColor = Color.FromArgb(18, 184, 238);
             btnVoltar.BorderColor = Color.FromArgb(192, 255, 255);
-            btnVoltar.BorderRadius = 18;
+            btnVoltar.BorderRadius = 14;
             btnVoltar.BorderSize = 2;
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
@@ -115,7 +115,7 @@
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(94, 36);
             btnVoltar.TabIndex = 78;
-            btnVoltar.Text = "VOLTAR";
+            btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
             // 

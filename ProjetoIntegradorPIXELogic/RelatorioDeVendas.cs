@@ -23,7 +23,7 @@ namespace ProjetoIntegradorPIXELogic
         private void RelatorioDeVendas_Load(object sender, EventArgs e)
         {
 
-           
+
 
         }
 
