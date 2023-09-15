@@ -64,7 +64,7 @@ namespace ProjetoIntegradorPIXELogic
 
         private void txtNomeDoCliente_TextChanged(object sender, EventArgs e)
         {
-            txtNomeDoCliente.Text;
+            
 
 
         }
