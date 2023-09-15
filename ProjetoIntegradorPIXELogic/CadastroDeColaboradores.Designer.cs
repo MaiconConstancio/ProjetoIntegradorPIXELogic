@@ -137,6 +137,7 @@
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // LogoComoWallpaper
             // 
@@ -229,7 +230,7 @@
         private Label lblCargo;
         private Label lblLogin;
         private Label lblSenha;
-        private WiLBiT.WiLBiTButton2 btnVoltar;
+        public static WiLBiT.WiLBiTButton2 btnVoltar;
         private PictureBox LogoComoWallpaper;
         private TextBox txtNome;
         private TextBox txtCargo;

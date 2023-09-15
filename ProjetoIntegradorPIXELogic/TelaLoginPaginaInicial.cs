@@ -104,11 +104,24 @@ namespace ProjetoIntegradorPIXELogic
         private void lblNãotemconta_Click(object sender, EventArgs e)
         {
 
-            RodaTodosForms.panel1.Controls.Clear();
-            CadastroDeColaboradores colaboradores = new CadastroDeColaboradores();
-            colaboradores.TopLevel = false;
-            RodaTodosForms.panel1.Controls.Add(colaboradores);
-            colaboradores.Show();
+            if (Conexao.executaQuery("select * from usuario where primeiro_acesso = true").Rows.Count > 0)
+            {
+
+
+                MessageBox.Show("Não é possivel criar uma conta de colaboradores por aqui, consulte um superior", "Cadastro principal já efetuado!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+            else
+            {
+
+                RodaTodosForms.panel1.Controls.Clear();
+                NovoCadastroDeEmpresas novoCadastro = new NovoCadastroDeEmpresas();
+                novoCadastro.TopLevel = false;
+                RodaTodosForms.panel1.Controls.Add(novoCadastro);
+                novoCadastro.Show();
+
+            }
 
         }
 

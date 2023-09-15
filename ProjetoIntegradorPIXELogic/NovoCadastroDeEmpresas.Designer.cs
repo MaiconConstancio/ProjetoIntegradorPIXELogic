@@ -33,12 +33,10 @@
             lblCadastroDeNovasConta = new Label();
             txtEmpresa = new TextBox();
             txtNome = new TextBox();
-            txtEmail = new TextBox();
             txtLogin = new TextBox();
             txtSenha = new TextBox();
             lblNome = new Label();
             lblEmpresa = new Label();
-            lblEmail = new Label();
             lblLogin = new Label();
             lblSenha = new Label();
             btnCancelar = new WiLBiT.WiLBiTButton2();
@@ -86,20 +84,11 @@
             txtNome.Size = new Size(259, 23);
             txtNome.TabIndex = 38;
             // 
-            // txtEmail
-            // 
-            txtEmail.BackColor = Color.FromArgb(53, 81, 142);
-            txtEmail.BorderStyle = BorderStyle.FixedSingle;
-            txtEmail.Location = new Point(271, 253);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(259, 23);
-            txtEmail.TabIndex = 39;
-            // 
             // txtLogin
             // 
             txtLogin.BackColor = Color.FromArgb(53, 81, 142);
             txtLogin.BorderStyle = BorderStyle.FixedSingle;
-            txtLogin.Location = new Point(271, 307);
+            txtLogin.Location = new Point(271, 253);
             txtLogin.Name = "txtLogin";
             txtLogin.Size = new Size(259, 23);
             txtLogin.TabIndex = 40;
@@ -108,7 +97,7 @@
             // 
             txtSenha.BackColor = Color.FromArgb(53, 81, 142);
             txtSenha.BorderStyle = BorderStyle.FixedSingle;
-            txtSenha.Location = new Point(271, 361);
+            txtSenha.Location = new Point(271, 307);
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(259, 23);
             txtSenha.TabIndex = 41;
@@ -135,24 +124,12 @@
             lblEmpresa.TabIndex = 43;
             lblEmpresa.Text = "Empresa";
             // 
-            // lblEmail
-            // 
-            lblEmail.AutoSize = true;
-            lblEmail.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblEmail.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEmail.Location = new Point(371, 225);
-            lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(59, 25);
-            lblEmail.TabIndex = 44;
-            lblEmail.Text = "Email";
-            lblEmail.Click += label2_Click;
-            // 
             // lblLogin
             // 
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
-            lblLogin.Location = new Point(369, 279);
+            lblLogin.Location = new Point(369, 225);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(63, 25);
             lblLogin.TabIndex = 45;
@@ -163,7 +140,7 @@
             lblSenha.AutoSize = true;
             lblSenha.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
-            lblSenha.Location = new Point(367, 333);
+            lblSenha.Location = new Point(367, 279);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(66, 25);
             lblSenha.TabIndex = 46;
@@ -207,6 +184,7 @@
             btnCadastrar.Text = "CADASTRAR";
             btnCadastrar.TextColor = Color.Black;
             btnCadastrar.UseVisualStyleBackColor = false;
+            btnCadastrar.Click += btnCadastrar_Click;
             // 
             // LogoComoWallpaper
             // 
@@ -229,12 +207,10 @@
             Controls.Add(btnCancelar);
             Controls.Add(lblSenha);
             Controls.Add(lblLogin);
-            Controls.Add(lblEmail);
             Controls.Add(lblEmpresa);
             Controls.Add(lblNome);
             Controls.Add(txtSenha);
             Controls.Add(txtLogin);
-            Controls.Add(txtEmail);
             Controls.Add(txtNome);
             Controls.Add(txtEmpresa);
             Controls.Add(lblCadastroDeNovasConta);
@@ -256,12 +232,10 @@
         private Label lblCadastroDeNovasConta;
         private TextBox txtEmpresa;
         private TextBox txtNome;
-        private TextBox txtEmail;
         private TextBox txtLogin;
         private TextBox txtSenha;
         private Label lblNome;
         private Label lblEmpresa;
-        private Label lblEmail;
         private Label lblLogin;
         private Label lblSenha;
         private WiLBiT.WiLBiTButton2 btnCancelar;
