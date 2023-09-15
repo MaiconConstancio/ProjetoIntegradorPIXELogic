@@ -80,7 +80,7 @@ namespace ProjetoIntegradorPIXELogic
                 if (Funcoes.existe("produtos", "nome", cmbProduto) == true)
                 {
 
-                    if (MessageBox.Show("Tem certeza que deseja cadastrar dois produtos identicos ?","Produto já existente!",MessageBoxButtons.YesNo,
+                    if (MessageBox.Show("Tem certeza que deseja cadastrar dois produtos identicos ?", "Produto já existente!", MessageBoxButtons.YesNo,
                         MessageBoxIcon.Information) == DialogResult.Yes)
                     {
 
