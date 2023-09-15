@@ -28,22 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             btnNovoCadastro = new WiLBiT.WiLBiTButton2();
             btnVoltar = new WiLBiT.WiLBiTButton2();
             panel1 = new Panel();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 14F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor = Color.Cyan;
-            label1.Location = new Point(639, 414);
-            label1.Name = "label1";
-            label1.Size = new Size(17, 25);
-            label1.TabIndex = 35;
-            label1.Text = " ";
             // 
             // btnNovoCadastro
             // 
@@ -101,7 +89,6 @@
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(btnVoltar);
-            Controls.Add(label1);
             Controls.Add(btnNovoCadastro);
             FormBorderStyle = FormBorderStyle.None;
             Name = "GerenciamentoDeClientes";
@@ -112,8 +99,6 @@
         }
 
         #endregion
-
-        private Label label1;
         private Label lblEscolhaSeusColaboradoresESuasCredenciais;
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private WiLBiT.WiLBiTButton2 btnNovoCadastro;
