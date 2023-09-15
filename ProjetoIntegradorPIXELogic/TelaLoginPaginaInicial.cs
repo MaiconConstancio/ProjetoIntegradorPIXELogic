@@ -26,7 +26,7 @@ namespace ProjetoIntegradorPIXELogic
         private void btnEntra_Click(object sender, EventArgs e)
         {
 
-            if (Funcoes.campoVazio("Login", txtLogin) == false && Funcoes.campoVazio("Senha",txtSenha) == false)
+            if (Funcoes.campoVazio("Login", txtLogin) == false && Funcoes.campoVazio("Senha", txtSenha) == false)
             {
 
                 if (Funcoes.existe("usuario", "login", txtLogin) == true)
