@@ -208,12 +208,12 @@ namespace ProjetoIntegradorPIXELogic
 
             }
 
-            /*if (Conexao.executaQuery("select * from funcoes where nome = 'função de relatorio_serviços' and habilitado_nao = true;").Rows.Count > 0)
-            {*/
+            if (Conexao.executaQuery("select * from funcoes where nome = 'função de relatorio_serviços' and habilitado_nao = true;").Rows.Count > 0)
+            {
 
+                checkBox1.Checked = true;
 
-
-            /*}*/
+            }
 
 
             if (Conexao.executaQuery("select * from funcoes where nome = 'função de suporte' and habilitado_nao = true;").Rows.Count > 0)
