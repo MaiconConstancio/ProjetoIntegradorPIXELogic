@@ -96,7 +96,7 @@ namespace ProjetoIntegradorPIXELogic
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
-              
+
             RodaTodosForms.panel1.Controls.Clear();
             ListaDeColaboradores listaDeColaboradores = new ListaDeColaboradores();
             listaDeColaboradores.TopLevel = false;

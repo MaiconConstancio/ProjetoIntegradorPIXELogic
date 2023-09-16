@@ -146,6 +146,7 @@
             btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // lblNomeDoCliente
             // 
@@ -176,6 +177,7 @@
             btnNovoServico.Text = "Novo serviço";
             btnNovoServico.TextColor = Color.Black;
             btnNovoServico.UseVisualStyleBackColor = false;
+            btnNovoServico.Click += btnNovoServico_Click;
             // 
             // btnVoltar
             // 
@@ -195,6 +197,7 @@
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // txtNomeDoCliente
             // 

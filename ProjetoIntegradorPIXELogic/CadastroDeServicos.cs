@@ -28,5 +28,64 @@ namespace ProjetoIntegradorPIXELogic
             lblValor.Parent = LogoComoWallpaper;
             lblValor.BackColor = Color.Transparent;
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+
+            RodaTodosForms.panel1.Controls.Clear();
+            OrcamentoDeServicos orcamentoDeServicos = new OrcamentoDeServicos();
+            orcamentoDeServicos.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(orcamentoDeServicos);
+            orcamentoDeServicos.Show();
+
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+
+            if (Funcoes.campoVazio("Nome do serviço", txtNomeDoServico) == false && Funcoes.campoVazio("Valor", maskValor) == false)
+            {
+
+                if (MessageBox.Show("já existe um serviço cadastrado com este nome, deseja continuar ?","Serviço já cadastrado",
+                    MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+
+                    if (MessageBox.Show($"Nome do serviço: {txtNomeDoServico.Text}\n\n" +
+                                    $"Valor: {maskValor.Text}\n\n",
+                                    "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
+                    {
+
+                        string query = $"insert into usuario (nome_servico,valor) values " +
+                            $"('{txtNomeDoServico.Text}','{maskValor.Text}');";
+                        Conexao.executaQuery(query);
+
+                        txtNomeDoServico.Clear();
+                        maskValor.Text = "";
+
+                    }
+
+                    return;
+
+                }
+
+                if (MessageBox.Show($"Nome do serviço: {txtNomeDoServico.Text}\n\n" +
+                                    $"Valor: {maskValor.Text}\n\n",
+                                    "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
+                {
+
+                    string query = $"insert into usuario (nome_servico,valor) values " +
+                        $"('{txtNomeDoServico.Text}','{maskValor.Text}');";
+                    Conexao.executaQuery(query);
+
+                    txtNomeDoServico.Clear();
+                    maskValor.Text = "";
+
+                }
+
+            }
+
+        }
     }
 }

@@ -36,6 +36,7 @@
             btnVoltar = new WiLBiT.WiLBiTButton2();
             btnImprimir = new WiLBiT.WiLBiTButton2();
             btnSalvar = new WiLBiT.WiLBiTButton2();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -154,12 +155,21 @@
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            panel1.AutoSize = true;
+            panel1.Location = new Point(18, 134);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(818, 11);
+            panel1.TabIndex = 37;
+            // 
             // EmissaoRelatorioFinanceiroProdutos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(839, 450);
+            Controls.Add(panel1);
             Controls.Add(btnSalvar);
             Controls.Add(btnImprimir);
             Controls.Add(btnVoltar);
@@ -174,6 +184,7 @@
             Load += EmissaoRelatorioFinanceiroProdutos_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -186,5 +197,6 @@
         private WiLBiT.WiLBiTButton2 btnVoltar;
         private WiLBiT.WiLBiTButton2 btnImprimir;
         private WiLBiT.WiLBiTButton2 btnSalvar;
+        private Panel panel1;
     }
 }

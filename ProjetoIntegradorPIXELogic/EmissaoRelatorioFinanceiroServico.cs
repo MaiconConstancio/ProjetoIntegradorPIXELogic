@@ -31,5 +31,22 @@ namespace ProjetoIntegradorPIXELogic
             sagaoPrincipal.Show();
 
         }
+
+        private void EmissaoRelatorioFinanceiroservico_Load(object sender, EventArgs e)
+        {
+
+            foreach (DataRow row in Conexao.executaQuery("select * from orcamentos;").Rows)
+            {
+
+                PalcoEmissaoRelatorioFinanceiroServicos palcoListaDeProdutos = new PalcoEmissaoRelatorioFinanceiroServicos(row["servico"].ToString(), row["nome_cliente"].ToString(), row["valor"].ToString());
+
+                palcoListaDeProdutos.TopLevel = false;
+                panel1.Controls.Add(palcoListaDeProdutos);
+                palcoListaDeProdutos.Location = new Point(0, 0 + panel1.Height);
+                palcoListaDeProdutos.Show();
+
+            }
+
+        }
     }
 }
