@@ -39,5 +39,83 @@ namespace ProjetoIntegradorPIXELogic
             lblVencimento.BackColor = Color.Transparent;
             //---------------------------FIM do Setor do Designer------------------------------------
         }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+
+            if (Funcoes.campoVazio("Nome", txtNome) == false && Funcoes.campoVazio("Fornecedor", txtFornecedor) == false &&
+                Funcoes.campoVazio("Quantidade", txtQuantidade) == false && Funcoes.campoVazio("Valor", maskValor) == false &&
+                Funcoes.campoVazio("", maskVencimento) == false)
+            {
+
+                if (Conexao.executaQuery($"select * from produtos where nome = '{txtNome.Text}' and fornecedor = '{txtFornecedor.Text}'").Rows.Count > 0)
+                {
+
+                    if (MessageBox.Show("Este fornecedor já está associado a este item.", "Fornecedor e produto duplicado!", MessageBoxButtons.YesNo, MessageBoxIcon.Information)
+                        == DialogResult.Yes)
+                    {
+
+                        if (MessageBox.Show($"Nome: {txtNome.Text}\n\n" +
+                           $"Fornecedor: {txtFornecedor.Text}\n\n" +
+                           $"Quantidade: {txtQuantidade.Text}\n\n" +
+                           $"Valor: {maskValor.Text}\n\n" +
+                           $"Vencimento: {maskVencimento.Text}",
+                           "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
+                        {
+
+                            string query = $"insert into produtos (nome,fornecedor,quantidade,valor,vencimento) values " +
+                                $"('{txtNome.Text}','{txtFornecedor.Text}','{txtQuantidade.Text}','{maskValor.Text}','{maskVencimento.Text}');";
+                            Conexao.executaQuery(query);
+
+                            txtNome.Clear();
+                            txtFornecedor.Clear();
+                            txtQuantidade.Clear();
+                            maskValor.Text = "";
+                            maskVencimento.Text = "";
+
+                        }
+
+                    }
+
+                    return;
+
+                }
+
+                if (MessageBox.Show($"Nome: {txtNome.Text}\n\n" +
+                           $"Fornecedor: {txtFornecedor.Text}\n\n" +
+                           $"Quantidade: {txtQuantidade.Text}\n\n" +
+                           $"Valor: {maskValor.Text}\n\n" +
+                           $"Vencimento: {maskVencimento.Text}",
+                           "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
+                {
+
+                    string query = $"insert into produtos (nome,fornecedor,quantidade,valor,vencimento) values " +
+                        $"('{txtNome.Text}','{txtFornecedor.Text}','{txtQuantidade.Text}','{maskValor.Text}','{maskVencimento.Text}');";
+                    Conexao.executaQuery(query);
+
+                    txtNome.Clear();
+                    txtFornecedor.Clear();
+                    txtQuantidade.Clear();
+                    maskValor.Text = "";
+                    maskVencimento.Text = "";
+
+                }
+
+            }
+
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+
+            /*RodaTodosForms.panel1.Controls.Clear();
+            ListaDeProdutos listaDeProdutos = new ListaDeProdutos();
+            listaDeProdutos.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(listaDeProdutos);
+            listaDeProdutos.Show();*/
+
+        }
     }
 }

@@ -37,6 +37,7 @@
             lblVencimento = new Label();
             lblEditar = new Label();
             btnSalvar = new WiLBiT.WiLBiTButton2();
+            panel1 = new Panel();
             SuspendLayout();
             // 
             // btnVoltar
@@ -77,6 +78,7 @@
             btnNovoCadastro.Text = "Novo Cadastro";
             btnNovoCadastro.TextColor = Color.Black;
             btnNovoCadastro.UseVisualStyleBackColor = false;
+            btnNovoCadastro.Click += btnNovoCadastro_Click;
             // 
             // lblNome
             // 
@@ -169,12 +171,21 @@
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            panel1.AutoSize = true;
+            panel1.Location = new Point(12, 108);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(784, 10);
+            panel1.TabIndex = 34;
+            // 
             // ListaDeProdutos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
             Controls.Add(btnSalvar);
             Controls.Add(lblEditar);
             Controls.Add(lblVencimento);
@@ -187,7 +198,9 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "ListaDeProdutos";
             Text = "ListaDeProdutos";
+            Load += ListaDeProdutos_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -201,5 +214,6 @@
         private Label lblVencimento;
         private Label lblEditar;
         private WiLBiT.WiLBiTButton2 btnSalvar;
+        private Panel panel1;
     }
 }

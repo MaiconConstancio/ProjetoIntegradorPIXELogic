@@ -25,6 +25,38 @@ namespace ProjetoIntegradorPIXELogic
             selecionaQualCadastro.TopLevel = false;
             RodaTodosForms.panel1.Controls.Add(selecionaQualCadastro);
             selecionaQualCadastro.Show();
+            
+        }
+
+        private void ListaDeProdutos_Load(object sender, EventArgs e)
+        {
+
+
+
+            foreach (DataRow row in Conexao.executaQuery("select * from produtos;").Rows)
+            {
+
+                RodaTodosForms.panel1.Controls.Clear();
+                PalcoListaDeProdutos palcoListaDeProdutos = new PalcoListaDeProdutos(row["nome"].ToString(), row["fornecedor"].ToString(), row["quantidade"].ToString(),
+                                                                                     row["valor"].ToString(), row["vencimento"].ToString());
+
+                palcoListaDeProdutos.TopLevel = false;
+                RodaTodosForms.panel1.Controls.Add(palcoListaDeProdutos);
+                palcoListaDeProdutos.Show();
+
+            }
+
+        }
+
+        private void btnNovoCadastro_Click(object sender, EventArgs e)
+        {
+
+            RodaTodosForms.panel1.Controls.Clear();
+            CadastroDeProdutos cadastroDeProdutos = new CadastroDeProdutos();
+            cadastroDeProdutos.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(cadastroDeProdutos);
+            cadastroDeProdutos.Show();
+
         }
     }
 }
