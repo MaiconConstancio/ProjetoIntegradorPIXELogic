@@ -20,11 +20,11 @@ namespace ProjetoIntegradorPIXELogic
         private void GerenciamentoDeClientes_Load(object sender, EventArgs e)
         {
 
-            foreach (DataRow row in Conexao.executaQuery("select * from clientes").Rows)
+            foreach (DataRow row in Conexao.executaQuery("select * from clientes;").Rows)
             {
 
-                PalcoDaLista palcoDaLista = new PalcoDaLista(row["nome"].ToString(), row["endereco"].ToString(), row["cpf"].ToString(),
-                                                             row["telefone"].ToString(), row["cep"].ToString(), row["cidade"].ToString());
+                PalcoGerenciamentoDeClientes palcoDaLista = new PalcoGerenciamentoDeClientes(row["nome"].ToString(), row["endereco"].ToString(), row["cpf"].ToString(),
+                                                             row["telefone"].ToString(), row["cep"].ToString(), row["cidade"].ToString(), row["numero"].ToString());
 
                 palcoDaLista.TopLevel = false;
                 panel1.Controls.Add(palcoDaLista);

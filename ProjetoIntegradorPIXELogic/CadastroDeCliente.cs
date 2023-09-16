@@ -55,10 +55,10 @@ namespace ProjetoIntegradorPIXELogic
                 if (Funcoes.existe("clientes", "nome", txtCliente) == false)
                 {
 
-                    if (Funcoes.existeINT("clientes", "telefone", maskTelefone) == false)
+                    if (Funcoes.existe("clientes", "telefone", maskTelefone) == false)
                     {
 
-                        if (Funcoes.existeINT("clientes", "CPF", maskCPF) == false)
+                        if (Funcoes.existe("clientes", "CPF", maskCPF) == false)
                         {
 
                             if (MessageBox.Show($"Nome: {txtCliente.Text}\n\n" +
@@ -72,8 +72,8 @@ namespace ProjetoIntegradorPIXELogic
 
                             {
 
-                                string query = $"insert into clientes (nome,endereco,telefone,cpf,cep,cidade) values " +
-                                    $"('{txtCliente.Text}','{txtEndereco.Text}','{maskTelefone.Text}','{maskCPF.Text}','{maskCEP.Text}','{txtCidade.Text}');";
+                                string query = $"insert into clientes (nome,endereco,cpf,telefone,cep,cidade,numero) values " +
+                                    $"('{txtCliente.Text}','{txtEndereco.Text}','{maskCPF.Text}','{maskTelefone.Text}','{maskCEP.Text}','{txtCidade.Text}','{maskNumero.Text}');";
                                 Conexao.executaQuery(query);
 
                                 txtCliente.Clear();
