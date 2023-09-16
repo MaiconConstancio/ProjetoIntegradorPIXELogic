@@ -55,10 +55,10 @@ namespace ProjetoIntegradorPIXELogic
                 if (Funcoes.existe("clientes", "nome", txtCliente) == false)
                 {
 
-                    if (Funcoes.existe("clientes", "telefone", maskTelefone) == false)
+                    if (Funcoes.existeINT("clientes", "telefone", maskTelefone) == false)
                     {
 
-                        if (Funcoes.existe("clientes", "CPF", maskCPF) == false)
+                        if (Funcoes.existeINT("clientes", "CPF", maskCPF) == false)
                         {
 
                             if (MessageBox.Show($"Nome: {txtCliente.Text}\n\n" +
