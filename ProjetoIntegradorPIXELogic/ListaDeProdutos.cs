@@ -36,12 +36,15 @@ namespace ProjetoIntegradorPIXELogic
             foreach (DataRow row in Conexao.executaQuery("select * from produtos;").Rows)
             {
 
-                RodaTodosForms.panel1.Controls.Clear();
+                string data = row["vencimento"].ToString().Split(' ')[0];
+
+
                 PalcoListaDeProdutos palcoListaDeProdutos = new PalcoListaDeProdutos(row["nome"].ToString(), row["fornecedor"].ToString(), row["quantidade"].ToString(),
-                                                                                     row["valor"].ToString(), row["vencimento"].ToString());
+                                                                                     row["valor"].ToString(), data);
 
                 palcoListaDeProdutos.TopLevel = false;
-                RodaTodosForms.panel1.Controls.Add(palcoListaDeProdutos);
+                panel1.Controls.Add(palcoListaDeProdutos);
+                palcoListaDeProdutos.Location = new Point(0, 0 + panel1.Height);
                 palcoListaDeProdutos.Show();
 
             }

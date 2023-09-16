@@ -38,6 +38,7 @@ namespace ProjetoIntegradorPIXELogic
             lblVencimento.Parent = LogoComoWallpaper;
             lblVencimento.BackColor = Color.Transparent;
             //---------------------------FIM do Setor do Designer------------------------------------
+
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)
@@ -64,8 +65,14 @@ namespace ProjetoIntegradorPIXELogic
 
                         {
 
+                            int dia = int.Parse(maskVencimento.Text.Split('/')[0]);
+                            int mes = int.Parse(maskVencimento.Text.Split('/')[1]);
+                            int ano = int.Parse(maskVencimento.Text.Split('/')[2]);
+
+                            MessageBox.Show($"{ano}-{mes}-{dia}");
+
                             string query = $"insert into produtos (nome,fornecedor,quantidade,valor,vencimento) values " +
-                                $"('{txtNome.Text}','{txtFornecedor.Text}','{txtQuantidade.Text}','{maskValor.Text}','{maskVencimento.Text}');";
+                                $"('{txtNome.Text}','{txtFornecedor.Text}','{txtQuantidade.Text}','{maskValor}','{ano}-{mes}-{dia}');";
                             Conexao.executaQuery(query);
 
                             txtNome.Clear();
@@ -91,8 +98,12 @@ namespace ProjetoIntegradorPIXELogic
 
                 {
 
+                    string dia = maskVencimento.Text.Split('/')[0];
+                    string mes = maskVencimento.Text.Split('/')[1];
+                    string ano = maskVencimento.Text.Split('/')[2];
+
                     string query = $"insert into produtos (nome,fornecedor,quantidade,valor,vencimento) values " +
-                        $"('{txtNome.Text}','{txtFornecedor.Text}','{txtQuantidade.Text}','{maskValor.Text}','{maskVencimento.Text}');";
+                        $"('{txtNome.Text}','{txtFornecedor.Text}','{txtQuantidade.Text}','{maskValor.Text}','{ano}-{mes}-{dia}');";
                     Conexao.executaQuery(query);
 
                     txtNome.Clear();
@@ -110,11 +121,11 @@ namespace ProjetoIntegradorPIXELogic
         private void btnVoltar_Click(object sender, EventArgs e)
         {
 
-            /*RodaTodosForms.panel1.Controls.Clear();
+            RodaTodosForms.panel1.Controls.Clear();
             ListaDeProdutos listaDeProdutos = new ListaDeProdutos();
             listaDeProdutos.TopLevel = false;
             RodaTodosForms.panel1.Controls.Add(listaDeProdutos);
-            listaDeProdutos.Show();*/
+            listaDeProdutos.Show();
 
         }
     }
