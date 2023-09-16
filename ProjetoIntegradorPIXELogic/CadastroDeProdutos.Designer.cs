@@ -64,6 +64,7 @@
             btnSalvar.Text = "SALVAR";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnVoltar
             // 
@@ -83,6 +84,7 @@
             btnVoltar.Text = "VOLTAR";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
+            btnVoltar.Click += btnVoltar_Click;
             // 
             // lblNome
             // 
@@ -215,7 +217,7 @@
             maskVencimento.Size = new Size(183, 29);
             maskVencimento.TabIndex = 71;
             // 
-            // CadastroDeProutos
+            // CadastroDeProdutos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -236,7 +238,7 @@
             Controls.Add(btnSalvar);
             Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
-            Name = "CadastroDeProutos";
+            Name = "CadastroDeProdutos";
             Text = "CadastroDeProutos";
             Load += CadastroDeProutos_Load;
             ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
