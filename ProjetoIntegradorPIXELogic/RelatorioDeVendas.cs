@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlX.XDevAPI.Relational;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace ProjetoIntegradorPIXELogic
 {
@@ -24,31 +26,13 @@ namespace ProjetoIntegradorPIXELogic
         {
 
 
-
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
-            while (true)
-            {
 
-                foreach (DataRow row in Conexao.executaQuery($"select * from vendas where nome_cliente = '{txtNomeDoCliente.Text}';").Rows)
-                {
 
-                    PalcoRelatorioDeVendas palcoRelatorioDeVendas = new PalcoRelatorioDeVendas(row["produto"].ToString(), row["quantidade"].ToString(), row["nome_cliente"].ToString(),
-                                                                                               row["metodo_pagamento"].ToString(), row["valor"].ToString());
-
-                    palcoRelatorioDeVendas.TopLevel = false;
-                    panel1.Controls.Add(palcoRelatorioDeVendas);
-                    palcoRelatorioDeVendas.Show();
-                    valor_total = decimal.Parse(row["valor"].ToString());
-
-                }
-
-                lblTotal.Text = valor_total.ToString();
-
-            }
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)
@@ -64,9 +48,21 @@ namespace ProjetoIntegradorPIXELogic
 
         private void txtNomeDoCliente_TextChanged(object sender, EventArgs e)
         {
-            
 
+            panel1.Controls.Clear();
+
+            foreach (DataRow row in Conexao.executaQuery($"select * from vendas where nome_cliente = '{txtNomeDoCliente.Text}'").Rows)
+            {
+
+                PalcoRelatorioDeVendas palcoRelatorioDeVendas = new PalcoRelatorioDeVendas(row["produto"].ToString(), row["quantidade"].ToString(),
+                    row["nome_cliente"].ToString(), row["metodo_pagamento"].ToString(), row["valor"].ToString());
+                palcoRelatorioDeVendas.TopLevel = false;
+                panel1.Controls.Add(palcoRelatorioDeVendas);
+                palcoRelatorioDeVendas.Show();
+
+            }
 
         }
+
     }
 }

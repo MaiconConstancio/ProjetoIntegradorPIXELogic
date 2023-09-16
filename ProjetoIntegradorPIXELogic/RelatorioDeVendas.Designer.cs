@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RelatorioDeVendas));
             imgLogoEscrita = new PictureBox();
             txtNomeDoCliente = new TextBox();
@@ -45,6 +46,7 @@
             lblTotal = new Label();
             lblMetodoSelecionado = new Label();
             panel1 = new Panel();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).BeginInit();
             SuspendLayout();
             // 
@@ -244,11 +246,13 @@
             // 
             // panel1
             // 
+            panel1.AutoSize = true;
             panel1.Location = new Point(2, 191);
             panel1.Name = "panel1";
-            panel1.Size = new Size(796, 14);
+            panel1.Size = new Size(796, 10);
             panel1.TabIndex = 41;
             panel1.Paint += panel1_Paint;
+ 
             // 
             // RelatorioDeVendas
             // 
@@ -284,7 +288,6 @@
         #endregion
 
         private PictureBox imgLogoEscrita;
-        private TextBox txtNomeDoCliente;
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private WiLBiT.WiLBiTButton2 btnImprimir;
         private WiLBiT.WiLBiTButton2 btnCancelar;
@@ -299,5 +302,7 @@
         private Label lblTotal;
         private Label lblMetodoSelecionado;
         private Panel panel1;
+        private System.Windows.Forms.Timer timer1;
+        public TextBox txtNomeDoCliente;
     }
 }

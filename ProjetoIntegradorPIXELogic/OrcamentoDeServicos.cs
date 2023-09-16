@@ -63,5 +63,104 @@ namespace ProjetoIntegradorPIXELogic
         private void txtEndereco_TextChanged(object sender, EventArgs e)
         {
         }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            if (Funcoes.campoVazio("Nome do cliente", txtNomeDoCliente) == false && Funcoes.campoVazio("Serviço", cmbServico) == false &&
+                Funcoes.campoVazio("Valor", maskValor) == false && Funcoes.campoVazio("Endereço", txtEndereco) == false &&
+                Funcoes.campoVazio("Funcionario", txtFuncionario) == false && Funcoes.campoVazio("Estimativa de entrega", maskPrazoDeEntrega) == false)
+            {
+
+                if (Conexao.executaQuery($"select * from orcamentos where nome_cliente = '{txtNomeDoCliente.Text}' and servico = '{cmbServico}'").Rows.Count > 0)
+                {
+
+                    if (MessageBox.Show("Este cliente já está cadastrado com este mesmo item, deseja cadastrar novamente ?","Registro duplicado",
+                        MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
+                    {
+
+                        if (MessageBox.Show($"Nome do cliente: {txtNomeDoCliente.Text}\n\n" +
+                                    $"Serviço: {cmbServico.Text}\n\n" +
+                                    $"Valor: {maskValor.Text}\n\n" +
+                                    $"Endereço: {txtEndereco.Text}\n\n" +
+                                    $"Funcionario: {txtFuncionario.Text}\n\n" +
+                                    $"Estimativa de entrega: {maskPrazoDeEntrega.Text}",
+                                    "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
+                        {
+
+                            string query = $"insert into orcamentos (servico,valor,nome_cliente,endereco,funcionario,estimativa_entrega) values " +
+                                $"('{cmbServico.Text}','{maskValor.Text}','{txtNomeDoCliente.Text}','{txtEndereco.Text}','{txtFuncionario.Text}','{maskPrazoDeEntrega.Text}');";
+                            Conexao.executaQuery(query);
+
+                            txtNomeDoCliente.Clear();
+                            txtEndereco.Clear();
+                            txtFuncionario.Clear();
+                            maskValor.Text = "";
+                            maskPrazoDeEntrega.Text = "";
+                            cmbServico.Text = "";
+                            txtCidade.Clear();
+
+                        }
+
+                    }
+
+                    return;
+
+                }
+
+                if (MessageBox.Show($"Nome do cliente: {txtNomeDoCliente.Text}\n\n" +
+                                    $"Serviço: {cmbServico.Text}\n\n" +
+                                    $"Valor: {maskValor.Text}\n\n" +
+                                    $"Endereço: {txtEndereco.Text}\n\n" +
+                                    $"Funcionario: {txtFuncionario.Text}\n\n" +
+                                    $"Estimativa de entrega: {maskPrazoDeEntrega.Text}",
+                                    "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
+                {
+
+                    string dia = maskPrazoDeEntrega.Text.Split('/')[0];
+                    string mes = maskPrazoDeEntrega.Text.Split('/')[1];
+                    string ano = maskPrazoDeEntrega.Text.Split('/')[2];
+
+                    string query = $"insert into orcamentos (servico,valor,nome_cliente,endereco,funcionario,estimativa_entrega) values " +
+                        $"('{cmbServico.Text}','{maskValor.Text}','{txtNomeDoCliente.Text}','{txtEndereco.Text}','{txtFuncionario.Text}','{maskPrazoDeEntrega.Text}');";
+                    Conexao.executaQuery(query);
+
+                    txtNomeDoCliente.Clear();
+                    txtEndereco.Clear();
+                    txtFuncionario.Clear();
+                    maskValor.Text = "";
+                    maskPrazoDeEntrega.Text = "";
+                    cmbServico.Text = "";
+                    txtCidade.Clear();
+
+                }
+
+            }
+
+
+        }
+
+        private void btnNovoServico_Click(object sender, EventArgs e)
+        {
+
+            RodaTodosForms.panel1.Controls.Clear();
+            CadastroDeServicos cadastroDeServicos = new CadastroDeServicos();
+            cadastroDeServicos.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(cadastroDeServicos);
+            cadastroDeServicos.Show();
+
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+
+            RodaTodosForms.panel1.Controls.Clear();
+            GerenciamentoDeServicos gerenciamentoDeServicos = new GerenciamentoDeServicos();
+            gerenciamentoDeServicos.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(gerenciamentoDeServicos);
+            gerenciamentoDeServicos.Show();
+
+        }
     }
 }

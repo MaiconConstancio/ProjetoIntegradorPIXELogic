@@ -230,11 +230,11 @@
         private Label lblCargo;
         private Label lblLogin;
         private Label lblSenha;
-        public static WiLBiT.WiLBiTButton2 btnVoltar;
         private PictureBox LogoComoWallpaper;
         private TextBox txtNome;
         private TextBox txtCargo;
         private TextBox txtLogin;
         private TextBox txtSenha;
+        public WiLBiT.WiLBiTButton2 btnVoltar;
     }
 }

@@ -36,9 +36,9 @@
             lblEndereco = new Label();
             lblValor = new Label();
             lblServico = new Label();
-            lblStatus = new Label();
             lblEditar = new Label();
             btnSalvar = new WiLBiT.WiLBiTButton2();
+            panel1 = new Panel();
             SuspendLayout();
             // 
             // btnVoltar
@@ -52,7 +52,7 @@
             btnVoltar.FlatStyle = FlatStyle.Flat;
             btnVoltar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             btnVoltar.ForeColor = Color.Black;
-            btnVoltar.Location = new Point(726, 12);
+            btnVoltar.Location = new Point(678, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(117, 39);
             btnVoltar.TabIndex = 20;
@@ -79,15 +79,16 @@
             btnNovoOrcamento.Text = "Novo Orçamento";
             btnNovoOrcamento.TextColor = Color.Black;
             btnNovoOrcamento.UseVisualStyleBackColor = false;
+            btnNovoOrcamento.Click += btnNovoOrcamento_Click;
             // 
             // lblCliente
             // 
             lblCliente.BorderStyle = BorderStyle.FixedSingle;
             lblCliente.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblCliente.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCliente.Location = new Point(10, 70);
+            lblCliente.Location = new Point(12, 70);
             lblCliente.Name = "lblCliente";
-            lblCliente.Size = new Size(80, 30);
+            lblCliente.Size = new Size(97, 30);
             lblCliente.TabIndex = 26;
             lblCliente.Text = "Cliente";
             lblCliente.TextAlign = ContentAlignment.MiddleCenter;
@@ -97,7 +98,7 @@
             lblEstimativaDeEntrega.BorderStyle = BorderStyle.FixedSingle;
             lblEstimativaDeEntrega.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEstimativaDeEntrega.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEstimativaDeEntrega.Location = new Point(493, 70);
+            lblEstimativaDeEntrega.Location = new Point(512, 70);
             lblEstimativaDeEntrega.Name = "lblEstimativaDeEntrega";
             lblEstimativaDeEntrega.Size = new Size(207, 30);
             lblEstimativaDeEntrega.TabIndex = 27;
@@ -109,19 +110,20 @@
             lblFuncionario.BorderStyle = BorderStyle.FixedSingle;
             lblFuncionario.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblFuncionario.ForeColor = Color.FromArgb(63, 136, 254);
-            lblFuncionario.Location = new Point(364, 70);
+            lblFuncionario.Location = new Point(383, 70);
             lblFuncionario.Name = "lblFuncionario";
             lblFuncionario.Size = new Size(123, 30);
             lblFuncionario.TabIndex = 28;
             lblFuncionario.Text = "Funcionario";
             lblFuncionario.TextAlign = ContentAlignment.MiddleCenter;
+            lblFuncionario.Click += lblFuncionario_Click;
             // 
             // lblEndereco
             // 
             lblEndereco.BorderStyle = BorderStyle.FixedSingle;
             lblEndereco.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEndereco.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEndereco.Location = new Point(258, 70);
+            lblEndereco.Location = new Point(277, 70);
             lblEndereco.Name = "lblEndereco";
             lblEndereco.Size = new Size(100, 30);
             lblEndereco.TabIndex = 29;
@@ -133,7 +135,7 @@
             lblValor.BorderStyle = BorderStyle.FixedSingle;
             lblValor.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(182, 70);
+            lblValor.Location = new Point(201, 70);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(70, 30);
             lblValor.TabIndex = 30;
@@ -145,31 +147,19 @@
             lblServico.BorderStyle = BorderStyle.FixedSingle;
             lblServico.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblServico.ForeColor = Color.FromArgb(63, 136, 254);
-            lblServico.Location = new Point(96, 70);
+            lblServico.Location = new Point(115, 70);
             lblServico.Name = "lblServico";
             lblServico.Size = new Size(80, 30);
             lblServico.TabIndex = 31;
             lblServico.Text = "Serviço";
             lblServico.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblStatus
-            // 
-            lblStatus.BorderStyle = BorderStyle.FixedSingle;
-            lblStatus.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblStatus.ForeColor = Color.FromArgb(63, 136, 254);
-            lblStatus.Location = new Point(706, 70);
-            lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(70, 30);
-            lblStatus.TabIndex = 32;
-            lblStatus.Text = "Status";
-            lblStatus.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // lblEditar
             // 
             lblEditar.BorderStyle = BorderStyle.FixedSingle;
             lblEditar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEditar.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEditar.Location = new Point(782, 70);
+            lblEditar.Location = new Point(725, 70);
             lblEditar.Name = "lblEditar";
             lblEditar.Size = new Size(70, 30);
             lblEditar.TabIndex = 33;
@@ -195,15 +185,24 @@
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            panel1.AutoSize = true;
+            panel1.Location = new Point(12, 103);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(783, 10);
+            panel1.TabIndex = 35;
+            // 
             // GerenciamentoDeServicos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoScroll = true;
             BackColor = Color.FromArgb(16, 25, 56);
-            ClientSize = new Size(855, 450);
+            ClientSize = new Size(807, 450);
+            Controls.Add(panel1);
             Controls.Add(btnSalvar);
             Controls.Add(lblEditar);
-            Controls.Add(lblStatus);
             Controls.Add(lblServico);
             Controls.Add(lblValor);
             Controls.Add(lblEndereco);
@@ -217,6 +216,7 @@
             Text = "GerenciamentoDeServicos";
             Load += GerenciamentoDeServicos_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -229,8 +229,8 @@
         private Label lblEndereco;
         private Label lblValor;
         private Label lblServico;
-        private Label lblStatus;
         private Label lblEditar;
         private WiLBiT.WiLBiTButton2 btnSalvar;
+        private Panel panel1;
     }
 }

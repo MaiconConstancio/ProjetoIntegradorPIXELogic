@@ -36,6 +36,7 @@
             lblCliente = new Label();
             lblValor = new Label();
             lblAcao = new Label();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).BeginInit();
             SuspendLayout();
             // 
@@ -154,12 +155,21 @@
             lblAcao.Text = "Ação";
             lblAcao.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // panel1
+            // 
+            panel1.AutoSize = true;
+            panel1.Location = new Point(12, 125);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(818, 10);
+            panel1.TabIndex = 31;
+            // 
             // EmissaoRelatorioFinanceiroservico
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(838, 450);
+            Controls.Add(panel1);
             Controls.Add(lblAcao);
             Controls.Add(lblValor);
             Controls.Add(lblCliente);
@@ -171,8 +181,10 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "EmissaoRelatorioFinanceiroservico";
             Text = "Form1";
+            Load += EmissaoRelatorioFinanceiroservico_Load;
             ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -185,5 +197,6 @@
         private Label lblCliente;
         private Label lblValor;
         private Label lblAcao;
+        private Panel panel1;
     }
 }

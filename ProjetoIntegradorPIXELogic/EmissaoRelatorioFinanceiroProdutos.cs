@@ -20,6 +20,18 @@ namespace ProjetoIntegradorPIXELogic
         private void EmissaoRelatorioFinanceiroProdutos_Load(object sender, EventArgs e)
         {
 
+            foreach (DataRow row in Conexao.executaQuery("select * from vendas;").Rows)
+            {
+
+                PalcoEmissaoRelatorioFinanceiroProduto palcoListaDeProdutos = new PalcoEmissaoRelatorioFinanceiroProduto(row["produto"].ToString(), row["nome_cliente"].ToString(), row["valor"].ToString());
+
+                palcoListaDeProdutos.TopLevel = false;
+                panel1.Controls.Add(palcoListaDeProdutos);
+                palcoListaDeProdutos.Location = new Point(0, 0 + panel1.Height);
+                palcoListaDeProdutos.Show();
+
+            }
+
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
