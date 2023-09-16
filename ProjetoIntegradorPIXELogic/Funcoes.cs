@@ -53,7 +53,7 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
-        public static Boolean existeString(string tabela, string campo, MaskedTextBox mask)
+        public static Boolean existe(string tabela, string campo, MaskedTextBox mask)
         {
 
             string query = $"select {campo} from {tabela} where {campo} = '{mask.Text}';";

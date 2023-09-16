@@ -199,9 +199,10 @@
             // 
             // panel1
             // 
+            panel1.AutoSize = true;
             panel1.Location = new Point(12, 119);
             panel1.Name = "panel1";
-            panel1.Size = new Size(776, 26);
+            panel1.Size = new Size(776, 10);
             panel1.TabIndex = 46;
             // 
             // GerenciamentoDeClientes
@@ -227,6 +228,7 @@
             Text = "    ";
             Load += GerenciamentoDeClientes_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
