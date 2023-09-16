@@ -205,6 +205,7 @@
             maskValor.Name = "maskValor";
             maskValor.Size = new Size(196, 29);
             maskValor.TabIndex = 70;
+            maskValor.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // maskVencimento
             // 
@@ -216,6 +217,7 @@
             maskVencimento.Name = "maskVencimento";
             maskVencimento.Size = new Size(183, 29);
             maskVencimento.TabIndex = 71;
+            maskVencimento.Text = "20012005";
             // 
             // CadastroDeProdutos
             // 
