@@ -41,12 +41,12 @@
             LogoComoWallpaper = new PictureBox();
             txtFornecedor = new TextBox();
             txtEndereço = new TextBox();
-            maskedTelefone = new MaskedTextBox();
             maskedCNJP = new MaskedTextBox();
             maskedCEP = new MaskedTextBox();
             maskedNumero = new MaskedTextBox();
             txtCidade = new TextBox();
             btnVoltar = new WiLBiT.WiLBiTButton2();
+            maskedTelefone = new MaskedTextBox();
             ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
@@ -169,6 +169,7 @@
             LogoComoWallpaper.Size = new Size(800, 450);
             LogoComoWallpaper.TabIndex = 39;
             LogoComoWallpaper.TabStop = false;
+            LogoComoWallpaper.Click += LogoComoWallpaper_Click;
             // 
             // txtFornecedor
             // 
@@ -192,49 +193,44 @@
             txtEndereço.Size = new Size(263, 29);
             txtEndereço.TabIndex = 41;
             // 
-            // maskedTelefone
-            // 
-            maskedTelefone.BackColor = Color.FromArgb(53, 81, 142);
-            maskedTelefone.BorderStyle = BorderStyle.FixedSingle;
-            maskedTelefone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskedTelefone.Location = new Point(285, 156);
-            maskedTelefone.Mask = "(99) 00000-0000";
-            maskedTelefone.Name = "maskedTelefone";
-            maskedTelefone.Size = new Size(231, 29);
-            maskedTelefone.TabIndex = 43;
-            // 
             // maskedCNJP
             // 
             maskedCNJP.BackColor = Color.FromArgb(53, 81, 142);
             maskedCNJP.BorderStyle = BorderStyle.FixedSingle;
+            maskedCNJP.CutCopyMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             maskedCNJP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskedCNJP.Location = new Point(293, 191);
             maskedCNJP.Mask = "00.000.000/0001-00";
             maskedCNJP.Name = "maskedCNJP";
             maskedCNJP.Size = new Size(214, 29);
             maskedCNJP.TabIndex = 44;
+            maskedCNJP.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // maskedCEP
             // 
             maskedCEP.BackColor = Color.FromArgb(53, 81, 142);
             maskedCEP.BorderStyle = BorderStyle.FixedSingle;
+            maskedCEP.CutCopyMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             maskedCEP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskedCEP.Location = new Point(316, 226);
             maskedCEP.Mask = "00000-00";
             maskedCEP.Name = "maskedCEP";
             maskedCEP.Size = new Size(168, 29);
             maskedCEP.TabIndex = 45;
+            maskedCEP.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // maskedNumero
             // 
             maskedNumero.BackColor = Color.FromArgb(53, 81, 142);
             maskedNumero.BorderStyle = BorderStyle.FixedSingle;
+            maskedNumero.CutCopyMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             maskedNumero.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskedNumero.Location = new Point(305, 261);
             maskedNumero.Mask = "0000";
             maskedNumero.Name = "maskedNumero";
             maskedNumero.Size = new Size(191, 29);
             maskedNumero.TabIndex = 46;
+            maskedNumero.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // txtCidade
             // 
@@ -266,6 +262,19 @@
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
             btnVoltar.Click += btnVoltar_Click;
+            // 
+            // maskedTelefone
+            // 
+            maskedTelefone.BackColor = Color.FromArgb(53, 81, 142);
+            maskedTelefone.BorderStyle = BorderStyle.FixedSingle;
+            maskedTelefone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskedTelefone.Location = new Point(285, 156);
+            maskedTelefone.Mask = "(99) 00000-0000";
+            maskedTelefone.Name = "maskedTelefone";
+            maskedTelefone.Size = new Size(231, 29);
+            maskedTelefone.TabIndex = 43;
+            maskedTelefone.Text = "78690879870";
+            maskedTelefone.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // CadastroDeFornecedores
             // 
@@ -314,11 +323,11 @@
         private PictureBox LogoComoWallpaper;
         private TextBox txtFornecedor;
         private TextBox txtEndereço;
-        private MaskedTextBox maskedTelefone;
         private MaskedTextBox maskedCNJP;
         private MaskedTextBox maskedCEP;
         private MaskedTextBox maskedNumero;
         private TextBox txtCidade;
         private WiLBiT.WiLBiTButton2 btnVoltar;
+        private MaskedTextBox maskedTelefone;
     }
 }

@@ -31,10 +31,10 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
-        public static Boolean existe(string tabela, string campo, MaskedTextBox mask)
+        public static Boolean existeINT(string tabela, string campo, MaskedTextBox mask)
         {
 
-            string query = $"select {campo} from {tabela} where {campo} = '{mask.Text}';";
+            string query = $"select {campo} from {tabela} where {campo} = {mask.Text};";
 
             if (Conexao.executaQuery(query).Rows.Count > 0)
             {
@@ -53,7 +53,28 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
-        public static Boolean existe(string tabela, string campo, ComboBox combo)
+        public static Boolean existeString(string tabela, string campo, MaskedTextBox mask)
+        {
+
+            string query = $"select {campo} from {tabela} where {campo} = '{mask.Text}';";
+
+            if (Conexao.executaQuery(query).Rows.Count > 0)
+            {
+
+                return true;
+
+            }
+
+            else
+            {
+
+                return false;
+
+            }
+
+        }
+
+            public static Boolean existe(string tabela, string campo, ComboBox combo)
         {
 
             string query = $"select {campo} from {tabela} where {campo} = '{combo.Text}';";
