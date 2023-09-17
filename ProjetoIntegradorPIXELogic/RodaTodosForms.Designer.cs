@@ -46,15 +46,16 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
             MaximizeBox = false;
             MinimizeBox = false;
             Name = "RodaTodosForms";
+            Text = "PIXELogic - SUA VISÃO, NOSSA PROGRAMAÇÃO";
+            Load += RodaTodosForms_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
-        public static Panel panel1;
+        public Panel panel1;
     }
 }

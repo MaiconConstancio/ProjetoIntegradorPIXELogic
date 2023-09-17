@@ -34,10 +34,14 @@ namespace ProjetoIntegradorPIXELogic
 
         private void btnEntraEmContato_Click(object sender, EventArgs e)
         {
+            string numeroWhatsApp = "+55 17 99173-3578";
+            string mensagemWhatsApp = "Eaiii Conradito, me ajuda pf??";
 
-            
+            string urlWhatsApp = $"https://api.whatsapp.com/send?phone={numeroWhatsApp}&text={Uri.EscapeDataString(mensagemWhatsApp)}";
 
+            System.Diagnostics.Process.Start(urlWhatsApp);
         }
+
 
         private void btnVoltar_Click(object sender, EventArgs e)
         {
