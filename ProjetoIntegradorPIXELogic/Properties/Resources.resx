@@ -136,9 +136,6 @@
   <data name="ESCRITA_SEM_Fundo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ESCRITA_SEM_Fundo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="LOGO_SEM_Fundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\LOGO_SEM_Fundo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ESCRITA_SEM_Fundo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ESCRITA_SEM_Fundo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -151,11 +148,17 @@
   <data name="10OPACIDADELOGODESENHO_SEM_Fundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\10OPACIDADELOGODESENHO_SEM_Fundo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Tela_Login_Objeto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Tela_Login_Objeto1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ESCRITA_SEM_Fundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ESCRITA_SEM_Fundo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ESCRITA_SEM_Fundo10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ESCRITA_SEM_Fundo14.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="LOGO_SEM_Fundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOGO_SEM_Fundo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ESCRITA_SEM_Fundo7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ESCRITA_SEM_Fundo7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,7 +166,7 @@
   <data name="ESCRITA_SEM_Fundo5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ESCRITA_SEM_Fundo18.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Tela_Login_Objeto" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Tela_Login_Objeto1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LOGO_SEM_Fundo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LOGO_SEM_Fundo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -203,6 +203,16 @@ namespace ProjetoIntegradorPIXELogic.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap LOGO_SEM_Fundo2 {
+            get {
+                object obj = ResourceManager.GetObject("LOGO_SEM_Fundo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGODESENHO_SEM_Fundo {
             get {
                 object obj = ResourceManager.GetObject("LOGODESENHO_SEM_Fundo", resourceCulture);

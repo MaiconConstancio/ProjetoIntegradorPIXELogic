@@ -36,6 +36,10 @@
             btnRelatorioProdutos = new Button();
             btnRelatorioServicos = new Button();
             btnSuporte = new Button();
+            lblTempoRestante = new Label();
+            lblTimer = new Label();
+            wilBitRoundedPictureBox21 = new WiLBiT.WiLBiTRoundedPictureBox2();
+            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox21).BeginInit();
             SuspendLayout();
             // 
             // btnSalvar
@@ -127,6 +131,44 @@
             btnSuporte.UseVisualStyleBackColor = true;
             btnSuporte.Click += btnSuporte_Click;
             // 
+            // lblTempoRestante
+            // 
+            lblTempoRestante.AutoSize = true;
+            lblTempoRestante.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTempoRestante.ForeColor = Color.Cyan;
+            lblTempoRestante.Location = new Point(282, 312);
+            lblTempoRestante.Name = "lblTempoRestante";
+            lblTempoRestante.Size = new Size(136, 21);
+            lblTempoRestante.TabIndex = 78;
+            lblTempoRestante.Text = "Tempo Restante:";
+            // 
+            // lblTimer
+            // 
+            lblTimer.AutoSize = true;
+            lblTimer.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTimer.ForeColor = Color.Cyan;
+            lblTimer.Location = new Point(415, 312);
+            lblTimer.Name = "lblTimer";
+            lblTimer.Size = new Size(99, 21);
+            lblTimer.TabIndex = 79;
+            lblTimer.Text = "30d 27h 15s";
+            // 
+            // wilBitRoundedPictureBox21
+            // 
+            wilBitRoundedPictureBox21.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
+            wilBitRoundedPictureBox21.BorderColor = Color.Cyan;
+            wilBitRoundedPictureBox21.BorderColor2 = Color.RoyalBlue;
+            wilBitRoundedPictureBox21.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
+            wilBitRoundedPictureBox21.BorderSize = 2;
+            wilBitRoundedPictureBox21.GradientAngle = 50F;
+            wilBitRoundedPictureBox21.Image = Properties.Resources.LOGO_SEM_Fundo2;
+            wilBitRoundedPictureBox21.Location = new Point(317, 142);
+            wilBitRoundedPictureBox21.Name = "wilBitRoundedPictureBox21";
+            wilBitRoundedPictureBox21.Size = new Size(167, 167);
+            wilBitRoundedPictureBox21.SizeMode = PictureBoxSizeMode.Zoom;
+            wilBitRoundedPictureBox21.TabIndex = 80;
+            wilBitRoundedPictureBox21.TabStop = false;
+            // 
             // SagaoPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -134,12 +176,16 @@
             BackColor = Color.FromArgb(16, 25, 56);
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(800, 450);
+            Controls.Add(wilBitRoundedPictureBox21);
+            Controls.Add(lblTimer);
+            Controls.Add(lblTempoRestante);
             Controls.Add(panel1);
             Controls.Add(lblOrcamentoDeServicos);
             FormBorderStyle = FormBorderStyle.None;
             Name = "SagaoPrincipal";
             Text = "SagaoPrincipal";
             Load += SagaoPrincipal_Load;
+            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox21).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -209,6 +255,8 @@
         private Button btnRelatorioProdutos;
         private Button btnRelatorioServicos;
         private Button btnSuporte;
-
+        private Label lblTempoRestante;
+        private Label lblTimer;
+        private WiLBiT.WiLBiTRoundedPictureBox2 wilBitRoundedPictureBox21;
     }
 }
