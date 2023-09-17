@@ -54,9 +54,9 @@ namespace ProjetoIntegradorPIXELogic
             btnEntra.FlatStyle = FlatStyle.Flat;
             btnEntra.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             btnEntra.ForeColor = Color.Black;
-            btnEntra.Location = new Point(465, 381);
+            btnEntra.Location = new Point(446, 381);
             btnEntra.Name = "btnEntra";
-            btnEntra.Size = new Size(296, 47);
+            btnEntra.Size = new Size(330, 47);
             btnEntra.TabIndex = 3;
             btnEntra.Text = "ENTRAR";
             btnEntra.TextColor = Color.Black;
@@ -68,7 +68,7 @@ namespace ProjetoIntegradorPIXELogic
             lblSenha.AutoSize = true;
             lblSenha.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
-            lblSenha.Location = new Point(458, 282);
+            lblSenha.Location = new Point(439, 275);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(94, 37);
             lblSenha.TabIndex = 4;
@@ -79,7 +79,7 @@ namespace ProjetoIntegradorPIXELogic
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
-            lblLogin.Location = new Point(459, 209);
+            lblLogin.Location = new Point(440, 202);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(89, 37);
             lblLogin.TabIndex = 6;
@@ -102,9 +102,9 @@ namespace ProjetoIntegradorPIXELogic
             txtLogin.BorderStyle = BorderStyle.FixedSingle;
             txtLogin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtLogin.ForeColor = Color.Cyan;
-            txtLogin.Location = new Point(465, 247);
+            txtLogin.Location = new Point(446, 240);
             txtLogin.Name = "txtLogin";
-            txtLogin.Size = new Size(296, 29);
+            txtLogin.Size = new Size(330, 29);
             txtLogin.TabIndex = 8;
             // 
             // txtSenha
@@ -113,9 +113,9 @@ namespace ProjetoIntegradorPIXELogic
             txtSenha.BorderStyle = BorderStyle.FixedSingle;
             txtSenha.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtSenha.ForeColor = Color.Cyan;
-            txtSenha.Location = new Point(465, 319);
+            txtSenha.Location = new Point(446, 312);
             txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(296, 29);
+            txtSenha.Size = new Size(330, 29);
             txtSenha.TabIndex = 9;
             // 
             // lblNãotemconta
@@ -123,7 +123,7 @@ namespace ProjetoIntegradorPIXELogic
             lblNãotemconta.AutoSize = true;
             lblNãotemconta.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point);
             lblNãotemconta.ForeColor = Color.FromArgb(63, 200, 254);
-            lblNãotemconta.Location = new Point(465, 355);
+            lblNãotemconta.Location = new Point(446, 344);
             lblNãotemconta.Name = "lblNãotemconta";
             lblNãotemconta.Size = new Size(224, 19);
             lblNãotemconta.TabIndex = 11;
