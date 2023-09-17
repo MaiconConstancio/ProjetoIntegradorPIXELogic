@@ -20,10 +20,7 @@ namespace ProjetoIntegradorPIXELogic
 
         private void TelaLoginPaginaInicial_Load(object sender, EventArgs e)
         {
-            //---------------------------Setor do Designer-----------------------------------
-            imgLOGOloginPrincipal.Parent = imgWallpaperLoginPrincipal;
-            imgLOGOloginPrincipal.BackColor = Color.Transparent;
-            //---------------------------FIM do Setor do Designer----------------------------
+
         }
 
         private void btnEntra_Click(object sender, EventArgs e)

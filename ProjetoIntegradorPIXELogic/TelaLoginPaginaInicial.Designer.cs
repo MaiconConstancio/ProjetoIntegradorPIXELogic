@@ -39,10 +39,8 @@ namespace ProjetoIntegradorPIXELogic
             imgWallpaperLoginPrincipal = new PictureBox();
             txtLogin = new TextBox();
             txtSenha = new TextBox();
-            imgLOGOloginPrincipal = new PictureBox();
             lblNãotemconta = new Label();
             ((System.ComponentModel.ISupportInitialize)imgWallpaperLoginPrincipal).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)imgLOGOloginPrincipal).BeginInit();
             SuspendLayout();
             // 
             // btnEntra
@@ -90,7 +88,7 @@ namespace ProjetoIntegradorPIXELogic
             // imgWallpaperLoginPrincipal
             // 
             imgWallpaperLoginPrincipal.Dock = DockStyle.Fill;
-            imgWallpaperLoginPrincipal.Image = Properties.Resources.Tela_Login_Objeto;
+            imgWallpaperLoginPrincipal.Image = (System.Drawing.Image)resources.GetObject("imgWallpaperLoginPrincipal.Image");
             imgWallpaperLoginPrincipal.Location = new Point(0, 0);
             imgWallpaperLoginPrincipal.Name = "imgWallpaperLoginPrincipal";
             imgWallpaperLoginPrincipal.Size = new Size(800, 450);
@@ -120,16 +118,6 @@ namespace ProjetoIntegradorPIXELogic
             txtSenha.Size = new Size(296, 29);
             txtSenha.TabIndex = 9;
             // 
-            // imgLOGOloginPrincipal
-            // 
-            imgLOGOloginPrincipal.Image = (System.Drawing.Image)resources.GetObject("imgLOGOloginPrincipal.Image");
-            imgLOGOloginPrincipal.Location = new Point(357, -57);
-            imgLOGOloginPrincipal.Name = "imgLOGOloginPrincipal";
-            imgLOGOloginPrincipal.Size = new Size(431, 327);
-            imgLOGOloginPrincipal.SizeMode = PictureBoxSizeMode.Zoom;
-            imgLOGOloginPrincipal.TabIndex = 10;
-            imgLOGOloginPrincipal.TabStop = false;
-            // 
             // lblNãotemconta
             // 
             lblNãotemconta.AutoSize = true;
@@ -153,7 +141,6 @@ namespace ProjetoIntegradorPIXELogic
             Controls.Add(lblLogin);
             Controls.Add(lblSenha);
             Controls.Add(btnEntra);
-            Controls.Add(imgLOGOloginPrincipal);
             Controls.Add(lblNãotemconta);
             Controls.Add(imgWallpaperLoginPrincipal);
             ForeColor = Color.FromArgb(16, 25, 56);
@@ -163,7 +150,6 @@ namespace ProjetoIntegradorPIXELogic
             TransparencyKey = Color.DimGray;
             Load += TelaLoginPaginaInicial_Load;
             ((System.ComponentModel.ISupportInitialize)imgWallpaperLoginPrincipal).EndInit();
-            ((System.ComponentModel.ISupportInitialize)imgLOGOloginPrincipal).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -175,7 +161,6 @@ namespace ProjetoIntegradorPIXELogic
         private PictureBox imgWallpaperLoginPrincipal;
         private TextBox txtLogin;
         private TextBox txtSenha;
-        private PictureBox imgLOGOloginPrincipal;
         private Label lblNãotemconta;
     }
 }
