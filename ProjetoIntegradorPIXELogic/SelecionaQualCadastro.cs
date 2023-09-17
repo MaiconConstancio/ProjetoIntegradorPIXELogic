@@ -46,10 +46,10 @@ namespace ProjetoIntegradorPIXELogic
 
         private void SelecionaQualCadastro_Load(object sender, EventArgs e)
         {
-            //---------------------------Setor do Designer------------------------------------
+            //---------------------------Setor do Designer-----------------------------------
             lblEscolhaQualCadastroDesejaRealizar.Parent = LogoComoWallpaper;
             lblEscolhaQualCadastroDesejaRealizar.BackColor = Color.Transparent;
-            //---------------------------FIM do Setor do Designer------------------------------------
+            //---------------------------FIM do Setor do Designer----------------------------
         }
 
         private void btnFuncionarios_Click(object sender, EventArgs e)

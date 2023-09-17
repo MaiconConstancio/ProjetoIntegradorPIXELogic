@@ -19,7 +19,7 @@ namespace ProjetoIntegradorPIXELogic
 
         private void OrcamentoDeServicos_Load(object sender, EventArgs e)
         {
-            //---------------------------Setor do Designer------------------------------------
+            //---------------------------Setor do Designer-----------------------------------
             lblOrcamentoDeServicos.Parent = LogoComoWallpaper;
             lblOrcamentoDeServicos.BackColor = Color.Transparent;
 
@@ -43,7 +43,7 @@ namespace ProjetoIntegradorPIXELogic
 
             lblCidade.Parent = LogoComoWallpaper;
             lblCidade.BackColor = Color.Transparent;
-            //---------------------------FIM do Setor do Designer------------------------------------
+            //---------------------------FIM do Setor do Designer----------------------------
         }
 
         private void maskPrazoDeEntrega_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)

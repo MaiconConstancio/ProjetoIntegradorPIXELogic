@@ -19,7 +19,7 @@ namespace ProjetoIntegradorPIXELogic
 
         private void CadastroDeProutos_Load(object sender, EventArgs e)
         {
-            //---------------------------Setor do Designer------------------------------------
+            //---------------------------Setor do Designer-----------------------------------
             lblCadastrodeprodutos.Parent = LogoComoWallpaper;
             lblCadastrodeprodutos.BackColor = Color.Transparent;
 
@@ -37,8 +37,7 @@ namespace ProjetoIntegradorPIXELogic
 
             lblVencimento.Parent = LogoComoWallpaper;
             lblVencimento.BackColor = Color.Transparent;
-            //---------------------------FIM do Setor do Designer------------------------------------
-
+            //---------------------------FIM do Setor do Designer----------------------------
         }
 
         private void btnSalvar_Click(object sender, EventArgs e)

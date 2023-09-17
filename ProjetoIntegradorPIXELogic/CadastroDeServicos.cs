@@ -19,6 +19,7 @@ namespace ProjetoIntegradorPIXELogic
 
         private void CadastroDeServicos_Load(object sender, EventArgs e)
         {
+            //---------------------------Setor do Designer-----------------------------------
             lblCadastrodeServicos.Parent = LogoComoWallpaper;
             lblCadastrodeServicos.BackColor = Color.Transparent;
 
@@ -27,6 +28,7 @@ namespace ProjetoIntegradorPIXELogic
 
             lblValor.Parent = LogoComoWallpaper;
             lblValor.BackColor = Color.Transparent;
+            //---------------------------FIM do Setor do Designer----------------------------
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

@@ -24,7 +24,7 @@ namespace ProjetoIntegradorPIXELogic
 
         private void NovoCadastroDeEmpresas_Load(object sender, EventArgs e)
         {
-            //---------------------------Setor do Designer------------------------------------
+            //---------------------------Setor do Designer-----------------------------------
             lblCadastroDeNovasConta.Parent = LogoComoWallpaper;
             lblCadastroDeNovasConta.BackColor = Color.Transparent;
 
@@ -39,7 +39,7 @@ namespace ProjetoIntegradorPIXELogic
 
             lblSenha.Parent = LogoComoWallpaper;
             lblSenha.BackColor = Color.Transparent;
-            //---------------------------FIM do Setor do Designer------------------------------------
+            //---------------------------FIM do Setor do Designer----------------------------
         }
 
         private void btnCancelar_Click(object sender, EventArgs e)

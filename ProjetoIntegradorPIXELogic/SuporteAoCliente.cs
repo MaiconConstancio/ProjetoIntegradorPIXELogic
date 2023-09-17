@@ -21,7 +21,7 @@ namespace ProjetoIntegradorPIXELogic
 
         private void SuporteAoCliente_Load(object sender, EventArgs e)
         {
-            //---------------------------Setor do Designer------------------------------------
+            //---------------------------Setor do Designer-----------------------------------
             lblSuporteAoCliente.Parent = imgWallpaper;
             lblSuporteAoCliente.BackColor = Color.Transparent;
 
@@ -30,7 +30,7 @@ namespace ProjetoIntegradorPIXELogic
 
             lblHorario.Parent = imgWallpaper;
             lblHorario.BackColor = Color.Transparent;
-            //---------------------------FIM do Setor do Designer------------------------------------
+            //---------------------------FIM do Setor do Designer----------------------------
         }
 
         private void btnEntraEmContato_Click(object sender, EventArgs e)
