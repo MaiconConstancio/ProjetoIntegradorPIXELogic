@@ -60,7 +60,7 @@
             btnVoltar.FlatStyle = FlatStyle.Flat;
             btnVoltar.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
             btnVoltar.ForeColor = Color.Black;
-            btnVoltar.Location = new Point(694, 12);
+            btnVoltar.Location = new Point(684, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(132, 38);
             btnVoltar.TabIndex = 24;
