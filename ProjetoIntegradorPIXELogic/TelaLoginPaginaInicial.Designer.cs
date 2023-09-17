@@ -133,11 +133,11 @@ namespace ProjetoIntegradorPIXELogic
             // lblNãotemconta
             // 
             lblNãotemconta.AutoSize = true;
-            lblNãotemconta.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNãotemconta.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point);
             lblNãotemconta.ForeColor = Color.FromArgb(63, 200, 254);
             lblNãotemconta.Location = new Point(465, 355);
             lblNãotemconta.Name = "lblNãotemconta";
-            lblNãotemconta.Size = new Size(231, 19);
+            lblNãotemconta.Size = new Size(224, 19);
             lblNãotemconta.TabIndex = 11;
             lblNãotemconta.Text = "Não tem uma conta? Clique aqui!";
             lblNãotemconta.Click += lblNãotemconta_Click;
