@@ -12,7 +12,7 @@ namespace ProjetoIntegradorPIXELogic
 {
     public partial class RodaTodosForms : Form
     {
-        public  RodaTodosForms()
+        public RodaTodosForms()
         {
             InitializeComponent();
 
