@@ -44,7 +44,7 @@ namespace ProjetoIntegradorPIXELogic
                             Conexao.executaQuery($"select * from usuario where login = '{txtLogin.Text}' and cargo = 'desenvolvedor';").Rows.Count > 0)
                         {
 
-                            if(Conexao.executaQuery($"Select * from usuario where login = '{txtLogin.Text}' and primeiro_acesso = false;").Rows.Count>0)
+                            if (Conexao.executaQuery($"Select * from usuario where login = '{txtLogin.Text}' and primeiro_acesso = false;").Rows.Count > 0)
                             {
 
                                 RodaTodosForms.panel1.Controls.Clear();
