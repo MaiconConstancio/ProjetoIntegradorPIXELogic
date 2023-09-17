@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -34,12 +35,23 @@ namespace ProjetoIntegradorPIXELogic
 
         private void btnEntraEmContato_Click(object sender, EventArgs e)
         {
-            string numeroWhatsApp = "+55 17 99173-3578";
+            string numeroWhatsApp = "+5517991733578";
             string mensagemWhatsApp = "Eaiii Conradito, me ajuda pf??";
 
             string urlWhatsApp = $"https://api.whatsapp.com/send?phone={numeroWhatsApp}&text={Uri.EscapeDataString(mensagemWhatsApp)}";
-
-            System.Diagnostics.Process.Start(urlWhatsApp);
+            try
+            {
+                ProcessStartInfo psi = new ProcessStartInfo
+                {
+                    FileName = urlWhatsApp,
+                    UseShellExecute = true
+                };
+                Process.Start(psi);
+            }
+            catch (Win32Exception ex)
+            {
+                MessageBox.Show($"Erro ao abrir o WhatsApp: {ex.Message}");
+            }
         }
 
 

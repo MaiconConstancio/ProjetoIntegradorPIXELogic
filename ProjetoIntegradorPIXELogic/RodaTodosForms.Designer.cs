@@ -56,6 +56,6 @@
 
         #endregion
 
-        public Panel panel1;
+        public static Panel panel1;
     }
 }

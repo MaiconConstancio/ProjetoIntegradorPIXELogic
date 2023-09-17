@@ -95,11 +95,11 @@
             lblHorario.AutoSize = true;
             lblHorario.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
             lblHorario.ForeColor = Color.Cyan;
-            lblHorario.Location = new Point(486, 159);
+            lblHorario.Location = new Point(428, 159);
             lblHorario.Name = "lblHorario";
-            lblHorario.Size = new Size(129, 28);
+            lblHorario.Size = new Size(254, 28);
             lblHorario.TabIndex = 77;
-            lblHorario.Text = "8:30 à 19:30";
+            lblHorario.Text = "2:10h às 3:50h da manhã.";
             // 
             // btnVoltar
             // 
