@@ -31,11 +31,11 @@ namespace ProjetoIntegradorPIXELogic
             }
 
 
-            if (Conexao.executaQuery("select * from funcoes where nome = 'função de serviços' and habilitado_nao = true;").Rows.Count > 0 ||
-                Conexao.executaQuery("select * from funcoes where nome = 'função de clientes' and habilitado_nao = true;").Rows.Count > 0 ||
-                Conexao.executaQuery("select * from funcoes where nome = 'função de produtos' and habilitado_nao = true;").Rows.Count > 0 ||
-                Conexao.executaQuery("select * from funcoes where nome = 'função de fornecedores' and habilitado_nao = true;").Rows.Count > 0 ||
-                Conexao.executaQuery("select * from funcoes where nome = 'função de colaboradores' and habilitado_nao = true;").Rows.Count > 0)
+            if (Conexao.executaQuery("select * from funcoes where nome = 'servicos' and habilitado_nao = true;").Rows.Count > 0 ||
+                Conexao.executaQuery("select * from funcoes where nome = 'clientes' and habilitado_nao = true;").Rows.Count > 0 ||
+                Conexao.executaQuery("select * from funcoes where nome = 'produtos' and habilitado_nao = true;").Rows.Count > 0 ||
+                Conexao.executaQuery("select * from funcoes where nome = 'fornecedores' and habilitado_nao = true;").Rows.Count > 0 ||
+                Conexao.executaQuery("select * from funcoes where nome = 'colaboradores' and habilitado_nao = true;").Rows.Count > 0)
             {
 
                 btnCadastros.Location = new Point(0, 0 + panel1.Height);
@@ -43,7 +43,7 @@ namespace ProjetoIntegradorPIXELogic
 
             }
 
-            if (Conexao.executaQuery("select * from funcoes where nome = 'função de vendas' and habilitado_nao = true;").Rows.Count > 0)
+            if (Conexao.executaQuery("select * from funcoes where nome = 'vendas' and habilitado_nao = true;").Rows.Count > 0)
             {
 
                 btnVendas.Location = new Point(0, 0 + panel1.Height);
@@ -51,7 +51,7 @@ namespace ProjetoIntegradorPIXELogic
 
             }
 
-            if (Conexao.executaQuery("select * from funcoes where nome = 'função de relatorio_produtos' and habilitado_nao = true;").Rows.Count > 0)
+            if (Conexao.executaQuery("select * from funcoes where nome = 'relatorio de produtos' and habilitado_nao = true;").Rows.Count > 0)
             {
 
 
@@ -61,7 +61,7 @@ namespace ProjetoIntegradorPIXELogic
 
             }
 
-            if (Conexao.executaQuery("select * from funcoes where nome = 'função de relatorio_serviços' and habilitado_nao = true;").Rows.Count > 0)
+            if (Conexao.executaQuery("select * from funcoes where nome = 'relatorio de servicos' and habilitado_nao = true;").Rows.Count > 0)
             {
 
                 btnRelatorioServicos.Location = new Point(0, 0 + panel1.Height);
@@ -70,7 +70,7 @@ namespace ProjetoIntegradorPIXELogic
             }
 
 
-            if (Conexao.executaQuery("select * from funcoes where nome = 'função de suporte' and habilitado_nao = true;").Rows.Count > 0)
+            if (Conexao.executaQuery("select * from funcoes where nome = 'suporte' and habilitado_nao = true;").Rows.Count > 0)
             {
 
                 btnSuporte.Location = new Point(0, 0 + panel1.Height);
