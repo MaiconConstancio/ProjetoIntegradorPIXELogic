@@ -74,8 +74,8 @@ namespace ProjetoIntegradorPIXELogic
                 if (Conexao.executaQuery($"select * from orcamentos where nome_cliente = '{txtNomeDoCliente.Text}' and servico = '{cmbServico}'").Rows.Count > 0)
                 {
 
-                    if (MessageBox.Show("Este cliente já está cadastrado com este mesmo item, deseja cadastrar novamente ?","Registro duplicado",
-                        MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
+                    if (MessageBox.Show("Este cliente já está cadastrado com este mesmo item, deseja cadastrar novamente ?", "Registro duplicado",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                     {
 
                         if (MessageBox.Show($"Nome do cliente: {txtNomeDoCliente.Text}\n\n" +

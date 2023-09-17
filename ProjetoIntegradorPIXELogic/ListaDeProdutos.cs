@@ -25,7 +25,7 @@ namespace ProjetoIntegradorPIXELogic
             selecionaQualCadastro.TopLevel = false;
             RodaTodosForms.panel1.Controls.Add(selecionaQualCadastro);
             selecionaQualCadastro.Show();
-            
+
         }
 
         private void ListaDeProdutos_Load(object sender, EventArgs e)

@@ -48,8 +48,8 @@ namespace ProjetoIntegradorPIXELogic
             if (Funcoes.campoVazio("Nome do serviço", txtNomeDoServico) == false && Funcoes.campoVazio("Valor", maskValor) == false)
             {
 
-                if (MessageBox.Show("já existe um serviço cadastrado com este nome, deseja continuar ?","Serviço já cadastrado",
-                    MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
+                if (MessageBox.Show("já existe um serviço cadastrado com este nome, deseja continuar ?", "Serviço já cadastrado",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
 
                     if (MessageBox.Show($"Nome do serviço: {txtNomeDoServico.Text}\n\n" +
