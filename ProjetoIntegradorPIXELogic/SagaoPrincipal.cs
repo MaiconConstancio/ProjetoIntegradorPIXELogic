@@ -91,5 +91,10 @@ namespace ProjetoIntegradorPIXELogic
             montagemPrograma.Show();
 
         }
+
+        private void btnCadastrosNovo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
