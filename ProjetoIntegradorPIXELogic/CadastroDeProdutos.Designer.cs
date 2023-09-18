@@ -91,7 +91,7 @@
             lblNome.AutoSize = true;
             lblNome.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblNome.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNome.Location = new Point(186, 115);
+            lblNome.Location = new Point(186, 144);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(90, 32);
             lblNome.TabIndex = 25;
@@ -102,7 +102,7 @@
             lblFornecedor.AutoSize = true;
             lblFornecedor.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblFornecedor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblFornecedor.Location = new Point(98, 165);
+            lblFornecedor.Location = new Point(98, 183);
             lblFornecedor.Name = "lblFornecedor";
             lblFornecedor.Size = new Size(152, 32);
             lblFornecedor.TabIndex = 26;
@@ -113,7 +113,7 @@
             lblQuantidade.AutoSize = true;
             lblQuantidade.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblQuantidade.ForeColor = Color.FromArgb(63, 136, 254);
-            lblQuantidade.Location = new Point(133, 221);
+            lblQuantidade.Location = new Point(133, 222);
             lblQuantidade.Name = "lblQuantidade";
             lblQuantidade.Size = new Size(154, 32);
             lblQuantidade.TabIndex = 27;
@@ -124,7 +124,7 @@
             lblValor.AutoSize = true;
             lblValor.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(219, 271);
+            lblValor.Location = new Point(219, 262);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(81, 32);
             lblValor.TabIndex = 28;
@@ -135,7 +135,7 @@
             lblVencimento.AutoSize = true;
             lblVencimento.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblVencimento.ForeColor = Color.FromArgb(63, 136, 254);
-            lblVencimento.Location = new Point(151, 322);
+            lblVencimento.Location = new Point(151, 300);
             lblVencimento.Name = "lblVencimento";
             lblVencimento.Size = new Size(156, 32);
             lblVencimento.TabIndex = 29;
@@ -146,7 +146,7 @@
             lblCadastrodeprodutos.AutoSize = true;
             lblCadastrodeprodutos.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblCadastrodeprodutos.ForeColor = Color.Cyan;
-            lblCadastrodeprodutos.Location = new Point(252, 49);
+            lblCadastrodeprodutos.Location = new Point(252, 77);
             lblCadastrodeprodutos.Name = "lblCadastrodeprodutos";
             lblCadastrodeprodutos.Size = new Size(296, 37);
             lblCadastrodeprodutos.TabIndex = 30;
@@ -168,7 +168,7 @@
             txtNome.BorderStyle = BorderStyle.FixedSingle;
             txtNome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtNome.ForeColor = Color.Cyan;
-            txtNome.Location = new Point(279, 117);
+            txtNome.Location = new Point(279, 146);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(243, 29);
             txtNome.TabIndex = 65;
@@ -179,7 +179,7 @@
             txtFornecedor.BorderStyle = BorderStyle.FixedSingle;
             txtFornecedor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtFornecedor.ForeColor = Color.Cyan;
-            txtFornecedor.Location = new Point(252, 167);
+            txtFornecedor.Location = new Point(252, 185);
             txtFornecedor.Name = "txtFornecedor";
             txtFornecedor.Size = new Size(296, 29);
             txtFornecedor.TabIndex = 66;
@@ -190,7 +190,7 @@
             txtQuantidade.BorderStyle = BorderStyle.FixedSingle;
             txtQuantidade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtQuantidade.ForeColor = Color.Cyan;
-            txtQuantidade.Location = new Point(290, 223);
+            txtQuantidade.Location = new Point(290, 224);
             txtQuantidade.Name = "txtQuantidade";
             txtQuantidade.Size = new Size(220, 29);
             txtQuantidade.TabIndex = 67;
@@ -201,7 +201,7 @@
             maskValor.BorderStyle = BorderStyle.FixedSingle;
             maskValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskValor.ForeColor = Color.Cyan;
-            maskValor.Location = new Point(302, 272);
+            maskValor.Location = new Point(302, 263);
             maskValor.Mask = "$ 000,00";
             maskValor.Name = "maskValor";
             maskValor.Size = new Size(196, 29);
@@ -214,7 +214,7 @@
             maskVencimento.BorderStyle = BorderStyle.FixedSingle;
             maskVencimento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskVencimento.ForeColor = Color.Cyan;
-            maskVencimento.Location = new Point(309, 323);
+            maskVencimento.Location = new Point(309, 301);
             maskVencimento.Mask = "00/00/0000";
             maskVencimento.Name = "maskVencimento";
             maskVencimento.Size = new Size(183, 29);

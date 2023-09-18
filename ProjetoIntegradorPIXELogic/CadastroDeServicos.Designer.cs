@@ -94,22 +94,22 @@
             // lblNomedoServico
             // 
             lblNomedoServico.AutoSize = true;
-            lblNomedoServico.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNomedoServico.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblNomedoServico.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNomedoServico.Location = new Point(33, 193);
+            lblNomedoServico.Location = new Point(85, 199);
             lblNomedoServico.Name = "lblNomedoServico";
-            lblNomedoServico.Size = new Size(216, 32);
+            lblNomedoServico.Size = new Size(194, 30);
             lblNomedoServico.TabIndex = 18;
             lblNomedoServico.Text = "Nome do serviço:";
             // 
             // lblValor
             // 
             lblValor.AutoSize = true;
-            lblValor.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            lblValor.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(219, 238);
+            lblValor.Location = new Point(256, 243);
             lblValor.Name = "lblValor";
-            lblValor.Size = new Size(81, 32);
+            lblValor.Size = new Size(73, 30);
             lblValor.TabIndex = 19;
             lblValor.Text = "Valor:";
             // 
@@ -119,7 +119,7 @@
             txtNomeDoServico.BorderStyle = BorderStyle.FixedSingle;
             txtNomeDoServico.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtNomeDoServico.ForeColor = Color.Cyan;
-            txtNomeDoServico.Location = new Point(252, 195);
+            txtNomeDoServico.Location = new Point(281, 195);
             txtNomeDoServico.Name = "txtNomeDoServico";
             txtNomeDoServico.Size = new Size(296, 29);
             txtNomeDoServico.TabIndex = 66;
@@ -140,7 +140,7 @@
             maskValor.BorderStyle = BorderStyle.FixedSingle;
             maskValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskValor.ForeColor = Color.Cyan;
-            maskValor.Location = new Point(302, 239);
+            maskValor.Location = new Point(331, 239);
             maskValor.Mask = "$ 000,00";
             maskValor.Name = "maskValor";
             maskValor.Size = new Size(196, 29);

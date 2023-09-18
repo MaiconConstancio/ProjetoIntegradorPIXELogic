@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
             lblAcao = new Label();
             lblValor = new Label();
             lblCliente = new Label();
@@ -37,17 +36,7 @@
             btnImprimir = new WiLBiT.WiLBiTButton2();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             panel1 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(12, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(307, 66);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
             // 
             // lblAcao
             // 
@@ -177,19 +166,15 @@
             Controls.Add(lblCliente);
             Controls.Add(lblValor);
             Controls.Add(lblAcao);
-            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "EmissaoRelatorioFinanceiroProdutos";
             Text = "EmissaoRelatorioFinanceiroProdutos";
             Load += EmissaoRelatorioFinanceiroProdutos_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox pictureBox1;
         private Label lblAcao;
         private Label lblValor;
         private Label lblCliente;

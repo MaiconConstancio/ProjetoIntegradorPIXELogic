@@ -54,66 +54,66 @@
             // lblCidade
             // 
             lblCidade.AutoSize = true;
-            lblCidade.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCidade.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblCidade.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCidade.Location = new Point(175, 321);
+            lblCidade.Location = new Point(219, 330);
             lblCidade.Name = "lblCidade";
-            lblCidade.Size = new Size(113, 37);
+            lblCidade.Size = new Size(91, 30);
             lblCidade.TabIndex = 52;
             lblCidade.Text = "Cidade:";
             // 
             // lblPrazoDeEntrega
             // 
             lblPrazoDeEntrega.AutoSize = true;
-            lblPrazoDeEntrega.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPrazoDeEntrega.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblPrazoDeEntrega.ForeColor = Color.FromArgb(63, 136, 254);
-            lblPrazoDeEntrega.Location = new Point(64, 286);
+            lblPrazoDeEntrega.Location = new Point(133, 294);
             lblPrazoDeEntrega.Name = "lblPrazoDeEntrega";
-            lblPrazoDeEntrega.Size = new Size(243, 37);
+            lblPrazoDeEntrega.Size = new Size(197, 30);
             lblPrazoDeEntrega.TabIndex = 50;
             lblPrazoDeEntrega.Text = "Prazo de entrega:";
             // 
             // lblFuncionario
             // 
             lblFuncionario.AutoSize = true;
-            lblFuncionario.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblFuncionario.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblFuncionario.ForeColor = Color.FromArgb(63, 136, 254);
-            lblFuncionario.Location = new Point(102, 249);
+            lblFuncionario.Location = new Point(160, 257);
             lblFuncionario.Name = "lblFuncionario";
-            lblFuncionario.Size = new Size(175, 37);
+            lblFuncionario.Size = new Size(139, 30);
             lblFuncionario.TabIndex = 48;
             lblFuncionario.Text = "Funcionario:";
             // 
             // lblEndereco
             // 
             lblEndereco.AutoSize = true;
-            lblEndereco.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblEndereco.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblEndereco.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEndereco.Location = new Point(145, 214);
+            lblEndereco.Location = new Point(195, 222);
             lblEndereco.Name = "lblEndereco";
-            lblEndereco.Size = new Size(142, 37);
+            lblEndereco.Size = new Size(115, 30);
             lblEndereco.TabIndex = 46;
             lblEndereco.Text = "Endereço:";
             // 
             // lblValor
             // 
             lblValor.AutoSize = true;
-            lblValor.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblValor.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(209, 177);
+            lblValor.Location = new Point(250, 185);
             lblValor.Name = "lblValor";
-            lblValor.Size = new Size(92, 37);
+            lblValor.Size = new Size(73, 30);
             lblValor.TabIndex = 44;
             lblValor.Text = "Valor:";
             // 
             // lblServico
             // 
             lblServico.AutoSize = true;
-            lblServico.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblServico.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblServico.ForeColor = Color.FromArgb(63, 136, 254);
-            lblServico.Location = new Point(131, 142);
+            lblServico.Location = new Point(178, 149);
             lblServico.Name = "lblServico";
-            lblServico.Size = new Size(119, 37);
+            lblServico.Size = new Size(95, 30);
             lblServico.TabIndex = 42;
             lblServico.Text = "Serviço:";
             // 
@@ -151,11 +151,11 @@
             // lblNomeDoCliente
             // 
             lblNomeDoCliente.AutoSize = true;
-            lblNomeDoCliente.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNomeDoCliente.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblNomeDoCliente.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNomeDoCliente.Location = new Point(36, 104);
+            lblNomeDoCliente.Location = new Point(105, 113);
             lblNomeDoCliente.Name = "lblNomeDoCliente";
-            lblNomeDoCliente.Size = new Size(236, 37);
+            lblNomeDoCliente.Size = new Size(189, 30);
             lblNomeDoCliente.TabIndex = 54;
             lblNomeDoCliente.Text = "Nome do cliente:";
             // 
@@ -205,7 +205,7 @@
             txtNomeDoCliente.BorderStyle = BorderStyle.FixedSingle;
             txtNomeDoCliente.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtNomeDoCliente.ForeColor = Color.Cyan;
-            txtNomeDoCliente.Location = new Point(273, 110);
+            txtNomeDoCliente.Location = new Point(296, 110);
             txtNomeDoCliente.Name = "txtNomeDoCliente";
             txtNomeDoCliente.Size = new Size(254, 29);
             txtNomeDoCliente.TabIndex = 57;
@@ -217,7 +217,7 @@
             cmbServico.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cmbServico.ForeColor = Color.Cyan;
             cmbServico.FormattingEnabled = true;
-            cmbServico.Location = new Point(252, 146);
+            cmbServico.Location = new Point(275, 146);
             cmbServico.Name = "cmbServico";
             cmbServico.Size = new Size(296, 29);
             cmbServico.TabIndex = 58;
@@ -228,7 +228,7 @@
             maskValor.BorderStyle = BorderStyle.FixedSingle;
             maskValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskValor.ForeColor = Color.Cyan;
-            maskValor.Location = new Point(302, 182);
+            maskValor.Location = new Point(325, 182);
             maskValor.Mask = "$ 000,00";
             maskValor.Name = "maskValor";
             maskValor.Size = new Size(196, 29);
@@ -240,7 +240,7 @@
             txtEndereco.BorderStyle = BorderStyle.FixedSingle;
             txtEndereco.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtEndereco.ForeColor = Color.Cyan;
-            txtEndereco.Location = new Point(289, 218);
+            txtEndereco.Location = new Point(312, 218);
             txtEndereco.Name = "txtEndereco";
             txtEndereco.Size = new Size(223, 29);
             txtEndereco.TabIndex = 60;
@@ -252,7 +252,7 @@
             txtFuncionario.BorderStyle = BorderStyle.FixedSingle;
             txtFuncionario.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtFuncionario.ForeColor = Color.Cyan;
-            txtFuncionario.Location = new Point(278, 254);
+            txtFuncionario.Location = new Point(301, 254);
             txtFuncionario.Name = "txtFuncionario";
             txtFuncionario.Size = new Size(245, 29);
             txtFuncionario.TabIndex = 61;
@@ -264,7 +264,7 @@
             txtCidade.BorderStyle = BorderStyle.FixedSingle;
             txtCidade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtCidade.ForeColor = Color.Cyan;
-            txtCidade.Location = new Point(289, 326);
+            txtCidade.Location = new Point(312, 326);
             txtCidade.Name = "txtCidade";
             txtCidade.Size = new Size(223, 29);
             txtCidade.TabIndex = 63;
@@ -287,7 +287,7 @@
             maskPrazoDeEntrega.BorderStyle = BorderStyle.FixedSingle;
             maskPrazoDeEntrega.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskPrazoDeEntrega.ForeColor = Color.Cyan;
-            maskPrazoDeEntrega.Location = new Point(309, 290);
+            maskPrazoDeEntrega.Location = new Point(332, 290);
             maskPrazoDeEntrega.Mask = "00/00/0000";
             maskPrazoDeEntrega.Name = "maskPrazoDeEntrega";
             maskPrazoDeEntrega.Size = new Size(183, 29);

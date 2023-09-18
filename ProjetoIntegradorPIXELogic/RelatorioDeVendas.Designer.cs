@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RelatorioDeVendas));
-            imgLogoEscrita = new PictureBox();
             txtNomeDoCliente = new TextBox();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             btnImprimir = new WiLBiT.WiLBiTButton2();
@@ -47,18 +45,7 @@
             lblMetodoSelecionado = new Label();
             panel1 = new Panel();
             timer1 = new System.Windows.Forms.Timer(components);
-            ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).BeginInit();
             SuspendLayout();
-            // 
-            // imgLogoEscrita
-            // 
-            imgLogoEscrita.Image = (Image)resources.GetObject("imgLogoEscrita.Image");
-            imgLogoEscrita.Location = new Point(12, 12);
-            imgLogoEscrita.Name = "imgLogoEscrita";
-            imgLogoEscrita.Size = new Size(265, 78);
-            imgLogoEscrita.SizeMode = PictureBoxSizeMode.Zoom;
-            imgLogoEscrita.TabIndex = 0;
-            imgLogoEscrita.TabStop = false;
             // 
             // txtNomeDoCliente
             // 
@@ -275,19 +262,15 @@
             Controls.Add(btnImprimir);
             Controls.Add(btnSalvar);
             Controls.Add(txtNomeDoCliente);
-            Controls.Add(imgLogoEscrita);
             FormBorderStyle = FormBorderStyle.None;
             Name = "RelatorioDeVendas";
             Text = "RelatorioDeVendas";
             Load += RelatorioDeVendas_Load;
-            ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox imgLogoEscrita;
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private WiLBiT.WiLBiTButton2 btnImprimir;
         private WiLBiT.WiLBiTButton2 btnCancelar;

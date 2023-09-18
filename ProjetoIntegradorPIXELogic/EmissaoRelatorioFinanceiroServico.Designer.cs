@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            imgLogoEscrita = new PictureBox();
             btnVoltar = new WiLBiT.WiLBiTButton2();
             btnImprimir = new WiLBiT.WiLBiTButton2();
             btnSalvar = new WiLBiT.WiLBiTButton2();
@@ -37,17 +36,7 @@
             lblValor = new Label();
             lblAcao = new Label();
             panel1 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).BeginInit();
             SuspendLayout();
-            // 
-            // imgLogoEscrita
-            // 
-            imgLogoEscrita.Location = new Point(12, 12);
-            imgLogoEscrita.Name = "imgLogoEscrita";
-            imgLogoEscrita.Size = new Size(295, 62);
-            imgLogoEscrita.SizeMode = PictureBoxSizeMode.Zoom;
-            imgLogoEscrita.TabIndex = 0;
-            imgLogoEscrita.TabStop = false;
             // 
             // btnVoltar
             // 
@@ -177,19 +166,15 @@
             Controls.Add(btnSalvar);
             Controls.Add(btnImprimir);
             Controls.Add(btnVoltar);
-            Controls.Add(imgLogoEscrita);
             FormBorderStyle = FormBorderStyle.None;
             Name = "EmissaoRelatorioFinanceiroservico";
             Text = "Form1";
             Load += EmissaoRelatorioFinanceiroservico_Load;
-            ((System.ComponentModel.ISupportInitialize)imgLogoEscrita).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private PictureBox imgLogoEscrita;
         private WiLBiT.WiLBiTButton2 btnVoltar;
         private WiLBiT.WiLBiTButton2 btnImprimir;
         private WiLBiT.WiLBiTButton2 btnSalvar;

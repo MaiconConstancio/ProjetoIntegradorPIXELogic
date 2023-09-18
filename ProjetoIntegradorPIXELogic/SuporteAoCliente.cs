@@ -36,7 +36,7 @@ namespace ProjetoIntegradorPIXELogic
         private void btnEntraEmContato_Click(object sender, EventArgs e)
         {
             string numeroWhatsApp = "+5517991733578";
-            string mensagemWhatsApp = "Eaiii Conradito, me ajuda pf??";
+            string mensagemWhatsApp = "Eaiii Conradiitoooo, me ajuda pf??";
 
             string urlWhatsApp = $"https://api.whatsapp.com/send?phone={numeroWhatsApp}&text={Uri.EscapeDataString(mensagemWhatsApp)}";
             try

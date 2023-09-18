@@ -49,7 +49,7 @@
             lblEscolhaSeusColaboradoresESuasCredenciais.AutoSize = true;
             lblEscolhaSeusColaboradoresESuasCredenciais.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblEscolhaSeusColaboradoresESuasCredenciais.ForeColor = Color.Cyan;
-            lblEscolhaSeusColaboradoresESuasCredenciais.Location = new Point(100, 60);
+            lblEscolhaSeusColaboradoresESuasCredenciais.Location = new Point(100, 86);
             lblEscolhaSeusColaboradoresESuasCredenciais.Name = "lblEscolhaSeusColaboradoresESuasCredenciais";
             lblEscolhaSeusColaboradoresESuasCredenciais.Size = new Size(600, 37);
             lblEscolhaSeusColaboradoresESuasCredenciais.TabIndex = 16;
@@ -58,11 +58,11 @@
             // lblNome
             // 
             lblNome.AutoSize = true;
-            lblNome.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNome.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblNome.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNome.Location = new Point(249, 115);
+            lblNome.Location = new Point(195, 170);
             lblNome.Name = "lblNome";
-            lblNome.Size = new Size(71, 25);
+            lblNome.Size = new Size(81, 30);
             lblNome.TabIndex = 14;
             lblNome.Text = "Nome:";
             // 
@@ -89,33 +89,33 @@
             // lblCargo
             // 
             lblCargo.AutoSize = true;
-            lblCargo.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCargo.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblCargo.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCargo.Location = new Point(249, 173);
+            lblCargo.Location = new Point(194, 211);
             lblCargo.Name = "lblCargo";
-            lblCargo.Size = new Size(71, 25);
+            lblCargo.Size = new Size(81, 30);
             lblCargo.TabIndex = 17;
             lblCargo.Text = "Cargo:";
             // 
             // lblLogin
             // 
             lblLogin.AutoSize = true;
-            lblLogin.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lblLogin.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
-            lblLogin.Location = new Point(249, 231);
+            lblLogin.Location = new Point(200, 252);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(68, 25);
+            lblLogin.Size = new Size(76, 30);
             lblLogin.TabIndex = 19;
             lblLogin.Text = "Login:";
             // 
             // lblSenha
             // 
             lblSenha.AutoSize = true;
-            lblSenha.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSenha.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
-            lblSenha.Location = new Point(249, 289);
+            lblSenha.Location = new Point(195, 293);
             lblSenha.Name = "lblSenha";
-            lblSenha.Size = new Size(71, 25);
+            lblSenha.Size = new Size(81, 30);
             lblSenha.TabIndex = 21;
             lblSenha.Text = "Senha:";
             // 
@@ -157,7 +157,7 @@
             txtNome.BorderStyle = BorderStyle.FixedSingle;
             txtNome.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtNome.ForeColor = Color.Cyan;
-            txtNome.Location = new Point(252, 142);
+            txtNome.Location = new Point(278, 167);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(296, 29);
             txtNome.TabIndex = 64;
@@ -168,7 +168,7 @@
             txtCargo.BorderStyle = BorderStyle.FixedSingle;
             txtCargo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtCargo.ForeColor = Color.Cyan;
-            txtCargo.Location = new Point(252, 200);
+            txtCargo.Location = new Point(278, 208);
             txtCargo.Name = "txtCargo";
             txtCargo.Size = new Size(296, 29);
             txtCargo.TabIndex = 65;
@@ -179,7 +179,7 @@
             txtLogin.BorderStyle = BorderStyle.FixedSingle;
             txtLogin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtLogin.ForeColor = Color.Cyan;
-            txtLogin.Location = new Point(252, 258);
+            txtLogin.Location = new Point(278, 249);
             txtLogin.Name = "txtLogin";
             txtLogin.Size = new Size(296, 29);
             txtLogin.TabIndex = 66;
@@ -190,7 +190,7 @@
             txtSenha.BorderStyle = BorderStyle.FixedSingle;
             txtSenha.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtSenha.ForeColor = Color.Cyan;
-            txtSenha.Location = new Point(252, 316);
+            txtSenha.Location = new Point(278, 290);
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(296, 29);
             txtSenha.TabIndex = 67;

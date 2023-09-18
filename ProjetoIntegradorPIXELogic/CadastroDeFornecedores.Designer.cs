@@ -64,11 +64,11 @@
             // lblFornecedor
             // 
             lblFornecedor.AutoSize = true;
-            lblFornecedor.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblFornecedor.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblFornecedor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblFornecedor.Location = new Point(72, 115);
+            lblFornecedor.Location = new Point(130, 125);
             lblFornecedor.Name = "lblFornecedor";
-            lblFornecedor.Size = new Size(178, 37);
+            lblFornecedor.Size = new Size(143, 30);
             lblFornecedor.TabIndex = 24;
             lblFornecedor.Text = " Fornecedor:";
             lblFornecedor.Click += lblNovaSenha_Click;
@@ -96,66 +96,66 @@
             // lblEndereco
             // 
             lblEndereco.AutoSize = true;
-            lblEndereco.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblEndereco.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblEndereco.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEndereco.Location = new Point(125, 293);
+            lblEndereco.Location = new Point(175, 299);
             lblEndereco.Name = "lblEndereco";
-            lblEndereco.Size = new Size(142, 37);
+            lblEndereco.Size = new Size(115, 30);
             lblEndereco.TabIndex = 27;
             lblEndereco.Text = "Endereço:";
             // 
             // lblTelefone
             // 
             lblTelefone.AutoSize = true;
-            lblTelefone.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTelefone.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblTelefone.ForeColor = Color.FromArgb(63, 136, 254);
-            lblTelefone.Location = new Point(149, 152);
+            lblTelefone.Location = new Point(200, 159);
             lblTelefone.Name = "lblTelefone";
-            lblTelefone.Size = new Size(134, 37);
+            lblTelefone.Size = new Size(106, 30);
             lblTelefone.TabIndex = 29;
             lblTelefone.Text = "Telefone:";
             // 
             // lblCNPJ
             // 
             lblCNPJ.AutoSize = true;
-            lblCNPJ.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCNPJ.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblCNPJ.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCNPJ.Location = new Point(202, 185);
+            lblCNPJ.Location = new Point(241, 195);
             lblCNPJ.Name = "lblCNPJ";
-            lblCNPJ.Size = new Size(89, 37);
+            lblCNPJ.Size = new Size(73, 30);
             lblCNPJ.TabIndex = 31;
             lblCNPJ.Text = "CNPJ:";
             // 
             // lblCEP
             // 
             lblCEP.AutoSize = true;
-            lblCEP.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCEP.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblCEP.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCEP.Location = new Point(243, 222);
+            lblCEP.Location = new Point(278, 230);
             lblCEP.Name = "lblCEP";
-            lblCEP.Size = new Size(72, 37);
+            lblCEP.Size = new Size(59, 30);
             lblCEP.TabIndex = 33;
             lblCEP.Text = "CEP:";
             // 
             // lblNumero
             // 
             lblNumero.AutoSize = true;
-            lblNumero.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNumero.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblNumero.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNumero.Location = new Point(174, 256);
+            lblNumero.Location = new Point(223, 265);
             lblNumero.Name = "lblNumero";
-            lblNumero.Size = new Size(129, 37);
+            lblNumero.Size = new Size(103, 30);
             lblNumero.TabIndex = 35;
             lblNumero.Text = "Número:";
             // 
             // lblCidade
             // 
             lblCidade.AutoSize = true;
-            lblCidade.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCidade.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblCidade.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCidade.Location = new Point(172, 328);
+            lblCidade.Location = new Point(217, 335);
             lblCidade.Name = "lblCidade";
-            lblCidade.Size = new Size(113, 37);
+            lblCidade.Size = new Size(91, 30);
             lblCidade.TabIndex = 37;
             lblCidade.Text = "Cidade:";
             lblCidade.Click += lblCidade_Click;
@@ -177,7 +177,7 @@
             txtFornecedor.BorderStyle = BorderStyle.FixedSingle;
             txtFornecedor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtFornecedor.ForeColor = Color.Cyan;
-            txtFornecedor.Location = new Point(252, 121);
+            txtFornecedor.Location = new Point(275, 121);
             txtFornecedor.Name = "txtFornecedor";
             txtFornecedor.Size = new Size(296, 29);
             txtFornecedor.TabIndex = 40;
@@ -188,7 +188,7 @@
             txtEndereço.BorderStyle = BorderStyle.FixedSingle;
             txtEndereço.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtEndereço.ForeColor = Color.Cyan;
-            txtEndereço.Location = new Point(269, 296);
+            txtEndereço.Location = new Point(292, 296);
             txtEndereço.Name = "txtEndereço";
             txtEndereço.Size = new Size(263, 29);
             txtEndereço.TabIndex = 41;
@@ -200,7 +200,7 @@
             maskedCNJP.CutCopyMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             maskedCNJP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskedCNJP.ForeColor = Color.Cyan;
-            maskedCNJP.Location = new Point(293, 191);
+            maskedCNJP.Location = new Point(316, 191);
             maskedCNJP.Mask = "00.000.000/0001-00";
             maskedCNJP.Name = "maskedCNJP";
             maskedCNJP.Size = new Size(214, 29);
@@ -214,7 +214,7 @@
             maskedCEP.CutCopyMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             maskedCEP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskedCEP.ForeColor = Color.Cyan;
-            maskedCEP.Location = new Point(316, 226);
+            maskedCEP.Location = new Point(339, 226);
             maskedCEP.Mask = "00000-00";
             maskedCEP.Name = "maskedCEP";
             maskedCEP.Size = new Size(168, 29);
@@ -228,7 +228,7 @@
             maskedNumero.CutCopyMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             maskedNumero.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskedNumero.ForeColor = Color.Cyan;
-            maskedNumero.Location = new Point(305, 261);
+            maskedNumero.Location = new Point(328, 261);
             maskedNumero.Mask = "0000";
             maskedNumero.Name = "maskedNumero";
             maskedNumero.Size = new Size(191, 29);
@@ -241,7 +241,7 @@
             txtCidade.BorderStyle = BorderStyle.FixedSingle;
             txtCidade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtCidade.ForeColor = Color.Cyan;
-            txtCidade.Location = new Point(287, 331);
+            txtCidade.Location = new Point(310, 331);
             txtCidade.Name = "txtCidade";
             txtCidade.Size = new Size(227, 29);
             txtCidade.TabIndex = 47;
@@ -272,7 +272,7 @@
             maskedTelefone.BorderStyle = BorderStyle.FixedSingle;
             maskedTelefone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskedTelefone.ForeColor = Color.Cyan;
-            maskedTelefone.Location = new Point(285, 156);
+            maskedTelefone.Location = new Point(308, 156);
             maskedTelefone.Mask = "(99) 00000-0000";
             maskedTelefone.Name = "maskedTelefone";
             maskedTelefone.Size = new Size(231, 29);
