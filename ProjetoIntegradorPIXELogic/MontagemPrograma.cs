@@ -20,7 +20,6 @@ namespace ProjetoIntegradorPIXELogic
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-
             Conexao.executaQuery($"update usuario set primeiro_acesso = true where login = '{Program.acesso}'");
 
             if (chkBoxGerenciamentoServiços.Checked == true)
@@ -219,9 +218,6 @@ namespace ProjetoIntegradorPIXELogic
             sagaoPrincipal.Show();
 
         }
-
-        private void MontagemPrograma_Load(object sender, EventArgs e)
-        {
 
             if (Conexao.executaQuery("select * from funcoes where nome = 'servicos' and habilitado_nao = true;").Rows.Count > 0)
             {
