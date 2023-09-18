@@ -54,7 +54,7 @@
             lblAcao.BorderStyle = BorderStyle.FixedSingle;
             lblAcao.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblAcao.ForeColor = Color.FromArgb(63, 136, 254);
-            lblAcao.Location = new Point(636, 101);
+            lblAcao.Location = new Point(636, 86);
             lblAcao.Name = "lblAcao";
             lblAcao.Size = new Size(200, 30);
             lblAcao.TabIndex = 29;
@@ -66,7 +66,7 @@
             lblValor.BorderStyle = BorderStyle.FixedSingle;
             lblValor.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(430, 101);
+            lblValor.Location = new Point(430, 86);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(200, 30);
             lblValor.TabIndex = 31;
@@ -78,7 +78,7 @@
             lblCliente.BorderStyle = BorderStyle.FixedSingle;
             lblCliente.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblCliente.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCliente.Location = new Point(224, 101);
+            lblCliente.Location = new Point(224, 86);
             lblCliente.Name = "lblCliente";
             lblCliente.Size = new Size(200, 30);
             lblCliente.TabIndex = 32;
@@ -90,7 +90,7 @@
             lblProduto.BorderStyle = BorderStyle.FixedSingle;
             lblProduto.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblProduto.ForeColor = Color.FromArgb(63, 136, 254);
-            lblProduto.Location = new Point(18, 101);
+            lblProduto.Location = new Point(18, 86);
             lblProduto.Name = "lblProduto";
             lblProduto.Size = new Size(200, 30);
             lblProduto.TabIndex = 33;
@@ -122,15 +122,15 @@
             btnImprimir.BackColor = Color.FromArgb(72, 116, 245);
             btnImprimir.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnImprimir.BorderColor = Color.FromArgb(0, 242, 254);
-            btnImprimir.BorderRadius = 14;
+            btnImprimir.BorderRadius = 12;
             btnImprimir.BorderSize = 2;
             btnImprimir.FlatAppearance.BorderSize = 0;
             btnImprimir.FlatStyle = FlatStyle.Flat;
-            btnImprimir.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnImprimir.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnImprimir.ForeColor = Color.Black;
-            btnImprimir.Location = new Point(18, 398);
+            btnImprimir.Location = new Point(12, 406);
             btnImprimir.Name = "btnImprimir";
-            btnImprimir.Size = new Size(109, 40);
+            btnImprimir.Size = new Size(112, 32);
             btnImprimir.TabIndex = 35;
             btnImprimir.Text = "Imprimir";
             btnImprimir.TextColor = Color.Black;
@@ -147,7 +147,7 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(133, 406);
+            btnSalvar.Location = new Point(130, 406);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
             btnSalvar.TabIndex = 36;
@@ -158,7 +158,7 @@
             // panel1
             // 
             panel1.AutoSize = true;
-            panel1.Location = new Point(18, 134);
+            panel1.Location = new Point(18, 122);
             panel1.Name = "panel1";
             panel1.Size = new Size(818, 11);
             panel1.TabIndex = 37;
@@ -168,7 +168,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
-            ClientSize = new Size(839, 450);
+            ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(btnSalvar);
             Controls.Add(btnImprimir);

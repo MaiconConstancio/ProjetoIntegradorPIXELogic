@@ -44,15 +44,15 @@
             btnNovoCadastro.BackColor = Color.FromArgb(72, 116, 245);
             btnNovoCadastro.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnNovoCadastro.BorderColor = Color.FromArgb(0, 242, 254);
-            btnNovoCadastro.BorderRadius = 14;
+            btnNovoCadastro.BorderRadius = 12;
             btnNovoCadastro.BorderSize = 2;
             btnNovoCadastro.FlatAppearance.BorderSize = 0;
             btnNovoCadastro.FlatStyle = FlatStyle.Flat;
-            btnNovoCadastro.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNovoCadastro.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnNovoCadastro.ForeColor = Color.Black;
-            btnNovoCadastro.Location = new Point(12, 402);
+            btnNovoCadastro.Location = new Point(12, 406);
             btnNovoCadastro.Name = "btnNovoCadastro";
-            btnNovoCadastro.Size = new Size(176, 39);
+            btnNovoCadastro.Size = new Size(150, 32);
             btnNovoCadastro.TabIndex = 14;
             btnNovoCadastro.Text = "Novo Cadastro";
             btnNovoCadastro.TextColor = Color.Black;
@@ -64,7 +64,7 @@
             lblSenha.BorderStyle = BorderStyle.FixedSingle;
             lblSenha.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
-            lblSenha.Location = new Point(545, 88);
+            lblSenha.Location = new Point(545, 86);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(152, 30);
             lblSenha.TabIndex = 21;
@@ -76,7 +76,7 @@
             lblLogin.BorderStyle = BorderStyle.FixedSingle;
             lblLogin.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
-            lblLogin.Location = new Point(323, 88);
+            lblLogin.Location = new Point(323, 86);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(216, 30);
             lblLogin.TabIndex = 22;
@@ -88,7 +88,7 @@
             lblCargo.BorderStyle = BorderStyle.FixedSingle;
             lblCargo.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblCargo.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCargo.Location = new Point(171, 88);
+            lblCargo.Location = new Point(171, 86);
             lblCargo.Name = "lblCargo";
             lblCargo.Size = new Size(146, 30);
             lblCargo.TabIndex = 23;
@@ -100,7 +100,7 @@
             lblEditar.BorderStyle = BorderStyle.FixedSingle;
             lblEditar.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblEditar.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEditar.Location = new Point(703, 88);
+            lblEditar.Location = new Point(703, 86);
             lblEditar.Name = "lblEditar";
             lblEditar.Size = new Size(94, 30);
             lblEditar.TabIndex = 24;
@@ -112,7 +112,7 @@
             lblNome.BorderStyle = BorderStyle.FixedSingle;
             lblNome.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblNome.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNome.Location = new Point(12, 88);
+            lblNome.Location = new Point(12, 86);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(153, 30);
             lblNome.TabIndex = 25;
@@ -150,7 +150,7 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(194, 409);
+            btnSalvar.Location = new Point(168, 406);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
             btnSalvar.TabIndex = 27;
@@ -161,7 +161,7 @@
             // panel1
             // 
             panel1.AutoSize = true;
-            panel1.Location = new Point(12, 121);
+            panel1.Location = new Point(12, 122);
             panel1.Name = "panel1";
             panel1.Size = new Size(785, 10);
             panel1.TabIndex = 28;

@@ -49,7 +49,7 @@
             lblEscolhaSeusColaboradoresESuasCredenciais.AutoSize = true;
             lblEscolhaSeusColaboradoresESuasCredenciais.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             lblEscolhaSeusColaboradoresESuasCredenciais.ForeColor = Color.Cyan;
-            lblEscolhaSeusColaboradoresESuasCredenciais.Location = new Point(100, 50);
+            lblEscolhaSeusColaboradoresESuasCredenciais.Location = new Point(100, 60);
             lblEscolhaSeusColaboradoresESuasCredenciais.Name = "lblEscolhaSeusColaboradoresESuasCredenciais";
             lblEscolhaSeusColaboradoresESuasCredenciais.Size = new Size(600, 37);
             lblEscolhaSeusColaboradoresESuasCredenciais.TabIndex = 16;

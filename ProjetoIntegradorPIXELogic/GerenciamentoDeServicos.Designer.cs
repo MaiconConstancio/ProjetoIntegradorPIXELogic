@@ -66,15 +66,15 @@
             btnNovoOrcamento.BackColor = Color.FromArgb(72, 116, 245);
             btnNovoOrcamento.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnNovoOrcamento.BorderColor = Color.FromArgb(0, 242, 254);
-            btnNovoOrcamento.BorderRadius = 14;
+            btnNovoOrcamento.BorderRadius = 12;
             btnNovoOrcamento.BorderSize = 2;
             btnNovoOrcamento.FlatAppearance.BorderSize = 0;
             btnNovoOrcamento.FlatStyle = FlatStyle.Flat;
-            btnNovoOrcamento.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNovoOrcamento.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnNovoOrcamento.ForeColor = Color.Black;
-            btnNovoOrcamento.Location = new Point(12, 398);
+            btnNovoOrcamento.Location = new Point(12, 406);
             btnNovoOrcamento.Name = "btnNovoOrcamento";
-            btnNovoOrcamento.Size = new Size(189, 40);
+            btnNovoOrcamento.Size = new Size(150, 32);
             btnNovoOrcamento.TabIndex = 21;
             btnNovoOrcamento.Text = "Novo Orçamento";
             btnNovoOrcamento.TextColor = Color.Black;
@@ -86,7 +86,7 @@
             lblCliente.BorderStyle = BorderStyle.FixedSingle;
             lblCliente.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblCliente.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCliente.Location = new Point(12, 70);
+            lblCliente.Location = new Point(12, 86);
             lblCliente.Name = "lblCliente";
             lblCliente.Size = new Size(97, 30);
             lblCliente.TabIndex = 26;
@@ -98,7 +98,7 @@
             lblEstimativaDeEntrega.BorderStyle = BorderStyle.FixedSingle;
             lblEstimativaDeEntrega.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEstimativaDeEntrega.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEstimativaDeEntrega.Location = new Point(512, 70);
+            lblEstimativaDeEntrega.Location = new Point(512, 86);
             lblEstimativaDeEntrega.Name = "lblEstimativaDeEntrega";
             lblEstimativaDeEntrega.Size = new Size(207, 30);
             lblEstimativaDeEntrega.TabIndex = 27;
@@ -110,7 +110,7 @@
             lblFuncionario.BorderStyle = BorderStyle.FixedSingle;
             lblFuncionario.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblFuncionario.ForeColor = Color.FromArgb(63, 136, 254);
-            lblFuncionario.Location = new Point(383, 70);
+            lblFuncionario.Location = new Point(383, 86);
             lblFuncionario.Name = "lblFuncionario";
             lblFuncionario.Size = new Size(123, 30);
             lblFuncionario.TabIndex = 28;
@@ -123,7 +123,7 @@
             lblEndereco.BorderStyle = BorderStyle.FixedSingle;
             lblEndereco.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEndereco.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEndereco.Location = new Point(277, 70);
+            lblEndereco.Location = new Point(277, 86);
             lblEndereco.Name = "lblEndereco";
             lblEndereco.Size = new Size(100, 30);
             lblEndereco.TabIndex = 29;
@@ -135,7 +135,7 @@
             lblValor.BorderStyle = BorderStyle.FixedSingle;
             lblValor.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(201, 70);
+            lblValor.Location = new Point(201, 86);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(70, 30);
             lblValor.TabIndex = 30;
@@ -147,7 +147,7 @@
             lblServico.BorderStyle = BorderStyle.FixedSingle;
             lblServico.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblServico.ForeColor = Color.FromArgb(63, 136, 254);
-            lblServico.Location = new Point(115, 70);
+            lblServico.Location = new Point(115, 86);
             lblServico.Name = "lblServico";
             lblServico.Size = new Size(80, 30);
             lblServico.TabIndex = 31;
@@ -159,7 +159,7 @@
             lblEditar.BorderStyle = BorderStyle.FixedSingle;
             lblEditar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEditar.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEditar.Location = new Point(725, 70);
+            lblEditar.Location = new Point(725, 86);
             lblEditar.Name = "lblEditar";
             lblEditar.Size = new Size(70, 30);
             lblEditar.TabIndex = 33;
@@ -177,7 +177,7 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(207, 406);
+            btnSalvar.Location = new Point(168, 406);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
             btnSalvar.TabIndex = 34;
@@ -188,7 +188,7 @@
             // panel1
             // 
             panel1.AutoSize = true;
-            panel1.Location = new Point(12, 103);
+            panel1.Location = new Point(12, 122);
             panel1.Name = "panel1";
             panel1.Size = new Size(783, 10);
             panel1.TabIndex = 35;
@@ -199,7 +199,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoScroll = true;
             BackColor = Color.FromArgb(16, 25, 56);
-            ClientSize = new Size(807, 450);
+            ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(btnSalvar);
             Controls.Add(lblEditar);

@@ -47,15 +47,15 @@
             btnNovoCadastro.BackColor = Color.FromArgb(72, 116, 245);
             btnNovoCadastro.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnNovoCadastro.BorderColor = Color.FromArgb(0, 242, 254);
-            btnNovoCadastro.BorderRadius = 14;
+            btnNovoCadastro.BorderRadius = 12;
             btnNovoCadastro.BorderSize = 2;
             btnNovoCadastro.FlatAppearance.BorderSize = 0;
             btnNovoCadastro.FlatStyle = FlatStyle.Flat;
-            btnNovoCadastro.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNovoCadastro.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnNovoCadastro.ForeColor = Color.Black;
-            btnNovoCadastro.Location = new Point(12, 400);
+            btnNovoCadastro.Location = new Point(12, 406);
             btnNovoCadastro.Name = "btnNovoCadastro";
-            btnNovoCadastro.Size = new Size(134, 39);
+            btnNovoCadastro.Size = new Size(150, 32);
             btnNovoCadastro.TabIndex = 30;
             btnNovoCadastro.Text = "Novo Cadastro";
             btnNovoCadastro.TextColor = Color.Black;
@@ -189,7 +189,7 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(152, 407);
+            btnSalvar.Location = new Point(168, 406);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
             btnSalvar.TabIndex = 45;
@@ -200,7 +200,7 @@
             // panel1
             // 
             panel1.AutoSize = true;
-            panel1.Location = new Point(12, 119);
+            panel1.Location = new Point(12, 122);
             panel1.Name = "panel1";
             panel1.Size = new Size(776, 10);
             panel1.TabIndex = 46;
@@ -210,7 +210,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
-            ClientSize = new Size(796, 450);
+            ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(btnSalvar);
             Controls.Add(lblEditar);

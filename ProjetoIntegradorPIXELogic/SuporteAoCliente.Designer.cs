@@ -58,13 +58,13 @@
             btnEntraEmContato.FlatAppearance.BorderSize = 0;
             btnEntraEmContato.FlatStyle = FlatStyle.Flat;
             btnEntraEmContato.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.World);
-            btnEntraEmContato.ForeColor = Color.Black;
+            btnEntraEmContato.ForeColor = Color.White;
             btnEntraEmContato.Location = new Point(440, 372);
             btnEntraEmContato.Name = "btnEntraEmContato";
             btnEntraEmContato.Size = new Size(229, 36);
             btnEntraEmContato.TabIndex = 74;
             btnEntraEmContato.Text = "ENTRAR EM CONTATO";
-            btnEntraEmContato.TextColor = Color.Black;
+            btnEntraEmContato.TextColor = Color.White;
             btnEntraEmContato.UseVisualStyleBackColor = false;
             btnEntraEmContato.Click += btnEntraEmContato_Click;
             // 
@@ -111,13 +111,13 @@
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
             btnVoltar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnVoltar.ForeColor = Color.Black;
+            btnVoltar.ForeColor = Color.WhiteSmoke;
             btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(74, 30);
             btnVoltar.TabIndex = 78;
             btnVoltar.Text = "Voltar";
-            btnVoltar.TextColor = Color.Black;
+            btnVoltar.TextColor = Color.WhiteSmoke;
             btnVoltar.UseVisualStyleBackColor = false;
             btnVoltar.Click += btnVoltar_Click;
             // 

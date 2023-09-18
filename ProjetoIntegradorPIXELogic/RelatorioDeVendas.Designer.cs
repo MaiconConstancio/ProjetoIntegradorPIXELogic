@@ -64,7 +64,7 @@
             // 
             txtNomeDoCliente.BackColor = Color.FromArgb(53, 81, 142);
             txtNomeDoCliente.BorderStyle = BorderStyle.FixedSingle;
-            txtNomeDoCliente.Location = new Point(510, 67);
+            txtNomeDoCliente.Location = new Point(510, 46);
             txtNomeDoCliente.Name = "txtNomeDoCliente";
             txtNomeDoCliente.Size = new Size(259, 23);
             txtNomeDoCliente.TabIndex = 25;
@@ -81,7 +81,7 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(135, 369);
+            btnSalvar.Location = new Point(126, 370);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
             btnSalvar.TabIndex = 26;
@@ -94,15 +94,15 @@
             btnImprimir.BackColor = Color.FromArgb(72, 116, 245);
             btnImprimir.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnImprimir.BorderColor = Color.FromArgb(0, 242, 254);
-            btnImprimir.BorderRadius = 14;
+            btnImprimir.BorderRadius = 12;
             btnImprimir.BorderSize = 2;
             btnImprimir.FlatAppearance.BorderSize = 0;
             btnImprimir.FlatStyle = FlatStyle.Flat;
-            btnImprimir.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            btnImprimir.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnImprimir.ForeColor = Color.Black;
-            btnImprimir.Location = new Point(12, 410);
+            btnImprimir.Location = new Point(12, 406);
             btnImprimir.Name = "btnImprimir";
-            btnImprimir.Size = new Size(117, 39);
+            btnImprimir.Size = new Size(112, 32);
             btnImprimir.TabIndex = 27;
             btnImprimir.Text = "Imprimir";
             btnImprimir.TextColor = Color.Black;
@@ -113,15 +113,15 @@
             btnCancelar.BackColor = Color.FromArgb(72, 116, 245);
             btnCancelar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnCancelar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnCancelar.BorderRadius = 14;
+            btnCancelar.BorderRadius = 12;
             btnCancelar.BorderSize = 2;
             btnCancelar.FlatAppearance.BorderSize = 0;
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Black;
-            btnCancelar.Location = new Point(12, 360);
+            btnCancelar.Location = new Point(12, 370);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(117, 39);
+            btnCancelar.Size = new Size(112, 32);
             btnCancelar.TabIndex = 28;
             btnCancelar.Text = "Cancelar";
             btnCancelar.TextColor = Color.Black;
@@ -133,7 +133,7 @@
             lblNomeDoCliente.AutoSize = true;
             lblNomeDoCliente.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblNomeDoCliente.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNomeDoCliente.Location = new Point(559, 39);
+            lblNomeDoCliente.Location = new Point(559, 18);
             lblNomeDoCliente.Name = "lblNomeDoCliente";
             lblNomeDoCliente.Size = new Size(158, 25);
             lblNomeDoCliente.TabIndex = 31;
@@ -144,7 +144,7 @@
             lblProduto.BorderStyle = BorderStyle.FixedSingle;
             lblProduto.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblProduto.ForeColor = Color.FromArgb(63, 136, 254);
-            lblProduto.Location = new Point(12, 147);
+            lblProduto.Location = new Point(12, 86);
             lblProduto.Name = "lblProduto";
             lblProduto.Size = new Size(107, 30);
             lblProduto.TabIndex = 32;
@@ -156,7 +156,7 @@
             lblQuantidade.BorderStyle = BorderStyle.FixedSingle;
             lblQuantidade.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblQuantidade.ForeColor = Color.FromArgb(63, 136, 254);
-            lblQuantidade.Location = new Point(125, 147);
+            lblQuantidade.Location = new Point(125, 86);
             lblQuantidade.Name = "lblQuantidade";
             lblQuantidade.Size = new Size(134, 30);
             lblQuantidade.TabIndex = 33;
@@ -168,7 +168,7 @@
             lblCliente.BorderStyle = BorderStyle.FixedSingle;
             lblCliente.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblCliente.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCliente.Location = new Point(265, 147);
+            lblCliente.Location = new Point(265, 86);
             lblCliente.Name = "lblCliente";
             lblCliente.Size = new Size(103, 30);
             lblCliente.TabIndex = 34;
@@ -180,7 +180,7 @@
             lblMetodoDePagamento.BorderStyle = BorderStyle.FixedSingle;
             lblMetodoDePagamento.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblMetodoDePagamento.ForeColor = Color.FromArgb(63, 136, 254);
-            lblMetodoDePagamento.Location = new Point(374, 147);
+            lblMetodoDePagamento.Location = new Point(374, 86);
             lblMetodoDePagamento.Name = "lblMetodoDePagamento";
             lblMetodoDePagamento.Size = new Size(229, 30);
             lblMetodoDePagamento.TabIndex = 35;
@@ -192,7 +192,7 @@
             lblValor.BorderStyle = BorderStyle.FixedSingle;
             lblValor.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(609, 147);
+            lblValor.Location = new Point(609, 86);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(117, 30);
             lblValor.TabIndex = 36;
@@ -204,7 +204,7 @@
             lblAcao.BorderStyle = BorderStyle.FixedSingle;
             lblAcao.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblAcao.ForeColor = Color.FromArgb(63, 136, 254);
-            lblAcao.Location = new Point(732, 147);
+            lblAcao.Location = new Point(732, 86);
             lblAcao.Name = "lblAcao";
             lblAcao.Size = new Size(64, 30);
             lblAcao.TabIndex = 37;
@@ -216,7 +216,7 @@
             lblPagamentoNoMetodoSelecionado.AutoSize = true;
             lblPagamentoNoMetodoSelecionado.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblPagamentoNoMetodoSelecionado.ForeColor = Color.FromArgb(63, 136, 254);
-            lblPagamentoNoMetodoSelecionado.Location = new Point(490, 369);
+            lblPagamentoNoMetodoSelecionado.Location = new Point(490, 391);
             lblPagamentoNoMetodoSelecionado.Name = "lblPagamentoNoMetodoSelecionado";
             lblPagamentoNoMetodoSelecionado.Size = new Size(298, 21);
             lblPagamentoNoMetodoSelecionado.TabIndex = 38;
@@ -238,7 +238,7 @@
             lblMetodoSelecionado.AutoSize = true;
             lblMetodoSelecionado.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblMetodoSelecionado.ForeColor = Color.FromArgb(63, 136, 254);
-            lblMetodoSelecionado.Location = new Point(12, 110);
+            lblMetodoSelecionado.Location = new Point(305, 45);
             lblMetodoSelecionado.Name = "lblMetodoSelecionado";
             lblMetodoSelecionado.Size = new Size(178, 21);
             lblMetodoSelecionado.TabIndex = 40;
@@ -247,7 +247,7 @@
             // panel1
             // 
             panel1.AutoSize = true;
-            panel1.Location = new Point(2, 191);
+            panel1.Location = new Point(2, 122);
             panel1.Name = "panel1";
             panel1.Size = new Size(796, 10);
             panel1.TabIndex = 41;

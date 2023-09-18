@@ -83,11 +83,11 @@
             // lblCadastrodeServicos
             // 
             lblCadastrodeServicos.AutoSize = true;
-            lblCadastrodeServicos.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCadastrodeServicos.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCadastrodeServicos.Location = new Point(221, 93);
+            lblCadastrodeServicos.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCadastrodeServicos.ForeColor = Color.Cyan;
+            lblCadastrodeServicos.Location = new Point(259, 118);
             lblCadastrodeServicos.Name = "lblCadastrodeServicos";
-            lblCadastrodeServicos.Size = new Size(358, 47);
+            lblCadastrodeServicos.Size = new Size(282, 37);
             lblCadastrodeServicos.TabIndex = 17;
             lblCadastrodeServicos.Text = "Cadastro de serviços";
             // 
@@ -96,7 +96,7 @@
             lblNomedoServico.AutoSize = true;
             lblNomedoServico.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblNomedoServico.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNomedoServico.Location = new Point(33, 184);
+            lblNomedoServico.Location = new Point(33, 193);
             lblNomedoServico.Name = "lblNomedoServico";
             lblNomedoServico.Size = new Size(216, 32);
             lblNomedoServico.TabIndex = 18;
@@ -107,7 +107,7 @@
             lblValor.AutoSize = true;
             lblValor.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(219, 248);
+            lblValor.Location = new Point(219, 238);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(81, 32);
             lblValor.TabIndex = 19;
@@ -119,7 +119,7 @@
             txtNomeDoServico.BorderStyle = BorderStyle.FixedSingle;
             txtNomeDoServico.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtNomeDoServico.ForeColor = Color.Cyan;
-            txtNomeDoServico.Location = new Point(252, 186);
+            txtNomeDoServico.Location = new Point(252, 195);
             txtNomeDoServico.Name = "txtNomeDoServico";
             txtNomeDoServico.Size = new Size(296, 29);
             txtNomeDoServico.TabIndex = 66;
@@ -139,7 +139,7 @@
             maskValor.BackColor = Color.FromArgb(53, 81, 142);
             maskValor.BorderStyle = BorderStyle.FixedSingle;
             maskValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskValor.Location = new Point(302, 249);
+            maskValor.Location = new Point(302, 239);
             maskValor.Mask = "$ 000,00";
             maskValor.Name = "maskValor";
             maskValor.Size = new Size(196, 29);

@@ -67,23 +67,23 @@ namespace ProjetoIntegradorPIXELogic
             // 
             lblSenha.AutoSize = true;
             lblSenha.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
+            lblSenha.ForeColor = Color.Cyan;
             lblSenha.Location = new Point(439, 275);
             lblSenha.Name = "lblSenha";
-            lblSenha.Size = new Size(94, 37);
+            lblSenha.Size = new Size(101, 37);
             lblSenha.TabIndex = 4;
-            lblSenha.Text = "Senha";
+            lblSenha.Text = "Senha:";
             // 
             // lblLogin
             // 
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
+            lblLogin.ForeColor = Color.Cyan;
             lblLogin.Location = new Point(440, 202);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(89, 37);
+            lblLogin.Size = new Size(96, 37);
             lblLogin.TabIndex = 6;
-            lblLogin.Text = "Login";
+            lblLogin.Text = "Login:";
             // 
             // imgWallpaperLoginPrincipal
             // 

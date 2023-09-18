@@ -18,8 +18,80 @@ namespace ProjetoIntegradorPIXELogic
             InitializeComponent();
         }
 
+
+
+        private void MontagemPrograma_Load(object sender, EventArgs e)
+        {
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'servicos' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxGerenciamentoServiços.Checked = true;
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'clientes' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxClientes.Checked = true;
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'produtos' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxProdutos.Checked = true;
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'fornecedores' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxFornecedores.Checked = true;
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'colaboradores' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxColaboradores.Checked = true;
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'vendas' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxVendas.Checked = true;
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'relatorio de produtos' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxEmissaoRelatoriosFinanceiros.Checked = true;
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'relatorio de servicos' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                checkBox1.Checked = true;
+
+            }
+
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'suporte' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxSuporteAoCliente.Checked = true;
+
+            }
+
+        }
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
+
             Conexao.executaQuery($"update usuario set primeiro_acesso = true where login = '{Program.acesso}'");
 
             if (chkBoxGerenciamentoServiços.Checked == true)
@@ -219,70 +291,8 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
-            if (Conexao.executaQuery("select * from funcoes where nome = 'servicos' and habilitado_nao = true;").Rows.Count > 0)
-            {
 
-                chkBoxGerenciamentoServiços.Checked = true;
-
-            }
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'clientes' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxClientes.Checked = true;
-
-            }
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'produtos' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxProdutos.Checked = true;
-
-            }
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'fornecedores' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxFornecedores.Checked = true;
-
-            }
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'colaboradores' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxColaboradores.Checked = true;
-
-            }
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'vendas' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxVendas.Checked = true;
-
-            }
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'relatorio de produtos' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxEmissaoRelatoriosFinanceiros.Checked = true;
-
-            }
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'relatorio de servicos' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                checkBox1.Checked = true;
-
-            }
-
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'suporte' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxSuporteAoCliente.Checked = true;
-
-            }
-
-        }
     }
+
+
 }

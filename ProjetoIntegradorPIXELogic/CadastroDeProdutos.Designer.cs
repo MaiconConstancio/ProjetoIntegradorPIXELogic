@@ -144,11 +144,11 @@
             // lblCadastrodeprodutos
             // 
             lblCadastrodeprodutos.AutoSize = true;
-            lblCadastrodeprodutos.Font = new Font("Segoe UI", 27.75F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCadastrodeprodutos.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCadastrodeprodutos.Location = new Point(201, 24);
+            lblCadastrodeprodutos.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCadastrodeprodutos.ForeColor = Color.Cyan;
+            lblCadastrodeprodutos.Location = new Point(252, 49);
             lblCadastrodeprodutos.Name = "lblCadastrodeprodutos";
-            lblCadastrodeprodutos.Size = new Size(398, 50);
+            lblCadastrodeprodutos.Size = new Size(296, 37);
             lblCadastrodeprodutos.TabIndex = 30;
             lblCadastrodeprodutos.Text = "Cadastro de Produtos";
             // 

@@ -36,8 +36,8 @@
             chkBoxVendas = new CheckBox();
             chkBoxEmissaoRelatoriosFinanceiros = new CheckBox();
             chkBoxSuporteAoCliente = new CheckBox();
-            btnSalvar = new Button();
             checkBox1 = new CheckBox();
+            btnSalvar = new WiLBiT.WiLBiTButton2();
             SuspendLayout();
             // 
             // chkBoxColaboradores
@@ -128,16 +128,6 @@
             chkBoxSuporteAoCliente.Text = "Suporte ao Cliente";
             chkBoxSuporteAoCliente.UseVisualStyleBackColor = true;
             // 
-            // btnSalvar
-            // 
-            btnSalvar.Location = new Point(713, 415);
-            btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(75, 23);
-            btnSalvar.TabIndex = 9;
-            btnSalvar.Text = "Salvar\r\n";
-            btnSalvar.UseVisualStyleBackColor = true;
-            btnSalvar.Click += btnSalvar_Click;
-            // 
             // checkBox1
             // 
             checkBox1.AutoSize = true;
@@ -149,14 +139,34 @@
             checkBox1.Text = "Emissão De Relatorios Financeiros de Serviços\r\n";
             checkBox1.UseVisualStyleBackColor = true;
             // 
+            // btnSalvar
+            // 
+            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnSalvar.BorderRadius = 12;
+            btnSalvar.BorderSize = 2;
+            btnSalvar.FlatAppearance.BorderSize = 0;
+            btnSalvar.FlatStyle = FlatStyle.Flat;
+            btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalvar.ForeColor = Color.Black;
+            btnSalvar.Location = new Point(349, 384);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(103, 32);
+            btnSalvar.TabIndex = 34;
+            btnSalvar.Text = "Salvar";
+            btnSalvar.TextColor = Color.Black;
+            btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
+            // 
             // MontagemPrograma
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(checkBox1);
             Controls.Add(btnSalvar);
+            Controls.Add(checkBox1);
             Controls.Add(chkBoxSuporteAoCliente);
             Controls.Add(chkBoxEmissaoRelatoriosFinanceiros);
             Controls.Add(chkBoxVendas);
@@ -183,7 +193,7 @@
         private CheckBox chkBoxVendas;
         private CheckBox chkBoxEmissaoRelatoriosFinanceiros;
         private CheckBox chkBoxSuporteAoCliente;
-        private Button btnSalvar;
         private CheckBox checkBox1;
+        private WiLBiT.WiLBiTButton2 btnSalvar;
     }
 }

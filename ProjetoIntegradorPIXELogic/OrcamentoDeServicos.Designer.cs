@@ -168,11 +168,11 @@
             btnNovoServico.BorderSize = 2;
             btnNovoServico.FlatAppearance.BorderSize = 0;
             btnNovoServico.FlatStyle = FlatStyle.Flat;
-            btnNovoServico.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNovoServico.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnNovoServico.ForeColor = Color.Black;
-            btnNovoServico.Location = new Point(12, 402);
+            btnNovoServico.Location = new Point(12, 406);
             btnNovoServico.Name = "btnNovoServico";
-            btnNovoServico.Size = new Size(135, 36);
+            btnNovoServico.Size = new Size(150, 32);
             btnNovoServico.TabIndex = 55;
             btnNovoServico.Text = "Novo serviço";
             btnNovoServico.TextColor = Color.Black;

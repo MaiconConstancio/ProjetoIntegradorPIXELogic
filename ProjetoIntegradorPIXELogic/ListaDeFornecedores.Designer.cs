@@ -47,7 +47,7 @@
             lblTelefone.BorderStyle = BorderStyle.FixedSingle;
             lblTelefone.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblTelefone.ForeColor = Color.FromArgb(63, 136, 254);
-            lblTelefone.Location = new Point(192, 65);
+            lblTelefone.Location = new Point(192, 86);
             lblTelefone.Name = "lblTelefone";
             lblTelefone.Size = new Size(103, 30);
             lblTelefone.TabIndex = 15;
@@ -59,7 +59,7 @@
             lblCidade.BorderStyle = BorderStyle.FixedSingle;
             lblCidade.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblCidade.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCidade.Location = new Point(620, 65);
+            lblCidade.Location = new Point(620, 86);
             lblCidade.Name = "lblCidade";
             lblCidade.Size = new Size(89, 30);
             lblCidade.TabIndex = 14;
@@ -71,7 +71,7 @@
             lblNumero.BorderStyle = BorderStyle.FixedSingle;
             lblNumero.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblNumero.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNumero.Location = new Point(387, 65);
+            lblNumero.Location = new Point(387, 86);
             lblNumero.Name = "lblNumero";
             lblNumero.Size = new Size(104, 30);
             lblNumero.TabIndex = 13;
@@ -83,7 +83,7 @@
             lblEditar.BorderStyle = BorderStyle.FixedSingle;
             lblEditar.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblEditar.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEditar.Location = new Point(715, 65);
+            lblEditar.Location = new Point(715, 86);
             lblEditar.Name = "lblEditar";
             lblEditar.Size = new Size(80, 30);
             lblEditar.TabIndex = 12;
@@ -95,7 +95,7 @@
             lblCEP.BorderStyle = BorderStyle.FixedSingle;
             lblCEP.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblCEP.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCEP.Location = new Point(301, 65);
+            lblCEP.Location = new Point(301, 86);
             lblCEP.Name = "lblCEP";
             lblCEP.Size = new Size(80, 30);
             lblCEP.TabIndex = 11;
@@ -107,7 +107,7 @@
             lblEndereço.BorderStyle = BorderStyle.FixedSingle;
             lblEndereço.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblEndereço.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEndereço.Location = new Point(497, 65);
+            lblEndereço.Location = new Point(497, 86);
             lblEndereço.Name = "lblEndereço";
             lblEndereço.Size = new Size(117, 30);
             lblEndereço.TabIndex = 10;
@@ -119,7 +119,7 @@
             lblNome.BorderStyle = BorderStyle.FixedSingle;
             lblNome.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblNome.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNome.Location = new Point(15, 65);
+            lblNome.Location = new Point(15, 86);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(80, 30);
             lblNome.TabIndex = 9;
@@ -131,7 +131,7 @@
             lblCNPJ.BorderStyle = BorderStyle.FixedSingle;
             lblCNPJ.Font = new Font("Segoe UI Semibold", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblCNPJ.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCNPJ.Location = new Point(101, 65);
+            lblCNPJ.Location = new Point(101, 86);
             lblCNPJ.Name = "lblCNPJ";
             lblCNPJ.Size = new Size(85, 30);
             lblCNPJ.TabIndex = 17;
@@ -163,15 +163,15 @@
             btnNovoCadastro.BackColor = Color.FromArgb(72, 116, 245);
             btnNovoCadastro.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnNovoCadastro.BorderColor = Color.FromArgb(0, 242, 254);
-            btnNovoCadastro.BorderRadius = 14;
+            btnNovoCadastro.BorderRadius = 12;
             btnNovoCadastro.BorderSize = 2;
             btnNovoCadastro.FlatAppearance.BorderSize = 0;
             btnNovoCadastro.FlatStyle = FlatStyle.Flat;
-            btnNovoCadastro.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNovoCadastro.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnNovoCadastro.ForeColor = Color.Black;
-            btnNovoCadastro.Location = new Point(15, 399);
+            btnNovoCadastro.Location = new Point(12, 406);
             btnNovoCadastro.Name = "btnNovoCadastro";
-            btnNovoCadastro.Size = new Size(176, 39);
+            btnNovoCadastro.Size = new Size(150, 32);
             btnNovoCadastro.TabIndex = 28;
             btnNovoCadastro.Text = "Novo Cadastro";
             btnNovoCadastro.TextColor = Color.Black;
@@ -189,7 +189,7 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(197, 406);
+            btnSalvar.Location = new Point(168, 406);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
             btnSalvar.TabIndex = 29;
@@ -200,7 +200,7 @@
             // panel1
             // 
             panel1.AutoSize = true;
-            panel1.Location = new Point(15, 98);
+            panel1.Location = new Point(15, 122);
             panel1.Name = "panel1";
             panel1.Size = new Size(780, 10);
             panel1.TabIndex = 30;
