@@ -47,11 +47,11 @@
             // lblCadastroDeNovasConta
             // 
             lblCadastroDeNovasConta.AutoSize = true;
-            lblCadastroDeNovasConta.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCadastroDeNovasConta.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCadastroDeNovasConta.Location = new Point(253, 76);
+            lblCadastroDeNovasConta.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCadastroDeNovasConta.ForeColor = Color.Cyan;
+            lblCadastroDeNovasConta.Location = new Point(220, 76);
             lblCadastroDeNovasConta.Name = "lblCadastroDeNovasConta";
-            lblCadastroDeNovasConta.Size = new Size(295, 32);
+            lblCadastroDeNovasConta.Size = new Size(361, 41);
             lblCadastroDeNovasConta.TabIndex = 36;
             lblCadastroDeNovasConta.Text = "Cadastro de novas conta";
             // 
@@ -60,7 +60,7 @@
             txtEmpresa.BackColor = Color.FromArgb(53, 81, 142);
             txtEmpresa.BorderStyle = BorderStyle.FixedSingle;
             txtEmpresa.ForeColor = Color.Cyan;
-            txtEmpresa.Location = new Point(271, 199);
+            txtEmpresa.Location = new Point(305, 219);
             txtEmpresa.Name = "txtEmpresa";
             txtEmpresa.Size = new Size(259, 23);
             txtEmpresa.TabIndex = 37;
@@ -70,7 +70,7 @@
             txtNome.BackColor = Color.FromArgb(53, 81, 142);
             txtNome.BorderStyle = BorderStyle.FixedSingle;
             txtNome.ForeColor = Color.Cyan;
-            txtNome.Location = new Point(271, 145);
+            txtNome.Location = new Point(305, 183);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(259, 23);
             txtNome.TabIndex = 38;
@@ -80,7 +80,7 @@
             txtLogin.BackColor = Color.FromArgb(53, 81, 142);
             txtLogin.BorderStyle = BorderStyle.FixedSingle;
             txtLogin.ForeColor = Color.Cyan;
-            txtLogin.Location = new Point(271, 253);
+            txtLogin.Location = new Point(305, 255);
             txtLogin.Name = "txtLogin";
             txtLogin.Size = new Size(259, 23);
             txtLogin.TabIndex = 40;
@@ -90,7 +90,7 @@
             txtSenha.BackColor = Color.FromArgb(53, 81, 142);
             txtSenha.BorderStyle = BorderStyle.FixedSingle;
             txtSenha.ForeColor = Color.Cyan;
-            txtSenha.Location = new Point(271, 307);
+            txtSenha.Location = new Point(305, 291);
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(259, 23);
             txtSenha.TabIndex = 41;
@@ -98,46 +98,46 @@
             // lblNome
             // 
             lblNome.AutoSize = true;
-            lblNome.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNome.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblNome.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNome.Location = new Point(367, 117);
+            lblNome.Location = new Point(222, 180);
             lblNome.Name = "lblNome";
-            lblNome.Size = new Size(66, 25);
+            lblNome.Size = new Size(81, 30);
             lblNome.TabIndex = 42;
-            lblNome.Text = "Nome";
+            lblNome.Text = "Nome:";
             // 
             // lblEmpresa
             // 
             lblEmpresa.AutoSize = true;
-            lblEmpresa.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblEmpresa.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblEmpresa.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEmpresa.Location = new Point(357, 171);
+            lblEmpresa.Location = new Point(195, 217);
             lblEmpresa.Name = "lblEmpresa";
-            lblEmpresa.Size = new Size(87, 25);
+            lblEmpresa.Size = new Size(108, 30);
             lblEmpresa.TabIndex = 43;
-            lblEmpresa.Text = "Empresa";
+            lblEmpresa.Text = "Empresa:";
             // 
             // lblLogin
             // 
             lblLogin.AutoSize = true;
-            lblLogin.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblLogin.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
-            lblLogin.Location = new Point(369, 225);
+            lblLogin.Location = new Point(227, 253);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(63, 25);
+            lblLogin.Size = new Size(76, 30);
             lblLogin.TabIndex = 45;
-            lblLogin.Text = "Login";
+            lblLogin.Text = "Login:";
             // 
             // lblSenha
             // 
             lblSenha.AutoSize = true;
-            lblSenha.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSenha.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
-            lblSenha.Location = new Point(367, 279);
+            lblSenha.Location = new Point(222, 289);
             lblSenha.Name = "lblSenha";
-            lblSenha.Size = new Size(66, 25);
+            lblSenha.Size = new Size(81, 30);
             lblSenha.TabIndex = 46;
-            lblSenha.Text = "Senha";
+            lblSenha.Text = "Senha:";
             // 
             // btnCancelar
             // 
