@@ -23,7 +23,7 @@ namespace ProjetoIntegradorPIXELogic
         private void MontagemPrograma_Load(object sender, EventArgs e)
         {
 
-            if (Conexao.executaQuery("select * from funcoes where nome = 'servicos' and habilitado_nao = true;").Rows.Count > 0)
+            if (Conexao.executaQuery("select * from funcoes where nome = 'gerenciamento servico' and habilitado_nao = true;").Rows.Count > 0)
             {
 
                 chkBoxGerenciamentoServiços.Checked = true;
@@ -97,7 +97,7 @@ namespace ProjetoIntegradorPIXELogic
             if (chkBoxGerenciamentoServiços.Checked == true)
             {
 
-                if (Conexao.executaQuery("select * from funcoes where nome = 'genciamento servico'").Rows.Count > 0)
+                if (Conexao.executaQuery("select * from funcoes where nome = 'gerenciamento servico'").Rows.Count > 0)
                 {
 
                     Conexao.executaQuery("update funcoes set habilitado_nao = true where nome = 'gerenciamento servico';");
@@ -111,14 +111,14 @@ namespace ProjetoIntegradorPIXELogic
             else
             {
 
-                Conexao.executaQuery("update funcoes set habilitado_nao = false where nome = 'gerenciamento serviços';");
+                Conexao.executaQuery("update funcoes set habilitado_nao = false where nome = 'gerenciamento servico';");
 
             }
 
             if (chkBoxClientes.Checked == true)
             {
 
-                if (Conexao.executaQuery("select * from funcoes where nome = 'clientes'").Rows.Count == 0)
+                if (Conexao.executaQuery("select * from funcoes where nome = 'clientes';").Rows.Count > 0)
                 {
 
                     Conexao.executaQuery("update funcoes set habilitado_nao = true where nome = 'clientes';");
@@ -139,7 +139,7 @@ namespace ProjetoIntegradorPIXELogic
             if (chkBoxProdutos.Checked == true)
             {
 
-                if (Conexao.executaQuery("select * from funcoes where nome = 'produtos'").Rows.Count == 0)
+                if (Conexao.executaQuery("select * from funcoes where nome = 'produtos'").Rows.Count > 0)
                 {
 
                     Conexao.executaQuery("update funcoes set habilitado_nao = true where nome = 'produtos';");

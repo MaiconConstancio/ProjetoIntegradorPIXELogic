@@ -31,17 +31,12 @@
             btnSalvar = new WiLBiT.WiLBiTButton2();
             lblOrcamentoDeServicos = new Label();
             panel1 = new Panel();
-            btnCadastros = new Button();
-            btnVendas = new Button();
-            btnRelatorioProdutos = new Button();
-            btnRelatorioServicos = new Button();
-            btnSuporte = new Button();
             wilBitRoundedPictureBox21 = new WiLBiT.WiLBiTRoundedPictureBox2();
-            btnSuporteNovo = new WiLBiT.WiLBiTButton2();
-            btnRelatorioServicosNovo = new WiLBiT.WiLBiTButton2();
-            btnRelatorioProdutosNovo = new WiLBiT.WiLBiTButton2();
-            btnVendasNovo = new WiLBiT.WiLBiTButton2();
-            btnCadastrosNovo = new WiLBiT.WiLBiTButton2();
+            btnSuporte = new WiLBiT.WiLBiTButton2();
+            btnRelatorioProdutos = new WiLBiT.WiLBiTButton2();
+            btnRelatorioServicos = new WiLBiT.WiLBiTButton2();
+            btnVendas = new WiLBiT.WiLBiTButton2();
+            btnCadastros = new WiLBiT.WiLBiTButton2();
             ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox21).BeginInit();
             SuspendLayout();
             // 
@@ -84,56 +79,6 @@
             panel1.Size = new Size(114, 0);
             panel1.TabIndex = 77;
             // 
-            // btnCadastros
-            // 
-            btnCadastros.Location = new Point(0, 0);
-            btnCadastros.Name = "btnCadastros";
-            btnCadastros.Size = new Size(75, 23);
-            btnCadastros.TabIndex = 78;
-            btnCadastros.Text = "Cadastros";
-            btnCadastros.UseVisualStyleBackColor = true;
-            btnCadastros.Click += btnCadastros_Click;
-            // 
-            // btnVendas
-            // 
-            btnVendas.Location = new Point(0, 0);
-            btnVendas.Name = "btnVendas";
-            btnVendas.Size = new Size(75, 23);
-            btnVendas.TabIndex = 78;
-            btnVendas.Text = "Vendas";
-            btnVendas.UseVisualStyleBackColor = true;
-            btnVendas.Click += btnVendas_Click;
-            // 
-            // btnRelatorioProdutos
-            // 
-            btnRelatorioProdutos.Location = new Point(0, 0);
-            btnRelatorioProdutos.Name = "btnRelatorioProdutos";
-            btnRelatorioProdutos.Size = new Size(75, 23);
-            btnRelatorioProdutos.TabIndex = 78;
-            btnRelatorioProdutos.Text = "Relatório Produto";
-            btnRelatorioProdutos.UseVisualStyleBackColor = true;
-            btnRelatorioProdutos.Click += btnRelatorioProdutos_Click;
-            // 
-            // btnRelatorioServicos
-            // 
-            btnRelatorioServicos.Location = new Point(0, 0);
-            btnRelatorioServicos.Name = "btnRelatorioServicos";
-            btnRelatorioServicos.Size = new Size(75, 23);
-            btnRelatorioServicos.TabIndex = 78;
-            btnRelatorioServicos.Text = "Relatório Seviço";
-            btnRelatorioServicos.UseVisualStyleBackColor = true;
-            btnRelatorioServicos.Click += btnRelatorioServicos_Click;
-            // 
-            // btnSuporte
-            // 
-            btnSuporte.Location = new Point(0, 0);
-            btnSuporte.Name = "btnSuporte";
-            btnSuporte.Size = new Size(75, 23);
-            btnSuporte.TabIndex = 78;
-            btnSuporte.Text = "suporte";
-            btnSuporte.UseVisualStyleBackColor = true;
-            btnSuporte.Click += btnSuporte_Click;
-            // 
             // wilBitRoundedPictureBox21
             // 
             wilBitRoundedPictureBox21.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
@@ -150,101 +95,103 @@
             wilBitRoundedPictureBox21.TabIndex = 80;
             wilBitRoundedPictureBox21.TabStop = false;
             // 
-            // btnSuporteNovo
+            // btnSuporte
             // 
-            btnSuporteNovo.BackColor = Color.FromArgb(72, 116, 245);
-            btnSuporteNovo.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnSuporteNovo.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSuporteNovo.BorderRadius = 12;
-            btnSuporteNovo.BorderSize = 2;
-            btnSuporteNovo.FlatAppearance.BorderSize = 0;
-            btnSuporteNovo.FlatStyle = FlatStyle.Flat;
-            btnSuporteNovo.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSuporteNovo.ForeColor = Color.Black;
-            btnSuporteNovo.Location = new Point(618, 386);
-            btnSuporteNovo.Name = "btnSuporteNovo";
-            btnSuporteNovo.Size = new Size(170, 32);
-            btnSuporteNovo.TabIndex = 81;
-            btnSuporteNovo.Text = "Suporte";
-            btnSuporteNovo.TextColor = Color.Black;
-            btnSuporteNovo.UseVisualStyleBackColor = false;
+            btnSuporte.BackColor = Color.FromArgb(72, 116, 245);
+            btnSuporte.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnSuporte.BorderColor = Color.FromArgb(0, 242, 254);
+            btnSuporte.BorderRadius = 12;
+            btnSuporte.BorderSize = 2;
+            btnSuporte.FlatAppearance.BorderSize = 0;
+            btnSuporte.FlatStyle = FlatStyle.Flat;
+            btnSuporte.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSuporte.ForeColor = Color.Black;
+            btnSuporte.Name = "btnSuporteNovo";
+            btnSuporte.Size = new Size(170, 32);
+            btnSuporte.TabIndex = 81;
+            btnSuporte.Text = "Suporte";
+            btnSuporte.TextColor = Color.Black;
+            btnSuporte.UseVisualStyleBackColor = false;
+            btnSuporte.Click += btnSuporte_Click;
+           
             // 
-            // btnRelatorioServicosNovo
+            // btnRelatorioProdutos
             // 
-            btnRelatorioServicosNovo.BackColor = Color.FromArgb(72, 116, 245);
-            btnRelatorioServicosNovo.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnRelatorioServicosNovo.BorderColor = Color.FromArgb(0, 242, 254);
-            btnRelatorioServicosNovo.BorderRadius = 12;
-            btnRelatorioServicosNovo.BorderSize = 2;
-            btnRelatorioServicosNovo.FlatAppearance.BorderSize = 0;
-            btnRelatorioServicosNovo.FlatStyle = FlatStyle.Flat;
-            btnRelatorioServicosNovo.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnRelatorioServicosNovo.ForeColor = Color.Black;
-            btnRelatorioServicosNovo.Location = new Point(618, 345);
-            btnRelatorioServicosNovo.Name = "btnRelatorioServicosNovo";
-            btnRelatorioServicosNovo.Size = new Size(170, 32);
-            btnRelatorioServicosNovo.TabIndex = 82;
-            btnRelatorioServicosNovo.Text = "Relatório Seviço";
-            btnRelatorioServicosNovo.TextColor = Color.Black;
-            btnRelatorioServicosNovo.UseVisualStyleBackColor = false;
+            btnRelatorioProdutos.BackColor = Color.FromArgb(72, 116, 245);
+            btnRelatorioProdutos.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnRelatorioProdutos.BorderColor = Color.FromArgb(0, 242, 254);
+            btnRelatorioProdutos.BorderRadius = 12;
+            btnRelatorioProdutos.BorderSize = 2;
+            btnRelatorioProdutos.FlatAppearance.BorderSize = 0;
+            btnRelatorioProdutos.FlatStyle = FlatStyle.Flat;
+            btnRelatorioProdutos.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRelatorioProdutos.ForeColor = Color.Black;
+            btnRelatorioProdutos.Name = "btnRelatorioProdutosNovo";
+            btnRelatorioProdutos.Size = new Size(170, 32);
+            btnRelatorioProdutos.TabIndex = 83;
+            btnRelatorioProdutos.Text = "Relatório Produto";
+            btnRelatorioProdutos.TextColor = Color.Black;
+            btnRelatorioProdutos.UseVisualStyleBackColor = false;
+            btnRelatorioProdutos.Click += btnRelatorioProdutos_Click;
             // 
-            // btnRelatorioProdutosNovo
+            // btnRelatorioServicos
             // 
-            btnRelatorioProdutosNovo.BackColor = Color.FromArgb(72, 116, 245);
-            btnRelatorioProdutosNovo.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnRelatorioProdutosNovo.BorderColor = Color.FromArgb(0, 242, 254);
-            btnRelatorioProdutosNovo.BorderRadius = 12;
-            btnRelatorioProdutosNovo.BorderSize = 2;
-            btnRelatorioProdutosNovo.FlatAppearance.BorderSize = 0;
-            btnRelatorioProdutosNovo.FlatStyle = FlatStyle.Flat;
-            btnRelatorioProdutosNovo.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnRelatorioProdutosNovo.ForeColor = Color.Black;
-            btnRelatorioProdutosNovo.Location = new Point(618, 304);
-            btnRelatorioProdutosNovo.Name = "btnRelatorioProdutosNovo";
-            btnRelatorioProdutosNovo.Size = new Size(170, 32);
-            btnRelatorioProdutosNovo.TabIndex = 83;
-            btnRelatorioProdutosNovo.Text = "Relatório Produto";
-            btnRelatorioProdutosNovo.TextColor = Color.Black;
-            btnRelatorioProdutosNovo.UseVisualStyleBackColor = false;
+            btnRelatorioServicos.BackColor = Color.FromArgb(72, 116, 245);
+            btnRelatorioServicos.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnRelatorioServicos.BorderColor = Color.FromArgb(0, 242, 254);
+            btnRelatorioServicos.BorderRadius = 12;
+            btnRelatorioServicos.BorderSize = 2;
+            btnRelatorioServicos.FlatAppearance.BorderSize = 0;
+            btnRelatorioServicos.FlatStyle = FlatStyle.Flat;
+            btnRelatorioServicos.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnRelatorioServicos.ForeColor = Color.Black;
+            btnRelatorioServicos.Name = "btnRelatorioServicos";
+            btnRelatorioServicos.Size = new Size(170, 32);
+            btnRelatorioServicos.TabIndex = 84;
+            btnRelatorioServicos.Text = "Relátorio serviços";
+            btnRelatorioServicos.TextColor = Color.Black;
+            btnRelatorioServicos.UseVisualStyleBackColor = false;
+            btnRelatorioServicos.Click += btnRelatorioServicos_Click;
             // 
-            // btnVendasNovo
+            // btnVendas
             // 
-            btnVendasNovo.BackColor = Color.FromArgb(72, 116, 245);
-            btnVendasNovo.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnVendasNovo.BorderColor = Color.FromArgb(0, 242, 254);
-            btnVendasNovo.BorderRadius = 12;
-            btnVendasNovo.BorderSize = 2;
-            btnVendasNovo.FlatAppearance.BorderSize = 0;
-            btnVendasNovo.FlatStyle = FlatStyle.Flat;
-            btnVendasNovo.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnVendasNovo.ForeColor = Color.Black;
-            btnVendasNovo.Location = new Point(618, 263);
-            btnVendasNovo.Name = "btnVendasNovo";
-            btnVendasNovo.Size = new Size(170, 32);
-            btnVendasNovo.TabIndex = 84;
-            btnVendasNovo.Text = "Vendas";
-            btnVendasNovo.TextColor = Color.Black;
-            btnVendasNovo.UseVisualStyleBackColor = false;
+            btnVendas.BackColor = Color.FromArgb(72, 116, 245);
+            btnVendas.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnVendas.BorderColor = Color.FromArgb(0, 242, 254);
+            btnVendas.BorderRadius = 12;
+            btnVendas.BorderSize = 2;
+            btnVendas.FlatAppearance.BorderSize = 0;
+            btnVendas.FlatStyle = FlatStyle.Flat;
+            btnVendas.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVendas.ForeColor = Color.Black;
+            btnVendas.Location = new Point(618, 263);
+            btnVendas.Name = "btnVendasNovo";
+            btnVendas.Size = new Size(170, 32);
+            btnVendas.TabIndex = 84;
+            btnVendas.Text = "Vendas";
+            btnVendas.TextColor = Color.Black;
+            btnVendas.UseVisualStyleBackColor = false;
+            btnVendas.Click += btnVendas_Click;
             // 
-            // btnCadastrosNovo
+            // btnCadastros
             // 
-            btnCadastrosNovo.BackColor = Color.FromArgb(72, 116, 245);
-            btnCadastrosNovo.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnCadastrosNovo.BorderColor = Color.FromArgb(0, 242, 254);
-            btnCadastrosNovo.BorderRadius = 12;
-            btnCadastrosNovo.BorderSize = 2;
-            btnCadastrosNovo.FlatAppearance.BorderSize = 0;
-            btnCadastrosNovo.FlatStyle = FlatStyle.Flat;
-            btnCadastrosNovo.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCadastrosNovo.ForeColor = Color.Black;
-            btnCadastrosNovo.Location = new Point(618, 222);
-            btnCadastrosNovo.Name = "btnCadastrosNovo";
-            btnCadastrosNovo.Size = new Size(170, 32);
-            btnCadastrosNovo.TabIndex = 85;
-            btnCadastrosNovo.Text = "Cadastros";
-            btnCadastrosNovo.TextColor = Color.Black;
-            btnCadastrosNovo.UseVisualStyleBackColor = false;
-            btnCadastrosNovo.Click += btnCadastrosNovo_Click;
+            btnCadastros.BackColor = Color.FromArgb(72, 116, 245);
+            btnCadastros.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnCadastros.BorderColor = Color.FromArgb(0, 242, 254);
+            btnCadastros.BorderRadius = 12;
+            btnCadastros.BorderSize = 2;
+            btnCadastros.FlatAppearance.BorderSize = 0;
+            btnCadastros.FlatStyle = FlatStyle.Flat;
+            btnCadastros.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCadastros.ForeColor = Color.Black;
+            btnCadastros.Location = new Point(618, 222);
+            btnCadastros.Name = "btnCadastrosNovo";
+            btnCadastros.Size = new Size(170, 32);
+            btnCadastros.TabIndex = 85;
+            btnCadastros.Text = "Cadastros";
+            btnCadastros.TextColor = Color.Black;
+            btnCadastros.UseVisualStyleBackColor = false;
+            btnCadastros.Click += btnCadastros_Click;
             // 
             // SagaoPrincipal
             // 
@@ -253,11 +200,6 @@
             BackColor = Color.FromArgb(16, 25, 56);
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(800, 450);
-            Controls.Add(btnCadastrosNovo);
-            Controls.Add(btnVendasNovo);
-            Controls.Add(btnRelatorioProdutosNovo);
-            Controls.Add(btnRelatorioServicosNovo);
-            Controls.Add(btnSuporteNovo);
             Controls.Add(wilBitRoundedPictureBox21);
             Controls.Add(panel1);
             Controls.Add(lblOrcamentoDeServicos);
@@ -330,16 +272,11 @@
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private Label lblOrcamentoDeServicos;
         private Panel panel1;
-        private Button btnCadastros;
-        private Button btnVendas;
-        private Button btnRelatorioProdutos;
-        private Button btnRelatorioServicos;
-        private Button btnSuporte;
         private WiLBiT.WiLBiTRoundedPictureBox2 wilBitRoundedPictureBox21;
-        private WiLBiT.WiLBiTButton2 btnSuporteNovo;
-        private WiLBiT.WiLBiTButton2 btnRelatorioServicosNovo;
-        private WiLBiT.WiLBiTButton2 btnRelatorioProdutosNovo;
-        private WiLBiT.WiLBiTButton2 btnVendasNovo;
-        private WiLBiT.WiLBiTButton2 btnCadastrosNovo;
+        private WiLBiT.WiLBiTButton2 btnSuporte;
+        private WiLBiT.WiLBiTButton2 btnRelatorioServicos;
+        private WiLBiT.WiLBiTButton2 btnRelatorioProdutos;
+        private WiLBiT.WiLBiTButton2 btnVendas;
+        private WiLBiT.WiLBiTButton2 btnCadastros;
     }
 }

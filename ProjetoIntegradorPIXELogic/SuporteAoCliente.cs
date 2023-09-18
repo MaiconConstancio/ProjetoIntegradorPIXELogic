@@ -41,6 +41,7 @@ namespace ProjetoIntegradorPIXELogic
             string urlWhatsApp = $"https://api.whatsapp.com/send?phone={numeroWhatsApp}&text={Uri.EscapeDataString(mensagemWhatsApp)}";
             try
             {
+
                 ProcessStartInfo psi = new ProcessStartInfo
                 {
                     FileName = urlWhatsApp,
