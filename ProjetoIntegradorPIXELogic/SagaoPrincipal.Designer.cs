@@ -106,6 +106,7 @@
             btnSuporte.FlatStyle = FlatStyle.Flat;
             btnSuporte.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSuporte.ForeColor = Color.Black;
+            btnSuporte.Location = new Point(618, 386);
             btnSuporte.Name = "btnSuporteNovo";
             btnSuporte.Size = new Size(170, 32);
             btnSuporte.TabIndex = 81;
@@ -126,6 +127,7 @@
             btnRelatorioProdutos.FlatStyle = FlatStyle.Flat;
             btnRelatorioProdutos.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnRelatorioProdutos.ForeColor = Color.Black;
+            btnRelatorioProdutos.Location = new Point(618, 304);
             btnRelatorioProdutos.Name = "btnRelatorioProdutosNovo";
             btnRelatorioProdutos.Size = new Size(170, 32);
             btnRelatorioProdutos.TabIndex = 83;
@@ -145,6 +147,7 @@
             btnRelatorioServicos.FlatStyle = FlatStyle.Flat;
             btnRelatorioServicos.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnRelatorioServicos.ForeColor = Color.Black;
+            btnRelatorioServicos.Location = new Point(618, 263);
             btnRelatorioServicos.Name = "btnRelatorioServicos";
             btnRelatorioServicos.Size = new Size(170, 32);
             btnRelatorioServicos.TabIndex = 84;
