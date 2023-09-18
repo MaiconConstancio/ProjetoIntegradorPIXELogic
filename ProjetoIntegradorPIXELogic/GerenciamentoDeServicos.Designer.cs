@@ -190,7 +190,7 @@
             panel1.AutoSize = true;
             panel1.Location = new Point(12, 122);
             panel1.Name = "panel1";
-            panel1.Size = new Size(783, 10);
+            panel1.Size = new Size(779, 10);
             panel1.TabIndex = 35;
             // 
             // GerenciamentoDeServicos

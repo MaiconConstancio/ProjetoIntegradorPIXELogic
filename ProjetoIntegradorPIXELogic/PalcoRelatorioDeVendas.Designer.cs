@@ -125,7 +125,7 @@
             // 
             label5.AutoSize = true;
             label5.ForeColor = Color.White;
-            label5.Location = new Point(600, 14);
+            label5.Location = new Point(609, 14);
             label5.Name = "label5";
             label5.Size = new Size(38, 15);
             label5.TabIndex = 91;

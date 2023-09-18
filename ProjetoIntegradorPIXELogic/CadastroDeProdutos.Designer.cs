@@ -200,6 +200,7 @@
             maskValor.BackColor = Color.FromArgb(53, 81, 142);
             maskValor.BorderStyle = BorderStyle.FixedSingle;
             maskValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskValor.ForeColor = Color.Cyan;
             maskValor.Location = new Point(302, 272);
             maskValor.Mask = "$ 000,00";
             maskValor.Name = "maskValor";
@@ -212,12 +213,12 @@
             maskVencimento.BackColor = Color.FromArgb(53, 81, 142);
             maskVencimento.BorderStyle = BorderStyle.FixedSingle;
             maskVencimento.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskVencimento.ForeColor = Color.Cyan;
             maskVencimento.Location = new Point(309, 323);
             maskVencimento.Mask = "00/00/0000";
             maskVencimento.Name = "maskVencimento";
             maskVencimento.Size = new Size(183, 29);
             maskVencimento.TabIndex = 71;
-            maskVencimento.Text = "20012005";
             // 
             // CadastroDeProdutos
             // 

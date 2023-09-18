@@ -34,6 +34,7 @@
             // 
             // panel1
             // 
+            panel1.BackColor = Color.FromArgb(16, 25, 56);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";

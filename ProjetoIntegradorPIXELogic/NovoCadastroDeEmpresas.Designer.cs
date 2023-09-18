@@ -70,6 +70,7 @@
             // 
             txtEmpresa.BackColor = Color.FromArgb(53, 81, 142);
             txtEmpresa.BorderStyle = BorderStyle.FixedSingle;
+            txtEmpresa.ForeColor = Color.Cyan;
             txtEmpresa.Location = new Point(271, 199);
             txtEmpresa.Name = "txtEmpresa";
             txtEmpresa.Size = new Size(259, 23);
@@ -79,6 +80,7 @@
             // 
             txtNome.BackColor = Color.FromArgb(53, 81, 142);
             txtNome.BorderStyle = BorderStyle.FixedSingle;
+            txtNome.ForeColor = Color.Cyan;
             txtNome.Location = new Point(271, 145);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(259, 23);
@@ -88,6 +90,7 @@
             // 
             txtLogin.BackColor = Color.FromArgb(53, 81, 142);
             txtLogin.BorderStyle = BorderStyle.FixedSingle;
+            txtLogin.ForeColor = Color.Cyan;
             txtLogin.Location = new Point(271, 253);
             txtLogin.Name = "txtLogin";
             txtLogin.Size = new Size(259, 23);
@@ -97,6 +100,7 @@
             // 
             txtSenha.BackColor = Color.FromArgb(53, 81, 142);
             txtSenha.BorderStyle = BorderStyle.FixedSingle;
+            txtSenha.ForeColor = Color.Cyan;
             txtSenha.Location = new Point(271, 307);
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(259, 23);

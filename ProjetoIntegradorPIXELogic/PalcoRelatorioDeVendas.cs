@@ -12,7 +12,7 @@ namespace ProjetoIntegradorPIXELogic
 {
     public partial class PalcoRelatorioDeVendas : Form
     {
-        public PalcoRelatorioDeVendas(string lb1,string lb2, string lb3, string lb4, string lb5)
+        public PalcoRelatorioDeVendas(string lb1, string lb2, string lb3, string lb4, string lb5)
         {
             InitializeComponent();
 

@@ -139,6 +139,7 @@
             maskValor.BackColor = Color.FromArgb(53, 81, 142);
             maskValor.BorderStyle = BorderStyle.FixedSingle;
             maskValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskValor.ForeColor = Color.Cyan;
             maskValor.Location = new Point(302, 239);
             maskValor.Mask = "$ 000,00";
             maskValor.Name = "maskValor";

@@ -64,6 +64,7 @@
             // 
             txtNomeDoCliente.BackColor = Color.FromArgb(53, 81, 142);
             txtNomeDoCliente.BorderStyle = BorderStyle.FixedSingle;
+            txtNomeDoCliente.ForeColor = Color.Cyan;
             txtNomeDoCliente.Location = new Point(510, 46);
             txtNomeDoCliente.Name = "txtNomeDoCliente";
             txtNomeDoCliente.Size = new Size(259, 23);
@@ -249,7 +250,7 @@
             panel1.AutoSize = true;
             panel1.Location = new Point(2, 122);
             panel1.Name = "panel1";
-            panel1.Size = new Size(796, 10);
+            panel1.Size = new Size(779, 10);
             panel1.TabIndex = 41;
             panel1.Paint += panel1_Paint;
             // 

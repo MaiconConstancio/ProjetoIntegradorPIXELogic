@@ -64,7 +64,7 @@
             // 
             lblOrcamentoDeServicos.AutoSize = true;
             lblOrcamentoDeServicos.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            lblOrcamentoDeServicos.ForeColor = Color.MintCream;
+            lblOrcamentoDeServicos.ForeColor = Color.Cyan;
             lblOrcamentoDeServicos.Location = new Point(26, 12);
             lblOrcamentoDeServicos.Name = "lblOrcamentoDeServicos";
             lblOrcamentoDeServicos.Size = new Size(69, 25);

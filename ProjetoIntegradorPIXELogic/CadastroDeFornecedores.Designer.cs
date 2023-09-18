@@ -199,6 +199,7 @@
             maskedCNJP.BorderStyle = BorderStyle.FixedSingle;
             maskedCNJP.CutCopyMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             maskedCNJP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskedCNJP.ForeColor = Color.Cyan;
             maskedCNJP.Location = new Point(293, 191);
             maskedCNJP.Mask = "00.000.000/0001-00";
             maskedCNJP.Name = "maskedCNJP";
@@ -212,6 +213,7 @@
             maskedCEP.BorderStyle = BorderStyle.FixedSingle;
             maskedCEP.CutCopyMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             maskedCEP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskedCEP.ForeColor = Color.Cyan;
             maskedCEP.Location = new Point(316, 226);
             maskedCEP.Mask = "00000-00";
             maskedCEP.Name = "maskedCEP";
@@ -225,6 +227,7 @@
             maskedNumero.BorderStyle = BorderStyle.FixedSingle;
             maskedNumero.CutCopyMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             maskedNumero.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskedNumero.ForeColor = Color.Cyan;
             maskedNumero.Location = new Point(305, 261);
             maskedNumero.Mask = "0000";
             maskedNumero.Name = "maskedNumero";
@@ -268,12 +271,12 @@
             maskedTelefone.BackColor = Color.FromArgb(53, 81, 142);
             maskedTelefone.BorderStyle = BorderStyle.FixedSingle;
             maskedTelefone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskedTelefone.ForeColor = Color.Cyan;
             maskedTelefone.Location = new Point(285, 156);
             maskedTelefone.Mask = "(99) 00000-0000";
             maskedTelefone.Name = "maskedTelefone";
             maskedTelefone.Size = new Size(231, 29);
             maskedTelefone.TabIndex = 43;
-            maskedTelefone.Text = "78690879870";
             maskedTelefone.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // CadastroDeFornecedores

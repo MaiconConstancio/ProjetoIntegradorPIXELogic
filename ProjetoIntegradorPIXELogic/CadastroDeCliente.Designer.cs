@@ -66,6 +66,7 @@
             maskNumero.BackColor = Color.FromArgb(53, 81, 142);
             maskNumero.BorderStyle = BorderStyle.FixedSingle;
             maskNumero.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskNumero.ForeColor = Color.Cyan;
             maskNumero.Location = new Point(311, 259);
             maskNumero.Mask = "0000";
             maskNumero.Name = "maskNumero";
@@ -77,6 +78,7 @@
             maskCEP.BackColor = Color.FromArgb(53, 81, 142);
             maskCEP.BorderStyle = BorderStyle.FixedSingle;
             maskCEP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskCEP.ForeColor = Color.Cyan;
             maskCEP.Location = new Point(322, 224);
             maskCEP.Mask = "00000-000";
             maskCEP.Name = "maskCEP";
@@ -88,6 +90,7 @@
             maskCPF.BackColor = Color.FromArgb(53, 81, 142);
             maskCPF.BorderStyle = BorderStyle.FixedSingle;
             maskCPF.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskCPF.ForeColor = Color.Cyan;
             maskCPF.Location = new Point(302, 189);
             maskCPF.Mask = "000.000.000-00";
             maskCPF.Name = "maskCPF";
@@ -99,6 +102,7 @@
             maskTelefone.BackColor = Color.FromArgb(53, 81, 142);
             maskTelefone.BorderStyle = BorderStyle.FixedSingle;
             maskTelefone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskTelefone.ForeColor = Color.Cyan;
             maskTelefone.Location = new Point(294, 154);
             maskTelefone.Mask = "(99) 00000-0000";
             maskTelefone.Name = "maskTelefone";

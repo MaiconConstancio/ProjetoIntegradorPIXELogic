@@ -40,6 +40,8 @@
             lblCliente = new Label();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             panel1 = new Panel();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnNovoCadastro
@@ -200,10 +202,19 @@
             // panel1
             // 
             panel1.AutoSize = true;
-            panel1.Location = new Point(12, 122);
+            panel1.Location = new Point(11, 122);
             panel1.Name = "panel1";
-            panel1.Size = new Size(776, 10);
+            panel1.Size = new Size(779, 10);
             panel1.TabIndex = 46;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Dock = DockStyle.Fill;
+            pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(800, 450);
+            pictureBox1.TabIndex = 47;
+            pictureBox1.TabStop = false;
             // 
             // GerenciamentoDeClientes
             // 
@@ -223,10 +234,12 @@
             Controls.Add(lblCliente);
             Controls.Add(btnVoltar);
             Controls.Add(btnNovoCadastro);
+            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "GerenciamentoDeClientes";
             Text = "    ";
             Load += GerenciamentoDeClientes_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -245,5 +258,6 @@
         private Label lblEstimativaDeEntrega;
         private Label lblCliente;
         private Panel panel1;
+        private PictureBox pictureBox1;
     }
 }

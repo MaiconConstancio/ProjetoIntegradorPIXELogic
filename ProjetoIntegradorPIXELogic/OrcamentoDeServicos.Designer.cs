@@ -227,6 +227,7 @@
             maskValor.BackColor = Color.FromArgb(53, 81, 142);
             maskValor.BorderStyle = BorderStyle.FixedSingle;
             maskValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskValor.ForeColor = Color.Cyan;
             maskValor.Location = new Point(302, 182);
             maskValor.Mask = "$ 000,00";
             maskValor.Name = "maskValor";
@@ -285,6 +286,7 @@
             maskPrazoDeEntrega.BackColor = Color.FromArgb(53, 81, 142);
             maskPrazoDeEntrega.BorderStyle = BorderStyle.FixedSingle;
             maskPrazoDeEntrega.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskPrazoDeEntrega.ForeColor = Color.Cyan;
             maskPrazoDeEntrega.Location = new Point(309, 290);
             maskPrazoDeEntrega.Mask = "00/00/0000";
             maskPrazoDeEntrega.Name = "maskPrazoDeEntrega";
