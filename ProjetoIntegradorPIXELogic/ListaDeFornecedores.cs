@@ -56,5 +56,26 @@ namespace ProjetoIntegradorPIXELogic
             }
 
         }
+
+        private void lblNome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCNPJ_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lblTelefone_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lblCEP_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void lblNumero_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

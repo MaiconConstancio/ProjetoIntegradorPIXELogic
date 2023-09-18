@@ -64,9 +64,9 @@
             lblSenha.BorderStyle = BorderStyle.FixedSingle;
             lblSenha.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
-            lblSenha.Location = new Point(545, 86);
+            lblSenha.Location = new Point(482, 86);
             lblSenha.Name = "lblSenha";
-            lblSenha.Size = new Size(152, 30);
+            lblSenha.Size = new Size(150, 30);
             lblSenha.TabIndex = 21;
             lblSenha.Text = "Senha";
             lblSenha.TextAlign = ContentAlignment.MiddleCenter;
@@ -76,9 +76,9 @@
             lblLogin.BorderStyle = BorderStyle.FixedSingle;
             lblLogin.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
-            lblLogin.Location = new Point(323, 86);
+            lblLogin.Location = new Point(327, 86);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(216, 30);
+            lblLogin.Size = new Size(150, 30);
             lblLogin.TabIndex = 22;
             lblLogin.Text = "Login";
             lblLogin.TextAlign = ContentAlignment.MiddleCenter;
@@ -88,9 +88,9 @@
             lblCargo.BorderStyle = BorderStyle.FixedSingle;
             lblCargo.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblCargo.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCargo.Location = new Point(171, 86);
+            lblCargo.Location = new Point(170, 86);
             lblCargo.Name = "lblCargo";
-            lblCargo.Size = new Size(146, 30);
+            lblCargo.Size = new Size(150, 30);
             lblCargo.TabIndex = 23;
             lblCargo.Text = "Cargo";
             lblCargo.TextAlign = ContentAlignment.MiddleCenter;
@@ -100,9 +100,9 @@
             lblEditar.BorderStyle = BorderStyle.FixedSingle;
             lblEditar.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblEditar.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEditar.Location = new Point(703, 86);
+            lblEditar.Location = new Point(638, 86);
             lblEditar.Name = "lblEditar";
-            lblEditar.Size = new Size(94, 30);
+            lblEditar.Size = new Size(150, 30);
             lblEditar.TabIndex = 24;
             lblEditar.Text = "Editar";
             lblEditar.TextAlign = ContentAlignment.MiddleCenter;
@@ -112,9 +112,9 @@
             lblNome.BorderStyle = BorderStyle.FixedSingle;
             lblNome.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblNome.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNome.Location = new Point(12, 86);
+            lblNome.Location = new Point(13, 86);
             lblNome.Name = "lblNome";
-            lblNome.Size = new Size(153, 30);
+            lblNome.Size = new Size(150, 30);
             lblNome.TabIndex = 25;
             lblNome.Text = "Nome";
             lblNome.TextAlign = ContentAlignment.MiddleCenter;
@@ -161,9 +161,9 @@
             // panel1
             // 
             panel1.AutoSize = true;
-            panel1.Location = new Point(12, 122);
+            panel1.Location = new Point(11, 122);
             panel1.Name = "panel1";
-            panel1.Size = new Size(785, 10);
+            panel1.Size = new Size(779, 10);
             panel1.TabIndex = 28;
             // 
             // ListaDeColaboradores

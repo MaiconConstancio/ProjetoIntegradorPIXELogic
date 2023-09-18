@@ -48,5 +48,10 @@ namespace ProjetoIntegradorPIXELogic
             }
 
         }
+
+        private void lblValor_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

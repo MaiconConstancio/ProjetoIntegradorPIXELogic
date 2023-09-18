@@ -88,7 +88,7 @@
             lblCliente.ForeColor = Color.FromArgb(63, 136, 254);
             lblCliente.Location = new Point(12, 86);
             lblCliente.Name = "lblCliente";
-            lblCliente.Size = new Size(97, 30);
+            lblCliente.Size = new Size(90, 30);
             lblCliente.TabIndex = 26;
             lblCliente.Text = "Cliente";
             lblCliente.TextAlign = ContentAlignment.MiddleCenter;
@@ -98,9 +98,9 @@
             lblEstimativaDeEntrega.BorderStyle = BorderStyle.FixedSingle;
             lblEstimativaDeEntrega.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEstimativaDeEntrega.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEstimativaDeEntrega.Location = new Point(512, 86);
+            lblEstimativaDeEntrega.Location = new Point(504, 86);
             lblEstimativaDeEntrega.Name = "lblEstimativaDeEntrega";
-            lblEstimativaDeEntrega.Size = new Size(207, 30);
+            lblEstimativaDeEntrega.Size = new Size(206, 30);
             lblEstimativaDeEntrega.TabIndex = 27;
             lblEstimativaDeEntrega.Text = "Estimativa de entrega";
             lblEstimativaDeEntrega.TextAlign = ContentAlignment.MiddleCenter;
@@ -110,9 +110,9 @@
             lblFuncionario.BorderStyle = BorderStyle.FixedSingle;
             lblFuncionario.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblFuncionario.ForeColor = Color.FromArgb(63, 136, 254);
-            lblFuncionario.Location = new Point(383, 86);
+            lblFuncionario.Location = new Point(376, 86);
             lblFuncionario.Name = "lblFuncionario";
-            lblFuncionario.Size = new Size(123, 30);
+            lblFuncionario.Size = new Size(122, 30);
             lblFuncionario.TabIndex = 28;
             lblFuncionario.Text = "Funcionario";
             lblFuncionario.TextAlign = ContentAlignment.MiddleCenter;
@@ -123,7 +123,7 @@
             lblEndereco.BorderStyle = BorderStyle.FixedSingle;
             lblEndereco.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEndereco.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEndereco.Location = new Point(277, 86);
+            lblEndereco.Location = new Point(270, 86);
             lblEndereco.Name = "lblEndereco";
             lblEndereco.Size = new Size(100, 30);
             lblEndereco.TabIndex = 29;
@@ -135,7 +135,7 @@
             lblValor.BorderStyle = BorderStyle.FixedSingle;
             lblValor.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(201, 86);
+            lblValor.Location = new Point(194, 86);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(70, 30);
             lblValor.TabIndex = 30;
@@ -147,7 +147,7 @@
             lblServico.BorderStyle = BorderStyle.FixedSingle;
             lblServico.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblServico.ForeColor = Color.FromArgb(63, 136, 254);
-            lblServico.Location = new Point(115, 86);
+            lblServico.Location = new Point(108, 86);
             lblServico.Name = "lblServico";
             lblServico.Size = new Size(80, 30);
             lblServico.TabIndex = 31;
@@ -159,7 +159,7 @@
             lblEditar.BorderStyle = BorderStyle.FixedSingle;
             lblEditar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
             lblEditar.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEditar.Location = new Point(725, 86);
+            lblEditar.Location = new Point(721, 86);
             lblEditar.Name = "lblEditar";
             lblEditar.Size = new Size(70, 30);
             lblEditar.TabIndex = 33;
@@ -212,6 +212,7 @@
             Controls.Add(btnNovoOrcamento);
             Controls.Add(btnVoltar);
             FormBorderStyle = FormBorderStyle.None;
+            Location = new Point(11, 122);
             Name = "GerenciamentoDeServicos";
             Text = "GerenciamentoDeServicos";
             Load += GerenciamentoDeServicos_Load;

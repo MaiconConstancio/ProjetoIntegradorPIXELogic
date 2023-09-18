@@ -43,9 +43,9 @@
             lblAcao.BorderStyle = BorderStyle.FixedSingle;
             lblAcao.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblAcao.ForeColor = Color.FromArgb(63, 136, 254);
-            lblAcao.Location = new Point(636, 86);
+            lblAcao.Location = new Point(599, 86);
             lblAcao.Name = "lblAcao";
-            lblAcao.Size = new Size(200, 30);
+            lblAcao.Size = new Size(189, 30);
             lblAcao.TabIndex = 29;
             lblAcao.Text = "Ação";
             lblAcao.TextAlign = ContentAlignment.MiddleCenter;
@@ -55,9 +55,9 @@
             lblValor.BorderStyle = BorderStyle.FixedSingle;
             lblValor.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(430, 86);
+            lblValor.Location = new Point(404, 86);
             lblValor.Name = "lblValor";
-            lblValor.Size = new Size(200, 30);
+            lblValor.Size = new Size(189, 30);
             lblValor.TabIndex = 31;
             lblValor.Text = "Valor";
             lblValor.TextAlign = ContentAlignment.MiddleCenter;
@@ -67,9 +67,9 @@
             lblCliente.BorderStyle = BorderStyle.FixedSingle;
             lblCliente.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblCliente.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCliente.Location = new Point(224, 86);
+            lblCliente.Location = new Point(207, 86);
             lblCliente.Name = "lblCliente";
-            lblCliente.Size = new Size(200, 30);
+            lblCliente.Size = new Size(189, 30);
             lblCliente.TabIndex = 32;
             lblCliente.Text = "Cliente";
             lblCliente.TextAlign = ContentAlignment.MiddleCenter;
@@ -79,12 +79,13 @@
             lblProduto.BorderStyle = BorderStyle.FixedSingle;
             lblProduto.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblProduto.ForeColor = Color.FromArgb(63, 136, 254);
-            lblProduto.Location = new Point(18, 86);
+            lblProduto.Location = new Point(12, 86);
             lblProduto.Name = "lblProduto";
-            lblProduto.Size = new Size(200, 30);
+            lblProduto.Size = new Size(189, 30);
             lblProduto.TabIndex = 33;
             lblProduto.Text = "Produto";
             lblProduto.TextAlign = ContentAlignment.MiddleCenter;
+            lblProduto.UseMnemonic = false;
             // 
             // btnVoltar
             // 
@@ -147,9 +148,9 @@
             // panel1
             // 
             panel1.AutoSize = true;
-            panel1.Location = new Point(18, 122);
+            panel1.Location = new Point(12, 122);
             panel1.Name = "panel1";
-            panel1.Size = new Size(818, 11);
+            panel1.Size = new Size(776, 10);
             panel1.TabIndex = 37;
             // 
             // EmissaoRelatorioFinanceiroProdutos
@@ -167,6 +168,7 @@
             Controls.Add(lblValor);
             Controls.Add(lblAcao);
             FormBorderStyle = FormBorderStyle.None;
+            Location = new Point(11, 122);
             Name = "EmissaoRelatorioFinanceiroProdutos";
             Text = "EmissaoRelatorioFinanceiroProdutos";
             Load += EmissaoRelatorioFinanceiroProdutos_Load;

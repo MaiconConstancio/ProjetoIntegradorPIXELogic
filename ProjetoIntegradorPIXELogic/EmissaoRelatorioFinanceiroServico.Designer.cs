@@ -103,7 +103,7 @@
             lblServicos.ForeColor = Color.FromArgb(63, 136, 254);
             lblServicos.Location = new Point(12, 86);
             lblServicos.Name = "lblServicos";
-            lblServicos.Size = new Size(200, 30);
+            lblServicos.Size = new Size(189, 30);
             lblServicos.TabIndex = 27;
             lblServicos.Text = "Serviços";
             lblServicos.TextAlign = ContentAlignment.MiddleCenter;
@@ -113,9 +113,9 @@
             lblCliente.BorderStyle = BorderStyle.FixedSingle;
             lblCliente.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblCliente.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCliente.Location = new Point(218, 86);
+            lblCliente.Location = new Point(209, 86);
             lblCliente.Name = "lblCliente";
-            lblCliente.Size = new Size(200, 30);
+            lblCliente.Size = new Size(189, 30);
             lblCliente.TabIndex = 28;
             lblCliente.Text = "Cliente";
             lblCliente.TextAlign = ContentAlignment.MiddleCenter;
@@ -125,21 +125,22 @@
             lblValor.BorderStyle = BorderStyle.FixedSingle;
             lblValor.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(424, 86);
+            lblValor.Location = new Point(404, 86);
             lblValor.Name = "lblValor";
-            lblValor.Size = new Size(200, 30);
+            lblValor.Size = new Size(189, 30);
             lblValor.TabIndex = 29;
             lblValor.Text = "Valor";
             lblValor.TextAlign = ContentAlignment.MiddleCenter;
+            lblValor.Click += lblValor_Click;
             // 
             // lblAcao
             // 
             lblAcao.BorderStyle = BorderStyle.FixedSingle;
             lblAcao.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblAcao.ForeColor = Color.FromArgb(63, 136, 254);
-            lblAcao.Location = new Point(630, 86);
+            lblAcao.Location = new Point(599, 86);
             lblAcao.Name = "lblAcao";
-            lblAcao.Size = new Size(200, 30);
+            lblAcao.Size = new Size(189, 30);
             lblAcao.TabIndex = 30;
             lblAcao.Text = "Ação";
             lblAcao.TextAlign = ContentAlignment.MiddleCenter;
