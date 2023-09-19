@@ -36,8 +36,10 @@ namespace ProjetoIntegradorPIXELogic
             foreach (DataRow row in Conexao.executaQuery("select * from orcamentos;").Rows)
             {
 
+                string data = row["estimativa_entrega"].ToString().Split(' ')[0];
+
                 PalcoGerenciamentoDeServicos palcoGerenciamento = new PalcoGerenciamentoDeServicos(row["servico"].ToString(), row["valor"].ToString(), row["nome_cliente"].ToString(), row["endereco"].ToString(),
-                                                                                                   row["funcionario"].ToString(), row["estimativa_entrega"].ToString());
+                                                                                                   row["funcionario"].ToString(), data);
 
                 palcoGerenciamento.TopLevel = false;
                 panel1.Controls.Add(palcoGerenciamento);
