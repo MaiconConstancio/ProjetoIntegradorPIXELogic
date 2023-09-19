@@ -44,7 +44,7 @@
             // 
             chkBoxColaboradores.AutoSize = true;
             chkBoxColaboradores.ForeColor = SystemColors.ButtonFace;
-            chkBoxColaboradores.Location = new Point(27, 108);
+            chkBoxColaboradores.Location = new Point(166, 24);
             chkBoxColaboradores.Name = "chkBoxColaboradores";
             chkBoxColaboradores.Size = new Size(103, 19);
             chkBoxColaboradores.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             chkBoxFornecedores.AutoSize = true;
             chkBoxFornecedores.ForeColor = SystemColors.ButtonFace;
-            chkBoxFornecedores.Location = new Point(27, 219);
+            chkBoxFornecedores.Location = new Point(606, 24);
             chkBoxFornecedores.Name = "chkBoxFornecedores";
             chkBoxFornecedores.Size = new Size(97, 19);
             chkBoxFornecedores.TabIndex = 1;
@@ -66,7 +66,7 @@
             // 
             chkBoxProdutos.AutoSize = true;
             chkBoxProdutos.ForeColor = SystemColors.ButtonFace;
-            chkBoxProdutos.Location = new Point(27, 180);
+            chkBoxProdutos.Location = new Point(458, 24);
             chkBoxProdutos.Name = "chkBoxProdutos";
             chkBoxProdutos.Size = new Size(74, 19);
             chkBoxProdutos.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             chkBoxClientes.AutoSize = true;
             chkBoxClientes.ForeColor = SystemColors.ButtonFace;
-            chkBoxClientes.Location = new Point(27, 142);
+            chkBoxClientes.Location = new Point(329, 24);
             chkBoxClientes.Name = "chkBoxClientes";
             chkBoxClientes.Size = new Size(68, 19);
             chkBoxClientes.TabIndex = 3;
@@ -88,7 +88,7 @@
             // 
             chkBoxGerenciamentoServiços.AutoSize = true;
             chkBoxGerenciamentoServiços.ForeColor = SystemColors.ButtonFace;
-            chkBoxGerenciamentoServiços.Location = new Point(27, 254);
+            chkBoxGerenciamentoServiços.Location = new Point(27, 106);
             chkBoxGerenciamentoServiços.Name = "chkBoxGerenciamentoServiços";
             chkBoxGerenciamentoServiços.Size = new Size(168, 19);
             chkBoxGerenciamentoServiços.TabIndex = 4;
@@ -99,7 +99,7 @@
             // 
             chkBoxVendas.AutoSize = true;
             chkBoxVendas.ForeColor = SystemColors.ButtonFace;
-            chkBoxVendas.Location = new Point(27, 71);
+            chkBoxVendas.Location = new Point(27, 24);
             chkBoxVendas.Name = "chkBoxVendas";
             chkBoxVendas.Size = new Size(63, 19);
             chkBoxVendas.TabIndex = 5;
@@ -110,7 +110,7 @@
             // 
             chkBoxEmissaoRelatoriosFinanceiros.AutoSize = true;
             chkBoxEmissaoRelatoriosFinanceiros.ForeColor = SystemColors.ButtonFace;
-            chkBoxEmissaoRelatoriosFinanceiros.Location = new Point(27, 294);
+            chkBoxEmissaoRelatoriosFinanceiros.Location = new Point(279, 106);
             chkBoxEmissaoRelatoriosFinanceiros.Name = "chkBoxEmissaoRelatoriosFinanceiros";
             chkBoxEmissaoRelatoriosFinanceiros.Size = new Size(271, 19);
             chkBoxEmissaoRelatoriosFinanceiros.TabIndex = 6;
@@ -121,7 +121,7 @@
             // 
             chkBoxSuporteAoCliente.AutoSize = true;
             chkBoxSuporteAoCliente.ForeColor = SystemColors.ButtonFace;
-            chkBoxSuporteAoCliente.Location = new Point(27, 370);
+            chkBoxSuporteAoCliente.Location = new Point(339, 222);
             chkBoxSuporteAoCliente.Name = "chkBoxSuporteAoCliente";
             chkBoxSuporteAoCliente.Size = new Size(123, 19);
             chkBoxSuporteAoCliente.TabIndex = 8;
@@ -132,7 +132,7 @@
             // 
             checkBox1.AutoSize = true;
             checkBox1.ForeColor = SystemColors.ButtonFace;
-            checkBox1.Location = new Point(27, 334);
+            checkBox1.Location = new Point(581, 106);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(266, 19);
             checkBox1.TabIndex = 10;
