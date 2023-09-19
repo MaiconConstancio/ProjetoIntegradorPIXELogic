@@ -181,6 +181,7 @@
             LogoComoWallpaper.Size = new Size(800, 450);
             LogoComoWallpaper.TabIndex = 40;
             LogoComoWallpaper.TabStop = false;
+            LogoComoWallpaper.Click += LogoComoWallpaper_Click;
             // 
             // panel1
             // 
@@ -197,12 +198,6 @@
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(lblEscolhaQualCadastroDesejaRealizar);
-            Controls.Add(btnServico);
-            Controls.Add(btnVoltar);
-            Controls.Add(btnClientes);
-            Controls.Add(btnProdutos);
-            Controls.Add(btnFornecedores);
-            Controls.Add(btnFuncionarios);
             Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "SelecionaQualCadastro";

@@ -96,5 +96,10 @@ namespace ProjetoIntegradorPIXELogic
         {
 
         }
+
+        private void lblOrcamentoDeServicos_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
