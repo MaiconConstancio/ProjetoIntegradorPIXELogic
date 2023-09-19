@@ -72,7 +72,7 @@
             btnSalvar.Location = new Point(126, 370);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
-            btnSalvar.TabIndex = 26;
+            btnSalvar.TabIndex = 2;
             btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
@@ -91,7 +91,7 @@
             btnImprimir.Location = new Point(12, 406);
             btnImprimir.Name = "btnImprimir";
             btnImprimir.Size = new Size(112, 32);
-            btnImprimir.TabIndex = 27;
+            btnImprimir.TabIndex = 4;
             btnImprimir.Text = "Imprimir";
             btnImprimir.TextColor = Color.Black;
             btnImprimir.UseVisualStyleBackColor = false;
@@ -110,7 +110,7 @@
             btnCancelar.Location = new Point(12, 370);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(112, 32);
-            btnCancelar.TabIndex = 28;
+            btnCancelar.TabIndex = 3;
             btnCancelar.Text = "Cancelar";
             btnCancelar.TextColor = Color.Black;
             btnCancelar.UseVisualStyleBackColor = false;

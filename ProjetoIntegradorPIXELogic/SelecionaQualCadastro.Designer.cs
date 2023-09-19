@@ -55,7 +55,7 @@
             btnFuncionarios.Location = new Point(64, 242);
             btnFuncionarios.Name = "btnFuncionarios";
             btnFuncionarios.Size = new Size(129, 35);
-            btnFuncionarios.TabIndex = 14;
+            btnFuncionarios.TabIndex = 1;
             btnFuncionarios.Text = "Funcionários";
             btnFuncionarios.TextColor = Color.Black;
             btnFuncionarios.UseVisualStyleBackColor = false;
@@ -75,7 +75,7 @@
             btnFornecedores.Location = new Point(200, 242);
             btnFornecedores.Name = "btnFornecedores";
             btnFornecedores.Size = new Size(129, 35);
-            btnFornecedores.TabIndex = 15;
+            btnFornecedores.TabIndex = 2;
             btnFornecedores.Text = "Fornecedores";
             btnFornecedores.TextColor = Color.Black;
             btnFornecedores.UseVisualStyleBackColor = false;
@@ -95,7 +95,7 @@
             btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(74, 30);
-            btnVoltar.TabIndex = 15;
+            btnVoltar.TabIndex = 6;
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
@@ -115,7 +115,7 @@
             btnProdutos.Location = new Point(336, 242);
             btnProdutos.Name = "btnProdutos";
             btnProdutos.Size = new Size(129, 35);
-            btnProdutos.TabIndex = 16;
+            btnProdutos.TabIndex = 3;
             btnProdutos.Text = "Produtos";
             btnProdutos.TextColor = Color.Black;
             btnProdutos.UseVisualStyleBackColor = false;
@@ -135,7 +135,7 @@
             btnClientes.Location = new Point(472, 242);
             btnClientes.Name = "btnClientes";
             btnClientes.Size = new Size(129, 35);
-            btnClientes.TabIndex = 17;
+            btnClientes.TabIndex = 4;
             btnClientes.Text = "Clientes";
             btnClientes.TextColor = Color.Black;
             btnClientes.UseVisualStyleBackColor = false;
@@ -155,7 +155,7 @@
             btnServico.Location = new Point(608, 242);
             btnServico.Name = "btnServico";
             btnServico.Size = new Size(129, 35);
-            btnServico.TabIndex = 18;
+            btnServico.TabIndex = 5;
             btnServico.Text = "Serviço";
             btnServico.TextColor = Color.Black;
             btnServico.UseVisualStyleBackColor = false;

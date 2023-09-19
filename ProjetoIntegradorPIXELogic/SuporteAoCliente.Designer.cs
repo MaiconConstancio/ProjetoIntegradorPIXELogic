@@ -62,7 +62,7 @@
             btnEntraEmContato.Location = new Point(440, 372);
             btnEntraEmContato.Name = "btnEntraEmContato";
             btnEntraEmContato.Size = new Size(229, 36);
-            btnEntraEmContato.TabIndex = 74;
+            btnEntraEmContato.TabIndex = 1;
             btnEntraEmContato.Text = "ENTRAR EM CONTATO";
             btnEntraEmContato.TextColor = Color.White;
             btnEntraEmContato.UseVisualStyleBackColor = false;
@@ -115,7 +115,7 @@
             btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(74, 30);
-            btnVoltar.TabIndex = 78;
+            btnVoltar.TabIndex = 2;
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.WhiteSmoke;
             btnVoltar.UseVisualStyleBackColor = false;
