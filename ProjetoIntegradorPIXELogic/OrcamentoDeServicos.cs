@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -83,13 +84,17 @@ namespace ProjetoIntegradorPIXELogic
                                     $"Valor: {maskValor.Text}\n\n" +
                                     $"Endereço: {txtEndereco.Text}\n\n" +
                                     $"Funcionario: {txtFuncionario.Text}\n\n" +
-                                    $"Estimativa de entrega: {maskPrazoDeEntrega.Text}",
+                                    $"Estimativa de entrega: '{maskPrazoDeEntrega.Text}'",
                                     "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
 
                         {
 
+                            string dia = maskPrazoDeEntrega.Text.Split('/')[0];
+                            string mes = maskPrazoDeEntrega.Text.Split('/')[1];
+                            string ano = maskPrazoDeEntrega.Text.Split('/')[2];
+
                             string query = $"insert into orcamentos (servico,valor,nome_cliente,endereco,funcionario,estimativa_entrega) values " +
-                                $"('{cmbServico.Text}','{maskValor.Text}','{txtNomeDoCliente.Text}','{txtEndereco.Text}','{txtFuncionario.Text}','{maskPrazoDeEntrega.Text}');";
+                                $"('{cmbServico.Text}','{maskValor.Text}','{txtNomeDoCliente.Text}','{txtEndereco.Text}','{txtFuncionario.Text}','{ano}-{mes}-{dia}');";
                             Conexao.executaQuery(query);
 
                             txtNomeDoCliente.Clear();
@@ -123,7 +128,7 @@ namespace ProjetoIntegradorPIXELogic
                     string ano = maskPrazoDeEntrega.Text.Split('/')[2];
 
                     string query = $"insert into orcamentos (servico,valor,nome_cliente,endereco,funcionario,estimativa_entrega) values " +
-                        $"('{cmbServico.Text}','{maskValor.Text}','{txtNomeDoCliente.Text}','{txtEndereco.Text}','{txtFuncionario.Text}','{maskPrazoDeEntrega.Text}');";
+                        $"('{cmbServico.Text}','{maskValor.Text}','{txtNomeDoCliente.Text}','{txtEndereco.Text}','{txtFuncionario.Text}','{ano}-{mes}-{dia}');";
                     Conexao.executaQuery(query);
 
                     txtNomeDoCliente.Clear();

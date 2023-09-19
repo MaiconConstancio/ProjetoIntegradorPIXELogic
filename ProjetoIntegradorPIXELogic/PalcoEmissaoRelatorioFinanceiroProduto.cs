@@ -26,5 +26,13 @@ namespace ProjetoIntegradorPIXELogic
         {
 
         }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+
+            Conexao.executaQuery("set SQL_SAFE_UPDATES = 0;" +
+                                 $"delete from vendas from produto = '{label1.Text}';");
+
+        }
     }
 }

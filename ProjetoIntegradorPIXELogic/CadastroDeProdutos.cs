@@ -64,11 +64,9 @@ namespace ProjetoIntegradorPIXELogic
 
                         {
 
-                            int dia = int.Parse(maskVencimento.Text.Split('/')[0]);
-                            int mes = int.Parse(maskVencimento.Text.Split('/')[1]);
-                            int ano = int.Parse(maskVencimento.Text.Split('/')[2]);
-
-                            MessageBox.Show($"{ano}-{mes}-{dia}");
+                            string dia = maskVencimento.Text.Split('/')[0];
+                            string mes = maskVencimento.Text.Split('/')[1];
+                            string ano = maskVencimento.Text.Split('/')[2];
 
                             string query = $"insert into produtos (nome,fornecedor,quantidade,valor,vencimento) values " +
                                 $"('{txtNome.Text}','{txtFornecedor.Text}','{txtQuantidade.Text}','{maskValor}','{ano}-{mes}-{dia}');";
