@@ -183,6 +183,96 @@ namespace ProjetoIntegradorPIXELogic.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Icones_T_Clientes {
+            get {
+                object obj = ResourceManager.GetObject("Icones_T_Clientes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icones_T_Emissao_de_produtos {
+            get {
+                object obj = ResourceManager.GetObject("Icones_T_Emissao de produtos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icones_T_emissao_de_servicos {
+            get {
+                object obj = ResourceManager.GetObject("Icones_T_emissao de servicos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icones_T_fornecedores {
+            get {
+                object obj = ResourceManager.GetObject("Icones_T_fornecedores", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icones_T_gerenciamento_de_serviços {
+            get {
+                object obj = ResourceManager.GetObject("Icones_T_gerenciamento de serviços", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icones_T_Icone_colaboradores {
+            get {
+                object obj = ResourceManager.GetObject("Icones_T_Icone colaboradores", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icones_T_Produtos {
+            get {
+                object obj = ResourceManager.GetObject("Icones_T_Produtos", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icones_T_Suport {
+            get {
+                object obj = ResourceManager.GetObject("Icones_T_Suport", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Icones_T_Vendas {
+            get {
+                object obj = ResourceManager.GetObject("Icones_T_Vendas", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap LOGO_SEM_Fundo {
             get {
                 object obj = ResourceManager.GetObject("LOGO_SEM_Fundo", resourceCulture);
