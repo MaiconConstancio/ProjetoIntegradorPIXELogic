@@ -54,66 +54,66 @@
             // lblCidade
             // 
             lblCidade.AutoSize = true;
-            lblCidade.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCidade.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblCidade.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCidade.Location = new Point(175, 321);
+            lblCidade.Location = new Point(219, 330);
             lblCidade.Name = "lblCidade";
-            lblCidade.Size = new Size(113, 37);
+            lblCidade.Size = new Size(91, 30);
             lblCidade.TabIndex = 52;
             lblCidade.Text = "Cidade:";
             // 
             // lblPrazoDeEntrega
             // 
             lblPrazoDeEntrega.AutoSize = true;
-            lblPrazoDeEntrega.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblPrazoDeEntrega.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblPrazoDeEntrega.ForeColor = Color.FromArgb(63, 136, 254);
-            lblPrazoDeEntrega.Location = new Point(64, 286);
+            lblPrazoDeEntrega.Location = new Point(133, 294);
             lblPrazoDeEntrega.Name = "lblPrazoDeEntrega";
-            lblPrazoDeEntrega.Size = new Size(243, 37);
+            lblPrazoDeEntrega.Size = new Size(197, 30);
             lblPrazoDeEntrega.TabIndex = 50;
             lblPrazoDeEntrega.Text = "Prazo de entrega:";
             // 
             // lblFuncionario
             // 
             lblFuncionario.AutoSize = true;
-            lblFuncionario.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblFuncionario.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblFuncionario.ForeColor = Color.FromArgb(63, 136, 254);
-            lblFuncionario.Location = new Point(102, 249);
+            lblFuncionario.Location = new Point(160, 257);
             lblFuncionario.Name = "lblFuncionario";
-            lblFuncionario.Size = new Size(175, 37);
+            lblFuncionario.Size = new Size(139, 30);
             lblFuncionario.TabIndex = 48;
             lblFuncionario.Text = "Funcionario:";
             // 
             // lblEndereco
             // 
             lblEndereco.AutoSize = true;
-            lblEndereco.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblEndereco.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblEndereco.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEndereco.Location = new Point(145, 214);
+            lblEndereco.Location = new Point(195, 222);
             lblEndereco.Name = "lblEndereco";
-            lblEndereco.Size = new Size(142, 37);
+            lblEndereco.Size = new Size(115, 30);
             lblEndereco.TabIndex = 46;
             lblEndereco.Text = "Endereço:";
             // 
             // lblValor
             // 
             lblValor.AutoSize = true;
-            lblValor.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblValor.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblValor.ForeColor = Color.FromArgb(63, 136, 254);
-            lblValor.Location = new Point(209, 177);
+            lblValor.Location = new Point(250, 185);
             lblValor.Name = "lblValor";
-            lblValor.Size = new Size(92, 37);
+            lblValor.Size = new Size(73, 30);
             lblValor.TabIndex = 44;
             lblValor.Text = "Valor:";
             // 
             // lblServico
             // 
             lblServico.AutoSize = true;
-            lblServico.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblServico.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblServico.ForeColor = Color.FromArgb(63, 136, 254);
-            lblServico.Location = new Point(131, 142);
+            lblServico.Location = new Point(178, 149);
             lblServico.Name = "lblServico";
-            lblServico.Size = new Size(119, 37);
+            lblServico.Size = new Size(95, 30);
             lblServico.TabIndex = 42;
             lblServico.Text = "Serviço:";
             // 
@@ -133,16 +133,16 @@
             btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 14;
+            btnSalvar.BorderRadius = 12;
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(333, 375);
+            btnSalvar.Location = new Point(349, 384);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(135, 36);
-            btnSalvar.TabIndex = 39;
+            btnSalvar.Size = new Size(103, 32);
+            btnSalvar.TabIndex = 8;
             btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
@@ -151,11 +151,11 @@
             // lblNomeDoCliente
             // 
             lblNomeDoCliente.AutoSize = true;
-            lblNomeDoCliente.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNomeDoCliente.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblNomeDoCliente.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNomeDoCliente.Location = new Point(36, 104);
+            lblNomeDoCliente.Location = new Point(105, 113);
             lblNomeDoCliente.Name = "lblNomeDoCliente";
-            lblNomeDoCliente.Size = new Size(236, 37);
+            lblNomeDoCliente.Size = new Size(189, 30);
             lblNomeDoCliente.TabIndex = 54;
             lblNomeDoCliente.Text = "Nome do cliente:";
             // 
@@ -168,12 +168,12 @@
             btnNovoServico.BorderSize = 2;
             btnNovoServico.FlatAppearance.BorderSize = 0;
             btnNovoServico.FlatStyle = FlatStyle.Flat;
-            btnNovoServico.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNovoServico.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnNovoServico.ForeColor = Color.Black;
-            btnNovoServico.Location = new Point(12, 402);
+            btnNovoServico.Location = new Point(12, 406);
             btnNovoServico.Name = "btnNovoServico";
-            btnNovoServico.Size = new Size(135, 36);
-            btnNovoServico.TabIndex = 55;
+            btnNovoServico.Size = new Size(150, 32);
+            btnNovoServico.TabIndex = 9;
             btnNovoServico.Text = "Novo serviço";
             btnNovoServico.TextColor = Color.Black;
             btnNovoServico.UseVisualStyleBackColor = false;
@@ -184,16 +184,16 @@
             btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnVoltar.BorderRadius = 14;
+            btnVoltar.BorderRadius = 12;
             btnVoltar.BorderSize = 2;
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
-            btnVoltar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVoltar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnVoltar.ForeColor = Color.Black;
-            btnVoltar.Location = new Point(653, 12);
+            btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
-            btnVoltar.Size = new Size(135, 36);
-            btnVoltar.TabIndex = 56;
+            btnVoltar.Size = new Size(74, 30);
+            btnVoltar.TabIndex = 10;
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
@@ -205,10 +205,10 @@
             txtNomeDoCliente.BorderStyle = BorderStyle.FixedSingle;
             txtNomeDoCliente.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtNomeDoCliente.ForeColor = Color.Cyan;
-            txtNomeDoCliente.Location = new Point(273, 110);
+            txtNomeDoCliente.Location = new Point(296, 110);
             txtNomeDoCliente.Name = "txtNomeDoCliente";
             txtNomeDoCliente.Size = new Size(254, 29);
-            txtNomeDoCliente.TabIndex = 57;
+            txtNomeDoCliente.TabIndex = 1;
             // 
             // cmbServico
             // 
@@ -217,21 +217,22 @@
             cmbServico.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cmbServico.ForeColor = Color.Cyan;
             cmbServico.FormattingEnabled = true;
-            cmbServico.Location = new Point(252, 146);
+            cmbServico.Location = new Point(275, 146);
             cmbServico.Name = "cmbServico";
             cmbServico.Size = new Size(296, 29);
-            cmbServico.TabIndex = 58;
+            cmbServico.TabIndex = 2;
             // 
             // maskValor
             // 
             maskValor.BackColor = Color.FromArgb(53, 81, 142);
             maskValor.BorderStyle = BorderStyle.FixedSingle;
             maskValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskValor.Location = new Point(302, 182);
+            maskValor.ForeColor = Color.Cyan;
+            maskValor.Location = new Point(325, 182);
             maskValor.Mask = "$ 000,00";
             maskValor.Name = "maskValor";
             maskValor.Size = new Size(196, 29);
-            maskValor.TabIndex = 59;
+            maskValor.TabIndex = 3;
             // 
             // txtEndereco
             // 
@@ -239,10 +240,10 @@
             txtEndereco.BorderStyle = BorderStyle.FixedSingle;
             txtEndereco.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtEndereco.ForeColor = Color.Cyan;
-            txtEndereco.Location = new Point(289, 218);
+            txtEndereco.Location = new Point(312, 218);
             txtEndereco.Name = "txtEndereco";
             txtEndereco.Size = new Size(223, 29);
-            txtEndereco.TabIndex = 60;
+            txtEndereco.TabIndex = 4;
             txtEndereco.TextChanged += txtEndereco_TextChanged;
             // 
             // txtFuncionario
@@ -251,10 +252,10 @@
             txtFuncionario.BorderStyle = BorderStyle.FixedSingle;
             txtFuncionario.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtFuncionario.ForeColor = Color.Cyan;
-            txtFuncionario.Location = new Point(278, 254);
+            txtFuncionario.Location = new Point(301, 254);
             txtFuncionario.Name = "txtFuncionario";
             txtFuncionario.Size = new Size(245, 29);
-            txtFuncionario.TabIndex = 61;
+            txtFuncionario.TabIndex = 5;
             txtFuncionario.TextChanged += txtFuncionario_TextChanged;
             // 
             // txtCidade
@@ -263,10 +264,10 @@
             txtCidade.BorderStyle = BorderStyle.FixedSingle;
             txtCidade.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtCidade.ForeColor = Color.Cyan;
-            txtCidade.Location = new Point(289, 326);
+            txtCidade.Location = new Point(312, 326);
             txtCidade.Name = "txtCidade";
             txtCidade.Size = new Size(223, 29);
-            txtCidade.TabIndex = 63;
+            txtCidade.TabIndex = 7;
             txtCidade.TextChanged += txtCidade_TextChanged;
             // 
             // LogoComoWallpaper
@@ -285,11 +286,12 @@
             maskPrazoDeEntrega.BackColor = Color.FromArgb(53, 81, 142);
             maskPrazoDeEntrega.BorderStyle = BorderStyle.FixedSingle;
             maskPrazoDeEntrega.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            maskPrazoDeEntrega.Location = new Point(309, 290);
+            maskPrazoDeEntrega.ForeColor = Color.Cyan;
+            maskPrazoDeEntrega.Location = new Point(332, 290);
             maskPrazoDeEntrega.Mask = "00/00/0000";
             maskPrazoDeEntrega.Name = "maskPrazoDeEntrega";
             maskPrazoDeEntrega.Size = new Size(183, 29);
-            maskPrazoDeEntrega.TabIndex = 65;
+            maskPrazoDeEntrega.TabIndex = 6;
             maskPrazoDeEntrega.MaskInputRejected += maskPrazoDeEntrega_MaskInputRejected;
             // 
             // OrcamentoDeServicos

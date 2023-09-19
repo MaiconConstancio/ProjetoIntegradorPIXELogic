@@ -18,6 +18,77 @@ namespace ProjetoIntegradorPIXELogic
             InitializeComponent();
         }
 
+
+
+        private void MontagemPrograma_Load(object sender, EventArgs e)
+        {
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'gerenciamento servico' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxGerenciamentoServiços.Checked = true;
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'clientes' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxClientes.Checked = true;
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'produtos' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxProdutos.Checked = true;
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'fornecedores' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxFornecedores.Checked = true;
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'colaboradores' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxColaboradores.Checked = true;
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'vendas' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxVendas.Checked = true;
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'relatorio de produtos' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxEmissaoRelatoriosFinanceiros.Checked = true;
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'relatorio de servicos' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                checkBox1.Checked = true;
+
+            }
+
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'suporte' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                chkBoxSuporteAoCliente.Checked = true;
+
+            }
+
+        }
+
         private void btnSalvar_Click(object sender, EventArgs e)
         {
 
@@ -26,7 +97,7 @@ namespace ProjetoIntegradorPIXELogic
             if (chkBoxGerenciamentoServiços.Checked == true)
             {
 
-                if (Conexao.executaQuery("select * from funcoes where nome = 'genciamento servico'").Rows.Count > 0)
+                if (Conexao.executaQuery("select * from funcoes where nome = 'gerenciamento servico'").Rows.Count > 0)
                 {
 
                     Conexao.executaQuery("update funcoes set habilitado_nao = true where nome = 'gerenciamento servico';");
@@ -40,14 +111,14 @@ namespace ProjetoIntegradorPIXELogic
             else
             {
 
-                Conexao.executaQuery("update funcoes set habilitado_nao = false where nome = 'gerenciamento serviços';");
+                Conexao.executaQuery("update funcoes set habilitado_nao = false where nome = 'gerenciamento servico';");
 
             }
 
             if (chkBoxClientes.Checked == true)
             {
 
-                if (Conexao.executaQuery("select * from funcoes where nome = 'clientes'").Rows.Count == 0)
+                if (Conexao.executaQuery("select * from funcoes where nome = 'clientes';").Rows.Count > 0)
                 {
 
                     Conexao.executaQuery("update funcoes set habilitado_nao = true where nome = 'clientes';");
@@ -68,7 +139,7 @@ namespace ProjetoIntegradorPIXELogic
             if (chkBoxProdutos.Checked == true)
             {
 
-                if (Conexao.executaQuery("select * from funcoes where nome = 'produtos'").Rows.Count == 0)
+                if (Conexao.executaQuery("select * from funcoes where nome = 'produtos'").Rows.Count > 0)
                 {
 
                     Conexao.executaQuery("update funcoes set habilitado_nao = true where nome = 'produtos';");
@@ -220,73 +291,8 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
-        private void MontagemPrograma_Load(object sender, EventArgs e)
-        {
 
-            if (Conexao.executaQuery("select * from funcoes where nome = 'servicos' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxGerenciamentoServiços.Checked = true;
-
-            }
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'clientes' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxClientes.Checked = true;
-
-            }
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'produtos' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxProdutos.Checked = true;
-
-            }
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'fornecedores' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxFornecedores.Checked = true;
-
-            }
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'colaboradores' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxColaboradores.Checked = true;
-
-            }
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'vendas' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxVendas.Checked = true;
-
-            }
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'relatorio de produtos' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxEmissaoRelatoriosFinanceiros.Checked = true;
-
-            }
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'relatorio de servicos' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                checkBox1.Checked = true;
-
-            }
-
-
-            if (Conexao.executaQuery("select * from funcoes where nome = 'suporte' and habilitado_nao = true;").Rows.Count > 0)
-            {
-
-                chkBoxSuporteAoCliente.Checked = true;
-
-            }
-
-        }
     }
+
+
 }

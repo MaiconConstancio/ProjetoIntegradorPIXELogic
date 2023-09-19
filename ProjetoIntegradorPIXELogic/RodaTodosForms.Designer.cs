@@ -28,11 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RodaTodosForms));
             panel1 = new Panel();
             SuspendLayout();
             // 
             // panel1
             // 
+            panel1.BackColor = Color.FromArgb(16, 25, 56);
             panel1.Dock = DockStyle.Fill;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -46,10 +48,12 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            MinimizeBox = false;
             Name = "RodaTodosForms";
+            Text = "PIXELogic - SUA VISÃO, NOSSA PROGRAMAÇÃO";
+            Load += RodaTodosForms_Load;
             ResumeLayout(false);
         }
 

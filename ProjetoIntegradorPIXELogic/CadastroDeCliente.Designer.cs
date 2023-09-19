@@ -59,51 +59,55 @@
             txtCidade.Location = new Point(275, 329);
             txtCidade.Name = "txtCidade";
             txtCidade.Size = new Size(263, 29);
-            txtCidade.TabIndex = 69;
+            txtCidade.TabIndex = 7;
             // 
             // maskNumero
             // 
             maskNumero.BackColor = Color.FromArgb(53, 81, 142);
             maskNumero.BorderStyle = BorderStyle.FixedSingle;
             maskNumero.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskNumero.ForeColor = Color.Cyan;
             maskNumero.Location = new Point(311, 259);
             maskNumero.Mask = "0000";
             maskNumero.Name = "maskNumero";
             maskNumero.Size = new Size(191, 29);
-            maskNumero.TabIndex = 68;
+            maskNumero.TabIndex = 5;
             // 
             // maskCEP
             // 
             maskCEP.BackColor = Color.FromArgb(53, 81, 142);
             maskCEP.BorderStyle = BorderStyle.FixedSingle;
             maskCEP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskCEP.ForeColor = Color.Cyan;
             maskCEP.Location = new Point(322, 224);
             maskCEP.Mask = "00000-000";
             maskCEP.Name = "maskCEP";
             maskCEP.Size = new Size(168, 29);
-            maskCEP.TabIndex = 67;
+            maskCEP.TabIndex = 4;
             // 
             // maskCPF
             // 
             maskCPF.BackColor = Color.FromArgb(53, 81, 142);
             maskCPF.BorderStyle = BorderStyle.FixedSingle;
             maskCPF.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskCPF.ForeColor = Color.Cyan;
             maskCPF.Location = new Point(302, 189);
             maskCPF.Mask = "000.000.000-00";
             maskCPF.Name = "maskCPF";
             maskCPF.Size = new Size(214, 29);
-            maskCPF.TabIndex = 66;
+            maskCPF.TabIndex = 3;
             // 
             // maskTelefone
             // 
             maskTelefone.BackColor = Color.FromArgb(53, 81, 142);
             maskTelefone.BorderStyle = BorderStyle.FixedSingle;
             maskTelefone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskTelefone.ForeColor = Color.Cyan;
             maskTelefone.Location = new Point(294, 154);
             maskTelefone.Mask = "(99) 00000-0000";
             maskTelefone.Name = "maskTelefone";
             maskTelefone.Size = new Size(231, 29);
-            maskTelefone.TabIndex = 65;
+            maskTelefone.TabIndex = 2;
             // 
             // txtEndereco
             // 
@@ -114,7 +118,7 @@
             txtEndereco.Location = new Point(275, 294);
             txtEndereco.Name = "txtEndereco";
             txtEndereco.Size = new Size(263, 29);
-            txtEndereco.TabIndex = 64;
+            txtEndereco.TabIndex = 6;
             // 
             // txtCliente
             // 
@@ -125,7 +129,7 @@
             txtCliente.Location = new Point(261, 119);
             txtCliente.Name = "txtCliente";
             txtCliente.Size = new Size(296, 29);
-            txtCliente.TabIndex = 63;
+            txtCliente.TabIndex = 1;
             // 
             // lblCidade
             // 
@@ -209,17 +213,17 @@
             btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 14;
+            btnSalvar.BorderRadius = 12;
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(339, 375);
+            btnSalvar.Location = new Point(349, 384);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(135, 36);
-            btnSalvar.TabIndex = 70;
-            btnSalvar.Text = "SALVAR";
+            btnSalvar.Size = new Size(103, 32);
+            btnSalvar.TabIndex = 8;
+            btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
             btnSalvar.Click += btnSalvar_Click;
@@ -229,17 +233,17 @@
             btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnVoltar.BorderRadius = 14;
+            btnVoltar.BorderRadius = 12;
             btnVoltar.BorderSize = 2;
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
-            btnVoltar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVoltar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnVoltar.ForeColor = Color.Black;
-            btnVoltar.Location = new Point(653, 12);
+            btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
-            btnVoltar.Size = new Size(135, 36);
-            btnVoltar.TabIndex = 71;
-            btnVoltar.Text = "VOLTAR";
+            btnVoltar.Size = new Size(74, 30);
+            btnVoltar.TabIndex = 9;
+            btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
             btnVoltar.Click += btnVoltar_Click;

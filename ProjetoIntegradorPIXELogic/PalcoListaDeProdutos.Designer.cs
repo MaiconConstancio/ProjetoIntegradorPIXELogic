@@ -47,7 +47,7 @@
             btnExcluir.FlatAppearance.BorderSize = 0;
             btnExcluir.FlatStyle = FlatStyle.Flat;
             btnExcluir.ForeColor = Color.White;
-            btnExcluir.Location = new Point(736, 7);
+            btnExcluir.Location = new Point(751, 5);
             btnExcluir.Name = "btnExcluir";
             btnExcluir.Size = new Size(29, 28);
             btnExcluir.TabIndex = 86;
@@ -63,7 +63,7 @@
             btnEditar.FlatAppearance.BorderSize = 0;
             btnEditar.FlatStyle = FlatStyle.Flat;
             btnEditar.ForeColor = Color.White;
-            btnEditar.Location = new Point(705, 7);
+            btnEditar.Location = new Point(716, 5);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(29, 28);
             btnEditar.TabIndex = 85;
@@ -136,7 +136,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
-            ClientSize = new Size(777, 36);
+            ClientSize = new Size(779, 36);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);

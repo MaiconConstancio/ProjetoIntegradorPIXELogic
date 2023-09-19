@@ -28,5 +28,10 @@ namespace ProjetoIntegradorPIXELogic
 
 
         }
+
+        private void RodaTodosForms_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

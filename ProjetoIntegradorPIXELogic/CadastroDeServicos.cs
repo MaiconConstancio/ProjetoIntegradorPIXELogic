@@ -19,6 +19,7 @@ namespace ProjetoIntegradorPIXELogic
 
         private void CadastroDeServicos_Load(object sender, EventArgs e)
         {
+            //---------------------------Setor do Designer-----------------------------------
             lblCadastrodeServicos.Parent = LogoComoWallpaper;
             lblCadastrodeServicos.BackColor = Color.Transparent;
 
@@ -27,6 +28,7 @@ namespace ProjetoIntegradorPIXELogic
 
             lblValor.Parent = LogoComoWallpaper;
             lblValor.BackColor = Color.Transparent;
+            //---------------------------FIM do Setor do Designer----------------------------
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -46,8 +48,8 @@ namespace ProjetoIntegradorPIXELogic
             if (Funcoes.campoVazio("Nome do serviço", txtNomeDoServico) == false && Funcoes.campoVazio("Valor", maskValor) == false)
             {
 
-                if (MessageBox.Show("já existe um serviço cadastrado com este nome, deseja continuar ?","Serviço já cadastrado",
-                    MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
+                if (MessageBox.Show("já existe um serviço cadastrado com este nome, deseja continuar ?", "Serviço já cadastrado",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
 
                     if (MessageBox.Show($"Nome do serviço: {txtNomeDoServico.Text}\n\n" +

@@ -19,7 +19,8 @@ namespace ProjetoIntegradorPIXELogic
 
         private void CadastroDeColaboradores_Load(object sender, EventArgs e)
         {
-            //--------------------------- Setor do Designer -------------------------------------
+            //--------------------------- Setor do Designer ---------------------------------
+
             lblEscolhaSeusColaboradoresESuasCredenciais.Parent = LogoComoWallpaper;
             lblEscolhaSeusColaboradoresESuasCredenciais.BackColor = Color.Transparent;
 
@@ -34,7 +35,7 @@ namespace ProjetoIntegradorPIXELogic
 
             lblSenha.Parent = LogoComoWallpaper;
             lblSenha.BackColor = Color.Transparent;
-            //--------------------------- FIM do Setor do Designer -------------------------------------
+            //---------------------------FIM do Setor do Designer----------------------------
         }
 
         private void LogoComoWallpaper_Click(object sender, EventArgs e)

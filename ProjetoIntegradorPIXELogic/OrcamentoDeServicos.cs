@@ -19,7 +19,7 @@ namespace ProjetoIntegradorPIXELogic
 
         private void OrcamentoDeServicos_Load(object sender, EventArgs e)
         {
-            //---------------------------Setor do Designer------------------------------------
+            //---------------------------Setor do Designer-----------------------------------
             lblOrcamentoDeServicos.Parent = LogoComoWallpaper;
             lblOrcamentoDeServicos.BackColor = Color.Transparent;
 
@@ -43,7 +43,7 @@ namespace ProjetoIntegradorPIXELogic
 
             lblCidade.Parent = LogoComoWallpaper;
             lblCidade.BackColor = Color.Transparent;
-            //---------------------------FIM do Setor do Designer------------------------------------
+            //---------------------------FIM do Setor do Designer----------------------------
         }
 
         private void maskPrazoDeEntrega_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
@@ -74,8 +74,8 @@ namespace ProjetoIntegradorPIXELogic
                 if (Conexao.executaQuery($"select * from orcamentos where nome_cliente = '{txtNomeDoCliente.Text}' and servico = '{cmbServico}'").Rows.Count > 0)
                 {
 
-                    if (MessageBox.Show("Este cliente já está cadastrado com este mesmo item, deseja cadastrar novamente ?","Registro duplicado",
-                        MessageBoxButtons.YesNo,MessageBoxIcon.Information) == DialogResult.Yes)
+                    if (MessageBox.Show("Este cliente já está cadastrado com este mesmo item, deseja cadastrar novamente ?", "Registro duplicado",
+                        MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                     {
 
                         if (MessageBox.Show($"Nome do cliente: {txtNomeDoCliente.Text}\n\n" +

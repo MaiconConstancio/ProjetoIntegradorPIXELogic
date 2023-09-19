@@ -39,10 +39,8 @@ namespace ProjetoIntegradorPIXELogic
             imgWallpaperLoginPrincipal = new PictureBox();
             txtLogin = new TextBox();
             txtSenha = new TextBox();
-            imgLOGOloginPrincipal = new PictureBox();
             lblNãotemconta = new Label();
             ((System.ComponentModel.ISupportInitialize)imgWallpaperLoginPrincipal).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)imgLOGOloginPrincipal).BeginInit();
             SuspendLayout();
             // 
             // btnEntra
@@ -56,10 +54,10 @@ namespace ProjetoIntegradorPIXELogic
             btnEntra.FlatStyle = FlatStyle.Flat;
             btnEntra.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
             btnEntra.ForeColor = Color.Black;
-            btnEntra.Location = new Point(465, 381);
+            btnEntra.Location = new Point(446, 381);
             btnEntra.Name = "btnEntra";
-            btnEntra.Size = new Size(296, 47);
-            btnEntra.TabIndex = 3;
+            btnEntra.Size = new Size(330, 47);
+            btnEntra.TabIndex = 4;
             btnEntra.Text = "ENTRAR";
             btnEntra.TextColor = Color.Black;
             btnEntra.UseVisualStyleBackColor = false;
@@ -69,27 +67,28 @@ namespace ProjetoIntegradorPIXELogic
             // 
             lblSenha.AutoSize = true;
             lblSenha.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
-            lblSenha.Location = new Point(458, 282);
+            lblSenha.ForeColor = Color.Cyan;
+            lblSenha.Location = new Point(439, 275);
             lblSenha.Name = "lblSenha";
-            lblSenha.Size = new Size(94, 37);
+            lblSenha.Size = new Size(101, 37);
             lblSenha.TabIndex = 4;
-            lblSenha.Text = "Senha";
+            lblSenha.Text = "Senha:";
             // 
             // lblLogin
             // 
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
-            lblLogin.Location = new Point(459, 209);
+            lblLogin.ForeColor = Color.Cyan;
+            lblLogin.Location = new Point(440, 202);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(89, 37);
+            lblLogin.Size = new Size(96, 37);
             lblLogin.TabIndex = 6;
-            lblLogin.Text = "Login";
+            lblLogin.Text = "Login:";
             // 
             // imgWallpaperLoginPrincipal
             // 
             imgWallpaperLoginPrincipal.Dock = DockStyle.Fill;
+            imgWallpaperLoginPrincipal.Image = (System.Drawing.Image)resources.GetObject("imgWallpaperLoginPrincipal.Image");
             imgWallpaperLoginPrincipal.Location = new Point(0, 0);
             imgWallpaperLoginPrincipal.Name = "imgWallpaperLoginPrincipal";
             imgWallpaperLoginPrincipal.Size = new Size(800, 450);
@@ -103,10 +102,10 @@ namespace ProjetoIntegradorPIXELogic
             txtLogin.BorderStyle = BorderStyle.FixedSingle;
             txtLogin.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtLogin.ForeColor = Color.Cyan;
-            txtLogin.Location = new Point(465, 247);
+            txtLogin.Location = new Point(446, 240);
             txtLogin.Name = "txtLogin";
-            txtLogin.Size = new Size(296, 29);
-            txtLogin.TabIndex = 8;
+            txtLogin.Size = new Size(330, 29);
+            txtLogin.TabIndex = 1;
             // 
             // txtSenha
             // 
@@ -114,30 +113,20 @@ namespace ProjetoIntegradorPIXELogic
             txtSenha.BorderStyle = BorderStyle.FixedSingle;
             txtSenha.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             txtSenha.ForeColor = Color.Cyan;
-            txtSenha.Location = new Point(465, 319);
+            txtSenha.Location = new Point(446, 312);
             txtSenha.Name = "txtSenha";
-            txtSenha.Size = new Size(296, 29);
-            txtSenha.TabIndex = 9;
-            // 
-            // imgLOGOloginPrincipal
-            // 
-            imgLOGOloginPrincipal.Image = (System.Drawing.Image)resources.GetObject("imgLOGOloginPrincipal.Image");
-            imgLOGOloginPrincipal.Location = new Point(357, -57);
-            imgLOGOloginPrincipal.Name = "imgLOGOloginPrincipal";
-            imgLOGOloginPrincipal.Size = new Size(431, 327);
-            imgLOGOloginPrincipal.SizeMode = PictureBoxSizeMode.Zoom;
-            imgLOGOloginPrincipal.TabIndex = 10;
-            imgLOGOloginPrincipal.TabStop = false;
+            txtSenha.Size = new Size(330, 29);
+            txtSenha.TabIndex = 2;
             // 
             // lblNãotemconta
             // 
             lblNãotemconta.AutoSize = true;
-            lblNãotemconta.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            lblNãotemconta.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point);
             lblNãotemconta.ForeColor = Color.FromArgb(63, 200, 254);
-            lblNãotemconta.Location = new Point(465, 355);
+            lblNãotemconta.Location = new Point(446, 344);
             lblNãotemconta.Name = "lblNãotemconta";
-            lblNãotemconta.Size = new Size(231, 19);
-            lblNãotemconta.TabIndex = 11;
+            lblNãotemconta.Size = new Size(224, 19);
+            lblNãotemconta.TabIndex = 3;
             lblNãotemconta.Text = "Não tem uma conta? Clique aqui!";
             lblNãotemconta.Click += lblNãotemconta_Click;
             // 
@@ -152,7 +141,6 @@ namespace ProjetoIntegradorPIXELogic
             Controls.Add(lblLogin);
             Controls.Add(lblSenha);
             Controls.Add(btnEntra);
-            Controls.Add(imgLOGOloginPrincipal);
             Controls.Add(lblNãotemconta);
             Controls.Add(imgWallpaperLoginPrincipal);
             ForeColor = Color.FromArgb(16, 25, 56);
@@ -162,7 +150,6 @@ namespace ProjetoIntegradorPIXELogic
             TransparencyKey = Color.DimGray;
             Load += TelaLoginPaginaInicial_Load;
             ((System.ComponentModel.ISupportInitialize)imgWallpaperLoginPrincipal).EndInit();
-            ((System.ComponentModel.ISupportInitialize)imgLOGOloginPrincipal).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -174,7 +161,6 @@ namespace ProjetoIntegradorPIXELogic
         private PictureBox imgWallpaperLoginPrincipal;
         private TextBox txtLogin;
         private TextBox txtSenha;
-        private PictureBox imgLOGOloginPrincipal;
         private Label lblNãotemconta;
     }
 }

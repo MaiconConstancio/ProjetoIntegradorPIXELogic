@@ -29,7 +29,7 @@ namespace ProjetoIntegradorPIXELogic
 
         private void Vendas_Load(object sender, EventArgs e)
         {
-            //---------------------------Setor do Designer------------------------------------
+            //---------------------------Setor do Designer-----------------------------------
             lblProduto.Parent = LogoComoWallpaper;
             lblProduto.BackColor = Color.Transparent;
 
@@ -44,7 +44,7 @@ namespace ProjetoIntegradorPIXELogic
 
             lblValor.Parent = LogoComoWallpaper;
             lblValor.BackColor = Color.Transparent;
-            //---------------------------FIM do Setor do Designer------------------------------------
+            //---------------------------FIM do Setor do Designer----------------------------
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)

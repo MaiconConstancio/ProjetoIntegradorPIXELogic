@@ -37,6 +37,8 @@
             btnVoltar = new WiLBiT.WiLBiTButton2();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             panel1 = new Panel();
+            btnCapturarImagem = new WiLBiT.WiLBiTButton2();
+            btnImprimir = new WiLBiT.WiLBiTButton2();
             SuspendLayout();
             // 
             // btnNovoCadastro
@@ -44,16 +46,16 @@
             btnNovoCadastro.BackColor = Color.FromArgb(72, 116, 245);
             btnNovoCadastro.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnNovoCadastro.BorderColor = Color.FromArgb(0, 242, 254);
-            btnNovoCadastro.BorderRadius = 14;
+            btnNovoCadastro.BorderRadius = 12;
             btnNovoCadastro.BorderSize = 2;
             btnNovoCadastro.FlatAppearance.BorderSize = 0;
             btnNovoCadastro.FlatStyle = FlatStyle.Flat;
-            btnNovoCadastro.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            btnNovoCadastro.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnNovoCadastro.ForeColor = Color.Black;
-            btnNovoCadastro.Location = new Point(12, 402);
+            btnNovoCadastro.Location = new Point(12, 406);
             btnNovoCadastro.Name = "btnNovoCadastro";
-            btnNovoCadastro.Size = new Size(176, 39);
-            btnNovoCadastro.TabIndex = 14;
+            btnNovoCadastro.Size = new Size(150, 32);
+            btnNovoCadastro.TabIndex = 2;
             btnNovoCadastro.Text = "Novo Cadastro";
             btnNovoCadastro.TextColor = Color.Black;
             btnNovoCadastro.UseVisualStyleBackColor = false;
@@ -64,9 +66,9 @@
             lblSenha.BorderStyle = BorderStyle.FixedSingle;
             lblSenha.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
-            lblSenha.Location = new Point(545, 88);
+            lblSenha.Location = new Point(482, 86);
             lblSenha.Name = "lblSenha";
-            lblSenha.Size = new Size(152, 30);
+            lblSenha.Size = new Size(150, 30);
             lblSenha.TabIndex = 21;
             lblSenha.Text = "Senha";
             lblSenha.TextAlign = ContentAlignment.MiddleCenter;
@@ -76,9 +78,9 @@
             lblLogin.BorderStyle = BorderStyle.FixedSingle;
             lblLogin.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
-            lblLogin.Location = new Point(323, 88);
+            lblLogin.Location = new Point(327, 86);
             lblLogin.Name = "lblLogin";
-            lblLogin.Size = new Size(216, 30);
+            lblLogin.Size = new Size(150, 30);
             lblLogin.TabIndex = 22;
             lblLogin.Text = "Login";
             lblLogin.TextAlign = ContentAlignment.MiddleCenter;
@@ -88,9 +90,9 @@
             lblCargo.BorderStyle = BorderStyle.FixedSingle;
             lblCargo.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblCargo.ForeColor = Color.FromArgb(63, 136, 254);
-            lblCargo.Location = new Point(171, 88);
+            lblCargo.Location = new Point(170, 86);
             lblCargo.Name = "lblCargo";
-            lblCargo.Size = new Size(146, 30);
+            lblCargo.Size = new Size(150, 30);
             lblCargo.TabIndex = 23;
             lblCargo.Text = "Cargo";
             lblCargo.TextAlign = ContentAlignment.MiddleCenter;
@@ -100,9 +102,9 @@
             lblEditar.BorderStyle = BorderStyle.FixedSingle;
             lblEditar.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblEditar.ForeColor = Color.FromArgb(63, 136, 254);
-            lblEditar.Location = new Point(703, 88);
+            lblEditar.Location = new Point(638, 86);
             lblEditar.Name = "lblEditar";
-            lblEditar.Size = new Size(94, 30);
+            lblEditar.Size = new Size(150, 30);
             lblEditar.TabIndex = 24;
             lblEditar.Text = "Editar";
             lblEditar.TextAlign = ContentAlignment.MiddleCenter;
@@ -112,9 +114,9 @@
             lblNome.BorderStyle = BorderStyle.FixedSingle;
             lblNome.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             lblNome.ForeColor = Color.FromArgb(63, 136, 254);
-            lblNome.Location = new Point(12, 88);
+            lblNome.Location = new Point(13, 86);
             lblNome.Name = "lblNome";
-            lblNome.Size = new Size(153, 30);
+            lblNome.Size = new Size(150, 30);
             lblNome.TabIndex = 25;
             lblNome.Text = "Nome";
             lblNome.TextAlign = ContentAlignment.MiddleCenter;
@@ -124,16 +126,16 @@
             btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnVoltar.BorderRadius = 14;
+            btnVoltar.BorderRadius = 12;
             btnVoltar.BorderSize = 2;
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
-            btnVoltar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVoltar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnVoltar.ForeColor = Color.Black;
-            btnVoltar.Location = new Point(671, 12);
+            btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
-            btnVoltar.Size = new Size(117, 39);
-            btnVoltar.TabIndex = 26;
+            btnVoltar.Size = new Size(74, 30);
+            btnVoltar.TabIndex = 3;
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
@@ -144,16 +146,16 @@
             btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 14;
+            btnSalvar.BorderRadius = 12;
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(200, 402);
+            btnSalvar.Location = new Point(168, 406);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(117, 39);
-            btnSalvar.TabIndex = 27;
+            btnSalvar.Size = new Size(103, 32);
+            btnSalvar.TabIndex = 1;
             btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
@@ -161,10 +163,50 @@
             // panel1
             // 
             panel1.AutoSize = true;
-            panel1.Location = new Point(12, 121);
+            panel1.Location = new Point(11, 122);
             panel1.Name = "panel1";
-            panel1.Size = new Size(785, 10);
+            panel1.Size = new Size(779, 10);
             panel1.TabIndex = 28;
+            // 
+            // btnCapturarImagem
+            // 
+            btnCapturarImagem.BackColor = Color.FromArgb(72, 116, 245);
+            btnCapturarImagem.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnCapturarImagem.BorderColor = Color.FromArgb(0, 242, 254);
+            btnCapturarImagem.BorderRadius = 12;
+            btnCapturarImagem.BorderSize = 2;
+            btnCapturarImagem.FlatAppearance.BorderSize = 0;
+            btnCapturarImagem.FlatStyle = FlatStyle.Flat;
+            btnCapturarImagem.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCapturarImagem.ForeColor = Color.Black;
+            btnCapturarImagem.Location = new Point(12, 12);
+            btnCapturarImagem.Name = "btnCapturarImagem";
+            btnCapturarImagem.Size = new Size(154, 32);
+            btnCapturarImagem.TabIndex = 41;
+            btnCapturarImagem.Text = "Captura de tela";
+            btnCapturarImagem.TextColor = Color.Black;
+            btnCapturarImagem.UseVisualStyleBackColor = false;
+            btnCapturarImagem.Click += btnCapturarImagem_Click;
+            // 
+            // btnImprimir
+            // 
+            btnImprimir.BackColor = Color.FromArgb(72, 116, 245);
+            btnImprimir.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnImprimir.BorderColor = Color.FromArgb(0, 242, 254);
+            btnImprimir.BorderRadius = 12;
+            btnImprimir.BorderSize = 2;
+            btnImprimir.FlatAppearance.BorderSize = 0;
+            btnImprimir.FlatStyle = FlatStyle.Flat;
+            btnImprimir.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnImprimir.ForeColor = Color.Black;
+            btnImprimir.Location = new Point(169, 12);
+            btnImprimir.Name = "btnImprimir";
+            btnImprimir.Size = new Size(112, 32);
+            btnImprimir.TabIndex = 40;
+            btnImprimir.Text = "Imprimir";
+            btnImprimir.TextColor = Color.Black;
+            btnImprimir.UseVisualStyleBackColor = false;
+            btnImprimir.Click += btnImprimir_Click;
             // 
             // ListaDeColaboradores
             // 
@@ -172,6 +214,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(btnCapturarImagem);
+            Controls.Add(btnImprimir);
             Controls.Add(panel1);
             Controls.Add(btnSalvar);
             Controls.Add(btnVoltar);
@@ -200,5 +244,7 @@
         private WiLBiT.WiLBiTButton2 btnVoltar;
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private Panel panel1;
+        private WiLBiT.WiLBiTButton2 btnCapturarImagem;
+        private WiLBiT.WiLBiTButton2 btnImprimir;
     }
 }

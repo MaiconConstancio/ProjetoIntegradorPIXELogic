@@ -53,6 +53,7 @@
             cmbProduto.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cmbProduto.ForeColor = Color.Cyan;
             cmbProduto.FormattingEnabled = true;
+            cmbProduto.ItemHeight = 21;
             cmbProduto.Location = new Point(17, 172);
             cmbProduto.Name = "cmbProduto";
             cmbProduto.Size = new Size(228, 29);
@@ -68,7 +69,7 @@
             cmbMetodoDePagamento.Location = new Point(52, 280);
             cmbMetodoDePagamento.Name = "cmbMetodoDePagamento";
             cmbMetodoDePagamento.Size = new Size(289, 29);
-            cmbMetodoDePagamento.TabIndex = 60;
+            cmbMetodoDePagamento.TabIndex = 4;
             // 
             // txtQuantidade
             // 
@@ -79,7 +80,7 @@
             txtQuantidade.Location = new Point(277, 172);
             txtQuantidade.Name = "txtQuantidade";
             txtQuantidade.Size = new Size(259, 29);
-            txtQuantidade.TabIndex = 61;
+            txtQuantidade.TabIndex = 2;
             // 
             // txtNomeDoCliente
             // 
@@ -90,7 +91,7 @@
             txtNomeDoCliente.Location = new Point(553, 172);
             txtNomeDoCliente.Name = "txtNomeDoCliente";
             txtNomeDoCliente.Size = new Size(225, 29);
-            txtNomeDoCliente.TabIndex = 62;
+            txtNomeDoCliente.TabIndex = 3;
             txtNomeDoCliente.TextChanged += textBox1_TextChanged;
             // 
             // lblMetodoDePagamento
@@ -153,16 +154,16 @@
             btnVerTodosOsItens.BackColor = Color.FromArgb(72, 116, 245);
             btnVerTodosOsItens.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnVerTodosOsItens.BorderColor = Color.FromArgb(0, 242, 254);
-            btnVerTodosOsItens.BorderRadius = 14;
+            btnVerTodosOsItens.BorderRadius = 12;
             btnVerTodosOsItens.BorderSize = 2;
             btnVerTodosOsItens.FlatAppearance.BorderSize = 0;
             btnVerTodosOsItens.FlatStyle = FlatStyle.Flat;
-            btnVerTodosOsItens.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVerTodosOsItens.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnVerTodosOsItens.ForeColor = Color.Black;
-            btnVerTodosOsItens.Location = new Point(483, 358);
+            btnVerTodosOsItens.Location = new Point(453, 361);
             btnVerTodosOsItens.Name = "btnVerTodosOsItens";
-            btnVerTodosOsItens.Size = new Size(200, 39);
-            btnVerTodosOsItens.TabIndex = 69;
+            btnVerTodosOsItens.Size = new Size(225, 32);
+            btnVerTodosOsItens.TabIndex = 7;
             btnVerTodosOsItens.Text = "VER TODOS OS ITENS";
             btnVerTodosOsItens.TextColor = Color.Black;
             btnVerTodosOsItens.UseVisualStyleBackColor = false;
@@ -173,16 +174,16 @@
             btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 14;
+            btnSalvar.BorderRadius = 12;
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnSalvar.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(181, 358);
+            btnSalvar.Location = new Point(180, 361);
             btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(143, 39);
-            btnSalvar.TabIndex = 70;
+            btnSalvar.Size = new Size(103, 32);
+            btnSalvar.TabIndex = 6;
             btnSalvar.Text = "SALVAR";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
@@ -193,17 +194,17 @@
             btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
             btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnVoltar.BorderRadius = 14;
+            btnVoltar.BorderRadius = 12;
             btnVoltar.BorderSize = 2;
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
-            btnVoltar.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnVoltar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnVoltar.ForeColor = Color.Black;
-            btnVoltar.Location = new Point(645, 12);
+            btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
-            btnVoltar.Size = new Size(143, 39);
-            btnVoltar.TabIndex = 71;
-            btnVoltar.Text = "VOLTAR";
+            btnVoltar.Size = new Size(74, 30);
+            btnVoltar.TabIndex = 8;
+            btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
             btnVoltar.Click += btnVoltar_Click;
@@ -224,11 +225,12 @@
             maskValor.BackColor = Color.FromArgb(53, 81, 142);
             maskValor.BorderStyle = BorderStyle.FixedSingle;
             maskValor.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            maskValor.ForeColor = Color.Cyan;
             maskValor.Location = new Point(436, 280);
             maskValor.Mask = "$ 000,00";
             maskValor.Name = "maskValor";
             maskValor.Size = new Size(290, 29);
-            maskValor.TabIndex = 75;
+            maskValor.TabIndex = 5;
             // 
             // Vendas
             // 

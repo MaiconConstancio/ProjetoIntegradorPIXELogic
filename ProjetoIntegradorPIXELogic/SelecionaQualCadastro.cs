@@ -46,10 +46,118 @@ namespace ProjetoIntegradorPIXELogic
 
         private void SelecionaQualCadastro_Load(object sender, EventArgs e)
         {
-            //---------------------------Setor do Designer------------------------------------
-            lblEscolhaQualCadastroDesejaRealizar.Parent = LogoComoWallpaper;
-            lblEscolhaQualCadastroDesejaRealizar.BackColor = Color.Transparent;
-            //---------------------------FIM do Setor do Designer------------------------------------
+
+            //---------------------------Setor do Designer-----------------------------------
+
+            //---------------------------FIM do Setor do Designer----------------------------
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'gerenciamento servico' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                if (panel1.Controls.Count == 0)
+                {
+
+                    panel1.Controls.Add(btnServico);
+                    btnServico.Location = new Point(panel1.Width - 129, 0);
+
+                }
+
+                else
+                {
+
+                    panel1.Controls.Add(btnServico);
+                    btnServico.Location = new Point(panel1.Width, 0);
+
+                }
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'clientes' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                if (panel1.Controls.Count == 0)
+                {
+
+                    panel1.Controls.Add(btnClientes);
+                    btnClientes.Location = new Point(panel1.Width - 129, 0);
+
+                }
+
+                else
+                {
+
+                    panel1.Controls.Add(btnClientes);
+                    btnClientes.Location = new Point(panel1.Width, 0);
+
+                }
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'produtos' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                if (panel1.Controls.Count == 0)
+                {
+
+                    panel1.Controls.Add(btnProdutos);
+                    btnProdutos.Location = new Point(panel1.Width - 129, 0);
+
+                }
+
+                else
+                {
+
+                    panel1.Controls.Add(btnProdutos);
+                    btnProdutos.Location = new Point(panel1.Width, 0);
+
+                }
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'fornecedores' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                if (panel1.Controls.Count == 0)
+                {
+
+                    panel1.Controls.Add(btnFornecedores);
+                    btnFornecedores.Location = new Point(panel1.Width - 129, 0);
+
+                }
+
+                else
+                {
+
+                    panel1.Controls.Add(btnFornecedores);
+                    btnFornecedores.Location = new Point(panel1.Width, 0);
+
+                }
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'colaboradores' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                if (panel1.Controls.Count == 0)
+                {
+
+                    panel1.Controls.Add(btnFuncionarios);
+                    btnFuncionarios.Location = new Point(panel1.Width - 129, 0);
+
+                }
+
+                else
+                {
+
+                    panel1.Controls.Add(btnFuncionarios);
+                    btnFuncionarios.Location = new Point(panel1.Width, 0);
+
+                }
+
+            }
+
+            panel1.Location = new Point(this.Width / 2 - panel1.Width / 2, 215);
+
         }
 
         private void btnFuncionarios_Click(object sender, EventArgs e)
@@ -93,6 +201,13 @@ namespace ProjetoIntegradorPIXELogic
             listaDeProdutos.TopLevel = false;
             RodaTodosForms.panel1.Controls.Add(listaDeProdutos);
             listaDeProdutos.Show();
+
+        }
+
+        private void LogoComoWallpaper_Click(object sender, EventArgs e)
+        {
+
+
 
         }
     }
