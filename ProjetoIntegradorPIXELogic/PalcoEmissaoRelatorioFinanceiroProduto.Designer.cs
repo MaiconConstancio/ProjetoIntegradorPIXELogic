@@ -45,7 +45,7 @@
             btnExcluir.FlatAppearance.BorderSize = 0;
             btnExcluir.FlatStyle = FlatStyle.Flat;
             btnExcluir.ForeColor = Color.White;
-            btnExcluir.Location = new Point(751, 5);
+            btnExcluir.Location = new Point(680, 9);
             btnExcluir.Name = "btnExcluir";
             btnExcluir.Size = new Size(29, 28);
             btnExcluir.TabIndex = 86;
@@ -61,7 +61,7 @@
             btnEditar.FlatAppearance.BorderSize = 0;
             btnEditar.FlatStyle = FlatStyle.Flat;
             btnEditar.ForeColor = Color.White;
-            btnEditar.Location = new Point(716, 5);
+            btnEditar.Location = new Point(654, 9);
             btnEditar.Name = "btnEditar";
             btnEditar.Size = new Size(29, 28);
             btnEditar.TabIndex = 85;
@@ -88,26 +88,29 @@
             label1.Size = new Size(38, 15);
             label1.TabIndex = 87;
             label1.Text = "label1";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(310, 16);
+            label2.Location = new Point(271, 16);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
             label2.TabIndex = 88;
             label2.Text = "label2";
+            label2.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(522, 16);
+            label3.Location = new Point(463, 16);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 89;
             label3.Text = "label3";
+            label3.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // PalcoEmissaoRelatorioFinanceiroProduto
             // 
