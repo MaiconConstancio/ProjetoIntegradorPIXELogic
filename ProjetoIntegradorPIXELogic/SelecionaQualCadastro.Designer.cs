@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SelecionaQualCadastro));
             btnFuncionarios = new WiLBiT.WiLBiTButton2();
             btnFornecedores = new WiLBiT.WiLBiTButton2();
             btnVoltar = new WiLBiT.WiLBiTButton2();
@@ -36,9 +35,7 @@
             btnClientes = new WiLBiT.WiLBiTButton2();
             btnServico = new WiLBiT.WiLBiTButton2();
             lblEscolhaQualCadastroDesejaRealizar = new Label();
-            LogoComoWallpaper = new PictureBox();
             panel1 = new Panel();
-            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
             // btnFuncionarios
@@ -52,7 +49,7 @@
             btnFuncionarios.FlatStyle = FlatStyle.Flat;
             btnFuncionarios.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnFuncionarios.ForeColor = Color.Black;
-            btnFuncionarios.Location = new Point(64, 242);
+            btnFuncionarios.Location = new Point(0, 0);
             btnFuncionarios.Name = "btnFuncionarios";
             btnFuncionarios.Size = new Size(129, 35);
             btnFuncionarios.TabIndex = 1;
@@ -72,7 +69,7 @@
             btnFornecedores.FlatStyle = FlatStyle.Flat;
             btnFornecedores.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnFornecedores.ForeColor = Color.Black;
-            btnFornecedores.Location = new Point(200, 242);
+            btnFornecedores.Location = new Point(0, 0);
             btnFornecedores.Name = "btnFornecedores";
             btnFornecedores.Size = new Size(129, 35);
             btnFornecedores.TabIndex = 2;
@@ -112,7 +109,7 @@
             btnProdutos.FlatStyle = FlatStyle.Flat;
             btnProdutos.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnProdutos.ForeColor = Color.Black;
-            btnProdutos.Location = new Point(336, 242);
+            btnProdutos.Location = new Point(0, 0);
             btnProdutos.Name = "btnProdutos";
             btnProdutos.Size = new Size(129, 35);
             btnProdutos.TabIndex = 3;
@@ -132,7 +129,7 @@
             btnClientes.FlatStyle = FlatStyle.Flat;
             btnClientes.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnClientes.ForeColor = Color.Black;
-            btnClientes.Location = new Point(472, 242);
+            btnClientes.Location = new Point(0, 0);
             btnClientes.Name = "btnClientes";
             btnClientes.Size = new Size(129, 35);
             btnClientes.TabIndex = 4;
@@ -152,7 +149,7 @@
             btnServico.FlatStyle = FlatStyle.Flat;
             btnServico.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnServico.ForeColor = Color.Black;
-            btnServico.Location = new Point(608, 242);
+            btnServico.Location = new Point(0, 0);
             btnServico.Name = "btnServico";
             btnServico.Size = new Size(129, 35);
             btnServico.TabIndex = 5;
@@ -172,22 +169,13 @@
             lblEscolhaQualCadastroDesejaRealizar.TabIndex = 31;
             lblEscolhaQualCadastroDesejaRealizar.Text = "Escolha qual Cadastro deseja realizar:";
             // 
-            // LogoComoWallpaper
-            // 
-            LogoComoWallpaper.Dock = DockStyle.Fill;
-            LogoComoWallpaper.Image = (Image)resources.GetObject("LogoComoWallpaper.Image");
-            LogoComoWallpaper.Location = new Point(0, 0);
-            LogoComoWallpaper.Name = "LogoComoWallpaper";
-            LogoComoWallpaper.Size = new Size(800, 450);
-            LogoComoWallpaper.TabIndex = 40;
-            LogoComoWallpaper.TabStop = false;
-            LogoComoWallpaper.Click += LogoComoWallpaper_Click;
-            // 
             // panel1
             // 
-            panel1.Location = new Point(129, 28);
+            panel1.AutoSize = true;
+            panel1.BackColor = Color.Transparent;
+            panel1.Location = new Point(74, 215);
             panel1.Name = "panel1";
-            panel1.Size = new Size(200, 100);
+            panel1.Size = new Size(0, 0);
             panel1.TabIndex = 41;
             // 
             // SelecionaQualCadastro
@@ -197,13 +185,12 @@
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
+            Controls.Add(btnVoltar);
             Controls.Add(lblEscolhaQualCadastroDesejaRealizar);
-            Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "SelecionaQualCadastro";
             Text = "SelecionaQualCadastro";
             Load += SelecionaQualCadastro_Load;
-            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -216,7 +203,6 @@
         private WiLBiT.WiLBiTButton2 btnClientes;
         private WiLBiT.WiLBiTButton2 btnServico;
         private Label lblEscolhaQualCadastroDesejaRealizar;
-        private PictureBox LogoComoWallpaper;
         private Panel panel1;
     }
 }

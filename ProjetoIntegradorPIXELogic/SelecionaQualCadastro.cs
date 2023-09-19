@@ -48,44 +48,115 @@ namespace ProjetoIntegradorPIXELogic
         {
 
             //---------------------------Setor do Designer-----------------------------------
-            lblEscolhaQualCadastroDesejaRealizar.Parent = LogoComoWallpaper;
-            lblEscolhaQualCadastroDesejaRealizar.BackColor = Color.Transparent;
+
             //---------------------------FIM do Setor do Designer----------------------------
 
-            if (Conexao.executaQuery("select * from funcoes where nome = 'servicos' and habilitado_nao = true;").Rows.Count > 0)
+            if (Conexao.executaQuery("select * from funcoes where nome = 'gerenciamento servico' and habilitado_nao = true;").Rows.Count > 0)
             {
 
-                Controls.Add(btnServico);
+                if (panel1.Controls.Count == 0)
+                {
+
+                    panel1.Controls.Add(btnServico);
+                    btnServico.Location = new Point(panel1.Width - 129, 0);
+
+                }
+
+                else
+                {
+
+                    panel1.Controls.Add(btnServico);
+                    btnServico.Location = new Point(panel1.Width, 0);
+
+                }
 
             }
 
             if (Conexao.executaQuery("select * from funcoes where nome = 'clientes' and habilitado_nao = true;").Rows.Count > 0)
             {
 
-                Controls.Add(btnClientes);
+                if (panel1.Controls.Count == 0)
+                {
+
+                    panel1.Controls.Add(btnClientes);
+                    btnClientes.Location = new Point(panel1.Width - 129, 0);
+
+                }
+
+                else
+                {
+
+                    panel1.Controls.Add(btnClientes);
+                    btnClientes.Location = new Point(panel1.Width, 0);
+
+                }
 
             }
 
             if (Conexao.executaQuery("select * from funcoes where nome = 'produtos' and habilitado_nao = true;").Rows.Count > 0)
             {
 
-                Controls.Add(btnProdutos);
+                if (panel1.Controls.Count == 0)
+                {
+
+                    panel1.Controls.Add(btnProdutos);
+                    btnProdutos.Location = new Point(panel1.Width - 129, 0);
+
+                }
+
+                else
+                {
+
+                    panel1.Controls.Add(btnProdutos);
+                    btnProdutos.Location = new Point(panel1.Width, 0);
+
+                }
 
             }
 
             if (Conexao.executaQuery("select * from funcoes where nome = 'fornecedores' and habilitado_nao = true;").Rows.Count > 0)
             {
 
-                Controls.Add(btnFornecedores);
+                if (panel1.Controls.Count == 0)
+                {
+
+                    panel1.Controls.Add(btnFornecedores);
+                    btnFornecedores.Location = new Point(panel1.Width - 129, 0);
+
+                }
+
+                else
+                {
+
+                    panel1.Controls.Add(btnFornecedores);
+                    btnFornecedores.Location = new Point(panel1.Width, 0);
+
+                }
 
             }
 
             if (Conexao.executaQuery("select * from funcoes where nome = 'colaboradores' and habilitado_nao = true;").Rows.Count > 0)
             {
 
-                Controls.Add(btnFuncionarios);
+                if (panel1.Controls.Count == 0)
+                {
+
+                    panel1.Controls.Add(btnFuncionarios);
+                    btnFuncionarios.Location = new Point(panel1.Width - 129, 0);
+
+                }
+
+                else
+                {
+
+                    panel1.Controls.Add(btnFuncionarios);
+                    btnFuncionarios.Location = new Point(panel1.Width, 0);
+
+                }
 
             }
+
+            panel1.Location = new Point(this.Width / 2 - panel1.Width / 2, 215);
 
         }
 
