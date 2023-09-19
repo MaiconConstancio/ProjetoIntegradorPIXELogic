@@ -236,7 +236,6 @@
             Controls.Add(btnNovoCadastro);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
-            Location = new Point(11, 122);
             Name = "GerenciamentoDeClientes";
             Text = "    ";
             Load += GerenciamentoDeClientes_Load;

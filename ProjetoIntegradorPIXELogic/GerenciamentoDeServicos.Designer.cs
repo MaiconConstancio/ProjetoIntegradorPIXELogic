@@ -212,7 +212,6 @@
             Controls.Add(btnNovoOrcamento);
             Controls.Add(btnVoltar);
             FormBorderStyle = FormBorderStyle.None;
-            Location = new Point(11, 122);
             Name = "GerenciamentoDeServicos";
             Text = "GerenciamentoDeServicos";
             Load += GerenciamentoDeServicos_Load;

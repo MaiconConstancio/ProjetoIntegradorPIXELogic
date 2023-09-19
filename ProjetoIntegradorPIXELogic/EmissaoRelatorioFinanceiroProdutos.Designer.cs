@@ -168,7 +168,6 @@
             Controls.Add(lblValor);
             Controls.Add(lblAcao);
             FormBorderStyle = FormBorderStyle.None;
-            Location = new Point(11, 122);
             Name = "EmissaoRelatorioFinanceiroProdutos";
             Text = "EmissaoRelatorioFinanceiroProdutos";
             Load += EmissaoRelatorioFinanceiroProdutos_Load;

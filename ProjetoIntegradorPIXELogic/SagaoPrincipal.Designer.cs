@@ -88,9 +88,9 @@
             wilBitRoundedPictureBox21.BorderSize = 2;
             wilBitRoundedPictureBox21.GradientAngle = 50F;
             wilBitRoundedPictureBox21.Image = Properties.Resources.LOGO_SEM_Fundo2;
-            wilBitRoundedPictureBox21.Location = new Point(317, 142);
+            wilBitRoundedPictureBox21.Location = new Point(269, 94);
             wilBitRoundedPictureBox21.Name = "wilBitRoundedPictureBox21";
-            wilBitRoundedPictureBox21.Size = new Size(167, 167);
+            wilBitRoundedPictureBox21.Size = new Size(263, 263);
             wilBitRoundedPictureBox21.SizeMode = PictureBoxSizeMode.Zoom;
             wilBitRoundedPictureBox21.TabIndex = 80;
             wilBitRoundedPictureBox21.TabStop = false;
@@ -107,14 +107,13 @@
             btnSuporte.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSuporte.ForeColor = Color.Black;
             btnSuporte.Location = new Point(618, 386);
-            btnSuporte.Name = "btnSuporteNovo";
+            btnSuporte.Name = "btnSuporte";
             btnSuporte.Size = new Size(170, 32);
             btnSuporte.TabIndex = 81;
             btnSuporte.Text = "Suporte";
             btnSuporte.TextColor = Color.Black;
             btnSuporte.UseVisualStyleBackColor = false;
             btnSuporte.Click += btnSuporte_Click;
-           
             // 
             // btnRelatorioProdutos
             // 
@@ -128,7 +127,7 @@
             btnRelatorioProdutos.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnRelatorioProdutos.ForeColor = Color.Black;
             btnRelatorioProdutos.Location = new Point(618, 304);
-            btnRelatorioProdutos.Name = "btnRelatorioProdutosNovo";
+            btnRelatorioProdutos.Name = "btnRelatorioProdutos";
             btnRelatorioProdutos.Size = new Size(170, 32);
             btnRelatorioProdutos.TabIndex = 83;
             btnRelatorioProdutos.Text = "Relatório Produto";
@@ -168,7 +167,7 @@
             btnVendas.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnVendas.ForeColor = Color.Black;
             btnVendas.Location = new Point(618, 263);
-            btnVendas.Name = "btnVendasNovo";
+            btnVendas.Name = "btnVendas";
             btnVendas.Size = new Size(170, 32);
             btnVendas.TabIndex = 84;
             btnVendas.Text = "Vendas";
@@ -188,7 +187,7 @@
             btnCadastros.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnCadastros.ForeColor = Color.Black;
             btnCadastros.Location = new Point(618, 222);
-            btnCadastros.Name = "btnCadastrosNovo";
+            btnCadastros.Name = "btnCadastros";
             btnCadastros.Size = new Size(170, 32);
             btnCadastros.TabIndex = 85;
             btnCadastros.Text = "Cadastros";
