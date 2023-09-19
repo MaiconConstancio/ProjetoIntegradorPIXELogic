@@ -71,33 +71,30 @@
             // 
             chkBoxColaboradores.AutoSize = true;
             chkBoxColaboradores.ForeColor = SystemColors.ActiveCaption;
-            chkBoxColaboradores.Location = new Point(425, 27);
+            chkBoxColaboradores.Location = new Point(620, 27);
             chkBoxColaboradores.Name = "chkBoxColaboradores";
-            chkBoxColaboradores.Size = new Size(103, 19);
+            chkBoxColaboradores.Size = new Size(15, 14);
             chkBoxColaboradores.TabIndex = 0;
-            chkBoxColaboradores.Text = "Colaboradores";
             chkBoxColaboradores.UseVisualStyleBackColor = true;
             // 
             // chkBoxFornecedores
             // 
             chkBoxFornecedores.AutoSize = true;
             chkBoxFornecedores.ForeColor = SystemColors.ButtonFace;
-            chkBoxFornecedores.Location = new Point(280, 27);
+            chkBoxFornecedores.Location = new Point(449, 27);
             chkBoxFornecedores.Name = "chkBoxFornecedores";
-            chkBoxFornecedores.Size = new Size(97, 19);
+            chkBoxFornecedores.Size = new Size(15, 14);
             chkBoxFornecedores.TabIndex = 1;
-            chkBoxFornecedores.Text = "Fornecedores";
             chkBoxFornecedores.UseVisualStyleBackColor = true;
             // 
             // chkBoxProdutos
             // 
             chkBoxProdutos.AutoSize = true;
             chkBoxProdutos.ForeColor = SystemColors.ButtonFace;
-            chkBoxProdutos.Location = new Point(20, 157);
+            chkBoxProdutos.Location = new Point(357, 220);
             chkBoxProdutos.Name = "chkBoxProdutos";
-            chkBoxProdutos.Size = new Size(74, 19);
+            chkBoxProdutos.Size = new Size(15, 14);
             chkBoxProdutos.TabIndex = 2;
-            chkBoxProdutos.Text = "Produtos";
             chkBoxProdutos.UseVisualStyleBackColor = true;
             // 
             // chkBoxClientes
@@ -105,66 +102,60 @@
             chkBoxClientes.AutoSize = true;
             chkBoxClientes.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             chkBoxClientes.ForeColor = SystemColors.ButtonFace;
-            chkBoxClientes.Location = new Point(12, 27);
+            chkBoxClientes.Location = new Point(56, 27);
             chkBoxClientes.Name = "chkBoxClientes";
-            chkBoxClientes.Size = new Size(68, 19);
+            chkBoxClientes.Size = new Size(15, 14);
             chkBoxClientes.TabIndex = 3;
-            chkBoxClientes.Text = "Clientes";
             chkBoxClientes.UseVisualStyleBackColor = true;
             // 
             // chkBoxGerenciamentoServiços
             // 
             chkBoxGerenciamentoServiços.AutoSize = true;
             chkBoxGerenciamentoServiços.ForeColor = SystemColors.ButtonFace;
-            chkBoxGerenciamentoServiços.Location = new Point(378, 179);
+            chkBoxGerenciamentoServiços.Location = new Point(56, 313);
             chkBoxGerenciamentoServiços.Name = "chkBoxGerenciamentoServiços";
-            chkBoxGerenciamentoServiços.Size = new Size(168, 19);
+            chkBoxGerenciamentoServiços.Size = new Size(15, 14);
             chkBoxGerenciamentoServiços.TabIndex = 4;
-            chkBoxGerenciamentoServiços.Text = "Gerenciamento de serviços";
             chkBoxGerenciamentoServiços.UseVisualStyleBackColor = true;
             // 
             // chkBoxVendas
             // 
             chkBoxVendas.AutoSize = true;
             chkBoxVendas.ForeColor = SystemColors.ButtonFace;
-            chkBoxVendas.Location = new Point(144, 27);
+            chkBoxVendas.Location = new Point(253, 27);
             chkBoxVendas.Name = "chkBoxVendas";
-            chkBoxVendas.Size = new Size(63, 19);
+            chkBoxVendas.Size = new Size(15, 14);
             chkBoxVendas.TabIndex = 5;
-            chkBoxVendas.Text = "Vendas";
             chkBoxVendas.UseVisualStyleBackColor = true;
             // 
             // chkBoxEmissaoRelatoriosFinanceiros
             // 
             chkBoxEmissaoRelatoriosFinanceiros.AutoSize = true;
             chkBoxEmissaoRelatoriosFinanceiros.ForeColor = SystemColors.ButtonFace;
-            chkBoxEmissaoRelatoriosFinanceiros.Location = new Point(43, 283);
+            chkBoxEmissaoRelatoriosFinanceiros.Location = new Point(147, 157);
             chkBoxEmissaoRelatoriosFinanceiros.Name = "chkBoxEmissaoRelatoriosFinanceiros";
-            chkBoxEmissaoRelatoriosFinanceiros.Size = new Size(271, 19);
+            chkBoxEmissaoRelatoriosFinanceiros.Size = new Size(15, 14);
             chkBoxEmissaoRelatoriosFinanceiros.TabIndex = 6;
-            chkBoxEmissaoRelatoriosFinanceiros.Text = "Emissão De Relatorios Financeiros de Produtos";
             chkBoxEmissaoRelatoriosFinanceiros.UseVisualStyleBackColor = true;
             // 
             // chkBoxSuporteAoCliente
             // 
             chkBoxSuporteAoCliente.AutoSize = true;
             chkBoxSuporteAoCliente.ForeColor = SystemColors.ButtonFace;
-            chkBoxSuporteAoCliente.Location = new Point(596, 27);
+            chkBoxSuporteAoCliente.Location = new Point(620, 313);
             chkBoxSuporteAoCliente.Name = "chkBoxSuporteAoCliente";
-            chkBoxSuporteAoCliente.Size = new Size(123, 19);
+            chkBoxSuporteAoCliente.Size = new Size(15, 14);
             chkBoxSuporteAoCliente.TabIndex = 8;
-            chkBoxSuporteAoCliente.Text = "Suporte ao Cliente";
             chkBoxSuporteAoCliente.UseVisualStyleBackColor = true;
             // 
             // checkBox1
             // 
             checkBox1.AutoSize = true;
             checkBox1.ForeColor = SystemColors.ButtonFace;
-            checkBox1.Location = new Point(498, 311);
+            checkBox1.Location = new Point(564, 156);
             checkBox1.Name = "checkBox1";
-            checkBox1.Size = new Size(266, 19);
+            checkBox1.Size = new Size(15, 14);
             checkBox1.TabIndex = 10;
-            checkBox1.Text = "Emissão De Relatorios Financeiros de Serviços\r\n";
             checkBox1.UseVisualStyleBackColor = true;
             // 
             // btnSalvar
@@ -190,7 +181,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.Icones_T_Clientes;
-            pictureBox1.Location = new Point(12, 27);
+            pictureBox1.Location = new Point(56, 27);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(92, 94);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -200,7 +191,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.Icones_T_Emissao_de_produtos;
-            pictureBox2.Location = new Point(43, 283);
+            pictureBox2.Location = new Point(147, 157);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(92, 94);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -210,7 +201,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.Icones_T_emissao_de_servicos;
-            pictureBox3.Location = new Point(498, 312);
+            pictureBox3.Location = new Point(564, 157);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(92, 94);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -220,7 +211,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.Icones_T_fornecedores;
-            pictureBox4.Location = new Point(280, 27);
+            pictureBox4.Location = new Point(449, 27);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(92, 94);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -230,7 +221,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.Icones_T_gerenciamento_de_serviços;
-            pictureBox5.Location = new Point(378, 180);
+            pictureBox5.Location = new Point(56, 314);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(92, 94);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -240,7 +231,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.Icones_T_Icone_colaboradores;
-            pictureBox6.Location = new Point(425, 27);
+            pictureBox6.Location = new Point(620, 27);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(92, 94);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -250,7 +241,7 @@
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.Icones_T_Suport;
-            pictureBox7.Location = new Point(596, 27);
+            pictureBox7.Location = new Point(620, 313);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(92, 94);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
@@ -260,7 +251,7 @@
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.Icones_T_Vendas;
-            pictureBox8.Location = new Point(144, 27);
+            pictureBox8.Location = new Point(253, 27);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(92, 94);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
@@ -270,7 +261,7 @@
             // pictureBox9
             // 
             pictureBox9.Image = Properties.Resources.Icones_T_Produtos;
-            pictureBox9.Location = new Point(20, 157);
+            pictureBox9.Location = new Point(357, 220);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(92, 94);
             pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
@@ -282,7 +273,7 @@
             lblCadastroDeClientes.AutoSize = true;
             lblCadastroDeClientes.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblCadastroDeClientes.ForeColor = Color.Cyan;
-            lblCadastroDeClientes.Location = new Point(23, 120);
+            lblCadastroDeClientes.Location = new Point(67, 123);
             lblCadastroDeClientes.Name = "lblCadastroDeClientes";
             lblCadastroDeClientes.Size = new Size(71, 21);
             lblCadastroDeClientes.TabIndex = 73;
@@ -293,18 +284,18 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.Cyan;
-            label1.Location = new Point(55, 380);
+            label1.Location = new Point(97, 254);
             label1.Name = "label1";
-            label1.Size = new Size(193, 63);
+            label1.Size = new Size(193, 42);
             label1.TabIndex = 74;
-            label1.Text = "Emissão de\r\nRelatorios\r\nFinanceiros de produtos\r\n";
+            label1.Text = "Emissão de Relatorios\r\nFinanceiros de produtos\r\n";
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.Cyan;
-            label2.Location = new Point(165, 124);
+            label2.Location = new Point(267, 123);
             label2.Name = "label2";
             label2.Size = new Size(65, 21);
             label2.TabIndex = 75;
@@ -315,7 +306,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.Cyan;
-            label3.Location = new Point(270, 120);
+            label3.Location = new Point(439, 123);
             label3.Name = "label3";
             label3.Size = new Size(112, 21);
             label3.TabIndex = 76;
@@ -326,7 +317,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.Cyan;
-            label4.Location = new Point(411, 124);
+            label4.Location = new Point(606, 123);
             label4.Name = "label4";
             label4.Size = new Size(121, 21);
             label4.TabIndex = 77;
@@ -337,7 +328,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.Cyan;
-            label5.Location = new Point(567, 124);
+            label5.Location = new Point(591, 409);
             label5.Name = "label5";
             label5.Size = new Size(151, 21);
             label5.TabIndex = 78;
@@ -348,18 +339,18 @@
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.Cyan;
-            label6.Location = new Point(596, 343);
+            label6.Location = new Point(517, 253);
             label6.Name = "label6";
-            label6.Size = new Size(186, 63);
+            label6.Size = new Size(186, 42);
             label6.TabIndex = 79;
-            label6.Text = "Emissão de\r\nRelatorios\r\nFinanceiros de serviços";
+            label6.Text = "Emissão de Relatorios\r\nFinanceiros de serviços";
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.Cyan;
-            label7.Location = new Point(32, 251);
+            label7.Location = new Point(369, 314);
             label7.Name = "label7";
             label7.Size = new Size(79, 21);
             label7.TabIndex = 80;
@@ -370,7 +361,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.Cyan;
-            label8.Location = new Point(330, 263);
+            label8.Location = new Point(8, 411);
             label8.Name = "label8";
             label8.Size = new Size(216, 21);
             label8.TabIndex = 81;
