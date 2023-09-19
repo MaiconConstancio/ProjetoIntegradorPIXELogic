@@ -70,6 +70,7 @@
             lblOrcamentoDeServicos.Size = new Size(69, 25);
             lblOrcamentoDeServicos.TabIndex = 76;
             lblOrcamentoDeServicos.Text = "MENU";
+            lblOrcamentoDeServicos.Click += lblOrcamentoDeServicos_Click;
             // 
             // panel1
             // 

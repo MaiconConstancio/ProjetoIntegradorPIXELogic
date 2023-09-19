@@ -46,10 +46,47 @@ namespace ProjetoIntegradorPIXELogic
 
         private void SelecionaQualCadastro_Load(object sender, EventArgs e)
         {
+
             //---------------------------Setor do Designer-----------------------------------
             lblEscolhaQualCadastroDesejaRealizar.Parent = LogoComoWallpaper;
             lblEscolhaQualCadastroDesejaRealizar.BackColor = Color.Transparent;
             //---------------------------FIM do Setor do Designer----------------------------
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'servicos' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                Controls.Add(btnServico);
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'clientes' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                Controls.Add(btnClientes);
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'produtos' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                Controls.Add(btnProdutos);
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'fornecedores' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                Controls.Add(btnFornecedores);
+
+            }
+
+            if (Conexao.executaQuery("select * from funcoes where nome = 'colaboradores' and habilitado_nao = true;").Rows.Count > 0)
+            {
+
+                Controls.Add(btnFuncionarios);
+
+            }
+
         }
 
         private void btnFuncionarios_Click(object sender, EventArgs e)
@@ -93,6 +130,13 @@ namespace ProjetoIntegradorPIXELogic
             listaDeProdutos.TopLevel = false;
             RodaTodosForms.panel1.Controls.Add(listaDeProdutos);
             listaDeProdutos.Show();
+
+        }
+
+        private void LogoComoWallpaper_Click(object sender, EventArgs e)
+        {
+
+
 
         }
     }
