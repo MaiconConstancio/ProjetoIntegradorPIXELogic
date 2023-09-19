@@ -103,7 +103,7 @@ namespace ProjetoIntegradorPIXELogic
         private void lblNãotemconta_Click(object sender, EventArgs e)
         {
 
-            if (Conexao.executaQuery("select * from usuario where primeiro_acesso = true").Rows.Count > 0)
+            if (Conexao.executaQuery("select * from usuario where cargo = 'dono'").Rows.Count > 0)
             {
 
 
