@@ -57,5 +57,14 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
+        private void btnImprimir_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCapturarImagem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

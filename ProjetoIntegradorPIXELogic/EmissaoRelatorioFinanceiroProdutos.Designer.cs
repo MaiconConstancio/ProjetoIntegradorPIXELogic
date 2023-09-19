@@ -36,6 +36,7 @@
             btnImprimir = new WiLBiT.WiLBiTButton2();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             panel1 = new Panel();
+            btnCapturarImagem = new WiLBiT.WiLBiTButton2();
             SuspendLayout();
             // 
             // lblAcao
@@ -118,13 +119,14 @@
             btnImprimir.FlatStyle = FlatStyle.Flat;
             btnImprimir.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnImprimir.ForeColor = Color.Black;
-            btnImprimir.Location = new Point(12, 406);
+            btnImprimir.Location = new Point(169, 12);
             btnImprimir.Name = "btnImprimir";
             btnImprimir.Size = new Size(112, 32);
             btnImprimir.TabIndex = 2;
             btnImprimir.Text = "Imprimir";
             btnImprimir.TextColor = Color.Black;
             btnImprimir.UseVisualStyleBackColor = false;
+            btnImprimir.Click += btnImprimir_Click;
             // 
             // btnSalvar
             // 
@@ -137,13 +139,14 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(130, 406);
+            btnSalvar.Location = new Point(12, 406);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
             btnSalvar.TabIndex = 1;
             btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // panel1
             // 
@@ -153,12 +156,33 @@
             panel1.Size = new Size(776, 10);
             panel1.TabIndex = 37;
             // 
+            // btnCapturarImagem
+            // 
+            btnCapturarImagem.BackColor = Color.FromArgb(72, 116, 245);
+            btnCapturarImagem.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnCapturarImagem.BorderColor = Color.FromArgb(0, 242, 254);
+            btnCapturarImagem.BorderRadius = 12;
+            btnCapturarImagem.BorderSize = 2;
+            btnCapturarImagem.FlatAppearance.BorderSize = 0;
+            btnCapturarImagem.FlatStyle = FlatStyle.Flat;
+            btnCapturarImagem.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCapturarImagem.ForeColor = Color.Black;
+            btnCapturarImagem.Location = new Point(12, 12);
+            btnCapturarImagem.Name = "btnCapturarImagem";
+            btnCapturarImagem.Size = new Size(154, 32);
+            btnCapturarImagem.TabIndex = 39;
+            btnCapturarImagem.Text = "Captura de tela";
+            btnCapturarImagem.TextColor = Color.Black;
+            btnCapturarImagem.UseVisualStyleBackColor = false;
+            btnCapturarImagem.Click += btnCapturarImagem_Click_1;
+            // 
             // EmissaoRelatorioFinanceiroProdutos
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(btnCapturarImagem);
             Controls.Add(panel1);
             Controls.Add(btnSalvar);
             Controls.Add(btnImprimir);
@@ -184,5 +208,7 @@
         private WiLBiT.WiLBiTButton2 btnImprimir;
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private Panel panel1;
+        private PictureBox pictureBox1;
+        private WiLBiT.WiLBiTButton2 btnCapturarImagem;
     }
 }

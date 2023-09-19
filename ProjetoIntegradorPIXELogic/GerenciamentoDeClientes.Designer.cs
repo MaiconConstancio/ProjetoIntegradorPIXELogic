@@ -41,6 +41,8 @@
             btnSalvar = new WiLBiT.WiLBiTButton2();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
+            btnCapturarImagem = new WiLBiT.WiLBiTButton2();
+            btnImprimir = new WiLBiT.WiLBiTButton2();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -216,12 +218,54 @@
             pictureBox1.TabIndex = 47;
             pictureBox1.TabStop = false;
             // 
+            // btnCapturarImagem
+            // 
+            btnCapturarImagem.BackColor = Color.FromArgb(72, 116, 245);
+            btnCapturarImagem.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnCapturarImagem.BorderColor = Color.FromArgb(0, 242, 254);
+            btnCapturarImagem.BorderRadius = 12;
+            btnCapturarImagem.BorderSize = 2;
+            btnCapturarImagem.FlatAppearance.BorderSize = 0;
+            btnCapturarImagem.FlatStyle = FlatStyle.Flat;
+            btnCapturarImagem.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCapturarImagem.ForeColor = Color.Black;
+            btnCapturarImagem.Location = new Point(12, 12);
+            btnCapturarImagem.Name = "btnCapturarImagem";
+            btnCapturarImagem.Size = new Size(154, 32);
+            btnCapturarImagem.TabIndex = 49;
+            btnCapturarImagem.Text = "Captura de tela";
+            btnCapturarImagem.TextColor = Color.Black;
+            btnCapturarImagem.UseVisualStyleBackColor = false;
+            btnCapturarImagem.Click += btnCapturarImagem_Click;
+            // 
+            // btnImprimir
+            // 
+            btnImprimir.BackColor = Color.FromArgb(72, 116, 245);
+            btnImprimir.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnImprimir.BorderColor = Color.FromArgb(0, 242, 254);
+            btnImprimir.BorderRadius = 12;
+            btnImprimir.BorderSize = 2;
+            btnImprimir.FlatAppearance.BorderSize = 0;
+            btnImprimir.FlatStyle = FlatStyle.Flat;
+            btnImprimir.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnImprimir.ForeColor = Color.Black;
+            btnImprimir.Location = new Point(169, 12);
+            btnImprimir.Name = "btnImprimir";
+            btnImprimir.Size = new Size(112, 32);
+            btnImprimir.TabIndex = 48;
+            btnImprimir.Text = "Imprimir";
+            btnImprimir.TextColor = Color.Black;
+            btnImprimir.UseVisualStyleBackColor = false;
+            btnImprimir.Click += btnImprimir_Click;
+            // 
             // GerenciamentoDeClientes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(btnCapturarImagem);
+            Controls.Add(btnImprimir);
             Controls.Add(panel1);
             Controls.Add(btnSalvar);
             Controls.Add(lblEditar);
@@ -259,5 +303,7 @@
         private Label lblCliente;
         private Panel panel1;
         private PictureBox pictureBox1;
+        private WiLBiT.WiLBiTButton2 btnCapturarImagem;
+        private WiLBiT.WiLBiTButton2 btnImprimir;
     }
 }
