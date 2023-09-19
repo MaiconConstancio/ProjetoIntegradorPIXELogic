@@ -57,7 +57,7 @@ namespace ProjetoIntegradorPIXELogic
             btnEntra.Location = new Point(446, 381);
             btnEntra.Name = "btnEntra";
             btnEntra.Size = new Size(330, 47);
-            btnEntra.TabIndex = 3;
+            btnEntra.TabIndex = 4;
             btnEntra.Text = "ENTRAR";
             btnEntra.TextColor = Color.Black;
             btnEntra.UseVisualStyleBackColor = false;
@@ -105,7 +105,7 @@ namespace ProjetoIntegradorPIXELogic
             txtLogin.Location = new Point(446, 240);
             txtLogin.Name = "txtLogin";
             txtLogin.Size = new Size(330, 29);
-            txtLogin.TabIndex = 8;
+            txtLogin.TabIndex = 1;
             // 
             // txtSenha
             // 
@@ -116,7 +116,7 @@ namespace ProjetoIntegradorPIXELogic
             txtSenha.Location = new Point(446, 312);
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(330, 29);
-            txtSenha.TabIndex = 9;
+            txtSenha.TabIndex = 2;
             // 
             // lblNãotemconta
             // 
@@ -126,7 +126,7 @@ namespace ProjetoIntegradorPIXELogic
             lblNãotemconta.Location = new Point(446, 344);
             lblNãotemconta.Name = "lblNãotemconta";
             lblNãotemconta.Size = new Size(224, 19);
-            lblNãotemconta.TabIndex = 11;
+            lblNãotemconta.TabIndex = 3;
             lblNãotemconta.Text = "Não tem uma conta? Clique aqui!";
             lblNãotemconta.Click += lblNãotemconta_Click;
             // 

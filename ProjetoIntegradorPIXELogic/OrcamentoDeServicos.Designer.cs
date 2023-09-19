@@ -208,7 +208,7 @@
             txtNomeDoCliente.Location = new Point(296, 110);
             txtNomeDoCliente.Name = "txtNomeDoCliente";
             txtNomeDoCliente.Size = new Size(254, 29);
-            txtNomeDoCliente.TabIndex = 57;
+            txtNomeDoCliente.TabIndex = 1;
             // 
             // cmbServico
             // 
@@ -220,7 +220,7 @@
             cmbServico.Location = new Point(275, 146);
             cmbServico.Name = "cmbServico";
             cmbServico.Size = new Size(296, 29);
-            cmbServico.TabIndex = 58;
+            cmbServico.TabIndex = 2;
             // 
             // maskValor
             // 
@@ -232,7 +232,7 @@
             maskValor.Mask = "$ 000,00";
             maskValor.Name = "maskValor";
             maskValor.Size = new Size(196, 29);
-            maskValor.TabIndex = 59;
+            maskValor.TabIndex = 3;
             // 
             // txtEndereco
             // 
@@ -243,7 +243,7 @@
             txtEndereco.Location = new Point(312, 218);
             txtEndereco.Name = "txtEndereco";
             txtEndereco.Size = new Size(223, 29);
-            txtEndereco.TabIndex = 60;
+            txtEndereco.TabIndex = 4;
             txtEndereco.TextChanged += txtEndereco_TextChanged;
             // 
             // txtFuncionario
@@ -255,7 +255,7 @@
             txtFuncionario.Location = new Point(301, 254);
             txtFuncionario.Name = "txtFuncionario";
             txtFuncionario.Size = new Size(245, 29);
-            txtFuncionario.TabIndex = 61;
+            txtFuncionario.TabIndex = 5;
             txtFuncionario.TextChanged += txtFuncionario_TextChanged;
             // 
             // txtCidade
@@ -267,7 +267,7 @@
             txtCidade.Location = new Point(312, 326);
             txtCidade.Name = "txtCidade";
             txtCidade.Size = new Size(223, 29);
-            txtCidade.TabIndex = 63;
+            txtCidade.TabIndex = 7;
             txtCidade.TextChanged += txtCidade_TextChanged;
             // 
             // LogoComoWallpaper
@@ -291,7 +291,7 @@
             maskPrazoDeEntrega.Mask = "00/00/0000";
             maskPrazoDeEntrega.Name = "maskPrazoDeEntrega";
             maskPrazoDeEntrega.Size = new Size(183, 29);
-            maskPrazoDeEntrega.TabIndex = 65;
+            maskPrazoDeEntrega.TabIndex = 6;
             maskPrazoDeEntrega.MaskInputRejected += maskPrazoDeEntrega_MaskInputRejected;
             // 
             // OrcamentoDeServicos

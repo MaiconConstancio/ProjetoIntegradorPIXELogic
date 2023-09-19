@@ -53,6 +53,7 @@
             cmbProduto.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             cmbProduto.ForeColor = Color.Cyan;
             cmbProduto.FormattingEnabled = true;
+            cmbProduto.ItemHeight = 21;
             cmbProduto.Location = new Point(17, 172);
             cmbProduto.Name = "cmbProduto";
             cmbProduto.Size = new Size(228, 29);
@@ -68,7 +69,7 @@
             cmbMetodoDePagamento.Location = new Point(52, 280);
             cmbMetodoDePagamento.Name = "cmbMetodoDePagamento";
             cmbMetodoDePagamento.Size = new Size(289, 29);
-            cmbMetodoDePagamento.TabIndex = 60;
+            cmbMetodoDePagamento.TabIndex = 4;
             // 
             // txtQuantidade
             // 
@@ -79,7 +80,7 @@
             txtQuantidade.Location = new Point(277, 172);
             txtQuantidade.Name = "txtQuantidade";
             txtQuantidade.Size = new Size(259, 29);
-            txtQuantidade.TabIndex = 61;
+            txtQuantidade.TabIndex = 2;
             // 
             // txtNomeDoCliente
             // 
@@ -90,7 +91,7 @@
             txtNomeDoCliente.Location = new Point(553, 172);
             txtNomeDoCliente.Name = "txtNomeDoCliente";
             txtNomeDoCliente.Size = new Size(225, 29);
-            txtNomeDoCliente.TabIndex = 62;
+            txtNomeDoCliente.TabIndex = 3;
             txtNomeDoCliente.TextChanged += textBox1_TextChanged;
             // 
             // lblMetodoDePagamento
@@ -162,7 +163,7 @@
             btnVerTodosOsItens.Location = new Point(453, 361);
             btnVerTodosOsItens.Name = "btnVerTodosOsItens";
             btnVerTodosOsItens.Size = new Size(225, 32);
-            btnVerTodosOsItens.TabIndex = 69;
+            btnVerTodosOsItens.TabIndex = 7;
             btnVerTodosOsItens.Text = "VER TODOS OS ITENS";
             btnVerTodosOsItens.TextColor = Color.Black;
             btnVerTodosOsItens.UseVisualStyleBackColor = false;
@@ -182,7 +183,7 @@
             btnSalvar.Location = new Point(180, 361);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
-            btnSalvar.TabIndex = 70;
+            btnSalvar.TabIndex = 6;
             btnSalvar.Text = "SALVAR";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
@@ -229,7 +230,7 @@
             maskValor.Mask = "$ 000,00";
             maskValor.Name = "maskValor";
             maskValor.Size = new Size(290, 29);
-            maskValor.TabIndex = 75;
+            maskValor.TabIndex = 5;
             // 
             // Vendas
             // 

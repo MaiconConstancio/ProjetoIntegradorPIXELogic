@@ -59,7 +59,7 @@
             txtCidade.Location = new Point(275, 329);
             txtCidade.Name = "txtCidade";
             txtCidade.Size = new Size(263, 29);
-            txtCidade.TabIndex = 69;
+            txtCidade.TabIndex = 7;
             // 
             // maskNumero
             // 
@@ -71,7 +71,7 @@
             maskNumero.Mask = "0000";
             maskNumero.Name = "maskNumero";
             maskNumero.Size = new Size(191, 29);
-            maskNumero.TabIndex = 68;
+            maskNumero.TabIndex = 5;
             // 
             // maskCEP
             // 
@@ -83,7 +83,7 @@
             maskCEP.Mask = "00000-000";
             maskCEP.Name = "maskCEP";
             maskCEP.Size = new Size(168, 29);
-            maskCEP.TabIndex = 67;
+            maskCEP.TabIndex = 4;
             // 
             // maskCPF
             // 
@@ -95,7 +95,7 @@
             maskCPF.Mask = "000.000.000-00";
             maskCPF.Name = "maskCPF";
             maskCPF.Size = new Size(214, 29);
-            maskCPF.TabIndex = 66;
+            maskCPF.TabIndex = 3;
             // 
             // maskTelefone
             // 
@@ -107,7 +107,7 @@
             maskTelefone.Mask = "(99) 00000-0000";
             maskTelefone.Name = "maskTelefone";
             maskTelefone.Size = new Size(231, 29);
-            maskTelefone.TabIndex = 65;
+            maskTelefone.TabIndex = 2;
             // 
             // txtEndereco
             // 
@@ -118,7 +118,7 @@
             txtEndereco.Location = new Point(275, 294);
             txtEndereco.Name = "txtEndereco";
             txtEndereco.Size = new Size(263, 29);
-            txtEndereco.TabIndex = 64;
+            txtEndereco.TabIndex = 6;
             // 
             // txtCliente
             // 
@@ -129,7 +129,7 @@
             txtCliente.Location = new Point(261, 119);
             txtCliente.Name = "txtCliente";
             txtCliente.Size = new Size(296, 29);
-            txtCliente.TabIndex = 63;
+            txtCliente.TabIndex = 1;
             // 
             // lblCidade
             // 

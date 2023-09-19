@@ -122,7 +122,7 @@
             txtNomeDoServico.Location = new Point(281, 195);
             txtNomeDoServico.Name = "txtNomeDoServico";
             txtNomeDoServico.Size = new Size(296, 29);
-            txtNomeDoServico.TabIndex = 66;
+            txtNomeDoServico.TabIndex = 1;
             // 
             // LogoComoWallpaper
             // 
@@ -144,7 +144,7 @@
             maskValor.Mask = "$ 000,00";
             maskValor.Name = "maskValor";
             maskValor.Size = new Size(196, 29);
-            maskValor.TabIndex = 69;
+            maskValor.TabIndex = 2;
             // 
             // CadastroDeServicos
             // 

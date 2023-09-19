@@ -63,7 +63,7 @@
             txtEmpresa.Location = new Point(305, 219);
             txtEmpresa.Name = "txtEmpresa";
             txtEmpresa.Size = new Size(259, 23);
-            txtEmpresa.TabIndex = 37;
+            txtEmpresa.TabIndex = 2;
             // 
             // txtNome
             // 
@@ -73,7 +73,7 @@
             txtNome.Location = new Point(305, 183);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(259, 23);
-            txtNome.TabIndex = 38;
+            txtNome.TabIndex = 1;
             // 
             // txtLogin
             // 
@@ -83,7 +83,7 @@
             txtLogin.Location = new Point(305, 255);
             txtLogin.Name = "txtLogin";
             txtLogin.Size = new Size(259, 23);
-            txtLogin.TabIndex = 40;
+            txtLogin.TabIndex = 3;
             // 
             // txtSenha
             // 
@@ -93,7 +93,7 @@
             txtSenha.Location = new Point(305, 291);
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(259, 23);
-            txtSenha.TabIndex = 41;
+            txtSenha.TabIndex = 4;
             // 
             // lblNome
             // 

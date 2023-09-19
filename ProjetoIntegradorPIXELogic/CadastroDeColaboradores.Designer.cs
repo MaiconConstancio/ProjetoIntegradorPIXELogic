@@ -160,7 +160,7 @@
             txtNome.Location = new Point(278, 167);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(296, 29);
-            txtNome.TabIndex = 64;
+            txtNome.TabIndex = 1;
             // 
             // txtCargo
             // 
@@ -171,7 +171,7 @@
             txtCargo.Location = new Point(278, 208);
             txtCargo.Name = "txtCargo";
             txtCargo.Size = new Size(296, 29);
-            txtCargo.TabIndex = 65;
+            txtCargo.TabIndex = 2;
             // 
             // txtLogin
             // 
@@ -182,7 +182,7 @@
             txtLogin.Location = new Point(278, 249);
             txtLogin.Name = "txtLogin";
             txtLogin.Size = new Size(296, 29);
-            txtLogin.TabIndex = 66;
+            txtLogin.TabIndex = 3;
             // 
             // txtSenha
             // 
@@ -193,7 +193,7 @@
             txtSenha.Location = new Point(278, 290);
             txtSenha.Name = "txtSenha";
             txtSenha.Size = new Size(296, 29);
-            txtSenha.TabIndex = 67;
+            txtSenha.TabIndex = 4;
             // 
             // CadastroDeColaboradores
             // 

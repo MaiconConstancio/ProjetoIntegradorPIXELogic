@@ -55,7 +55,7 @@
             txtNomeDoCliente.Location = new Point(510, 46);
             txtNomeDoCliente.Name = "txtNomeDoCliente";
             txtNomeDoCliente.Size = new Size(259, 23);
-            txtNomeDoCliente.TabIndex = 25;
+            txtNomeDoCliente.TabIndex = 1;
             txtNomeDoCliente.TextChanged += txtNomeDoCliente_TextChanged;
             // 
             // btnSalvar

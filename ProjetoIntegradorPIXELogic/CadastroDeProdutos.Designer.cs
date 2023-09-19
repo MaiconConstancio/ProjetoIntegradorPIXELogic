@@ -171,7 +171,7 @@
             txtNome.Location = new Point(279, 146);
             txtNome.Name = "txtNome";
             txtNome.Size = new Size(243, 29);
-            txtNome.TabIndex = 65;
+            txtNome.TabIndex = 1;
             // 
             // txtFornecedor
             // 
@@ -182,7 +182,7 @@
             txtFornecedor.Location = new Point(252, 185);
             txtFornecedor.Name = "txtFornecedor";
             txtFornecedor.Size = new Size(296, 29);
-            txtFornecedor.TabIndex = 66;
+            txtFornecedor.TabIndex = 2;
             // 
             // txtQuantidade
             // 
@@ -193,7 +193,7 @@
             txtQuantidade.Location = new Point(290, 224);
             txtQuantidade.Name = "txtQuantidade";
             txtQuantidade.Size = new Size(220, 29);
-            txtQuantidade.TabIndex = 67;
+            txtQuantidade.TabIndex = 3;
             // 
             // maskValor
             // 
@@ -205,7 +205,7 @@
             maskValor.Mask = "$ 000,00";
             maskValor.Name = "maskValor";
             maskValor.Size = new Size(196, 29);
-            maskValor.TabIndex = 70;
+            maskValor.TabIndex = 4;
             maskValor.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // maskVencimento
@@ -218,7 +218,7 @@
             maskVencimento.Mask = "00/00/0000";
             maskVencimento.Name = "maskVencimento";
             maskVencimento.Size = new Size(183, 29);
-            maskVencimento.TabIndex = 71;
+            maskVencimento.TabIndex = 5;
             // 
             // CadastroDeProdutos
             // 

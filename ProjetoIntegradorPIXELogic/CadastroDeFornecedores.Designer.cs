@@ -180,7 +180,7 @@
             txtFornecedor.Location = new Point(275, 121);
             txtFornecedor.Name = "txtFornecedor";
             txtFornecedor.Size = new Size(296, 29);
-            txtFornecedor.TabIndex = 40;
+            txtFornecedor.TabIndex = 1;
             // 
             // txtEndereço
             // 
@@ -191,7 +191,7 @@
             txtEndereço.Location = new Point(292, 296);
             txtEndereço.Name = "txtEndereço";
             txtEndereço.Size = new Size(263, 29);
-            txtEndereço.TabIndex = 41;
+            txtEndereço.TabIndex = 6;
             // 
             // maskedCNJP
             // 
@@ -204,7 +204,7 @@
             maskedCNJP.Mask = "00.000.000/0001-00";
             maskedCNJP.Name = "maskedCNJP";
             maskedCNJP.Size = new Size(214, 29);
-            maskedCNJP.TabIndex = 44;
+            maskedCNJP.TabIndex = 3;
             maskedCNJP.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // maskedCEP
@@ -218,7 +218,7 @@
             maskedCEP.Mask = "00000-00";
             maskedCEP.Name = "maskedCEP";
             maskedCEP.Size = new Size(168, 29);
-            maskedCEP.TabIndex = 45;
+            maskedCEP.TabIndex = 4;
             maskedCEP.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // maskedNumero
@@ -232,7 +232,7 @@
             maskedNumero.Mask = "0000";
             maskedNumero.Name = "maskedNumero";
             maskedNumero.Size = new Size(191, 29);
-            maskedNumero.TabIndex = 46;
+            maskedNumero.TabIndex = 5;
             maskedNumero.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // txtCidade
@@ -244,7 +244,7 @@
             txtCidade.Location = new Point(310, 331);
             txtCidade.Name = "txtCidade";
             txtCidade.Size = new Size(227, 29);
-            txtCidade.TabIndex = 47;
+            txtCidade.TabIndex = 7;
             // 
             // btnVoltar
             // 
@@ -276,7 +276,7 @@
             maskedTelefone.Mask = "(99) 00000-0000";
             maskedTelefone.Name = "maskedTelefone";
             maskedTelefone.Size = new Size(231, 29);
-            maskedTelefone.TabIndex = 43;
+            maskedTelefone.TabIndex = 2;
             maskedTelefone.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // CadastroDeFornecedores
