@@ -60,7 +60,7 @@
             btnSalvar.Location = new Point(349, 384);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
-            btnSalvar.TabIndex = 18;
+            btnSalvar.TabIndex = 6;
             btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
@@ -80,7 +80,7 @@
             btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(74, 30);
-            btnVoltar.TabIndex = 19;
+            btnVoltar.TabIndex = 7;
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;

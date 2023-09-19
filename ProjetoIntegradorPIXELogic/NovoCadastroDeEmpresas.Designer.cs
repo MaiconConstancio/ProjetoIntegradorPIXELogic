@@ -153,7 +153,7 @@
             btnCancelar.Location = new Point(477, 399);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(103, 32);
-            btnCancelar.TabIndex = 47;
+            btnCancelar.TabIndex = 6;
             btnCancelar.Text = "CANCELAR";
             btnCancelar.TextColor = Color.Black;
             btnCancelar.UseVisualStyleBackColor = false;
@@ -173,7 +173,7 @@
             btnCadastrar.Location = new Point(214, 399);
             btnCadastrar.Name = "btnCadastrar";
             btnCadastrar.Size = new Size(109, 32);
-            btnCadastrar.TabIndex = 48;
+            btnCadastrar.TabIndex = 5;
             btnCadastrar.Text = "CADASTRAR";
             btnCadastrar.TextColor = Color.Black;
             btnCadastrar.UseVisualStyleBackColor = false;

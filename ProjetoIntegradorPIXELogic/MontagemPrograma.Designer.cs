@@ -153,7 +153,7 @@
             btnSalvar.Location = new Point(349, 384);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
-            btnSalvar.TabIndex = 34;
+            btnSalvar.TabIndex = 1;
             btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;

@@ -52,7 +52,7 @@
             btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(74, 30);
-            btnVoltar.TabIndex = 24;
+            btnVoltar.TabIndex = 3;
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
@@ -72,7 +72,7 @@
             btnImprimir.Location = new Point(12, 406);
             btnImprimir.Name = "btnImprimir";
             btnImprimir.Size = new Size(112, 32);
-            btnImprimir.TabIndex = 25;
+            btnImprimir.TabIndex = 2;
             btnImprimir.Text = "Imprimir";
             btnImprimir.TextColor = Color.Black;
             btnImprimir.UseVisualStyleBackColor = false;
@@ -91,7 +91,7 @@
             btnSalvar.Location = new Point(130, 406);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
-            btnSalvar.TabIndex = 26;
+            btnSalvar.TabIndex = 1;
             btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;

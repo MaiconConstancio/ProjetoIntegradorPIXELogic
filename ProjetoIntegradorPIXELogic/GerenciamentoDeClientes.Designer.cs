@@ -58,7 +58,7 @@
             btnNovoCadastro.Location = new Point(12, 406);
             btnNovoCadastro.Name = "btnNovoCadastro";
             btnNovoCadastro.Size = new Size(150, 32);
-            btnNovoCadastro.TabIndex = 30;
+            btnNovoCadastro.TabIndex = 2;
             btnNovoCadastro.Text = "Novo Cadastro";
             btnNovoCadastro.TextColor = Color.Black;
             btnNovoCadastro.UseVisualStyleBackColor = false;
@@ -78,7 +78,7 @@
             btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(74, 30);
-            btnVoltar.TabIndex = 36;
+            btnVoltar.TabIndex = 3;
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
@@ -194,7 +194,7 @@
             btnSalvar.Location = new Point(168, 406);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
-            btnSalvar.TabIndex = 45;
+            btnSalvar.TabIndex = 1;
             btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;

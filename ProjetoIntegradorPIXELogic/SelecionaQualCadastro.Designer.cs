@@ -37,6 +37,7 @@
             btnServico = new WiLBiT.WiLBiTButton2();
             lblEscolhaQualCadastroDesejaRealizar = new Label();
             LogoComoWallpaper = new PictureBox();
+            panel1 = new Panel();
             ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
@@ -181,12 +182,20 @@
             LogoComoWallpaper.TabIndex = 40;
             LogoComoWallpaper.TabStop = false;
             // 
+            // panel1
+            // 
+            panel1.Location = new Point(129, 28);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(200, 100);
+            panel1.TabIndex = 41;
+            // 
             // SelecionaQualCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(panel1);
             Controls.Add(lblEscolhaQualCadastroDesejaRealizar);
             Controls.Add(btnServico);
             Controls.Add(btnVoltar);
@@ -213,5 +222,6 @@
         private WiLBiT.WiLBiTButton2 btnServico;
         private Label lblEscolhaQualCadastroDesejaRealizar;
         private PictureBox LogoComoWallpaper;
+        private Panel panel1;
     }
 }

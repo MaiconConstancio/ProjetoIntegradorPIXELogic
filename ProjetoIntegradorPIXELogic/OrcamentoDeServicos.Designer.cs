@@ -142,7 +142,7 @@
             btnSalvar.Location = new Point(349, 384);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
-            btnSalvar.TabIndex = 39;
+            btnSalvar.TabIndex = 8;
             btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
@@ -173,7 +173,7 @@
             btnNovoServico.Location = new Point(12, 406);
             btnNovoServico.Name = "btnNovoServico";
             btnNovoServico.Size = new Size(150, 32);
-            btnNovoServico.TabIndex = 55;
+            btnNovoServico.TabIndex = 9;
             btnNovoServico.Text = "Novo serviço";
             btnNovoServico.TextColor = Color.Black;
             btnNovoServico.UseVisualStyleBackColor = false;
@@ -193,7 +193,7 @@
             btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(74, 30);
-            btnVoltar.TabIndex = 56;
+            btnVoltar.TabIndex = 10;
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;

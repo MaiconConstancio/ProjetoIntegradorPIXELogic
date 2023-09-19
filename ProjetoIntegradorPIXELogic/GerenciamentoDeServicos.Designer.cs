@@ -55,7 +55,7 @@
             btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(74, 30);
-            btnVoltar.TabIndex = 20;
+            btnVoltar.TabIndex = 3;
             btnVoltar.Text = "Voltar";
             btnVoltar.TextColor = Color.Black;
             btnVoltar.UseVisualStyleBackColor = false;
@@ -75,7 +75,7 @@
             btnNovoOrcamento.Location = new Point(12, 406);
             btnNovoOrcamento.Name = "btnNovoOrcamento";
             btnNovoOrcamento.Size = new Size(150, 32);
-            btnNovoOrcamento.TabIndex = 21;
+            btnNovoOrcamento.TabIndex = 2;
             btnNovoOrcamento.Text = "Novo Orçamento";
             btnNovoOrcamento.TextColor = Color.Black;
             btnNovoOrcamento.UseVisualStyleBackColor = false;
@@ -180,7 +180,7 @@
             btnSalvar.Location = new Point(168, 406);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
-            btnSalvar.TabIndex = 34;
+            btnSalvar.TabIndex = 1;
             btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
