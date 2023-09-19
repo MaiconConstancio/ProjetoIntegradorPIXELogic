@@ -28,5 +28,18 @@ namespace ProjetoIntegradorPIXELogic
         {
 
         }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+
+            Conexao.executaQuery($"set SQL_SAFE_UPDATES = 0; delete from produtos where nome = '{label1.Text}';");
+
+            RodaTodosForms.panel1.Controls.Clear();
+            ListaDeProdutos form = new ListaDeProdutos();
+            form.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(form);
+            form.Show();
+
+        }
     }
 }

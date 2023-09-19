@@ -207,7 +207,7 @@
         private WiLBiT.WiLBiTButton2 btnVoltar;
         private WiLBiT.WiLBiTButton2 btnImprimir;
         private WiLBiT.WiLBiTButton2 btnSalvar;
-        private Panel panel1;
+        public static Panel panel1;
         private PictureBox pictureBox1;
         private WiLBiT.WiLBiTButton2 btnCapturarImagem;
     }

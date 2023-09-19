@@ -29,5 +29,18 @@ namespace ProjetoIntegradorPIXELogic
         {
 
         }
+
+        private void btnExcluir_Click(object sender, EventArgs e)
+        {
+
+            Conexao.executaQuery($"set SQL_SAFE_UPDATES = 0; delete from orcamentos where servico = '{label1.Text}';");
+
+            RodaTodosForms.panel1.Controls.Clear();
+            GerenciamentoDeServicos form = new GerenciamentoDeServicos();
+            form.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(form);
+            form.Show();
+
+        }
     }
 }
