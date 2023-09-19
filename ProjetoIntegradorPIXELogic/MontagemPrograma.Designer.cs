@@ -191,7 +191,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.Icones_T_Emissao_de_produtos;
-            pictureBox2.Location = new Point(147, 157);
+            pictureBox2.Location = new Point(147, 164);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(92, 94);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -201,7 +201,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.Icones_T_emissao_de_servicos;
-            pictureBox3.Location = new Point(564, 157);
+            pictureBox3.Location = new Point(564, 167);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(92, 94);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -211,7 +211,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = Properties.Resources.Icones_T_fornecedores;
-            pictureBox4.Location = new Point(449, 27);
+            pictureBox4.Location = new Point(449, 31);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(92, 94);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -221,7 +221,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = Properties.Resources.Icones_T_gerenciamento_de_serviços;
-            pictureBox5.Location = new Point(56, 314);
+            pictureBox5.Location = new Point(56, 320);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(92, 94);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -231,7 +231,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = Properties.Resources.Icones_T_Icone_colaboradores;
-            pictureBox6.Location = new Point(620, 27);
+            pictureBox6.Location = new Point(620, 35);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(92, 94);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -241,7 +241,7 @@
             // pictureBox7
             // 
             pictureBox7.Image = Properties.Resources.Icones_T_Suport;
-            pictureBox7.Location = new Point(620, 313);
+            pictureBox7.Location = new Point(620, 321);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(92, 94);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
@@ -251,7 +251,7 @@
             // pictureBox8
             // 
             pictureBox8.Image = Properties.Resources.Icones_T_Vendas;
-            pictureBox8.Location = new Point(253, 27);
+            pictureBox8.Location = new Point(253, 36);
             pictureBox8.Name = "pictureBox8";
             pictureBox8.Size = new Size(92, 94);
             pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
@@ -261,7 +261,7 @@
             // pictureBox9
             // 
             pictureBox9.Image = Properties.Resources.Icones_T_Produtos;
-            pictureBox9.Location = new Point(357, 220);
+            pictureBox9.Location = new Point(357, 226);
             pictureBox9.Name = "pictureBox9";
             pictureBox9.Size = new Size(92, 94);
             pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
@@ -373,13 +373,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(label8);
-            Controls.Add(label7);
+            Controls.Add(label2);
             Controls.Add(label6);
-            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(lblCadastroDeClientes);
             Controls.Add(btnSalvar);
@@ -401,6 +398,9 @@
             Controls.Add(pictureBox9);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox5);
+            Controls.Add(label7);
+            Controls.Add(label8);
+            Controls.Add(label5);
             FormBorderStyle = FormBorderStyle.None;
             Name = "MontagemPrograma";
             Text = "MontagemPrograma";

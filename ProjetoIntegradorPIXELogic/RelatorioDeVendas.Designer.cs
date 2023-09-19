@@ -31,7 +31,6 @@
             components = new System.ComponentModel.Container();
             txtNomeDoCliente = new TextBox();
             btnSalvar = new WiLBiT.WiLBiTButton2();
-            btnImprimir = new WiLBiT.WiLBiTButton2();
             btnCancelar = new WiLBiT.WiLBiTButton2();
             lblNomeDoCliente = new Label();
             lblProduto = new Label();
@@ -45,6 +44,8 @@
             lblMetodoSelecionado = new Label();
             panel1 = new Panel();
             timer1 = new System.Windows.Forms.Timer(components);
+            btnCapturarImagem = new WiLBiT.WiLBiTButton2();
+            btnImprimir = new WiLBiT.WiLBiTButton2();
             SuspendLayout();
             // 
             // txtNomeDoCliente
@@ -69,32 +70,13 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(126, 370);
+            btnSalvar.Location = new Point(125, 406);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
             btnSalvar.TabIndex = 2;
             btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
-            // 
-            // btnImprimir
-            // 
-            btnImprimir.BackColor = Color.FromArgb(72, 116, 245);
-            btnImprimir.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnImprimir.BorderColor = Color.FromArgb(0, 242, 254);
-            btnImprimir.BorderRadius = 12;
-            btnImprimir.BorderSize = 2;
-            btnImprimir.FlatAppearance.BorderSize = 0;
-            btnImprimir.FlatStyle = FlatStyle.Flat;
-            btnImprimir.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnImprimir.ForeColor = Color.Black;
-            btnImprimir.Location = new Point(12, 406);
-            btnImprimir.Name = "btnImprimir";
-            btnImprimir.Size = new Size(112, 32);
-            btnImprimir.TabIndex = 4;
-            btnImprimir.Text = "Imprimir";
-            btnImprimir.TextColor = Color.Black;
-            btnImprimir.UseVisualStyleBackColor = false;
             // 
             // btnCancelar
             // 
@@ -107,7 +89,7 @@
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             btnCancelar.ForeColor = Color.Black;
-            btnCancelar.Location = new Point(12, 370);
+            btnCancelar.Location = new Point(11, 406);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(112, 32);
             btnCancelar.TabIndex = 3;
@@ -241,12 +223,54 @@
             panel1.TabIndex = 41;
             panel1.Paint += panel1_Paint;
             // 
+            // btnCapturarImagem
+            // 
+            btnCapturarImagem.BackColor = Color.FromArgb(72, 116, 245);
+            btnCapturarImagem.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnCapturarImagem.BorderColor = Color.FromArgb(0, 242, 254);
+            btnCapturarImagem.BorderRadius = 12;
+            btnCapturarImagem.BorderSize = 2;
+            btnCapturarImagem.FlatAppearance.BorderSize = 0;
+            btnCapturarImagem.FlatStyle = FlatStyle.Flat;
+            btnCapturarImagem.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCapturarImagem.ForeColor = Color.Black;
+            btnCapturarImagem.Location = new Point(12, 12);
+            btnCapturarImagem.Name = "btnCapturarImagem";
+            btnCapturarImagem.Size = new Size(154, 32);
+            btnCapturarImagem.TabIndex = 43;
+            btnCapturarImagem.Text = "Captura de tela";
+            btnCapturarImagem.TextColor = Color.Black;
+            btnCapturarImagem.UseVisualStyleBackColor = false;
+            btnCapturarImagem.Click += btnCapturarImagem_Click;
+            // 
+            // btnImprimir
+            // 
+            btnImprimir.BackColor = Color.FromArgb(72, 116, 245);
+            btnImprimir.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnImprimir.BorderColor = Color.FromArgb(0, 242, 254);
+            btnImprimir.BorderRadius = 12;
+            btnImprimir.BorderSize = 2;
+            btnImprimir.FlatAppearance.BorderSize = 0;
+            btnImprimir.FlatStyle = FlatStyle.Flat;
+            btnImprimir.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnImprimir.ForeColor = Color.Black;
+            btnImprimir.Location = new Point(169, 12);
+            btnImprimir.Name = "btnImprimir";
+            btnImprimir.Size = new Size(112, 32);
+            btnImprimir.TabIndex = 42;
+            btnImprimir.Text = "Imprimir";
+            btnImprimir.TextColor = Color.Black;
+            btnImprimir.UseVisualStyleBackColor = false;
+            btnImprimir.Click += btnImprimir_Click;
+            // 
             // RelatorioDeVendas
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
+            Controls.Add(btnCapturarImagem);
+            Controls.Add(btnImprimir);
             Controls.Add(panel1);
             Controls.Add(lblMetodoSelecionado);
             Controls.Add(lblTotal);
@@ -259,7 +283,6 @@
             Controls.Add(lblProduto);
             Controls.Add(lblNomeDoCliente);
             Controls.Add(btnCancelar);
-            Controls.Add(btnImprimir);
             Controls.Add(btnSalvar);
             Controls.Add(txtNomeDoCliente);
             FormBorderStyle = FormBorderStyle.None;
@@ -272,7 +295,6 @@
 
         #endregion
         private WiLBiT.WiLBiTButton2 btnSalvar;
-        private WiLBiT.WiLBiTButton2 btnImprimir;
         private WiLBiT.WiLBiTButton2 btnCancelar;
         private Label lblNomeDoCliente;
         private Label lblProduto;
@@ -287,5 +309,7 @@
         private Panel panel1;
         private System.Windows.Forms.Timer timer1;
         public TextBox txtNomeDoCliente;
+        private WiLBiT.WiLBiTButton2 btnCapturarImagem;
+        private WiLBiT.WiLBiTButton2 btnImprimir;
     }
 }
