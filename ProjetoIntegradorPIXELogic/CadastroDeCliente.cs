@@ -73,7 +73,7 @@ namespace ProjetoIntegradorPIXELogic
                             {
 
                                 string query = $"insert into clientes (nome,endereco,cpf,telefone,cep,cidade,numero) values " +
-                                    $"('{txtCliente.Text}','{txtEndereco.Text}','{maskCPF.Text}','{maskTelefone.Text}','{maskCEP.Text}','{txtCidade.Text}','{maskNumero.Text}');";
+                                    $"('{txtCliente.Text}','{txtEndereco.Text}',{maskCPF.Text},{maskTelefone.Text},{maskCEP.Text},'{txtCidade.Text}',{maskNumero.Text});";
                                 Conexao.executaQuery(query);
 
                                 txtCliente.Clear();

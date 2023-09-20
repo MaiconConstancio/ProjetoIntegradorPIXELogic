@@ -102,7 +102,7 @@ namespace ProjetoIntegradorPIXELogic
                             string ano = maskPrazoDeEntrega.Text.Split('/')[2];
 
                             string query = $"insert into orcamentos (servico,valor,nome_cliente,endereco,funcionario,estimativa_entrega) values " +
-                                $"('{cmbServico.Text}','{maskValor.Text}','{txtNomeDoCliente.Text}','{txtEndereco.Text}','{txtFuncionario.Text}','{ano}-{mes}-{dia}');";
+                                $"('{cmbServico.Text}','{maskValor.Text.Remove(0, 2)}','{txtNomeDoCliente.Text}','{txtEndereco.Text}','{txtFuncionario.Text}','{ano}-{mes}-{dia}');";
                             Conexao.executaQuery(query);
 
                             txtNomeDoCliente.Clear();
@@ -136,7 +136,7 @@ namespace ProjetoIntegradorPIXELogic
                     string ano = maskPrazoDeEntrega.Text.Split('/')[2];
 
                     string query = $"insert into orcamentos (servico,valor,nome_cliente,endereco,funcionario,estimativa_entrega) values " +
-                        $"('{cmbServico.Text}','{maskValor.Text}','{txtNomeDoCliente.Text}','{txtEndereco.Text}','{txtFuncionario.Text}','{ano}-{mes}-{dia}');";
+                        $"('{cmbServico.Text}','{maskValor.Text.Remove(0, 2)}','{txtNomeDoCliente.Text}','{txtEndereco.Text}','{txtFuncionario.Text}','{ano}-{mes}-{dia}');";
                     Conexao.executaQuery(query);
 
                     txtNomeDoCliente.Clear();

@@ -19,7 +19,7 @@ namespace ProjetoIntegradorPIXELogic
 
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-           
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -110,7 +110,7 @@ namespace ProjetoIntegradorPIXELogic
                         {
 
                             string query = $"insert into vendas (produto,quantidade,nome_cliente,metodo_pagamento,valor) values " +
-                                $"('{cmbProduto.Text}','{txtQuantidade.Text}','{txtNomeDoCliente.Text}','{cmbMetodoDePagamento.Text}',{maskValor.Text.Remove(0,2)});";
+                                $"('{cmbProduto.Text}','{txtQuantidade.Text}','{txtNomeDoCliente.Text}','{cmbMetodoDePagamento.Text}',{maskValor.Text.Remove(0, 2)});";
                             Conexao.executaQuery(query);
 
                             cmbProduto.Text = "";
@@ -150,6 +150,18 @@ namespace ProjetoIntegradorPIXELogic
                     }
 
                 }
+
+            }
+
+        }
+
+        private void cmbProduto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            foreach (DataRow row in Conexao.executaQuery($"select * from produtos where nome = '{cmbProduto.Text}'").Rows)
+            {
+
+                maskValor.Text = row["valor"].ToString();
 
             }
 

@@ -215,7 +215,7 @@
             maskedCEP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskedCEP.ForeColor = Color.Cyan;
             maskedCEP.Location = new Point(339, 226);
-            maskedCEP.Mask = "00000-00";
+            maskedCEP.Mask = "00000-000";
             maskedCEP.Name = "maskedCEP";
             maskedCEP.Size = new Size(168, 29);
             maskedCEP.TabIndex = 4;
