@@ -45,9 +45,10 @@ namespace ProjetoIntegradorPIXELogic
                                                                                            row["nome_cliente"].ToString(), row["metodo_pagamento"].ToString(), row["valor"].ToString());
                 palcoRelatorioDeVendas.TopLevel = false;
                 panel1.Controls.Add(palcoRelatorioDeVendas);
+                palcoRelatorioDeVendas.Location = new Point(0, panel1.Height);
                 palcoRelatorioDeVendas.Show();
 
-                decimal soma = valor + decimal.Parse(row["valor"].ToString());
+                decimal soma = valor + (decimal.Parse(row["valor"].ToString()) * decimal.Parse(row["quantidade"].ToString()));
 
                 valor = soma;
 
@@ -89,6 +90,7 @@ namespace ProjetoIntegradorPIXELogic
                                                                                            row["nome_cliente"].ToString(), row["metodo_pagamento"].ToString(), row["valor"].ToString());
                 palcoRelatorioDeVendas.TopLevel = false;
                 panel1.Controls.Add(palcoRelatorioDeVendas);
+                palcoRelatorioDeVendas.Location = new Point(0, panel1.Height);
                 palcoRelatorioDeVendas.Show();
 
                 decimal soma = valor + decimal.Parse(row["valor"].ToString());
