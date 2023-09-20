@@ -22,6 +22,61 @@ namespace ProjetoIntegradorPIXELogic
 
         private void MontagemPrograma_Load(object sender, EventArgs e)
         {
+            //---------------------------Setor do Designer-----------------------------------
+            lblTituloMontaPrograma.Parent = LogoComoWallpaper;
+            lblTituloMontaPrograma.BackColor = Color.Transparent;
+
+            imgCliente.Parent = LogoComoWallpaper;
+            imgCliente.BackColor = Color.Transparent;
+
+            lblCliente.Parent = LogoComoWallpaper;
+            lblCliente.BackColor = Color.Transparent;
+
+            imgFornecedor.Parent = LogoComoWallpaper;
+            imgFornecedor.BackColor = Color.Transparent;
+
+            lblFornecedor.Parent = LogoComoWallpaper;
+            lblFornecedor.BackColor = Color.Transparent;
+
+            imgColaboradores.Parent = LogoComoWallpaper;
+            imgColaboradores.BackColor = Color.Transparent;
+
+            lblColaboradores.Parent = LogoComoWallpaper;
+            lblColaboradores.BackColor = Color.Transparent;
+
+            imgProdutos.Parent = LogoComoWallpaper;
+            imgProdutos.BackColor = Color.Transparent;
+
+            lblProdutos.Parent = LogoComoWallpaper;
+            lblProdutos.BackColor = Color.Transparent;
+
+            imgRelatorioProdutos.Parent = LogoComoWallpaper;
+            imgRelatorioProdutos.BackColor = Color.Transparent;
+
+            lblRelatorioProdutos.Parent = LogoComoWallpaper;
+            lblRelatorioProdutos.BackColor = Color.Transparent;
+
+            imgRelatorioServicos.Parent = LogoComoWallpaper;
+            imgRelatorioServicos.BackColor = Color.Transparent;
+
+            lblRelatorioServicos.Parent = LogoComoWallpaper;
+            lblRelatorioServicos.BackColor = Color.Transparent;
+
+            imgSuport.Parent = LogoComoWallpaper;
+            imgSuport.BackColor = Color.Transparent;
+
+            lblSuport.Parent = LogoComoWallpaper;
+            lblSuport.BackColor = Color.Transparent;
+
+            imgGerenciamentoServicos.Parent = LogoComoWallpaper;
+            imgGerenciamentoServicos.BackColor = Color.Transparent;
+
+            lblGerenciamentoServicos.Parent = LogoComoWallpaper;
+            lblGerenciamentoServicos.BackColor = Color.Transparent;
+            //---------------------------FIM do Setor do Designer----------------------------
+
+
+
 
             if (Conexao.executaQuery("select * from funcoes where nome = 'gerenciamento servico' and habilitado_nao = true;").Rows.Count > 0)
             {
