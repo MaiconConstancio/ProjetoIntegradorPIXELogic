@@ -34,7 +34,6 @@
             lblProduto = new Label();
             btnVoltar = new WiLBiT.WiLBiTButton2();
             btnImprimir = new WiLBiT.WiLBiTButton2();
-            btnSalvar = new WiLBiT.WiLBiTButton2();
             panel1 = new Panel();
             btnCapturarImagem = new WiLBiT.WiLBiTButton2();
             SuspendLayout();
@@ -128,26 +127,6 @@
             btnImprimir.UseVisualStyleBackColor = false;
             btnImprimir.Click += btnImprimir_Click;
             // 
-            // btnSalvar
-            // 
-            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 12;
-            btnSalvar.BorderSize = 2;
-            btnSalvar.FlatAppearance.BorderSize = 0;
-            btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(12, 406);
-            btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(103, 32);
-            btnSalvar.TabIndex = 1;
-            btnSalvar.Text = "Salvar";
-            btnSalvar.TextColor = Color.Black;
-            btnSalvar.UseVisualStyleBackColor = false;
-            btnSalvar.Click += btnSalvar_Click;
-            // 
             // panel1
             // 
             panel1.AutoSize = true;
@@ -184,7 +163,6 @@
             ClientSize = new Size(800, 450);
             Controls.Add(btnCapturarImagem);
             Controls.Add(panel1);
-            Controls.Add(btnSalvar);
             Controls.Add(btnImprimir);
             Controls.Add(btnVoltar);
             Controls.Add(lblProduto);
@@ -206,9 +184,8 @@
         private Label lblProduto;
         private WiLBiT.WiLBiTButton2 btnVoltar;
         private WiLBiT.WiLBiTButton2 btnImprimir;
-        private WiLBiT.WiLBiTButton2 btnSalvar;
-        public static Panel panel1;
         private PictureBox pictureBox1;
         private WiLBiT.WiLBiTButton2 btnCapturarImagem;
+        public Panel panel1;
     }
 }

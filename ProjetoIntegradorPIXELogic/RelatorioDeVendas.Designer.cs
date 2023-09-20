@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             txtNomeDoCliente = new TextBox();
-            btnSalvar = new WiLBiT.WiLBiTButton2();
             btnCancelar = new WiLBiT.WiLBiTButton2();
             lblNomeDoCliente = new Label();
             lblProduto = new Label();
@@ -54,26 +53,6 @@
             txtNomeDoCliente.Size = new Size(259, 23);
             txtNomeDoCliente.TabIndex = 1;
             txtNomeDoCliente.TextChanged += txtNomeDoCliente_TextChanged;
-            // 
-            // btnSalvar
-            // 
-            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 12;
-            btnSalvar.BorderSize = 2;
-            btnSalvar.FlatAppearance.BorderSize = 0;
-            btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(125, 406);
-            btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(103, 32);
-            btnSalvar.TabIndex = 2;
-            btnSalvar.Text = "Salvar";
-            btnSalvar.TextColor = Color.Black;
-            btnSalvar.UseVisualStyleBackColor = false;
-            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnCancelar
             // 
@@ -255,7 +234,6 @@
             Controls.Add(lblProduto);
             Controls.Add(lblNomeDoCliente);
             Controls.Add(btnCancelar);
-            Controls.Add(btnSalvar);
             Controls.Add(txtNomeDoCliente);
             FormBorderStyle = FormBorderStyle.None;
             Name = "RelatorioDeVendas";
@@ -266,7 +244,6 @@
         }
 
         #endregion
-        private WiLBiT.WiLBiTButton2 btnSalvar;
         private WiLBiT.WiLBiTButton2 btnCancelar;
         private Label lblNomeDoCliente;
         private Label lblProduto;
