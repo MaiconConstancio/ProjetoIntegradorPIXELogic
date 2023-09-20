@@ -45,11 +45,19 @@ namespace ProjetoIntegradorPIXELogic
             lblCidade.Parent = LogoComoWallpaper;
             lblCidade.BackColor = Color.Transparent;
             //---------------------------FIM do Setor do Designer----------------------------
+
+            foreach (DataRow row in Conexao.executaQuery("select * from servicos").Rows)
+            {
+
+                cmbServico.Items.Add(row["nome_servico"].ToString());
+
+            }
+
         }
 
         private void maskPrazoDeEntrega_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-            //maskPrazoDeEntrega.SelectionStart = 0;
+
         }
 
         private void txtFuncionario_TextChanged(object sender, EventArgs e)
@@ -165,6 +173,23 @@ namespace ProjetoIntegradorPIXELogic
             gerenciamentoDeServicos.TopLevel = false;
             RodaTodosForms.panel1.Controls.Add(gerenciamentoDeServicos);
             gerenciamentoDeServicos.Show();
+
+        }
+
+        private void LogoComoWallpaper_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbServico_TextChanged(object sender, EventArgs e)
+        {
+
+            foreach (DataRow row in Conexao.executaQuery($"select * from servicos where nome_servico = '{cmbServico.Text}';").Rows)
+            {
+
+                maskValor.Text = row["valor"].ToString();
+
+            }
 
         }
     }

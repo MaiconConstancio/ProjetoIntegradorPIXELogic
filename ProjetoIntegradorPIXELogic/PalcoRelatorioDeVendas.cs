@@ -12,6 +12,8 @@ namespace ProjetoIntegradorPIXELogic
 {
     public partial class PalcoRelatorioDeVendas : Form
     {
+        public static string txt;
+        
         public PalcoRelatorioDeVendas(string lb1, string lb2, string lb3, string lb4, string lb5)
         {
             InitializeComponent();
@@ -24,6 +26,7 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
+
         private void PalcoRelatorioDeVendas_Load(object sender, EventArgs e)
         {
 
@@ -35,7 +38,7 @@ namespace ProjetoIntegradorPIXELogic
             Conexao.executaQuery($"set SQL_SAFE_UPDATES = 0; delete from vendas where produto = '{label1.Text}';");
 
             RodaTodosForms.panel1.Controls.Clear();
-            EmissaoRelatorioFinanceiroservico form = new EmissaoRelatorioFinanceiroservico();
+            RelatorioDeVendas form = new RelatorioDeVendas(txt);
             form.TopLevel = false;
             RodaTodosForms.panel1.Controls.Add(form);
             form.Show();

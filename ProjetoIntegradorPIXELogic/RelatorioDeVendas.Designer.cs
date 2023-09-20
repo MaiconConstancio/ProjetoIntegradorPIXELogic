@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            components = new System.ComponentModel.Container();
             txtNomeDoCliente = new TextBox();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             btnCancelar = new WiLBiT.WiLBiTButton2();
@@ -39,11 +38,8 @@
             lblMetodoDePagamento = new Label();
             lblValor = new Label();
             lblAcao = new Label();
-            lblPagamentoNoMetodoSelecionado = new Label();
             lblTotal = new Label();
-            lblMetodoSelecionado = new Label();
             panel1 = new Panel();
-            timer1 = new System.Windows.Forms.Timer(components);
             btnCapturarImagem = new WiLBiT.WiLBiTButton2();
             btnImprimir = new WiLBiT.WiLBiTButton2();
             SuspendLayout();
@@ -77,6 +73,7 @@
             btnSalvar.Text = "Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // btnCancelar
             // 
@@ -181,38 +178,15 @@
             lblAcao.Text = "Ação";
             lblAcao.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // lblPagamentoNoMetodoSelecionado
-            // 
-            lblPagamentoNoMetodoSelecionado.AutoSize = true;
-            lblPagamentoNoMetodoSelecionado.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblPagamentoNoMetodoSelecionado.ForeColor = Color.FromArgb(63, 136, 254);
-            lblPagamentoNoMetodoSelecionado.Location = new Point(490, 391);
-            lblPagamentoNoMetodoSelecionado.Name = "lblPagamentoNoMetodoSelecionado";
-            lblPagamentoNoMetodoSelecionado.Size = new Size(298, 21);
-            lblPagamentoNoMetodoSelecionado.TabIndex = 38;
-            lblPagamentoNoMetodoSelecionado.Text = "Pagamento no: {Método selecionado}";
-            // 
             // lblTotal
             // 
             lblTotal.AutoSize = true;
             lblTotal.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lblTotal.ForeColor = Color.FromArgb(63, 136, 254);
-            lblTotal.Location = new Point(701, 420);
+            lblTotal.Location = new Point(681, 420);
             lblTotal.Name = "lblTotal";
-            lblTotal.Size = new Size(68, 21);
+            lblTotal.Size = new Size(0, 21);
             lblTotal.TabIndex = 39;
-            lblTotal.Text = "{TOTAL}";
-            // 
-            // lblMetodoSelecionado
-            // 
-            lblMetodoSelecionado.AutoSize = true;
-            lblMetodoSelecionado.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblMetodoSelecionado.ForeColor = Color.FromArgb(63, 136, 254);
-            lblMetodoSelecionado.Location = new Point(305, 45);
-            lblMetodoSelecionado.Name = "lblMetodoSelecionado";
-            lblMetodoSelecionado.Size = new Size(178, 21);
-            lblMetodoSelecionado.TabIndex = 40;
-            lblMetodoSelecionado.Text = "{Método selecionado}";
             // 
             // panel1
             // 
@@ -272,9 +246,7 @@
             Controls.Add(btnCapturarImagem);
             Controls.Add(btnImprimir);
             Controls.Add(panel1);
-            Controls.Add(lblMetodoSelecionado);
             Controls.Add(lblTotal);
-            Controls.Add(lblPagamentoNoMetodoSelecionado);
             Controls.Add(lblAcao);
             Controls.Add(lblValor);
             Controls.Add(lblMetodoDePagamento);
@@ -303,13 +275,10 @@
         private Label lblMetodoDePagamento;
         private Label lblValor;
         private Label lblAcao;
-        private Label lblPagamentoNoMetodoSelecionado;
         private Label lblTotal;
-        private Label lblMetodoSelecionado;
         private Panel panel1;
-        private System.Windows.Forms.Timer timer1;
-        public TextBox txtNomeDoCliente;
         private WiLBiT.WiLBiTButton2 btnCapturarImagem;
         private WiLBiT.WiLBiTButton2 btnImprimir;
+        public TextBox txtNomeDoCliente;
     }
 }

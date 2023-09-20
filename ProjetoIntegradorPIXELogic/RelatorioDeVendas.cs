@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Drawing.Printing;
 using System.Linq;
+using System.Runtime.Serialization;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -16,10 +17,19 @@ namespace ProjetoIntegradorPIXELogic
     public partial class RelatorioDeVendas : Form
     {
         private Bitmap capturaDeTela = null;
+        decimal valor;
 
         public RelatorioDeVendas()
         {
             InitializeComponent();
+
+        }
+
+        public RelatorioDeVendas(string txt)
+        {
+            InitializeComponent();
+
+            txtNomeDoCliente.Text = txt;
 
         }
 
@@ -28,6 +38,22 @@ namespace ProjetoIntegradorPIXELogic
         private void RelatorioDeVendas_Load(object sender, EventArgs e)
         {
 
+            foreach (DataRow row in Conexao.executaQuery($"select * from vendas;").Rows)
+            {
+
+                PalcoRelatorioDeVendas palcoRelatorioDeVendas = new PalcoRelatorioDeVendas(row["produto"].ToString(), row["quantidade"].ToString(),
+                                                                                           row["nome_cliente"].ToString(), row["metodo_pagamento"].ToString(), row["valor"].ToString());
+                palcoRelatorioDeVendas.TopLevel = false;
+                panel1.Controls.Add(palcoRelatorioDeVendas);
+                palcoRelatorioDeVendas.Show();
+
+                decimal soma = valor + decimal.Parse(row["valor"].ToString());
+
+                valor = soma;
+
+            }
+
+            lblTotal.Text = $"Total: {valor}";
 
         }
 
@@ -52,16 +78,22 @@ namespace ProjetoIntegradorPIXELogic
         private void txtNomeDoCliente_TextChanged(object sender, EventArgs e)
         {
 
+            PalcoRelatorioDeVendas.txt = txtNomeDoCliente.Text;
+
             panel1.Controls.Clear();
 
             foreach (DataRow row in Conexao.executaQuery($"select * from vendas where nome_cliente = '{txtNomeDoCliente.Text}'").Rows)
             {
 
                 PalcoRelatorioDeVendas palcoRelatorioDeVendas = new PalcoRelatorioDeVendas(row["produto"].ToString(), row["quantidade"].ToString(),
-                    row["nome_cliente"].ToString(), row["metodo_pagamento"].ToString(), row["valor"].ToString());
+                                                                                           row["nome_cliente"].ToString(), row["metodo_pagamento"].ToString(), row["valor"].ToString());
                 palcoRelatorioDeVendas.TopLevel = false;
                 panel1.Controls.Add(palcoRelatorioDeVendas);
                 palcoRelatorioDeVendas.Show();
+
+                decimal soma = valor + decimal.Parse(row["valor"].ToString());
+
+                valor = soma;
 
             }
 
@@ -100,6 +132,11 @@ namespace ProjetoIntegradorPIXELogic
             {
                 MessageBox.Show("Capture uma imagem antes de imprimir.", "Aviso");
             }
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
