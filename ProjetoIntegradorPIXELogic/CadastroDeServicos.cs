@@ -58,8 +58,8 @@ namespace ProjetoIntegradorPIXELogic
 
                     {
 
-                        string query = $"insert into usuario (nome_servico,valor) values " +
-                            $"('{txtNomeDoServico.Text}','{maskValor.Text}');";
+                        string query = $"insert into servicos (nome_servico,valor) values " +
+                            $"('{txtNomeDoServico.Text}','{maskValor.Text.Remove(0,2)}');";
                         Conexao.executaQuery(query);
 
                         txtNomeDoServico.Clear();
@@ -77,8 +77,8 @@ namespace ProjetoIntegradorPIXELogic
 
                 {
 
-                    string query = $"insert into usuario (nome_servico,valor) values " +
-                        $"('{txtNomeDoServico.Text}','{maskValor.Text}');";
+                    string query = $"insert into servicos (nome_servico,valor) values " +
+                        $"('{txtNomeDoServico.Text}','{maskValor.Text.Remove(0,2)}');";
                     Conexao.executaQuery(query);
 
                     txtNomeDoServico.Clear();

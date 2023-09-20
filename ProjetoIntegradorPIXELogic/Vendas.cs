@@ -19,7 +19,7 @@ namespace ProjetoIntegradorPIXELogic
 
         private void maskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
-            //
+           
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -45,6 +45,22 @@ namespace ProjetoIntegradorPIXELogic
             lblValor.Parent = LogoComoWallpaper;
             lblValor.BackColor = Color.Transparent;
             //---------------------------FIM do Setor do Designer----------------------------
+
+            foreach (DataRow row in Conexao.executaQuery("select * from produtos").Rows)
+            {
+
+                cmbProduto.Items.Add(row["nome"].ToString());
+
+            }
+
+            cmbMetodoDePagamento.Items.Add("Crédito");
+
+            cmbMetodoDePagamento.Items.Add("Débito");
+
+            cmbMetodoDePagamento.Items.Add("Dinheiro");
+
+            cmbMetodoDePagamento.Items.Add("Pix");
+
         }
 
         private void btnVoltar_Click(object sender, EventArgs e)
@@ -94,7 +110,7 @@ namespace ProjetoIntegradorPIXELogic
                         {
 
                             string query = $"insert into vendas (produto,quantidade,nome_cliente,metodo_pagamento,valor) values " +
-                                $"('{cmbProduto.Text}','{txtQuantidade.Text}','{txtNomeDoCliente.Text}','{cmbMetodoDePagamento.Text}','{maskValor.Text}');";
+                                $"('{cmbProduto.Text}','{txtQuantidade.Text}','{txtNomeDoCliente.Text}','{cmbMetodoDePagamento.Text}',{maskValor.Text.Remove(0,2)});";
                             Conexao.executaQuery(query);
 
                             cmbProduto.Text = "";
@@ -122,7 +138,7 @@ namespace ProjetoIntegradorPIXELogic
                     {
 
                         string query = $"insert into vendas (produto,quantidade,nome_cliente,metodo_pagamento,valor) values " +
-                            $"('{cmbProduto.Text}','{txtQuantidade.Text}','{txtNomeDoCliente.Text}','{cmbMetodoDePagamento.Text}','{maskValor.Text}');";
+                            $"('{cmbProduto.Text}','{txtQuantidade.Text}','{txtNomeDoCliente.Text}','{cmbMetodoDePagamento.Text}', {maskValor.Text.Remove(0, 2)} );";
                         Conexao.executaQuery(query);
 
                         cmbProduto.Text = "";

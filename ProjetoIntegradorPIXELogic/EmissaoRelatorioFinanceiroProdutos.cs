@@ -17,6 +17,7 @@ namespace ProjetoIntegradorPIXELogic
         public EmissaoRelatorioFinanceiroProdutos()
         {
             InitializeComponent();
+
         }
 
         private void EmissaoRelatorioFinanceiroProdutos_Load(object sender, EventArgs e)

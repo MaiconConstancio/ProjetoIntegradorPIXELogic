@@ -221,6 +221,7 @@
             cmbServico.Name = "cmbServico";
             cmbServico.Size = new Size(296, 29);
             cmbServico.TabIndex = 2;
+            cmbServico.TextChanged += cmbServico_TextChanged;
             // 
             // maskValor
             // 
@@ -280,6 +281,7 @@
             LogoComoWallpaper.SizeMode = PictureBoxSizeMode.Zoom;
             LogoComoWallpaper.TabIndex = 64;
             LogoComoWallpaper.TabStop = false;
+            LogoComoWallpaper.Click += LogoComoWallpaper_Click;
             // 
             // maskPrazoDeEntrega
             // 
