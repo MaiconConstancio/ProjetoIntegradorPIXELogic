@@ -28,8 +28,8 @@ namespace ProjetoIntegradorPIXELogic
 
                 //telefone
 
-                int dd = int.Parse(row["telefone"].ToString().Substring(0,2));
-                int numero1 = int.Parse(row["telefone"].ToString().Substring(2,4));
+                int dd = int.Parse(row["telefone"].ToString().Substring(0, 2));
+                int numero1 = int.Parse(row["telefone"].ToString().Substring(2, 4));
                 int numero2 = int.Parse(row["telefone"].ToString().Substring(7, 4));
 
                 //cpf
@@ -41,10 +41,10 @@ namespace ProjetoIntegradorPIXELogic
 
                 //cep
 
-                int cep1 = int.Parse(row["cep"].ToString().Substring(0,5));
+                int cep1 = int.Parse(row["cep"].ToString().Substring(0, 5));
                 int cep2 = int.Parse(row["cep"].ToString().Substring(5, 3));
 
-                PalcoGerenciamentoDeClientes palcoDaLista = new PalcoGerenciamentoDeClientes(row["nome"].ToString(), $"{cpf1}.{cpf2}.{cpf3}-{cpf4}", $"({dd}){numero1}-{numero2}", 
+                PalcoGerenciamentoDeClientes palcoDaLista = new PalcoGerenciamentoDeClientes(row["nome"].ToString(), $"{cpf1}.{cpf2}.{cpf3}-{cpf4}", $"({dd}){numero1}-{numero2}",
                                                                                              $"{cep1}-{cep2}", row["numero"].ToString(), row["endereco"].ToString(), row["cidade"].ToString());
 
                 palcoDaLista.TopLevel = false;

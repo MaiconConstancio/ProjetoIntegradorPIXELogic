@@ -106,7 +106,7 @@
             lblEditar.Name = "lblEditar";
             lblEditar.Size = new Size(150, 30);
             lblEditar.TabIndex = 24;
-            lblEditar.Text = "Editar";
+            lblEditar.Text = "Ação";
             lblEditar.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblNome
