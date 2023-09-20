@@ -190,6 +190,7 @@
             imgCliente.SizeMode = PictureBoxSizeMode.Zoom;
             imgCliente.TabIndex = 11;
             imgCliente.TabStop = false;
+            imgCliente.Click += imgCliente_Click;
             // 
             // imgRelatorioProdutos
             // 
@@ -200,6 +201,7 @@
             imgRelatorioProdutos.SizeMode = PictureBoxSizeMode.Zoom;
             imgRelatorioProdutos.TabIndex = 12;
             imgRelatorioProdutos.TabStop = false;
+            imgRelatorioProdutos.Click += imgRelatorioProdutos_Click;
             // 
             // imgRelatorioServicos
             // 
@@ -210,6 +212,7 @@
             imgRelatorioServicos.SizeMode = PictureBoxSizeMode.Zoom;
             imgRelatorioServicos.TabIndex = 13;
             imgRelatorioServicos.TabStop = false;
+            imgRelatorioServicos.Click += imgRelatorioServicos_Click;
             // 
             // imgFornecedor
             // 
@@ -220,6 +223,7 @@
             imgFornecedor.SizeMode = PictureBoxSizeMode.Zoom;
             imgFornecedor.TabIndex = 14;
             imgFornecedor.TabStop = false;
+            imgFornecedor.Click += imgFornecedor_Click;
             // 
             // imgGerenciamentoServicos
             // 
@@ -230,6 +234,7 @@
             imgGerenciamentoServicos.SizeMode = PictureBoxSizeMode.Zoom;
             imgGerenciamentoServicos.TabIndex = 15;
             imgGerenciamentoServicos.TabStop = false;
+            imgGerenciamentoServicos.Click += imgGerenciamentoServicos_Click;
             // 
             // imgColaboradores
             // 
@@ -240,6 +245,7 @@
             imgColaboradores.SizeMode = PictureBoxSizeMode.Zoom;
             imgColaboradores.TabIndex = 16;
             imgColaboradores.TabStop = false;
+            imgColaboradores.Click += imgColaboradores_Click;
             // 
             // imgSuport
             // 
@@ -250,6 +256,7 @@
             imgSuport.SizeMode = PictureBoxSizeMode.Zoom;
             imgSuport.TabIndex = 17;
             imgSuport.TabStop = false;
+            imgSuport.Click += imgSuport_Click;
             // 
             // imgVenda
             // 
@@ -260,6 +267,7 @@
             imgVenda.SizeMode = PictureBoxSizeMode.Zoom;
             imgVenda.TabIndex = 18;
             imgVenda.TabStop = false;
+            imgVenda.Click += imgVenda_Click;
             // 
             // imgProdutos
             // 
@@ -270,6 +278,7 @@
             imgProdutos.SizeMode = PictureBoxSizeMode.Zoom;
             imgProdutos.TabIndex = 19;
             imgProdutos.TabStop = false;
+            imgProdutos.Click += imgProdutos_Click;
             // 
             // lblCliente
             // 
@@ -281,6 +290,7 @@
             lblCliente.Size = new Size(71, 21);
             lblCliente.TabIndex = 73;
             lblCliente.Text = "Clientes";
+            lblCliente.Click += lblCliente_Click;
             // 
             // lblRelatorioProdutos
             // 
@@ -292,6 +302,7 @@
             lblRelatorioProdutos.Size = new Size(171, 42);
             lblRelatorioProdutos.TabIndex = 74;
             lblRelatorioProdutos.Text = "Relatorios Financeiro\r\n        de Produtos\r\n";
+            lblRelatorioProdutos.Click += lblRelatorioProdutos_Click;
             // 
             // lblVenda
             // 
@@ -303,6 +314,7 @@
             lblVenda.Size = new Size(65, 21);
             lblVenda.TabIndex = 75;
             lblVenda.Text = "Vendas";
+            lblVenda.Click += lblVenda_Click;
             // 
             // lblFornecedor
             // 
@@ -314,6 +326,7 @@
             lblFornecedor.Size = new Size(112, 21);
             lblFornecedor.TabIndex = 76;
             lblFornecedor.Text = "Fornecedores";
+            lblFornecedor.Click += lblFornecedor_Click;
             // 
             // lblColaboradores
             // 
@@ -325,6 +338,7 @@
             lblColaboradores.Size = new Size(121, 21);
             lblColaboradores.TabIndex = 77;
             lblColaboradores.Text = "Colaboradores";
+            lblColaboradores.Click += lblColaboradores_Click;
             // 
             // lblSuport
             // 
@@ -336,6 +350,7 @@
             lblSuport.Size = new Size(151, 21);
             lblSuport.TabIndex = 78;
             lblSuport.Text = "Suporte ao Cliente";
+            lblSuport.Click += lblSuport_Click;
             // 
             // lblRelatorioServicos
             // 
@@ -347,6 +362,7 @@
             lblRelatorioServicos.Size = new Size(171, 42);
             lblRelatorioServicos.TabIndex = 79;
             lblRelatorioServicos.Text = "Relatorios Financeiro\r\n         de Serviços";
+            lblRelatorioServicos.Click += lblRelatorioServicos_Click;
             // 
             // lblProdutos
             // 
@@ -358,6 +374,7 @@
             lblProdutos.Size = new Size(79, 21);
             lblProdutos.TabIndex = 80;
             lblProdutos.Text = "Produtos";
+            lblProdutos.Click += lblProdutos_Click;
             // 
             // lblGerenciamentoServicos
             // 
@@ -369,6 +386,7 @@
             lblGerenciamentoServicos.Size = new Size(127, 42);
             lblGerenciamentoServicos.TabIndex = 81;
             lblGerenciamentoServicos.Text = "Gerenciamento\r\n   de serviços";
+            lblGerenciamentoServicos.Click += lblGerenciamentoServicos_Click;
             // 
             // LogoComoWallpaper
             // 
