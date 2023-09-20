@@ -55,7 +55,7 @@
             btnFuncionarios.Name = "btnFuncionarios";
             btnFuncionarios.Size = new Size(129, 35);
             btnFuncionarios.TabIndex = 1;
-            btnFuncionarios.Text = "Funcionários";
+            btnFuncionarios.Text = "Colaborador";
             btnFuncionarios.TextColor = Color.Black;
             btnFuncionarios.UseVisualStyleBackColor = false;
             btnFuncionarios.Click += btnFuncionarios_Click;
