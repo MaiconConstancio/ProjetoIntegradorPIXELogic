@@ -11,10 +11,10 @@ namespace ProjetoIntegradorPIXELogic
     public class Conexao
     {
 
-        const string host = "localhost";
-        const string banco = "pixelogic";
-        const string usuario = "root";
-        const string senha = "";
+        const string host = "srv793.hstgr.io";
+        const string banco = "u647084545_serasa_nejmi";
+        const string usuario = "u647084545_serasa_nejmi";
+        const string senha = "Serasa2023";
 
         public static MySqlConnection connection = new MySqlConnection($"Server={host};Database={banco};Uid={usuario};Pwd={senha};");
 
