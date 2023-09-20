@@ -48,8 +48,29 @@ namespace ProjetoIntegradorPIXELogic
             foreach (DataRow row in Conexao.executaQuery("select * from fornecedores;").Rows)
             {
 
-                PalcoListaDeFornecedores palcoDaLista = new PalcoListaDeFornecedores(row["nome"].ToString(), row["endereco"].ToString(), row["telefone"].ToString(),
-                                                             row["cnpj"].ToString(), row["cep"].ToString(), row["numero"].ToString(), row["cidade"].ToString());
+                //telefone
+
+                int dd = int.Parse(row["telefone"].ToString().Substring(0, 2));
+                int numero1 = int.Parse(row["telefone"].ToString().Substring(2, 4));
+                int numero2 = int.Parse(row["telefone"].ToString().Substring(7, 4));
+
+                //cnpj
+
+                int cnpj1 = int.Parse(row["cnpj"].ToString().Substring(0, 2));
+                int cnpj2 = int.Parse(row["cnpj"].ToString().Substring(2, 3));
+                int cnpj3 = int.Parse(row["cnpj"].ToString().Substring(5, 3));
+                int cnpj4 = int.Parse(row["cnpj"].ToString().Substring(8, 3));
+                int cnpj5 = int.Parse(row["cnpj"].ToString().Substring(11, 2));
+
+                MessageBox.Show($"{cnpj1}.{cnpj2}.{cnpj3}/{cnpj4}1-{cnpj5}");
+
+                //cep
+
+                int cep1 = int.Parse(row["cep"].ToString().Substring(0, 5));
+                int cep2 = int.Parse(row["cep"].ToString().Substring(5, 3));
+
+                PalcoListaDeFornecedores palcoDaLista = new PalcoListaDeFornecedores(row["nome"].ToString(), $"{cnpj1}.{cnpj2}.{cnpj3}/{cnpj4}1-{cnpj5}", $"({dd}){numero1}-{numero2}",
+                                                                                     $"{cep1}-{cep2}", row["numero"].ToString(), row["endereco"].ToString(), row["cidade"].ToString());
 
                 palcoDaLista.TopLevel = false;
                 panel1.Controls.Add(palcoDaLista);

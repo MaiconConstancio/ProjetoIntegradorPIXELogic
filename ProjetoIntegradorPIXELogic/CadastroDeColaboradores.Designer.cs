@@ -192,6 +192,7 @@
             txtSenha.ForeColor = Color.Cyan;
             txtSenha.Location = new Point(278, 290);
             txtSenha.Name = "txtSenha";
+            txtSenha.PasswordChar = '*';
             txtSenha.Size = new Size(296, 29);
             txtSenha.TabIndex = 4;
             // 

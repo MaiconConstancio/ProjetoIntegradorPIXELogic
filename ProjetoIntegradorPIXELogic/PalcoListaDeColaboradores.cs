@@ -26,6 +26,7 @@ namespace ProjetoIntegradorPIXELogic
         {
 
 
+
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -38,6 +39,13 @@ namespace ProjetoIntegradorPIXELogic
             form.TopLevel = false;
             RodaTodosForms.panel1.Controls.Add(form);
             form.Show();
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+
 
         }
     }

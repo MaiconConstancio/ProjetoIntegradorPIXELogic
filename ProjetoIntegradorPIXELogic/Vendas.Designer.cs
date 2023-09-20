@@ -58,6 +58,7 @@
             cmbProduto.Name = "cmbProduto";
             cmbProduto.Size = new Size(228, 29);
             cmbProduto.TabIndex = 59;
+            cmbProduto.SelectedIndexChanged += cmbProduto_SelectedIndexChanged;
             // 
             // cmbMetodoDePagamento
             // 

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             btnExcluir = new WiLBiT.WiLBiTButton();
-            btnEditar = new WiLBiT.WiLBiTButton();
             lblOrcamentoDeServicos = new Label();
             label1 = new Label();
             label2 = new Label();
@@ -57,22 +56,6 @@
             btnExcluir.UseVisualStyleBackColor = false;
             btnExcluir.Click += btnExcluir_Click;
             // 
-            // btnEditar
-            // 
-            btnEditar.BackColor = Color.FromArgb(72, 116, 245);
-            btnEditar.BorderColor = Color.FromArgb(72, 116, 245);
-            btnEditar.BorderRadius = 6;
-            btnEditar.BorderSize = 0;
-            btnEditar.FlatAppearance.BorderSize = 0;
-            btnEditar.FlatStyle = FlatStyle.Flat;
-            btnEditar.ForeColor = Color.White;
-            btnEditar.Location = new Point(716, 5);
-            btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(29, 28);
-            btnEditar.TabIndex = 85;
-            btnEditar.Text = "ED";
-            btnEditar.UseVisualStyleBackColor = false;
-            // 
             // lblOrcamentoDeServicos
             // 
             lblOrcamentoDeServicos.AutoSize = true;
@@ -98,7 +81,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(110, 13);
+            label2.Location = new Point(87, 12);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
             label2.TabIndex = 88;
@@ -108,7 +91,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(204, 13);
+            label3.Location = new Point(200, 12);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 89;
@@ -168,7 +151,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnExcluir);
-            Controls.Add(btnEditar);
             Controls.Add(lblOrcamentoDeServicos);
             FormBorderStyle = FormBorderStyle.None;
             Name = "PalcoListaDeFornecedores";
@@ -181,7 +163,6 @@
         #endregion
 
         private WiLBiT.WiLBiTButton btnExcluir;
-        private WiLBiT.WiLBiTButton btnEditar;
         private Label lblOrcamentoDeServicos;
         private Label label1;
         private Label label2;

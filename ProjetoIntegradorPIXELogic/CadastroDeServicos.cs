@@ -48,22 +48,27 @@ namespace ProjetoIntegradorPIXELogic
             if (Funcoes.campoVazio("Nome do serviço", txtNomeDoServico) == false && Funcoes.campoVazio("Valor", maskValor) == false)
             {
 
-                if (MessageBox.Show("já existe um serviço cadastrado com este nome, deseja continuar ?", "Serviço já cadastrado",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                if (Funcoes.existe("servicos","nome_servico",txtNomeDoServico))
                 {
 
-                    if (MessageBox.Show($"Nome do serviço: {txtNomeDoServico.Text}\n\n" +
-                                    $"Valor: {maskValor.Text}\n\n",
-                                    "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
-
+                    if (MessageBox.Show("já existe um serviço cadastrado com este nome, deseja continuar ?", "Serviço já cadastrado",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                     {
 
-                        string query = $"insert into servicos (nome_servico,valor) values " +
-                            $"('{txtNomeDoServico.Text}','{maskValor.Text.Remove(0,2)}');";
-                        Conexao.executaQuery(query);
+                        if (MessageBox.Show($"Nome do serviço: {txtNomeDoServico.Text}\n\n" +
+                                        $"Valor: {maskValor.Text}\n\n",
+                                        "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
 
-                        txtNomeDoServico.Clear();
-                        maskValor.Text = "";
+                        {
+
+                            string query = $"insert into servicos (nome_servico,valor) values " +
+                                $"('{txtNomeDoServico.Text}','{maskValor.Text.Remove(0, 2)}');";
+                            Conexao.executaQuery(query);
+
+                            txtNomeDoServico.Clear();
+                            maskValor.Text = "";
+
+                        }
 
                     }
 

@@ -72,11 +72,13 @@
             maskNumero.Name = "maskNumero";
             maskNumero.Size = new Size(191, 29);
             maskNumero.TabIndex = 5;
+            maskNumero.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // maskCEP
             // 
             maskCEP.BackColor = Color.FromArgb(53, 81, 142);
             maskCEP.BorderStyle = BorderStyle.FixedSingle;
+            maskCEP.CutCopyMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             maskCEP.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskCEP.ForeColor = Color.Cyan;
             maskCEP.Location = new Point(322, 224);
@@ -84,11 +86,13 @@
             maskCEP.Name = "maskCEP";
             maskCEP.Size = new Size(168, 29);
             maskCEP.TabIndex = 4;
+            maskCEP.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // maskCPF
             // 
             maskCPF.BackColor = Color.FromArgb(53, 81, 142);
             maskCPF.BorderStyle = BorderStyle.FixedSingle;
+            maskCPF.CutCopyMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             maskCPF.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskCPF.ForeColor = Color.Cyan;
             maskCPF.Location = new Point(302, 189);
@@ -96,11 +100,13 @@
             maskCPF.Name = "maskCPF";
             maskCPF.Size = new Size(214, 29);
             maskCPF.TabIndex = 3;
+            maskCPF.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // maskTelefone
             // 
             maskTelefone.BackColor = Color.FromArgb(53, 81, 142);
             maskTelefone.BorderStyle = BorderStyle.FixedSingle;
+            maskTelefone.CutCopyMaskFormat = MaskFormat.IncludePrompt;
             maskTelefone.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             maskTelefone.ForeColor = Color.Cyan;
             maskTelefone.Location = new Point(294, 154);
@@ -108,6 +114,7 @@
             maskTelefone.Name = "maskTelefone";
             maskTelefone.Size = new Size(231, 29);
             maskTelefone.TabIndex = 2;
+            maskTelefone.TextMaskFormat = MaskFormat.ExcludePromptAndLiterals;
             // 
             // txtEndereco
             // 

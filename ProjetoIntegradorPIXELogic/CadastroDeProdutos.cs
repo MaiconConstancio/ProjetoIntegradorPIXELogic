@@ -69,7 +69,7 @@ namespace ProjetoIntegradorPIXELogic
                             string ano = maskVencimento.Text.Split('/')[2];
 
                             string query = $"insert into produtos (nome,fornecedor,quantidade,valor,vencimento) values " +
-                                $"('{txtNome.Text}','{txtFornecedor.Text}','{txtQuantidade.Text}','{maskValor}','{ano}-{mes}-{dia}');";
+                                $"('{txtNome.Text}','{txtFornecedor.Text}','{txtQuantidade.Text}','{maskValor.Text.Remove(0,2)}','{ano}-{mes}-{dia}');";
                             Conexao.executaQuery(query);
 
                             txtNome.Clear();
@@ -100,7 +100,7 @@ namespace ProjetoIntegradorPIXELogic
                     string ano = maskVencimento.Text.Split('/')[2];
 
                     string query = $"insert into produtos (nome,fornecedor,quantidade,valor,vencimento) values " +
-                        $"('{txtNome.Text}','{txtFornecedor.Text}','{txtQuantidade.Text}','{maskValor.Text}','{ano}-{mes}-{dia}');";
+                        $"('{txtNome.Text}','{txtFornecedor.Text}','{txtQuantidade.Text}','{maskValor.Text.Remove(0,2)}','{ano}-{mes}-{dia}');";
                     Conexao.executaQuery(query);
 
                     txtNome.Clear();

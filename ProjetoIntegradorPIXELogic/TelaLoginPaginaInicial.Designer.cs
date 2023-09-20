@@ -115,6 +115,7 @@ namespace ProjetoIntegradorPIXELogic
             txtSenha.ForeColor = Color.Cyan;
             txtSenha.Location = new Point(446, 312);
             txtSenha.Name = "txtSenha";
+            txtSenha.PasswordChar = '*';
             txtSenha.Size = new Size(330, 29);
             txtSenha.TabIndex = 2;
             // 

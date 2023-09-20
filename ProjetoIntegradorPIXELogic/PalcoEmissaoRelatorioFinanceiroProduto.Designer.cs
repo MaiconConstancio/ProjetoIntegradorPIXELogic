@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             btnExcluir = new WiLBiT.WiLBiTButton();
-            btnEditar = new WiLBiT.WiLBiTButton();
             lblOrcamentoDeServicos = new Label();
             label1 = new Label();
             label2 = new Label();
@@ -52,22 +51,6 @@
             btnExcluir.Text = "EX";
             btnExcluir.UseVisualStyleBackColor = false;
             btnExcluir.Click += btnExcluir_Click;
-            // 
-            // btnEditar
-            // 
-            btnEditar.BackColor = Color.FromArgb(72, 116, 245);
-            btnEditar.BorderColor = Color.FromArgb(72, 116, 245);
-            btnEditar.BorderRadius = 6;
-            btnEditar.BorderSize = 0;
-            btnEditar.FlatAppearance.BorderSize = 0;
-            btnEditar.FlatStyle = FlatStyle.Flat;
-            btnEditar.ForeColor = Color.White;
-            btnEditar.Location = new Point(654, 9);
-            btnEditar.Name = "btnEditar";
-            btnEditar.Size = new Size(29, 28);
-            btnEditar.TabIndex = 85;
-            btnEditar.Text = "ED";
-            btnEditar.UseVisualStyleBackColor = false;
             // 
             // lblOrcamentoDeServicos
             // 
@@ -123,7 +106,6 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Controls.Add(btnExcluir);
-            Controls.Add(btnEditar);
             Controls.Add(lblOrcamentoDeServicos);
             FormBorderStyle = FormBorderStyle.None;
             Name = "PalcoEmissaoRelatorioFinanceiroProduto";
@@ -136,7 +118,6 @@
         #endregion
 
         private WiLBiT.WiLBiTButton btnExcluir;
-        private WiLBiT.WiLBiTButton btnEditar;
         private Label lblOrcamentoDeServicos;
         private Label label1;
         private Label label2;
