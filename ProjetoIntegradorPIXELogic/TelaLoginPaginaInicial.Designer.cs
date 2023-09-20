@@ -106,6 +106,7 @@ namespace ProjetoIntegradorPIXELogic
             txtLogin.Name = "txtLogin";
             txtLogin.Size = new Size(330, 29);
             txtLogin.TabIndex = 1;
+            txtLogin.Text = "mk";
             // 
             // txtSenha
             // 
@@ -118,6 +119,7 @@ namespace ProjetoIntegradorPIXELogic
             txtSenha.PasswordChar = '*';
             txtSenha.Size = new Size(330, 29);
             txtSenha.TabIndex = 2;
+            txtSenha.Text = "123";
             // 
             // lblNãotemconta
             // 

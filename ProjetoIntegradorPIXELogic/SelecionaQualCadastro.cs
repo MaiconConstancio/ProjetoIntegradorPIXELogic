@@ -48,7 +48,8 @@ namespace ProjetoIntegradorPIXELogic
         {
 
             //---------------------------Setor do Designer-----------------------------------
-
+            lblEscolhaQualCadastroDesejaRealizar.Parent = LogoComoWallpaper;
+            lblEscolhaQualCadastroDesejaRealizar.BackColor = Color.Transparent;
             //---------------------------FIM do Setor do Designer----------------------------
 
             if (Conexao.executaQuery("select * from funcoes where nome = 'gerenciamento servico' and habilitado_nao = true;").Rows.Count > 0)
