@@ -28,6 +28,7 @@ namespace ProjetoIntegradorPIXELogic
             {
 
                 Controls.Add(btnSalvar);
+                Controls.Add(WallpaperSaguao);
 
             }
 
@@ -82,16 +83,7 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
-        private void btnSalvar_Click(object sender, EventArgs e)
-        {
 
-            RodaTodosForms.panel1.Controls.Clear();
-            MontagemPrograma montagemPrograma = new MontagemPrograma();
-            montagemPrograma.TopLevel = false;
-            RodaTodosForms.panel1.Controls.Add(montagemPrograma);
-            montagemPrograma.Show();
-
-        }
 
         private void btnCadastrosNovo_Click(object sender, EventArgs e)
         {
@@ -101,6 +93,15 @@ namespace ProjetoIntegradorPIXELogic
         private void lblOrcamentoDeServicos_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            RodaTodosForms.panel1.Controls.Clear();
+            MontagemPrograma montagemPrograma = new MontagemPrograma();
+            montagemPrograma.TopLevel = false;
+            RodaTodosForms.panel1.Controls.Add(montagemPrograma);
+            montagemPrograma.Show();
         }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnSalvar = new WiLBiT.WiLBiTButton2();
             lblOrcamentoDeServicos = new Label();
             panel1 = new Panel();
             btnSuporte = new WiLBiT.WiLBiTButton2();
@@ -38,28 +37,9 @@
             btnCadastros = new WiLBiT.WiLBiTButton2();
             label1 = new Label();
             WallpaperSaguao = new PictureBox();
+            btnSalvar = new WiLBiT.WiLBiTButton2();
             ((System.ComponentModel.ISupportInitialize)WallpaperSaguao).BeginInit();
             SuspendLayout();
-            // 
-            // btnSalvar
-            // 
-            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 14;
-            btnSalvar.BorderSize = 2;
-            btnSalvar.FlatAppearance.BorderSize = 0;
-            btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.World);
-            btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(653, 12);
-            btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(135, 36);
-            btnSalvar.TabIndex = 75;
-            btnSalvar.Text = "Configurações";
-            btnSalvar.TextColor = Color.Black;
-            btnSalvar.UseVisualStyleBackColor = false;
-            btnSalvar.Click += btnSalvar_Click;
             // 
             // lblOrcamentoDeServicos
             // 
@@ -194,12 +174,34 @@
             // 
             // WallpaperSaguao
             // 
+            WallpaperSaguao.Dock = DockStyle.Fill;
             WallpaperSaguao.Image = Properties.Resources.TESTE_WALLPAPER_SAGAO_V2;
-            WallpaperSaguao.Location = new Point(0, 28);
+            WallpaperSaguao.Location = new Point(0, 0);
             WallpaperSaguao.Name = "WallpaperSaguao";
             WallpaperSaguao.Size = new Size(800, 450);
+            WallpaperSaguao.SizeMode = PictureBoxSizeMode.Zoom;
             WallpaperSaguao.TabIndex = 83;
             WallpaperSaguao.TabStop = false;
+            // 
+            // btnSalvar
+            // 
+            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
+            btnSalvar.BorderRadius = 12;
+            btnSalvar.BorderSize = 2;
+            btnSalvar.FlatAppearance.BorderSize = 0;
+            btnSalvar.FlatStyle = FlatStyle.Flat;
+            btnSalvar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.World);
+            btnSalvar.ForeColor = Color.Black;
+            btnSalvar.Location = new Point(653, 12);
+            btnSalvar.Name = "btnSalvar";
+            btnSalvar.Size = new Size(135, 36);
+            btnSalvar.TabIndex = 85;
+            btnSalvar.Text = "Configurações";
+            btnSalvar.TextColor = Color.Black;
+            btnSalvar.UseVisualStyleBackColor = false;
+            btnSalvar.Click += btnSalvar_Click;
             // 
             // SagaoPrincipal
             // 
@@ -219,8 +221,6 @@
             ((System.ComponentModel.ISupportInitialize)WallpaperSaguao).EndInit();
             ResumeLayout(false);
             PerformLayout();
-
-
         }
 
         private void btnCadastros_Click(object sender, EventArgs e)
@@ -279,8 +279,6 @@
         }
 
         #endregion
-
-        private WiLBiT.WiLBiTButton2 btnSalvar;
         private Label lblOrcamentoDeServicos;
         private Panel panel1;
         private WiLBiT.WiLBiTButton2 btnSuporte;
@@ -290,5 +288,6 @@
         private WiLBiT.WiLBiTButton2 btnCadastros;
         private Label label1;
         private PictureBox WallpaperSaguao;
+        private WiLBiT.WiLBiTButton2 btnSalvar;
     }
 }
