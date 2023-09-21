@@ -81,6 +81,31 @@ namespace ProjetoIntegradorPIXELogic
 
             PalcoRelatorioDeVendas.txt = txtNomeDoCliente.Text;
 
+            if(txtNomeDoCliente.Text == "")
+            {
+
+                foreach (DataRow row in Conexao.executaQuery($"select * from vendas;").Rows)
+                {
+
+                    PalcoRelatorioDeVendas palcoRelatorioDeVendas = new PalcoRelatorioDeVendas(row["produto"].ToString(), row["quantidade"].ToString(),
+                                                                                               row["nome_cliente"].ToString(), row["metodo_pagamento"].ToString(), row["valor"].ToString());
+                    palcoRelatorioDeVendas.TopLevel = false;
+                    panel1.Controls.Add(palcoRelatorioDeVendas);
+                    palcoRelatorioDeVendas.Location = new Point(0, panel1.Height);
+                    palcoRelatorioDeVendas.Show();
+
+                    decimal soma = valor + (decimal.Parse(row["valor"].ToString()) * decimal.Parse(row["quantidade"].ToString()));
+
+                    valor = soma;
+
+                }
+
+                lblTotal.Text = $"Total: {valor}";
+
+                return;
+
+            }
+
             panel1.Controls.Clear();
 
             foreach (DataRow row in Conexao.executaQuery($"select * from vendas where nome_cliente = '{txtNomeDoCliente.Text}'").Rows)
