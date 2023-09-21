@@ -59,6 +59,41 @@ namespace ProjetoIntegradorPIXELogic
                         if (Funcoes.existe("usuario", "senha", txtSenha) == false)
                         {
 
+                            if(txtCargo.Text == "dono" || txtCargo.Text == "gerente" || txtCargo.Text == "desenvolvedor")
+                            {
+
+                                if (Conexao.executaQuery($"select * from usuario where login = '{Program.acesso}' and cargo = 'dono'").Rows.Count > 0 ||
+                                    Conexao.executaQuery($"select * from usuario where login = '{Program.acesso}' and cargo = 'gerente'").Rows.Count > 0 ||
+                                    Conexao.executaQuery($"select * from usuario where login = '{Program.acesso}' and cargo = 'desenvolvedor'").Rows.Count > 0)
+                                {
+
+                                    if (MessageBox.Show($"Nome: {txtNome.Text}\n\n" +
+                                        $"Cargo: {txtCargo.Text}\n\n" +
+                                        $"Login: {txtLogin.Text}\n\n" +
+                                        $"Senha: {txtSenha.Text}\n\n",
+                                        "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
+                                    {
+
+                                        string query = $"insert into usuario (nome,cargo,login,senha) values " +
+                                            $"('{txtNome.Text}','{txtCargo.Text}','{txtLogin.Text}','{txtSenha.Text}');";
+                                        Conexao.executaQuery(query);
+
+                                        txtNome.Clear();
+                                        txtCargo.Clear();
+                                        txtLogin.Clear();
+                                        txtSenha.Clear();
+
+                                    }
+
+                                }
+
+                                else { MessageBox.Show("Somente cargos superiores podem cadastrar contas da mesma patente!","Cadastro negado",MessageBoxButtons.OK,MessageBoxIcon.Error); }
+
+                                return;
+
+                            }
+
                             if (MessageBox.Show($"Nome: {txtNome.Text}\n\n" +
                             $"Cargo: {txtCargo.Text}\n\n" +
                             $"Login: {txtLogin.Text}\n\n" +

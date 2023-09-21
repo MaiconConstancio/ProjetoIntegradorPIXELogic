@@ -93,21 +93,63 @@ namespace ProjetoIntegradorPIXELogic
             Funcoes.campoVazio("Valor", maskValor) == false)
             {
 
-                if (Funcoes.existe("produtos", "nome", cmbProduto) == true)
+                if (Conexao.executaQuery($"select * from vendas where produto = '{cmbProduto.Text}' and nome_cliente = '{txtNomeDoCliente.Text}';").Rows.Count > 0)
                 {
 
-                    if (MessageBox.Show("Tem certeza que deseja cadastrar dois produtos identicos ?", "Produto já existente!", MessageBoxButtons.YesNo,
+                    if (MessageBox.Show("Tem certeza que deseja vender dois produtos identicos para a mesma pessoa ?", "Produto já vendido para esta pessoa!", MessageBoxButtons.YesNo,
                         MessageBoxIcon.Information) == DialogResult.Yes)
                     {
 
-                        if (MessageBox.Show($"Produto: {cmbProduto.Text}\n\n" +
+                        if (Conexao.executaQuery($"select * from produtos where nome = '{cmbProduto.Text}' and quantidade >= {txtQuantidade.Text}").Rows.Count > 0)
+                        {
+
+                            if (MessageBox.Show($"Produto: {cmbProduto.Text}\n\n" +
                             $"Quantidade: {txtQuantidade.Text}\n\n" +
                             $"Nome do cliente: {txtNomeDoCliente.Text}\n\n" +
                             $"Método de pagamento: {cmbMetodoDePagamento.Text}\n\n" +
                             $"Valor: {maskValor.Text}\n\n",
                             "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
 
+                            {
+
+                                Conexao.executaQuery($"update produtos set quantidade = quantidade - {txtQuantidade.Text} where nome = '{cmbProduto.Text}';");
+
+                                string query = $"insert into vendas (produto,quantidade,nome_cliente,metodo_pagamento,valor) values " +
+                                    $"('{cmbProduto.Text}','{txtQuantidade.Text}','{txtNomeDoCliente.Text}','{cmbMetodoDePagamento.Text}',{maskValor.Text.Remove(0, 2)});";
+                                Conexao.executaQuery(query);
+
+                                cmbProduto.Text = "";
+                                txtQuantidade.Clear();
+                                txtNomeDoCliente.Clear();
+                                cmbMetodoDePagamento.Text = "";
+                                maskValor.Clear();
+
+                            }
+
+                        }
+
+                        else { MessageBox.Show("O estoque não possui a quantidade desejada!","Estoque insulficiente!",MessageBoxButtons.OK,MessageBoxIcon.Error); }
+
+                    }
+
+                }
+
+                else
+                {
+
+                    if (Conexao.executaQuery($"select * from produtos where nome = '{cmbProduto.Text}' and quantidade >= {txtQuantidade.Text};").Rows.Count > 0)
+                    {
+
+                        if (MessageBox.Show($"Produto: {cmbProduto.Text}\n\n" +
+                        $"Quantidade: {txtQuantidade.Text}\n\n" +
+                        $"Nome do cliente: {txtNomeDoCliente.Text}\n\n" +
+                        $"Método de pagamento: {cmbMetodoDePagamento.Text}\n\n" +
+                        $"Valor: {maskValor.Text}\n\n",
+                        "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
+
                         {
+
+                            Conexao.executaQuery($"update produtos set quantidade = quantidade - {txtQuantidade.Text} where nome = '{cmbProduto.Text}';");
 
                             string query = $"insert into vendas (produto,quantidade,nome_cliente,metodo_pagamento,valor) values " +
                                 $"('{cmbProduto.Text}','{txtQuantidade.Text}','{txtNomeDoCliente.Text}','{cmbMetodoDePagamento.Text}',{maskValor.Text.Remove(0, 2)});";
@@ -123,31 +165,7 @@ namespace ProjetoIntegradorPIXELogic
 
                     }
 
-                }
-
-                else
-                {
-
-                    if (MessageBox.Show($"Produto: {cmbProduto.Text}\n\n" +
-                        $"Quantidade: {txtQuantidade.Text}\n\n" +
-                        $"Nome do cliente: {txtNomeDoCliente.Text}\n\n" +
-                        $"Método de pagamento: {cmbMetodoDePagamento.Text}\n\n" +
-                        $"Valor: {maskValor.Text}\n\n",
-                        "Confirme os dados!", MessageBoxButtons.OKCancel, MessageBoxIcon.Information) == DialogResult.OK)
-
-                    {
-
-                        string query = $"insert into vendas (produto,quantidade,nome_cliente,metodo_pagamento,valor) values " +
-                            $"('{cmbProduto.Text}','{txtQuantidade.Text}','{txtNomeDoCliente.Text}','{cmbMetodoDePagamento.Text}', {maskValor.Text.Remove(0, 2)} );";
-                        Conexao.executaQuery(query);
-
-                        cmbProduto.Text = "";
-                        txtQuantidade.Clear();
-                        txtNomeDoCliente.Clear();
-                        cmbMetodoDePagamento.Text = "";
-                        maskValor.Clear();
-
-                    }
+                    else { MessageBox.Show("O estoque não possui a quantidade desejada!", "Estoque insulficiente!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                 }
 

@@ -38,7 +38,7 @@ namespace ProjetoIntegradorPIXELogic
 
                 string data = row["estimativa_entrega"].ToString().Split(' ')[0];
 
-                PalcoGerenciamentoDeServicos palcoGerenciamento = new PalcoGerenciamentoDeServicos(row["nome_cliente"].ToString(), row["servico"].ToString(), row["valor"].ToString(),  row["endereco"].ToString(),
+                PalcoGerenciamentoDeServicos palcoGerenciamento = new PalcoGerenciamentoDeServicos(row["nome_cliente"].ToString(), row["servico"].ToString(), row["valor"].ToString(), row["endereco"].ToString(),
                                                                                                    row["funcionario"].ToString(), data);
 
                 palcoGerenciamento.TopLevel = false;

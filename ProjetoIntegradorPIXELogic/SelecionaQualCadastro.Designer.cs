@@ -36,6 +36,8 @@
             btnServico = new WiLBiT.WiLBiTButton2();
             lblEscolhaQualCadastroDesejaRealizar = new Label();
             panel1 = new Panel();
+            LogoComoWallpaper = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
             // btnFuncionarios
@@ -53,7 +55,7 @@
             btnFuncionarios.Name = "btnFuncionarios";
             btnFuncionarios.Size = new Size(129, 35);
             btnFuncionarios.TabIndex = 1;
-            btnFuncionarios.Text = "Funcionários";
+            btnFuncionarios.Text = "Colaborador";
             btnFuncionarios.TextColor = Color.Black;
             btnFuncionarios.UseVisualStyleBackColor = false;
             btnFuncionarios.Click += btnFuncionarios_Click;
@@ -178,6 +180,16 @@
             panel1.Size = new Size(0, 0);
             panel1.TabIndex = 41;
             // 
+            // LogoComoWallpaper
+            // 
+            LogoComoWallpaper.Dock = DockStyle.Fill;
+            LogoComoWallpaper.Image = Properties.Resources.TelaSelecionaQualCadastro;
+            LogoComoWallpaper.Location = new Point(0, 0);
+            LogoComoWallpaper.Name = "LogoComoWallpaper";
+            LogoComoWallpaper.Size = new Size(800, 450);
+            LogoComoWallpaper.TabIndex = 42;
+            LogoComoWallpaper.TabStop = false;
+            // 
             // SelecionaQualCadastro
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -187,10 +199,12 @@
             Controls.Add(panel1);
             Controls.Add(btnVoltar);
             Controls.Add(lblEscolhaQualCadastroDesejaRealizar);
+            Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "SelecionaQualCadastro";
             Text = "SelecionaQualCadastro";
             Load += SelecionaQualCadastro_Load;
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -204,5 +218,6 @@
         private WiLBiT.WiLBiTButton2 btnServico;
         private Label lblEscolhaQualCadastroDesejaRealizar;
         private Panel panel1;
+        private PictureBox LogoComoWallpaper;
     }
 }

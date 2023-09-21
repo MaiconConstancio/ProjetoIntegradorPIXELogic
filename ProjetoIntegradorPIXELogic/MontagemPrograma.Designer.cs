@@ -38,40 +38,43 @@
             chkBoxSuporteAoCliente = new CheckBox();
             checkBox1 = new CheckBox();
             btnSalvar = new WiLBiT.WiLBiTButton2();
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox9 = new PictureBox();
-            lblCadastroDeClientes = new Label();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label7 = new Label();
-            label8 = new Label();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            imgCliente = new PictureBox();
+            imgRelatorioProdutos = new PictureBox();
+            imgRelatorioServicos = new PictureBox();
+            imgFornecedor = new PictureBox();
+            imgGerenciamentoServicos = new PictureBox();
+            imgColaboradores = new PictureBox();
+            imgSuport = new PictureBox();
+            imgVenda = new PictureBox();
+            imgProdutos = new PictureBox();
+            lblCliente = new Label();
+            lblRelatorioProdutos = new Label();
+            lblVenda = new Label();
+            lblFornecedor = new Label();
+            lblColaboradores = new Label();
+            lblSuport = new Label();
+            lblRelatorioServicos = new Label();
+            lblProdutos = new Label();
+            lblGerenciamentoServicos = new Label();
+            LogoComoWallpaper = new PictureBox();
+            lblTituloMontaPrograma = new Label();
+            ((System.ComponentModel.ISupportInitialize)imgCliente).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgRelatorioProdutos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgRelatorioServicos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgFornecedor).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgGerenciamentoServicos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgColaboradores).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgSuport).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgVenda).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgProdutos).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).BeginInit();
             SuspendLayout();
             // 
             // chkBoxColaboradores
             // 
             chkBoxColaboradores.AutoSize = true;
             chkBoxColaboradores.ForeColor = SystemColors.ActiveCaption;
-            chkBoxColaboradores.Location = new Point(620, 27);
+            chkBoxColaboradores.Location = new Point(510, 97);
             chkBoxColaboradores.Name = "chkBoxColaboradores";
             chkBoxColaboradores.Size = new Size(15, 14);
             chkBoxColaboradores.TabIndex = 0;
@@ -81,7 +84,7 @@
             // 
             chkBoxFornecedores.AutoSize = true;
             chkBoxFornecedores.ForeColor = SystemColors.ButtonFace;
-            chkBoxFornecedores.Location = new Point(449, 27);
+            chkBoxFornecedores.Location = new Point(360, 97);
             chkBoxFornecedores.Name = "chkBoxFornecedores";
             chkBoxFornecedores.Size = new Size(15, 14);
             chkBoxFornecedores.TabIndex = 1;
@@ -91,7 +94,7 @@
             // 
             chkBoxProdutos.AutoSize = true;
             chkBoxProdutos.ForeColor = SystemColors.ButtonFace;
-            chkBoxProdutos.Location = new Point(357, 220);
+            chkBoxProdutos.Location = new Point(652, 97);
             chkBoxProdutos.Name = "chkBoxProdutos";
             chkBoxProdutos.Size = new Size(15, 14);
             chkBoxProdutos.TabIndex = 2;
@@ -102,7 +105,7 @@
             chkBoxClientes.AutoSize = true;
             chkBoxClientes.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             chkBoxClientes.ForeColor = SystemColors.ButtonFace;
-            chkBoxClientes.Location = new Point(56, 27);
+            chkBoxClientes.Location = new Point(46, 97);
             chkBoxClientes.Name = "chkBoxClientes";
             chkBoxClientes.Size = new Size(15, 14);
             chkBoxClientes.TabIndex = 3;
@@ -112,7 +115,7 @@
             // 
             chkBoxGerenciamentoServiços.AutoSize = true;
             chkBoxGerenciamentoServiços.ForeColor = SystemColors.ButtonFace;
-            chkBoxGerenciamentoServiços.Location = new Point(56, 313);
+            chkBoxGerenciamentoServiços.Location = new Point(652, 232);
             chkBoxGerenciamentoServiços.Name = "chkBoxGerenciamentoServiços";
             chkBoxGerenciamentoServiços.Size = new Size(15, 14);
             chkBoxGerenciamentoServiços.TabIndex = 4;
@@ -122,7 +125,7 @@
             // 
             chkBoxVendas.AutoSize = true;
             chkBoxVendas.ForeColor = SystemColors.ButtonFace;
-            chkBoxVendas.Location = new Point(253, 27);
+            chkBoxVendas.Location = new Point(193, 97);
             chkBoxVendas.Name = "chkBoxVendas";
             chkBoxVendas.Size = new Size(15, 14);
             chkBoxVendas.TabIndex = 5;
@@ -132,7 +135,7 @@
             // 
             chkBoxEmissaoRelatoriosFinanceiros.AutoSize = true;
             chkBoxEmissaoRelatoriosFinanceiros.ForeColor = SystemColors.ButtonFace;
-            chkBoxEmissaoRelatoriosFinanceiros.Location = new Point(147, 157);
+            chkBoxEmissaoRelatoriosFinanceiros.Location = new Point(46, 232);
             chkBoxEmissaoRelatoriosFinanceiros.Name = "chkBoxEmissaoRelatoriosFinanceiros";
             chkBoxEmissaoRelatoriosFinanceiros.Size = new Size(15, 14);
             chkBoxEmissaoRelatoriosFinanceiros.TabIndex = 6;
@@ -142,7 +145,7 @@
             // 
             chkBoxSuporteAoCliente.AutoSize = true;
             chkBoxSuporteAoCliente.ForeColor = SystemColors.ButtonFace;
-            chkBoxSuporteAoCliente.Location = new Point(620, 313);
+            chkBoxSuporteAoCliente.Location = new Point(468, 232);
             chkBoxSuporteAoCliente.Name = "chkBoxSuporteAoCliente";
             chkBoxSuporteAoCliente.Size = new Size(15, 14);
             chkBoxSuporteAoCliente.TabIndex = 8;
@@ -152,7 +155,7 @@
             // 
             checkBox1.AutoSize = true;
             checkBox1.ForeColor = SystemColors.ButtonFace;
-            checkBox1.Location = new Point(564, 156);
+            checkBox1.Location = new Point(270, 232);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(15, 14);
             checkBox1.TabIndex = 10;
@@ -169,203 +172,242 @@
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
             btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(349, 384);
+            btnSalvar.Location = new Point(349, 393);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
             btnSalvar.TabIndex = 1;
-            btnSalvar.Text = "Salvar";
+            btnSalvar.Text = " Salvar";
             btnSalvar.TextColor = Color.Black;
             btnSalvar.UseVisualStyleBackColor = false;
             btnSalvar.Click += btnSalvar_Click;
             // 
-            // pictureBox1
+            // imgCliente
             // 
-            pictureBox1.Image = Properties.Resources.Icones_T_Clientes;
-            pictureBox1.Location = new Point(56, 27);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(92, 94);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 11;
-            pictureBox1.TabStop = false;
+            imgCliente.Image = Properties.Resources.Icones_T_Clientes;
+            imgCliente.Location = new Point(46, 97);
+            imgCliente.Name = "imgCliente";
+            imgCliente.Size = new Size(92, 94);
+            imgCliente.SizeMode = PictureBoxSizeMode.Zoom;
+            imgCliente.TabIndex = 11;
+            imgCliente.TabStop = false;
+            imgCliente.Click += imgCliente_Click;
             // 
-            // pictureBox2
+            // imgRelatorioProdutos
             // 
-            pictureBox2.Image = Properties.Resources.Icones_T_Emissao_de_produtos;
-            pictureBox2.Location = new Point(147, 164);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(92, 94);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 12;
-            pictureBox2.TabStop = false;
+            imgRelatorioProdutos.Image = Properties.Resources.Icones_T_Emissao_de_produtos;
+            imgRelatorioProdutos.Location = new Point(46, 239);
+            imgRelatorioProdutos.Name = "imgRelatorioProdutos";
+            imgRelatorioProdutos.Size = new Size(92, 94);
+            imgRelatorioProdutos.SizeMode = PictureBoxSizeMode.Zoom;
+            imgRelatorioProdutos.TabIndex = 12;
+            imgRelatorioProdutos.TabStop = false;
+            imgRelatorioProdutos.Click += imgRelatorioProdutos_Click;
             // 
-            // pictureBox3
+            // imgRelatorioServicos
             // 
-            pictureBox3.Image = Properties.Resources.Icones_T_emissao_de_servicos;
-            pictureBox3.Location = new Point(564, 167);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(92, 94);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 13;
-            pictureBox3.TabStop = false;
+            imgRelatorioServicos.Image = Properties.Resources.Icones_T_emissao_de_servicos;
+            imgRelatorioServicos.Location = new Point(270, 239);
+            imgRelatorioServicos.Name = "imgRelatorioServicos";
+            imgRelatorioServicos.Size = new Size(92, 94);
+            imgRelatorioServicos.SizeMode = PictureBoxSizeMode.Zoom;
+            imgRelatorioServicos.TabIndex = 13;
+            imgRelatorioServicos.TabStop = false;
+            imgRelatorioServicos.Click += imgRelatorioServicos_Click;
             // 
-            // pictureBox4
+            // imgFornecedor
             // 
-            pictureBox4.Image = Properties.Resources.Icones_T_fornecedores;
-            pictureBox4.Location = new Point(449, 31);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(92, 94);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 14;
-            pictureBox4.TabStop = false;
+            imgFornecedor.Image = Properties.Resources.Icones_T_fornecedores;
+            imgFornecedor.Location = new Point(360, 103);
+            imgFornecedor.Name = "imgFornecedor";
+            imgFornecedor.Size = new Size(92, 94);
+            imgFornecedor.SizeMode = PictureBoxSizeMode.Zoom;
+            imgFornecedor.TabIndex = 14;
+            imgFornecedor.TabStop = false;
+            imgFornecedor.Click += imgFornecedor_Click;
             // 
-            // pictureBox5
+            // imgGerenciamentoServicos
             // 
-            pictureBox5.Image = Properties.Resources.Icones_T_gerenciamento_de_serviços;
-            pictureBox5.Location = new Point(56, 320);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(92, 94);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 15;
-            pictureBox5.TabStop = false;
+            imgGerenciamentoServicos.Image = Properties.Resources.Icones_T_gerenciamento_de_serviços;
+            imgGerenciamentoServicos.Location = new Point(652, 239);
+            imgGerenciamentoServicos.Name = "imgGerenciamentoServicos";
+            imgGerenciamentoServicos.Size = new Size(92, 94);
+            imgGerenciamentoServicos.SizeMode = PictureBoxSizeMode.Zoom;
+            imgGerenciamentoServicos.TabIndex = 15;
+            imgGerenciamentoServicos.TabStop = false;
+            imgGerenciamentoServicos.Click += imgGerenciamentoServicos_Click;
             // 
-            // pictureBox6
+            // imgColaboradores
             // 
-            pictureBox6.Image = Properties.Resources.Icones_T_Icone_colaboradores;
-            pictureBox6.Location = new Point(620, 35);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(92, 94);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 16;
-            pictureBox6.TabStop = false;
+            imgColaboradores.Image = Properties.Resources.Icones_T_Icone_colaboradores;
+            imgColaboradores.Location = new Point(510, 103);
+            imgColaboradores.Name = "imgColaboradores";
+            imgColaboradores.Size = new Size(92, 94);
+            imgColaboradores.SizeMode = PictureBoxSizeMode.Zoom;
+            imgColaboradores.TabIndex = 16;
+            imgColaboradores.TabStop = false;
+            imgColaboradores.Click += imgColaboradores_Click;
             // 
-            // pictureBox7
+            // imgSuport
             // 
-            pictureBox7.Image = Properties.Resources.Icones_T_Suport;
-            pictureBox7.Location = new Point(620, 321);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(92, 94);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 17;
-            pictureBox7.TabStop = false;
+            imgSuport.Image = Properties.Resources.Icones_T_Suport;
+            imgSuport.Location = new Point(468, 239);
+            imgSuport.Name = "imgSuport";
+            imgSuport.Size = new Size(92, 94);
+            imgSuport.SizeMode = PictureBoxSizeMode.Zoom;
+            imgSuport.TabIndex = 17;
+            imgSuport.TabStop = false;
+            imgSuport.Click += imgSuport_Click;
             // 
-            // pictureBox8
+            // imgVenda
             // 
-            pictureBox8.Image = Properties.Resources.Icones_T_Vendas;
-            pictureBox8.Location = new Point(253, 36);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(92, 94);
-            pictureBox8.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox8.TabIndex = 18;
-            pictureBox8.TabStop = false;
+            imgVenda.Image = Properties.Resources.Icones_T_Vendas;
+            imgVenda.Location = new Point(193, 103);
+            imgVenda.Name = "imgVenda";
+            imgVenda.Size = new Size(92, 94);
+            imgVenda.SizeMode = PictureBoxSizeMode.Zoom;
+            imgVenda.TabIndex = 18;
+            imgVenda.TabStop = false;
+            imgVenda.Click += imgVenda_Click;
             // 
-            // pictureBox9
+            // imgProdutos
             // 
-            pictureBox9.Image = Properties.Resources.Icones_T_Produtos;
-            pictureBox9.Location = new Point(357, 226);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(92, 94);
-            pictureBox9.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox9.TabIndex = 19;
-            pictureBox9.TabStop = false;
+            imgProdutos.Image = Properties.Resources.Icones_T_Produtos;
+            imgProdutos.Location = new Point(652, 103);
+            imgProdutos.Name = "imgProdutos";
+            imgProdutos.Size = new Size(92, 94);
+            imgProdutos.SizeMode = PictureBoxSizeMode.Zoom;
+            imgProdutos.TabIndex = 19;
+            imgProdutos.TabStop = false;
+            imgProdutos.Click += imgProdutos_Click;
             // 
-            // lblCadastroDeClientes
+            // lblCliente
             // 
-            lblCadastroDeClientes.AutoSize = true;
-            lblCadastroDeClientes.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCadastroDeClientes.ForeColor = Color.Cyan;
-            lblCadastroDeClientes.Location = new Point(67, 123);
-            lblCadastroDeClientes.Name = "lblCadastroDeClientes";
-            lblCadastroDeClientes.Size = new Size(71, 21);
-            lblCadastroDeClientes.TabIndex = 73;
-            lblCadastroDeClientes.Text = "Clientes";
+            lblCliente.AutoSize = true;
+            lblCliente.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblCliente.ForeColor = Color.Cyan;
+            lblCliente.Location = new Point(57, 194);
+            lblCliente.Name = "lblCliente";
+            lblCliente.Size = new Size(71, 21);
+            lblCliente.TabIndex = 73;
+            lblCliente.Text = "Clientes";
+            lblCliente.Click += lblCliente_Click;
             // 
-            // label1
+            // lblRelatorioProdutos
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.Cyan;
-            label1.Location = new Point(97, 254);
-            label1.Name = "label1";
-            label1.Size = new Size(193, 42);
-            label1.TabIndex = 74;
-            label1.Text = "Emissão de Relatorios\r\nFinanceiros de produtos\r\n";
+            lblRelatorioProdutos.AutoSize = true;
+            lblRelatorioProdutos.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblRelatorioProdutos.ForeColor = Color.Cyan;
+            lblRelatorioProdutos.Location = new Point(7, 334);
+            lblRelatorioProdutos.Name = "lblRelatorioProdutos";
+            lblRelatorioProdutos.Size = new Size(171, 42);
+            lblRelatorioProdutos.TabIndex = 74;
+            lblRelatorioProdutos.Text = "Relatorios Financeiro\r\n        de Produtos\r\n";
+            lblRelatorioProdutos.Click += lblRelatorioProdutos_Click;
             // 
-            // label2
+            // lblVenda
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.ForeColor = Color.Cyan;
-            label2.Location = new Point(267, 123);
-            label2.Name = "label2";
-            label2.Size = new Size(65, 21);
-            label2.TabIndex = 75;
-            label2.Text = "Vendas";
+            lblVenda.AutoSize = true;
+            lblVenda.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblVenda.ForeColor = Color.Cyan;
+            lblVenda.Location = new Point(207, 194);
+            lblVenda.Name = "lblVenda";
+            lblVenda.Size = new Size(65, 21);
+            lblVenda.TabIndex = 75;
+            lblVenda.Text = "Vendas";
+            lblVenda.Click += lblVenda_Click;
             // 
-            // label3
+            // lblFornecedor
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.ForeColor = Color.Cyan;
-            label3.Location = new Point(439, 123);
-            label3.Name = "label3";
-            label3.Size = new Size(112, 21);
-            label3.TabIndex = 76;
-            label3.Text = "Fornecedores";
+            lblFornecedor.AutoSize = true;
+            lblFornecedor.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblFornecedor.ForeColor = Color.Cyan;
+            lblFornecedor.Location = new Point(350, 194);
+            lblFornecedor.Name = "lblFornecedor";
+            lblFornecedor.Size = new Size(112, 21);
+            lblFornecedor.TabIndex = 76;
+            lblFornecedor.Text = "Fornecedores";
+            lblFornecedor.Click += lblFornecedor_Click;
             // 
-            // label4
+            // lblColaboradores
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.ForeColor = Color.Cyan;
-            label4.Location = new Point(606, 123);
-            label4.Name = "label4";
-            label4.Size = new Size(121, 21);
-            label4.TabIndex = 77;
-            label4.Text = "Colaboradores";
+            lblColaboradores.AutoSize = true;
+            lblColaboradores.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblColaboradores.ForeColor = Color.Cyan;
+            lblColaboradores.Location = new Point(496, 194);
+            lblColaboradores.Name = "lblColaboradores";
+            lblColaboradores.Size = new Size(121, 21);
+            lblColaboradores.TabIndex = 77;
+            lblColaboradores.Text = "Colaboradores";
+            lblColaboradores.Click += lblColaboradores_Click;
             // 
-            // label5
+            // lblSuport
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.Cyan;
-            label5.Location = new Point(591, 411);
-            label5.Name = "label5";
-            label5.Size = new Size(151, 21);
-            label5.TabIndex = 78;
-            label5.Text = "Suporte ao Cliente";
+            lblSuport.AutoSize = true;
+            lblSuport.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblSuport.ForeColor = Color.Cyan;
+            lblSuport.Location = new Point(439, 334);
+            lblSuport.Name = "lblSuport";
+            lblSuport.Size = new Size(151, 21);
+            lblSuport.TabIndex = 78;
+            lblSuport.Text = "Suporte ao Cliente";
+            lblSuport.Click += lblSuport_Click;
             // 
-            // label6
+            // lblRelatorioServicos
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.ForeColor = Color.Cyan;
-            label6.Location = new Point(517, 254);
-            label6.Name = "label6";
-            label6.Size = new Size(186, 42);
-            label6.TabIndex = 79;
-            label6.Text = "Emissão de Relatorios\r\nFinanceiros de serviços";
+            lblRelatorioServicos.AutoSize = true;
+            lblRelatorioServicos.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblRelatorioServicos.ForeColor = Color.Cyan;
+            lblRelatorioServicos.Location = new Point(231, 334);
+            lblRelatorioServicos.Name = "lblRelatorioServicos";
+            lblRelatorioServicos.Size = new Size(171, 42);
+            lblRelatorioServicos.TabIndex = 79;
+            lblRelatorioServicos.Text = "Relatorios Financeiro\r\n         de Serviços";
+            lblRelatorioServicos.Click += lblRelatorioServicos_Click;
             // 
-            // label7
+            // lblProdutos
             // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label7.ForeColor = Color.Cyan;
-            label7.Location = new Point(369, 314);
-            label7.Name = "label7";
-            label7.Size = new Size(79, 21);
-            label7.TabIndex = 80;
-            label7.Text = "Produtos";
+            lblProdutos.AutoSize = true;
+            lblProdutos.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblProdutos.ForeColor = Color.Cyan;
+            lblProdutos.Location = new Point(659, 194);
+            lblProdutos.Name = "lblProdutos";
+            lblProdutos.Size = new Size(79, 21);
+            lblProdutos.TabIndex = 80;
+            lblProdutos.Text = "Produtos";
+            lblProdutos.Click += lblProdutos_Click;
             // 
-            // label8
+            // lblGerenciamentoServicos
             // 
-            label8.AutoSize = true;
-            label8.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label8.ForeColor = Color.Cyan;
-            label8.Location = new Point(8, 411);
-            label8.Name = "label8";
-            label8.Size = new Size(216, 21);
-            label8.TabIndex = 81;
-            label8.Text = "Gerenciamento de serviços";
+            lblGerenciamentoServicos.AutoSize = true;
+            lblGerenciamentoServicos.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            lblGerenciamentoServicos.ForeColor = Color.Cyan;
+            lblGerenciamentoServicos.Location = new Point(635, 334);
+            lblGerenciamentoServicos.Name = "lblGerenciamentoServicos";
+            lblGerenciamentoServicos.Size = new Size(127, 42);
+            lblGerenciamentoServicos.TabIndex = 81;
+            lblGerenciamentoServicos.Text = "Gerenciamento\r\n   de serviços";
+            lblGerenciamentoServicos.Click += lblGerenciamentoServicos_Click;
+            // 
+            // LogoComoWallpaper
+            // 
+            LogoComoWallpaper.Dock = DockStyle.Fill;
+            LogoComoWallpaper.Image = Properties.Resources.TelaProdutos1;
+            LogoComoWallpaper.Location = new Point(0, 0);
+            LogoComoWallpaper.Name = "LogoComoWallpaper";
+            LogoComoWallpaper.Size = new Size(800, 450);
+            LogoComoWallpaper.TabIndex = 82;
+            LogoComoWallpaper.TabStop = false;
+            // 
+            // lblTituloMontaPrograma
+            // 
+            lblTituloMontaPrograma.AutoSize = true;
+            lblTituloMontaPrograma.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
+            lblTituloMontaPrograma.ForeColor = Color.Cyan;
+            lblTituloMontaPrograma.Location = new Point(57, 30);
+            lblTituloMontaPrograma.Name = "lblTituloMontaPrograma";
+            lblTituloMontaPrograma.Size = new Size(686, 37);
+            lblTituloMontaPrograma.TabIndex = 83;
+            lblTituloMontaPrograma.Text = "Escolha quais as melhores opções para sua empresa!";
             // 
             // MontagemPrograma
             // 
@@ -373,12 +415,15 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(16, 25, 56);
             ClientSize = new Size(800, 450);
-            Controls.Add(label2);
-            Controls.Add(label6);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label1);
-            Controls.Add(lblCadastroDeClientes);
+            Controls.Add(chkBoxColaboradores);
+            Controls.Add(imgColaboradores);
+            Controls.Add(lblTituloMontaPrograma);
+            Controls.Add(lblVenda);
+            Controls.Add(lblRelatorioServicos);
+            Controls.Add(lblColaboradores);
+            Controls.Add(lblFornecedor);
+            Controls.Add(lblRelatorioProdutos);
+            Controls.Add(lblCliente);
             Controls.Add(btnSalvar);
             Controls.Add(checkBox1);
             Controls.Add(chkBoxSuporteAoCliente);
@@ -388,32 +433,32 @@
             Controls.Add(chkBoxClientes);
             Controls.Add(chkBoxProdutos);
             Controls.Add(chkBoxFornecedores);
-            Controls.Add(chkBoxColaboradores);
-            Controls.Add(pictureBox1);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox8);
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox7);
-            Controls.Add(pictureBox9);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox5);
-            Controls.Add(label7);
-            Controls.Add(label8);
-            Controls.Add(label5);
+            Controls.Add(imgCliente);
+            Controls.Add(imgRelatorioProdutos);
+            Controls.Add(imgVenda);
+            Controls.Add(imgFornecedor);
+            Controls.Add(imgSuport);
+            Controls.Add(imgProdutos);
+            Controls.Add(imgRelatorioServicos);
+            Controls.Add(imgGerenciamentoServicos);
+            Controls.Add(lblProdutos);
+            Controls.Add(lblGerenciamentoServicos);
+            Controls.Add(lblSuport);
+            Controls.Add(LogoComoWallpaper);
             FormBorderStyle = FormBorderStyle.None;
             Name = "MontagemPrograma";
             Text = "MontagemPrograma";
             Load += MontagemPrograma_Load;
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgCliente).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgRelatorioProdutos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgRelatorioServicos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgFornecedor).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgGerenciamentoServicos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgColaboradores).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgSuport).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgVenda).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgProdutos).EndInit();
+            ((System.ComponentModel.ISupportInitialize)LogoComoWallpaper).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -430,23 +475,25 @@
         private CheckBox chkBoxSuporteAoCliente;
         private CheckBox checkBox1;
         private WiLBiT.WiLBiTButton2 btnSalvar;
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
-        private PictureBox pictureBox8;
-        private PictureBox pictureBox9;
-        private Label lblCadastroDeClientes;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label7;
-        private Label label8;
+        private PictureBox imgCliente;
+        private PictureBox imgRelatorioProdutos;
+        private PictureBox imgRelatorioServicos;
+        private PictureBox imgFornecedor;
+        private PictureBox imgGerenciamentoServicos;
+        private PictureBox imgColaboradores;
+        private PictureBox imgSuport;
+        private PictureBox imgVenda;
+        private PictureBox imgProdutos;
+        private Label lblCliente;
+        private Label lblRelatorioProdutos;
+        private Label lblVenda;
+        private Label lblFornecedor;
+        private Label lblColaboradores;
+        private Label lblSuport;
+        private Label lblRelatorioServicos;
+        private Label lblProdutos;
+        private Label lblGerenciamentoServicos;
+        private PictureBox LogoComoWallpaper;
+        private Label lblTituloMontaPrograma;
     }
 }

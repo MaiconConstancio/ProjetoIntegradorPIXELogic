@@ -22,6 +22,61 @@ namespace ProjetoIntegradorPIXELogic
 
         private void MontagemPrograma_Load(object sender, EventArgs e)
         {
+            //---------------------------Setor do Designer-----------------------------------
+            lblTituloMontaPrograma.Parent = LogoComoWallpaper;
+            lblTituloMontaPrograma.BackColor = Color.Transparent;
+
+            imgCliente.Parent = LogoComoWallpaper;
+            imgCliente.BackColor = Color.Transparent;
+
+            lblCliente.Parent = LogoComoWallpaper;
+            lblCliente.BackColor = Color.Transparent;
+
+            imgFornecedor.Parent = LogoComoWallpaper;
+            imgFornecedor.BackColor = Color.Transparent;
+
+            lblFornecedor.Parent = LogoComoWallpaper;
+            lblFornecedor.BackColor = Color.Transparent;
+
+            imgColaboradores.Parent = LogoComoWallpaper;
+            imgColaboradores.BackColor = Color.Transparent;
+
+            lblColaboradores.Parent = LogoComoWallpaper;
+            lblColaboradores.BackColor = Color.Transparent;
+
+            imgProdutos.Parent = LogoComoWallpaper;
+            imgProdutos.BackColor = Color.Transparent;
+
+            lblProdutos.Parent = LogoComoWallpaper;
+            lblProdutos.BackColor = Color.Transparent;
+
+            imgRelatorioProdutos.Parent = LogoComoWallpaper;
+            imgRelatorioProdutos.BackColor = Color.Transparent;
+
+            lblRelatorioProdutos.Parent = LogoComoWallpaper;
+            lblRelatorioProdutos.BackColor = Color.Transparent;
+
+            imgRelatorioServicos.Parent = LogoComoWallpaper;
+            imgRelatorioServicos.BackColor = Color.Transparent;
+
+            lblRelatorioServicos.Parent = LogoComoWallpaper;
+            lblRelatorioServicos.BackColor = Color.Transparent;
+
+            imgSuport.Parent = LogoComoWallpaper;
+            imgSuport.BackColor = Color.Transparent;
+
+            lblSuport.Parent = LogoComoWallpaper;
+            lblSuport.BackColor = Color.Transparent;
+
+            imgGerenciamentoServicos.Parent = LogoComoWallpaper;
+            imgGerenciamentoServicos.BackColor = Color.Transparent;
+
+            lblGerenciamentoServicos.Parent = LogoComoWallpaper;
+            lblGerenciamentoServicos.BackColor = Color.Transparent;
+            //---------------------------FIM do Setor do Designer----------------------------
+
+
+
 
             if (Conexao.executaQuery("select * from funcoes where nome = 'gerenciamento servico' and habilitado_nao = true;").Rows.Count > 0)
             {
@@ -291,7 +346,223 @@ namespace ProjetoIntegradorPIXELogic
 
         }
 
+        private void imgSuport_Click(object sender, EventArgs e)
+        {
+            if (chkBoxSuporteAoCliente.Checked)
+            {
+                chkBoxSuporteAoCliente.Checked = false;
+            }
+            else
+            {
+                chkBoxSuporteAoCliente.Checked = true;
+            }
+        }
 
+        private void lblSuport_Click(object sender, EventArgs e)
+        {
+
+            if (chkBoxSuporteAoCliente.Checked)
+            {
+                chkBoxSuporteAoCliente.Checked = false;
+            }
+            else
+            {
+                chkBoxSuporteAoCliente.Checked = true;
+            }
+        }
+
+        private void imgGerenciamentoServicos_Click(object sender, EventArgs e)
+        {
+            if (chkBoxGerenciamentoServiços.Checked)
+            {
+                chkBoxGerenciamentoServiços.Checked = false;
+            }
+            else
+            {
+                chkBoxGerenciamentoServiços.Checked = true;
+            }
+        }
+
+        private void lblGerenciamentoServicos_Click(object sender, EventArgs e)
+        {
+            if (chkBoxGerenciamentoServiços.Checked)
+            {
+                chkBoxGerenciamentoServiços.Checked = false;
+            }
+            else
+            {
+                chkBoxGerenciamentoServiços.Checked = true;
+            }
+        }
+
+        private void imgRelatorioServicos_Click(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                checkBox1.Checked = false;
+            }
+            else
+            {
+                checkBox1.Checked = true;
+            }
+        }
+
+        private void lblRelatorioServicos_Click(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                checkBox1.Checked = false;
+            }
+            else
+            {
+                checkBox1.Checked = true;
+            }
+        }
+
+        private void imgRelatorioProdutos_Click(object sender, EventArgs e)
+        {
+
+            if (chkBoxEmissaoRelatoriosFinanceiros.Checked)
+            {
+                chkBoxEmissaoRelatoriosFinanceiros.Checked = false;
+            }
+            else
+            {
+                chkBoxEmissaoRelatoriosFinanceiros.Checked = true;
+            }
+        }
+
+        private void lblRelatorioProdutos_Click(object sender, EventArgs e)
+        {
+            if (chkBoxEmissaoRelatoriosFinanceiros.Checked)
+            {
+                chkBoxEmissaoRelatoriosFinanceiros.Checked = false;
+            }
+            else
+            {
+                chkBoxEmissaoRelatoriosFinanceiros.Checked = true;
+            }
+        }
+
+        private void imgProdutos_Click(object sender, EventArgs e)
+        {
+            if (chkBoxProdutos.Checked)
+            {
+                chkBoxProdutos.Checked = false;
+            }
+            else
+            {
+                chkBoxProdutos.Checked = true;
+            }
+        }
+
+        private void lblProdutos_Click(object sender, EventArgs e)
+        {
+            if (chkBoxProdutos.Checked)
+            {
+                chkBoxProdutos.Checked = false;
+            }
+            else
+            {
+                chkBoxProdutos.Checked = true;
+            }
+        }
+
+        private void imgColaboradores_Click(object sender, EventArgs e)
+        {
+            if (chkBoxColaboradores.Checked)
+            {
+                chkBoxColaboradores.Checked = false;
+            }
+            else
+            {
+                chkBoxColaboradores.Checked = true;
+            }
+        }
+
+        private void lblColaboradores_Click(object sender, EventArgs e)
+        {
+            if (chkBoxColaboradores.Checked)
+            {
+                chkBoxColaboradores.Checked = false;
+            }
+            else
+            {
+                chkBoxColaboradores.Checked = true;
+            }
+        }
+
+        private void imgFornecedor_Click(object sender, EventArgs e)
+        {
+            if (chkBoxFornecedores.Checked)
+            {
+                chkBoxFornecedores.Checked = false;
+            }
+            else
+            {
+                chkBoxFornecedores.Checked = true;
+            }
+        }
+
+        private void lblFornecedor_Click(object sender, EventArgs e)
+        {
+            if (chkBoxFornecedores.Checked)
+            {
+                chkBoxFornecedores.Checked = false;
+            }
+            else
+            {
+                chkBoxFornecedores.Checked = true;
+            }
+        }
+
+        private void imgVenda_Click(object sender, EventArgs e)
+        {
+            if (chkBoxVendas.Checked)
+            {
+                chkBoxVendas.Checked = false;
+            }
+            else
+            {
+                chkBoxVendas.Checked = true;
+            }
+        }
+
+        private void lblVenda_Click(object sender, EventArgs e)
+        {
+            if (chkBoxVendas.Checked)
+            {
+                chkBoxVendas.Checked = false;
+            }
+            else
+            {
+                chkBoxVendas.Checked = true;
+            }
+        }
+
+        private void imgCliente_Click(object sender, EventArgs e)
+        {
+            if (chkBoxClientes.Checked)
+            {
+                chkBoxClientes.Checked = false;
+            }
+            else
+            {
+                chkBoxClientes.Checked = true;
+            }
+        }
+
+        private void lblCliente_Click(object sender, EventArgs e)
+        {
+            if (chkBoxClientes.Checked)
+            {
+                chkBoxClientes.Checked = false;
+            }
+            else
+            {
+                chkBoxClientes.Checked = true;
+            }
+        }
     }
 
 

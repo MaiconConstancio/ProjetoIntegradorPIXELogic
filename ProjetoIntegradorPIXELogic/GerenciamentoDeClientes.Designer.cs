@@ -38,7 +38,6 @@
             lblFuncionario = new Label();
             lblEstimativaDeEntrega = new Label();
             lblCliente = new Label();
-            btnSalvar = new WiLBiT.WiLBiTButton2();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
             btnCapturarImagem = new WiLBiT.WiLBiTButton2();
@@ -95,7 +94,7 @@
             lblEditar.Name = "lblEditar";
             lblEditar.Size = new Size(70, 30);
             lblEditar.TabIndex = 44;
-            lblEditar.Text = "Editar";
+            lblEditar.Text = "Ação";
             lblEditar.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // lblStatus
@@ -182,25 +181,6 @@
             lblCliente.Text = "Cliente";
             lblCliente.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // btnSalvar
-            // 
-            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 12;
-            btnSalvar.BorderSize = 2;
-            btnSalvar.FlatAppearance.BorderSize = 0;
-            btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(168, 406);
-            btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(103, 32);
-            btnSalvar.TabIndex = 1;
-            btnSalvar.Text = "Salvar";
-            btnSalvar.TextColor = Color.Black;
-            btnSalvar.UseVisualStyleBackColor = false;
-            // 
             // panel1
             // 
             panel1.AutoSize = true;
@@ -268,7 +248,6 @@
             Controls.Add(btnCapturarImagem);
             Controls.Add(btnImprimir);
             Controls.Add(panel1);
-            Controls.Add(btnSalvar);
             Controls.Add(lblEditar);
             Controls.Add(lblStatus);
             Controls.Add(lblServico);
@@ -291,7 +270,6 @@
 
         #endregion
         private Label lblEscolhaSeusColaboradoresESuasCredenciais;
-        private WiLBiT.WiLBiTButton2 btnSalvar;
         private WiLBiT.WiLBiTButton2 btnNovoCadastro;
         private WiLBiT.WiLBiTButton2 btnVoltar;
         private Label lblEditar;

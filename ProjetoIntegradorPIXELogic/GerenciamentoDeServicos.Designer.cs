@@ -37,7 +37,6 @@
             lblValor = new Label();
             lblServico = new Label();
             lblEditar = new Label();
-            btnSalvar = new WiLBiT.WiLBiTButton2();
             panel1 = new Panel();
             btnCapturarImagem = new WiLBiT.WiLBiTButton2();
             btnImprimir = new WiLBiT.WiLBiTButton2();
@@ -165,27 +164,8 @@
             lblEditar.Name = "lblEditar";
             lblEditar.Size = new Size(70, 30);
             lblEditar.TabIndex = 33;
-            lblEditar.Text = "Editar";
+            lblEditar.Text = "Ação";
             lblEditar.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // btnSalvar
-            // 
-            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
-            btnSalvar.BorderRadius = 12;
-            btnSalvar.BorderSize = 2;
-            btnSalvar.FlatAppearance.BorderSize = 0;
-            btnSalvar.FlatStyle = FlatStyle.Flat;
-            btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSalvar.ForeColor = Color.Black;
-            btnSalvar.Location = new Point(168, 406);
-            btnSalvar.Name = "btnSalvar";
-            btnSalvar.Size = new Size(103, 32);
-            btnSalvar.TabIndex = 1;
-            btnSalvar.Text = "Salvar";
-            btnSalvar.TextColor = Color.Black;
-            btnSalvar.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
@@ -245,7 +225,6 @@
             Controls.Add(btnCapturarImagem);
             Controls.Add(btnImprimir);
             Controls.Add(panel1);
-            Controls.Add(btnSalvar);
             Controls.Add(lblEditar);
             Controls.Add(lblServico);
             Controls.Add(lblValor);
@@ -274,7 +253,6 @@
         private Label lblValor;
         private Label lblServico;
         private Label lblEditar;
-        private WiLBiT.WiLBiTButton2 btnSalvar;
         private Panel panel1;
         private WiLBiT.WiLBiTButton2 btnCapturarImagem;
         private WiLBiT.WiLBiTButton2 btnImprimir;

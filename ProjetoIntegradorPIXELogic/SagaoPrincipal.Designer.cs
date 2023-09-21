@@ -37,7 +37,9 @@
             btnRelatorioServicos = new WiLBiT.WiLBiTButton2();
             btnVendas = new WiLBiT.WiLBiTButton2();
             btnCadastros = new WiLBiT.WiLBiTButton2();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox21).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // btnSalvar
@@ -65,7 +67,7 @@
             lblOrcamentoDeServicos.AutoSize = true;
             lblOrcamentoDeServicos.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblOrcamentoDeServicos.ForeColor = Color.Cyan;
-            lblOrcamentoDeServicos.Location = new Point(26, 12);
+            lblOrcamentoDeServicos.Location = new Point(53, 12);
             lblOrcamentoDeServicos.Name = "lblOrcamentoDeServicos";
             lblOrcamentoDeServicos.Size = new Size(69, 25);
             lblOrcamentoDeServicos.TabIndex = 76;
@@ -88,8 +90,8 @@
             wilBitRoundedPictureBox21.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
             wilBitRoundedPictureBox21.BorderSize = 2;
             wilBitRoundedPictureBox21.GradientAngle = 50F;
-            wilBitRoundedPictureBox21.Image = Properties.Resources.LOGO_SEM_Fundo2;
-            wilBitRoundedPictureBox21.Location = new Point(269, 94);
+            wilBitRoundedPictureBox21.Image = Properties.Resources.LOGODESENHO_SEM_Fundo;
+            wilBitRoundedPictureBox21.Location = new Point(269, 65);
             wilBitRoundedPictureBox21.Name = "wilBitRoundedPictureBox21";
             wilBitRoundedPictureBox21.Size = new Size(263, 263);
             wilBitRoundedPictureBox21.SizeMode = PictureBoxSizeMode.Zoom;
@@ -196,6 +198,16 @@
             btnCadastros.UseVisualStyleBackColor = false;
             btnCadastros.Click += btnCadastros_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = Properties.Resources.ESCRITA_SEM_Fundo3;
+            pictureBox1.Location = new Point(232, 315);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(337, 84);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 81;
+            pictureBox1.TabStop = false;
+            // 
             // SagaoPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -206,11 +218,13 @@
             Controls.Add(wilBitRoundedPictureBox21);
             Controls.Add(panel1);
             Controls.Add(lblOrcamentoDeServicos);
+            Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "SagaoPrincipal";
             Text = "SagaoPrincipal";
             Load += SagaoPrincipal_Load;
             ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox21).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -281,5 +295,6 @@
         private WiLBiT.WiLBiTButton2 btnRelatorioProdutos;
         private WiLBiT.WiLBiTButton2 btnVendas;
         private WiLBiT.WiLBiTButton2 btnCadastros;
+        private PictureBox pictureBox1;
     }
 }

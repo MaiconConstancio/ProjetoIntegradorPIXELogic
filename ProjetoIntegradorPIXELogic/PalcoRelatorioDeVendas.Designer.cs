@@ -45,12 +45,13 @@
             btnExcluir.BorderSize = 0;
             btnExcluir.FlatAppearance.BorderSize = 0;
             btnExcluir.FlatStyle = FlatStyle.Flat;
+            btnExcluir.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnExcluir.ForeColor = Color.White;
-            btnExcluir.Location = new Point(751, 5);
+            btnExcluir.Location = new Point(732, 5);
             btnExcluir.Name = "btnExcluir";
             btnExcluir.Size = new Size(29, 28);
             btnExcluir.TabIndex = 86;
-            btnExcluir.Text = "EX";
+            btnExcluir.Text = "X";
             btnExcluir.UseVisualStyleBackColor = false;
             btnExcluir.Click += btnExcluir_Click;
             // 
@@ -69,7 +70,7 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = Color.White;
-            label1.Location = new Point(44, 14);
+            label1.Location = new Point(-3, 14);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 87;
@@ -79,7 +80,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(176, 14);
+            label2.Location = new Point(118, 14);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
             label2.TabIndex = 88;
@@ -89,7 +90,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(323, 14);
+            label3.Location = new Point(252, 14);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 89;
@@ -99,7 +100,7 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.White;
-            label4.Location = new Point(469, 14);
+            label4.Location = new Point(360, 14);
             label4.Name = "label4";
             label4.Size = new Size(38, 15);
             label4.TabIndex = 90;
@@ -109,7 +110,7 @@
             // 
             label5.AutoSize = true;
             label5.ForeColor = Color.White;
-            label5.Location = new Point(609, 14);
+            label5.Location = new Point(593, 14);
             label5.Name = "label5";
             label5.Size = new Size(38, 15);
             label5.TabIndex = 91;
