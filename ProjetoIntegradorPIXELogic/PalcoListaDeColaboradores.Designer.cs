@@ -46,7 +46,7 @@
             btnExcluir.FlatStyle = FlatStyle.Flat;
             btnExcluir.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnExcluir.ForeColor = Color.White;
-            btnExcluir.Location = new Point(686, 5);
+            btnExcluir.Location = new Point(686, 6);
             btnExcluir.Name = "btnExcluir";
             btnExcluir.Size = new Size(29, 28);
             btnExcluir.TabIndex = 83;
@@ -69,7 +69,7 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = Color.White;
-            label1.Location = new Point(0, 14);
+            label1.Location = new Point(1, 12);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 84;
@@ -79,7 +79,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(161, 14);
+            label2.Location = new Point(161, 12);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
             label2.TabIndex = 85;
@@ -89,7 +89,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(317, 14);
+            label3.Location = new Point(317, 12);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 86;
@@ -99,7 +99,7 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.White;
-            label4.Location = new Point(473, 14);
+            label4.Location = new Point(473, 12);
             label4.Name = "label4";
             label4.Size = new Size(38, 15);
             label4.TabIndex = 87;

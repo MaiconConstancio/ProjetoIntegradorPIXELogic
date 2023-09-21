@@ -45,7 +45,7 @@
             btnExcluir.FlatStyle = FlatStyle.Flat;
             btnExcluir.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point);
             btnExcluir.ForeColor = Color.White;
-            btnExcluir.Location = new Point(668, 5);
+            btnExcluir.Location = new Point(668, 6);
             btnExcluir.Name = "btnExcluir";
             btnExcluir.Size = new Size(29, 28);
             btnExcluir.TabIndex = 86;
