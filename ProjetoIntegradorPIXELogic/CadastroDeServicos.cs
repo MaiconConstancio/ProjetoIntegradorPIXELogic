@@ -48,7 +48,7 @@ namespace ProjetoIntegradorPIXELogic
             if (Funcoes.campoVazio("Nome do serviço", txtNomeDoServico) == false && Funcoes.campoVazio("Valor", maskValor) == false)
             {
 
-                if (Funcoes.existe("servicos","nome_servico",txtNomeDoServico))
+                if (Funcoes.existe("servicos", "nome_servico", txtNomeDoServico))
                 {
 
                     if (MessageBox.Show("já existe um serviço cadastrado com este nome, deseja continuar ?", "Serviço já cadastrado",
@@ -83,7 +83,7 @@ namespace ProjetoIntegradorPIXELogic
                 {
 
                     string query = $"insert into servicos (nome_servico,valor) values " +
-                        $"('{txtNomeDoServico.Text}','{maskValor.Text.Remove(0,2)}');";
+                        $"('{txtNomeDoServico.Text}','{maskValor.Text.Remove(0, 2)}');";
                     Conexao.executaQuery(query);
 
                     txtNomeDoServico.Clear();

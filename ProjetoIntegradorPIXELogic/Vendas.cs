@@ -128,7 +128,7 @@ namespace ProjetoIntegradorPIXELogic
 
                         }
 
-                        else { MessageBox.Show("O estoque não possui a quantidade desejada!","Estoque insulficiente!",MessageBoxButtons.OK,MessageBoxIcon.Error); }
+                        else { MessageBox.Show("O estoque não possui a quantidade desejada!", "Estoque insulficiente!", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                     }
 

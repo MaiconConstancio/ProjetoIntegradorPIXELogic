@@ -59,7 +59,7 @@ namespace ProjetoIntegradorPIXELogic
                         if (Funcoes.existe("usuario", "senha", txtSenha) == false)
                         {
 
-                            if(txtCargo.Text == "dono" || txtCargo.Text == "gerente" || txtCargo.Text == "desenvolvedor")
+                            if (txtCargo.Text == "dono" || txtCargo.Text == "gerente" || txtCargo.Text == "desenvolvedor")
                             {
 
                                 if (Conexao.executaQuery($"select * from usuario where login = '{Program.acesso}' and cargo = 'dono'").Rows.Count > 0 ||
@@ -88,7 +88,7 @@ namespace ProjetoIntegradorPIXELogic
 
                                 }
 
-                                else { MessageBox.Show("Somente cargos superiores podem cadastrar contas da mesma patente!","Cadastro negado",MessageBoxButtons.OK,MessageBoxIcon.Error); }
+                                else { MessageBox.Show("Somente cargos superiores podem cadastrar contas da mesma patente!", "Cadastro negado", MessageBoxButtons.OK, MessageBoxIcon.Error); }
 
                                 return;
 

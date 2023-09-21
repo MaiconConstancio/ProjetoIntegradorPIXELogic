@@ -81,7 +81,7 @@ namespace ProjetoIntegradorPIXELogic
 
             PalcoRelatorioDeVendas.txt = txtNomeDoCliente.Text;
 
-            if(txtNomeDoCliente.Text == "")
+            if (txtNomeDoCliente.Text == "")
             {
 
                 foreach (DataRow row in Conexao.executaQuery($"select * from vendas;").Rows)
