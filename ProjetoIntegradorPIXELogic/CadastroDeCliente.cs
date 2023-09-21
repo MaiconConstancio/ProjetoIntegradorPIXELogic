@@ -46,6 +46,7 @@ namespace ProjetoIntegradorPIXELogic
         private void btnSalvar_Click(object sender, EventArgs e)
         {
 
+
             if (Funcoes.campoVazio("Nome", txtCliente) == false && Funcoes.campoVazio("Endereço", txtEndereco) == false &&
             Funcoes.campoVazio("Telefone", maskTelefone) == false && Funcoes.campoVazio("CPF", maskCPF) == false &&
             Funcoes.campoVazio("CEP", maskCEP) == false && Funcoes.campoVazio("Número", maskNumero) == false &&
