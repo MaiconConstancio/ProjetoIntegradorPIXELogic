@@ -127,9 +127,6 @@
   <data name="ESCRITA_SEM_Fundo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ESCRITA_SEM_Fundo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icones_T_gerenciamento de serviços" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icones_T_gerenciamento de serviços.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="ESCRITA_SEM_Fundo2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ESCRITA_SEM_Fundo2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -150,6 +147,9 @@
   </data>
   <data name="Tela_Login_Objeto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Tela_Login_Objeto1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="TESTE WALLPAPER SAGAO V2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TESTE WALLPAPER SAGAO V2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ESCRITA_SEM_Fundo6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ESCRITA_SEM_Fundo6.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -187,6 +187,9 @@
   <data name="TESTE WALLPAPER SAGAO" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\TESTE WALLPAPER SAGAO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icones_T_Clientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icones_T_Clientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="ESCRITA_SEM_Fundo7" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ESCRITA_SEM_Fundo7.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -202,13 +205,13 @@
   <data name="Icones_T_Emissao de produtos" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icones_T_Emissao de produtos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icones_T_Clientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icones_T_Clientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icones_T_gerenciamento de serviços" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icones_T_gerenciamento de serviços.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="LOGODESENHO_SEM_Fundo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\LOGODESENHO_SEM_Fundo1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="TESTE WALLPAPER SAGAO V2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\TESTE WALLPAPER SAGAO V2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="TESTE LOGO WALLPAPER SAGAO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\TESTE LOGO WALLPAPER SAGAO.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

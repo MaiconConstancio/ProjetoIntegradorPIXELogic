@@ -353,6 +353,16 @@ namespace ProjetoIntegradorPIXELogic.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TESTE_LOGO_WALLPAPER_SAGAO {
+            get {
+                object obj = ResourceManager.GetObject("TESTE LOGO WALLPAPER SAGAO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TESTE_WALLPAPER_SAGAO {
             get {
                 object obj = ResourceManager.GetObject("TESTE WALLPAPER SAGAO", resourceCulture);

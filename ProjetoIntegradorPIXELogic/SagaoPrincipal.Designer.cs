@@ -38,7 +38,9 @@
             label1 = new Label();
             WallpaperSaguao = new PictureBox();
             btnSalvar = new WiLBiT.WiLBiTButton2();
+            imgLogoWallpaperSaguao = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)WallpaperSaguao).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)imgLogoWallpaperSaguao).BeginInit();
             SuspendLayout();
             // 
             // lblOrcamentoDeServicos
@@ -203,6 +205,16 @@
             btnSalvar.UseVisualStyleBackColor = false;
             btnSalvar.Click += btnSalvar_Click;
             // 
+            // imgLogoWallpaperSaguao
+            // 
+            imgLogoWallpaperSaguao.Image = Properties.Resources.TESTE_LOGO_WALLPAPER_SAGAO;
+            imgLogoWallpaperSaguao.Location = new Point(114, 7);
+            imgLogoWallpaperSaguao.Name = "imgLogoWallpaperSaguao";
+            imgLogoWallpaperSaguao.Size = new Size(800, 450);
+            imgLogoWallpaperSaguao.SizeMode = PictureBoxSizeMode.Zoom;
+            imgLogoWallpaperSaguao.TabIndex = 84;
+            imgLogoWallpaperSaguao.TabStop = false;
+            // 
             // SagaoPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -213,12 +225,14 @@
             Controls.Add(panel1);
             Controls.Add(lblOrcamentoDeServicos);
             Controls.Add(label1);
+            Controls.Add(imgLogoWallpaperSaguao);
             Controls.Add(WallpaperSaguao);
             FormBorderStyle = FormBorderStyle.None;
             Name = "SagaoPrincipal";
             Text = "SagaoPrincipal";
             Load += SagaoPrincipal_Load;
             ((System.ComponentModel.ISupportInitialize)WallpaperSaguao).EndInit();
+            ((System.ComponentModel.ISupportInitialize)imgLogoWallpaperSaguao).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -289,5 +303,6 @@
         private Label label1;
         private PictureBox WallpaperSaguao;
         private WiLBiT.WiLBiTButton2 btnSalvar;
+        private PictureBox imgLogoWallpaperSaguao;
     }
 }

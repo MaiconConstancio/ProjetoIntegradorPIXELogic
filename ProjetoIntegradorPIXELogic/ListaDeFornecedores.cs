@@ -62,8 +62,6 @@ namespace ProjetoIntegradorPIXELogic
                 int cnpj4 = int.Parse(row["cnpj"].ToString().Substring(8, 3));
                 int cnpj5 = int.Parse(row["cnpj"].ToString().Substring(11, 2));
 
-                //MessageBox.Show($"{cnpj1}.{cnpj2}.{cnpj3}/{cnpj4}1-{cnpj5}");
-
                 //cep
 
                 int cep1 = int.Parse(row["cep"].ToString().Substring(0, 5));
