@@ -21,6 +21,7 @@ namespace ProjetoIntegradorPIXELogic
         private void SagaoPrincipal_Load(object sender, EventArgs e)
         {
 
+
             if (Conexao.executaQuery($"select * from usuario where login = '{Program.acesso}' and cargo = 'dono';").Rows.Count > 0 ||
                 Conexao.executaQuery($"select * from usuario where login = '{Program.acesso}' and cargo = 'gerente';").Rows.Count > 0 ||
                 Conexao.executaQuery($"select * from usuario where login = '{Program.acesso}' and cargo = 'desenvolvedor';").Rows.Count > 0)

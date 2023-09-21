@@ -31,15 +31,14 @@
             btnSalvar = new WiLBiT.WiLBiTButton2();
             lblOrcamentoDeServicos = new Label();
             panel1 = new Panel();
-            wilBitRoundedPictureBox21 = new WiLBiT.WiLBiTRoundedPictureBox2();
             btnSuporte = new WiLBiT.WiLBiTButton2();
             btnRelatorioProdutos = new WiLBiT.WiLBiTButton2();
             btnRelatorioServicos = new WiLBiT.WiLBiTButton2();
             btnVendas = new WiLBiT.WiLBiTButton2();
             btnCadastros = new WiLBiT.WiLBiTButton2();
-            pictureBox1 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox21).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            label1 = new Label();
+            WallpaperSaguao = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)WallpaperSaguao).BeginInit();
             SuspendLayout();
             // 
             // btnSalvar
@@ -67,7 +66,7 @@
             lblOrcamentoDeServicos.AutoSize = true;
             lblOrcamentoDeServicos.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lblOrcamentoDeServicos.ForeColor = Color.Cyan;
-            lblOrcamentoDeServicos.Location = new Point(53, 12);
+            lblOrcamentoDeServicos.Location = new Point(61, 23);
             lblOrcamentoDeServicos.Name = "lblOrcamentoDeServicos";
             lblOrcamentoDeServicos.Size = new Size(69, 25);
             lblOrcamentoDeServicos.TabIndex = 76;
@@ -81,22 +80,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(114, 0);
             panel1.TabIndex = 77;
-            // 
-            // wilBitRoundedPictureBox21
-            // 
-            wilBitRoundedPictureBox21.BorderCapStyle = System.Drawing.Drawing2D.DashCap.Flat;
-            wilBitRoundedPictureBox21.BorderColor = Color.Cyan;
-            wilBitRoundedPictureBox21.BorderColor2 = Color.RoyalBlue;
-            wilBitRoundedPictureBox21.BorderLineStyle = System.Drawing.Drawing2D.DashStyle.Solid;
-            wilBitRoundedPictureBox21.BorderSize = 2;
-            wilBitRoundedPictureBox21.GradientAngle = 50F;
-            wilBitRoundedPictureBox21.Image = Properties.Resources.LOGODESENHO_SEM_Fundo;
-            wilBitRoundedPictureBox21.Location = new Point(269, 65);
-            wilBitRoundedPictureBox21.Name = "wilBitRoundedPictureBox21";
-            wilBitRoundedPictureBox21.Size = new Size(263, 263);
-            wilBitRoundedPictureBox21.SizeMode = PictureBoxSizeMode.Zoom;
-            wilBitRoundedPictureBox21.TabIndex = 80;
-            wilBitRoundedPictureBox21.TabStop = false;
             // 
             // btnSuporte
             // 
@@ -198,15 +181,25 @@
             btnCadastros.UseVisualStyleBackColor = false;
             btnCadastros.Click += btnCadastros_Click;
             // 
-            // pictureBox1
+            // label1
             // 
-            pictureBox1.Image = Properties.Resources.ESCRITA_SEM_Fundo3;
-            pictureBox1.Location = new Point(232, 315);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(337, 84);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 81;
-            pictureBox1.TabStop = false;
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.ForeColor = Color.Cyan;
+            label1.Location = new Point(49, 28);
+            label1.Name = "label1";
+            label1.Size = new Size(92, 25);
+            label1.TabIndex = 82;
+            label1.Text = "__________";
+            // 
+            // WallpaperSaguao
+            // 
+            WallpaperSaguao.Image = Properties.Resources.TESTE_WALLPAPER_SAGAO_V2;
+            WallpaperSaguao.Location = new Point(0, 28);
+            WallpaperSaguao.Name = "WallpaperSaguao";
+            WallpaperSaguao.Size = new Size(800, 450);
+            WallpaperSaguao.TabIndex = 83;
+            WallpaperSaguao.TabStop = false;
             // 
             // SagaoPrincipal
             // 
@@ -215,18 +208,19 @@
             BackColor = Color.FromArgb(16, 25, 56);
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(800, 450);
-            Controls.Add(wilBitRoundedPictureBox21);
             Controls.Add(panel1);
             Controls.Add(lblOrcamentoDeServicos);
-            Controls.Add(pictureBox1);
+            Controls.Add(label1);
+            Controls.Add(WallpaperSaguao);
             FormBorderStyle = FormBorderStyle.None;
             Name = "SagaoPrincipal";
             Text = "SagaoPrincipal";
             Load += SagaoPrincipal_Load;
-            ((System.ComponentModel.ISupportInitialize)wilBitRoundedPictureBox21).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)WallpaperSaguao).EndInit();
             ResumeLayout(false);
             PerformLayout();
+
+
         }
 
         private void btnCadastros_Click(object sender, EventArgs e)
@@ -289,12 +283,12 @@
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private Label lblOrcamentoDeServicos;
         private Panel panel1;
-        private WiLBiT.WiLBiTRoundedPictureBox2 wilBitRoundedPictureBox21;
         private WiLBiT.WiLBiTButton2 btnSuporte;
         private WiLBiT.WiLBiTButton2 btnRelatorioServicos;
         private WiLBiT.WiLBiTButton2 btnRelatorioProdutos;
         private WiLBiT.WiLBiTButton2 btnVendas;
         private WiLBiT.WiLBiTButton2 btnCadastros;
-        private PictureBox pictureBox1;
+        private Label label1;
+        private PictureBox WallpaperSaguao;
     }
 }
