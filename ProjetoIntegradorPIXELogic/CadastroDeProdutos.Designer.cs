@@ -48,41 +48,41 @@
             // 
             // btnSalvar
             // 
-            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BackColor = Color.FromArgb(16, 25, 56);
+            btnSalvar.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
             btnSalvar.BorderRadius = 12;
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSalvar.ForeColor = Color.Black;
+            btnSalvar.ForeColor = Color.Cyan;
             btnSalvar.Location = new Point(349, 384);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
             btnSalvar.TabIndex = 6;
             btnSalvar.Text = "Salvar";
-            btnSalvar.TextColor = Color.Black;
+            btnSalvar.TextColor = Color.Cyan;
             btnSalvar.UseVisualStyleBackColor = false;
             btnSalvar.Click += btnSalvar_Click;
             // 
             // btnVoltar
             // 
-            btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
-            btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BackColor = Color.FromArgb(16, 25, 56);
+            btnVoltar.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
             btnVoltar.BorderRadius = 12;
             btnVoltar.BorderSize = 2;
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
             btnVoltar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnVoltar.ForeColor = Color.Black;
+            btnVoltar.ForeColor = Color.Cyan;
             btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(74, 30);
             btnVoltar.TabIndex = 7;
             btnVoltar.Text = "Voltar";
-            btnVoltar.TextColor = Color.Black;
+            btnVoltar.TextColor = Color.Cyan;
             btnVoltar.UseVisualStyleBackColor = false;
             btnVoltar.Click += btnVoltar_Click;
             // 
@@ -90,7 +90,7 @@
             // 
             lblNome.AutoSize = true;
             lblNome.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblNome.ForeColor = Color.FromArgb(63, 136, 254);
+            lblNome.ForeColor = Color.Cyan;
             lblNome.Location = new Point(186, 144);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(90, 32);
@@ -101,7 +101,7 @@
             // 
             lblFornecedor.AutoSize = true;
             lblFornecedor.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblFornecedor.ForeColor = Color.FromArgb(63, 136, 254);
+            lblFornecedor.ForeColor = Color.Cyan;
             lblFornecedor.Location = new Point(98, 183);
             lblFornecedor.Name = "lblFornecedor";
             lblFornecedor.Size = new Size(152, 32);
@@ -112,7 +112,7 @@
             // 
             lblQuantidade.AutoSize = true;
             lblQuantidade.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblQuantidade.ForeColor = Color.FromArgb(63, 136, 254);
+            lblQuantidade.ForeColor = Color.Cyan;
             lblQuantidade.Location = new Point(133, 222);
             lblQuantidade.Name = "lblQuantidade";
             lblQuantidade.Size = new Size(154, 32);
@@ -123,7 +123,7 @@
             // 
             lblValor.AutoSize = true;
             lblValor.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblValor.ForeColor = Color.FromArgb(63, 136, 254);
+            lblValor.ForeColor = Color.Cyan;
             lblValor.Location = new Point(219, 262);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(81, 32);
@@ -134,7 +134,7 @@
             // 
             lblVencimento.AutoSize = true;
             lblVencimento.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
-            lblVencimento.ForeColor = Color.FromArgb(63, 136, 254);
+            lblVencimento.ForeColor = Color.Cyan;
             lblVencimento.Location = new Point(151, 300);
             lblVencimento.Name = "lblVencimento";
             lblVencimento.Size = new Size(156, 32);

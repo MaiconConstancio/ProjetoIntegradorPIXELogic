@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Linq;
@@ -107,6 +108,12 @@ namespace ProjetoIntegradorPIXELogic
             montagemPrograma.TopLevel = false;
             RodaTodosForms.panel1.Controls.Add(montagemPrograma);
             montagemPrograma.Show();
+        }
+
+        private void btnLogoff_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+            Process.Start(Application.ExecutablePath);
         }
     }
 }

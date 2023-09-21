@@ -99,7 +99,7 @@
             // 
             lblNome.AutoSize = true;
             lblNome.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            lblNome.ForeColor = Color.FromArgb(63, 136, 254);
+            lblNome.ForeColor = Color.Cyan;
             lblNome.Location = new Point(222, 180);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(81, 30);
@@ -110,7 +110,7 @@
             // 
             lblEmpresa.AutoSize = true;
             lblEmpresa.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            lblEmpresa.ForeColor = Color.FromArgb(63, 136, 254);
+            lblEmpresa.ForeColor = Color.Cyan;
             lblEmpresa.Location = new Point(195, 217);
             lblEmpresa.Name = "lblEmpresa";
             lblEmpresa.Size = new Size(108, 30);
@@ -121,7 +121,7 @@
             // 
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
+            lblLogin.ForeColor = Color.Cyan;
             lblLogin.Location = new Point(227, 253);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(76, 30);
@@ -132,7 +132,7 @@
             // 
             lblSenha.AutoSize = true;
             lblSenha.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
+            lblSenha.ForeColor = Color.Cyan;
             lblSenha.Location = new Point(222, 289);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(81, 30);
@@ -141,41 +141,41 @@
             // 
             // btnCancelar
             // 
-            btnCancelar.BackColor = Color.FromArgb(72, 116, 245);
-            btnCancelar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnCancelar.BackColor = Color.FromArgb(16, 25, 56);
+            btnCancelar.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnCancelar.BorderColor = Color.FromArgb(0, 242, 254);
             btnCancelar.BorderRadius = 12;
             btnCancelar.BorderSize = 2;
             btnCancelar.FlatAppearance.BorderSize = 0;
             btnCancelar.FlatStyle = FlatStyle.Flat;
             btnCancelar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCancelar.ForeColor = Color.Black;
+            btnCancelar.ForeColor = Color.Cyan;
             btnCancelar.Location = new Point(477, 399);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(103, 32);
             btnCancelar.TabIndex = 6;
             btnCancelar.Text = "CANCELAR";
-            btnCancelar.TextColor = Color.Black;
+            btnCancelar.TextColor = Color.Cyan;
             btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
             // btnCadastrar
             // 
-            btnCadastrar.BackColor = Color.FromArgb(72, 116, 245);
-            btnCadastrar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnCadastrar.BackColor = Color.FromArgb(16, 25, 56);
+            btnCadastrar.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnCadastrar.BorderColor = Color.FromArgb(0, 242, 254);
             btnCadastrar.BorderRadius = 12;
             btnCadastrar.BorderSize = 2;
             btnCadastrar.FlatAppearance.BorderSize = 0;
             btnCadastrar.FlatStyle = FlatStyle.Flat;
             btnCadastrar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCadastrar.ForeColor = Color.Black;
+            btnCadastrar.ForeColor = Color.Cyan;
             btnCadastrar.Location = new Point(214, 399);
             btnCadastrar.Name = "btnCadastrar";
             btnCadastrar.Size = new Size(109, 32);
             btnCadastrar.TabIndex = 5;
             btnCadastrar.Text = "CADASTRAR";
-            btnCadastrar.TextColor = Color.Black;
+            btnCadastrar.TextColor = Color.Cyan;
             btnCadastrar.UseVisualStyleBackColor = false;
             btnCadastrar.Click += btnCadastrar_Click;
             // 

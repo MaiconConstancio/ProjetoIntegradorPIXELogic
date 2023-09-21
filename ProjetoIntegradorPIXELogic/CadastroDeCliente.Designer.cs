@@ -142,7 +142,7 @@
             // 
             lblCidade.AutoSize = true;
             lblCidade.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCidade.ForeColor = Color.FromArgb(63, 136, 254);
+            lblCidade.ForeColor = Color.Cyan;
             lblCidade.Location = new Point(166, 325);
             lblCidade.Name = "lblCidade";
             lblCidade.Size = new Size(113, 37);
@@ -153,7 +153,7 @@
             // 
             lblNumero.AutoSize = true;
             lblNumero.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblNumero.ForeColor = Color.FromArgb(63, 136, 254);
+            lblNumero.ForeColor = Color.Cyan;
             lblNumero.Location = new Point(186, 254);
             lblNumero.Name = "lblNumero";
             lblNumero.Size = new Size(129, 37);
@@ -164,7 +164,7 @@
             // 
             lblCEP.AutoSize = true;
             lblCEP.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCEP.ForeColor = Color.FromArgb(63, 136, 254);
+            lblCEP.ForeColor = Color.Cyan;
             lblCEP.Location = new Point(254, 220);
             lblCEP.Name = "lblCEP";
             lblCEP.Size = new Size(72, 37);
@@ -175,7 +175,7 @@
             // 
             lblCPF.AutoSize = true;
             lblCPF.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCPF.ForeColor = Color.FromArgb(63, 136, 254);
+            lblCPF.ForeColor = Color.Cyan;
             lblCPF.Location = new Point(234, 184);
             lblCPF.Name = "lblCPF";
             lblCPF.Size = new Size(72, 37);
@@ -186,7 +186,7 @@
             // 
             lblTelefone.AutoSize = true;
             lblTelefone.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblTelefone.ForeColor = Color.FromArgb(63, 136, 254);
+            lblTelefone.ForeColor = Color.Cyan;
             lblTelefone.Location = new Point(164, 150);
             lblTelefone.Name = "lblTelefone";
             lblTelefone.Size = new Size(134, 37);
@@ -197,7 +197,7 @@
             // 
             lblEndereco.AutoSize = true;
             lblEndereco.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblEndereco.ForeColor = Color.FromArgb(63, 136, 254);
+            lblEndereco.ForeColor = Color.Cyan;
             lblEndereco.Location = new Point(137, 290);
             lblEndereco.Name = "lblEndereco";
             lblEndereco.Size = new Size(142, 37);
@@ -208,7 +208,7 @@
             // 
             lblCliente.AutoSize = true;
             lblCliente.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCliente.ForeColor = Color.FromArgb(63, 136, 254);
+            lblCliente.ForeColor = Color.Cyan;
             lblCliente.Location = new Point(151, 113);
             lblCliente.Name = "lblCliente";
             lblCliente.Size = new Size(114, 37);
@@ -217,41 +217,41 @@
             // 
             // btnSalvar
             // 
-            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BackColor = Color.FromArgb(16, 25, 56);
+            btnSalvar.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
             btnSalvar.BorderRadius = 12;
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSalvar.ForeColor = Color.Black;
+            btnSalvar.ForeColor = Color.Cyan;
             btnSalvar.Location = new Point(349, 384);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
             btnSalvar.TabIndex = 8;
             btnSalvar.Text = "Salvar";
-            btnSalvar.TextColor = Color.Black;
+            btnSalvar.TextColor = Color.Cyan;
             btnSalvar.UseVisualStyleBackColor = false;
             btnSalvar.Click += btnSalvar_Click;
             // 
             // btnVoltar
             // 
-            btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
-            btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BackColor = Color.FromArgb(16, 25, 56);
+            btnVoltar.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
             btnVoltar.BorderRadius = 12;
             btnVoltar.BorderSize = 2;
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
             btnVoltar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnVoltar.ForeColor = Color.Black;
+            btnVoltar.ForeColor = Color.Cyan;
             btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(74, 30);
             btnVoltar.TabIndex = 9;
             btnVoltar.Text = "Voltar";
-            btnVoltar.TextColor = Color.Black;
+            btnVoltar.TextColor = Color.Cyan;
             btnVoltar.UseVisualStyleBackColor = false;
             btnVoltar.Click += btnVoltar_Click;
             // 

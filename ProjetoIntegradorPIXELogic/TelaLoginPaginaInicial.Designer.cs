@@ -45,21 +45,21 @@ namespace ProjetoIntegradorPIXELogic
             // 
             // btnEntra
             // 
-            btnEntra.BackColor = Color.FromArgb(72, 116, 245);
-            btnEntra.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnEntra.BackColor = Color.FromArgb(16, 25, 56);
+            btnEntra.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnEntra.BorderColor = Color.FromArgb(0, 242, 254);
             btnEntra.BorderRadius = 22;
             btnEntra.BorderSize = 2;
             btnEntra.FlatAppearance.BorderSize = 0;
             btnEntra.FlatStyle = FlatStyle.Flat;
             btnEntra.Font = new Font("Segoe UI", 20F, FontStyle.Bold, GraphicsUnit.Point);
-            btnEntra.ForeColor = Color.Black;
+            btnEntra.ForeColor = Color.Cyan;
             btnEntra.Location = new Point(446, 381);
             btnEntra.Name = "btnEntra";
             btnEntra.Size = new Size(330, 47);
             btnEntra.TabIndex = 4;
             btnEntra.Text = "ENTRAR";
-            btnEntra.TextColor = Color.Black;
+            btnEntra.TextColor = Color.Cyan;
             btnEntra.UseVisualStyleBackColor = false;
             btnEntra.Click += btnEntra_Click;
             // 
@@ -123,7 +123,7 @@ namespace ProjetoIntegradorPIXELogic
             // 
             lblNãotemconta.AutoSize = true;
             lblNãotemconta.Font = new Font("Segoe UI", 10F, FontStyle.Bold | FontStyle.Italic | FontStyle.Underline, GraphicsUnit.Point);
-            lblNãotemconta.ForeColor = Color.FromArgb(63, 200, 254);
+            lblNãotemconta.ForeColor = Color.FromArgb(70, 192, 192);
             lblNãotemconta.Location = new Point(446, 344);
             lblNãotemconta.Name = "lblNãotemconta";
             lblNãotemconta.Size = new Size(224, 19);

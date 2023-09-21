@@ -68,7 +68,7 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = Color.White;
-            label1.Location = new Point(-2, 16);
+            label1.Location = new Point(-2, 12);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 87;
@@ -79,7 +79,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(199, 16);
+            label2.Location = new Point(199, 12);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
             label2.TabIndex = 88;
@@ -90,7 +90,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(398, 16);
+            label3.Location = new Point(398, 12);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 89;

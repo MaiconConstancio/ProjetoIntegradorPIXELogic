@@ -42,7 +42,7 @@
             // 
             lblAcao.BorderStyle = BorderStyle.FixedSingle;
             lblAcao.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            lblAcao.ForeColor = Color.FromArgb(63, 136, 254);
+            lblAcao.ForeColor = Color.Cyan;
             lblAcao.Location = new Point(599, 86);
             lblAcao.Name = "lblAcao";
             lblAcao.Size = new Size(189, 30);
@@ -54,7 +54,7 @@
             // 
             lblValor.BorderStyle = BorderStyle.FixedSingle;
             lblValor.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            lblValor.ForeColor = Color.FromArgb(63, 136, 254);
+            lblValor.ForeColor = Color.Cyan;
             lblValor.Location = new Point(404, 86);
             lblValor.Name = "lblValor";
             lblValor.Size = new Size(189, 30);
@@ -66,7 +66,7 @@
             // 
             lblCliente.BorderStyle = BorderStyle.FixedSingle;
             lblCliente.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCliente.ForeColor = Color.FromArgb(63, 136, 254);
+            lblCliente.ForeColor = Color.Cyan;
             lblCliente.Location = new Point(207, 86);
             lblCliente.Name = "lblCliente";
             lblCliente.Size = new Size(189, 30);
@@ -78,7 +78,7 @@
             // 
             lblProduto.BorderStyle = BorderStyle.FixedSingle;
             lblProduto.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            lblProduto.ForeColor = Color.FromArgb(63, 136, 254);
+            lblProduto.ForeColor = Color.Cyan;
             lblProduto.Location = new Point(12, 86);
             lblProduto.Name = "lblProduto";
             lblProduto.Size = new Size(189, 30);
@@ -89,41 +89,41 @@
             // 
             // btnVoltar
             // 
-            btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
-            btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BackColor = Color.FromArgb(16, 25, 56);
+            btnVoltar.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
             btnVoltar.BorderRadius = 12;
             btnVoltar.BorderSize = 2;
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
             btnVoltar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnVoltar.ForeColor = Color.Black;
+            btnVoltar.ForeColor = Color.Cyan;
             btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(74, 30);
             btnVoltar.TabIndex = 3;
             btnVoltar.Text = "Voltar";
-            btnVoltar.TextColor = Color.Black;
+            btnVoltar.TextColor = Color.Cyan;
             btnVoltar.UseVisualStyleBackColor = false;
             btnVoltar.Click += btnVoltar_Click;
             // 
             // btnImprimir
             // 
-            btnImprimir.BackColor = Color.FromArgb(72, 116, 245);
-            btnImprimir.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnImprimir.BackColor = Color.FromArgb(16, 25, 56);
+            btnImprimir.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnImprimir.BorderColor = Color.FromArgb(0, 242, 254);
             btnImprimir.BorderRadius = 12;
             btnImprimir.BorderSize = 2;
             btnImprimir.FlatAppearance.BorderSize = 0;
             btnImprimir.FlatStyle = FlatStyle.Flat;
             btnImprimir.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnImprimir.ForeColor = Color.Black;
+            btnImprimir.ForeColor = Color.Cyan;
             btnImprimir.Location = new Point(169, 12);
             btnImprimir.Name = "btnImprimir";
             btnImprimir.Size = new Size(112, 32);
             btnImprimir.TabIndex = 2;
             btnImprimir.Text = "Imprimir";
-            btnImprimir.TextColor = Color.Black;
+            btnImprimir.TextColor = Color.Cyan;
             btnImprimir.UseVisualStyleBackColor = false;
             btnImprimir.Click += btnImprimir_Click;
             // 
@@ -137,21 +137,21 @@
             // 
             // btnCapturarImagem
             // 
-            btnCapturarImagem.BackColor = Color.FromArgb(72, 116, 245);
-            btnCapturarImagem.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnCapturarImagem.BackColor = Color.FromArgb(16, 25, 56);
+            btnCapturarImagem.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnCapturarImagem.BorderColor = Color.FromArgb(0, 242, 254);
             btnCapturarImagem.BorderRadius = 12;
             btnCapturarImagem.BorderSize = 2;
             btnCapturarImagem.FlatAppearance.BorderSize = 0;
             btnCapturarImagem.FlatStyle = FlatStyle.Flat;
             btnCapturarImagem.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCapturarImagem.ForeColor = Color.Black;
+            btnCapturarImagem.ForeColor = Color.Cyan;
             btnCapturarImagem.Location = new Point(12, 12);
             btnCapturarImagem.Name = "btnCapturarImagem";
             btnCapturarImagem.Size = new Size(154, 32);
             btnCapturarImagem.TabIndex = 39;
             btnCapturarImagem.Text = "Captura de tela";
-            btnCapturarImagem.TextColor = Color.Black;
+            btnCapturarImagem.TextColor = Color.Cyan;
             btnCapturarImagem.UseVisualStyleBackColor = false;
             btnCapturarImagem.Click += btnCapturarImagem_Click_1;
             // 

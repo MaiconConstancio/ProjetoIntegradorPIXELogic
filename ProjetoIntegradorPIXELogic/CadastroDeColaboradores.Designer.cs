@@ -59,7 +59,7 @@
             // 
             lblNome.AutoSize = true;
             lblNome.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            lblNome.ForeColor = Color.FromArgb(63, 136, 254);
+            lblNome.ForeColor = Color.Cyan;
             lblNome.Location = new Point(207, 170);
             lblNome.Name = "lblNome";
             lblNome.Size = new Size(81, 30);
@@ -68,21 +68,21 @@
             // 
             // btnSalvar
             // 
-            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BackColor = Color.FromArgb(16, 25, 56);
+            btnSalvar.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
             btnSalvar.BorderRadius = 12;
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 13.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSalvar.ForeColor = Color.Black;
+            btnSalvar.ForeColor = Color.Cyan;
             btnSalvar.Location = new Point(349, 384);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(103, 32);
             btnSalvar.TabIndex = 5;
             btnSalvar.Text = "Salvar";
-            btnSalvar.TextColor = Color.Black;
+            btnSalvar.TextColor = Color.Cyan;
             btnSalvar.UseVisualStyleBackColor = false;
             btnSalvar.Click += btnSalvar_Click;
             // 
@@ -90,7 +90,7 @@
             // 
             lblCargo.AutoSize = true;
             lblCargo.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            lblCargo.ForeColor = Color.FromArgb(63, 136, 254);
+            lblCargo.ForeColor = Color.Cyan;
             lblCargo.Location = new Point(256, 211);
             lblCargo.Name = "lblCargo";
             lblCargo.Size = new Size(81, 30);
@@ -101,7 +101,7 @@
             // 
             lblLogin.AutoSize = true;
             lblLogin.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            lblLogin.ForeColor = Color.FromArgb(63, 136, 254);
+            lblLogin.ForeColor = Color.Cyan;
             lblLogin.Location = new Point(253, 252);
             lblLogin.Name = "lblLogin";
             lblLogin.Size = new Size(76, 30);
@@ -112,7 +112,7 @@
             // 
             lblSenha.AutoSize = true;
             lblSenha.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            lblSenha.ForeColor = Color.FromArgb(63, 136, 254);
+            lblSenha.ForeColor = Color.Cyan;
             lblSenha.Location = new Point(242, 293);
             lblSenha.Name = "lblSenha";
             lblSenha.Size = new Size(81, 30);
@@ -121,21 +121,21 @@
             // 
             // btnVoltar
             // 
-            btnVoltar.BackColor = Color.FromArgb(72, 116, 245);
-            btnVoltar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnVoltar.BackColor = Color.FromArgb(16, 25, 56);
+            btnVoltar.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnVoltar.BorderColor = Color.FromArgb(0, 242, 254);
             btnVoltar.BorderRadius = 12;
             btnVoltar.BorderSize = 2;
             btnVoltar.FlatAppearance.BorderSize = 0;
             btnVoltar.FlatStyle = FlatStyle.Flat;
             btnVoltar.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnVoltar.ForeColor = Color.Black;
+            btnVoltar.ForeColor = Color.Cyan;
             btnVoltar.Location = new Point(714, 12);
             btnVoltar.Name = "btnVoltar";
             btnVoltar.Size = new Size(74, 30);
             btnVoltar.TabIndex = 6;
             btnVoltar.Text = "Voltar";
-            btnVoltar.TextColor = Color.Black;
+            btnVoltar.TextColor = Color.Cyan;
             btnVoltar.UseVisualStyleBackColor = false;
             btnVoltar.Click += btnVoltar_Click;
             // 

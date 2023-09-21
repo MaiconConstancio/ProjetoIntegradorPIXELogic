@@ -69,7 +69,7 @@
             label1.Anchor = AnchorStyles.None;
             label1.AutoSize = true;
             label1.ForeColor = Color.White;
-            label1.Location = new Point(1, 10);
+            label1.Location = new Point(1, 12);
             label1.Name = "label1";
             label1.Size = new Size(38, 15);
             label1.TabIndex = 87;
@@ -80,18 +80,19 @@
             label2.Anchor = AnchorStyles.None;
             label2.AutoSize = true;
             label2.ForeColor = Color.White;
-            label2.Location = new Point(200, 10);
+            label2.Location = new Point(200, 12);
             label2.Name = "label2";
             label2.Size = new Size(38, 15);
             label2.TabIndex = 88;
             label2.Text = "label2";
+            label2.Click += label2_Click;
             // 
             // label3
             // 
             label3.Anchor = AnchorStyles.None;
             label3.AutoSize = true;
             label3.ForeColor = Color.White;
-            label3.Location = new Point(393, 10);
+            label3.Location = new Point(393, 12);
             label3.Name = "label3";
             label3.Size = new Size(38, 15);
             label3.TabIndex = 89;

@@ -39,6 +39,7 @@
             WallpaperSaguao = new PictureBox();
             btnSalvar = new WiLBiT.WiLBiTButton2();
             imgLogoWallpaperSaguao = new PictureBox();
+            btnLogoff = new WiLBiT.WiLBiTButton2();
             ((System.ComponentModel.ISupportInitialize)WallpaperSaguao).BeginInit();
             ((System.ComponentModel.ISupportInitialize)imgLogoWallpaperSaguao).BeginInit();
             SuspendLayout();
@@ -65,101 +66,101 @@
             // 
             // btnSuporte
             // 
-            btnSuporte.BackColor = Color.FromArgb(72, 116, 245);
-            btnSuporte.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnSuporte.BackColor = Color.FromArgb(16, 25, 56);
+            btnSuporte.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnSuporte.BorderColor = Color.FromArgb(0, 242, 254);
             btnSuporte.BorderRadius = 12;
             btnSuporte.BorderSize = 2;
             btnSuporte.FlatAppearance.BorderSize = 0;
             btnSuporte.FlatStyle = FlatStyle.Flat;
             btnSuporte.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSuporte.ForeColor = Color.Black;
+            btnSuporte.ForeColor = Color.Cyan;
             btnSuporte.Location = new Point(618, 386);
             btnSuporte.Name = "btnSuporte";
             btnSuporte.Size = new Size(170, 32);
             btnSuporte.TabIndex = 81;
             btnSuporte.Text = "Suporte";
-            btnSuporte.TextColor = Color.Black;
+            btnSuporte.TextColor = Color.Cyan;
             btnSuporte.UseVisualStyleBackColor = false;
             btnSuporte.Click += btnSuporte_Click;
             // 
             // btnRelatorioProdutos
             // 
-            btnRelatorioProdutos.BackColor = Color.FromArgb(72, 116, 245);
-            btnRelatorioProdutos.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnRelatorioProdutos.BackColor = Color.FromArgb(16, 25, 56);
+            btnRelatorioProdutos.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnRelatorioProdutos.BorderColor = Color.FromArgb(0, 242, 254);
             btnRelatorioProdutos.BorderRadius = 12;
             btnRelatorioProdutos.BorderSize = 2;
             btnRelatorioProdutos.FlatAppearance.BorderSize = 0;
             btnRelatorioProdutos.FlatStyle = FlatStyle.Flat;
             btnRelatorioProdutos.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnRelatorioProdutos.ForeColor = Color.Black;
+            btnRelatorioProdutos.ForeColor = Color.Cyan;
             btnRelatorioProdutos.Location = new Point(618, 304);
             btnRelatorioProdutos.Name = "btnRelatorioProdutos";
             btnRelatorioProdutos.Size = new Size(170, 32);
             btnRelatorioProdutos.TabIndex = 83;
             btnRelatorioProdutos.Text = "Relatório Produto";
-            btnRelatorioProdutos.TextColor = Color.Black;
+            btnRelatorioProdutos.TextColor = Color.Cyan;
             btnRelatorioProdutos.UseVisualStyleBackColor = false;
             btnRelatorioProdutos.Click += btnRelatorioProdutos_Click;
             // 
             // btnRelatorioServicos
             // 
-            btnRelatorioServicos.BackColor = Color.FromArgb(72, 116, 245);
-            btnRelatorioServicos.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnRelatorioServicos.BackColor = Color.FromArgb(16, 25, 56);
+            btnRelatorioServicos.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnRelatorioServicos.BorderColor = Color.FromArgb(0, 242, 254);
             btnRelatorioServicos.BorderRadius = 12;
             btnRelatorioServicos.BorderSize = 2;
             btnRelatorioServicos.FlatAppearance.BorderSize = 0;
             btnRelatorioServicos.FlatStyle = FlatStyle.Flat;
             btnRelatorioServicos.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnRelatorioServicos.ForeColor = Color.Black;
-            btnRelatorioServicos.Location = new Point(618, 263);
+            btnRelatorioServicos.ForeColor = Color.Cyan;
+            btnRelatorioServicos.Location = new Point(618, 182);
             btnRelatorioServicos.Name = "btnRelatorioServicos";
             btnRelatorioServicos.Size = new Size(170, 32);
             btnRelatorioServicos.TabIndex = 84;
             btnRelatorioServicos.Text = "Relátorio serviços";
-            btnRelatorioServicos.TextColor = Color.Black;
+            btnRelatorioServicos.TextColor = Color.Cyan;
             btnRelatorioServicos.UseVisualStyleBackColor = false;
             btnRelatorioServicos.Click += btnRelatorioServicos_Click;
             // 
             // btnVendas
             // 
-            btnVendas.BackColor = Color.FromArgb(72, 116, 245);
-            btnVendas.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnVendas.BackColor = Color.FromArgb(16, 25, 56);
+            btnVendas.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnVendas.BorderColor = Color.FromArgb(0, 242, 254);
             btnVendas.BorderRadius = 12;
             btnVendas.BorderSize = 2;
             btnVendas.FlatAppearance.BorderSize = 0;
             btnVendas.FlatStyle = FlatStyle.Flat;
             btnVendas.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnVendas.ForeColor = Color.Black;
+            btnVendas.ForeColor = Color.Cyan;
             btnVendas.Location = new Point(618, 263);
             btnVendas.Name = "btnVendas";
             btnVendas.Size = new Size(170, 32);
             btnVendas.TabIndex = 84;
             btnVendas.Text = "Vendas";
-            btnVendas.TextColor = Color.Black;
+            btnVendas.TextColor = Color.Cyan;
             btnVendas.UseVisualStyleBackColor = false;
             btnVendas.Click += btnVendas_Click;
             // 
             // btnCadastros
             // 
-            btnCadastros.BackColor = Color.FromArgb(72, 116, 245);
-            btnCadastros.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnCadastros.BackColor = Color.FromArgb(16, 25, 56);
+            btnCadastros.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnCadastros.BorderColor = Color.FromArgb(0, 242, 254);
             btnCadastros.BorderRadius = 12;
             btnCadastros.BorderSize = 2;
             btnCadastros.FlatAppearance.BorderSize = 0;
             btnCadastros.FlatStyle = FlatStyle.Flat;
             btnCadastros.Font = new Font("Segoe UI", 12.25F, FontStyle.Bold, GraphicsUnit.Point);
-            btnCadastros.ForeColor = Color.Black;
+            btnCadastros.ForeColor = Color.Cyan;
             btnCadastros.Location = new Point(618, 222);
             btnCadastros.Name = "btnCadastros";
             btnCadastros.Size = new Size(170, 32);
             btnCadastros.TabIndex = 85;
             btnCadastros.Text = "Cadastros";
-            btnCadastros.TextColor = Color.Black;
+            btnCadastros.TextColor = Color.Cyan;
             btnCadastros.UseVisualStyleBackColor = false;
             btnCadastros.Click += btnCadastros_Click;
             // 
@@ -187,21 +188,21 @@
             // 
             // btnSalvar
             // 
-            btnSalvar.BackColor = Color.FromArgb(72, 116, 245);
-            btnSalvar.BackgroundColor = Color.FromArgb(72, 116, 245);
+            btnSalvar.BackColor = Color.FromArgb(16, 25, 56);
+            btnSalvar.BackgroundColor = Color.FromArgb(16, 25, 56);
             btnSalvar.BorderColor = Color.FromArgb(0, 242, 254);
             btnSalvar.BorderRadius = 12;
             btnSalvar.BorderSize = 2;
             btnSalvar.FlatAppearance.BorderSize = 0;
             btnSalvar.FlatStyle = FlatStyle.Flat;
             btnSalvar.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.World);
-            btnSalvar.ForeColor = Color.Black;
+            btnSalvar.ForeColor = Color.Cyan;
             btnSalvar.Location = new Point(653, 12);
             btnSalvar.Name = "btnSalvar";
             btnSalvar.Size = new Size(135, 36);
             btnSalvar.TabIndex = 85;
             btnSalvar.Text = "Configurações";
-            btnSalvar.TextColor = Color.Black;
+            btnSalvar.TextColor = Color.Cyan;
             btnSalvar.UseVisualStyleBackColor = false;
             btnSalvar.Click += btnSalvar_Click;
             // 
@@ -215,6 +216,26 @@
             imgLogoWallpaperSaguao.TabIndex = 84;
             imgLogoWallpaperSaguao.TabStop = false;
             // 
+            // btnLogoff
+            // 
+            btnLogoff.BackColor = Color.FromArgb(16, 25, 56);
+            btnLogoff.BackgroundColor = Color.FromArgb(16, 25, 56);
+            btnLogoff.BorderColor = Color.FromArgb(0, 242, 254);
+            btnLogoff.BorderRadius = 12;
+            btnLogoff.BorderSize = 2;
+            btnLogoff.FlatAppearance.BorderSize = 0;
+            btnLogoff.FlatStyle = FlatStyle.Flat;
+            btnLogoff.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btnLogoff.ForeColor = Color.Cyan;
+            btnLogoff.Location = new Point(714, 408);
+            btnLogoff.Name = "btnLogoff";
+            btnLogoff.Size = new Size(74, 30);
+            btnLogoff.TabIndex = 85;
+            btnLogoff.Text = "Logoff";
+            btnLogoff.TextColor = Color.Cyan;
+            btnLogoff.UseVisualStyleBackColor = false;
+            btnLogoff.Click += btnLogoff_Click;
+            // 
             // SagaoPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -222,6 +243,7 @@
             BackColor = Color.FromArgb(16, 25, 56);
             BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnLogoff);
             Controls.Add(panel1);
             Controls.Add(lblOrcamentoDeServicos);
             Controls.Add(label1);
@@ -304,5 +326,6 @@
         private PictureBox WallpaperSaguao;
         private WiLBiT.WiLBiTButton2 btnSalvar;
         private PictureBox imgLogoWallpaperSaguao;
+        private WiLBiT.WiLBiTButton2 btnLogoff;
     }
 }
